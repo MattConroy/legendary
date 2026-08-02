@@ -17,4 +17,9 @@
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
   </ItemGroup>
 
+  <ItemGroup>
+    <!-- Copy-paste starter for new sets; not part of the build until copied & renamed. -->
+    <Compile Remove="Data\_Template.cs" />
+  </ItemGroup>
+
 </Project>
