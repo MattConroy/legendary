@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="X-Men">
-  <circle cx="12" cy="12" r="11" fill="#111318" stroke="rgba(255,255,255,0.28)" stroke-width="1"/>
+  <circle cx="12" cy="12" r="10.5" fill="#111318" stroke="#e23636" stroke-width="2"/>
   <text x="12" y="16.4" text-anchor="middle" font-size="13" font-weight="800" fill="#e23636" font-family="Arial Black, Arial, sans-serif">X</text>
-  <path d="M18.2 3.8 L18.76 5.23 L20.29 5.32 L19.10 6.29 L19.49 7.78 L18.2 6.95 L16.91 7.78 L17.30 6.29 L16.11 5.32 L17.64 5.23 Z" fill="#e23636"/>
 </svg>
