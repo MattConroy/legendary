@@ -21,17 +21,22 @@ GitHub Pages. Works offline once loaded.
   flagged with a **Required** badge. Rerolls re-honour it automatically.
 - **Scheme setup modifiers** — Schemes that change counts (e.g. *Replace Earth's Leaders with Killbots*
   adds a Henchman group; *Super Hero Civil War* adds a Hero) are applied automatically.
+- **Two real content sets** — the **Core Set** and the **Dark City** expansion (both toggleable),
+  plus a clearly-labelled example set that shows how a new module plugs in.
 - **Expansion-ready** — sets are self-contained data modules toggled on/off in **Sets**. The
   randomiser only ever reads the *enabled* pool, so adding an expansion never touches randomiser code.
+- **Setup counts surfaced** — Master Strikes shown on the Mastermind card, Scheme Twists on the
+  Scheme card, and Bystanders on the Villain Groups card, per the official setup.
 - **Dark, Marvel-flavoured, mobile-first** UI with a bottom nav, big randomise button, and result cards.
-- **Installable PWA** with offline support.
+- **Installable PWA** with offline support and a custom comic-style icon.
 
 ## Project structure
 
 ```
 src/
   Models/          Card & setup domain types (GameCard, Scheme, SetupRule, GameSetup…)
-  Data/            Content modules — CoreSet.cs, ExampleExpansion.cs — and SetRegistry
+  Data/            Content modules — CoreSet.cs, DarkCity.cs, ExampleExpansion.cs — and SetRegistry
+assets/            icon.svg + render-icons.mjs (Chromium-rendered PWA icons)
   Services/        CardPool, SetupRandomizer (set-agnostic), GameStateService (state + storage)
   Components/      ResultCard.razor
   Pages/           Home (randomiser), Settings (sets/options), About (disclaimer + rules)

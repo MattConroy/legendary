@@ -27,7 +27,7 @@
         <div class="table-wrap">
             <table class="rules">
                 <thead>
-                    <tr><th>Players</th><th>Heroes</th><th>Villains</th><th>Henchmen</th><th>Strikes</th><th>Bystanders</th><th>Wounds</th></tr>
+                    <tr><th>Players</th><th>Heroes</th><th>Villains</th><th>Henchmen</th><th>Strikes</th><th>Bystanders</th><th>Twists*</th></tr>
                 </thead>
                 <tbody>
                     @foreach (var r in SetupTable.ByPlayers.Values.OrderBy(r => r.Players))
@@ -39,11 +39,12 @@
                             <td>@r.Henchmen</td>
                             <td>@r.MasterStrikes</td>
                             <td>@r.Bystanders</td>
-                            <td>@r.Wounds</td>
+                            <td>@r.SchemeTwists</td>
                         </tr>
                     }
                 </tbody>
             </table>
+            <p class="muted small">*Scheme Twists are a typical guide — the exact count is always printed on the chosen Scheme card.</p>
         </div>
         <ul class="notes">
             <li>Each Mastermind's <strong>Always Leads</strong> group is forced into the setup and marked <span class="badge">Required</span>.</li>

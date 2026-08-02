@@ -284,6 +284,16 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .reroll:active { transform: rotate(-20deg) scale(0.95); }
 .reroll__icon { font-size: 1.1rem; }
 
+.card__meta {
+    margin: 12px 0 0;
+    padding-top: 12px;
+    border-top: 1px dashed var(--border);
+    font-size: 0.85rem;
+    color: var(--text);
+    line-height: 1.45;
+}
+.card__meta strong { color: var(--accent, var(--gold)); }
+
 .single { display: flex; flex-direction: column; gap: 4px; }
 .single__name { font-size: 1.5rem; font-weight: 900; color: #fff; }
 .single__flavour { color: var(--muted); font-style: italic; font-size: 0.9rem; }

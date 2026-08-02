@@ -207,12 +207,7 @@ public sealed class SetupRandomizer
         var requiredId = mastermind.AlwaysLeadsGroupId;
         var counts = EffectiveCounts(rule, scheme, pool);
 
-        var notes = new List<string>(scheme.Setup.Notes)
-        {
-            $"Shuffle in {rule.MasterStrikes} Master Strikes.",
-            $"Add {rule.Bystanders} Bystander{(rule.Bystanders == 1 ? "" : "s")} to the Villain Deck.",
-            $"Keep {rule.Wounds} Wounds available in the Wound stack.",
-        };
+        var notes = new List<string>(scheme.Setup.Notes);
 
         var requiredGroup = pool.FindById(requiredId);
         if (requiredGroup is not null)

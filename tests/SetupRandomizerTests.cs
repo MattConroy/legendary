@@ -155,6 +155,34 @@ public class SetupRandomizerTests
         Assert.DoesNotContain(core.Heroes, h => h.Id == "example:hero-a");
     }
 
+    [Fact]
+    public void Every_mastermind_always_leads_group_resolves_within_the_full_pool()
+    {
+        var pool = AllPool();
+        foreach (var set in SetRegistry.AllSets)
+        {
+            foreach (var mm in set.Masterminds)
+            {
+                Assert.False(string.IsNullOrEmpty(mm.AlwaysLeadsGroupId),
+                    $"{mm.Name} has no AlwaysLeadsGroupId");
+                var group = pool.FindById(mm.AlwaysLeadsGroupId);
+                Assert.True(group is VillainGroup or Henchmen,
+                    $"{mm.Name} always-leads id '{mm.AlwaysLeadsGroupId}' does not resolve to a group");
+            }
+        }
+    }
+
+    [Fact]
+    public void DarkCity_has_the_expected_roster_sizes()
+    {
+        var dc = SetRegistry.FindById("dark-city")!;
+        Assert.Equal(5, dc.Masterminds.Count);
+        Assert.Equal(8, dc.Schemes.Count);
+        Assert.Equal(6, dc.VillainGroups.Count);
+        Assert.Equal(2, dc.Henchmen.Count);
+        Assert.Equal(17, dc.Heroes.Count);
+    }
+
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)
     {
         var ids = items.Select(i => i.Card.Id).ToList();

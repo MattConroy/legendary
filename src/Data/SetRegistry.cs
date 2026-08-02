@@ -12,6 +12,7 @@ public static class SetRegistry
     public static readonly IReadOnlyList<CardSet> AllSets =
     [
         CoreSet.Set,
+        DarkCity.Set,
         ExampleExpansion.Set,
     ];
 
