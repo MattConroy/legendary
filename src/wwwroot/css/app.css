@@ -375,8 +375,10 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 }
 .sort__btn--active { background: var(--marvel); border-color: var(--marvel); color: #fff; }
 
-.sets-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin: 10px 0 6px; }
-.sets-actions__btns { display: flex; gap: 12px; }
+.sets-hint { margin: 6px 0 0; line-height: 1.4; }
+.sets-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 8px 0 8px; }
+.sets-actions__label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+.sets-actions__sep { color: var(--border); }
 .linkbtn { background: none; border: none; color: var(--gold); font-weight: 700; font-size: 0.8rem; cursor: pointer; padding: 0; }
 .linkbtn:hover { text-decoration: underline; }
 

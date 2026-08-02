@@ -38,12 +38,14 @@
             </div>
         </div>
 
+        <p class="muted small sets-hint">Mark what you <strong>own</strong> (auto-enables it), then toggle which sets are <strong>in play</strong> for this game — you can play a set you're borrowing without owning it.</p>
         <div class="sets-actions">
-            <span class="muted small">Mark what you <strong>own</strong>, then toggle which sets are <strong>in play</strong> for this game.</span>
-            <div class="sets-actions__btns">
-                <button class="linkbtn" @onclick="() => State.SetAllOwnedEnabledAsync(true)">Enable all owned</button>
-                <button class="linkbtn" @onclick="() => State.SetAllOwnedEnabledAsync(false)">None</button>
-            </div>
+            <span class="sets-actions__label">Play:</span>
+            <button class="linkbtn" @onclick="() => State.SetAllEnabledAsync(true)">All</button>
+            <button class="linkbtn" @onclick="() => State.SetAllEnabledAsync(false)">None</button>
+            <span class="sets-actions__sep">·</span>
+            <button class="linkbtn" @onclick="() => State.SetOwnedEnabledAsync(true)">Owned</button>
+            <button class="linkbtn" @onclick="() => State.SetOwnedEnabledAsync(false)">Not owned</button>
         </div>
 
         <div class="set-cols"><span>Set</span><span>Own</span><span>Play</span></div>
@@ -69,8 +71,8 @@
                         <span class="switch__track"><span class="switch__thumb"></span></span>
                     </label>
 
-                    <label class="switch switch--sm @(owned ? "" : "switch--disabled")" title="@(owned ? "In play" : "Own it first")">
-                        <input type="checkbox" checked="@enabled" disabled="@(!owned)" @onchange="e => Play(set.Id, e)" />
+                    <label class="switch switch--sm" title="In play this game">
+                        <input type="checkbox" checked="@enabled" @onchange="e => Play(set.Id, e)" />
                         <span class="switch__track"><span class="switch__thumb"></span></span>
                     </label>
                 </li>

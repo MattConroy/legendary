@@ -60,9 +60,12 @@ public sealed class GameStateService
     public bool IsEnabled(string setId) => _enabledSetIds.Contains(setId);
     public int OwnedCount => _ownedSetIds.Count;
 
-    /// <summary>The randomiser draws only from sets that are both owned and enabled.</summary>
+    /// <summary>
+    /// The randomiser draws from every *enabled* set. Enabling is independent of
+    /// ownership (you might be borrowing a set), though owning one enables it.
+    /// </summary>
     public CardPool CurrentPool =>
-        CardPool.From(SetRegistry.AllSets.Where(s => _ownedSetIds.Contains(s.Id) && _enabledSetIds.Contains(s.Id)));
+        CardPool.From(SetRegistry.AllSets.Where(s => _enabledSetIds.Contains(s.Id)));
 
     public async Task InitializeAsync()
     {
@@ -77,8 +80,6 @@ public sealed class GameStateService
 
             await LoadSetIdsAsync(OwnedSetsKey, _ownedSetIds);
             await LoadSetIdsAsync(EnabledSetsKey, _enabledSetIds);
-            // Enabled can never include a set that isn't owned.
-            _enabledSetIds.IntersectWith(_ownedSetIds);
 
             var sort = await _js.InvokeAsync<string?>("localStorage.getItem", SortKey);
             if (!string.IsNullOrWhiteSpace(sort))
@@ -116,7 +117,10 @@ public sealed class GameStateService
         NotifyChanged();
     }
 
-    /// <summary>Mark a set as owned or not. Un-owning also disables it (you can't play what you don't own).</summary>
+    /// <summary>
+    /// Mark a set as owned or not. Owning a set also enables it; un-owning leaves
+    /// the play toggle alone (you might still be borrowing it).
+    /// </summary>
     public async Task SetOwnedAsync(string setId, bool owned)
     {
         if (SetRegistry.FindById(setId) is null) return;
@@ -124,22 +128,22 @@ public sealed class GameStateService
         if (owned)
         {
             _ownedSetIds.Add(setId);
+            _enabledSetIds.Add(setId);
+            await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
         }
         else
         {
             _ownedSetIds.Remove(setId);
-            _enabledSetIds.Remove(setId);
-            await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
         }
 
         await PersistAsync(OwnedSetsKey, Serialize(_ownedSetIds));
         NotifyChanged();
     }
 
-    /// <summary>Enable/disable a set for the next game. Only owned sets can be enabled.</summary>
+    /// <summary>Enable/disable a set for the next game (independent of ownership).</summary>
     public async Task SetEnabledAsync(string setId, bool enabled)
     {
-        if (enabled && !_ownedSetIds.Contains(setId)) return;
+        if (SetRegistry.FindById(setId) is null) return;
 
         if (enabled) _enabledSetIds.Add(setId);
         else _enabledSetIds.Remove(setId);
@@ -148,11 +152,20 @@ public sealed class GameStateService
         NotifyChanged();
     }
 
-    /// <summary>Enable every owned set, or disable them all.</summary>
-    public async Task SetAllOwnedEnabledAsync(bool enabled)
+    /// <summary>Enable or disable every set.</summary>
+    public async Task SetAllEnabledAsync(bool enabled)
     {
         _enabledSetIds.Clear();
+        if (enabled) _enabledSetIds.UnionWith(SetRegistry.AllSets.Select(s => s.Id));
+        await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
+        NotifyChanged();
+    }
+
+    /// <summary>Add all owned sets to the play pool, or remove all owned sets from it.</summary>
+    public async Task SetOwnedEnabledAsync(bool enabled)
+    {
         if (enabled) _enabledSetIds.UnionWith(_ownedSetIds);
+        else _enabledSetIds.ExceptWith(_ownedSetIds);
         await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
         NotifyChanged();
     }
