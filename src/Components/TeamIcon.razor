@@ -1,69 +1,23 @@
-@* Small original vector badges for hero teams. The SHAPES are original glyphs —
-   deliberately NOT the trademarked team logos — but the COLOUR schemes follow each
-   team's canonical palette (as card-divider makers use), so heroes read at a glance
-   and cross-set duplicates (X-Men vs X-Force Wolverine) are easy to tell apart. *@
+@* Renders a hero's team badge from wwwroot/teams/<slug>.svg. The badges are our
+   own colour-coded designs (canonical team colours, original glyph shapes). *@
 
-@((MarkupString)Svg)
+<img class="team-icon" src="@Src" alt="@Label" title="@Label" loading="lazy" />
 
 @code {
     [Parameter] public string? Team { get; set; }
 
     private string Label => string.IsNullOrWhiteSpace(Team) ? "Unaffiliated" : Team!;
 
-    private (string fill, string accent) Palette => Team switch
-    {
-        "Avengers"       => ("#c8102e", "#f2c94c"), // red + gold
-        "X-Men"          => ("#1b4cc4", "#f5c518"), // blue + gold
-        "X-Force"        => ("#2e3440", "#9aa3b2"), // graphite + steel
-        "Marvel Knights" => ("#16181f", "#c1444f"), // near-black + crimson
-        "S.H.I.E.L.D."   => ("#1d6fb8", "#dce7f2"), // agency blue + steel white
-        "Spider-Friends" => ("#d62828", "#2f6fed"), // red + blue
-        "Sample"         => ("#6b7280", "#9aa3b2"),
-        _                => ("#5b6270", "#9aa3b2"), // Unaffiliated
-    };
+    private string Src => $"teams/{Slug}.svg";
 
-    private string Svg
+    private string Slug => Team switch
     {
-        get
-        {
-            var (fill, accent) = Palette;
-            return $"""
-                <svg class="team-icon" viewBox="0 0 24 24" role="img" aria-label="{Label}"><title>{Label}</title>
-                <circle cx="12" cy="12" r="11" fill="{fill}"/>
-                <circle cx="12" cy="12" r="9.1" fill="none" stroke="{accent}" stroke-width="1.4" stroke-opacity="0.9"/>
-                {Inner(accent)}</svg>
-                """;
-        }
-    }
-
-    private string Inner(string accent) => Team switch
-    {
-        "Spider-Friends" =>
-            """
-            <g stroke="#fff" stroke-width="1.4" fill="none" stroke-linecap="round">
-            <circle cx="12" cy="12" r="2.2" fill="#fff" stroke="none"/>
-            <line x1="12" y1="9.8" x2="12" y2="5.4"/><line x1="12" y1="14.2" x2="12" y2="18.6"/>
-            <line x1="9.8" y1="12" x2="5.4" y2="12"/><line x1="14.2" y1="12" x2="18.6" y2="12"/>
-            <line x1="10.4" y1="10.4" x2="6.9" y2="6.9"/><line x1="13.6" y1="10.4" x2="17.1" y2="6.9"/>
-            <line x1="10.4" y1="13.6" x2="6.9" y2="17.1"/><line x1="13.6" y1="13.6" x2="17.1" y2="17.1"/></g>
-            """,
-        "Marvel Knights" =>
-            $"""<path d="M15.4 7.4a5.4 5.4 0 1 0 0 9.2 6.5 6.5 0 0 1 0-9.2Z" fill="{accent}"/>""",
-        "S.H.I.E.L.D." =>
-            """<path d="M12 5.6 16.7 7v4.1c0 2.9-2 4.8-4.7 7-2.7-2.2-4.7-4.1-4.7-7V7Z" fill="#fff"/>""",
-        _ =>
-            $"""<text x="12" y="16.3" text-anchor="middle" font-size="12" font-weight="800" fill="{Ink(accent)}" font-family="Arial Black, Arial, sans-serif">{Glyph}</text>""",
-    };
-
-    // Gold accents look best as the letter colour; otherwise use white.
-    private string Ink(string accent) => Team is "X-Men" or "Avengers" ? accent : "#ffffff";
-
-    private string Glyph => Team switch
-    {
-        "Avengers" => "A",
-        "X-Men" => "X",
-        "X-Force" => "X",
-        "Sample" => "S",
-        _ => "•",
+        "Avengers" => "avengers",
+        "X-Men" => "x-men",
+        "X-Force" => "x-force",
+        "Marvel Knights" => "marvel-knights",
+        "S.H.I.E.L.D." => "shield",
+        "Spider-Friends" => "spider-friends",
+        _ => "unaffiliated",
     };
 }

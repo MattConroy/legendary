@@ -8,26 +8,18 @@
     <section class="panel panel--disclaimer">
         <h2 class="panel__title">Unofficial fan app</h2>
         <p>
-            This is an <strong>unofficial, fan-made</strong> companion tool. It is not produced,
-            endorsed, licensed, or affiliated with the publishers or rights holders of
-            <em>Legendary: A Marvel Deck Building Game</em>, Marvel, or any related company.
+            An unofficial, fan-made setup helper for <em>Legendary: A Marvel Deck Building Game</em>.
+            Not affiliated with or endorsed by Marvel or the game's publishers. All names are
+            trademarks of their respective owners. You need the physical game to play.
         </p>
-        <p>
-            All game, character, and set names are trademarks of their respective owners and are
-            referenced here purely to help owners of the physical game set it up faster. This app
-            ships <strong>no card text, art, or copyrighted game content</strong> — only the names
-            needed to randomise a legal setup, and the public setup rules.
-        </p>
-        <p class="muted">You must own the physical game to play.</p>
     </section>
 
     <section class="panel">
-        <h2 class="panel__title">Setup rules used</h2>
-        <p class="muted">Per-player base counts the randomiser follows:</p>
+        <h2 class="panel__title">Setup reference</h2>
         <div class="table-wrap">
             <table class="rules">
                 <thead>
-                    <tr><th>Players</th><th>Heroes</th><th>Villains</th><th>Henchmen</th><th>Strikes</th><th>Bystanders</th><th>Twists*</th></tr>
+                    <tr><th>Players</th><th>Heroes</th><th>Villains</th><th>Henchmen</th><th>Strikes</th><th>Bystanders</th><th>Twists</th></tr>
                 </thead>
                 <tbody>
                     @foreach (var r in SetupTable.ByPlayers.Values.OrderBy(r => r.Players))
@@ -44,38 +36,9 @@
                     }
                 </tbody>
             </table>
-            <p class="muted small">*Base and Dark City Schemes run an 8-Twist track (Twist 1…8 → “Evil Wins”), so a standard game uses 8. Solo play and a few Schemes change this — the Scheme card is always authoritative.</p>
         </div>
-        <ul class="notes">
-            <li>Each Mastermind's <strong>Always Leads</strong> group is forced into the setup and marked <span class="badge">Required</span>.</li>
-            <li>Master Strikes, Bystanders and Scheme Twists are shown on the Mastermind, Villains and Scheme cards respectively.</li>
-            <li>Any Scheme with special setup or Twist rules shows a reminder to read its card — see below for why the full text isn't reproduced here.</li>
-            <li>2–5 player counts follow the rulebook; the 1-player column uses the published solo variant.</li>
-        </ul>
-    </section>
-
-    <section class="panel">
-        <h2 class="panel__title">Why no full card text or rulebook?</h2>
-        <p>
-            Card names, the number of each card type per player count, and which group a Mastermind
-            “Always Leads” are short facts — this tool uses those to build a legal setup.
-        </p>
-        <p>
-            The <em>wording</em> of card abilities and the rulebook, however, is creative writing owned
-            by the game's publisher and Marvel. Reproducing it in full — even reworded — would copy
-            copyrighted content, so this app intentionally leaves it out and points you to your cards
-            instead. Fan wikis that host full text do so at the rights holders' discretion, not under a
-            licence this app shares.
-        </p>
-        <p class="muted">Short version: setup facts are fine to include; full card/rules text isn't, so it's kept out.</p>
-    </section>
-
-    <section class="panel">
-        <h2 class="panel__title">How rerolls work</h2>
-        <p class="muted">
-            Each category can be rerolled on its own while everything else stays put. After any
-            reroll the app re-checks the Mastermind's required group and keeps it in play.
-        </p>
+        <p class="muted small">Schemes can change these — each result shows its actual counts, and the
+            Mastermind's required group carries a <span class="badge">Required</span> badge.</p>
     </section>
 
     <p class="version muted small">Legendary Companion · PWA · works offline once loaded.</p>
