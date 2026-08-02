@@ -268,6 +268,31 @@ public class SetupRandomizerTests
         Assert.Equal(17, dc.Heroes.Count);
     }
 
+    [Fact]
+    public void FantasticFour_has_the_expected_roster_and_always_leads()
+    {
+        var ff = SetRegistry.FindById("fantastic-four")!;
+        Assert.Equal(2, ff.Masterminds.Count);
+        Assert.Equal(4, ff.Schemes.Count);
+        Assert.Equal(2, ff.VillainGroups.Count);
+        Assert.Empty(ff.Henchmen);
+        Assert.Equal(5, ff.Heroes.Count);
+
+        Assert.Equal("ff:heralds-of-galactus", ff.Masterminds.Single(m => m.Name == "Galactus").AlwaysLeadsGroupId);
+        Assert.Equal("ff:subterranea", ff.Masterminds.Single(m => m.Name == "Mole Man").AlwaysLeadsGroupId);
+    }
+
+    [Theory]
+    [InlineData("ff:cosmic-rays", 6)]
+    [InlineData("ff:force-field", 7)]
+    [InlineData("ff:melted-glaciers", 8)]
+    public void FantasticFour_scheme_twist_counts_are_exact(string schemeId, int twists)
+    {
+        var pool = CardPool.From([CoreSet.Set, FantasticFour.Set]);
+        var setup = WithScheme(Rng(3), pool, 3, schemeId);
+        Assert.Equal(twists, setup.EffectiveTwists);
+    }
+
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)
     {
         var ids = items.Select(i => i.Card.Id).ToList();

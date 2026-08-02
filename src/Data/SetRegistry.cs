@@ -17,6 +17,7 @@ public static class SetRegistry
     [
         CoreSet.Set,
         DarkCity.Set,
+        FantasticFour.Set,
     ];
 
     public static CardSet? FindById(string id) =>
