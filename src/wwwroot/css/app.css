@@ -312,6 +312,20 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .tag__name { color: #fff; }
 .team-icon { width: 18px; height: 18px; flex: 0 0 auto; display: block; }
 .tag__meta { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* Heroes: one per row — name, team icon, team name */
+.hero-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.hero-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 2px;
+    border-bottom: 1px solid var(--border);
+}
+.hero-row:last-child { border-bottom: none; }
+.hero-row__name { color: #fff; font-weight: 700; flex: 1 1 auto; min-width: 0; }
+.hero-row .team-icon { width: 20px; height: 20px; }
+.hero-row__team { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; min-width: 92px; text-align: right; }
 .tag--required {
     border-color: var(--gold);
     background: rgba(240, 180, 41, 0.12);

@@ -102,16 +102,16 @@
             <ResultCard Title="Heroes" Icon="🦸" Accent="hero"
                         Subtitle="@Count(setup.Heroes.Count, setup.EffectiveHeroCount)"
                         OnReroll="() => Reroll(CardCategory.Hero)">
-                <ul class="tags">
+                <ul class="hero-list">
                     @foreach (var h in setup.Heroes)
                     {
                         var team = (h.Card as Hero)?.Team;
-                        <li class="tag">
+                        <li class="hero-row">
+                            <span class="hero-row__name">@h.Card.Name</span>
                             <TeamIcon Team="@team" />
-                            <span class="tag__name">@h.Card.Name</span>
                             @if (!string.IsNullOrEmpty(team))
                             {
-                                <span class="tag__meta">@team</span>
+                                <span class="hero-row__team">@team</span>
                             }
                         </li>
                     }
