@@ -41,12 +41,15 @@
                         OnReroll="() => Reroll(CardCategory.Mastermind)">
                 <div class="single">
                     <span class="single__name">@setup.Mastermind.Card.Name</span>
-                    @if (setup.Mastermind.Card is Mastermind mm && !string.IsNullOrEmpty(mm.Tagline))
-                    {
-                        <span class="single__flavour">@mm.Tagline</span>
-                    }
                 </div>
                 <p class="card__meta">⚔️ Shuffle <strong>@setup.Rule.MasterStrikes Master Strikes</strong> into the Villain Deck.</p>
+                @if (setup.Mastermind.Card is Mastermind mm)
+                {
+                    @foreach (var step in mm.Notes)
+                    {
+                        <p class="card__meta">➕ @step</p>
+                    }
+                }
             </ResultCard>
 
             <ResultCard Title="Scheme" Icon="🌀" Accent="scheme"
@@ -55,6 +58,13 @@
                     <span class="single__name">@setup.Scheme.Card.Name</span>
                 </div>
                 <p class="card__meta">🌀 Shuffle <strong>@setup.EffectiveTwists Scheme Twists</strong> into the Villain Deck.</p>
+                @if (setup.Scheme.Card is Scheme sc)
+                {
+                    @foreach (var step in sc.Setup.Notes)
+                    {
+                        <p class="card__meta">➕ @step</p>
+                    }
+                }
             </ResultCard>
 
             <ResultCard Title="Villain Groups" Icon="👹" Accent="villain"
@@ -117,26 +127,6 @@
                     }
                 </ul>
             </ResultCard>
-
-            @if (setup.Notes.Count > 0)
-            {
-                <section class="card card--notes">
-                    <header class="card__head">
-                        <div class="card__titles">
-                            <span class="card__icon">📋</span>
-                            <h2 class="card__title">Setup notes</h2>
-                        </div>
-                    </header>
-                    <div class="card__body">
-                        <ul class="notes">
-                            @foreach (var note in setup.Notes)
-                            {
-                                <li>@note</li>
-                            }
-                        </ul>
-                    </div>
-                </section>
-            }
         </div>
     }
     else if (Playable)

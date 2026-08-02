@@ -31,7 +31,4 @@ public sealed record GameSetup
 
     /// <summary>Bystanders in the Villain Deck, after the Scheme's own rules.</summary>
     public required int EffectiveBystanders { get; init; }
-
-    /// <summary>Human-readable setup notes (Scheme special rules, strikes, bystanders…).</summary>
-    public required IReadOnlyList<string> Notes { get; init; }
 }

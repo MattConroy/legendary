@@ -132,8 +132,11 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
     text-decoration: none;
 }
 
+.app-nav__item:hover { text-decoration: none; }
+
 .app-nav__item.active {
     color: #fff;
+    font-weight: 800;
     background: rgba(230, 36, 41, 0.15);
 }
 
@@ -313,19 +316,30 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .team-icon { width: 18px; height: 18px; flex: 0 0 auto; display: block; }
 .tag__meta { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
 
-/* Heroes: one per row — name, team icon, team name */
+/* Heroes: one per row — name, then a fixed icon column, then the team name.
+   The fixed team column keeps the icon at a consistent x regardless of how long
+   the hero or team name is; both name and team wrap rather than shove the icon. */
 .hero-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .hero-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 20px 7.5rem;
     align-items: center;
-    gap: 10px;
+    column-gap: 10px;
     padding: 10px 2px;
     border-bottom: 1px solid var(--border);
 }
 .hero-row:last-child { border-bottom: none; }
-.hero-row__name { color: #fff; font-weight: 700; flex: 1 1 auto; min-width: 0; }
+.hero-row__name { color: #fff; font-weight: 700; min-width: 0; overflow-wrap: anywhere; line-height: 1.25; }
 .hero-row .team-icon { width: 20px; height: 20px; }
-.hero-row__team { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; min-width: 92px; text-align: right; }
+.hero-row__team {
+    font-size: 0.72rem; color: var(--muted); text-transform: uppercase;
+    letter-spacing: 0.5px; line-height: 1.2; overflow-wrap: anywhere;
+}
+
+@media (max-width: 360px) {
+    /* Narrow phones: drop the team label to a tighter column, icon still aligned. */
+    .hero-row { grid-template-columns: minmax(0, 1fr) 20px 5.5rem; }
+}
 .tag--required {
     border-color: var(--gold);
     background: rgba(240, 180, 41, 0.12);

@@ -48,7 +48,7 @@ public static class CoreSet
             new()
             {
                 Id = "core:midtown-bank", SetId = Id, Name = "Midtown Bank Robbery",
-                Setup = new SchemeSetup { Twists = 8, Bystanders = 12, Notes = ["The Villain Deck holds 12 Bystanders."] },
+                Setup = new SchemeSetup { Twists = 8, Bystanders = 12 },
             },
             new()
             {
@@ -58,17 +58,17 @@ public static class CoreSet
             new()
             {
                 Id = "core:dark-dimension", SetId = Id, Name = "Portals to the Dark Dimension",
-                Setup = new SchemeSetup { Twists = 7, Notes = ["Uses 7 Scheme Twists (Dark Portals)."] },
+                Setup = new SchemeSetup { Twists = 7 },
             },
             new()
             {
                 Id = "core:killbots", SetId = Id, Name = "Replace Earth's Leaders with Killbots",
-                Setup = new SchemeSetup { Twists = 5, Bystanders = 18, Notes = ["Uses 5 Scheme Twists; 18 Bystanders act as Killbot Villains."] },
+                Setup = new SchemeSetup { Twists = 5, Bystanders = 18, Notes = ["Bystanders act as Killbot Villains."] },
             },
             new()
             {
                 Id = "core:secret-invasion", SetId = Id, Name = "Secret Invasion of the Skrull Shapeshifters",
-                Setup = new SchemeSetup { Twists = 8, Heroes = 6, RequiredVillainGroupId = "core:skrulls", Notes = ["Uses 6 Heroes; the Skrulls Villain Group is required."] },
+                Setup = new SchemeSetup { Twists = 8, Heroes = 6, RequiredVillainGroupId = "core:skrulls", Notes = ["Play with 6 Heroes."] },
             },
             new()
             {
@@ -78,13 +78,12 @@ public static class CoreSet
                     Twists = 8,
                     TwistsByPlayers = new Dictionary<int, int> { [4] = 5, [5] = 5 },
                     HeroesByPlayers = new Dictionary<int, int> { [2] = 4 },
-                    Notes = ["Twists: 8 (2–3 players) / 5 (4–5 players); only 4 Heroes at 2 players."],
                 },
             },
             new()
             {
                 Id = "core:cosmic-cube", SetId = Id, Name = "Unleash the Power of the Cosmic Cube",
-                Setup = new SchemeSetup { Twists = 8, Notes = ["Standard 8-Twist Scheme."] },
+                Setup = new SchemeSetup { Twists = 8 },
             },
         ],
 

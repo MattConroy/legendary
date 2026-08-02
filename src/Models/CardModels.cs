@@ -43,8 +43,11 @@ public sealed record Mastermind : GameCard
     /// </summary>
     public string? AlwaysLeadsGroupId { get; init; }
 
-    /// <summary>Optional flavour tagline.</summary>
+    /// <summary>Optional flavour tagline (not currently shown).</summary>
     public string? Tagline { get; init; }
+
+    /// <summary>Extra setup steps this Mastermind imposes (shown on its card).</summary>
+    public IReadOnlyList<string> Notes { get; init; } = [];
 }
 
 public sealed record Scheme : GameCard

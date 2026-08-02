@@ -30,10 +30,10 @@ public static class FantasticFour
 
         Schemes =
         [
-            new() { Id = "ff:cosmic-rays", SetId = Id, Name = "Bathe the Earth in Cosmic Rays", Setup = new SchemeSetup { Twists = 6, Notes = ["Uses 6 Scheme Twists."] } },
-            new() { Id = "ff:melted-glaciers", SetId = Id, Name = "Flood the Planet with Melted Glaciers", Setup = new SchemeSetup { Twists = 8, Notes = ["Standard 8-Twist Scheme."] } },
-            new() { Id = "ff:force-field", SetId = Id, Name = "Invincible Force Field", Setup = new SchemeSetup { Twists = 7, Notes = ["Uses 7 Scheme Twists (Force Fields)."] } },
-            new() { Id = "ff:negative-zone", SetId = Id, Name = "Pull Reality Into the Negative Zone", Setup = new SchemeSetup { Twists = 8, Notes = ["Standard 8-Twist Scheme."] } },
+            new() { Id = "ff:cosmic-rays", SetId = Id, Name = "Bathe the Earth in Cosmic Rays", Setup = new SchemeSetup { Twists = 6 } },
+            new() { Id = "ff:melted-glaciers", SetId = Id, Name = "Flood the Planet with Melted Glaciers", Setup = new SchemeSetup { Twists = 8 } },
+            new() { Id = "ff:force-field", SetId = Id, Name = "Invincible Force Field", Setup = new SchemeSetup { Twists = 7 } },
+            new() { Id = "ff:negative-zone", SetId = Id, Name = "Pull Reality Into the Negative Zone", Setup = new SchemeSetup { Twists = 8 } },
         ],
 
         VillainGroups =

@@ -41,14 +41,14 @@ public static class DarkCity
         // count changes). Card ability wording is not reproduced.
         Schemes =
         [
-            new() { Id = "dc:capture-baby-hope", SetId = Id, Name = "Capture Baby Hope", Setup = new SchemeSetup { Twists = 8, Notes = ["Uses a Baby Hope token by the Mastermind."] } },
-            new() { Id = "dc:detonate-helicarrier", SetId = Id, Name = "Detonate the Helicarrier", Setup = new SchemeSetup { Twists = 8, Heroes = 6, Notes = ["Uses 6 Heroes in the Hero Deck."] } },
-            new() { Id = "dc:earthquake-generator", SetId = Id, Name = "Massive Earthquake Generator", Setup = new SchemeSetup { Twists = 8, Notes = ["Standard 8-Twist Scheme."] } },
-            new() { Id = "dc:organized-crimewave", SetId = Id, Name = "Organized Crime Wave", Setup = new SchemeSetup { Twists = 8, RequiredHenchmenGroupId = "dc:maggia-goons", Notes = ["Maggia Goons must be one of the Henchman Groups."] } },
-            new() { Id = "dc:save-humanity", SetId = Id, Name = "Save Humanity", Setup = new SchemeSetup { Twists = 8, Notes = ["24 Bystanders go in the Hero Deck (12 in solo)."] } },
+            new() { Id = "dc:capture-baby-hope", SetId = Id, Name = "Capture Baby Hope", Setup = new SchemeSetup { Twists = 8, Notes = ["Place a Baby Hope token by the Mastermind."] } },
+            new() { Id = "dc:detonate-helicarrier", SetId = Id, Name = "Detonate the Helicarrier", Setup = new SchemeSetup { Twists = 8, Heroes = 6, Notes = ["Play with 6 Heroes."] } },
+            new() { Id = "dc:earthquake-generator", SetId = Id, Name = "Massive Earthquake Generator", Setup = new SchemeSetup { Twists = 8 } },
+            new() { Id = "dc:organized-crimewave", SetId = Id, Name = "Organized Crime Wave", Setup = new SchemeSetup { Twists = 8, RequiredHenchmenGroupId = "dc:maggia-goons" } },
+            new() { Id = "dc:save-humanity", SetId = Id, Name = "Save Humanity", Setup = new SchemeSetup { Twists = 8, Notes = ["Put 24 Bystanders in the Hero Deck (12 in solo)."] } },
             new() { Id = "dc:steal-plutonium", SetId = Id, Name = "Steal the Weaponized Plutonium", Setup = new SchemeSetup { Twists = 8, VillainGroupDelta = 1, Notes = ["Adds an extra Villain Group."] } },
-            new() { Id = "dc:transform-demons", SetId = Id, Name = "Transform Citizens into Demons", Setup = new SchemeSetup { Twists = 8, Bystanders = 0, Notes = ["No Bystanders in the Villain Deck."] } },
-            new() { Id = "dc:xcutioners-song", SetId = Id, Name = "X-Cutioner's Song", Setup = new SchemeSetup { Twists = 8, HeroDelta = 1, Bystanders = 0, Notes = ["Adds an extra Hero to the Villain Deck; no Bystanders."] } },
+            new() { Id = "dc:transform-demons", SetId = Id, Name = "Transform Citizens into Demons", Setup = new SchemeSetup { Twists = 8, Bystanders = 0 } },
+            new() { Id = "dc:xcutioners-song", SetId = Id, Name = "X-Cutioner's Song", Setup = new SchemeSetup { Twists = 8, HeroDelta = 1, Bystanders = 0, Notes = ["Adds an extra Hero (its cards go in the Villain Deck)."] } },
         ],
 
         VillainGroups =

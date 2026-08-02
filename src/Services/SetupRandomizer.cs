@@ -201,10 +201,6 @@ public sealed class SetupRandomizer
             .Concat(RequiredOf<Henchmen>(mastermind, scheme, pool).Select(c => c.Id))
             .ToHashSet();
 
-        // The required groups are conveyed by the Required badge, so they are not
-        // repeated in the notes.
-        var notes = new List<string>(scheme.Setup.Notes);
-
         return new GameSetup
         {
             Players = players,
@@ -219,7 +215,6 @@ public sealed class SetupRandomizer
             EffectiveHenchmenCount = counts.Henchmen,
             EffectiveTwists = ResolveTwists(scheme.Setup, players),
             EffectiveBystanders = scheme.Setup.Bystanders ?? rule.Bystanders,
-            Notes = notes,
         };
     }
 
