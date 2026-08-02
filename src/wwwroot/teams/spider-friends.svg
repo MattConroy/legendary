@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Spider-Friends">
-  <circle cx="12" cy="12" r="10.5" fill="#d62828" stroke="#2f6fed" stroke-width="2"/>
+  <circle cx="12" cy="12" r="10.5" fill="#d62828" stroke="#111318" stroke-width="2"/>
   <g stroke="#ffffff" stroke-width="1.4" fill="none" stroke-linecap="round">
     <circle cx="12" cy="12" r="2.1" fill="#ffffff" stroke="none"/>
     <line x1="12" y1="9.9" x2="12" y2="6"/><line x1="12" y1="14.1" x2="12" y2="18"/>
