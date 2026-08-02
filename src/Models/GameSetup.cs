@@ -26,6 +26,12 @@ public sealed record GameSetup
     public required int EffectiveVillainGroupCount { get; init; }
     public required int EffectiveHenchmenCount { get; init; }
 
+    /// <summary>Scheme Twists to shuffle in, after the Scheme's own rules.</summary>
+    public required int EffectiveTwists { get; init; }
+
+    /// <summary>Bystanders in the Villain Deck, after the Scheme's own rules.</summary>
+    public required int EffectiveBystanders { get; init; }
+
     /// <summary>Human-readable setup notes (Scheme special rules, strikes, bystanders…).</summary>
     public required IReadOnlyList<string> Notes { get; init; }
 }

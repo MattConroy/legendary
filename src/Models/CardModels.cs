@@ -59,18 +59,42 @@ public sealed record Scheme : GameCard
 }
 
 /// <summary>
-/// Adjustments a Scheme makes to the base per-player setup, plus any human-readable
-/// setup notes ("Add extra Bystanders", etc.) that don't map to a randomised category.
+/// How a Scheme changes the standard setup, taken from its card. Only factual,
+/// numeric/structural setup data is modelled here (counts, which groups are forced) —
+/// not the card's ability wording.
 /// </summary>
 public sealed record SchemeSetup
 {
     public static readonly SchemeSetup None = new();
 
+    /// <summary>Scheme Twists in a standard game (default 8).</summary>
+    public int Twists { get; init; } = 8;
+
+    /// <summary>Per-player-count overrides for Twists (e.g. Super Hero Civil War).</summary>
+    public IReadOnlyDictionary<int, int>? TwistsByPlayers { get; init; }
+
+    /// <summary>Relative change to the number of Heroes in the Hero Deck.</summary>
     public int HeroDelta { get; init; }
+
+    /// <summary>Absolute Hero count that overrides the per-player table (e.g. 6).</summary>
+    public int? Heroes { get; init; }
+
+    /// <summary>Per-player-count absolute Hero overrides (e.g. 4 Heroes at 2 players).</summary>
+    public IReadOnlyDictionary<int, int>? HeroesByPlayers { get; init; }
+
     public int VillainGroupDelta { get; init; }
     public int HenchmenDelta { get; init; }
 
-    /// <summary>Notes surfaced to the player (extra twists, bystanders, strikes, etc.).</summary>
+    /// <summary>A Villain Group this Scheme forces into the setup (marked Required).</summary>
+    public string? RequiredVillainGroupId { get; init; }
+
+    /// <summary>A Henchman Group this Scheme forces into the setup (marked Required).</summary>
+    public string? RequiredHenchmenGroupId { get; init; }
+
+    /// <summary>Bystanders in the Villain Deck when the Scheme overrides the default.</summary>
+    public int? Bystanders { get; init; }
+
+    /// <summary>Short factual setup notes surfaced to the player.</summary>
     public IReadOnlyList<string> Notes { get; init; } = [];
 }
 

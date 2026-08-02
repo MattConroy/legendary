@@ -310,7 +310,7 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
     font-weight: 600;
 }
 .tag__name { color: #fff; }
-.tag__team { font-size: 1rem; line-height: 1; }
+.team-icon { width: 18px; height: 18px; flex: 0 0 auto; display: block; }
 .tag__meta { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
 .tag--required {
     border-color: var(--gold);

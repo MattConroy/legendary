@@ -54,7 +54,7 @@
                 <div class="single">
                     <span class="single__name">@setup.Scheme.Card.Name</span>
                 </div>
-                <p class="card__meta">🌀 Shuffle <strong>@setup.Rule.SchemeTwists Scheme Twists</strong> into the Villain Deck <span class="muted">(standard game — solo &amp; some Schemes differ, see card)</span>.</p>
+                <p class="card__meta">🌀 Shuffle <strong>@setup.EffectiveTwists Scheme Twists</strong> into the Villain Deck.</p>
             </ResultCard>
 
             <ResultCard Title="Villain Groups" Icon="👹" Accent="villain"
@@ -72,7 +72,14 @@
                         </li>
                     }
                 </ul>
-                <p class="card__meta">👥 Also shuffle <strong>@setup.Rule.Bystanders Bystander@(setup.Rule.Bystanders == 1 ? "" : "s")</strong> into the Villain Deck.</p>
+                @if (setup.EffectiveBystanders > 0)
+                {
+                    <p class="card__meta">👥 Also shuffle <strong>@setup.EffectiveBystanders Bystander@(setup.EffectiveBystanders == 1 ? "" : "s")</strong> into the Villain Deck.</p>
+                }
+                else
+                {
+                    <p class="card__meta">👥 <strong>No Bystanders</strong> in the Villain Deck for this Scheme.</p>
+                }
             </ResultCard>
 
             <ResultCard Title="Henchmen" Icon="🗡️" Accent="henchmen"
@@ -100,7 +107,7 @@
                     {
                         var team = (h.Card as Hero)?.Team;
                         <li class="tag">
-                            <span class="tag__team" title="@team">@Teams.Icon(team)</span>
+                            <TeamIcon Team="@team" />
                             <span class="tag__name">@h.Card.Name</span>
                             @if (!string.IsNullOrEmpty(team))
                             {

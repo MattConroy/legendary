@@ -4,8 +4,9 @@ namespace Legendary.Companion.Services;
 
 /// <summary>
 /// Generates and rerolls Legendary game setups following the official setup rules.
-/// It is deliberately set-agnostic: it only reads the aggregated <see cref="CardPool"/>,
-/// so enabling or disabling an expansion changes the pool, never this code.
+/// It is deliberately set-agnostic: it only reads the aggregated <see cref="CardPool"/>
+/// and each Scheme's declared <see cref="SchemeSetup"/>, so enabling or disabling an
+/// expansion (or adding a new Scheme rule) changes data, never this code.
 /// </summary>
 public sealed class SetupRandomizer
 {
@@ -17,26 +18,27 @@ public sealed class SetupRandomizer
     public GameSetup Generate(int players, CardPool pool)
     {
         var rule = SetupTable.For(players);
-
         var mastermind = PickOne(pool.Masterminds);
         var scheme = PickOne(pool.Schemes);
 
-        var counts = EffectiveCounts(rule, scheme, pool);
+        var counts = EffectiveCounts(rule, scheme, players, mastermind, pool);
 
-        var villains = DrawGroups(pool.VillainGroups, counts.Villains, mastermind, pool, required: []);
-        var henchmen = DrawGroups(pool.Henchmen, counts.Henchmen, mastermind, pool, required: []);
-        var heroes = Draw(pool.Heroes, counts.Heroes, exclude: new HashSet<string>());
+        var villains = DrawGroups(pool.VillainGroups, counts.Villains, RequiredOf<VillainGroup>(mastermind, scheme, pool));
+        var henchmen = DrawGroups(pool.Henchmen, counts.Henchmen, RequiredOf<Henchmen>(mastermind, scheme, pool));
+        var heroes = Draw(pool.Heroes, counts.Heroes, new HashSet<string>());
 
         return Build(players, rule, mastermind, scheme, villains, henchmen, heroes, pool);
     }
 
     /// <summary>
     /// Reroll a single category, keeping every other category stable, then
-    /// re-honour the Mastermind's "Always Leads" required group.
+    /// re-honour every required group (Mastermind's "Always Leads" and any group
+    /// a Scheme forces) and reconcile counts the new Mastermind/Scheme may imply.
     /// </summary>
     public GameSetup Reroll(GameSetup current, CardCategory category, CardPool pool)
     {
         var rule = current.Rule;
+        var players = current.Players;
 
         var mastermind = current.Mastermind.Card as Mastermind ?? PickOne(pool.Masterminds);
         var scheme = current.Scheme.Card as Scheme ?? PickOne(pool.Schemes);
@@ -49,72 +51,92 @@ public sealed class SetupRandomizer
             case CardCategory.Mastermind:
                 mastermind = PickOneDifferent(pool.Masterminds, mastermind);
                 break;
-
             case CardCategory.Scheme:
                 scheme = PickOneDifferent(pool.Schemes, scheme);
                 break;
-
             case CardCategory.VillainGroup:
-            {
-                var counts = EffectiveCounts(rule, scheme, pool);
-                villains = DrawGroups(pool.VillainGroups, counts.Villains, mastermind, pool, required: []);
+                villains = DrawGroups(pool.VillainGroups,
+                    EffectiveCounts(rule, scheme, players, mastermind, pool).Villains,
+                    RequiredOf<VillainGroup>(mastermind, scheme, pool));
                 break;
-            }
-
             case CardCategory.Henchmen:
-            {
-                var counts = EffectiveCounts(rule, scheme, pool);
-                henchmen = DrawGroups(pool.Henchmen, counts.Henchmen, mastermind, pool, required: []);
+                henchmen = DrawGroups(pool.Henchmen,
+                    EffectiveCounts(rule, scheme, players, mastermind, pool).Henchmen,
+                    RequiredOf<Henchmen>(mastermind, scheme, pool));
                 break;
-            }
-
             case CardCategory.Hero:
-            {
-                var counts = EffectiveCounts(rule, scheme, pool);
-                heroes = Draw(pool.Heroes, counts.Heroes, exclude: new HashSet<string>());
+                heroes = Draw(pool.Heroes,
+                    EffectiveCounts(rule, scheme, players, mastermind, pool).Heroes,
+                    new HashSet<string>());
                 break;
-            }
         }
 
-        // A Mastermind or Scheme reroll can change the target counts and/or the
-        // required group, so reconcile the group selections before rebuilding.
-        var effective = EffectiveCounts(rule, scheme, pool);
-        villains = Reconcile(villains, pool.VillainGroups, effective.Villains, RequiredGroupIn(mastermind, CardCategory.VillainGroup, pool) as VillainGroup);
-        henchmen = Reconcile(henchmen, pool.Henchmen, effective.Henchmen, RequiredGroupIn(mastermind, CardCategory.Henchmen, pool) as Henchmen);
-        heroes = ReconcileSimple(heroes, pool.Heroes, effective.Heroes);
+        // A Mastermind or Scheme reroll can change the target counts and/or which
+        // groups are required, so reconcile the group selections before rebuilding.
+        var counts = EffectiveCounts(rule, scheme, players, mastermind, pool);
+        villains = Reconcile(villains, pool.VillainGroups, counts.Villains, RequiredOf<VillainGroup>(mastermind, scheme, pool));
+        henchmen = Reconcile(henchmen, pool.Henchmen, counts.Henchmen, RequiredOf<Henchmen>(mastermind, scheme, pool));
+        heroes = Reconcile(heroes, pool.Heroes, counts.Heroes, []);
 
-        return Build(current.Players, rule, mastermind, scheme, villains, henchmen, heroes, pool);
+        return Build(players, rule, mastermind, scheme, villains, henchmen, heroes, pool);
     }
 
-    // ----- effective-count computation (base table + scheme modifiers) -----
+    // ----- effective-count computation (base table + scheme rules) -----
 
     private readonly record struct Counts(int Heroes, int Villains, int Henchmen);
 
-    private static Counts EffectiveCounts(SetupRule rule, Scheme scheme, CardPool pool)
+    private static Counts EffectiveCounts(SetupRule rule, Scheme scheme, int players, Mastermind mastermind, CardPool pool)
     {
-        var setup = scheme.Setup;
-        var heroes = Clamp(rule.Heroes + setup.HeroDelta, 1, pool.Heroes.Count);
-        var villains = Clamp(rule.VillainGroups + setup.VillainGroupDelta, 1, pool.VillainGroups.Count);
-        var henchmen = Clamp(rule.Henchmen + setup.HenchmenDelta, 1, pool.Henchmen.Count);
+        var s = scheme.Setup;
+
+        var heroes = Clamp(ResolveHeroes(rule, s, players), 1, pool.Heroes.Count);
+
+        // A category must have room for every group forced into it.
+        var reqVillains = RequiredOf<VillainGroup>(mastermind, scheme, pool).Count;
+        var reqHenchmen = RequiredOf<Henchmen>(mastermind, scheme, pool).Count;
+
+        var villains = Clamp(Math.Max(rule.VillainGroups + s.VillainGroupDelta, reqVillains), 1, pool.VillainGroups.Count);
+        var henchmen = Clamp(Math.Max(rule.Henchmen + s.HenchmenDelta, reqHenchmen), 1, pool.Henchmen.Count);
         return new Counts(heroes, villains, henchmen);
+    }
+
+    private static int ResolveHeroes(SetupRule rule, SchemeSetup s, int players)
+    {
+        if (s.HeroesByPlayers is { } byPlayers && byPlayers.TryGetValue(players, out var v)) return v;
+        if (s.Heroes is { } absolute) return absolute;
+        return rule.Heroes + s.HeroDelta;
+    }
+
+    private static int ResolveTwists(SchemeSetup s, int players) =>
+        s.TwistsByPlayers is { } byPlayers && byPlayers.TryGetValue(players, out var v) ? v : s.Twists;
+
+    // ----- required-group resolution (Mastermind "Always Leads" + Scheme-forced) -----
+
+    private static List<T> RequiredOf<T>(Mastermind mastermind, Scheme scheme, CardPool pool) where T : GameCard
+    {
+        var category = CategoryOf<T>();
+        var ids = new List<string?> { mastermind.AlwaysLeadsGroupId };
+        if (category == CardCategory.VillainGroup) ids.Add(scheme.Setup.RequiredVillainGroupId);
+        if (category == CardCategory.Henchmen) ids.Add(scheme.Setup.RequiredHenchmenGroupId);
+
+        var result = new List<T>();
+        foreach (var id in ids)
+        {
+            if (pool.FindById(id) is T card && result.All(c => c.Id != card.Id))
+                result.Add(card);
+        }
+        return result;
     }
 
     // ----- drawing helpers -----
 
-    private List<T> DrawGroups<T>(IReadOnlyList<T> source, int count, Mastermind mastermind, CardPool pool, IReadOnlyCollection<T> required)
-        where T : GameCard
+    private List<T> DrawGroups<T>(IReadOnlyList<T> source, int count, IReadOnlyCollection<T> required) where T : GameCard
     {
-        var forced = RequiredGroupIn(mastermind, CategoryOf<T>(), pool) as T;
-        var seed = new List<T>();
-        if (forced is not null && source.Any(c => c.Id == forced.Id))
-            seed.Add(forced);
-        seed.AddRange(required.Where(r => seed.All(s => s.Id != r.Id)));
-
+        var seed = required.Where(r => source.Any(c => c.Id == r.Id)).ToList();
         var remaining = count - seed.Count;
         if (remaining > 0)
-            seed.AddRange(Draw(source, remaining, exclude: seed.Select(s => s.Id).ToHashSet()));
-
-        return seed.Take(count).ToList();
+            seed.AddRange(Draw(source, remaining, seed.Select(s => s.Id).ToHashSet()));
+        return seed.Take(Math.Max(count, seed.Count)).ToList();
     }
 
     private List<T> Draw<T>(IReadOnlyList<T> source, int count, ISet<string> exclude) where T : GameCard
@@ -125,69 +147,38 @@ public sealed class SetupRandomizer
     }
 
     /// <summary>
-    /// Grow/shrink a group selection to the target count and guarantee the
-    /// required (Always-Leads) group is present, without disturbing more of the
-    /// existing picks than necessary.
+    /// Grow/shrink a selection to the target count and guarantee every required
+    /// group is present, disturbing as few existing picks as possible.
     /// </summary>
-    private List<T> Reconcile<T>(List<T> current, IReadOnlyList<T> source, int target, T? requiredGroup) where T : GameCard
+    private List<T> Reconcile<T>(List<T> current, IReadOnlyList<T> source, int target, IReadOnlyCollection<T> required) where T : GameCard
     {
         // Drop picks no longer in the pool (e.g. a set was disabled).
         var valid = current.Where(c => source.Any(s => s.Id == c.Id)).ToList();
 
-        // Ensure required group present.
-        if (requiredGroup is not null && valid.All(c => c.Id != requiredGroup.Id))
+        // Ensure every required group is present.
+        foreach (var req in required.Where(r => source.Any(s => s.Id == r.Id)))
         {
-            if (valid.Count >= target && valid.Count > 0)
-            {
-                // Replace a non-required existing pick to make room.
-                var removable = valid.FindLastIndex(_ => true);
-                valid[removable] = requiredGroup;
-            }
+            if (valid.Any(c => c.Id == req.Id)) continue;
+            var replaceable = valid.FindLastIndex(c => required.All(r => r.Id != c.Id));
+            if (valid.Count >= target && replaceable >= 0)
+                valid[replaceable] = req;
             else
-            {
-                valid.Add(requiredGroup);
-            }
+                valid.Add(req);
         }
 
         // Grow to target.
         if (valid.Count < target)
-        {
-            var exclude = valid.Select(c => c.Id).ToHashSet();
-            valid.AddRange(Draw(source, target - valid.Count, exclude));
-        }
+            valid.AddRange(Draw(source, target - valid.Count, valid.Select(c => c.Id).ToHashSet()));
 
-        // Shrink to target, but never drop the required group.
+        // Shrink to target, never dropping a required group.
         while (valid.Count > target)
         {
-            var idx = valid.FindLastIndex(c => requiredGroup is null || c.Id != requiredGroup.Id);
+            var idx = valid.FindLastIndex(c => required.All(r => r.Id != c.Id));
             if (idx < 0) break;
             valid.RemoveAt(idx);
         }
 
         return valid;
-    }
-
-    private List<T> ReconcileSimple<T>(List<T> current, IReadOnlyList<T> source, int target) where T : GameCard
-    {
-        var valid = current.Where(c => source.Any(s => s.Id == c.Id)).ToList();
-        if (valid.Count < target)
-        {
-            var exclude = valid.Select(c => c.Id).ToHashSet();
-            valid.AddRange(Draw(source, target - valid.Count, exclude));
-        }
-        else if (valid.Count > target)
-        {
-            valid = valid.Take(target).ToList();
-        }
-        return valid;
-    }
-
-    // ----- required-group resolution -----
-
-    private static GameCard? RequiredGroupIn(Mastermind mastermind, CardCategory category, CardPool pool)
-    {
-        var group = pool.FindById(mastermind.AlwaysLeadsGroupId);
-        return group is not null && group.Category == category ? group : null;
     }
 
     private static CardCategory CategoryOf<T>() where T : GameCard => typeof(T) switch
@@ -204,11 +195,14 @@ public sealed class SetupRandomizer
         int players, SetupRule rule, Mastermind mastermind, Scheme scheme,
         List<VillainGroup> villains, List<Henchmen> henchmen, List<Hero> heroes, CardPool pool)
     {
-        var requiredId = mastermind.AlwaysLeadsGroupId;
-        var counts = EffectiveCounts(rule, scheme, pool);
+        var counts = EffectiveCounts(rule, scheme, players, mastermind, pool);
 
-        // The "Always Leads" group is already conveyed by the Required badge, so it
-        // is not repeated in the notes or on the Mastermind card.
+        var requiredIds = RequiredOf<VillainGroup>(mastermind, scheme, pool).Select(c => c.Id)
+            .Concat(RequiredOf<Henchmen>(mastermind, scheme, pool).Select(c => c.Id))
+            .ToHashSet();
+
+        // The required groups are conveyed by the Required badge, so they are not
+        // repeated in the notes.
         var notes = new List<string>(scheme.Setup.Notes);
 
         return new GameSetup
@@ -217,12 +211,14 @@ public sealed class SetupRandomizer
             Rule = rule,
             Mastermind = new SetupSelection(mastermind),
             Scheme = new SetupSelection(scheme),
-            VillainGroups = villains.Select(v => new SetupSelection(v, v.Id == requiredId)).ToList(),
-            Henchmen = henchmen.Select(h => new SetupSelection(h, h.Id == requiredId)).ToList(),
+            VillainGroups = villains.Select(v => new SetupSelection(v, requiredIds.Contains(v.Id))).ToList(),
+            Henchmen = henchmen.Select(h => new SetupSelection(h, requiredIds.Contains(h.Id))).ToList(),
             Heroes = heroes.Select(h => new SetupSelection(h)).ToList(),
             EffectiveHeroCount = counts.Heroes,
             EffectiveVillainGroupCount = counts.Villains,
             EffectiveHenchmenCount = counts.Henchmen,
+            EffectiveTwists = ResolveTwists(scheme.Setup, players),
+            EffectiveBystanders = scheme.Setup.Bystanders ?? rule.Bystanders,
             Notes = notes,
         };
     }

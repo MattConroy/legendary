@@ -18,13 +18,6 @@ public static class CoreSet
     private const string Hydra = "core:hydra";
     private const string DoombotLegion = "core:doombot-legion";
 
-    // Every base Scheme has special setup/twist rules printed on its card. We don't
-    // reproduce that text (see About → "Why no full card text"), so each simply
-    // reminds the player to read the card. No count deltas are asserted.
-    private static readonly SchemeSetup Special = new()
-    {
-        Notes = ["This Scheme has special setup and Twist rules — follow the text on the Scheme card."],
-    };
 
     public static readonly CardSet Set = new()
     {
@@ -43,16 +36,54 @@ public static class CoreSet
 
         Schemes =
         [
-            // Notes deliberately point players to the Scheme card rather than
-            // restating its exact setup/twist text — see the About page for why.
-            new() { Id = "core:legacy-virus", SetId = Id, Name = "The Legacy Virus", Setup = Special },
-            new() { Id = "core:midtown-bank", SetId = Id, Name = "Midtown Bank Robbery", Setup = Special },
-            new() { Id = "core:negative-zone", SetId = Id, Name = "Negative Zone Prison Breakout", Setup = Special },
-            new() { Id = "core:dark-dimension", SetId = Id, Name = "Portals to the Dark Dimension", Setup = Special },
-            new() { Id = "core:killbots", SetId = Id, Name = "Replace Earth's Leaders with Killbots", Setup = Special },
-            new() { Id = "core:secret-invasion", SetId = Id, Name = "Secret Invasion of the Skrull Shapeshifters", Setup = Special },
-            new() { Id = "core:civil-war", SetId = Id, Name = "Super Hero Civil War", Setup = Special },
-            new() { Id = "core:cosmic-cube", SetId = Id, Name = "Unleash the Power of the Cosmic Cube", Setup = Special },
+            // Setup facts (Twist counts, forced groups, count changes) taken from the
+            // Scheme cards. Card ability wording is NOT reproduced — see About.
+            new()
+            {
+                Id = "core:legacy-virus", SetId = Id, Name = "The Legacy Virus",
+                Setup = new SchemeSetup { Twists = 8, Notes = ["Runs on the Wound stack (6 Wounds per player)."] },
+            },
+            new()
+            {
+                Id = "core:midtown-bank", SetId = Id, Name = "Midtown Bank Robbery",
+                Setup = new SchemeSetup { Twists = 8, Bystanders = 12, Notes = ["The Villain Deck holds 12 Bystanders."] },
+            },
+            new()
+            {
+                Id = "core:negative-zone", SetId = Id, Name = "Negative Zone Prison Breakout",
+                Setup = new SchemeSetup { Twists = 8, HenchmenDelta = 1, Notes = ["Adds an extra Henchman Group."] },
+            },
+            new()
+            {
+                Id = "core:dark-dimension", SetId = Id, Name = "Portals to the Dark Dimension",
+                Setup = new SchemeSetup { Twists = 7, Notes = ["Uses 7 Scheme Twists (Dark Portals)."] },
+            },
+            new()
+            {
+                Id = "core:killbots", SetId = Id, Name = "Replace Earth's Leaders with Killbots",
+                Setup = new SchemeSetup { Twists = 5, Bystanders = 18, Notes = ["Uses 5 Scheme Twists; 18 Bystanders act as Killbot Villains."] },
+            },
+            new()
+            {
+                Id = "core:secret-invasion", SetId = Id, Name = "Secret Invasion of the Skrull Shapeshifters",
+                Setup = new SchemeSetup { Twists = 8, Heroes = 6, RequiredVillainGroupId = "core:skrulls", Notes = ["Uses 6 Heroes; the Skrulls Villain Group is required."] },
+            },
+            new()
+            {
+                Id = "core:civil-war", SetId = Id, Name = "Super Hero Civil War",
+                Setup = new SchemeSetup
+                {
+                    Twists = 8,
+                    TwistsByPlayers = new Dictionary<int, int> { [4] = 5, [5] = 5 },
+                    HeroesByPlayers = new Dictionary<int, int> { [2] = 4 },
+                    Notes = ["Twists: 8 (2–3 players) / 5 (4–5 players); only 4 Heroes at 2 players."],
+                },
+            },
+            new()
+            {
+                Id = "core:cosmic-cube", SetId = Id, Name = "Unleash the Power of the Cosmic Cube",
+                Setup = new SchemeSetup { Twists = 8, Notes = ["Standard 8-Twist Scheme."] },
+            },
         ],
 
         VillainGroups =
@@ -78,7 +109,7 @@ public static class CoreSet
             new() { Id = "core:black-widow", SetId = Id, Name = "Black Widow", Team = "Avengers" },
             new() { Id = "core:captain-america", SetId = Id, Name = "Captain America", Team = "Avengers" },
             new() { Id = "core:cyclops", SetId = Id, Name = "Cyclops", Team = "X-Men" },
-            new() { Id = "core:deadpool", SetId = Id, Name = "Deadpool", Team = "X-Force" },
+            new() { Id = "core:deadpool", SetId = Id, Name = "Deadpool", Team = "Unaffiliated" },
             new() { Id = "core:emma-frost", SetId = Id, Name = "Emma Frost", Team = "X-Men" },
             new() { Id = "core:gambit", SetId = Id, Name = "Gambit", Team = "X-Men" },
             new() { Id = "core:hawkeye", SetId = Id, Name = "Hawkeye", Team = "Avengers" },

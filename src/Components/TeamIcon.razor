@@ -1,0 +1,55 @@
+@* Small original vector badges for hero teams. These are simple monogram/shape
+   glyphs — deliberately NOT the trademarked team logos — so heroes are easy to
+   tell apart (e.g. the X-Men vs. X-Force Wolverine). *@
+
+@((MarkupString)Svg)
+
+@code {
+    [Parameter] public string? Team { get; set; }
+
+    private string Label => string.IsNullOrWhiteSpace(Team) ? "Unaffiliated" : Team!;
+
+    private string Svg =>
+        $"""
+        <svg class="team-icon" viewBox="0 0 24 24" role="img" aria-label="{Label}"><title>{Label}</title>
+        <circle cx="12" cy="12" r="11" fill="{Color}"/>{Inner}</svg>
+        """;
+
+    private string Color => Team switch
+    {
+        "Avengers" => "#e23636",
+        "X-Men" => "#2f6fed",
+        "X-Force" => "#3f4653",
+        "Marvel Knights" => "#7c3aed",
+        "S.H.I.E.L.D." => "#0ea5e9",
+        "Spider-Friends" => "#c0392b",
+        _ => "#6b7280",
+    };
+
+    private string Inner => Team switch
+    {
+        "Spider-Friends" =>
+            """
+            <g stroke="#fff" stroke-width="1.4" fill="none" stroke-linecap="round">
+            <circle cx="12" cy="12" r="2.3" fill="#fff" stroke="none"/>
+            <line x1="12" y1="9.7" x2="12" y2="5"/><line x1="12" y1="14.3" x2="12" y2="19"/>
+            <line x1="9.7" y1="12" x2="5" y2="12"/><line x1="14.3" y1="12" x2="19" y2="12"/>
+            <line x1="10.3" y1="10.3" x2="6.6" y2="6.6"/><line x1="13.7" y1="10.3" x2="17.4" y2="6.6"/>
+            <line x1="10.3" y1="13.7" x2="6.6" y2="17.4"/><line x1="13.7" y1="13.7" x2="17.4" y2="17.4"/></g>
+            """,
+        "Marvel Knights" =>
+            """<path d="M15.6 7.1a5.6 5.6 0 1 0 0 9.8 6.7 6.7 0 0 1 0-9.8Z" fill="#fff"/>""",
+        "S.H.I.E.L.D." =>
+            """<path d="M12 5.4 17 7v4.3c0 3-2.1 5-5 7.3-2.9-2.3-5-4.3-5-7.3V7Z" fill="#fff"/>""",
+        _ => $"""<text x="12" y="16.4" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff" font-family="Arial Black, Arial, sans-serif">{Glyph}</text>""",
+    };
+
+    private string Glyph => Team switch
+    {
+        "Avengers" => "A",
+        "X-Men" => "X",
+        "X-Force" => "X",
+        "Sample" => "S",
+        _ => "•",
+    };
+}

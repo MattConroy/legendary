@@ -19,11 +19,6 @@ public static class DarkCity
     private const string Marauders = "dc:marauders";
     private const string MLF = "dc:mutant-liberation-front";
 
-    private static readonly SchemeSetup Special = new()
-    {
-        Notes = ["This Scheme has special setup and Twist rules — follow the text on the Scheme card."],
-    };
-
     public static readonly CardSet Set = new()
     {
         Id = Id,
@@ -40,18 +35,18 @@ public static class DarkCity
             new() { Id = "dc:stryfe", SetId = Id, Name = "Stryfe", AlwaysLeadsGroupId = MLF, Tagline = "The Chaos-Bringer" },
         ],
 
-        // Each Scheme has special setup/twist rules on its card; we point players to
-        // the card rather than restating it, and assert no unverified count deltas.
+        // Setup facts taken from the Scheme cards (Twist counts, forced groups,
+        // count changes). Card ability wording is not reproduced.
         Schemes =
         [
-            new() { Id = "dc:capture-baby-hope", SetId = Id, Name = "Capture Baby Hope", Setup = Special },
-            new() { Id = "dc:detonate-helicarrier", SetId = Id, Name = "Detonate the Helicarrier", Setup = Special },
-            new() { Id = "dc:earthquake-generator", SetId = Id, Name = "Massive Earthquake Generator", Setup = Special },
-            new() { Id = "dc:organized-crimewave", SetId = Id, Name = "Organized Crimewave", Setup = Special },
-            new() { Id = "dc:save-humanity", SetId = Id, Name = "Save Humanity", Setup = Special },
-            new() { Id = "dc:steal-plutonium", SetId = Id, Name = "Steal the Weaponized Plutonium", Setup = Special },
-            new() { Id = "dc:transform-demons", SetId = Id, Name = "Transform Citizens into Demons", Setup = Special },
-            new() { Id = "dc:xcutioners-song", SetId = Id, Name = "X-Cutioner's Song", Setup = Special },
+            new() { Id = "dc:capture-baby-hope", SetId = Id, Name = "Capture Baby Hope", Setup = new SchemeSetup { Twists = 8, Notes = ["Uses a Baby Hope token by the Mastermind."] } },
+            new() { Id = "dc:detonate-helicarrier", SetId = Id, Name = "Detonate the Helicarrier", Setup = new SchemeSetup { Twists = 8, Heroes = 6, Notes = ["Uses 6 Heroes in the Hero Deck."] } },
+            new() { Id = "dc:earthquake-generator", SetId = Id, Name = "Massive Earthquake Generator", Setup = new SchemeSetup { Twists = 8, Notes = ["Standard 8-Twist Scheme."] } },
+            new() { Id = "dc:organized-crimewave", SetId = Id, Name = "Organized Crime Wave", Setup = new SchemeSetup { Twists = 8, RequiredHenchmenGroupId = "dc:maggia-goons", Notes = ["Maggia Goons must be one of the Henchman Groups."] } },
+            new() { Id = "dc:save-humanity", SetId = Id, Name = "Save Humanity", Setup = new SchemeSetup { Twists = 8, Notes = ["24 Bystanders go in the Hero Deck (12 in solo)."] } },
+            new() { Id = "dc:steal-plutonium", SetId = Id, Name = "Steal the Weaponized Plutonium", Setup = new SchemeSetup { Twists = 8, VillainGroupDelta = 1, Notes = ["Adds an extra Villain Group."] } },
+            new() { Id = "dc:transform-demons", SetId = Id, Name = "Transform Citizens into Demons", Setup = new SchemeSetup { Twists = 8, Bystanders = 0, Notes = ["No Bystanders in the Villain Deck."] } },
+            new() { Id = "dc:xcutioners-song", SetId = Id, Name = "X-Cutioner's Song", Setup = new SchemeSetup { Twists = 8, HeroDelta = 1, Bystanders = 0, Notes = ["Adds an extra Hero to the Villain Deck; no Bystanders."] } },
         ],
 
         VillainGroups =
