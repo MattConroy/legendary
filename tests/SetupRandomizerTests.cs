@@ -113,37 +113,27 @@ public class SetupRandomizerTests
     }
 
     [Fact]
-    public void Killbots_scheme_adds_a_henchman_group()
+    public void Scheme_setup_deltas_change_the_effective_counts()
     {
-        var pool = CorePool();
-        var r = Rng(2);
-        var setup = r.Generate(2, pool); // base henchmen for 2p = 1
+        // Uses a synthetic set so the mechanism is tested without asserting any
+        // real-game ruling (shipped Schemes currently declare no deltas).
+        const string s = "t";
+        var set = new CardSet
+        {
+            Id = s, Name = "Test",
+            Masterminds = [new() { Id = "t:m", SetId = s, Name = "M", AlwaysLeadsGroupId = "t:v1" }],
+            Schemes = [new() { Id = "t:s", SetId = s, Name = "S", Setup = new SchemeSetup { HenchmenDelta = 1, HeroDelta = 1 } }],
+            VillainGroups = [new() { Id = "t:v1", SetId = s, Name = "V1" }, new() { Id = "t:v2", SetId = s, Name = "V2" }, new() { Id = "t:v3", SetId = s, Name = "V3" }],
+            Henchmen = [new() { Id = "t:h1", SetId = s, Name = "H1" }, new() { Id = "t:h2", SetId = s, Name = "H2" }, new() { Id = "t:h3", SetId = s, Name = "H3" }],
+            Heroes = Enumerable.Range(1, 8).Select(i => new Hero { Id = $"t:hero{i}", SetId = s, Name = $"Hero {i}" }).ToList(),
+        };
+        var pool = CardPool.From([set]);
 
-        // Force the Killbots scheme via rerolls.
-        for (var i = 0; i < 500 && setup.Scheme.Card.Id != "core:killbots"; i++)
-            setup = r.Reroll(setup, CardCategory.Scheme, pool);
-
-        Assert.Equal("core:killbots", setup.Scheme.Card.Id);
-        Assert.Equal(2, setup.Henchmen.Count); // 1 base + 1 from scheme
+        var setup = new SetupRandomizer(new Random(1)).Generate(2, pool); // 2p base: 5 heroes, 1 henchman
+        Assert.Equal(6, setup.Heroes.Count);        // 5 + HeroDelta 1
+        Assert.Equal(2, setup.Henchmen.Count);      // 1 + HenchmenDelta 1
+        Assert.Equal(6, setup.EffectiveHeroCount);
         Assert.Equal(2, setup.EffectiveHenchmenCount);
-    }
-
-    [Fact]
-    public void Reroll_scheme_from_killbots_shrinks_henchmen_back()
-    {
-        var pool = CorePool();
-        var r = Rng(11);
-        var setup = r.Generate(2, pool);
-
-        for (var i = 0; i < 500 && setup.Scheme.Card.Id != "core:killbots"; i++)
-            setup = r.Reroll(setup, CardCategory.Scheme, pool);
-        Assert.Equal(2, setup.Henchmen.Count);
-
-        // Now move off killbots to a scheme with no henchman delta.
-        for (var i = 0; i < 500 && ((Scheme)setup.Scheme.Card).Setup.HenchmenDelta != 0; i++)
-            setup = r.Reroll(setup, CardCategory.Scheme, pool);
-
-        Assert.Equal(setup.EffectiveHenchmenCount, setup.Henchmen.Count);
     }
 
     [Fact]

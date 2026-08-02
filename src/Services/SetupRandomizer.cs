@@ -207,11 +207,9 @@ public sealed class SetupRandomizer
         var requiredId = mastermind.AlwaysLeadsGroupId;
         var counts = EffectiveCounts(rule, scheme, pool);
 
+        // The "Always Leads" group is already conveyed by the Required badge, so it
+        // is not repeated in the notes or on the Mastermind card.
         var notes = new List<string>(scheme.Setup.Notes);
-
-        var requiredGroup = pool.FindById(requiredId);
-        if (requiredGroup is not null)
-            notes.Insert(0, $"{mastermind.Name} always leads {requiredGroup.Name} — included and marked Required.");
 
         return new GameSetup
         {

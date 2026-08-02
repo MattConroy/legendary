@@ -19,8 +19,9 @@ public sealed record SetupRule
     public required int Bystanders { get; init; }
 
     /// <summary>
-    /// Typical number of Scheme Twists for this player count. The exact count is
-    /// always printed on the chosen Scheme card, so this is shown as a guide.
+    /// Number of Scheme Twists shuffled into the Villain Deck in a standard game.
+    /// Base and Dark City Schemes run an 8-Twist track (Twist 1 … 8 → "Evil Wins").
+    /// Solo play and a few Schemes vary this, so the Scheme card is authoritative.
     /// </summary>
     public required int SchemeTwists { get; init; }
 }
@@ -35,7 +36,7 @@ public static class SetupTable
 {
     public static readonly IReadOnlyDictionary<int, SetupRule> ByPlayers = new Dictionary<int, SetupRule>
     {
-        [1] = new() { Players = 1, Heroes = 3, VillainGroups = 1, Henchmen = 1, MasterStrikes = 3, Bystanders = 2, SchemeTwists = 6 },
+        [1] = new() { Players = 1, Heroes = 3, VillainGroups = 1, Henchmen = 1, MasterStrikes = 3, Bystanders = 2, SchemeTwists = 8 },
         [2] = new() { Players = 2, Heroes = 5, VillainGroups = 2, Henchmen = 1, MasterStrikes = 5, Bystanders = 2, SchemeTwists = 8 },
         [3] = new() { Players = 3, Heroes = 5, VillainGroups = 3, Henchmen = 1, MasterStrikes = 5, Bystanders = 8, SchemeTwists = 8 },
         [4] = new() { Players = 4, Heroes = 5, VillainGroups = 3, Henchmen = 2, MasterStrikes = 5, Bystanders = 8, SchemeTwists = 8 },

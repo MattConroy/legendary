@@ -19,6 +19,11 @@ public static class DarkCity
     private const string Marauders = "dc:marauders";
     private const string MLF = "dc:mutant-liberation-front";
 
+    private static readonly SchemeSetup Special = new()
+    {
+        Notes = ["This Scheme has special setup and Twist rules — follow the text on the Scheme card."],
+    };
+
     public static readonly CardSet Set = new()
     {
         Id = Id,
@@ -35,18 +40,18 @@ public static class DarkCity
             new() { Id = "dc:stryfe", SetId = Id, Name = "Stryfe", AlwaysLeadsGroupId = MLF, Tagline = "The Chaos-Bringer" },
         ],
 
-        // Each Scheme has special setup text on its card; counts that change a
-        // randomised category are modelled with deltas, everything else is a note.
+        // Each Scheme has special setup/twist rules on its card; we point players to
+        // the card rather than restating it, and assert no unverified count deltas.
         Schemes =
         [
-            new() { Id = "dc:capture-baby-hope", SetId = Id, Name = "Capture Baby Hope", Setup = new SchemeSetup { Notes = ["Set aside the Baby Hope Bystander and follow the Scheme's capture rules."] } },
-            new() { Id = "dc:detonate-helicarrier", SetId = Id, Name = "Detonate the Helicarrier", Setup = new SchemeSetup { Notes = ["Follow the Helicarrier countdown twists on the Scheme card."] } },
-            new() { Id = "dc:earthquake-generator", SetId = Id, Name = "Massive Earthquake Generator", Setup = new SchemeSetup { Notes = ["Build the layered Villain Deck exactly as the Scheme card describes."] } },
-            new() { Id = "dc:organized-crimewave", SetId = Id, Name = "Organized Crimewave", Setup = new SchemeSetup { Notes = ["A crime-heavy Villain Deck — resolve per the Scheme card."] } },
-            new() { Id = "dc:save-humanity", SetId = Id, Name = "Save Humanity", Setup = new SchemeSetup { Notes = ["Protect the Bystanders per the Scheme card."] } },
-            new() { Id = "dc:steal-plutonium", SetId = Id, Name = "Steal the Weaponized Plutonium", Setup = new SchemeSetup { Notes = ["Track the Plutonium Bystanders as directed by the Scheme card."] } },
-            new() { Id = "dc:transform-demons", SetId = Id, Name = "Transform Citizens into Demons", Setup = new SchemeSetup { Notes = ["Bystanders can turn into Demons — follow the Scheme card."] } },
-            new() { Id = "dc:xcutioners-song", SetId = Id, Name = "X-Cutioner's Song", Setup = new SchemeSetup { Notes = ["Heroes can be captured; resolve the capture twists on the Scheme card."] } },
+            new() { Id = "dc:capture-baby-hope", SetId = Id, Name = "Capture Baby Hope", Setup = Special },
+            new() { Id = "dc:detonate-helicarrier", SetId = Id, Name = "Detonate the Helicarrier", Setup = Special },
+            new() { Id = "dc:earthquake-generator", SetId = Id, Name = "Massive Earthquake Generator", Setup = Special },
+            new() { Id = "dc:organized-crimewave", SetId = Id, Name = "Organized Crimewave", Setup = Special },
+            new() { Id = "dc:save-humanity", SetId = Id, Name = "Save Humanity", Setup = Special },
+            new() { Id = "dc:steal-plutonium", SetId = Id, Name = "Steal the Weaponized Plutonium", Setup = Special },
+            new() { Id = "dc:transform-demons", SetId = Id, Name = "Transform Citizens into Demons", Setup = Special },
+            new() { Id = "dc:xcutioners-song", SetId = Id, Name = "X-Cutioner's Song", Setup = Special },
         ],
 
         VillainGroups =

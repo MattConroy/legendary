@@ -18,6 +18,14 @@ public static class CoreSet
     private const string Hydra = "core:hydra";
     private const string DoombotLegion = "core:doombot-legion";
 
+    // Every base Scheme has special setup/twist rules printed on its card. We don't
+    // reproduce that text (see About → "Why no full card text"), so each simply
+    // reminds the player to read the card. No count deltas are asserted.
+    private static readonly SchemeSetup Special = new()
+    {
+        Notes = ["This Scheme has special setup and Twist rules — follow the text on the Scheme card."],
+    };
+
     public static readonly CardSet Set = new()
     {
         Id = Id,
@@ -35,56 +43,16 @@ public static class CoreSet
 
         Schemes =
         [
-            new()
-            {
-                Id = "core:legacy-virus", SetId = Id, Name = "The Legacy Virus",
-                Setup = new SchemeSetup { Notes = ["Set aside the Wounds as normal; the Legacy Virus twists spread Wounds — keep the Wound stack handy."] },
-            },
-            new()
-            {
-                Id = "core:midtown-bank", SetId = Id, Name = "Midtown Bank Robbery",
-                Setup = new SchemeSetup { Notes = ["Add extra Bystanders to the Villain Deck (see Scheme card)."] },
-            },
-            new()
-            {
-                Id = "core:negative-zone", SetId = Id, Name = "Negative Zone Prison Breakout",
-                Setup = new SchemeSetup { Notes = ["Stack the Master Strikes as directed by the Scheme; escaping Villains raise the stakes."] },
-            },
-            new()
-            {
-                Id = "core:dark-dimension", SetId = Id, Name = "Portals to the Dark Dimension",
-                Setup = new SchemeSetup { Notes = ["Place the Dark Portal twists per the Scheme card."] },
-            },
-            new()
-            {
-                Id = "core:killbots", SetId = Id, Name = "Replace Earth's Leaders with Killbots",
-                // Official setup: add an extra Henchman Group to the Villain Deck.
-                Setup = new SchemeSetup
-                {
-                    HenchmenDelta = 1,
-                    Notes = ["Add one extra Henchman Group to the Villain Deck (already included in the count above)."],
-                },
-            },
-            new()
-            {
-                Id = "core:secret-invasion", SetId = Id, Name = "Secret Invasion of the Skrull Shapeshifters",
-                Setup = new SchemeSetup { Notes = ["Skrull Scheme Twists impersonate Heroes — resolve per the Scheme card."] },
-            },
-            new()
-            {
-                Id = "core:civil-war", SetId = Id, Name = "Super Hero Civil War",
-                // Official setup: play with an extra Hero in the HQ.
-                Setup = new SchemeSetup
-                {
-                    HeroDelta = 1,
-                    Notes = ["Play with one extra Hero in the Hero Deck / HQ (already included in the count above)."],
-                },
-            },
-            new()
-            {
-                Id = "core:cosmic-cube", SetId = Id, Name = "Unleash the Power of the Cosmic Cube",
-                Setup = new SchemeSetup { Notes = ["Add extra Scheme Twists to the Villain Deck per the Scheme card."] },
-            },
+            // Notes deliberately point players to the Scheme card rather than
+            // restating its exact setup/twist text — see the About page for why.
+            new() { Id = "core:legacy-virus", SetId = Id, Name = "The Legacy Virus", Setup = Special },
+            new() { Id = "core:midtown-bank", SetId = Id, Name = "Midtown Bank Robbery", Setup = Special },
+            new() { Id = "core:negative-zone", SetId = Id, Name = "Negative Zone Prison Breakout", Setup = Special },
+            new() { Id = "core:dark-dimension", SetId = Id, Name = "Portals to the Dark Dimension", Setup = Special },
+            new() { Id = "core:killbots", SetId = Id, Name = "Replace Earth's Leaders with Killbots", Setup = Special },
+            new() { Id = "core:secret-invasion", SetId = Id, Name = "Secret Invasion of the Skrull Shapeshifters", Setup = Special },
+            new() { Id = "core:civil-war", SetId = Id, Name = "Super Hero Civil War", Setup = Special },
+            new() { Id = "core:cosmic-cube", SetId = Id, Name = "Unleash the Power of the Cosmic Cube", Setup = Special },
         ],
 
         VillainGroups =

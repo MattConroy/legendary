@@ -38,7 +38,6 @@
     {
         <div class="results">
             <ResultCard Title="Mastermind" Icon="💀" Accent="mastermind"
-                        Subtitle="@MastermindSubtitle(setup)"
                         OnReroll="() => Reroll(CardCategory.Mastermind)">
                 <div class="single">
                     <span class="single__name">@setup.Mastermind.Card.Name</span>
@@ -55,7 +54,7 @@
                 <div class="single">
                     <span class="single__name">@setup.Scheme.Card.Name</span>
                 </div>
-                <p class="card__meta">🌀 Add <strong>~@setup.Rule.SchemeTwists Scheme Twists</strong> to the Villain Deck <span class="muted">(exact number is on the Scheme card)</span>.</p>
+                <p class="card__meta">🌀 Shuffle <strong>@setup.Rule.SchemeTwists Scheme Twists</strong> into the Villain Deck <span class="muted">(standard game — solo &amp; some Schemes differ, see card)</span>.</p>
             </ResultCard>
 
             <ResultCard Title="Villain Groups" Icon="👹" Accent="villain"
@@ -99,11 +98,13 @@
                 <ul class="tags">
                     @foreach (var h in setup.Heroes)
                     {
+                        var team = (h.Card as Hero)?.Team;
                         <li class="tag">
+                            <span class="tag__team" title="@team">@Teams.Icon(team)</span>
                             <span class="tag__name">@h.Card.Name</span>
-                            @if (h.Card is Hero hero && !string.IsNullOrEmpty(hero.Team))
+                            @if (!string.IsNullOrEmpty(team))
                             {
-                                <span class="tag__meta">@hero.Team</span>
+                                <span class="tag__meta">@team</span>
                             }
                         </li>
                     }
@@ -159,12 +160,6 @@
 
     private static string Count(int actual, int target) =>
         actual == target ? $"{actual}" : $"{actual} of {target}";
-
-    private static string MastermindSubtitle(GameSetup setup)
-    {
-        var required = setup.VillainGroups.Concat(setup.Henchmen).FirstOrDefault(s => s.IsRequired);
-        return required is not null ? $"Always leads {required.Card.Name}" : "";
-    }
 
     private void StateChanged() => InvokeAsync(StateHasChanged);
 
