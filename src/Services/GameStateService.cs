@@ -5,18 +5,23 @@ using Microsoft.JSInterop;
 
 namespace Legendary.Companion.Services;
 
+public enum SetSort { Name, Date }
+
 /// <summary>
-/// Holds the app's live state (player count, which sets are enabled, the current
-/// generated setup) and persists user preferences to browser local storage.
+/// Holds the app's live state (player count, which sets are owned/enabled, the
+/// current setup, the Sets-page sort) and persists preferences to local storage.
 /// UI components subscribe to <see cref="OnChange"/> to re-render.
 /// </summary>
 public sealed class GameStateService
 {
     private const string PlayersKey = "legendary.players";
     private const string EnabledSetsKey = "legendary.enabledSets";
+    private const string OwnedSetsKey = "legendary.ownedSets";
+    private const string SortKey = "legendary.setSort";
 
     private readonly IJSRuntime _js;
     private readonly SetupRandomizer _randomizer;
+    private readonly HashSet<string> _ownedSetIds;
     private readonly HashSet<string> _enabledSetIds;
 
     private bool _initialized;
@@ -25,22 +30,40 @@ public sealed class GameStateService
     {
         _js = js;
         _randomizer = randomizer;
-        _enabledSetIds = SetRegistry.AllSets
-            .Where(s => s.EnabledByDefault)
-            .Select(s => s.Id)
-            .ToHashSet();
+        var defaults = SetRegistry.AllSets.Where(s => s.EnabledByDefault).Select(s => s.Id).ToHashSet();
+        _ownedSetIds = new HashSet<string>(defaults);
+        _enabledSetIds = new HashSet<string>(defaults);
     }
 
     public int Players { get; private set; } = 2;
     public GameSetup? Setup { get; private set; }
+    public SetSort Sort { get; private set; } = SetSort.Date;
+    public bool SortDescending { get; private set; }
 
     public event Action? OnChange;
 
     public IReadOnlyList<CardSet> AllSets => SetRegistry.AllSets;
-    public bool IsEnabled(string setId) => _enabledSetIds.Contains(setId);
-    public CardPool CurrentPool => CardPool.From(SetRegistry.AllSets.Where(s => _enabledSetIds.Contains(s.Id)));
 
-    /// <summary>Load persisted preferences. Safe to call more than once.</summary>
+    /// <summary>Sets ordered by the current sort key and direction.</summary>
+    public IReadOnlyList<CardSet> SortedSets
+    {
+        get
+        {
+            IEnumerable<CardSet> q = Sort == SetSort.Name
+                ? AllSets.OrderBy(s => s.Name, StringComparer.OrdinalIgnoreCase)
+                : AllSets.OrderBy(s => s.Released).ThenBy(s => s.Name, StringComparer.OrdinalIgnoreCase);
+            return (SortDescending ? q.Reverse() : q).ToList();
+        }
+    }
+
+    public bool IsOwned(string setId) => _ownedSetIds.Contains(setId);
+    public bool IsEnabled(string setId) => _enabledSetIds.Contains(setId);
+    public int OwnedCount => _ownedSetIds.Count;
+
+    /// <summary>The randomiser draws only from sets that are both owned and enabled.</summary>
+    public CardPool CurrentPool =>
+        CardPool.From(SetRegistry.AllSets.Where(s => _ownedSetIds.Contains(s.Id) && _enabledSetIds.Contains(s.Id)));
+
     public async Task InitializeAsync()
     {
         if (_initialized) return;
@@ -52,24 +75,36 @@ public sealed class GameStateService
             if (int.TryParse(players, out var p) && p is >= 1 and <= 5)
                 Players = p;
 
-            var setsJson = await _js.InvokeAsync<string?>("localStorage.getItem", EnabledSetsKey);
-            if (!string.IsNullOrWhiteSpace(setsJson))
+            await LoadSetIdsAsync(OwnedSetsKey, _ownedSetIds);
+            await LoadSetIdsAsync(EnabledSetsKey, _enabledSetIds);
+            // Enabled can never include a set that isn't owned.
+            _enabledSetIds.IntersectWith(_ownedSetIds);
+
+            var sort = await _js.InvokeAsync<string?>("localStorage.getItem", SortKey);
+            if (!string.IsNullOrWhiteSpace(sort))
             {
-                var ids = JsonSerializer.Deserialize<List<string>>(setsJson);
-                if (ids is not null)
-                {
-                    _enabledSetIds.Clear();
-                    foreach (var id in ids.Where(id => SetRegistry.FindById(id) is not null))
-                        _enabledSetIds.Add(id);
-                }
+                var parts = sort.Split(':');
+                if (Enum.TryParse<SetSort>(parts[0], ignoreCase: true, out var key)) Sort = key;
+                SortDescending = parts.Length > 1 && parts[1] == "desc";
             }
         }
         catch
         {
-            // Local storage may be unavailable (private mode, prerender) — fall back to defaults.
+            // Local storage may be unavailable (private mode) — keep defaults.
         }
 
         NotifyChanged();
+    }
+
+    private async Task LoadSetIdsAsync(string key, HashSet<string> target)
+    {
+        var json = await _js.InvokeAsync<string?>("localStorage.getItem", key);
+        if (string.IsNullOrWhiteSpace(json)) return;
+        var ids = JsonSerializer.Deserialize<List<string>>(json);
+        if (ids is null) return;
+        target.Clear();
+        foreach (var id in ids.Where(id => SetRegistry.FindById(id) is not null))
+            target.Add(id);
     }
 
     public async Task SetPlayersAsync(int players)
@@ -81,25 +116,55 @@ public sealed class GameStateService
         NotifyChanged();
     }
 
-    public async Task SetEnabledAsync(string setId, bool enabled)
+    /// <summary>Mark a set as owned or not. Un-owning also disables it (you can't play what you don't own).</summary>
+    public async Task SetOwnedAsync(string setId, bool owned)
     {
         if (SetRegistry.FindById(setId) is null) return;
+
+        if (owned)
+        {
+            _ownedSetIds.Add(setId);
+        }
+        else
+        {
+            _ownedSetIds.Remove(setId);
+            _enabledSetIds.Remove(setId);
+            await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
+        }
+
+        await PersistAsync(OwnedSetsKey, Serialize(_ownedSetIds));
+        NotifyChanged();
+    }
+
+    /// <summary>Enable/disable a set for the next game. Only owned sets can be enabled.</summary>
+    public async Task SetEnabledAsync(string setId, bool enabled)
+    {
+        if (enabled && !_ownedSetIds.Contains(setId)) return;
 
         if (enabled) _enabledSetIds.Add(setId);
         else _enabledSetIds.Remove(setId);
 
-        // Never allow an unplayable (empty) pool.
-        if (!CurrentPool.IsPlayable)
-        {
-            _enabledSetIds.Add(setId);
-            return;
-        }
-
-        await PersistAsync(EnabledSetsKey, JsonSerializer.Serialize(_enabledSetIds.ToList()));
+        await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
         NotifyChanged();
     }
 
-    /// <summary>Generate a brand-new full setup.</summary>
+    /// <summary>Enable every owned set, or disable them all.</summary>
+    public async Task SetAllOwnedEnabledAsync(bool enabled)
+    {
+        _enabledSetIds.Clear();
+        if (enabled) _enabledSetIds.UnionWith(_ownedSetIds);
+        await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
+        NotifyChanged();
+    }
+
+    public async Task SetSortAsync(SetSort key)
+    {
+        if (Sort == key) SortDescending = !SortDescending;
+        else { Sort = key; SortDescending = false; }
+        await PersistAsync(SortKey, $"{Sort}:{(SortDescending ? "desc" : "asc")}".ToLowerInvariant());
+        NotifyChanged();
+    }
+
     public void Randomize()
     {
         var pool = CurrentPool;
@@ -108,7 +173,6 @@ public sealed class GameStateService
         NotifyChanged();
     }
 
-    /// <summary>Reroll just one category, keeping the rest stable.</summary>
     public void Reroll(CardCategory category)
     {
         if (Setup is null) return;
@@ -117,6 +181,8 @@ public sealed class GameStateService
         Setup = _randomizer.Reroll(Setup, category, pool);
         NotifyChanged();
     }
+
+    private static string Serialize(HashSet<string> ids) => JsonSerializer.Serialize(ids.ToList());
 
     private async Task PersistAsync(string key, string value)
     {

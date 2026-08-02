@@ -24,6 +24,8 @@ public static class CoreSet
         Id = Id,
         Name = "Core Set",
         Description = "Legendary: A Marvel Deck Building Game — the original base game.",
+        Released = new DateOnly(2012, 1, 1),
+        Standalone = true,
         EnabledByDefault = true,
 
         Masterminds =

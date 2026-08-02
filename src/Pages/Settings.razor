@@ -9,7 +9,6 @@
 
     <section class="panel">
         <h2 class="panel__title">Default player count</h2>
-        <p class="muted">Used when the app opens.</p>
         <div class="players__picker" role="group" aria-label="Default player count">
             @for (var n = 1; n <= 5; n++)
             {
@@ -24,53 +23,63 @@
     </section>
 
     <section class="panel">
-        <h2 class="panel__title">Content sets</h2>
-        <p class="muted">
-            Toggle sets on or off. The randomiser only draws from enabled sets — new
-            expansions plug in here without changing anything else.
-        </p>
+        <div class="sets-head">
+            <h2 class="panel__title">Content sets</h2>
+            <div class="sort" role="group" aria-label="Sort sets">
+                <span class="sort__label">Sort</span>
+                <button class="sort__btn @(State.Sort == SetSort.Name ? "sort__btn--active" : "")"
+                        @onclick="() => State.SetSortAsync(SetSort.Name)">
+                    Name @(SortArrow(SetSort.Name))
+                </button>
+                <button class="sort__btn @(State.Sort == SetSort.Date ? "sort__btn--active" : "")"
+                        @onclick="() => State.SetSortAsync(SetSort.Date)">
+                    Date @(SortArrow(SetSort.Date))
+                </button>
+            </div>
+        </div>
 
+        <div class="sets-actions">
+            <span class="muted small">Mark what you <strong>own</strong>, then toggle which sets are <strong>in play</strong> for this game.</span>
+            <div class="sets-actions__btns">
+                <button class="linkbtn" @onclick="() => State.SetAllOwnedEnabledAsync(true)">Enable all owned</button>
+                <button class="linkbtn" @onclick="() => State.SetAllOwnedEnabledAsync(false)">None</button>
+            </div>
+        </div>
+
+        <div class="set-cols"><span>Set</span><span>Own</span><span>Play</span></div>
         <ul class="set-list">
-            @foreach (var set in State.AllSets)
+            @foreach (var set in State.SortedSets)
             {
+                var owned = State.IsOwned(set.Id);
                 var enabled = State.IsEnabled(set.Id);
-                <li class="set">
+                <li class="set @(owned ? "" : "set--unowned")">
                     <div class="set__info">
                         <div class="set__name">
                             @set.Name
-                            @if (set.IsExample)
+                            @if (set.Standalone)
                             {
-                                <span class="badge badge--muted">Example</span>
+                                <span class="pill pill--standalone" title="Can be played on its own">Standalone</span>
                             }
                         </div>
-                        @if (!string.IsNullOrEmpty(set.Description))
-                        {
-                            <p class="set__desc">@set.Description</p>
-                        }
-                        <p class="set__counts">
-                            @set.Masterminds.Count Masterminds ·
-                            @set.Schemes.Count Schemes ·
-                            @set.VillainGroups.Count Villains ·
-                            @set.Henchmen.Count Henchmen ·
-                            @set.Heroes.Count Heroes
-                        </p>
+                        <span class="set__date">@set.Released.Year</span>
                     </div>
-                    <label class="switch" title="@(enabled ? "Enabled" : "Disabled")">
-                        <input type="checkbox" checked="@enabled"
-                               @onchange="e => Toggle(set.Id, e)" />
+
+                    <label class="switch switch--sm" title="@(owned ? "Owned" : "Not owned")">
+                        <input type="checkbox" checked="@owned" @onchange="e => Own(set.Id, e)" />
+                        <span class="switch__track"><span class="switch__thumb"></span></span>
+                    </label>
+
+                    <label class="switch switch--sm @(owned ? "" : "switch--disabled")" title="@(owned ? "In play" : "Own it first")">
+                        <input type="checkbox" checked="@enabled" disabled="@(!owned)" @onchange="e => Play(set.Id, e)" />
                         <span class="switch__track"><span class="switch__thumb"></span></span>
                     </label>
                 </li>
             }
         </ul>
-        <p class="muted small">At least one set must stay enabled.</p>
     </section>
 
     <section class="panel">
-        <h2 class="panel__title">About this app</h2>
-        <p class="muted">
-            An unofficial, fan-made setup helper. <a href="about">Read the full disclaimer &amp; setup rules →</a>
-        </p>
+        <p class="muted small">Unofficial fan app. <a href="about">Disclaimer &amp; setup reference →</a></p>
     </section>
 </div>
 
@@ -79,8 +88,11 @@
 
     protected override async Task OnInitializedAsync() => await State.InitializeAsync();
 
-    private void Toggle(string setId, ChangeEventArgs e) =>
-        _ = State.SetEnabledAsync(setId, e.Value is true);
+    private string SortArrow(SetSort key) =>
+        State.Sort != key ? "" : State.SortDescending ? "↓" : "↑";
+
+    private void Own(string id, ChangeEventArgs e) => _ = State.SetOwnedAsync(id, e.Value is true);
+    private void Play(string id, ChangeEventArgs e) => _ = State.SetEnabledAsync(id, e.Value is true);
 
     private void StateChanged() => InvokeAsync(StateHasChanged);
 

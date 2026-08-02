@@ -24,6 +24,8 @@ public static class DarkCity
         Id = Id,
         Name = "Dark City",
         Description = "Big-box expansion: X-Men, X-Force & Marvel Knights heroes vs. Apocalypse and more.",
+        Released = new DateOnly(2013, 1, 1),
+        Standalone = false,
         EnabledByDefault = true,
 
         Masterminds =

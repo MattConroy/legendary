@@ -213,7 +213,7 @@ public class SetupRandomizerTests
         const string s = "t";
         var set = new CardSet
         {
-            Id = s, Name = "Test",
+            Id = s, Name = "Test", Released = new DateOnly(2020, 1, 1),
             Masterminds = [new() { Id = "t:m", SetId = s, Name = "M", AlwaysLeadsGroupId = "t:v1" }],
             Schemes = [new() { Id = "t:s", SetId = s, Name = "S", Setup = new SchemeSetup { HenchmenDelta = 1, HeroDelta = 1 } }],
             VillainGroups = [new() { Id = "t:v1", SetId = s, Name = "V1" }, new() { Id = "t:v2", SetId = s, Name = "V2" }, new() { Id = "t:v3", SetId = s, Name = "V3" }],
@@ -235,7 +235,9 @@ public class SetupRandomizerTests
         var core = CorePool();
         var all = AllPool();
         Assert.True(all.Heroes.Count > core.Heroes.Count);
-        Assert.DoesNotContain(core.Heroes, h => h.Id == "example:hero-a");
+        // A Dark City card is present in the full pool but not in a Core-only pool.
+        Assert.Contains(all.Heroes, h => h.Id == "dc:bishop");
+        Assert.DoesNotContain(core.Heroes, h => h.Id == "dc:bishop");
     }
 
     [Fact]

@@ -1,30 +1,33 @@
 namespace Legendary.Companion.Models;
 
 /// <summary>
-/// A self-contained content module — the Core Set or a future expansion.
-/// The randomiser only ever sees the aggregate pool of cards from *enabled*
-/// sets, so a new expansion is added by dropping in one <see cref="CardSet"/>
-/// and registering it. No randomiser code changes.
+/// A self-contained content module — a Core set or an expansion. The randomiser
+/// only ever sees the aggregate pool of cards from *owned and enabled* sets, so a
+/// new set is added by dropping in one <see cref="CardSet"/> and registering it.
+/// No randomiser code changes.
 /// </summary>
 public sealed record CardSet
 {
     public required string Id { get; init; }
     public required string Name { get; init; }
 
-    /// <summary>Short description shown in the Settings toggle list.</summary>
+    /// <summary>Short description (not shown in the streamlined list, kept for tooltips/future use).</summary>
     public string? Description { get; init; }
 
-    /// <summary>
-    /// Whether this set is toggled on by default. Users can override this in
-    /// Settings; their choice is persisted to local storage.
-    /// </summary>
-    public bool EnabledByDefault { get; init; } = true;
+    /// <summary>Release date, used for display and sorting.</summary>
+    public required DateOnly Released { get; init; }
 
     /// <summary>
-    /// True for illustrative/sample content that is not from an official product.
-    /// Surfaced clearly in the UI so it is never mistaken for real cards.
+    /// True for a "big box" that can be played on its own (Core Set, What If?,
+    /// Second Edition…). Expansions that need a Core set are false.
     /// </summary>
-    public bool IsExample { get; init; }
+    public bool Standalone { get; init; }
+
+    /// <summary>
+    /// Whether the set is assumed owned + enabled the first time the app runs.
+    /// Users override both in the Sets page; choices persist to local storage.
+    /// </summary>
+    public bool EnabledByDefault { get; init; } = true;
 
     public IReadOnlyList<Mastermind> Masterminds { get; init; } = [];
     public IReadOnlyList<Scheme> Schemes { get; init; } = [];

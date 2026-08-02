@@ -13,7 +13,6 @@ public static class SetRegistry
     [
         CoreSet.Set,
         DarkCity.Set,
-        ExampleExpansion.Set,
     ];
 
     public static CardSet? FindById(string id) =>
