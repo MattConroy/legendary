@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Avengers">
   <circle cx="12" cy="12" r="11" fill="#a01a1a" stroke="rgba(255,255,255,0.28)" stroke-width="1"/>
   <text x="12" y="16.4" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" font-family="Arial Black, Arial, sans-serif">A</text>
+  <path d="M18.2 3.8 L18.76 5.23 L20.29 5.32 L19.10 6.29 L19.49 7.78 L18.2 6.95 L16.91 7.78 L17.30 6.29 L16.11 5.32 L17.64 5.23 Z" fill="#f4c20d"/>
 </svg>
