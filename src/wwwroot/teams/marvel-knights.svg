@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Marvel Knights">
-  <circle cx="12" cy="12" r="11" fill="#16181f"/>
-  <circle cx="12" cy="12" r="9.1" fill="none" stroke="#c1444f" stroke-width="1.4" stroke-opacity="0.9"/>
-  <path d="M15.4 7.4a5.4 5.4 0 1 0 0 9.2 6.5 6.5 0 0 1 0-9.2Z" fill="#c1444f"/>
+  <circle cx="12" cy="12" r="11" fill="#111318" stroke="rgba(255,255,255,0.28)" stroke-width="1"/>
+  <path d="M15.4 7.4a5.4 5.4 0 1 0 0 9.2 6.5 6.5 0 0 1 0-9.2Z" fill="#ffffff"/>
 </svg>
