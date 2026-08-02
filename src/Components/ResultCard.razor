@@ -1,0 +1,36 @@
+@* A single result card for one setup category, with an optional reroll button. *@
+
+<section class="card card--@Accent">
+    <header class="card__head">
+        <div class="card__titles">
+            <span class="card__icon">@Icon</span>
+            <div>
+                <h2 class="card__title">@Title</h2>
+                @if (!string.IsNullOrEmpty(Subtitle))
+                {
+                    <p class="card__subtitle">@Subtitle</p>
+                }
+            </div>
+        </div>
+        @if (OnReroll.HasDelegate)
+        {
+            <button class="reroll" @onclick="OnReroll" aria-label="@($"Reroll {Title}")" title="@($"Reroll {Title}")">
+                <span class="reroll__icon">↻</span>
+                <span class="reroll__label">Reroll</span>
+            </button>
+        }
+    </header>
+
+    <div class="card__body">
+        @ChildContent
+    </div>
+</section>
+
+@code {
+    [Parameter, EditorRequired] public string Title { get; set; } = "";
+    [Parameter] public string? Subtitle { get; set; }
+    [Parameter] public string Icon { get; set; } = "";
+    [Parameter] public string Accent { get; set; } = "default";
+    [Parameter] public EventCallback OnReroll { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

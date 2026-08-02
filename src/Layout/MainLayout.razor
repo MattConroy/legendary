@@ -1,0 +1,29 @@
+@inherits LayoutComponentBase
+
+<div class="app-shell">
+    <header class="app-header">
+        <div class="app-header__inner">
+            <span class="app-header__logo">LEGENDARY</span>
+            <span class="app-header__sub">Setup Randomiser</span>
+        </div>
+    </header>
+
+    <main class="app-main">
+        @Body
+    </main>
+
+    <nav class="app-nav">
+        <NavLink class="app-nav__item" href="" Match="NavLinkMatch.All">
+            <span class="app-nav__icon">🎲</span>
+            <span class="app-nav__label">Setup</span>
+        </NavLink>
+        <NavLink class="app-nav__item" href="settings">
+            <span class="app-nav__icon">⚙️</span>
+            <span class="app-nav__label">Sets</span>
+        </NavLink>
+        <NavLink class="app-nav__item" href="about">
+            <span class="app-nav__icon">ℹ️</span>
+            <span class="app-nav__label">About</span>
+        </NavLink>
+    </nav>
+</div>

@@ -1,0 +1,88 @@
+@page "/settings"
+@implements IDisposable
+@inject GameStateService State
+
+<PageTitle>Legendary — Sets & Options</PageTitle>
+
+<div class="settings">
+    <h1 class="page-title">Sets &amp; Options</h1>
+
+    <section class="panel">
+        <h2 class="panel__title">Default player count</h2>
+        <p class="muted">Used when the app opens.</p>
+        <div class="players__picker" role="group" aria-label="Default player count">
+            @for (var n = 1; n <= 5; n++)
+            {
+                var count = n;
+                <button class="chip @(State.Players == count ? "chip--active" : "")"
+                        @onclick="() => State.SetPlayersAsync(count)"
+                        aria-pressed="@(State.Players == count)">
+                    @count
+                </button>
+            }
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2 class="panel__title">Content sets</h2>
+        <p class="muted">
+            Toggle sets on or off. The randomiser only draws from enabled sets — new
+            expansions plug in here without changing anything else.
+        </p>
+
+        <ul class="set-list">
+            @foreach (var set in State.AllSets)
+            {
+                var enabled = State.IsEnabled(set.Id);
+                <li class="set">
+                    <div class="set__info">
+                        <div class="set__name">
+                            @set.Name
+                            @if (set.IsExample)
+                            {
+                                <span class="badge badge--muted">Example</span>
+                            }
+                        </div>
+                        @if (!string.IsNullOrEmpty(set.Description))
+                        {
+                            <p class="set__desc">@set.Description</p>
+                        }
+                        <p class="set__counts">
+                            @set.Masterminds.Count Masterminds ·
+                            @set.Schemes.Count Schemes ·
+                            @set.VillainGroups.Count Villains ·
+                            @set.Henchmen.Count Henchmen ·
+                            @set.Heroes.Count Heroes
+                        </p>
+                    </div>
+                    <label class="switch" title="@(enabled ? "Enabled" : "Disabled")">
+                        <input type="checkbox" checked="@enabled"
+                               @onchange="e => Toggle(set.Id, e)" />
+                        <span class="switch__track"><span class="switch__thumb"></span></span>
+                    </label>
+                </li>
+            }
+        </ul>
+        <p class="muted small">At least one set must stay enabled.</p>
+    </section>
+
+    <section class="panel">
+        <h2 class="panel__title">About this app</h2>
+        <p class="muted">
+            An unofficial, fan-made setup helper. <a href="about">Read the full disclaimer &amp; setup rules →</a>
+        </p>
+    </section>
+</div>
+
+@code {
+    protected override void OnInitialized() => State.OnChange += StateChanged;
+
+    protected override async Task OnInitializedAsync() => await State.InitializeAsync();
+
+    private void Toggle(string setId, ChangeEventArgs e) =>
+        _ = State.SetEnabledAsync(setId, e.Value is true);
+
+    private void StateChanged() => InvokeAsync(StateHasChanged);
+
+    public void Dispose() => State.OnChange -= StateChanged;
+}

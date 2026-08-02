@@ -1,0 +1,71 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Allow this workflow to publish to GitHub Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one Pages deployment at a time; don't cancel an in-progress run.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore src/Legendary.Companion.csproj
+
+      - name: Test
+        run: dotnet test tests/Legendary.Companion.Tests.csproj -c Release
+
+      - name: Publish
+        run: dotnet publish src/Legendary.Companion.csproj -c Release -o published
+
+      - name: Rewrite base path for the project-site subpath
+        env:
+          REPO: ${{ github.event.repository.name }}
+        run: |
+          root="published/wwwroot"
+          # 1) App base href: "/" -> "/<repo>/"
+          sed -i "s|<base href=\"/\" />|<base href=\"/${REPO}/\" />|g" "$root/index.html"
+          # 2) Service-worker base: "/" -> "/<repo>/" (keeps the offline/nav fallback correct)
+          sed -i "s|const base = \"/\";|const base = \"/${REPO}/\";|g" "$root/service-worker.js"
+          # 3) SPA fallback for deep links / refreshes on GitHub Pages
+          cp "$root/index.html" "$root/404.html"
+          # 4) Stop GitHub Pages/Jekyll from ignoring files that start with "_" (e.g. _framework)
+          touch "$root/.nojekyll"
+          echo "Rewrote base to /${REPO}/"
+          grep -n "<base" "$root/index.html"
+          grep -n "const base" "$root/service-worker.js"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: published/wwwroot
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

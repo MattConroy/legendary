@@ -1,0 +1,169 @@
+@page "/"
+@implements IDisposable
+@inject GameStateService State
+
+<PageTitle>Legendary — Setup Randomiser</PageTitle>
+
+<div class="home">
+    <h1 class="visually-hidden">Legendary Setup Randomiser</h1>
+
+    <div class="players">
+        <span class="players__label">Players</span>
+        <div class="players__picker" role="group" aria-label="Player count">
+            @for (var n = 1; n <= 5; n++)
+            {
+                var count = n;
+                <button class="chip @(State.Players == count ? "chip--active" : "")"
+                        @onclick="() => SetPlayers(count)"
+                        aria-pressed="@(State.Players == count)">
+                    @count
+                </button>
+            }
+        </div>
+    </div>
+
+    <button class="btn btn--primary btn--hero" @onclick="Randomize" disabled="@(!Playable)">
+        <span class="btn--hero__icon">🎲</span>
+        @(State.Setup is null ? "Randomise setup" : "Randomise again")
+    </button>
+
+    @if (!Playable)
+    {
+        <p class="notice notice--warn">
+            No content enabled. Turn on at least one set under <a href="settings">Sets</a>.
+        </p>
+    }
+
+    @if (State.Setup is { } setup)
+    {
+        <div class="results">
+            <ResultCard Title="Mastermind" Icon="💀" Accent="mastermind"
+                        Subtitle="@MastermindSubtitle(setup)"
+                        OnReroll="() => Reroll(CardCategory.Mastermind)">
+                <div class="single">
+                    <span class="single__name">@setup.Mastermind.Card.Name</span>
+                    @if (setup.Mastermind.Card is Mastermind mm && !string.IsNullOrEmpty(mm.Tagline))
+                    {
+                        <span class="single__flavour">@mm.Tagline</span>
+                    }
+                </div>
+            </ResultCard>
+
+            <ResultCard Title="Scheme" Icon="🌀" Accent="scheme"
+                        OnReroll="() => Reroll(CardCategory.Scheme)">
+                <div class="single">
+                    <span class="single__name">@setup.Scheme.Card.Name</span>
+                </div>
+            </ResultCard>
+
+            <ResultCard Title="Villain Groups" Icon="👹" Accent="villain"
+                        Subtitle="@Count(setup.VillainGroups.Count, setup.EffectiveVillainGroupCount)"
+                        OnReroll="() => Reroll(CardCategory.VillainGroup)">
+                <ul class="tags">
+                    @foreach (var v in setup.VillainGroups)
+                    {
+                        <li class="tag @(v.IsRequired ? "tag--required" : "")">
+                            <span class="tag__name">@v.Card.Name</span>
+                            @if (v.IsRequired)
+                            {
+                                <span class="badge">Required</span>
+                            }
+                        </li>
+                    }
+                </ul>
+            </ResultCard>
+
+            <ResultCard Title="Henchmen" Icon="🗡️" Accent="henchmen"
+                        Subtitle="@Count(setup.Henchmen.Count, setup.EffectiveHenchmenCount)"
+                        OnReroll="() => Reroll(CardCategory.Henchmen)">
+                <ul class="tags">
+                    @foreach (var h in setup.Henchmen)
+                    {
+                        <li class="tag @(h.IsRequired ? "tag--required" : "")">
+                            <span class="tag__name">@h.Card.Name</span>
+                            @if (h.IsRequired)
+                            {
+                                <span class="badge">Required</span>
+                            }
+                        </li>
+                    }
+                </ul>
+            </ResultCard>
+
+            <ResultCard Title="Heroes" Icon="🦸" Accent="hero"
+                        Subtitle="@Count(setup.Heroes.Count, setup.EffectiveHeroCount)"
+                        OnReroll="() => Reroll(CardCategory.Hero)">
+                <ul class="tags">
+                    @foreach (var h in setup.Heroes)
+                    {
+                        <li class="tag">
+                            <span class="tag__name">@h.Card.Name</span>
+                            @if (h.Card is Hero hero && !string.IsNullOrEmpty(hero.Team))
+                            {
+                                <span class="tag__meta">@hero.Team</span>
+                            }
+                        </li>
+                    }
+                </ul>
+            </ResultCard>
+
+            @if (setup.Notes.Count > 0)
+            {
+                <section class="card card--notes">
+                    <header class="card__head">
+                        <div class="card__titles">
+                            <span class="card__icon">📋</span>
+                            <h2 class="card__title">Setup notes</h2>
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        <ul class="notes">
+                            @foreach (var note in setup.Notes)
+                            {
+                                <li>@note</li>
+                            }
+                        </ul>
+                    </div>
+                </section>
+            }
+        </div>
+    }
+    else if (Playable)
+    {
+        <div class="empty">
+            <p class="empty__hint">Pick your player count and tap <strong>Randomise setup</strong> to draw a full game.</p>
+        </div>
+    }
+
+    <p class="disclaimer-mini">
+        Unofficial fan-made companion. Not affiliated with or endorsed by the game's publishers.
+        <a href="about">Details</a>
+    </p>
+</div>
+
+@code {
+    private bool Playable => State.CurrentPool.IsPlayable;
+
+    protected override void OnInitialized() => State.OnChange += StateChanged;
+
+    protected override async Task OnInitializedAsync() => await State.InitializeAsync();
+
+    private void SetPlayers(int n) => _ = State.SetPlayersAsync(n);
+
+    private void Randomize() => State.Randomize();
+
+    private void Reroll(CardCategory category) => State.Reroll(category);
+
+    private static string Count(int actual, int target) =>
+        actual == target ? $"{actual}" : $"{actual} of {target}";
+
+    private static string MastermindSubtitle(GameSetup setup)
+    {
+        var required = setup.VillainGroups.Concat(setup.Henchmen).FirstOrDefault(s => s.IsRequired);
+        return required is not null ? $"Always leads {required.Card.Name}" : "";
+    }
+
+    private void StateChanged() => InvokeAsync(StateHasChanged);
+
+    public void Dispose() => State.OnChange -= StateChanged;
+}

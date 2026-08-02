@@ -1,0 +1,64 @@
+@page "/about"
+
+<PageTitle>Legendary — About</PageTitle>
+
+<div class="about">
+    <h1 class="page-title">About</h1>
+
+    <section class="panel panel--disclaimer">
+        <h2 class="panel__title">Unofficial fan app</h2>
+        <p>
+            This is an <strong>unofficial, fan-made</strong> companion tool. It is not produced,
+            endorsed, licensed, or affiliated with the publishers or rights holders of
+            <em>Legendary: A Marvel Deck Building Game</em>, Marvel, or any related company.
+        </p>
+        <p>
+            All game, character, and set names are trademarks of their respective owners and are
+            referenced here purely to help owners of the physical game set it up faster. This app
+            ships <strong>no card text, art, or copyrighted game content</strong> — only the names
+            needed to randomise a legal setup, and the public setup rules.
+        </p>
+        <p class="muted">You must own the physical game to play.</p>
+    </section>
+
+    <section class="panel">
+        <h2 class="panel__title">Setup rules used</h2>
+        <p class="muted">Per-player base counts the randomiser follows:</p>
+        <div class="table-wrap">
+            <table class="rules">
+                <thead>
+                    <tr><th>Players</th><th>Heroes</th><th>Villains</th><th>Henchmen</th><th>Strikes</th><th>Bystanders</th><th>Wounds</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var r in SetupTable.ByPlayers.Values.OrderBy(r => r.Players))
+                    {
+                        <tr>
+                            <td>@r.Players</td>
+                            <td>@r.Heroes</td>
+                            <td>@r.VillainGroups</td>
+                            <td>@r.Henchmen</td>
+                            <td>@r.MasterStrikes</td>
+                            <td>@r.Bystanders</td>
+                            <td>@r.Wounds</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <ul class="notes">
+            <li>Each Mastermind's <strong>Always Leads</strong> group is forced into the setup and marked <span class="badge">Required</span>.</li>
+            <li>Scheme special rules that change counts (e.g. an extra Henchman group or Hero) are applied automatically.</li>
+            <li>2–5 player counts follow the rulebook; the 1-player column uses the published solo variant.</li>
+        </ul>
+    </section>
+
+    <section class="panel">
+        <h2 class="panel__title">How rerolls work</h2>
+        <p class="muted">
+            Each category can be rerolled on its own while everything else stays put. After any
+            reroll the app re-checks the Mastermind's required group and keeps it in play.
+        </p>
+    </section>
+
+    <p class="version muted small">Legendary Companion · PWA · works offline once loaded.</p>
+</div>
