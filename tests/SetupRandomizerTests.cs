@@ -254,8 +254,8 @@ public class SetupRandomizerTests
         {
             foreach (var mm in set.Masterminds)
             {
-                Assert.False(string.IsNullOrEmpty(mm.AlwaysLeadsGroupId),
-                    $"{mm.Name} has no AlwaysLeadsGroupId");
+                // A null id is the "Any Villain Group" mechanic — no single group is forced.
+                if (string.IsNullOrEmpty(mm.AlwaysLeadsGroupId)) continue;
                 var group = pool.FindById(mm.AlwaysLeadsGroupId);
                 Assert.True(group is VillainGroup or Henchmen,
                     $"{mm.Name} always-leads id '{mm.AlwaysLeadsGroupId}' does not resolve to a group");
@@ -509,10 +509,81 @@ public class SetupRandomizerTests
             "Marvel Knights", "S.H.I.E.L.D.", "Spider-Friends", "Sinister Six", "Brotherhood",
             "Foes of Asgard", "Crime Syndicate", "Illuminati", "Cabal", "HYDRA", "New Warriors",
             "Mercs for Money", "Champions", "Warbound", "Venomverse", "Unaffiliated",
+            "Heroes of Asgard", "Inhumans", "X-Factor", "Heroes of Wakanda",
+            "Guardians of the Multiverse",
         };
-        var used = Sets.SelectMany(s => s.Heroes).Select(h => h.Team).Distinct();
+        // A null team maps to the Unaffiliated badge, so only named teams need a mapping.
+        var used = Sets.SelectMany(s => s.Heroes).Select(h => h.Team).OfType<string>().Distinct();
         foreach (var team in used)
             Assert.True(known.Contains(team), $"Hero team '{team}' has no badge mapping.");
+    }
+
+    [Fact]
+    public void Full_catalog_reaches_the_marvel_studios_small_boxes()
+    {
+        // The catalogue runs release order from the Core Set through the late "small box" line.
+        Assert.Equal(38, Sets.Count);
+        foreach (var id in new[]
+        {
+            "revelations", "s-h-i-e-l-d", "heroes-of-asgard", "into-the-cosmos", "black-panther",
+            "new-mutants", "realm-of-kings", "annihilation", "messiah-complex",
+            "doctor-strange-and-the-shadows-of-nightmare", "black-widow",
+            "marvel-studios-guardians-of-the-galaxy", "marvel-studios-what-if", "2099",
+            "ant-man-and-the-wasp", "midnight-sons", "weapon-x",
+        })
+            Assert.Contains(Sets, s => s.Id == id);
+    }
+
+    [Fact]
+    public void The_small_boxes_are_expansions_not_standalone()
+    {
+        // Only the Core Set and Villains play on their own; every small box is a mix-in.
+        foreach (var id in new[]
+        {
+            "revelations", "s-h-i-e-l-d", "heroes-of-asgard", "into-the-cosmos", "black-panther",
+            "new-mutants", "realm-of-kings", "annihilation", "messiah-complex",
+            "doctor-strange-and-the-shadows-of-nightmare", "black-widow",
+            "marvel-studios-guardians-of-the-galaxy", "marvel-studios-what-if", "2099",
+            "ant-man-and-the-wasp", "midnight-sons", "weapon-x",
+        })
+            Assert.False(Set(id).Standalone, $"{id} should be a non-standalone expansion.");
+    }
+
+    [Fact]
+    public void Transforming_schemes_are_a_single_pick_not_two()
+    {
+        // A double-sided ("Transforms") Scheme is one card, so only its front side is a choice.
+        Assert.DoesNotContain(Sets.SelectMany(s => s.Schemes), sc => sc.Name.StartsWith('…') || sc.Name.StartsWith('”'));
+        Assert.Equal(4, Set("revelations").Schemes.Count);          // Tsunami / No More Mutants / Open HYDRA / Korvac Revealed are reverse sides
+        Assert.Equal(4, Set("messiah-complex").Schemes.Count);      // four Veiled schemes, their Unveiled reverses folded in
+        Assert.Equal(4, Set("midnight-sons").Schemes.Count);        // Great Old One Chthon is the reverse of the Ritual Sacrifice scheme
+        Assert.Contains(Set("messiah-complex").Schemes, sc => sc.Name == "Hack Cerebro Servers to Control the Mutant Messiah");
+    }
+
+    [Fact]
+    public void WhatIf_roster_and_any_villain_group_mastermind()
+    {
+        var w = Set("marvel-studios-what-if");
+        Assert.Equal(4, w.Masterminds.Count);
+        Assert.Equal(4, w.Schemes.Count);
+        Assert.Equal(5, w.VillainGroups.Count);
+        Assert.Equal(3, w.Henchmen.Count);
+        Assert.Equal(8, w.Heroes.Count);
+
+        // Hank Pym leads "Any Villain Group" — no forced group.
+        Assert.Null(w.Masterminds.Single(m => m.Name == "Hank Pym, Yellowjacket").AlwaysLeadsGroupId);
+        // Two masterminds are led by Henchmen groups from this box.
+        Assert.Equal("wif:ultron-sentries", w.Masterminds.Single(m => m.Name == "Ultron Infinity").AlwaysLeadsGroupId);
+        Assert.Contains(w.Heroes, h => h.Name == "Captain Carter" && h.Team == "Guardians of the Multiverse");
+    }
+
+    [Fact]
+    public void Transformed_masterminds_are_not_separate_picks()
+    {
+        // Yellowjacket, Ghost's intangible form and Kang's multiverse form are flip sides, not picks.
+        var m = Set("ant-man-and-the-wasp").Masterminds;
+        Assert.Equal(3, m.Count);
+        Assert.DoesNotContain(m, x => x.Name is "Yellowjacket" or "Ghost, Intangible" or "Kang, Multiverse Conqueror");
     }
 
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)

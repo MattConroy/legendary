@@ -3047,5 +3047,1721 @@
         "team": "Avengers"
       }
     ]
+  },
+  {
+    "id": "revelations",
+    "name": "Revelations",
+    "description": "Small box of cosmic and mystic revelations.",
+    "released": "2016-10-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "rev:grim-reaper",
+        "name": "Grim Reaper",
+        "alwaysLeadsGroupId": "rev:lethal-legion"
+      },
+      {
+        "id": "rev:mandarin",
+        "name": "Mandarin",
+        "alwaysLeadsGroupId": "rev:mandarins-rings"
+      },
+      {
+        "id": "rev:the-hood",
+        "name": "The Hood",
+        "alwaysLeadsGroupId": "rev:hoods-gang"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "rev:earthquake-drains-the-ocean",
+        "name": "Earthquake Drains the Ocean",
+        "setup": {
+          "twists": 11,
+          "villainGroupDelta": 1
+        }
+      },
+      {
+        "id": "rev:house-of-m",
+        "name": "House of M",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "rev:secret-hydra-corruption",
+        "name": "Secret HYDRA Corruption",
+        "setup": {
+          "twists": 7,
+          "twistsByPlayers": {
+            "2": 9,
+            "3": 9,
+            "4": 11,
+            "5": 11
+          }
+        }
+      },
+      {
+        "id": "rev:the-korvac-saga",
+        "name": "The Korvac Saga",
+        "setup": {
+          "twists": 8
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "rev:army-of-evil",
+        "name": "Army of Evil"
+      },
+      {
+        "id": "rev:dark-avengers",
+        "name": "Dark Avengers"
+      },
+      {
+        "id": "rev:hoods-gang",
+        "name": "Hood's Gang"
+      },
+      {
+        "id": "rev:lethal-legion",
+        "name": "Lethal Legion"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "rev:hydra-base",
+        "name": "HYDRA Base"
+      },
+      {
+        "id": "rev:mandarins-rings",
+        "name": "Mandarin's Rings"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "rev:captain-marvel-agent-of-s-h-i-e-l-d",
+        "name": "Captain Marvel, Agent of S.H.I.E.L.D.",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "rev:darkhawk",
+        "name": "Darkhawk",
+        "team": "Avengers"
+      },
+      {
+        "id": "rev:hellcat",
+        "name": "Hellcat",
+        "team": "Avengers"
+      },
+      {
+        "id": "rev:photon",
+        "name": "Photon",
+        "team": "Avengers"
+      },
+      {
+        "id": "rev:quicksilver",
+        "name": "Quicksilver",
+        "team": "Avengers"
+      },
+      {
+        "id": "rev:ronin",
+        "name": "Ronin",
+        "team": "Avengers"
+      },
+      {
+        "id": "rev:scarlet-witch",
+        "name": "Scarlet Witch",
+        "team": "Avengers"
+      },
+      {
+        "id": "rev:speed",
+        "name": "Speed",
+        "team": "Avengers"
+      },
+      {
+        "id": "rev:war-machine",
+        "name": "War Machine",
+        "team": "Avengers"
+      }
+    ]
+  },
+  {
+    "id": "s-h-i-e-l-d",
+    "name": "S.H.I.E.L.D.",
+    "description": "Small box: agents of S.H.I.E.L.D. go undercover.",
+    "released": "2016-12-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "shl:hydra-high-council",
+        "name": "Hydra High Council",
+        "alwaysLeadsGroupId": "shl:hydra-elite"
+      },
+      {
+        "id": "shl:hydra-super-adaptoid",
+        "name": "Hydra Super-Adaptoid",
+        "alwaysLeadsGroupId": "shl:a-i-m-hydra-offshoot"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "shl:s-h-i-e-l-d-vs-hydra-war",
+        "name": "S.H.I.E.L.D. vs. HYDRA War",
+        "setup": {
+          "twists": 7
+        }
+      },
+      {
+        "id": "shl:hail-hydra",
+        "name": "Hail Hydra",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "shl:hydra-helicarriers-hunt-heroes",
+        "name": "Hydra Helicarriers Hunt Heroes",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "shl:secret-empire-of-betrayal",
+        "name": "Secret Empire of Betrayal",
+        "setup": {
+          "twists": 11
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "shl:hydra-elite",
+        "name": "Hydra Elite"
+      },
+      {
+        "id": "shl:a-i-m-hydra-offshoot",
+        "name": "A.I.M., Hydra Offshoot"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "shl:agent-phil-coulson",
+        "name": "Agent Phil Coulson",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "shl:quake",
+        "name": "Quake",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "shl:deathlok",
+        "name": "Deathlok",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "shl:mockingbird",
+        "name": "Mockingbird",
+        "team": "S.H.I.E.L.D."
+      }
+    ]
+  },
+  {
+    "id": "heroes-of-asgard",
+    "name": "Heroes of Asgard",
+    "description": "Small box: the Worthy heroes of Asgard.",
+    "released": "2017-04-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "hoa:malekith-the-accursed",
+        "name": "Malekith the Accursed",
+        "alwaysLeadsGroupId": "hoa:dark-council"
+      },
+      {
+        "id": "hoa:hela-goddess-of-death",
+        "name": "Hela, Goddess of Death",
+        "alwaysLeadsGroupId": "hoa:omens-of-ragnarok"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "hoa:asgardian-test-of-worth",
+        "name": "Asgardian Test of Worth",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "hoa:the-dark-world-of-svartalfheim",
+        "name": "The Dark World of Svartalfheim",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "hoa:ragnarok-twilight-of-the-gods",
+        "name": "Ragnarok, Twilight of the Gods",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "hoa:war-of-the-frost-giants",
+        "name": "War of the Frost Giants",
+        "setup": {
+          "twists": 9
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "hoa:dark-council",
+        "name": "Dark Council"
+      },
+      {
+        "id": "hoa:omens-of-ragnarok",
+        "name": "Omens of Ragnarok"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "hoa:thor",
+        "name": "Thor",
+        "team": "Heroes of Asgard"
+      },
+      {
+        "id": "hoa:beta-ray-bill",
+        "name": "Beta Ray Bill",
+        "team": "Heroes of Asgard"
+      },
+      {
+        "id": "hoa:valkyrie",
+        "name": "Valkyrie",
+        "team": "Heroes of Asgard"
+      },
+      {
+        "id": "hoa:lady-sif",
+        "name": "Lady Sif",
+        "team": "Heroes of Asgard"
+      },
+      {
+        "id": "hoa:the-warriors-three",
+        "name": "The Warriors Three",
+        "team": "Heroes of Asgard"
+      }
+    ]
+  },
+  {
+    "id": "into-the-cosmos",
+    "name": "Into the Cosmos",
+    "description": "Small box of cosmic heroes and Shards.",
+    "released": "2018-02-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "itc:magus",
+        "name": "Magus",
+        "alwaysLeadsGroupId": "itc:universal-church-of-truth"
+      },
+      {
+        "id": "itc:the-grandmaster",
+        "name": "The Grandmaster",
+        "alwaysLeadsGroupId": "itc:elders-of-the-universe"
+      },
+      {
+        "id": "itc:the-beyonder",
+        "name": "The Beyonder",
+        "alwaysLeadsGroupId": "itc:from-beyond"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "itc:the-contest-of-champions",
+        "name": "The Contest of Champions",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "itc:turn-the-soul-of-adam-warlock",
+        "name": "Turn the Soul of Adam Warlock",
+        "setup": {
+          "twists": 14
+        }
+      },
+      {
+        "id": "itc:destroy-the-nova-corps",
+        "name": "Destroy the Nova Corps",
+        "setup": {
+          "twists": 9
+        }
+      },
+      {
+        "id": "itc:annihilation-conquest",
+        "name": "Annihilation: Conquest",
+        "setup": {
+          "twists": 11
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "itc:elders-of-the-universe",
+        "name": "Elders of the Universe"
+      },
+      {
+        "id": "itc:celestials",
+        "name": "Celestials"
+      },
+      {
+        "id": "itc:from-beyond",
+        "name": "From Beyond"
+      },
+      {
+        "id": "itc:black-order-of-thanos",
+        "name": "Black Order of Thanos"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "itc:sidera-maris-bridge-builders",
+        "name": "Sidera Maris, Bridge Builders"
+      },
+      {
+        "id": "itc:universal-church-of-truth",
+        "name": "Universal Church of Truth"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "itc:captain-mar-vell",
+        "name": "Captain Mar-Vell",
+        "team": "Avengers"
+      },
+      {
+        "id": "itc:quasar",
+        "name": "Quasar",
+        "team": "Avengers"
+      },
+      {
+        "id": "itc:adam-warlock",
+        "name": "Adam Warlock",
+        "team": "Avengers"
+      },
+      {
+        "id": "itc:moondragon",
+        "name": "Moondragon",
+        "team": "Avengers"
+      },
+      {
+        "id": "itc:nova",
+        "name": "Nova",
+        "team": "Avengers"
+      },
+      {
+        "id": "itc:yondu",
+        "name": "Yondu",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "itc:phyla-vell",
+        "name": "Phyla-Vell",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "itc:ronan-the-accuser",
+        "name": "Ronan the Accuser",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "itc:nebula",
+        "name": "Nebula",
+        "team": "Guardians of the Galaxy"
+      }
+    ]
+  },
+  {
+    "id": "black-panther",
+    "name": "Black Panther",
+    "description": "Small box: the Heroes of Wakanda.",
+    "released": "2018-08-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "bp:killmonger",
+        "name": "Killmonger",
+        "alwaysLeadsGroupId": "bp:killmongers-league"
+      },
+      {
+        "id": "bp:klaw",
+        "name": "Klaw",
+        "alwaysLeadsGroupId": "bp:enemies-of-wakanda"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "bp:seize-the-wakandan-throne",
+        "name": "Seize the Wakandan Throne",
+        "setup": {
+          "twists": 6
+        }
+      },
+      {
+        "id": "bp:poison-lakes-with-nanite-microbots",
+        "name": "Poison Lakes with Nanite Microbots",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "bp:plunder-wakandas-vibranium",
+        "name": "Plunder Wakanda's Vibranium",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "bp:provoke-clash-of-nations",
+        "name": "Provoke Clash of Nations",
+        "setup": {
+          "twists": 11
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "bp:killmongers-league",
+        "name": "Killmonger's League"
+      },
+      {
+        "id": "bp:enemies-of-wakanda",
+        "name": "Enemies of Wakanda"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "bp:king-black-panther",
+        "name": "King Black Panther",
+        "team": "Heroes of Wakanda"
+      },
+      {
+        "id": "bp:queen-storm-of-wakanda",
+        "name": "Queen Storm of Wakanda",
+        "team": "Heroes of Wakanda"
+      },
+      {
+        "id": "bp:general-okoye",
+        "name": "General Okoye",
+        "team": "Heroes of Wakanda"
+      },
+      {
+        "id": "bp:princess-shuri",
+        "name": "Princess Shuri",
+        "team": "Heroes of Wakanda"
+      },
+      {
+        "id": "bp:white-wolf",
+        "name": "White Wolf",
+        "team": "Heroes of Wakanda"
+      }
+    ]
+  },
+  {
+    "id": "new-mutants",
+    "name": "New Mutants",
+    "description": "Small box of the New Mutants under sun and moon.",
+    "released": "2019-02-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "nm:belasco-demon-lord-of-limbo",
+        "name": "Belasco, Demon Lord of Limbo",
+        "alwaysLeadsGroupId": "nm:demons-of-limbo"
+      },
+      {
+        "id": "nm:emma-frost-the-white-queen",
+        "name": "Emma Frost, The White Queen",
+        "alwaysLeadsGroupId": "nm:hellions"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "nm:the-demon-bear-saga",
+        "name": "The Demon Bear Saga",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "nm:crash-the-moon-into-the-sun",
+        "name": "Crash the Moon into the Sun",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "nm:trapped-in-the-insane-asylum",
+        "name": "Trapped in the Insane Asylum",
+        "setup": {
+          "twists": 2
+        }
+      },
+      {
+        "id": "nm:superhuman-baseball-game",
+        "name": "Superhuman Baseball Game",
+        "setup": {
+          "twists": 9,
+          "villainGroupDelta": 1
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "nm:hellions",
+        "name": "Hellions"
+      },
+      {
+        "id": "nm:demons-of-limbo",
+        "name": "Demons of Limbo"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "nm:sunspot",
+        "name": "Sunspot",
+        "team": "X-Men"
+      },
+      {
+        "id": "nm:wolfsbane",
+        "name": "Wolfsbane",
+        "team": "X-Men"
+      },
+      {
+        "id": "nm:mirage",
+        "name": "Mirage",
+        "team": "X-Men"
+      },
+      {
+        "id": "nm:warlock",
+        "name": "Warlock",
+        "team": "X-Men"
+      },
+      {
+        "id": "nm:karma",
+        "name": "Karma",
+        "team": "X-Men"
+      }
+    ]
+  },
+  {
+    "id": "realm-of-kings",
+    "name": "Realm of Kings",
+    "description": "Small box: the royal Inhumans.",
+    "released": "2019-04-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "rok:maximus-the-mad",
+        "name": "Maximus the Mad",
+        "alwaysLeadsGroupId": "rok:inhuman-rebellion"
+      },
+      {
+        "id": "rok:emperor-vulcan-of-the-shiar",
+        "name": "Emperor Vulcan of the Shi'ar",
+        "alwaysLeadsGroupId": "rok:shiar-imperial-elite"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "rok:ruin-the-perfect-wedding",
+        "name": "Ruin the Perfect Wedding",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "rok:war-of-kings",
+        "name": "War of Kings",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "rok:tornado-of-terrigen-mists",
+        "name": "Tornado of Terrigen Mists",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "rok:devolve-with-xerogen-crystals",
+        "name": "Devolve with Xerogen Crystals",
+        "setup": {
+          "twists": 8,
+          "henchmenDelta": 1
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "rok:inhuman-rebellion",
+        "name": "Inhuman Rebellion"
+      },
+      {
+        "id": "rok:shiar-imperial-elite",
+        "name": "Shi'ar Imperial Elite"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "rok:black-bolt",
+        "name": "Black Bolt",
+        "team": "Inhumans"
+      },
+      {
+        "id": "rok:medusa",
+        "name": "Medusa",
+        "team": "Inhumans"
+      },
+      {
+        "id": "rok:crystal",
+        "name": "Crystal",
+        "team": "Inhumans"
+      },
+      {
+        "id": "rok:karnak",
+        "name": "Karnak",
+        "team": "Inhumans"
+      },
+      {
+        "id": "rok:gorgon",
+        "name": "Gorgon",
+        "team": "Inhumans"
+      }
+    ]
+  },
+  {
+    "id": "annihilation",
+    "name": "Annihilation",
+    "description": "Small box: the Annihilation Wave threatens the cosmos.",
+    "released": "2019-07-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "anh:annihilus",
+        "name": "Annihilus",
+        "alwaysLeadsGroupId": "anh:annihilation-wave"
+      },
+      {
+        "id": "anh:kang-the-conqueror",
+        "name": "Kang the Conqueror",
+        "alwaysLeadsGroupId": "anh:timelines-of-kang"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "anh:pulse-waves-from-the-negative-zone",
+        "name": "Pulse Waves From the Negative Zone",
+        "setup": {
+          "twists": 9
+        }
+      },
+      {
+        "id": "anh:sneak-attack-the-heroes-homes",
+        "name": "Sneak Attack the Heroes' Homes",
+        "setup": {
+          "twists": 6
+        }
+      },
+      {
+        "id": "anh:put-humanity-on-trial",
+        "name": "Put Humanity on Trial",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "anh:breach-parallel-dimensions",
+        "name": "Breach Parallel Dimensions",
+        "setup": {
+          "twists": 6
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "anh:annihilation-wave",
+        "name": "Annihilation Wave"
+      },
+      {
+        "id": "anh:timelines-of-kang",
+        "name": "Timelines of Kang"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "anh:fantastic-four-united",
+        "name": "Fantastic Four United",
+        "team": "Fantastic Four"
+      },
+      {
+        "id": "anh:psi-lord",
+        "name": "Psi-Lord",
+        "team": "Fantastic Four"
+      },
+      {
+        "id": "anh:brainstorm",
+        "name": "Brainstorm",
+        "team": "Fantastic Four"
+      },
+      {
+        "id": "anh:heralds-of-galactus",
+        "name": "Heralds of Galactus",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "anh:super-skrull",
+        "name": "Super-Skrull",
+        "team": "Unaffiliated"
+      }
+    ]
+  },
+  {
+    "id": "messiah-complex",
+    "name": "Messiah Complex",
+    "description": "Small box: X-Factor and mutant clones.",
+    "released": "2019-10-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "mcx:lady-deathstrike",
+        "name": "Lady Deathstrike",
+        "alwaysLeadsGroupId": "mcx:reavers"
+      },
+      {
+        "id": "mcx:bastion-fused-sentinel",
+        "name": "Bastion, Fused Sentinel",
+        "alwaysLeadsGroupId": "mcx:purifiers"
+      },
+      {
+        "id": "mcx:exodus",
+        "name": "Exodus",
+        "alwaysLeadsGroupId": "mcx:acolytes"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "mcx:hack-cerebro-servers-to-control-the-mutant-messiah",
+        "name": "Hack Cerebro Servers to Control the Mutant Messiah",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "mcx:drain-mutants-powers-to-open-rifts-to-future-timelines",
+        "name": "Drain Mutants' Powers to Open Rifts to Future Timelines",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "mcx:hire-singularity-investigations-to-reveal-the-heroes-evil-clones",
+        "name": "Hire Singularity Investigations to Reveal the Heroes' Evil Clones",
+        "setup": {
+          "twists": 9
+        }
+      },
+      {
+        "id": "mcx:raid-gene-banks-to-unleash-an-anti-mutant-bioweapon",
+        "name": "Raid Gene Banks to Unleash an Anti-Mutant Bioweapon",
+        "setup": {
+          "twists": 8
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "mcx:reavers",
+        "name": "Reavers"
+      },
+      {
+        "id": "mcx:purifiers",
+        "name": "Purifiers"
+      },
+      {
+        "id": "mcx:acolytes",
+        "name": "Acolytes"
+      },
+      {
+        "id": "mcx:clan-yashida",
+        "name": "Clan Yashida"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "mcx:mr-sinister-clones",
+        "name": "Mr. Sinister Clones"
+      },
+      {
+        "id": "mcx:sentinel-squad-o-n-e",
+        "name": "Sentinel Squad O*N*E*"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "mcx:multiple-man",
+        "name": "Multiple Man",
+        "team": "X-Factor"
+      },
+      {
+        "id": "mcx:shatterstar",
+        "name": "Shatterstar",
+        "team": "X-Force"
+      },
+      {
+        "id": "mcx:stepford-cuckoos",
+        "name": "Stepford Cuckoos",
+        "team": "X-Men"
+      },
+      {
+        "id": "mcx:m",
+        "name": "M",
+        "team": "X-Factor"
+      },
+      {
+        "id": "mcx:strong-guy",
+        "name": "Strong Guy",
+        "team": "X-Factor"
+      },
+      {
+        "id": "mcx:warpath",
+        "name": "Warpath",
+        "team": "X-Force"
+      },
+      {
+        "id": "mcx:siryn",
+        "name": "Siryn",
+        "team": "X-Factor"
+      },
+      {
+        "id": "mcx:rictor",
+        "name": "Rictor",
+        "team": "X-Factor"
+      }
+    ]
+  },
+  {
+    "id": "doctor-strange-and-the-shadows-of-nightmare",
+    "name": "Doctor Strange and the Shadows of Nightmare",
+    "description": "Small box of mystic artifacts and demons.",
+    "released": "2020-09-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "dss:dormammu",
+        "name": "Dormammu",
+        "alwaysLeadsGroupId": "dss:lords-of-the-netherworld"
+      },
+      {
+        "id": "dss:nightmare",
+        "name": "Nightmare",
+        "alwaysLeadsGroupId": "dss:fear-lords"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "dss:claim-souls-for-demons",
+        "name": "Claim Souls for Demons",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "dss:war-for-the-dream-dimension",
+        "name": "War for the Dream Dimension",
+        "setup": {
+          "twists": 7,
+          "villainGroupDelta": 1
+        }
+      },
+      {
+        "id": "dss:cursed-pages-of-the-darkhold-tome",
+        "name": "Cursed Pages of the Darkhold Tome",
+        "setup": {
+          "twists": 11,
+          "villainGroupDelta": 1
+        }
+      },
+      {
+        "id": "dss:duels-of-science-and-magic",
+        "name": "Duels of Science and Magic",
+        "setup": {
+          "twists": 9,
+          "twistsByPlayers": {
+            "4": 10,
+            "5": 11
+          }
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "dss:lords-of-the-netherworld",
+        "name": "Lords of the Netherworld"
+      },
+      {
+        "id": "dss:fear-lords",
+        "name": "Fear Lords"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "dss:doctor-strange",
+        "name": "Doctor Strange",
+        "team": "Avengers"
+      },
+      {
+        "id": "dss:clea",
+        "name": "Clea",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "dss:doctor-voodoo",
+        "name": "Doctor Voodoo",
+        "team": "Avengers"
+      },
+      {
+        "id": "dss:the-ancient-one",
+        "name": "The Ancient One",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "dss:the-vishanti",
+        "name": "The Vishanti",
+        "team": "Unaffiliated"
+      }
+    ]
+  },
+  {
+    "id": "black-widow",
+    "name": "Black Widow",
+    "description": "Small box of spies working Undercover.",
+    "released": "2021-06-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "bw:taskmaster",
+        "name": "Taskmaster",
+        "alwaysLeadsGroupId": "bw:taskmasters-thunderbolts"
+      },
+      {
+        "id": "bw:indestructible-man",
+        "name": "Indestructible Man",
+        "alwaysLeadsGroupId": "bw:elite-assassins"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "bw:corrupt-the-spy-agencies",
+        "name": "Corrupt The Spy Agencies",
+        "setup": {
+          "twists": 7
+        }
+      },
+      {
+        "id": "bw:train-black-widows-in-the-red-room",
+        "name": "Train Black Widows in the Red Room",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "bw:sniper-rifle-assassins",
+        "name": "Sniper Rifle Assassins",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "bw:frame-heroes-for-murder",
+        "name": "Frame Heroes For Murder",
+        "setup": {
+          "twists": 7
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "bw:taskmasters-thunderbolts",
+        "name": "Taskmaster's Thunderbolts"
+      },
+      {
+        "id": "bw:elite-assassins",
+        "name": "Elite Assassins"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "bw:black-widow",
+        "name": "Black Widow",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "bw:yelena-belova",
+        "name": "Yelena Belova",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "bw:red-guardian",
+        "name": "Red Guardian",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "bw:white-tiger",
+        "name": "White Tiger",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "bw:falcon-winter-soldier",
+        "name": "Falcon & Winter Soldier",
+        "team": "Avengers"
+      }
+    ]
+  },
+  {
+    "id": "marvel-studios-guardians-of-the-galaxy",
+    "name": "Marvel Studios' Guardians of the Galaxy",
+    "description": "Small MCU box of Artifacts.",
+    "released": "2021-11-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "msg:ronan-the-accuser",
+        "name": "Ronan the Accuser",
+        "alwaysLeadsGroupId": "msg:followers-of-ronan"
+      },
+      {
+        "id": "msg:ego-the-living-planet",
+        "name": "Ego, The Living Planet"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "msg:inescapable-kyln-space-prison",
+        "name": "Inescapable \"Kyln\" Space Prison",
+        "setup": {
+          "twists": 8,
+          "villainGroupDelta": 1
+        }
+      },
+      {
+        "id": "msg:provoke-the-sovereign-war-fleet",
+        "name": "Provoke the Sovereign War Fleet",
+        "setup": {
+          "twists": 11,
+          "villainGroupDelta": 1
+        }
+      },
+      {
+        "id": "msg:star-lords-awesome-mix-tape",
+        "name": "Star-Lord's Awesome Mix Tape",
+        "setup": {
+          "twists": 7
+        }
+      },
+      {
+        "id": "msg:unleash-the-abilisk-space-monster",
+        "name": "Unleash the Abilisk Space Monster",
+        "setup": {
+          "twists": 9
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "msg:followers-of-ronan",
+        "name": "Followers of Ronan"
+      },
+      {
+        "id": "msg:ravagers",
+        "name": "Ravagers"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "msg:star-lord",
+        "name": "Star-Lord",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "msg:gamora",
+        "name": "Gamora",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "msg:rocket-groot",
+        "name": "Rocket & Groot",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "msg:drax",
+        "name": "Drax",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "msg:mantis",
+        "name": "Mantis",
+        "team": "Guardians of the Galaxy"
+      }
+    ]
+  },
+  {
+    "id": "marvel-studios-what-if",
+    "name": "Marvel Studios What If...?",
+    "description": "Small box: the Guardians of the Multiverse.",
+    "released": "2022-09-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "wif:hank-pym-yellowjacket",
+        "name": "Hank Pym, Yellowjacket"
+      },
+      {
+        "id": "wif:killmonger-the-betrayer",
+        "name": "Killmonger, the Betrayer",
+        "alwaysLeadsGroupId": "wif:vibranium-liberator-drones"
+      },
+      {
+        "id": "wif:ultron-infinity",
+        "name": "Ultron Infinity",
+        "alwaysLeadsGroupId": "wif:ultron-sentries"
+      },
+      {
+        "id": "wif:zombie-scarlet-witch",
+        "name": "Zombie Scarlet Witch",
+        "alwaysLeadsGroupId": "wif:zombie-avengers"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "wif:breach-the-nexus-of-all-realities",
+        "name": "Breach the Nexus of All Realities",
+        "setup": {
+          "twists": 2
+        }
+      },
+      {
+        "id": "wif:collect-an-interstellar-zoo",
+        "name": "Collect an Interstellar Zoo",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "wif:marvel-zombies",
+        "name": "Marvel Zombies",
+        "setup": {
+          "twists": 4
+        }
+      },
+      {
+        "id": "wif:trash-earth-with-hugest-party-ever",
+        "name": "Trash Earth with Hugest Party Ever",
+        "setup": {
+          "twists": 6
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "wif:black-order-guards",
+        "name": "Black Order Guards"
+      },
+      {
+        "id": "wif:intergalactic-party-animals",
+        "name": "Intergalactic Party Animals"
+      },
+      {
+        "id": "wif:rival-overlords",
+        "name": "Rival Overlords"
+      },
+      {
+        "id": "wif:stranges-demons",
+        "name": "Strange’s Demons"
+      },
+      {
+        "id": "wif:zombie-avengers",
+        "name": "Zombie Avengers"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "wif:giants-of-jotunheim",
+        "name": "Giants of Jotunheim"
+      },
+      {
+        "id": "wif:ultron-sentries",
+        "name": "Ultron Sentries"
+      },
+      {
+        "id": "wif:vibranium-liberator-drones",
+        "name": "Vibranium Liberator Drones"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "wif:apocalyptic-black-widow",
+        "name": "Apocalyptic Black Widow",
+        "team": "Guardians of the Multiverse"
+      },
+      {
+        "id": "wif:captain-carter",
+        "name": "Captain Carter",
+        "team": "Guardians of the Multiverse"
+      },
+      {
+        "id": "wif:doctor-strange-supreme",
+        "name": "Doctor Strange Supreme",
+        "team": "Guardians of the Multiverse"
+      },
+      {
+        "id": "wif:gamora-destroyer-of-thanos",
+        "name": "Gamora, Destroyer of Thanos",
+        "team": "Guardians of the Multiverse"
+      },
+      {
+        "id": "wif:killmonger-spec-ops",
+        "name": "Killmonger, Spec Ops",
+        "team": "Guardians of the Multiverse"
+      },
+      {
+        "id": "wif:party-thor",
+        "name": "Party Thor",
+        "team": "Guardians of the Multiverse"
+      },
+      {
+        "id": "wif:star-lord-tchalla",
+        "name": "Star-Lord T’Challa",
+        "team": "Guardians of the Multiverse"
+      },
+      {
+        "id": "wif:uatu-the-watcher",
+        "name": "Uatu, The Watcher",
+        "team": "Guardians of the Multiverse"
+      }
+    ]
+  },
+  {
+    "id": "2099",
+    "name": "2099",
+    "description": "Small box of cyber-modded 2099 heroes.",
+    "released": "2023-02-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "y99:alchemax-executives",
+        "name": "Alchemax Executives",
+        "alwaysLeadsGroupId": "y99:alchemax-enforcers"
+      },
+      {
+        "id": "y99:sinister-six-2099",
+        "name": "Sinister Six 2099"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "y99:become-president-of-the-united-states",
+        "name": "Become President of the United States",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "y99:befoul-earth-into-a-polluted-wasteland",
+        "name": "Befoul Earth into a Polluted Wasteland",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "y99:pull-reality-into-cyberspace",
+        "name": "Pull Reality into Cyberspace",
+        "setup": {
+          "twists": 7
+        }
+      },
+      {
+        "id": "y99:subjugate-earth-with-mega-corporations",
+        "name": "Subjugate Earth with Mega-Corporations",
+        "setup": {
+          "twists": 11
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "y99:alchemax-enforcers",
+        "name": "Alchemax Enforcers"
+      },
+      {
+        "id": "y99:false-aesir-of-alchemax",
+        "name": "False Aesir of Alchemax"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "y99:doctor-doom-2099",
+        "name": "Doctor Doom 2099",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "y99:ghost-rider-2099",
+        "name": "Ghost Rider 2099",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "y99:hulk-2099",
+        "name": "Hulk 2099",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "y99:ravage-2099",
+        "name": "Ravage 2099",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "y99:spider-man-2099",
+        "name": "Spider-Man 2099",
+        "team": "Spider-Friends"
+      }
+    ]
+  },
+  {
+    "id": "ant-man-and-the-wasp",
+    "name": "Ant-Man and the Wasp",
+    "description": "Small box exploring the Quantum Realm.",
+    "released": "2023-06-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "amw:darren-cross",
+        "name": "Darren Cross",
+        "alwaysLeadsGroupId": "amw:cross-technologies"
+      },
+      {
+        "id": "amw:ghost-master-thief",
+        "name": "Ghost, Master Thief",
+        "alwaysLeadsGroupId": "amw:ghost-chasers"
+      },
+      {
+        "id": "amw:kang-quantum-conqueror",
+        "name": "Kang, Quantum Conqueror",
+        "alwaysLeadsGroupId": "amw:armada-of-kang"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "amw:auction-shrink-tech-to-highest-bidder",
+        "name": "Auction Shrink Tech to Highest Bidder",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "amw:escape-an-imprisoning-dimension",
+        "name": "Escape an Imprisoning Dimension",
+        "setup": {
+          "twists": 5
+        }
+      },
+      {
+        "id": "amw:safeguard-dark-secrets",
+        "name": "Safeguard Dark Secrets",
+        "setup": {
+          "twists": 5
+        }
+      },
+      {
+        "id": "amw:siphon-energy-from-the-quantum-realm",
+        "name": "Siphon Energy from the Quantum Realm",
+        "setup": {
+          "twists": 9
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "amw:armada-of-kang",
+        "name": "Armada of Kang"
+      },
+      {
+        "id": "amw:cross-technologies",
+        "name": "Cross Technologies"
+      },
+      {
+        "id": "amw:ghost-chasers",
+        "name": "Ghost Chasers"
+      },
+      {
+        "id": "amw:quantum-realm",
+        "name": "Quantum Realm"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "amw:quantum-hound",
+        "name": "Quantum Hound"
+      },
+      {
+        "id": "amw:quantumnauts",
+        "name": "Quantumnauts"
+      },
+      {
+        "id": "amw:tardigrade",
+        "name": "Tardigrade"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "amw:ant-army",
+        "name": "Ant Army",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "amw:ant-man",
+        "name": "Ant-Man",
+        "team": "Avengers"
+      },
+      {
+        "id": "amw:cassie-lang",
+        "name": "Cassie Lang",
+        "team": "Avengers"
+      },
+      {
+        "id": "amw:freedom-fighters",
+        "name": "Freedom Fighters",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "amw:janet-van-dyne",
+        "name": "Janet Van Dyne",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "amw:jentorra",
+        "name": "Jentorra",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "amw:scott-lang-cat-burglar",
+        "name": "Scott Lang, Cat Burglar",
+        "team": "Crime Syndicate"
+      },
+      {
+        "id": "amw:wasp",
+        "name": "Wasp",
+        "team": "Avengers"
+      }
+    ]
+  },
+  {
+    "id": "midnight-sons",
+    "name": "Midnight Sons",
+    "description": "Small box of monster hunters under sun and moon.",
+    "released": "2023-08-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "mds:zarathos",
+        "name": "Zarathos",
+        "alwaysLeadsGroupId": "mds:fallen"
+      },
+      {
+        "id": "mds:lilith-mother-of-demons",
+        "name": "Lilith, Mother of Demons",
+        "alwaysLeadsGroupId": "mds:lilin"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "mds:midnight-massacre",
+        "name": "Midnight Massacre",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "mds:ritual-sacrifice-to-summon-chthon",
+        "name": "Ritual Sacrifice To Summon Chthon",
+        "setup": {
+          "twists": 6
+        }
+      },
+      {
+        "id": "mds:sire-vampires-at-the-blood-bank",
+        "name": "Sire Vampires at the Blood Bank",
+        "setup": {
+          "twists": 10,
+          "henchmenDelta": 1
+        }
+      },
+      {
+        "id": "mds:wager-at-blackjack-for-heroes-souls",
+        "name": "Wager at Blackjack For Heroes' Souls",
+        "setup": {
+          "twists": 11
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "mds:fallen",
+        "name": "Fallen"
+      },
+      {
+        "id": "mds:lilin",
+        "name": "Lilin"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "mds:blade-daywalker",
+        "name": "Blade, Daywalker",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "mds:elsa-bloodstone",
+        "name": "Elsa Bloodstone",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "mds:morbius",
+        "name": "Morbius",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "mds:werewolf-by-night",
+        "name": "Werewolf by Night",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "mds:wong-master-of-the-mystic-arts",
+        "name": "Wong, Master of the Mystic Arts",
+        "team": "Marvel Knights"
+      }
+    ]
+  },
+  {
+    "id": "weapon-x",
+    "name": "Weapon X",
+    "description": "Small box of the Weapon X program.",
+    "released": "2023-11-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "wpx:omega-red",
+        "name": "Omega Red"
+      },
+      {
+        "id": "wpx:romulus",
+        "name": "Romulus",
+        "alwaysLeadsGroupId": "wpx:weapon-plus"
+      },
+      {
+        "id": "wpx:sabretooth",
+        "name": "Sabretooth",
+        "alwaysLeadsGroupId": "wpx:berserkers"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "wpx:condition-logan-into-weapon-x",
+        "name": "Condition Logan into Weapon X",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "wpx:go-after-heroes-loved-ones",
+        "name": "Go After Heroes' Loved Ones",
+        "setup": {
+          "twists": 8,
+          "twistsByPlayers": {
+            "2": 10,
+            "3": 10,
+            "4": 10,
+            "5": 11
+          }
+        }
+      },
+      {
+        "id": "wpx:wipe-heroes-memories",
+        "name": "Wipe Heroes' Memories",
+        "setup": {
+          "twists": 8
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "wpx:berserkers",
+        "name": "Berserkers"
+      },
+      {
+        "id": "wpx:weapon-plus",
+        "name": "Weapon Plus"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "wpx:fantomex",
+        "name": "Fantomex",
+        "team": "X-Force"
+      },
+      {
+        "id": "wpx:marrow",
+        "name": "Marrow",
+        "team": "X-Force"
+      },
+      {
+        "id": "wpx:weapon-h",
+        "name": "Weapon H",
+        "team": "Avengers"
+      },
+      {
+        "id": "wpx:weapon-x-wolverine",
+        "name": "Weapon X (Wolverine)",
+        "team": "Marvel Knights"
+      }
+    ]
   }
 ]
