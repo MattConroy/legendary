@@ -338,7 +338,7 @@
           "bystanders": 0
         },
         "id": "dc:transform-demons",
-        "name": "Transform Citizens into Demons"
+        "name": "Transform Citizens Into Demons"
       },
       {
         "setup": {
@@ -1039,7 +1039,10 @@
         "id": "sw1:bare-hands",
         "name": "Crush Them With My Bare Hands",
         "setup": {
-          "twists": 5
+          "twists": 5,
+          "notes": [
+            "Solo: add an extra Villain Group."
+          ]
         }
       },
       {
@@ -1247,7 +1250,10 @@
         "id": "sw2:fountain-eternal-life",
         "name": "The Fountain of Eternal Life",
         "setup": {
-          "twists": 8
+          "twists": 8,
+          "twistsByPlayers": {
+            "1": 4
+          }
         }
       },
       {
@@ -1870,7 +1876,10 @@
         "name": "Deadpool Wants a Chimichanga",
         "setup": {
           "twists": 6,
-          "bystanders": 12
+          "bystanders": 12,
+          "notes": [
+            "3-5 players: add an extra Villain Group."
+          ]
         }
       },
       {

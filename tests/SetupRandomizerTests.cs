@@ -433,6 +433,10 @@ public class SetupRandomizerTests
         var setup = WithScheme(Rng(9), pool, 4, "sw2:mark-of-khonshu");
         Assert.Contains(setup.Henchmen, h => h.Card.Id == "sw2:khonshu-guardians" && h.IsRequired);
         Assert.Equal(10, setup.EffectiveTwists);
+
+        // The Fountain of Eternal Life drops to 4 Twists solo, 8 otherwise.
+        Assert.Equal(4, WithScheme(Rng(1), pool, 1, "sw2:fountain-eternal-life").EffectiveTwists);
+        Assert.Equal(8, WithScheme(Rng(1), pool, 3, "sw2:fountain-eternal-life").EffectiveTwists);
     }
 
     [Fact]
