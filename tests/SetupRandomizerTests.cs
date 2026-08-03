@@ -537,16 +537,27 @@ public class SetupRandomizerTests
     [Fact]
     public void The_small_boxes_are_expansions_not_standalone()
     {
-        // Only the Core Set and Villains play on their own; every small box is a mix-in.
+        // Per the wiki, the Marvel Studios boxes are Core Sets; every other small box is a mix-in.
         foreach (var id in new[]
         {
             "revelations", "s-h-i-e-l-d", "heroes-of-asgard", "into-the-cosmos", "black-panther",
             "new-mutants", "realm-of-kings", "annihilation", "messiah-complex",
             "doctor-strange-and-the-shadows-of-nightmare", "black-widow",
-            "marvel-studios-guardians-of-the-galaxy", "marvel-studios-what-if", "2099",
+            "marvel-studios-guardians-of-the-galaxy", "2099",
             "ant-man-and-the-wasp", "midnight-sons", "weapon-x",
         })
             Assert.False(Set(id).Standalone, $"{id} should be a non-standalone expansion.");
+    }
+
+    [Fact]
+    public void The_four_core_sets_are_standalone()
+    {
+        // Wiki "Core Sets": each plays on its own.
+        foreach (var id in new[] { "core", "villains", "marvel-studios-phase-1", "marvel-studios-what-if" })
+        {
+            Assert.True(Set(id).Standalone, $"{id} should be a standalone Core Set.");
+            Assert.True(CardPool.From([Set(id)]).IsPlayable, $"{id} should be playable alone.");
+        }
     }
 
     [Fact]
