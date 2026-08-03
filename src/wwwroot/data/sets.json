@@ -2993,5 +2993,59 @@
         "team": "Venomverse"
       }
     ]
+  },
+  {
+    "id": "dimensions",
+    "name": "Dimensions",
+    "description": "Small mix-in box: a Mastermind, henchmen and offbeat heroes to fold into another game.",
+    "released": "2018-11-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "dim:jjj",
+        "name": "J. Jonah Jameson",
+        "alwaysLeadsGroupId": "dim:spider-slayer"
+      }
+    ],
+    "schemes": [],
+    "villainGroups": [],
+    "henchmen": [
+      {
+        "id": "dim:circus-of-crime",
+        "name": "Circus of Crime"
+      },
+      {
+        "id": "dim:spider-slayer",
+        "name": "Spider-Slayer"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "dim:howard-the-duck",
+        "name": "Howard the Duck",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "dim:jessica-jones",
+        "name": "Jessica Jones",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "dim:man-thing",
+        "name": "Man-Thing",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "dim:ms-america",
+        "name": "Ms. America",
+        "team": "Avengers"
+      },
+      {
+        "id": "dim:squirrel-girl",
+        "name": "Squirrel Girl",
+        "team": "Avengers"
+      }
+    ]
   }
 ]

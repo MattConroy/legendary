@@ -486,6 +486,19 @@ public class SetupRandomizerTests
     }
 
     [Fact]
+    public void Dimensions_is_a_mix_in_not_playable_alone()
+    {
+        var dim = Set("dimensions");
+        Assert.Empty(dim.Schemes);
+        Assert.Empty(dim.VillainGroups);
+        // Its Mastermind leads a Backup-Adversary (Henchman) group.
+        Assert.Equal("dim:spider-slayer", dim.Masterminds.Single().AlwaysLeadsGroupId);
+
+        Assert.False(CardPool.From([dim]).IsPlayable);          // no schemes/villains on its own
+        Assert.True(CardPool.From([Set("core"), dim]).IsPlayable); // folds into another set
+    }
+
+    [Fact]
     public void Every_hero_team_has_a_badge_mapping()
     {
         // Mirror of TeamIcon's slug map — every team a hero uses must resolve to a real badge,
