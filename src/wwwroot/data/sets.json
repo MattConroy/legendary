@@ -1941,5 +1941,1057 @@
         "team": "Mercs for Money"
       }
     ]
+  },
+  {
+    "id": "noir",
+    "name": "Noir",
+    "description": "Small box: gritty noir versions of familiar heroes.",
+    "released": "2017-01-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "noir:charles-xavier",
+        "name": "Charles Xavier",
+        "alwaysLeadsGroupId": "noir:x-men-noir"
+      },
+      {
+        "id": "noir:the-goblin-underworld-boss",
+        "name": "The Goblin, Underworld Boss",
+        "alwaysLeadsGroupId": "noir:goblin-s-freak-show"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "noir:find-the-split-personality-killer",
+        "name": "Find the Split Personality Killer",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "noir:silence-the-witnesses",
+        "name": "Silence the Witnesses",
+        "setup": {
+          "twists": 6
+        }
+      },
+      {
+        "id": "noir:five-families-of-crime",
+        "name": "Five Families of Crime",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "noir:hidden-heart-of-darkness",
+        "name": "Hidden Heart of Darkness",
+        "setup": {
+          "twists": 8
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "noir:goblin-s-freak-show",
+        "name": "Goblin's Freak Show"
+      },
+      {
+        "id": "noir:x-men-noir",
+        "name": "X-Men Noir"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "noir:angel-noir",
+        "name": "Angel Noir",
+        "team": "X-Men"
+      },
+      {
+        "id": "noir:daredevil-noir",
+        "name": "Daredevil Noir",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "noir:iron-man-noir",
+        "name": "Iron Man Noir",
+        "team": "Avengers"
+      },
+      {
+        "id": "noir:luke-cage-noir",
+        "name": "Luke Cage Noir",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "noir:spider-man-noir",
+        "name": "Spider-Man Noir",
+        "team": "Spider-Friends"
+      }
+    ]
+  },
+  {
+    "id": "x-men-box",
+    "name": "X-Men",
+    "description": "Big box devoted to the X-Men and their greatest foes.",
+    "released": "2017-06-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "xm:arcade",
+        "name": "Arcade",
+        "alwaysLeadsGroupId": "xm:murderworld"
+      },
+      {
+        "id": "xm:dark-phoenix",
+        "name": "Dark Phoenix",
+        "alwaysLeadsGroupId": "xm:hellfire-club"
+      },
+      {
+        "id": "xm:deathbird",
+        "name": "Deathbird",
+        "alwaysLeadsGroupId": "xm:shi-ar-imperial-guard"
+      },
+      {
+        "id": "xm:mojo",
+        "name": "Mojo",
+        "alwaysLeadsGroupId": "xm:mojoverse"
+      },
+      {
+        "id": "xm:onslaught",
+        "name": "Onslaught",
+        "alwaysLeadsGroupId": "xm:dark-descendants"
+      },
+      {
+        "id": "xm:shadow-king",
+        "name": "Shadow King",
+        "alwaysLeadsGroupId": "xm:shadow-x"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "xm:alien-brood-encounters",
+        "name": "Alien Brood Encounters",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "xm:anti-mutant-hatred",
+        "name": "Anti-Mutant Hatred",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "xm:the-dark-phoenix-saga",
+        "name": "The Dark Phoenix Saga",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "xm:horror-of-horrors",
+        "name": "Horror of Horrors",
+        "setup": {
+          "twists": 6
+        }
+      },
+      {
+        "id": "xm:mutant-hunting-super-sentinels",
+        "name": "Mutant-Hunting Super Sentinels",
+        "setup": {
+          "twists": 9
+        }
+      },
+      {
+        "id": "xm:nuclear-armageddon",
+        "name": "Nuclear Armageddon",
+        "setup": {
+          "twists": 5
+        }
+      },
+      {
+        "id": "xm:televised-deathtraps-of-mojoworld",
+        "name": "Televised Deathtraps of Mojoworld",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "xm:x-men-danger-room-goes-berserk",
+        "name": "X-Men Danger Room Goes Berserk",
+        "setup": {
+          "twists": 8
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "xm:dark-descendants",
+        "name": "Dark Descendants"
+      },
+      {
+        "id": "xm:hellfire-club",
+        "name": "Hellfire Club"
+      },
+      {
+        "id": "xm:mojoverse",
+        "name": "Mojoverse"
+      },
+      {
+        "id": "xm:murderworld",
+        "name": "Murderworld"
+      },
+      {
+        "id": "xm:shadow-x",
+        "name": "Shadow-X"
+      },
+      {
+        "id": "xm:shi-ar-imperial-guard",
+        "name": "Shi'ar Imperial Guard"
+      },
+      {
+        "id": "xm:sisterhood-of-mutants",
+        "name": "Sisterhood of Mutants"
+      },
+      {
+        "id": "xm:token-villains",
+        "name": "Token Villains"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "xm:the-brood",
+        "name": "The Brood"
+      },
+      {
+        "id": "xm:hellfire-cult",
+        "name": "Hellfire Cult"
+      },
+      {
+        "id": "xm:sapien-league",
+        "name": "Sapien League"
+      },
+      {
+        "id": "xm:shi-ar-death-commandos",
+        "name": "Shi'ar Death Commandos"
+      },
+      {
+        "id": "xm:shi-ar-patrol-craft",
+        "name": "Shi'ar Patrol Craft"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "xm:aurora-northstar",
+        "name": "Aurora & Northstar",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:banshee",
+        "name": "Banshee",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:beast",
+        "name": "Beast",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:cannonball",
+        "name": "Cannonball",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:colossus-wolverine",
+        "name": "Colossus & Wolverine",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:dazzler",
+        "name": "Dazzler",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:havok",
+        "name": "Havok",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:jubilee",
+        "name": "Jubilee",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:kitty-pryde",
+        "name": "Kitty Pryde",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:legion",
+        "name": "Legion",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:longshot",
+        "name": "Longshot",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:phoenix",
+        "name": "Phoenix",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:polaris",
+        "name": "Polaris",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:psylocke",
+        "name": "Psylocke",
+        "team": "X-Men"
+      },
+      {
+        "id": "xm:x-23",
+        "name": "X-23",
+        "team": "X-Men"
+      }
+    ]
+  },
+  {
+    "id": "spider-man-homecoming",
+    "name": "Spider-Man Homecoming",
+    "description": "Small box tied to the Homecoming film.",
+    "released": "2017-07-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "smh:adrian-toomes",
+        "name": "Adrian Toomes",
+        "alwaysLeadsGroupId": "smh:salvagers"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "smh:distract-the-hero",
+        "name": "Distract the Hero",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "smh:explosion-at-the-washington-monument",
+        "name": "Explosion at the Washington Monument",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "smh:ferry-disaster",
+        "name": "Ferry Disaster",
+        "setup": {
+          "twists": 9
+        }
+      },
+      {
+        "id": "smh:scavenge-alien-weaponry",
+        "name": "Scavenge Alien Weaponry",
+        "setup": {
+          "twists": 7
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "smh:salvagers",
+        "name": "Salvagers"
+      },
+      {
+        "id": "smh:vulture-tech",
+        "name": "Vulture Tech"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "smh:happy-hogan",
+        "name": "Happy Hogan",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "smh:high-tech-spider-man",
+        "name": "High-Tech Spider-Man",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "smh:peter-s-allies",
+        "name": "Peter's Allies",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "smh:peter-parker-homecoming",
+        "name": "Peter Parker, Homecoming",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "smh:tony-stark",
+        "name": "Tony Stark",
+        "team": "Avengers"
+      }
+    ]
+  },
+  {
+    "id": "champions",
+    "name": "Champions",
+    "description": "Small box: the young-hero Champions team.",
+    "released": "2017-09-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "champ:fin-fang-foom",
+        "name": "Fin Fang Foom",
+        "alwaysLeadsGroupId": "champ:monsters-unleashed"
+      },
+      {
+        "id": "champ:pagliacci",
+        "name": "Pagliacci",
+        "alwaysLeadsGroupId": "champ:wrecking-crew"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "champ:clash-of-the-monsters-unleashed",
+        "name": "Clash of the Monsters Unleashed",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "champ:divide-and-conquer",
+        "name": "Divide and Conquer",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "champ:hypnotize-every-human",
+        "name": "Hypnotize Every Human",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "champ:steal-all-oxygen-on-earth",
+        "name": "Steal All Oxygen on Earth",
+        "setup": {
+          "twists": 8
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "champ:monsters-unleashed",
+        "name": "Monsters Unleashed"
+      },
+      {
+        "id": "champ:wrecking-crew",
+        "name": "Wrecking Crew"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "champ:gwenpool",
+        "name": "Gwenpool",
+        "team": "Champions"
+      },
+      {
+        "id": "champ:ms-marvel",
+        "name": "Ms. Marvel",
+        "team": "Champions"
+      },
+      {
+        "id": "champ:nova",
+        "name": "Nova",
+        "team": "Champions"
+      },
+      {
+        "id": "champ:totally-awesome-hulk",
+        "name": "Totally Awesome Hulk",
+        "team": "Champions"
+      },
+      {
+        "id": "champ:viv-vision",
+        "name": "Viv Vision",
+        "team": "Champions"
+      }
+    ]
+  },
+  {
+    "id": "world-war-hulk",
+    "name": "World War Hulk",
+    "description": "Big box: the Hulk returns from Sakaar with the Warbound.",
+    "released": "2017-11-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "wwh:general-ross",
+        "name": "General Ross",
+        "alwaysLeadsGroupId": "wwh:code-red"
+      },
+      {
+        "id": "wwh:illuminati-secret-society",
+        "name": "Illuminati, Secret Society",
+        "alwaysLeadsGroupId": "wwh:illuminati"
+      },
+      {
+        "id": "wwh:king-hulk-sakaarson",
+        "name": "King Hulk, Sakaarson",
+        "alwaysLeadsGroupId": "wwh:warbound"
+      },
+      {
+        "id": "wwh:m-o-d-o-k",
+        "name": "M.O.D.O.K.",
+        "alwaysLeadsGroupId": "wwh:intelligencia"
+      },
+      {
+        "id": "wwh:the-red-king",
+        "name": "The Red King",
+        "alwaysLeadsGroupId": "wwh:sakaar-imperial-guard"
+      },
+      {
+        "id": "wwh:the-sentry",
+        "name": "The Sentry",
+        "alwaysLeadsGroupId": "wwh:aspects-of-the-void"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "wwh:break-the-planet-asunder",
+        "name": "Break the Planet Asunder",
+        "setup": {
+          "twists": 9
+        }
+      },
+      {
+        "id": "wwh:cytoplasm-spike-invasion",
+        "name": "Cytoplasm Spike Invasion",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "wwh:fall-of-the-hulks",
+        "name": "Fall of the Hulks",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "wwh:gladiator-pits-of-sakaar",
+        "name": "Gladiator Pits of Sakaar",
+        "setup": {
+          "twists": 6
+        }
+      },
+      {
+        "id": "wwh:mutating-gamma-rays",
+        "name": "Mutating Gamma Rays",
+        "setup": {
+          "twists": 7
+        }
+      },
+      {
+        "id": "wwh:shoot-hulk-into-space",
+        "name": "Shoot Hulk into Space",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "wwh:subjugate-with-obedience-disks",
+        "name": "Subjugate with Obedience Disks",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "wwh:world-war-hulk",
+        "name": "World War Hulk",
+        "setup": {
+          "twists": 9
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "wwh:aspects-of-the-void",
+        "name": "Aspects of the Void"
+      },
+      {
+        "id": "wwh:code-red",
+        "name": "Code Red"
+      },
+      {
+        "id": "wwh:illuminati",
+        "name": "Illuminati"
+      },
+      {
+        "id": "wwh:intelligencia",
+        "name": "Intelligencia"
+      },
+      {
+        "id": "wwh:sakaar-imperial-guard",
+        "name": "Sakaar Imperial Guard"
+      },
+      {
+        "id": "wwh:u-foes",
+        "name": "U-Foes"
+      },
+      {
+        "id": "wwh:warbound",
+        "name": "Warbound"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "wwh:cytoplasm-spikes",
+        "name": "Cytoplasm Spikes"
+      },
+      {
+        "id": "wwh:death-s-heads",
+        "name": "Death's Heads"
+      },
+      {
+        "id": "wwh:sakaaran-hivelings",
+        "name": "Sakaaran Hivelings"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "wwh:amadeus-cho",
+        "name": "Amadeus Cho",
+        "team": "Champions"
+      },
+      {
+        "id": "wwh:bruce-banner",
+        "name": "Bruce Banner",
+        "team": "Avengers"
+      },
+      {
+        "id": "wwh:caiera",
+        "name": "Caiera",
+        "team": "Warbound"
+      },
+      {
+        "id": "wwh:gladiator-hulk",
+        "name": "Gladiator Hulk",
+        "team": "Warbound"
+      },
+      {
+        "id": "wwh:hiroim",
+        "name": "Hiroim",
+        "team": "Warbound"
+      },
+      {
+        "id": "wwh:hulkbuster-iron-man",
+        "name": "Hulkbuster Iron Man",
+        "team": "Avengers"
+      },
+      {
+        "id": "wwh:joe-fixit-grey-hulk",
+        "name": "Joe Fixit, Grey Hulk",
+        "team": "Crime Syndicate"
+      },
+      {
+        "id": "wwh:korg",
+        "name": "Korg",
+        "team": "Warbound"
+      },
+      {
+        "id": "wwh:miek-the-unhived",
+        "name": "Miek, The Unhived",
+        "team": "Warbound"
+      },
+      {
+        "id": "wwh:namora",
+        "name": "Namora",
+        "team": "Champions"
+      },
+      {
+        "id": "wwh:no-name-brood-queen",
+        "name": "No-Name, Brood Queen",
+        "team": "Warbound"
+      },
+      {
+        "id": "wwh:rick-jones",
+        "name": "Rick Jones",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "wwh:sentry",
+        "name": "Sentry",
+        "team": "Avengers"
+      },
+      {
+        "id": "wwh:she-hulk",
+        "name": "She-Hulk",
+        "team": "Avengers"
+      },
+      {
+        "id": "wwh:skaar-son-of-hulk",
+        "name": "Skaar, Son Of Hulk",
+        "team": "Avengers"
+      }
+    ]
+  },
+  {
+    "id": "marvel-studios-phase-1",
+    "name": "Marvel Studios Phase 1",
+    "description": "MCU Phase 1 box themed on the first Avengers films.",
+    "released": "2021-05-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "msp1:iron-monger",
+        "name": "Iron Monger",
+        "alwaysLeadsGroupId": "msp1:iron-foes"
+      },
+      {
+        "id": "msp1:loki",
+        "name": "Loki",
+        "alwaysLeadsGroupId": "msp1:enemies-of-asgard"
+      },
+      {
+        "id": "msp1:red-skull",
+        "name": "Red Skull",
+        "alwaysLeadsGroupId": "msp1:hydra"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "msp1:asgard-under-siege",
+        "name": "Asgard Under Siege",
+        "setup": {
+          "twists": 8,
+          "henchmenDelta": 1
+        }
+      },
+      {
+        "id": "msp1:destroy-the-cities-of-earth",
+        "name": "Destroy the Cities of Earth!",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "msp1:enslave-minds-with-the-chitauri-scepter",
+        "name": "Enslave Minds with the Chitauri Scepter",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "msp1:invade-asgard",
+        "name": "Invade Asgard",
+        "setup": {
+          "twists": 7
+        }
+      },
+      {
+        "id": "msp1:radioactive-palladium-poisoning",
+        "name": "Radioactive Palladium Poisoning",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "msp1:replace-earth-s-leaders-with-hydra",
+        "name": "Replace Earth's Leaders with HYDRA",
+        "setup": {
+          "twists": 5,
+          "bystanders": 18
+        }
+      },
+      {
+        "id": "msp1:super-hero-civil-war",
+        "name": "Super Hero Civil War",
+        "setup": {
+          "twists": 8,
+          "twistsByPlayers": {
+            "4": 5,
+            "5": 5
+          }
+        }
+      },
+      {
+        "id": "msp1:unleash-the-power-of-the-cosmic-cube",
+        "name": "Unleash the Power of the Cosmic Cube",
+        "setup": {
+          "twists": 8
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "msp1:chitauri",
+        "name": "Chitauri"
+      },
+      {
+        "id": "msp1:enemies-of-asgard",
+        "name": "Enemies of Asgard"
+      },
+      {
+        "id": "msp1:gamma-hunters",
+        "name": "Gamma Hunters"
+      },
+      {
+        "id": "msp1:hydra",
+        "name": "HYDRA"
+      },
+      {
+        "id": "msp1:iron-foes",
+        "name": "Iron Foes"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "msp1:hammer-drone-army",
+        "name": "Hammer Drone Army"
+      },
+      {
+        "id": "msp1:hydra-pilots",
+        "name": "HYDRA Pilots"
+      },
+      {
+        "id": "msp1:hydra-spies",
+        "name": "HYDRA Spies"
+      },
+      {
+        "id": "msp1:ten-rings-fanatics",
+        "name": "Ten Rings Fanatics"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "msp1:black-widow",
+        "name": "Black Widow",
+        "team": "Avengers"
+      },
+      {
+        "id": "msp1:captain-america",
+        "name": "Captain America",
+        "team": "Avengers"
+      },
+      {
+        "id": "msp1:hawkeye",
+        "name": "Hawkeye",
+        "team": "Avengers"
+      },
+      {
+        "id": "msp1:hulk",
+        "name": "Hulk",
+        "team": "Avengers"
+      },
+      {
+        "id": "msp1:iron-man",
+        "name": "Iron Man",
+        "team": "Avengers"
+      },
+      {
+        "id": "msp1:nick-fury",
+        "name": "Nick Fury",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "msp1:thor",
+        "name": "Thor",
+        "team": "Avengers"
+      }
+    ]
+  },
+  {
+    "id": "ant-man",
+    "name": "Ant-Man",
+    "description": "Small box for Ant-Man and the Wasp.",
+    "released": "2018-06-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "am:ultron",
+        "name": "Ultron",
+        "alwaysLeadsGroupId": "am:ultron-s-legacy"
+      },
+      {
+        "id": "am:morgana-le-fay",
+        "name": "Morgana Le Fay",
+        "alwaysLeadsGroupId": "am:queen-s-vengeance"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "am:age-of-ultron",
+        "name": "Age of Ultron",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "am:pull-earth-into-medieval-times",
+        "name": "Pull Earth into Medieval Times",
+        "setup": {
+          "twists": 9
+        }
+      },
+      {
+        "id": "am:transform-commuters-into-giant-ants",
+        "name": "Transform Commuters into Giant Ants",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "am:trap-heroes-in-the-microverse",
+        "name": "Trap Heroes in the Microverse",
+        "setup": {
+          "twists": 11
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "am:ultron-s-legacy",
+        "name": "Ultron's Legacy"
+      },
+      {
+        "id": "am:queen-s-vengeance",
+        "name": "Queen's Vengeance"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "am:ant-man",
+        "name": "Ant-Man",
+        "team": "Avengers"
+      },
+      {
+        "id": "am:wasp",
+        "name": "Wasp",
+        "team": "Avengers"
+      },
+      {
+        "id": "am:jocasta",
+        "name": "Jocasta",
+        "team": "Avengers"
+      },
+      {
+        "id": "am:wonder-man",
+        "name": "Wonder Man",
+        "team": "Avengers"
+      },
+      {
+        "id": "am:black-knight",
+        "name": "Black Knight",
+        "team": "Avengers"
+      }
+    ]
+  },
+  {
+    "id": "venom",
+    "name": "Venom",
+    "description": "Small box: the Venomverse symbiotes.",
+    "released": "2019-04-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "venom:hybrid",
+        "name": "Hybrid",
+        "alwaysLeadsGroupId": "venom:life-foundation"
+      },
+      {
+        "id": "venom:poison-thanos",
+        "name": "Poison Thanos",
+        "alwaysLeadsGroupId": "venom:poisons"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "venom:invasion-of-the-venom-symbiotes",
+        "name": "Invasion of the Venom Symbiotes",
+        "setup": {
+          "twists": 8,
+          "henchmenDelta": 1
+        }
+      },
+      {
+        "id": "venom:maximum-carnage",
+        "name": "Maximum Carnage",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "venom:paralyzing-venom",
+        "name": "Paralyzing Venom",
+        "setup": {
+          "twists": 6
+        }
+      },
+      {
+        "id": "venom:symbiotic-absorption",
+        "name": "Symbiotic Absorption",
+        "setup": {
+          "twists": 11
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "venom:life-foundation",
+        "name": "Life Foundation"
+      },
+      {
+        "id": "venom:poisons",
+        "name": "Poisons"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "venom:carnage",
+        "name": "Carnage",
+        "team": "Venomverse"
+      },
+      {
+        "id": "venom:venom",
+        "name": "Venom",
+        "team": "Venomverse"
+      },
+      {
+        "id": "venom:venom-rocket",
+        "name": "Venom Rocket",
+        "team": "Venomverse"
+      },
+      {
+        "id": "venom:venomized-dr-strange",
+        "name": "Venomized Dr. Strange",
+        "team": "Venomverse"
+      },
+      {
+        "id": "venom:venompool",
+        "name": "Venompool",
+        "team": "Venomverse"
+      }
+    ]
   }
 ]

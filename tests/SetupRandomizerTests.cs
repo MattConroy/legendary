@@ -471,6 +471,37 @@ public class SetupRandomizerTests
             h => Assert.Equal("Mercs for Money", ((Hero)h).Team));
     }
 
+    [Fact]
+    public void XMen_and_WorldWarHulk_big_box_rosters()
+    {
+        var xm = Set("x-men-box");
+        Assert.Equal(6, xm.Masterminds.Count);   // base only, Epic variants excluded
+        Assert.Equal(8, xm.Schemes.Count);
+        Assert.Equal(15, xm.Heroes.Count);
+        Assert.All(xm.Heroes, h => Assert.Equal("X-Men", ((Hero)h).Team));
+
+        var wwh = Set("world-war-hulk");
+        Assert.Equal(6, wwh.Masterminds.Count);   // Transformed flip-sides excluded
+        Assert.Equal(15, wwh.Heroes.Count);
+    }
+
+    [Fact]
+    public void Every_hero_team_has_a_badge_mapping()
+    {
+        // Mirror of TeamIcon's slug map — every team a hero uses must resolve to a real badge,
+        // otherwise it silently renders the Unaffiliated fallback.
+        var known = new HashSet<string>
+        {
+            "Avengers", "Fantastic Four", "Guardians of the Galaxy", "X-Men", "X-Force",
+            "Marvel Knights", "S.H.I.E.L.D.", "Spider-Friends", "Sinister Six", "Brotherhood",
+            "Foes of Asgard", "Crime Syndicate", "Illuminati", "Cabal", "HYDRA", "New Warriors",
+            "Mercs for Money", "Champions", "Warbound", "Venomverse", "Unaffiliated",
+        };
+        var used = Sets.SelectMany(s => s.Heroes).Select(h => h.Team).Distinct();
+        foreach (var team in used)
+            Assert.True(known.Contains(team), $"Hero team '{team}' has no badge mapping.");
+    }
+
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)
     {
         var ids = items.Select(i => i.Card.Id).ToList();
