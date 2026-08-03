@@ -771,5 +771,113 @@
         "team": "Marvel Knights"
       }
     ]
+  },
+  {
+    "id": "villains",
+    "name": "Villains",
+    "description": "Play the bad guys. Commanders, Adversaries and Allies invert the usual roles, so it slots into the same setup — just enable it on its own.",
+    "released": "2015-01-01",
+    "standalone": true,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "villains:dr-strange",
+        "name": "Dr. Strange",
+        "alwaysLeadsGroupId": "villains:defenders"
+      },
+      {
+        "id": "villains:nick-fury",
+        "name": "Nick Fury",
+        "alwaysLeadsGroupId": "villains:avengers"
+      },
+      {
+        "id": "villains:odin",
+        "name": "Odin",
+        "alwaysLeadsGroupId": "villains:asgardian-warriors"
+      },
+      {
+        "id": "villains:professor-x",
+        "name": "Professor X",
+        "alwaysLeadsGroupId": "villains:x-men-first-class"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "villains:megavault-prison",
+        "name": "Build an Underground MegaVault Prison",
+        "setup": { "twists": 8 }
+      },
+      {
+        "id": "villains:power-suppressing-cells",
+        "name": "Cage Villains in Power-Suppressing Cells",
+        "setup": { "twists": 8 }
+      },
+      {
+        "id": "villains:crown-thor",
+        "name": "Crown Thor King of Asgard",
+        "setup": { "twists": 8 }
+      },
+      {
+        "id": "villains:crush-hydra",
+        "name": "Crush HYDRA",
+        "setup": { "twists": 8 }
+      },
+      {
+        "id": "villains:graduation-x-academy",
+        "name": "Graduation at Xavier's X-Academy",
+        "setup": { "twists": 8 }
+      },
+      {
+        "id": "villains:infiltrate-the-lair",
+        "name": "Infiltrate the Lair with Spies",
+        "setup": { "twists": 8 }
+      },
+      {
+        "id": "villains:mass-produce-war-machine",
+        "name": "Mass Produce War Machine Armor",
+        "setup": {
+          "twists": 8,
+          "requiredHenchmenGroupIds": ["villains:shield-assault-squad"],
+          "notes": ["Include S.H.I.E.L.D. Assault Squad as one of the Backup Adversary (Henchman) groups."]
+        }
+      },
+      {
+        "id": "villains:norn-stones",
+        "name": "Resurrect Heroes with Norn Stones",
+        "setup": { "twists": 8 }
+      }
+    ],
+    "villainGroups": [
+      { "id": "villains:avengers", "name": "Avengers" },
+      { "id": "villains:defenders", "name": "Defenders" },
+      { "id": "villains:marvel-knights", "name": "Marvel Knights" },
+      { "id": "villains:spider-friends", "name": "Spider-Friends" },
+      { "id": "villains:uncanny-avengers", "name": "Uncanny Avengers" },
+      { "id": "villains:uncanny-x-men", "name": "Uncanny X-Men" },
+      { "id": "villains:x-men-first-class", "name": "X-Men First Class" }
+    ],
+    "henchmen": [
+      { "id": "villains:asgardian-warriors", "name": "Asgardian Warriors" },
+      { "id": "villains:cops", "name": "Cops" },
+      { "id": "villains:multiple-man", "name": "Multiple Man" },
+      { "id": "villains:shield-assault-squad", "name": "S.H.I.E.L.D. Assault Squad" }
+    ],
+    "heroes": [
+      { "id": "villains:dr-octopus", "name": "Dr. Octopus", "team": "Spider-Foes" },
+      { "id": "villains:electro", "name": "Electro", "team": "Spider-Foes" },
+      { "id": "villains:green-goblin", "name": "Green Goblin", "team": "Spider-Foes" },
+      { "id": "villains:kraven", "name": "Kraven", "team": "Spider-Foes" },
+      { "id": "villains:mysterio", "name": "Mysterio", "team": "Spider-Foes" },
+      { "id": "villains:venom", "name": "Venom", "team": "Spider-Foes" },
+      { "id": "villains:juggernaut", "name": "Juggernaut", "team": "Brotherhood" },
+      { "id": "villains:magneto", "name": "Magneto", "team": "Brotherhood" },
+      { "id": "villains:mystique", "name": "Mystique", "team": "Brotherhood" },
+      { "id": "villains:sabretooth", "name": "Sabretooth", "team": "Brotherhood" },
+      { "id": "villains:enchantress", "name": "Enchantress", "team": "Enemies of Asgard" },
+      { "id": "villains:loki", "name": "Loki", "team": "Enemies of Asgard" },
+      { "id": "villains:bullseye", "name": "Bullseye", "team": "Streets of New York" },
+      { "id": "villains:kingpin", "name": "Kingpin", "team": "Streets of New York" },
+      { "id": "villains:deadpool", "name": "Deadpool", "team": "Unaffiliated" }
+    ]
   }
 ]

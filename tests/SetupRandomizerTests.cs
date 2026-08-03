@@ -366,6 +366,43 @@ public class SetupRandomizerTests
         Assert.Equal(7, web.EffectiveTwists);
     }
 
+    [Fact]
+    public void Villains_has_the_expected_role_inverted_roster()
+    {
+        var v = Set("villains");
+        Assert.True(v.Standalone);
+        Assert.Equal(4, v.Masterminds.Count);   // Commanders
+        Assert.Equal(8, v.Schemes.Count);       // Plots
+        Assert.Equal(7, v.VillainGroups.Count); // Adversary groups
+        Assert.Equal(4, v.Henchmen.Count);      // Backup adversaries
+        Assert.Equal(15, v.Heroes.Count);       // Allies
+
+        Assert.Equal("villains:avengers", v.Masterminds.Single(m => m.Name == "Nick Fury").AlwaysLeadsGroupId);
+        // A Commander may lead a Backup-Adversary (Henchman) group, like Dr. Doom leads Doombot Legion in Core.
+        Assert.Equal("villains:asgardian-warriors", v.Masterminds.Single(m => m.Name == "Odin").AlwaysLeadsGroupId);
+    }
+
+    [Fact]
+    public void Villains_plays_standalone_and_never_mixes_other_sets_cards()
+    {
+        var pool = CardPool.From([Set("villains")]);
+        for (var i = 0; i < 200; i++)
+        {
+            var setup = Rng(i).Generate((i % 5) + 1, pool);
+            foreach (var card in setup.VillainGroups.Concat(setup.Henchmen).Concat(setup.Heroes)
+                         .Append(setup.Mastermind).Append(setup.Scheme))
+                Assert.StartsWith("villains:", card.Card.Id);
+        }
+    }
+
+    [Fact]
+    public void Mass_produce_war_machine_forces_the_shield_assault_squad()
+    {
+        var pool = CardPool.From([Set("villains")]);
+        var setup = WithScheme(Rng(7), pool, 4, "villains:mass-produce-war-machine");
+        Assert.Contains(setup.Henchmen, h => h.Card.Id == "villains:shield-assault-squad" && h.IsRequired);
+    }
+
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)
     {
         var ids = items.Select(i => i.Card.Id).ToList();
