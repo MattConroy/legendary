@@ -430,18 +430,24 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
     padding: 10px 14px;
 }
 .set--unowned { opacity: 0.7; }
-.set__info { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; min-width: 0; }
+/* Row stays a single line: caret, name, date (+ optional pill), vertically
+   centred. Only the name flexes and wraps when it's too long. */
+.set__info { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .set__toggle {
     background: none; border: none; padding: 4px 0; margin: 0; cursor: pointer;
     text-align: left; font: inherit; color: inherit; width: 100%;
 }
 .set__caret {
-    color: var(--muted); font-size: 0.7rem; margin-right: 2px;
-    display: inline-block; transition: transform 0.15s ease; transform: translateY(-1px);
+    flex: 0 0 auto;
+    color: var(--muted); font-size: 0.7rem;
+    display: inline-block; transition: transform 0.15s ease;
 }
-.set__caret--open { transform: translateY(-1px) rotate(90deg); }
-.set__name { font-weight: 800; color: #fff; display: inline-flex; align-items: center; gap: 8px; }
-.set__date { font-size: 0.75rem; color: var(--muted); }
+.set__caret--open { transform: rotate(90deg); }
+.set__name {
+    flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere;
+    font-weight: 800; color: #fff;
+}
+.set__date { flex: 0 0 auto; white-space: nowrap; font-size: 0.75rem; color: var(--muted); }
 
 .set__contents {
     padding: 4px 14px 14px 14px;
@@ -465,6 +471,7 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .tag--hero .team-icon { width: 16px; height: 16px; }
 
 .pill {
+    flex: 0 0 auto;
     font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
     padding: 2px 7px; border-radius: 999px;
 }
