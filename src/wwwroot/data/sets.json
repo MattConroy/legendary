@@ -863,20 +863,20 @@
       { "id": "villains:shield-assault-squad", "name": "S.H.I.E.L.D. Assault Squad" }
     ],
     "heroes": [
-      { "id": "villains:dr-octopus", "name": "Dr. Octopus", "team": "Spider-Foes" },
-      { "id": "villains:electro", "name": "Electro", "team": "Spider-Foes" },
-      { "id": "villains:green-goblin", "name": "Green Goblin", "team": "Spider-Foes" },
-      { "id": "villains:kraven", "name": "Kraven", "team": "Spider-Foes" },
-      { "id": "villains:mysterio", "name": "Mysterio", "team": "Spider-Foes" },
-      { "id": "villains:venom", "name": "Venom", "team": "Spider-Foes" },
+      { "id": "villains:dr-octopus", "name": "Dr. Octopus", "team": "Sinister Six" },
+      { "id": "villains:electro", "name": "Electro", "team": "Sinister Six" },
+      { "id": "villains:green-goblin", "name": "Green Goblin", "team": "Sinister Six" },
+      { "id": "villains:kraven", "name": "Kraven", "team": "Sinister Six" },
+      { "id": "villains:mysterio", "name": "Mysterio", "team": "Sinister Six" },
+      { "id": "villains:venom", "name": "Venom", "team": "Sinister Six" },
       { "id": "villains:juggernaut", "name": "Juggernaut", "team": "Brotherhood" },
       { "id": "villains:magneto", "name": "Magneto", "team": "Brotherhood" },
       { "id": "villains:mystique", "name": "Mystique", "team": "Brotherhood" },
       { "id": "villains:sabretooth", "name": "Sabretooth", "team": "Brotherhood" },
-      { "id": "villains:enchantress", "name": "Enchantress", "team": "Enemies of Asgard" },
-      { "id": "villains:loki", "name": "Loki", "team": "Enemies of Asgard" },
-      { "id": "villains:bullseye", "name": "Bullseye", "team": "Streets of New York" },
-      { "id": "villains:kingpin", "name": "Kingpin", "team": "Streets of New York" },
+      { "id": "villains:enchantress", "name": "Enchantress", "team": "Foes of Asgard" },
+      { "id": "villains:loki", "name": "Loki", "team": "Foes of Asgard" },
+      { "id": "villains:bullseye", "name": "Bullseye", "team": "Crime Syndicate" },
+      { "id": "villains:kingpin", "name": "Kingpin", "team": "Crime Syndicate" },
       { "id": "villains:deadpool", "name": "Deadpool", "team": "Unaffiliated" }
     ]
   }
