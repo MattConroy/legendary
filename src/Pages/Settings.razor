@@ -60,14 +60,12 @@
                         <button type="button" class="set__info set__toggle" @onclick="() => Toggle(set.Id)"
                                 aria-expanded="@open" aria-label="@(open ? "Hide" : "Show") contents of @set.Name">
                             <span class="set__caret @(open ? "set__caret--open" : "")" aria-hidden="true">▸</span>
-                            <span class="set__name">
-                                @set.Name
-                                @if (set.Standalone)
-                                {
-                                    <span class="pill pill--standalone" title="Can be played on its own">Standalone</span>
-                                }
-                            </span>
+                            <span class="set__name">@set.Name</span>
                             <span class="set__date">@set.Released.Year</span>
+                            @if (set.Standalone)
+                            {
+                                <span class="pill pill--standalone" title="Can be played on its own">Standalone</span>
+                            }
                         </button>
 
                         <label class="switch switch--sm" title="@(owned ? "Owned" : "Not owned")">

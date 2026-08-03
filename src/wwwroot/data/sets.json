@@ -877,7 +877,7 @@
       { "id": "villains:loki", "name": "Loki", "team": "Foes of Asgard" },
       { "id": "villains:bullseye", "name": "Bullseye", "team": "Crime Syndicate" },
       { "id": "villains:kingpin", "name": "Kingpin", "team": "Crime Syndicate" },
-      { "id": "villains:deadpool", "name": "Deadpool", "team": "Unaffiliated" }
+      { "id": "villains:deadpool", "name": "Deadpool", "team": "Mercs for Money" }
     ]
   }
 ]
