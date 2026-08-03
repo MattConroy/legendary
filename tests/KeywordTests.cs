@@ -13,12 +13,23 @@ public class KeywordTests
         SetJson.Deserialize(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "sets.json")));
 
     [Fact]
-    public void Glossary_loads_with_unique_ids_and_definitions()
+    public void Glossary_loads_with_unique_ids_and_summaries()
     {
         Assert.NotEmpty(Keywords);
         Assert.Equal(Keywords.Count, Keywords.Select(k => k.Id).Distinct().Count());
-        Assert.All(Keywords, k => Assert.False(string.IsNullOrWhiteSpace(k.Definition)));
+        Assert.All(Keywords, k => Assert.False(string.IsNullOrWhiteSpace(k.Summary)));
         Assert.All(Keywords, k => Assert.False(string.IsNullOrWhiteSpace(k.Name)));
+    }
+
+    [Fact]
+    public void Summaries_are_succinct_and_flavour_free()
+    {
+        foreach (var k in Keywords)
+        {
+            // A "remind me" summary stays short and leads with the rule, not lore.
+            Assert.True(k.Summary.Length <= 320, $"{k.Name} summary is too long ({k.Summary.Length}).");
+            Assert.DoesNotContain("This keyword represents", k.Summary);
+        }
     }
 
     [Fact]

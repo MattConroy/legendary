@@ -25,8 +25,8 @@ public static class KeywordJson
         {
             if (!ids.Add(k.Id))
                 throw new InvalidDataException($"Duplicate keyword id '{k.Id}'.");
-            if (string.IsNullOrWhiteSpace(k.Definition))
-                throw new InvalidDataException($"Keyword '{k.Name}' has no definition.");
+            if (string.IsNullOrWhiteSpace(k.Summary))
+                throw new InvalidDataException($"Keyword '{k.Name}' has no summary.");
         }
     }
 }
