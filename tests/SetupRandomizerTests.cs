@@ -407,7 +407,7 @@ public class SetupRandomizerTests
     public void SecretWars1_roster_and_always_leads()
     {
         var s = Set("secret-wars-vol-1");
-        Assert.True(s.Standalone);
+        Assert.False(s.Standalone);
         Assert.Equal(4, s.Masterminds.Count);
         Assert.Equal(8, s.Schemes.Count);
         Assert.Equal(6, s.VillainGroups.Count);

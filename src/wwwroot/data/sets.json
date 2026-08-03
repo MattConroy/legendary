@@ -994,9 +994,9 @@
   {
     "id": "secret-wars-vol-1",
     "name": "Secret Wars Volume 1",
-    "description": "A Battleworld big box: Barons rule domains stitched from dead universes. Standalone — enable it on its own.",
+    "description": "A Battleworld big box: Barons rule domains stitched together from dead universes.",
     "released": "2015-06-01",
-    "standalone": true,
+    "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
       {
@@ -1198,9 +1198,9 @@
   {
     "id": "secret-wars-vol-2",
     "name": "Secret Wars Volume 2",
-    "description": "More Battleworld domains, plus Ambitions. Standalone — enable it on its own.",
+    "description": "More Battleworld domains, plus the Ambitions mechanic.",
     "released": "2015-10-01",
-    "standalone": true,
+    "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
       {
