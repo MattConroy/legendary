@@ -11,6 +11,7 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 builder.Services.AddSingleton<SetupRandomizer>();
 builder.Services.AddSingleton<Legendary.Companion.Data.SetCatalog>();
+builder.Services.AddSingleton<Legendary.Companion.Data.KeywordCatalog>();
 builder.Services.AddSingleton<GameStateService>();
 
 await builder.Build().RunAsync();

@@ -1,0 +1,97 @@
+@page "/keywords"
+@inject GameStateService State
+@inject Legendary.Companion.Data.KeywordCatalog Catalog
+
+<PageTitle>Legendary — Keywords</PageTitle>
+
+<div class="keywords">
+    <h1 class="page-title">Keywords</h1>
+    <p class="muted small">Ability keywords from every expansion, with their rulebook definitions — so you don't have to leaf through the books.</p>
+
+    @if (!Catalog.IsLoaded)
+    {
+        <p class="muted">Loading…</p>
+    }
+    else
+    {
+        <div class="kw-controls">
+            <input type="search" class="kw-search" placeholder="Search keywords…"
+                   value="@_search" @oninput="e => _search = e.Value?.ToString() ?? string.Empty"
+                   aria-label="Search keywords" />
+            <select class="kw-filter" value="@_setFilter" @onchange="e => _setFilter = e.Value?.ToString() ?? string.Empty"
+                    aria-label="Filter by expansion">
+                <option value="">All expansions</option>
+                @foreach (var s in SetsWithKeywords)
+                {
+                    <option value="@s.Id">@s.Name</option>
+                }
+            </select>
+        </div>
+
+        var results = Filtered().ToList();
+        <p class="muted small kw-count">@results.Count keyword@(results.Count == 1 ? "" : "s")</p>
+
+        @if (results.Count == 0)
+        {
+            <p class="muted">No keywords match.</p>
+        }
+        else
+        {
+            <ul class="kw-list">
+                @foreach (var k in results)
+                {
+                    <li class="kw">
+                        <div class="kw__name">@k.Name</div>
+                        <div class="kw__def">@k.Definition</div>
+                        <ul class="tag-list kw__sets">
+                            @foreach (var sid in k.Sets.OrderBy(SetOrder))
+                            {
+                                <li class="tag kw__set">@SetName(sid)</li>
+                            }
+                        </ul>
+                    </li>
+                }
+            </ul>
+        }
+    }
+</div>
+
+@code {
+    private string _search = string.Empty;
+    private string _setFilter = string.Empty;
+
+    private Dictionary<string, string> _names = new();
+    private Dictionary<string, int> _order = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await State.InitializeAsync();       // loads the set catalogue (names/order)
+        await Catalog.EnsureLoadedAsync();   // loads the keyword glossary
+        var ordered = State.AllSets.OrderBy(s => s.Released).ThenBy(s => s.Name).ToList();
+        _names = ordered.ToDictionary(s => s.Id, s => s.Name);
+        _order = ordered.Select((s, i) => (s.Id, i)).ToDictionary(t => t.Id, t => t.i);
+    }
+
+    private IEnumerable<CardSet> SetsWithKeywords
+    {
+        get
+        {
+            var used = Catalog.Keywords.SelectMany(k => k.Sets).ToHashSet();
+            return State.AllSets.Where(s => used.Contains(s.Id)).OrderBy(s => s.Released).ThenBy(s => s.Name);
+        }
+    }
+
+    private IEnumerable<Keyword> Filtered()
+    {
+        var q = _search.Trim();
+        return Catalog.Keywords
+            .Where(k => _setFilter.Length == 0 || k.Sets.Contains(_setFilter))
+            .Where(k => q.Length == 0
+                        || k.Name.Contains(q, StringComparison.OrdinalIgnoreCase)
+                        || k.Definition.Contains(q, StringComparison.OrdinalIgnoreCase))
+            .OrderBy(k => k.Name, StringComparer.OrdinalIgnoreCase);
+    }
+
+    private string SetName(string id) => _names.TryGetValue(id, out var n) ? n : id;
+    private int SetOrder(string id) => _order.TryGetValue(id, out var i) ? i : int.MaxValue;
+}

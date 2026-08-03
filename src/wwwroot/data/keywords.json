@@ -1,0 +1,862 @@
+[
+  {
+    "id": "abomination",
+    "name": "Abomination",
+    "definition": "This Villain gets +Attack equal to the printed Attack of the Hero in the HQ space beneath it. (Variants: Ultimate/Highest/Sewers/Double Abomination.)",
+    "sets": [
+      "captain-america-75",
+      "realm-of-kings"
+    ]
+  },
+  {
+    "id": "antics",
+    "name": "Antics",
+    "definition": "You can use a card's Antics abilities only if you have at least three cards that cost 1 or 2 and/or have Size-Changing.",
+    "sets": [
+      "ant-man-and-the-wasp"
+    ]
+  },
+  {
+    "id": "artifact",
+    "name": "Artifact",
+    "definition": "An Artifact you play stays in front of you and gives its effect (usually once per turn) every turn, instead of going to your discard pile at end of turn.",
+    "sets": [
+      "doctor-strange-and-the-shadows-of-nightmare",
+      "fear-itself",
+      "guardians-of-the-galaxy",
+      "heroes-of-asgard",
+      "marvel-studios-guardians-of-the-galaxy"
+    ]
+  },
+  {
+    "id": "astral-plane",
+    "name": "Astral Plane",
+    "definition": "A single space to the right of the Villain Deck. A Villain in the Astral Plane has no physical form and can only be fought with Recruit, not Attack.",
+    "sets": [
+      "doctor-strange-and-the-shadows-of-nightmare"
+    ]
+  },
+  {
+    "id": "berserk",
+    "name": "Berserk",
+    "definition": "Discard the top card of your deck; you get +Attack equal to its printed Attack. (On an Enemy, you discard when you try to fight it, and fail if you can't match the new Attack.)",
+    "sets": [
+      "weapon-x",
+      "x-men-box"
+    ]
+  },
+  {
+    "id": "blood-frenzy",
+    "name": "Blood Frenzy",
+    "definition": "You (on a Hero) or this Villain gets +1 Attack for each different VP value among cards in your Victory Pile.",
+    "sets": [
+      "midnight-sons"
+    ]
+  },
+  {
+    "id": "bribe",
+    "name": "Bribe",
+    "definition": "You can fight villains with the keyword \"Bribe\" by spending any combination of Attack and/or Recruit points.",
+    "sets": [
+      "civil-war",
+      "dark-city",
+      "secret-wars-vol-1"
+    ]
+  },
+  {
+    "id": "burning-shards",
+    "name": "Burning Shards",
+    "definition": "Once this turn, you may spend that many Shards to do the listed effect.",
+    "sets": [
+      "into-the-cosmos"
+    ]
+  },
+  {
+    "id": "burrow",
+    "name": "Burrow",
+    "definition": "Burrow\" means: \"Fight: If the Streets were empty, put this Villain back into the Streets.",
+    "sets": [
+      "fantastic-four"
+    ]
+  },
+  {
+    "id": "celestial-boon",
+    "name": "Celestial Boon",
+    "definition": "A permanent bonus that helps you for the rest of the game, as long as the Celestial that granted it stays in your Victory Pile.",
+    "sets": [
+      "into-the-cosmos"
+    ]
+  },
+  {
+    "id": "charge",
+    "name": "Charge",
+    "definition": "Ambush: Charge one space\" means \"(After this Villain enters the Sewers,) it charges forward an extra space, pushing other Villains forward.",
+    "sets": [
+      "secret-wars-vol-2"
+    ]
+  },
+  {
+    "id": "cheering-crowds",
+    "name": "Cheering Crowds",
+    "definition": "You may play this card twice in a row if you return a Bystander from your Victory Pile to the bottom of the Bystander Stack.",
+    "sets": [
+      "champions"
+    ]
+  },
+  {
+    "id": "chivalrous-duel",
+    "name": "Chivalrous Duel",
+    "definition": "To fight an enemy with \"Chivalrous Duel,\" you can only use Attack from a single Hero Name.",
+    "sets": [
+      "ant-man",
+      "messiah-complex"
+    ]
+  },
+  {
+    "id": "circle-of-kung-fu",
+    "name": "Circle of Kung-Fu",
+    "definition": "5th Circle of Kung-Fu\" means \"During your turn, this Villain has +5 Attack unless you reveal a Hero that costs 5 or more.",
+    "sets": [
+      "secret-wars-vol-2"
+    ]
+  },
+  {
+    "id": "clone",
+    "name": "Clone",
+    "definition": "You may gain another copy of this card from the HQ. If there are none in the HQ, you may gain a copy from the Hero Deck and shuffle it.",
+    "sets": [
+      "messiah-complex"
+    ]
+  },
+  {
+    "id": "command",
+    "name": "Command",
+    "definition": "A Villain \"Commands\" its group while it is the leftmost Villain of that group in the city, gaining the listed Command abilities.",
+    "sets": [
+      "marvel-studios-guardians-of-the-galaxy"
+    ]
+  },
+  {
+    "id": "conqueror",
+    "name": "Conqueror",
+    "definition": "A Villain with \"[Space] Conqueror N\" gets +N Attack while any Villain (itself or another) is in that city space.",
+    "sets": [
+      "annihilation",
+      "ant-man-and-the-wasp",
+      "heroes-of-asgard",
+      "marvel-studios-phase-1"
+    ]
+  },
+  {
+    "id": "contest-of-champions",
+    "name": "Contest of Champions",
+    "definition": "Each player reveals a card and scores its printed cost (doubled if the chosen colour); Evil scores from the Hero Deck. Highest score(s) win the contest, everyone else loses, with the card's listed outcomes.",
+    "sets": [
+      "into-the-cosmos"
+    ]
+  },
+  {
+    "id": "coordinate",
+    "name": "Coordinate",
+    "definition": "During another player's turn you may discard a Coordinate card (then draw a replacement) to let that player play a copy of it. (Solo: discard to draw.)",
+    "sets": [
+      "spider-man-homecoming"
+    ]
+  },
+  {
+    "id": "cosmic-threat",
+    "name": "Cosmic Threat",
+    "definition": "This enemy has very high Attack but gets -3 Attack (once per turn) for each card of a listed colour you reveal, letting you cut its Attack down before you fight it.",
+    "sets": [
+      "fantastic-four",
+      "into-the-cosmos"
+    ]
+  },
+  {
+    "id": "cross-dimensional-rampage",
+    "name": "Cross-Dimensional Rampage",
+    "definition": "Cross-Dimensional (Character) Rampage\" means \"Each player reveals one of their (Character) Heroes or a (Character) card in their Victory pile or gains a Wound.",
+    "sets": [
+      "marvel-studios-what-if",
+      "secret-wars-vol-1",
+      "world-war-hulk"
+    ]
+  },
+  {
+    "id": "cyber-mod",
+    "name": "Cyber-Mod",
+    "definition": "You may use a Cyber-Mod ability only if you have a card of the listed Hero Class in your Victory Pile.",
+    "sets": [
+      "2099"
+    ]
+  },
+  {
+    "id": "danger-sense",
+    "name": "Danger Sense",
+    "definition": "Reveal the top N cards of the Villain Deck; you get +1 Attack for each Villain revealed, then put them all back on top in any order.",
+    "sets": [
+      "into-the-cosmos",
+      "spider-man-homecoming"
+    ]
+  },
+  {
+    "id": "dark-memories",
+    "name": "Dark Memories",
+    "definition": "You (on a Hero) or this enemy gets +1 Attack for each Hero Class present among cards in your discard pile.",
+    "sets": [
+      "black-widow",
+      "revelations"
+    ]
+  },
+  {
+    "id": "demolish",
+    "name": "Demolish",
+    "definition": "Demolish each player\" means \"Reveal the top card of the Ally (Hero) Deck, note its cost, and put it on the bottom of the Ally Deck.",
+    "sets": [
+      "champions",
+      "fear-itself",
+      "villains"
+    ]
+  },
+  {
+    "id": "demonic-bargain",
+    "name": "Demonic Bargain",
+    "definition": "That player discards the top card of their deck to see if they are corrupted by power. If that discarded card costs 1 or more, that player is too powerful and arrogant to resist temptation and gains a Wound, to the demon's delight.",
+    "sets": [
+      "doctor-strange-and-the-shadows-of-nightmare"
+    ]
+  },
+  {
+    "id": "digest",
+    "name": "Digest",
+    "definition": "Use this Digest ability only if you have at least that many cards in your Victory Pile.",
+    "sets": [
+      "venom"
+    ]
+  },
+  {
+    "id": "divided",
+    "name": "Divided",
+    "definition": "A Divided Card has two mini-cards printed on it. Pay its single cost to recruit it; when you play it, choose one side and ignore the other. It still counts as one card.",
+    "sets": [
+      "black-widow",
+      "civil-war",
+      "marvel-studios-guardians-of-the-galaxy",
+      "x-men-box"
+    ]
+  },
+  {
+    "id": "dodge",
+    "name": "Dodge",
+    "definition": "Dodge\" means \"During your turn, you may discard this card from your hand to draw another card.",
+    "sets": [
+      "black-widow",
+      "villains"
+    ]
+  },
+  {
+    "id": "dominate",
+    "name": "Dominate",
+    "definition": "The enemy puts the named Heroes under itself and gets +1 Attack for each. When it is fought, those Heroes go to players' discard piles; if it escapes, they go to the Escape Pile.",
+    "sets": [
+      "x-men-box"
+    ]
+  },
+  {
+    "id": "double-cross",
+    "name": "Double-Cross",
+    "definition": "Double-Cross each player\" means each player reveals their hand and discards one of their highest-cost \"doubles\" (a card sharing a cost with another card in their hand).",
+    "sets": [
+      "ant-man-and-the-wasp"
+    ]
+  },
+  {
+    "id": "elusive",
+    "name": "Elusive",
+    "definition": "Elusive 6\" means \"You can only fight this Adversary if you have made at least 6 Recruit this turn.",
+    "sets": [
+      "villains"
+    ]
+  },
+  {
+    "id": "empowered",
+    "name": "Empowered",
+    "definition": "You (on a Hero) or this enemy gets +1 Attack for each card of the listed Hero Class currently in the HQ.",
+    "sets": [
+      "ant-man",
+      "black-panther",
+      "marvel-studios-what-if"
+    ]
+  },
+  {
+    "id": "excessive-kindness",
+    "name": "Excessive Kindness",
+    "definition": "Works like Excessive Violence, but you trigger it by spending 1 Recruit more than you need when recruiting a Hero.",
+    "sets": [
+      "marvel-studios-guardians-of-the-galaxy"
+    ]
+  },
+  {
+    "id": "excessive-violence",
+    "name": "Excessive Violence",
+    "definition": "Once per turn, spend 1 Attack more than you need to defeat an enemy to trigger all Excessive Violence abilities on cards you've already played this turn.",
+    "sets": [
+      "deadpool",
+      "marvel-studios-guardians-of-the-galaxy",
+      "venom"
+    ]
+  },
+  {
+    "id": "explore",
+    "name": "Explore",
+    "definition": "Put a Hero from the HQ on the bottom of the Hero Deck. Reveal the top two cards of the Hero Deck and choose which one refills the empty HQ space. Put the other on the bottom of the Hero Deck.",
+    "sets": [
+      "ant-man-and-the-wasp"
+    ]
+  },
+  {
+    "id": "fail",
+    "name": "Fail",
+    "definition": "On a Berserk Enemy: do this \"Fail\" effect if the Berserk Attack bonus causes you to fail to defeat it.",
+    "sets": [
+      "weapon-x"
+    ]
+  },
+  {
+    "id": "fated-future",
+    "name": "Fated Future",
+    "definition": "When you play a card with Fated Future, you may put it on the bottom of your deck.",
+    "sets": [
+      "2099"
+    ]
+  },
+  {
+    "id": "fateful-resurrection",
+    "name": "Fateful Resurrection",
+    "definition": "On a Villain card, \"Fight: Fateful Resurrection\" means \"Fight: Reveal the top card of the Villain Deck.",
+    "sets": [
+      "secret-wars-vol-2"
+    ]
+  },
+  {
+    "id": "feast",
+    "name": "Feast",
+    "definition": "Feast\" = \"Fight: KO the top card of your deck.",
+    "sets": [
+      "paint-the-town-red",
+      "world-war-hulk"
+    ]
+  },
+  {
+    "id": "fight-or-fail",
+    "name": "Fight or Fail",
+    "definition": "Do this effect whether you defeat the enemy or the Uru-Enchanted Weapons / Berserk bonus cause you to fail to defeat it.",
+    "sets": [
+      "2099",
+      "fear-itself"
+    ]
+  },
+  {
+    "id": "focus",
+    "name": "Focus",
+    "definition": "The new \"Focus\" keyword lets you transform your Recruit Points into powerful, flexible effects.",
+    "sets": [
+      "annihilation",
+      "fantastic-four"
+    ]
+  },
+  {
+    "id": "fortify",
+    "name": "Fortify",
+    "definition": "A Villain effect that locks down a place (e.g. \"the Mastermind can't be fought while fortified\"); fight that Villain to end the Fortify effect.",
+    "sets": [
+      "civil-war"
+    ]
+  },
+  {
+    "id": "haunt",
+    "name": "Haunt",
+    "definition": "Tuck this Villain beneath that Hero, 'Haunting' it, so you can see the Villain's name. Players can't recruit the Haunted Hero while the Haunting Villain is under it.",
+    "sets": [
+      "midnight-sons"
+    ]
+  },
+  {
+    "id": "heist",
+    "name": "Heist",
+    "definition": "Once per turn you may attempt a Heist: count your different non-zero Hero costs this turn (Heist Count) vs the top Villain card's VP. Higher = use all Heist effects; tie = nothing; lower = gain a Wound.",
+    "sets": [
+      "ant-man-and-the-wasp"
+    ]
+  },
+  {
+    "id": "hidden-witness",
+    "name": "Hidden Witness",
+    "definition": "This means the Villain captures the top 2 cards of the Bystander Stack, face-down, as Hidden Witnesses.",
+    "sets": [
+      "noir"
+    ]
+  },
+  {
+    "id": "human-shields",
+    "name": "Human Shields",
+    "definition": "\"Captures 2 Human Shields\" means the Villain takes the top 2 Bystanders face-down; you can't fight it until you pay its Attack to rescue each Shield at random.",
+    "sets": [
+      "x-men-box"
+    ]
+  },
+  {
+    "id": "hunt-for-victims",
+    "name": "Hunt for Victims",
+    "definition": "KO a Bystander that is captured by any Enemy or from the Escape Pile. If you can't, then this captures a Bystander instead.",
+    "sets": [
+      "midnight-sons"
+    ]
+  },
+  {
+    "id": "hydra-level",
+    "name": "Hydra Level",
+    "definition": "The Hydra Level is the number of S.H.I.E.L.D. and/or HYDRA cards in the Escape Pile.",
+    "sets": [
+      "s-h-i-e-l-d"
+    ]
+  },
+  {
+    "id": "hyperspeed",
+    "name": "Hyperspeed",
+    "definition": "Reveal the top N cards of your deck; you get +1 Attack for each card with an Attack icon revealed, then discard them all. (Some cards do this for Recruit instead.)",
+    "sets": [
+      "revelations"
+    ]
+  },
+  {
+    "id": "indigestion",
+    "name": "Indigestion",
+    "definition": "If you don't have enough cards in your Victory Pile to use a card's Digest ability, use its Indigestion ability instead.",
+    "sets": [
+      "venom"
+    ]
+  },
+  {
+    "id": "investigate",
+    "name": "Investigate",
+    "definition": "Look at the top two cards of your deck, reveal and draw one matching the stated trait, and put the rest back on top and/or bottom in any order.",
+    "sets": [
+      "dimensions",
+      "messiah-complex",
+      "noir"
+    ]
+  },
+  {
+    "id": "last-stand",
+    "name": "Last Stand",
+    "definition": "You (on a Hero) or this Villain gets +1 Attack for each empty space in the city.",
+    "sets": [
+      "revelations"
+    ]
+  },
+  {
+    "id": "liberate",
+    "name": "Liberate",
+    "definition": "You get +N Attack that can only be spent against Villains holding Bystanders or against the Mastermind.",
+    "sets": [
+      "marvel-studios-what-if"
+    ]
+  },
+  {
+    "id": "lightshow",
+    "name": "Lightshow",
+    "definition": "Once per turn, if you played at least two Lightshow cards this turn, you may use a single Lightshow ability from one of them.",
+    "sets": [
+      "x-men-box"
+    ]
+  },
+  {
+    "id": "man-out-of-time",
+    "name": "Man Out of Time",
+    "definition": "After you use this card's abilities, set it aside. At the beginning of your next turn, play this card a second time then discard it.\" The card is discarded the second time you play it, so you play the card only twice total. Play your returning Man Out of Time cards after the \"Play a Villain Card\"",
+    "sets": [
+      "annihilation",
+      "captain-america-75"
+    ]
+  },
+  {
+    "id": "microscopic-size-changing",
+    "name": "Microscopic Size-Changing",
+    "definition": "Like Size-Changing, but the cost drops 2 for each matching card played this turn (up to the icons shown) — and it can go negative, giving you points.",
+    "sets": [
+      "ant-man",
+      "ant-man-and-the-wasp"
+    ]
+  },
+  {
+    "id": "momentum",
+    "name": "Momentum",
+    "definition": "This Villain gets +N Attack if it entered another city space this turn (by moving, being pushed, or a special ability).",
+    "sets": [
+      "annihilation"
+    ]
+  },
+  {
+    "id": "moonlight-sunlight",
+    "name": "Moonlight & Sunlight",
+    "definition": "Moonlight abilities work only when most of the Heroes in the HQ have odd-numbered costs. Likewise, Sunlight abilites work only when most of the Heroes in the HQ have even-numbered costs.",
+    "sets": [
+      "midnight-sons",
+      "new-mutants"
+    ]
+  },
+  {
+    "id": "outwit",
+    "name": "Outwit",
+    "definition": "You can use this Outwit ability only if you reveal Heroes with 3 different costs.",
+    "sets": [
+      "world-war-hulk"
+    ]
+  },
+  {
+    "id": "patrol",
+    "name": "Patrol",
+    "definition": "Some cards have abilities like \"Patrol the Sewers: If it's empty, rescue a Bystander.\"",
+    "sets": [
+      "midnight-sons",
+      "secret-wars-vol-2"
+    ]
+  },
+  {
+    "id": "phasing",
+    "name": "Phasing",
+    "definition": "During your turn, if a Phasing card is in your hand, you may swap it with the top card of your deck. This isn't playing or drawing a card.",
+    "sets": [
+      "civil-war"
+    ]
+  },
+  {
+    "id": "piercing-energy",
+    "name": "Piercing Energy",
+    "definition": "Spend Piercing points equal to an enemy's printed VP to defeat it, ignoring its Attack, Attack modifiers, and special fight conditions.",
+    "sets": [
+      "x-men-box"
+    ]
+  },
+  {
+    "id": "prey",
+    "name": "Prey",
+    "definition": "This Villain moves in front of the player with the fewest of a named class. If no one defeats it by the end of that player's turn, it does its \"Finish the Prey\" effect against them.",
+    "sets": [
+      "messiah-complex"
+    ]
+  },
+  {
+    "id": "revenge",
+    "name": "Revenge",
+    "definition": "For Villain groups that have the Revenge ability, each Villain gets +1 Attack for every Villain of that group in your Victory Pile.",
+    "sets": [
+      "deadpool"
+    ]
+  },
+  {
+    "id": "rise-of-the-living-dead",
+    "name": "Rise of the Living Dead",
+    "definition": "Each player checks the top card of their Victory Pile. If that card is a Villain with a 'Rise of the Living Dead' ability, that Villain reenters the city.\" (Mastermind Tactics never return this way.) If you put a Villain with Bystanders into your Victory Pile, you choose the order.",
+    "sets": [
+      "marvel-studios-what-if",
+      "secret-wars-vol-1"
+    ]
+  },
+  {
+    "id": "ritual-artifact",
+    "name": "Ritual Artifact",
+    "definition": "An Artifact you may discard to get its effect, but only if you've met its listed Ritual condition this turn (e.g. \"if you drew a card\").",
+    "sets": [
+      "doctor-strange-and-the-shadows-of-nightmare"
+    ]
+  },
+  {
+    "id": "s-h-i-e-l-d-clearance",
+    "name": "S.H.I.E.L.D. Clearance",
+    "definition": "To fight a Villain with S.H.I.E.L.D. Clearance you must discard a S.H.I.E.L.D. (or HYDRA) Hero as an extra cost. Double Clearance needs two.",
+    "sets": [
+      "civil-war"
+    ]
+  },
+  {
+    "id": "s-h-i-e-l-d-level",
+    "name": "S.H.I.E.L.D. Level",
+    "definition": "Your S.H.I.E.L.D. Level is the number of S.H.I.E.L.D. and/or HYDRA cards in your Victory Pile.",
+    "sets": [
+      "s-h-i-e-l-d"
+    ]
+  },
+  {
+    "id": "savior",
+    "name": "Savior",
+    "definition": "Use this ability if you have at least 3 Bystanders in your Victory Pile.\" If you defeat a Villain with Bystanders, put those Bystanders into your Victory Pile before checking any Savior ability on that Villain. If a Hero card rescues a Bystander, that Bystander counts towards any Savior ability on",
+    "sets": [
+      "captain-america-75"
+    ]
+  },
+  {
+    "id": "shards",
+    "name": "Shards",
+    "definition": "Spend a Shard for +1 Attack (then return it). Villains and Masterminds get +1 Attack per Shard on them; take one of their Shards when you defeat/fight them.",
+    "sets": [
+      "guardians-of-the-galaxy",
+      "into-the-cosmos"
+    ]
+  },
+  {
+    "id": "shatter",
+    "name": "Shatter",
+    "definition": "Halve the target enemy's current Attack (round up) until end of turn. Can be repeated. On a Hero in the HQ it halves the current cost instead.",
+    "sets": [
+      "messiah-complex"
+    ]
+  },
+  {
+    "id": "size-changing",
+    "name": "Size-Changing",
+    "definition": "Recruit this Hero (or fight this Villain) for 2 less if you played a card of the listed Hero Class this turn.",
+    "sets": [
+      "ant-man",
+      "ant-man-and-the-wasp",
+      "champions",
+      "civil-war"
+    ]
+  },
+  {
+    "id": "smash",
+    "name": "Smash",
+    "definition": "You may discard another card from your hand; if you do, you get the listed +Attack (e.g. \"Smash 3\" = +3 Attack).",
+    "sets": [
+      "world-war-hulk"
+    ]
+  },
+  {
+    "id": "soaring-flight",
+    "name": "Soaring Flight",
+    "definition": "Soaring Flight\" means \"When you recruit this Hero, set it aside.",
+    "sets": [
+      "x-men-box"
+    ]
+  },
+  {
+    "id": "soulbind",
+    "name": "Soulbind",
+    "definition": "If you have played a Hero earlier this turn, you may choose a face up Villain card from your Victory Pile, turn it face down, and put it on the bottom of your Victory Pile. If you do, then do the listed Soulbind effect.",
+    "sets": [
+      "marvel-studios-what-if"
+    ]
+  },
+  {
+    "id": "spectrum",
+    "name": "Spectrum",
+    "definition": "Some cards have abilities like \"Spectrum: Draw a card.\" You can use a card's Spectrum abilities only if you have at least 3 classes of Hero. Grey S.H.I.E.L.D.",
+    "sets": [
+      "secret-wars-vol-2"
+    ]
+  },
+  {
+    "id": "striker",
+    "name": "Striker",
+    "definition": "It means \"This gets +1 Attack for each Master Strike in the KO pile and/or stacked next to the Mastermind.",
+    "sets": [
+      "spider-man-homecoming"
+    ]
+  },
+  {
+    "id": "switcheroo",
+    "name": "Switcheroo",
+    "definition": "This means \"You can reveal this card from your hand and put it on the bottom of the Hero Deck.",
+    "sets": [
+      "dimensions"
+    ]
+  },
+  {
+    "id": "symbiote-bond",
+    "name": "Symbiote Bond",
+    "definition": "This means stack this card onto the specified Villain, combining them into a single Villain with both cards' Attack and text added together.",
+    "sets": [
+      "venom"
+    ]
+  },
+  {
+    "id": "tactical-formation",
+    "name": "Tactical Formation",
+    "definition": "You can use this ability only if you have two Heroes that cost 4 and one Hero that costs 5.",
+    "sets": [
+      "messiah-complex"
+    ]
+  },
+  {
+    "id": "teleport",
+    "name": "Teleport",
+    "definition": "Instead of playing, you may set aside a card with the keyword \"Teleport\".",
+    "sets": [
+      "dark-city",
+      "dimensions",
+      "realm-of-kings",
+      "secret-wars-vol-1",
+      "secret-wars-vol-2"
+    ]
+  },
+  {
+    "id": "throne-s-favor",
+    "name": "Throne's Favor",
+    "definition": "if you have the Throne's Favor, you may give it up to use the listed ability.",
+    "sets": [
+      "black-panther",
+      "realm-of-kings"
+    ]
+  },
+  {
+    "id": "thrown-artifact",
+    "name": "Thrown Artifact",
+    "definition": "An Artifact you \"throw\" by putting it on the bottom of your deck to use its ability. You can throw any number on your turn.",
+    "sets": [
+      "fear-itself",
+      "heroes-of-asgard"
+    ]
+  },
+  {
+    "id": "transform",
+    "name": "Transform",
+    "definition": "A card that transforms is swapped for its set-aside \"Transformed\" version, which you may play immediately. (Transforming Masterminds flip between two sides.)",
+    "sets": [
+      "ant-man-and-the-wasp",
+      "messiah-complex",
+      "midnight-sons",
+      "revelations",
+      "world-war-hulk"
+    ]
+  },
+  {
+    "id": "triggered-artifact",
+    "name": "Triggered Artifact",
+    "definition": "An Artifact that gives its listed effect every time its trigger happens (e.g. \"whenever you draw a card, +1 Attack\") while you control it.",
+    "sets": [
+      "marvel-studios-guardians-of-the-galaxy"
+    ]
+  },
+  {
+    "id": "undercover",
+    "name": "Undercover",
+    "definition": "Put that Hero into your Victory Pile. It's worth 1VP.",
+    "sets": [
+      "2099",
+      "black-widow",
+      "s-h-i-e-l-d"
+    ]
+  },
+  {
+    "id": "unleash",
+    "name": "Unleash",
+    "definition": "Return that Hero from your Victory Pile to your hand.",
+    "sets": [
+      "black-widow"
+    ]
+  },
+  {
+    "id": "uru-enchanted-weapon",
+    "name": "Uru-Enchanted Weapon",
+    "definition": "When you try to fight an enemy that has some number of Uru-Enchanted Weapons, reveal that many cards from the top of the Adversary Deck.",
+    "sets": [
+      "2099",
+      "fear-itself"
+    ]
+  },
+  {
+    "id": "versatile",
+    "name": "Versatile",
+    "definition": "When you play a card with the keyword \"Versatile\" you must first choose between Recruit and Fight.",
+    "sets": [
+      "champions",
+      "dark-city"
+    ]
+  },
+  {
+    "id": "villainous-weapon",
+    "name": "Villainous Weapon",
+    "definition": "the Weapon is captured by the Villain in the city that's closest to the Villain Deck. If there are no Villains in the city, then KO the Weapon instead.",
+    "sets": [
+      "heroes-of-asgard",
+      "marvel-studios-guardians-of-the-galaxy"
+    ]
+  },
+  {
+    "id": "waking-nightmare",
+    "name": "Waking Nightmare",
+    "definition": "Discard a non-grey Hero from your hand. If you discard a Hero this way, draw a card.",
+    "sets": [
+      "new-mutants"
+    ]
+  },
+  {
+    "id": "wall-crawl",
+    "name": "Wall-Crawl",
+    "definition": "When you recruit this Hero, you may put it on top of your deck.",
+    "sets": [
+      "paint-the-town-red",
+      "secret-wars-vol-2",
+      "spider-man-homecoming"
+    ]
+  },
+  {
+    "id": "weapon-x-sequence",
+    "name": "Weapon X Sequence",
+    "definition": "you get + Attack equal to the longest sequence of different printed cost numbers on your cards.",
+    "sets": [
+      "weapon-x"
+    ]
+  },
+  {
+    "id": "what-if",
+    "name": "What If...?",
+    "definition": "Choose a Hero Class or Hero Name. Then reveal the top card of your deck, and either put it back on top of your deck or discard it. If the revealed card had the Hero Class or Hero Name you chose, then do the What If effect.",
+    "sets": [
+      "marvel-studios-what-if"
+    ]
+  },
+  {
+    "id": "when-recruited",
+    "name": "When Recruited",
+    "definition": "Use this \"When Recruited\" ability immediately when you recruit this Hero.",
+    "sets": [
+      "black-widow",
+      "messiah-complex",
+      "realm-of-kings"
+    ]
+  },
+  {
+    "id": "worthy",
+    "name": "Worthy",
+    "definition": "You are Worthy if you have a Hero that costs 5 or more.",
+    "sets": [
+      "heroes-of-asgard"
+    ]
+  },
+  {
+    "id": "wounded-fury",
+    "name": "Wounded Fury",
+    "definition": "When a Hero card says \"Wounded Fury\", it means \"You get +1 Attack for each Wound in your discard pile.",
+    "sets": [
+      "world-war-hulk"
+    ]
+  },
+  {
+    "id": "x-gene",
+    "name": "X-Gene",
+    "definition": "You may use a card's X-Gene ability only if you have a card of the specified Hero Class in your discard pile (once per card, regardless of how many).",
+    "sets": [
+      "x-men-box"
+    ]
+  },
+  {
+    "id": "x-treme-attack",
+    "name": "X-Treme Attack",
+    "definition": "X-Treme\" means \"This Adversary gets +1 Attack for each other Adversary in the city with X-Treme Attack.",
+    "sets": [
+      "villains"
+    ]
+  }
+]

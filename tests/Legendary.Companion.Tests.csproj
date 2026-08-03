@@ -18,6 +18,7 @@
   <ItemGroup>
     <Compile Include="../src/Models/**/*.cs" />
     <Compile Include="../src/Data/SetJson.cs" />
+    <Compile Include="../src/Data/KeywordJson.cs" />
     <Compile Include="../src/Services/CardPool.cs" />
     <Compile Include="../src/Services/SetupRandomizer.cs" />
   </ItemGroup>
@@ -25,6 +26,7 @@
   <!-- The tests validate the real content JSON. -->
   <ItemGroup>
     <None Include="../src/wwwroot/data/sets.json" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
+    <None Include="../src/wwwroot/data/keywords.json" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
   </ItemGroup>
 
 </Project>
