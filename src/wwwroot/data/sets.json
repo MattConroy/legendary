@@ -3,7 +3,7 @@
     "id": "core",
     "name": "Core Set",
     "description": "Legendary: A Marvel Deck Building Game — the original base game.",
-    "released": "2012-01-01",
+    "released": "2012-08-01",
     "standalone": true,
     "enabledByDefault": true,
     "masterminds": [
@@ -242,7 +242,7 @@
     "id": "dark-city",
     "name": "Dark City",
     "description": "Big-box expansion: X-Men, X-Force & Marvel Knights heroes vs. Apocalypse and more.",
-    "released": "2013-01-01",
+    "released": "2013-02-01",
     "standalone": false,
     "enabledByDefault": true,
     "masterminds": [
@@ -481,7 +481,7 @@
     "id": "fantastic-four",
     "name": "Fantastic Four",
     "description": "First small-box expansion: the Fantastic Four & Silver Surfer vs. Galactus and Mole Man.",
-    "released": "2015-01-01",
+    "released": "2013-11-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -568,7 +568,7 @@
     "id": "guardians-of-the-galaxy",
     "name": "Guardians of the Galaxy",
     "description": "Small-box expansion: the Guardians vs. Thanos and the Kree, introducing Shards.",
-    "released": "2014-01-01",
+    "released": "2014-09-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -680,7 +680,7 @@
     "id": "paint-the-town-red",
     "name": "Paint the Town Red",
     "description": "Spider-Man small-box expansion: Spider-Friends vs. Carnage and Mysterio.",
-    "released": "2014-01-01",
+    "released": "2014-05-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -776,7 +776,7 @@
     "id": "villains",
     "name": "Villains",
     "description": "Play the bad guys. Commanders, Adversaries and Allies invert the usual roles, so it slots into the same setup — just enable it on its own.",
-    "released": "2015-01-01",
+    "released": "2014-12-01",
     "standalone": true,
     "enabledByDefault": false,
     "masterminds": [
@@ -805,79 +805,618 @@
       {
         "id": "villains:megavault-prison",
         "name": "Build an Underground MegaVault Prison",
-        "setup": { "twists": 8 }
+        "setup": {
+          "twists": 8
+        }
       },
       {
         "id": "villains:power-suppressing-cells",
         "name": "Cage Villains in Power-Suppressing Cells",
-        "setup": { "twists": 8 }
+        "setup": {
+          "twists": 8
+        }
       },
       {
         "id": "villains:crown-thor",
         "name": "Crown Thor King of Asgard",
-        "setup": { "twists": 8 }
+        "setup": {
+          "twists": 8
+        }
       },
       {
         "id": "villains:crush-hydra",
         "name": "Crush HYDRA",
-        "setup": { "twists": 8 }
+        "setup": {
+          "twists": 8
+        }
       },
       {
         "id": "villains:graduation-x-academy",
         "name": "Graduation at Xavier's X-Academy",
-        "setup": { "twists": 8 }
+        "setup": {
+          "twists": 8
+        }
       },
       {
         "id": "villains:infiltrate-the-lair",
         "name": "Infiltrate the Lair with Spies",
-        "setup": { "twists": 8 }
+        "setup": {
+          "twists": 8
+        }
       },
       {
         "id": "villains:mass-produce-war-machine",
         "name": "Mass Produce War Machine Armor",
         "setup": {
           "twists": 8,
-          "requiredHenchmenGroupIds": ["villains:shield-assault-squad"],
-          "notes": ["Include S.H.I.E.L.D. Assault Squad as one of the Backup Adversary (Henchman) groups."]
+          "requiredHenchmenGroupIds": [
+            "villains:shield-assault-squad"
+          ],
+          "notes": [
+            "Include S.H.I.E.L.D. Assault Squad as one of the Backup Adversary (Henchman) groups."
+          ]
         }
       },
       {
         "id": "villains:norn-stones",
         "name": "Resurrect Heroes with Norn Stones",
-        "setup": { "twists": 8 }
+        "setup": {
+          "twists": 8
+        }
       }
     ],
     "villainGroups": [
-      { "id": "villains:avengers", "name": "Avengers" },
-      { "id": "villains:defenders", "name": "Defenders" },
-      { "id": "villains:marvel-knights", "name": "Marvel Knights" },
-      { "id": "villains:spider-friends", "name": "Spider-Friends" },
-      { "id": "villains:uncanny-avengers", "name": "Uncanny Avengers" },
-      { "id": "villains:uncanny-x-men", "name": "Uncanny X-Men" },
-      { "id": "villains:x-men-first-class", "name": "X-Men First Class" }
+      {
+        "id": "villains:avengers",
+        "name": "Avengers"
+      },
+      {
+        "id": "villains:defenders",
+        "name": "Defenders"
+      },
+      {
+        "id": "villains:marvel-knights",
+        "name": "Marvel Knights"
+      },
+      {
+        "id": "villains:spider-friends",
+        "name": "Spider-Friends"
+      },
+      {
+        "id": "villains:uncanny-avengers",
+        "name": "Uncanny Avengers"
+      },
+      {
+        "id": "villains:uncanny-x-men",
+        "name": "Uncanny X-Men"
+      },
+      {
+        "id": "villains:x-men-first-class",
+        "name": "X-Men First Class"
+      }
     ],
     "henchmen": [
-      { "id": "villains:asgardian-warriors", "name": "Asgardian Warriors" },
-      { "id": "villains:cops", "name": "Cops" },
-      { "id": "villains:multiple-man", "name": "Multiple Man" },
-      { "id": "villains:shield-assault-squad", "name": "S.H.I.E.L.D. Assault Squad" }
+      {
+        "id": "villains:asgardian-warriors",
+        "name": "Asgardian Warriors"
+      },
+      {
+        "id": "villains:cops",
+        "name": "Cops"
+      },
+      {
+        "id": "villains:multiple-man",
+        "name": "Multiple Man"
+      },
+      {
+        "id": "villains:shield-assault-squad",
+        "name": "S.H.I.E.L.D. Assault Squad"
+      }
     ],
     "heroes": [
-      { "id": "villains:dr-octopus", "name": "Dr. Octopus", "team": "Sinister Six" },
-      { "id": "villains:electro", "name": "Electro", "team": "Sinister Six" },
-      { "id": "villains:green-goblin", "name": "Green Goblin", "team": "Sinister Six" },
-      { "id": "villains:kraven", "name": "Kraven", "team": "Sinister Six" },
-      { "id": "villains:mysterio", "name": "Mysterio", "team": "Sinister Six" },
-      { "id": "villains:venom", "name": "Venom", "team": "Sinister Six" },
-      { "id": "villains:juggernaut", "name": "Juggernaut", "team": "Brotherhood" },
-      { "id": "villains:magneto", "name": "Magneto", "team": "Brotherhood" },
-      { "id": "villains:mystique", "name": "Mystique", "team": "Brotherhood" },
-      { "id": "villains:sabretooth", "name": "Sabretooth", "team": "Brotherhood" },
-      { "id": "villains:enchantress", "name": "Enchantress", "team": "Foes of Asgard" },
-      { "id": "villains:loki", "name": "Loki", "team": "Foes of Asgard" },
-      { "id": "villains:bullseye", "name": "Bullseye", "team": "Crime Syndicate" },
-      { "id": "villains:kingpin", "name": "Kingpin", "team": "Crime Syndicate" },
-      { "id": "villains:deadpool", "name": "Deadpool", "team": "Mercs for Money" }
+      {
+        "id": "villains:dr-octopus",
+        "name": "Dr. Octopus",
+        "team": "Sinister Six"
+      },
+      {
+        "id": "villains:electro",
+        "name": "Electro",
+        "team": "Sinister Six"
+      },
+      {
+        "id": "villains:green-goblin",
+        "name": "Green Goblin",
+        "team": "Sinister Six"
+      },
+      {
+        "id": "villains:kraven",
+        "name": "Kraven",
+        "team": "Sinister Six"
+      },
+      {
+        "id": "villains:mysterio",
+        "name": "Mysterio",
+        "team": "Sinister Six"
+      },
+      {
+        "id": "villains:venom",
+        "name": "Venom",
+        "team": "Sinister Six"
+      },
+      {
+        "id": "villains:juggernaut",
+        "name": "Juggernaut",
+        "team": "Brotherhood"
+      },
+      {
+        "id": "villains:magneto",
+        "name": "Magneto",
+        "team": "Brotherhood"
+      },
+      {
+        "id": "villains:mystique",
+        "name": "Mystique",
+        "team": "Brotherhood"
+      },
+      {
+        "id": "villains:sabretooth",
+        "name": "Sabretooth",
+        "team": "Brotherhood"
+      },
+      {
+        "id": "villains:enchantress",
+        "name": "Enchantress",
+        "team": "Foes of Asgard"
+      },
+      {
+        "id": "villains:loki",
+        "name": "Loki",
+        "team": "Foes of Asgard"
+      },
+      {
+        "id": "villains:bullseye",
+        "name": "Bullseye",
+        "team": "Crime Syndicate"
+      },
+      {
+        "id": "villains:kingpin",
+        "name": "Kingpin",
+        "team": "Crime Syndicate"
+      },
+      {
+        "id": "villains:ultron",
+        "name": "Ultron",
+        "team": "Unaffiliated"
+      }
+    ]
+  },
+  {
+    "id": "secret-wars-vol-1",
+    "name": "Secret Wars Volume 1",
+    "description": "A Battleworld big box: Barons rule domains stitched from dead universes. Standalone — enable it on its own.",
+    "released": "2015-06-01",
+    "standalone": true,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "sw1:madelyne-pryor",
+        "name": "Madelyne Pryor, Goblin Queen",
+        "alwaysLeadsGroupId": "sw1:limbo"
+      },
+      {
+        "id": "sw1:nimrod",
+        "name": "Nimrod, Super Sentinel",
+        "alwaysLeadsGroupId": "sw1:sentinel-territories"
+      },
+      {
+        "id": "sw1:wasteland-hulk",
+        "name": "Wasteland Hulk",
+        "alwaysLeadsGroupId": "sw1:wasteland"
+      },
+      {
+        "id": "sw1:zombie-green-goblin",
+        "name": "Zombie Green Goblin",
+        "alwaysLeadsGroupId": "sw1:the-deadlands"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "sw1:army-of-annihilation",
+        "name": "Build an Army of Annihilation",
+        "setup": {
+          "twists": 9
+        }
+      },
+      {
+        "id": "sw1:corrupt-next-generation",
+        "name": "Corrupt the Next Generation of Heroes",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "sw1:bare-hands",
+        "name": "Crush Them With My Bare Hands",
+        "setup": {
+          "twists": 5
+        }
+      },
+      {
+        "id": "sw1:dark-alliance",
+        "name": "Dark Alliance",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "sw1:fragmented-realities",
+        "name": "Fragmented Realities",
+        "setup": {
+          "twists": 8,
+          "villainGroupDelta": 1,
+          "notes": [
+            "Adds an extra Villain Group."
+          ]
+        }
+      },
+      {
+        "id": "sw1:master-of-tyrants",
+        "name": "Master of Tyrants",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "sw1:pan-dimensional-plague",
+        "name": "Pan-Dimensional Plague",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "sw1:smash-two-dimensions",
+        "name": "Smash Two Dimensions Together",
+        "setup": {
+          "twists": 8
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "sw1:the-deadlands",
+        "name": "The Deadlands"
+      },
+      {
+        "id": "sw1:domain-of-apocalypse",
+        "name": "Domain of Apocalypse"
+      },
+      {
+        "id": "sw1:limbo",
+        "name": "Limbo"
+      },
+      {
+        "id": "sw1:manhattan-earth-1610",
+        "name": "Manhattan (Earth-1610)"
+      },
+      {
+        "id": "sw1:sentinel-territories",
+        "name": "Sentinel Territories"
+      },
+      {
+        "id": "sw1:wasteland",
+        "name": "Wasteland"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "sw1:ghost-racers",
+        "name": "Ghost Racers"
+      },
+      {
+        "id": "sw1:m-o-d-o-k-s",
+        "name": "M.O.D.O.K.s"
+      },
+      {
+        "id": "sw1:thor-corps",
+        "name": "Thor Corps"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "sw1:apocalyptic-kitty-pryde",
+        "name": "Apocalyptic Kitty Pryde",
+        "team": "X-Men"
+      },
+      {
+        "id": "sw1:black-bolt",
+        "name": "Black Bolt",
+        "team": "Illuminati"
+      },
+      {
+        "id": "sw1:black-panther",
+        "name": "Black Panther",
+        "team": "Illuminati"
+      },
+      {
+        "id": "sw1:captain-marvel",
+        "name": "Captain Marvel",
+        "team": "Avengers"
+      },
+      {
+        "id": "sw1:dr-strange",
+        "name": "Dr. Strange",
+        "team": "Illuminati"
+      },
+      {
+        "id": "sw1:lady-thor",
+        "name": "Lady Thor",
+        "team": "Avengers"
+      },
+      {
+        "id": "sw1:magik",
+        "name": "Magik",
+        "team": "X-Men"
+      },
+      {
+        "id": "sw1:maximus",
+        "name": "Maximus",
+        "team": "Cabal"
+      },
+      {
+        "id": "sw1:namor-the-sub-mariner",
+        "name": "Namor, the Sub-Mariner",
+        "team": "Cabal"
+      },
+      {
+        "id": "sw1:old-man-logan",
+        "name": "Old Man Logan",
+        "team": "X-Men"
+      },
+      {
+        "id": "sw1:proxima-midnight",
+        "name": "Proxima Midnight",
+        "team": "Cabal"
+      },
+      {
+        "id": "sw1:superior-iron-man",
+        "name": "Superior Iron Man",
+        "team": "Illuminati"
+      },
+      {
+        "id": "sw1:thanos",
+        "name": "Thanos",
+        "team": "Cabal"
+      },
+      {
+        "id": "sw1:ultimate-spider-man",
+        "name": "Ultimate Spider-Man",
+        "team": "Spider-Friends"
+      }
+    ]
+  },
+  {
+    "id": "secret-wars-vol-2",
+    "name": "Secret Wars Volume 2",
+    "description": "More Battleworld domains, plus Ambitions. Standalone — enable it on its own.",
+    "released": "2015-10-01",
+    "standalone": true,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "sw2:zheng-zhu",
+        "name": "Immortal Emperor Zheng-Zhu",
+        "alwaysLeadsGroupId": "sw2:k-un-lun"
+      },
+      {
+        "id": "sw2:king-hyperion",
+        "name": "King Hyperion",
+        "alwaysLeadsGroupId": "sw2:utopolis"
+      },
+      {
+        "id": "sw2:shiklah",
+        "name": "Shiklah, the Demon Bride",
+        "alwaysLeadsGroupId": "sw2:monster-metropolis"
+      },
+      {
+        "id": "sw2:spider-queen",
+        "name": "Spider-Queen",
+        "alwaysLeadsGroupId": "sw2:spider-infected"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "sw2:deadlands-hordes",
+        "name": "Deadlands Hordes Charge the Wall",
+        "setup": {
+          "twists": 8,
+          "villainGroupDelta": 1,
+          "notes": [
+            "Adds an extra Villain Group."
+          ]
+        }
+      },
+      {
+        "id": "sw2:enthrone-barons",
+        "name": "Enthrone the Barons of Battleworld",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "sw2:fountain-eternal-life",
+        "name": "The Fountain of Eternal Life",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "sw2:god-emperor",
+        "name": "The God-Emperor of Battleworld",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "sw2:mark-of-khonshu",
+        "name": "The Mark of Khonshu",
+        "setup": {
+          "twists": 10,
+          "requiredHenchmenGroupIds": [
+            "sw2:khonshu-guardians"
+          ],
+          "notes": [
+            "Always include the Khonshu Guardians."
+          ]
+        }
+      },
+      {
+        "id": "sw2:mysteries-kung-fu",
+        "name": "Master the Mysteries of Kung-Fu",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "sw2:secret-wars",
+        "name": "Secret Wars",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "sw2:sinister-ambitions",
+        "name": "Sinister Ambitions",
+        "setup": {
+          "twists": 6
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "sw2:deadpool-s-secret-secret-wars",
+        "name": "Deadpool's Secret Secret Wars"
+      },
+      {
+        "id": "sw2:guardians-of-knowhere",
+        "name": "Guardians of Knowhere"
+      },
+      {
+        "id": "sw2:k-un-lun",
+        "name": "K'un-lun"
+      },
+      {
+        "id": "sw2:monster-metropolis",
+        "name": "Monster Metropolis"
+      },
+      {
+        "id": "sw2:utopolis",
+        "name": "Utopolis"
+      },
+      {
+        "id": "sw2:x-men-92",
+        "name": "X-Men '92"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "sw2:khonshu-guardians",
+        "name": "Khonshu Guardians"
+      },
+      {
+        "id": "sw2:magma-men",
+        "name": "Magma Men"
+      },
+      {
+        "id": "sw2:fateful-resurrection",
+        "name": "Fateful Resurrection"
+      },
+      {
+        "id": "sw2:spider-infected",
+        "name": "Spider-Infected"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "sw2:agent-venom",
+        "name": "Agent Venom",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "sw2:arkon-the-magnificent",
+        "name": "Arkon the Magnificent",
+        "team": "Unaffiliated"
+      },
+      {
+        "id": "sw2:beast",
+        "name": "Beast",
+        "team": "Illuminati"
+      },
+      {
+        "id": "sw2:black-swan",
+        "name": "Black Swan",
+        "team": "Cabal"
+      },
+      {
+        "id": "sw2:the-captain-and-the-devil",
+        "name": "The Captain and the Devil",
+        "team": "Avengers"
+      },
+      {
+        "id": "sw2:captain-britain",
+        "name": "Captain Britain",
+        "team": "Illuminati"
+      },
+      {
+        "id": "sw2:corvus-glaive",
+        "name": "Corvus Glaive",
+        "team": "Cabal"
+      },
+      {
+        "id": "sw2:dr-punisher-soldier-supreme",
+        "name": "Dr. Punisher, Soldier Supreme",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "sw2:elsa-bloodstone",
+        "name": "Elsa Bloodstone",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "sw2:phoenix-force-cyclops",
+        "name": "Phoenix Force Cyclops",
+        "team": "X-Men"
+      },
+      {
+        "id": "sw2:ruby-summers",
+        "name": "Ruby Summers",
+        "team": "X-Men"
+      },
+      {
+        "id": "sw2:shang-chi",
+        "name": "Shang-Chi",
+        "team": "Marvel Knights"
+      },
+      {
+        "id": "sw2:silk",
+        "name": "Silk",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "sw2:soulsword-colossus",
+        "name": "Soulsword Colossus",
+        "team": "X-Men"
+      },
+      {
+        "id": "sw2:spider-gwen",
+        "name": "Spider-Gwen",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "sw2:time-traveling-jean-grey",
+        "name": "Time-Traveling Jean Grey",
+        "team": "X-Men"
+      }
     ]
   }
 ]

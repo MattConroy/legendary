@@ -403,6 +403,38 @@ public class SetupRandomizerTests
         Assert.Contains(setup.Henchmen, h => h.Card.Id == "villains:shield-assault-squad" && h.IsRequired);
     }
 
+    [Fact]
+    public void SecretWars1_roster_and_always_leads()
+    {
+        var s = Set("secret-wars-vol-1");
+        Assert.True(s.Standalone);
+        Assert.Equal(4, s.Masterminds.Count);
+        Assert.Equal(8, s.Schemes.Count);
+        Assert.Equal(6, s.VillainGroups.Count);
+        Assert.Equal(3, s.Henchmen.Count);
+        Assert.Equal(14, s.Heroes.Count);
+        Assert.Equal("sw1:the-deadlands", s.Masterminds.Single(m => m.Name == "Zombie Green Goblin").AlwaysLeadsGroupId);
+    }
+
+    [Fact]
+    public void SecretWars2_roster_forces_and_backup_leading()
+    {
+        var s = Set("secret-wars-vol-2");
+        Assert.Equal(4, s.Masterminds.Count);
+        Assert.Equal(8, s.Schemes.Count);
+        Assert.Equal(6, s.VillainGroups.Count);
+        Assert.Equal(4, s.Henchmen.Count);
+        Assert.Equal(16, s.Heroes.Count);
+
+        // Spider-Queen leads a Backup-Adversary (Henchman) group, like Odin leads Asgardian Warriors.
+        Assert.Equal("sw2:spider-infected", s.Masterminds.Single(m => m.Name == "Spider-Queen").AlwaysLeadsGroupId);
+
+        var pool = CardPool.From([Set("secret-wars-vol-2")]);
+        var setup = WithScheme(Rng(9), pool, 4, "sw2:mark-of-khonshu");
+        Assert.Contains(setup.Henchmen, h => h.Card.Id == "sw2:khonshu-guardians" && h.IsRequired);
+        Assert.Equal(10, setup.EffectiveTwists);
+    }
+
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)
     {
         var ids = items.Select(i => i.Card.Id).ToList();
