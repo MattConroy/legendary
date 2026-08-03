@@ -671,5 +671,101 @@
         "team": "Guardians of the Galaxy"
       }
     ]
+  },
+  {
+    "id": "paint-the-town-red",
+    "name": "Paint the Town Red",
+    "description": "Spider-Man small-box expansion: Spider-Friends vs. Carnage and Mysterio.",
+    "released": "2014-01-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "ptr:carnage",
+        "name": "Carnage",
+        "alwaysLeadsGroupId": "ptr:maximum-carnage"
+      },
+      {
+        "id": "ptr:mysterio",
+        "name": "Mysterio",
+        "alwaysLeadsGroupId": "ptr:sinister-six"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "ptr:clone-saga",
+        "name": "The Clone Saga",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "ptr:daily-bugle",
+        "name": "Invade the Daily Bugle News HQ",
+        "setup": {
+          "twists": 8,
+          "notes": [
+            "Add 6 extra Henchmen from one Henchman Group to the Hero Deck."
+          ]
+        }
+      },
+      {
+        "id": "ptr:splice-spider-dna",
+        "name": "Splice Humans with Spider DNA",
+        "setup": {
+          "twists": 8,
+          "requiredVillainGroupIds": [
+            "ptr:sinister-six"
+          ],
+          "notes": [
+            "Include the Sinister Six as one of the Villain Groups."
+          ]
+        }
+      },
+      {
+        "id": "ptr:web-of-lies",
+        "name": "Weave a Web of Lies",
+        "setup": {
+          "twists": 7
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "ptr:maximum-carnage",
+        "name": "Maximum Carnage"
+      },
+      {
+        "id": "ptr:sinister-six",
+        "name": "Sinister Six"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "ptr:black-cat",
+        "name": "Black Cat",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "ptr:scarlet-spider",
+        "name": "Scarlet Spider",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "ptr:spider-woman",
+        "name": "Spider-Woman",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "ptr:symbiote-spider-man",
+        "name": "Symbiote Spider-Man",
+        "team": "Spider-Friends"
+      },
+      {
+        "id": "ptr:moon-knight",
+        "name": "Moon Knight",
+        "team": "Marvel Knights"
+      }
+    ]
   }
 ]

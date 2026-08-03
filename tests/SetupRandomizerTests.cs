@@ -341,6 +341,31 @@ public class SetupRandomizerTests
         Assert.Equal(twists, setup.EffectiveTwists);
     }
 
+    [Fact]
+    public void PaintTheTownRed_has_the_expected_roster_and_always_leads()
+    {
+        var p = Set("paint-the-town-red");
+        Assert.Equal(2, p.Masterminds.Count);
+        Assert.Equal(4, p.Schemes.Count);
+        Assert.Equal(2, p.VillainGroups.Count);
+        Assert.Empty(p.Henchmen);
+        Assert.Equal(5, p.Heroes.Count);
+
+        Assert.Equal("ptr:maximum-carnage", p.Masterminds.Single(m => m.Name == "Carnage").AlwaysLeadsGroupId);
+        Assert.Equal("ptr:sinister-six", p.Masterminds.Single(m => m.Name == "Mysterio").AlwaysLeadsGroupId);
+    }
+
+    [Fact]
+    public void Splice_humans_forces_the_sinister_six_and_web_of_lies_uses_seven_twists()
+    {
+        var pool = CardPool.From([Set("core"), Set("paint-the-town-red")]);
+        var splice = WithScheme(Rng(4), pool, 3, "ptr:splice-spider-dna");
+        Assert.Contains(splice.VillainGroups, v => v.Card.Id == "ptr:sinister-six" && v.IsRequired);
+
+        var web = WithScheme(Rng(4), pool, 3, "ptr:web-of-lies");
+        Assert.Equal(7, web.EffectiveTwists);
+    }
+
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)
     {
         var ids = items.Select(i => i.Card.Id).ToList();
