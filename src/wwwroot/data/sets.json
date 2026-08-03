@@ -1498,5 +1498,439 @@
         "team": "HYDRA"
       }
     ]
+  },
+  {
+    "id": "captain-america-75",
+    "name": "Captain America 75th Anniversary",
+    "description": "Small box marking Cap's 75th: WWII villains and Captain Americas across eras.",
+    "released": "2016-07-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "cap:arnim-zola",
+        "name": "Arnim Zola",
+        "alwaysLeadsGroupId": "cap:zola-s-creations"
+      },
+      {
+        "id": "cap:baron-heinrich-zemo",
+        "name": "Baron Heinrich Zemo",
+        "alwaysLeadsGroupId": "cap:masters-of-evil-wwii"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "cap:brainwash-military",
+        "name": "Brainwash the Military",
+        "setup": {
+          "twists": 7
+        }
+      },
+      {
+        "id": "cap:change-wwii",
+        "name": "Change the Outcome of WWII",
+        "setup": {
+          "twists": 7,
+          "villainGroupDelta": 1,
+          "notes": [
+            "Adds an extra Villain Group."
+          ]
+        }
+      },
+      {
+        "id": "cap:slay-ancestors",
+        "name": "Go Back in Time to Slay Heroes' Ancestors",
+        "setup": {
+          "twists": 9,
+          "heroes": 8,
+          "notes": [
+            "Play with 8 Heroes."
+          ]
+        }
+      },
+      {
+        "id": "cap:enigma-code",
+        "name": "The Unbreakable Enigma Code",
+        "setup": {
+          "twists": 6
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "cap:zola-s-creations",
+        "name": "Zola's Creations"
+      },
+      {
+        "id": "cap:masters-of-evil-wwii",
+        "name": "Masters of Evil (WWII)"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "cap:agent-x-13",
+        "name": "Agent X-13",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "cap:captain-america-falcon",
+        "name": "Captain America (Falcon)",
+        "team": "Avengers"
+      },
+      {
+        "id": "cap:captain-america-1941",
+        "name": "Captain America 1941",
+        "team": "Avengers"
+      },
+      {
+        "id": "cap:steve-rogers-director-of-s-h-i-e-l-d",
+        "name": "Steve Rogers, Director of S.H.I.E.L.D.",
+        "team": "S.H.I.E.L.D."
+      },
+      {
+        "id": "cap:winter-soldier",
+        "name": "Winter Soldier",
+        "team": "Unaffiliated"
+      }
+    ]
+  },
+  {
+    "id": "civil-war",
+    "name": "Civil War",
+    "description": "Big box: the Superhuman Registration Act splits Earth's heroes into warring camps.",
+    "released": "2016-05-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "cw:authoritarian-iron-man",
+        "name": "Authoritarian Iron Man",
+        "alwaysLeadsGroupId": "cw:superhuman-registration-act"
+      },
+      {
+        "id": "cw:baron-helmut-zemo",
+        "name": "Baron Helmut Zemo",
+        "alwaysLeadsGroupId": "cw:thunderbolts"
+      },
+      {
+        "id": "cw:maria-hill",
+        "name": "Maria Hill, Director of S.H.I.E.L.D.",
+        "alwaysLeadsGroupId": "cw:s-h-i-e-l-d-elite"
+      },
+      {
+        "id": "cw:misty-knight",
+        "name": "Misty Knight",
+        "alwaysLeadsGroupId": "cw:heroes-for-hire"
+      },
+      {
+        "id": "cw:ragnarok",
+        "name": "Ragnarok",
+        "alwaysLeadsGroupId": "cw:registration-enforcers"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "cw:avengers-vs-xmen",
+        "name": "Avengers vs. X-Men",
+        "setup": {
+          "twists": 9,
+          "notes": [
+            "Hero Deck has 3 Heroes of one Team and 3 of another."
+          ]
+        }
+      },
+      {
+        "id": "cw:dark-reign-hammer",
+        "name": "Dark Reign of H.A.M.M.E.R. Officers",
+        "setup": {
+          "twists": 7
+        }
+      },
+      {
+        "id": "cw:epic-civil-war",
+        "name": "Epic Super Hero Civil War",
+        "setup": {
+          "twists": 9,
+          "twistsByPlayers": {
+            "4": 6,
+            "5": 6
+          },
+          "heroesByPlayers": {
+            "1": 4
+          }
+        }
+      },
+      {
+        "id": "cw:imprison-superhumans",
+        "name": "Imprison Unregistered Superhumans",
+        "setup": {
+          "twists": 11
+        }
+      },
+      {
+        "id": "cw:nitro-crowds",
+        "name": "Nitro the Supervillain Threatens Crowds",
+        "setup": {
+          "twists": 8
+        }
+      },
+      {
+        "id": "cw:predict-future-crime",
+        "name": "Predict Future Crime",
+        "setup": {
+          "twists": 6,
+          "villainGroupDelta": 1,
+          "notes": [
+            "Adds an extra Villain Group."
+          ]
+        }
+      },
+      {
+        "id": "cw:secret-identities",
+        "name": "Reveal Heroes' Secret Identities",
+        "setup": {
+          "twists": 6,
+          "heroes": 7,
+          "notes": [
+            "Play with 7 Heroes."
+          ]
+        }
+      },
+      {
+        "id": "cw:us-split",
+        "name": "United States Split by Civil War",
+        "setup": {
+          "twists": 10
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "cw:csa-special-marshals",
+        "name": "CSA Special Marshals"
+      },
+      {
+        "id": "cw:great-lakes-avengers",
+        "name": "Great Lakes Avengers"
+      },
+      {
+        "id": "cw:heroes-for-hire",
+        "name": "Heroes for Hire"
+      },
+      {
+        "id": "cw:registration-enforcers",
+        "name": "Registration Enforcers"
+      },
+      {
+        "id": "cw:s-h-i-e-l-d-elite",
+        "name": "S.H.I.E.L.D. Elite"
+      },
+      {
+        "id": "cw:superhuman-registration-act",
+        "name": "Superhuman Registration Act"
+      },
+      {
+        "id": "cw:thunderbolts",
+        "name": "Thunderbolts"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "cw:mandroid",
+        "name": "Mandroid"
+      },
+      {
+        "id": "cw:cape-killers",
+        "name": "Cape-Killers"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "cw:captain-america-secret-avenger",
+        "name": "Captain America, Secret Avenger",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:cloak-dagger",
+        "name": "Cloak & Dagger",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:daredevil",
+        "name": "Daredevil",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:falcon",
+        "name": "Falcon",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:goliath",
+        "name": "Goliath",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:hercules",
+        "name": "Hercules",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:hulkling",
+        "name": "Hulkling",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:luke-cage",
+        "name": "Luke Cage",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:patriot",
+        "name": "Patriot",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:peter-parker",
+        "name": "Peter Parker",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:speedball",
+        "name": "Speedball",
+        "team": "New Warriors"
+      },
+      {
+        "id": "cw:stature",
+        "name": "Stature",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:storm-black-panther",
+        "name": "Storm & Black Panther",
+        "team": "X-Men"
+      },
+      {
+        "id": "cw:tigra",
+        "name": "Tigra",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:vision",
+        "name": "Vision",
+        "team": "Avengers"
+      },
+      {
+        "id": "cw:wiccan",
+        "name": "Wiccan",
+        "team": "Avengers"
+      }
+    ]
+  },
+  {
+    "id": "deadpool",
+    "name": "Deadpool",
+    "description": "Small box of chaos: Deadpool and his mercenary 'friends' break the fourth wall.",
+    "released": "2016-02-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "dp:evil-deadpool",
+        "name": "Evil Deadpool",
+        "alwaysLeadsGroupId": "dp:evil-deadpool-corpse"
+      },
+      {
+        "id": "dp:macho-gomez",
+        "name": "Macho Gomez",
+        "alwaysLeadsGroupId": "dp:deadpool-s-friends"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "dp:kills-marvel-universe",
+        "name": "Deadpool Kills the Marvel Universe",
+        "setup": {
+          "twists": 6,
+          "twistsByPlayers": {
+            "4": 5,
+            "5": 5
+          },
+          "heroesByPlayers": {
+            "2": 4
+          },
+          "notes": [
+            "Use Deadpool as one of the Heroes."
+          ]
+        }
+      },
+      {
+        "id": "dp:chimichanga",
+        "name": "Deadpool Wants a Chimichanga",
+        "setup": {
+          "twists": 6,
+          "bystanders": 12
+        }
+      },
+      {
+        "id": "dp:writes-a-scheme",
+        "name": "Deadpool Writes a Scheme",
+        "setup": {
+          "twists": 6,
+          "notes": [
+            "Randomly combines other Schemes."
+          ]
+        }
+      },
+      {
+        "id": "dp:everybody-hates",
+        "name": "Everybody Hates Deadpool",
+        "setup": {
+          "twists": 6,
+          "notes": [
+            "Use at least one Mercs for Money Hero."
+          ]
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "dp:deadpool-s-friends",
+        "name": "Deadpool's \"Friends\""
+      },
+      {
+        "id": "dp:evil-deadpool-corpse",
+        "name": "Evil Deadpool Corpse"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "dp:bob-agent-of-hydra",
+        "name": "Bob, Agent of HYDRA",
+        "team": "HYDRA"
+      },
+      {
+        "id": "dp:deadpool",
+        "name": "Deadpool",
+        "team": "Mercs for Money"
+      },
+      {
+        "id": "dp:slapstick",
+        "name": "Slapstick",
+        "team": "Mercs for Money"
+      },
+      {
+        "id": "dp:solo",
+        "name": "Solo",
+        "team": "Mercs for Money"
+      },
+      {
+        "id": "dp:stingray",
+        "name": "Stingray",
+        "team": "Mercs for Money"
+      }
+    ]
   }
 ]

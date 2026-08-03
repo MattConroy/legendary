@@ -435,6 +435,38 @@ public class SetupRandomizerTests
         Assert.Equal(10, setup.EffectiveTwists);
     }
 
+    [Fact]
+    public void CivilWar_roster_and_player_scaled_twists()
+    {
+        var s = Set("civil-war");
+        Assert.Equal(5, s.Masterminds.Count);
+        Assert.Equal(8, s.Schemes.Count);
+        Assert.Equal(7, s.VillainGroups.Count);
+        Assert.Equal(2, s.Henchmen.Count);
+        Assert.Equal(16, s.Heroes.Count);
+
+        var pool = CardPool.From([Set("core"), Set("civil-war")]);
+        Assert.Equal(9, WithScheme(Rng(3), pool, 3, "cw:epic-civil-war").EffectiveTwists);
+        Assert.Equal(6, WithScheme(Rng(3), pool, 5, "cw:epic-civil-war").EffectiveTwists);
+    }
+
+    [Fact]
+    public void CaptainAmerica75_and_Deadpool_rosters()
+    {
+        var cap = Set("captain-america-75");
+        Assert.Equal(2, cap.Masterminds.Count);
+        Assert.Equal(4, cap.Schemes.Count);
+        Assert.Equal(2, cap.VillainGroups.Count);
+        Assert.Equal(5, cap.Heroes.Count);
+
+        var dp = Set("deadpool");
+        Assert.Equal(2, dp.Masterminds.Count);
+        Assert.Equal(4, dp.Schemes.Count);
+        Assert.Equal(5, dp.Heroes.Count);
+        Assert.All(dp.Heroes.Where(h => h.Name != "Bob, Agent of HYDRA"),
+            h => Assert.Equal("Mercs for Money", ((Hero)h).Team));
+    }
+
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)
     {
         var ids = items.Select(i => i.Card.Id).ToList();
