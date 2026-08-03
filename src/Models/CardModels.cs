@@ -26,9 +26,7 @@ public abstract record GameCard
     /// <summary>Display name.</summary>
     public required string Name { get; init; }
 
-    /// <summary>Id of the <see cref="CardSet"/> this card belongs to.</summary>
-    public required string SetId { get; init; }
-
+    [System.Text.Json.Serialization.JsonIgnore]
     public abstract CardCategory Category { get; }
 }
 
@@ -42,9 +40,6 @@ public sealed record Mastermind : GameCard
     /// May reference either a Villain Group or a Henchman group.
     /// </summary>
     public string? AlwaysLeadsGroupId { get; init; }
-
-    /// <summary>Optional flavour tagline (not currently shown).</summary>
-    public string? Tagline { get; init; }
 
     /// <summary>Extra setup steps this Mastermind imposes (shown on its card).</summary>
     public IReadOnlyList<string> Notes { get; init; } = [];

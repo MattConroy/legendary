@@ -10,7 +10,8 @@ public enum SetSort { Name, Date }
 /// <summary>
 /// Holds the app's live state (player count, which sets are owned/enabled, the
 /// current setup, the Sets-page sort) and persists preferences to local storage.
-/// UI components subscribe to <see cref="OnChange"/> to re-render.
+/// Content sets are loaded at runtime from <see cref="SetCatalog"/>. UI components
+/// subscribe to <see cref="OnChange"/> to re-render.
 /// </summary>
 public sealed class GameStateService
 {
@@ -21,18 +22,17 @@ public sealed class GameStateService
 
     private readonly IJSRuntime _js;
     private readonly SetupRandomizer _randomizer;
-    private readonly HashSet<string> _ownedSetIds;
-    private readonly HashSet<string> _enabledSetIds;
+    private readonly SetCatalog _catalog;
+    private readonly HashSet<string> _ownedSetIds = [];
+    private readonly HashSet<string> _enabledSetIds = [];
 
     private bool _initialized;
 
-    public GameStateService(IJSRuntime js, SetupRandomizer randomizer)
+    public GameStateService(IJSRuntime js, SetupRandomizer randomizer, SetCatalog catalog)
     {
         _js = js;
         _randomizer = randomizer;
-        var defaults = SetRegistry.AllSets.Where(s => s.EnabledByDefault).Select(s => s.Id).ToHashSet();
-        _ownedSetIds = new HashSet<string>(defaults);
-        _enabledSetIds = new HashSet<string>(defaults);
+        _catalog = catalog;
     }
 
     public int Players { get; private set; } = 2;
@@ -42,9 +42,8 @@ public sealed class GameStateService
 
     public event Action? OnChange;
 
-    public IReadOnlyList<CardSet> AllSets => SetRegistry.AllSets;
+    public IReadOnlyList<CardSet> AllSets => _catalog.Sets;
 
-    /// <summary>Sets ordered by the current sort key and direction.</summary>
     public IReadOnlyList<CardSet> SortedSets
     {
         get
@@ -60,17 +59,23 @@ public sealed class GameStateService
     public bool IsEnabled(string setId) => _enabledSetIds.Contains(setId);
     public int OwnedCount => _ownedSetIds.Count;
 
-    /// <summary>
-    /// The randomiser draws from every *enabled* set. Enabling is independent of
-    /// ownership (you might be borrowing a set), though owning one enables it.
-    /// </summary>
+    /// <summary>The randomiser draws from every enabled set (owned or borrowed).</summary>
     public CardPool CurrentPool =>
-        CardPool.From(SetRegistry.AllSets.Where(s => _enabledSetIds.Contains(s.Id)));
+        CardPool.From(_catalog.Sets.Where(s => _enabledSetIds.Contains(s.Id)));
 
     public async Task InitializeAsync()
     {
         if (_initialized) return;
         _initialized = true;
+
+        await _catalog.EnsureLoadedAsync();
+
+        // Defaults from the loaded catalog, then override from local storage.
+        foreach (var id in _catalog.Sets.Where(s => s.EnabledByDefault).Select(s => s.Id))
+        {
+            _ownedSetIds.Add(id);
+            _enabledSetIds.Add(id);
+        }
 
         try
         {
@@ -104,7 +109,7 @@ public sealed class GameStateService
         var ids = JsonSerializer.Deserialize<List<string>>(json);
         if (ids is null) return;
         target.Clear();
-        foreach (var id in ids.Where(id => SetRegistry.FindById(id) is not null))
+        foreach (var id in ids.Where(id => _catalog.FindById(id) is not null))
             target.Add(id);
     }
 
@@ -123,7 +128,7 @@ public sealed class GameStateService
     /// </summary>
     public async Task SetOwnedAsync(string setId, bool owned)
     {
-        if (SetRegistry.FindById(setId) is null) return;
+        if (_catalog.FindById(setId) is null) return;
 
         if (owned)
         {
@@ -143,7 +148,7 @@ public sealed class GameStateService
     /// <summary>Enable/disable a set for the next game (independent of ownership).</summary>
     public async Task SetEnabledAsync(string setId, bool enabled)
     {
-        if (SetRegistry.FindById(setId) is null) return;
+        if (_catalog.FindById(setId) is null) return;
 
         if (enabled) _enabledSetIds.Add(setId);
         else _enabledSetIds.Remove(setId);
@@ -156,7 +161,7 @@ public sealed class GameStateService
     public async Task SetAllEnabledAsync(bool enabled)
     {
         _enabledSetIds.Clear();
-        if (enabled) _enabledSetIds.UnionWith(SetRegistry.AllSets.Select(s => s.Id));
+        if (enabled) _enabledSetIds.UnionWith(_catalog.Sets.Select(s => s.Id));
         await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
         NotifyChanged();
     }

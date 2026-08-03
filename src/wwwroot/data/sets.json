@@ -1,0 +1,559 @@
+[
+  {
+    "id": "core",
+    "name": "Core Set",
+    "description": "Legendary: A Marvel Deck Building Game — the original base game.",
+    "released": "2012-01-01",
+    "standalone": true,
+    "enabledByDefault": true,
+    "masterminds": [
+      {
+        "alwaysLeadsGroupId": "core:doombot-legion",
+        "id": "core:dr-doom",
+        "name": "Dr. Doom"
+      },
+      {
+        "alwaysLeadsGroupId": "core:enemies-of-asgard",
+        "id": "core:loki",
+        "name": "Loki"
+      },
+      {
+        "alwaysLeadsGroupId": "core:brotherhood",
+        "id": "core:magneto",
+        "name": "Magneto"
+      },
+      {
+        "alwaysLeadsGroupId": "core:hydra",
+        "id": "core:red-skull",
+        "name": "Red Skull"
+      }
+    ],
+    "schemes": [
+      {
+        "setup": {
+          "twists": 8,
+          "notes": [
+            "Runs on the Wound stack (6 Wounds per player)."
+          ]
+        },
+        "id": "core:legacy-virus",
+        "name": "The Legacy Virus"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "bystanders": 12
+        },
+        "id": "core:midtown-bank",
+        "name": "Midtown Bank Robbery"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "henchmenDelta": 1,
+          "notes": [
+            "Adds an extra Henchman Group."
+          ]
+        },
+        "id": "core:negative-zone",
+        "name": "Negative Zone Prison Breakout"
+      },
+      {
+        "setup": {
+          "twists": 7
+        },
+        "id": "core:dark-dimension",
+        "name": "Portals to the Dark Dimension"
+      },
+      {
+        "setup": {
+          "twists": 5,
+          "bystanders": 18,
+          "notes": [
+            "Bystanders act as Killbot Villains."
+          ]
+        },
+        "id": "core:killbots",
+        "name": "Replace Earth's Leaders with Killbots"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "heroes": 6,
+          "requiredVillainGroupId": "core:skrulls",
+          "notes": [
+            "Play with 6 Heroes."
+          ]
+        },
+        "id": "core:secret-invasion",
+        "name": "Secret Invasion of the Skrull Shapeshifters"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "twistsByPlayers": {
+            "4": 5,
+            "5": 5
+          },
+          "heroesByPlayers": {
+            "2": 4
+          }
+        },
+        "id": "core:civil-war",
+        "name": "Super Hero Civil War"
+      },
+      {
+        "setup": {
+          "twists": 8
+        },
+        "id": "core:cosmic-cube",
+        "name": "Unleash the Power of the Cosmic Cube"
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "core:brotherhood",
+        "name": "The Brotherhood"
+      },
+      {
+        "id": "core:enemies-of-asgard",
+        "name": "The Enemies of Asgard"
+      },
+      {
+        "id": "core:hydra",
+        "name": "HYDRA"
+      },
+      {
+        "id": "core:skrulls",
+        "name": "Skrulls"
+      },
+      {
+        "id": "core:spider-foes",
+        "name": "Spider-Foes"
+      },
+      {
+        "id": "core:radiation",
+        "name": "Radiation"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "core:doombot-legion",
+        "name": "Doombot Legion"
+      },
+      {
+        "id": "core:hand-ninjas",
+        "name": "Hand Ninjas"
+      },
+      {
+        "id": "core:savage-land-mutates",
+        "name": "Savage Land Mutates"
+      },
+      {
+        "id": "core:sentinels",
+        "name": "Sentinels"
+      }
+    ],
+    "heroes": [
+      {
+        "team": "Avengers",
+        "id": "core:black-widow",
+        "name": "Black Widow"
+      },
+      {
+        "team": "Avengers",
+        "id": "core:captain-america",
+        "name": "Captain America"
+      },
+      {
+        "team": "X-Men",
+        "id": "core:cyclops",
+        "name": "Cyclops"
+      },
+      {
+        "team": "Unaffiliated",
+        "id": "core:deadpool",
+        "name": "Deadpool"
+      },
+      {
+        "team": "X-Men",
+        "id": "core:emma-frost",
+        "name": "Emma Frost"
+      },
+      {
+        "team": "X-Men",
+        "id": "core:gambit",
+        "name": "Gambit"
+      },
+      {
+        "team": "Avengers",
+        "id": "core:hawkeye",
+        "name": "Hawkeye"
+      },
+      {
+        "team": "Avengers",
+        "id": "core:hulk",
+        "name": "Hulk"
+      },
+      {
+        "team": "Avengers",
+        "id": "core:iron-man",
+        "name": "Iron Man"
+      },
+      {
+        "team": "S.H.I.E.L.D.",
+        "id": "core:nick-fury",
+        "name": "Nick Fury"
+      },
+      {
+        "team": "X-Men",
+        "id": "core:rogue",
+        "name": "Rogue"
+      },
+      {
+        "team": "Spider-Friends",
+        "id": "core:spider-man",
+        "name": "Spider-Man"
+      },
+      {
+        "team": "X-Men",
+        "id": "core:storm",
+        "name": "Storm"
+      },
+      {
+        "team": "Avengers",
+        "id": "core:thor",
+        "name": "Thor"
+      },
+      {
+        "team": "X-Men",
+        "id": "core:wolverine",
+        "name": "Wolverine"
+      }
+    ]
+  },
+  {
+    "id": "dark-city",
+    "name": "Dark City",
+    "description": "Big-box expansion: X-Men, X-Force & Marvel Knights heroes vs. Apocalypse and more.",
+    "released": "2013-01-01",
+    "standalone": false,
+    "enabledByDefault": true,
+    "masterminds": [
+      {
+        "alwaysLeadsGroupId": "dc:four-horsemen",
+        "id": "dc:apocalypse",
+        "name": "Apocalypse"
+      },
+      {
+        "alwaysLeadsGroupId": "dc:streets-of-new-york",
+        "id": "dc:kingpin",
+        "name": "Kingpin"
+      },
+      {
+        "alwaysLeadsGroupId": "dc:underworld",
+        "id": "dc:mephisto",
+        "name": "Mephisto"
+      },
+      {
+        "alwaysLeadsGroupId": "dc:marauders",
+        "id": "dc:mister-sinister",
+        "name": "Mister Sinister"
+      },
+      {
+        "alwaysLeadsGroupId": "dc:mutant-liberation-front",
+        "id": "dc:stryfe",
+        "name": "Stryfe"
+      }
+    ],
+    "schemes": [
+      {
+        "setup": {
+          "twists": 8,
+          "notes": [
+            "Place a Baby Hope token by the Mastermind."
+          ]
+        },
+        "id": "dc:capture-baby-hope",
+        "name": "Capture Baby Hope"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "heroes": 6,
+          "notes": [
+            "Play with 6 Heroes."
+          ]
+        },
+        "id": "dc:detonate-helicarrier",
+        "name": "Detonate the Helicarrier"
+      },
+      {
+        "setup": {
+          "twists": 8
+        },
+        "id": "dc:earthquake-generator",
+        "name": "Massive Earthquake Generator"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "requiredHenchmenGroupId": "dc:maggia-goons"
+        },
+        "id": "dc:organized-crimewave",
+        "name": "Organized Crime Wave"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "notes": [
+            "Put 24 Bystanders in the Hero Deck (12 in solo)."
+          ]
+        },
+        "id": "dc:save-humanity",
+        "name": "Save Humanity"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "villainGroupDelta": 1,
+          "notes": [
+            "Adds an extra Villain Group."
+          ]
+        },
+        "id": "dc:steal-plutonium",
+        "name": "Steal the Weaponized Plutonium"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "bystanders": 0
+        },
+        "id": "dc:transform-demons",
+        "name": "Transform Citizens into Demons"
+      },
+      {
+        "setup": {
+          "twists": 8,
+          "heroDelta": 1,
+          "bystanders": 0,
+          "notes": [
+            "Adds an extra Hero (its cards go in the Villain Deck)."
+          ]
+        },
+        "id": "dc:xcutioners-song",
+        "name": "X-Cutioner's Song"
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "dc:four-horsemen",
+        "name": "The Four Horsemen"
+      },
+      {
+        "id": "dc:marauders",
+        "name": "Marauders"
+      },
+      {
+        "id": "dc:mutant-liberation-front",
+        "name": "Mutant Liberation Front"
+      },
+      {
+        "id": "dc:streets-of-new-york",
+        "name": "Streets of New York"
+      },
+      {
+        "id": "dc:underworld",
+        "name": "The Underworld"
+      },
+      {
+        "id": "dc:emissaries-of-evil",
+        "name": "Emissaries of Evil"
+      }
+    ],
+    "henchmen": [
+      {
+        "id": "dc:maggia-goons",
+        "name": "Maggia Goons"
+      },
+      {
+        "id": "dc:phalanx",
+        "name": "Phalanx"
+      }
+    ],
+    "heroes": [
+      {
+        "team": "X-Men",
+        "id": "dc:angel",
+        "name": "Angel"
+      },
+      {
+        "team": "X-Men",
+        "id": "dc:bishop",
+        "name": "Bishop"
+      },
+      {
+        "team": "X-Men",
+        "id": "dc:iceman",
+        "name": "Iceman"
+      },
+      {
+        "team": "X-Men",
+        "id": "dc:jean-grey",
+        "name": "Jean Grey"
+      },
+      {
+        "team": "X-Men",
+        "id": "dc:nightcrawler",
+        "name": "Nightcrawler"
+      },
+      {
+        "team": "X-Men",
+        "id": "dc:professor-x",
+        "name": "Professor X"
+      },
+      {
+        "team": "X-Force",
+        "id": "dc:cable",
+        "name": "Cable"
+      },
+      {
+        "team": "X-Force",
+        "id": "dc:colossus",
+        "name": "Colossus"
+      },
+      {
+        "team": "X-Force",
+        "id": "dc:domino",
+        "name": "Domino"
+      },
+      {
+        "team": "X-Force",
+        "id": "dc:forge",
+        "name": "Forge"
+      },
+      {
+        "team": "X-Force",
+        "id": "dc:wolverine-xforce",
+        "name": "Wolverine (X-Force)"
+      },
+      {
+        "team": "Marvel Knights",
+        "id": "dc:blade",
+        "name": "Blade"
+      },
+      {
+        "team": "Marvel Knights",
+        "id": "dc:daredevil",
+        "name": "Daredevil"
+      },
+      {
+        "team": "Marvel Knights",
+        "id": "dc:elektra",
+        "name": "Elektra"
+      },
+      {
+        "team": "Marvel Knights",
+        "id": "dc:ghost-rider",
+        "name": "Ghost Rider"
+      },
+      {
+        "team": "Marvel Knights",
+        "id": "dc:iron-fist",
+        "name": "Iron Fist"
+      },
+      {
+        "team": "Marvel Knights",
+        "id": "dc:punisher",
+        "name": "Punisher"
+      }
+    ]
+  },
+  {
+    "id": "fantastic-four",
+    "name": "Fantastic Four",
+    "description": "First small-box expansion: the Fantastic Four & Silver Surfer vs. Galactus and Mole Man.",
+    "released": "2015-01-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "alwaysLeadsGroupId": "ff:heralds-of-galactus",
+        "id": "ff:galactus",
+        "name": "Galactus"
+      },
+      {
+        "alwaysLeadsGroupId": "ff:subterranea",
+        "id": "ff:mole-man",
+        "name": "Mole Man"
+      }
+    ],
+    "schemes": [
+      {
+        "setup": {
+          "twists": 6
+        },
+        "id": "ff:cosmic-rays",
+        "name": "Bathe the Earth in Cosmic Rays"
+      },
+      {
+        "setup": {
+          "twists": 8
+        },
+        "id": "ff:melted-glaciers",
+        "name": "Flood the Planet with Melted Glaciers"
+      },
+      {
+        "setup": {
+          "twists": 7
+        },
+        "id": "ff:force-field",
+        "name": "Invincible Force Field"
+      },
+      {
+        "setup": {
+          "twists": 8
+        },
+        "id": "ff:negative-zone",
+        "name": "Pull Reality Into the Negative Zone"
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "ff:heralds-of-galactus",
+        "name": "Heralds of Galactus"
+      },
+      {
+        "id": "ff:subterranea",
+        "name": "Subterranea"
+      }
+    ],
+    "heroes": [
+      {
+        "team": "Fantastic Four",
+        "id": "ff:mister-fantastic",
+        "name": "Mister Fantastic"
+      },
+      {
+        "team": "Fantastic Four",
+        "id": "ff:invisible-woman",
+        "name": "Invisible Woman"
+      },
+      {
+        "team": "Fantastic Four",
+        "id": "ff:human-torch",
+        "name": "Human Torch"
+      },
+      {
+        "team": "Fantastic Four",
+        "id": "ff:thing",
+        "name": "Thing"
+      },
+      {
+        "team": "Unaffiliated",
+        "id": "ff:silver-surfer",
+        "name": "Silver Surfer"
+      }
+    ]
+  }
+]

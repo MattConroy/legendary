@@ -10,8 +10,14 @@ public class SetupRandomizerTests
     // Deterministic RNG so assertions are stable.
     private static SetupRandomizer Rng(int seed = 12345) => new(new Random(seed));
 
-    private static CardPool CorePool() => CardPool.From([CoreSet.Set]);
-    private static CardPool AllPool() => CardPool.From(SetRegistry.AllSets);
+    // Load the real content from the shipped JSON (copied next to the test binary).
+    private static readonly IReadOnlyList<CardSet> Sets =
+        SetJson.Deserialize(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "sets.json")));
+
+    private static CardSet Set(string id) => Sets.First(s => s.Id == id);
+
+    private static CardPool CorePool() => CardPool.From([Set("core")]);
+    private static CardPool AllPool() => CardPool.From(Sets);
 
     // Force a specific Scheme so a ruling can be asserted deterministically.
     private static GameSetup WithScheme(SetupRandomizer r, CardPool pool, int players, string schemeId)
@@ -81,7 +87,7 @@ public class SetupRandomizerTests
     [Fact]
     public void Steal_the_plutonium_adds_an_extra_villain_group()
     {
-        var pool = CardPool.From([CoreSet.Set, DarkCity.Set]);
+        var pool = CardPool.From([Set("core"), Set("dark-city")]);
         var setup = WithScheme(Rng(6), pool, 2, "dc:steal-plutonium");
         Assert.Equal(3, setup.EffectiveVillainGroupCount); // 2 base + 1
         Assert.Equal(3, setup.VillainGroups.Count);
@@ -111,7 +117,7 @@ public class SetupRandomizerTests
     [Fact]
     public void Organized_crime_wave_forces_maggia_goons()
     {
-        var pool = CardPool.From([CoreSet.Set, DarkCity.Set]);
+        var pool = CardPool.From([Set("core"), Set("dark-city")]);
         var setup = WithScheme(Rng(9), pool, 3, "dc:organized-crimewave");
         Assert.Contains(setup.Henchmen, h => h.Card.Id == "dc:maggia-goons" && h.IsRequired);
     }
@@ -119,7 +125,7 @@ public class SetupRandomizerTests
     [Fact]
     public void Xcutioners_song_adds_an_extra_hero_and_no_bystanders()
     {
-        var pool = CardPool.From([CoreSet.Set, DarkCity.Set]);
+        var pool = CardPool.From([Set("core"), Set("dark-city")]);
         var setup = WithScheme(Rng(10), pool, 2, "dc:xcutioners-song");
         Assert.Equal(6, setup.EffectiveHeroCount);   // 5 base + 1
         Assert.Equal(0, setup.EffectiveBystanders);
@@ -214,11 +220,11 @@ public class SetupRandomizerTests
         var set = new CardSet
         {
             Id = s, Name = "Test", Released = new DateOnly(2020, 1, 1),
-            Masterminds = [new() { Id = "t:m", SetId = s, Name = "M", AlwaysLeadsGroupId = "t:v1" }],
-            Schemes = [new() { Id = "t:s", SetId = s, Name = "S", Setup = new SchemeSetup { HenchmenDelta = 1, HeroDelta = 1 } }],
-            VillainGroups = [new() { Id = "t:v1", SetId = s, Name = "V1" }, new() { Id = "t:v2", SetId = s, Name = "V2" }, new() { Id = "t:v3", SetId = s, Name = "V3" }],
-            Henchmen = [new() { Id = "t:h1", SetId = s, Name = "H1" }, new() { Id = "t:h2", SetId = s, Name = "H2" }, new() { Id = "t:h3", SetId = s, Name = "H3" }],
-            Heroes = Enumerable.Range(1, 8).Select(i => new Hero { Id = $"t:hero{i}", SetId = s, Name = $"Hero {i}" }).ToList(),
+            Masterminds = [new() { Id = "t:m", Name = "M", AlwaysLeadsGroupId = "t:v1" }],
+            Schemes = [new() { Id = "t:s", Name = "S", Setup = new SchemeSetup { HenchmenDelta = 1, HeroDelta = 1 } }],
+            VillainGroups = [new() { Id = "t:v1", Name = "V1" }, new() { Id = "t:v2", Name = "V2" }, new() { Id = "t:v3", Name = "V3" }],
+            Henchmen = [new() { Id = "t:h1", Name = "H1" }, new() { Id = "t:h2", Name = "H2" }, new() { Id = "t:h3", Name = "H3" }],
+            Heroes = Enumerable.Range(1, 8).Select(i => new Hero { Id = $"t:hero{i}", Name = $"Hero {i}" }).ToList(),
         };
         var pool = CardPool.From([set]);
 
@@ -244,7 +250,7 @@ public class SetupRandomizerTests
     public void Every_mastermind_always_leads_group_resolves_within_the_full_pool()
     {
         var pool = AllPool();
-        foreach (var set in SetRegistry.AllSets)
+        foreach (var set in Sets)
         {
             foreach (var mm in set.Masterminds)
             {
@@ -260,7 +266,7 @@ public class SetupRandomizerTests
     [Fact]
     public void DarkCity_has_the_expected_roster_sizes()
     {
-        var dc = SetRegistry.FindById("dark-city")!;
+        var dc = Set("dark-city");
         Assert.Equal(5, dc.Masterminds.Count);
         Assert.Equal(8, dc.Schemes.Count);
         Assert.Equal(6, dc.VillainGroups.Count);
@@ -271,7 +277,7 @@ public class SetupRandomizerTests
     [Fact]
     public void FantasticFour_has_the_expected_roster_and_always_leads()
     {
-        var ff = SetRegistry.FindById("fantastic-four")!;
+        var ff = Set("fantastic-four");
         Assert.Equal(2, ff.Masterminds.Count);
         Assert.Equal(4, ff.Schemes.Count);
         Assert.Equal(2, ff.VillainGroups.Count);
@@ -288,7 +294,7 @@ public class SetupRandomizerTests
     [InlineData("ff:melted-glaciers", 8)]
     public void FantasticFour_scheme_twist_counts_are_exact(string schemeId, int twists)
     {
-        var pool = CardPool.From([CoreSet.Set, FantasticFour.Set]);
+        var pool = CardPool.From([Set("core"), Set("fantastic-four")]);
         var setup = WithScheme(Rng(3), pool, 3, schemeId);
         Assert.Equal(twists, setup.EffectiveTwists);
     }

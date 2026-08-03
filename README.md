@@ -19,12 +19,12 @@ GitHub Pages. Works offline once loaded.
   everything else stays put.
 - **Required groups honoured** — each Mastermind's *"Always Leads"* group is forced into the setup and
   flagged with a **Required** badge. Rerolls re-honour it automatically.
-- **Scheme setup modifiers** — Schemes that change counts (e.g. *Replace Earth's Leaders with Killbots*
-  adds a Henchman group; *Super Hero Civil War* adds a Hero) are applied automatically.
-- **Two real content sets** — the **Core Set** and the **Dark City** expansion (both toggleable),
-  plus a clearly-labelled example set that shows how a new module plugs in.
-- **Expansion-ready** — sets are self-contained data modules toggled on/off in **Sets**. The
-  randomiser only ever reads the *enabled* pool, so adding an expansion never touches randomiser code.
+- **Scheme setup modifiers** — Schemes that change counts (e.g. *Negative Zone Prison Breakout* adds a
+  Henchman group; *Steal the Weaponized Plutonium* adds a Villain group; *Secret Invasion* forces the
+  Skrulls) are applied automatically, with the right Twist counts per Scheme.
+- **Content sets** — **Core Set**, **Dark City**, and **Fantastic Four**, toggleable under **Sets**.
+- **Data-driven** — all sets/cards live in `wwwroot/data/sets.json`, loaded at runtime; the randomiser
+  only reads the *enabled* pool, so adding an expansion is a data change, not a code change.
 - **Setup counts surfaced** — Master Strikes shown on the Mastermind card, Scheme Twists on the
   Scheme card, and Bystanders on the Villain Groups card, per the official setup.
 - **Dark, Marvel-flavoured, mobile-first** UI with a bottom nav, big randomise button, and result cards.
@@ -34,15 +34,17 @@ GitHub Pages. Works offline once loaded.
 
 ```
 src/
-  Models/          Card & setup domain types (GameCard, Scheme, SetupRule, GameSetup…)
-  Data/            Content modules — CoreSet.cs, DarkCity.cs, ExampleExpansion.cs — and SetRegistry
-assets/            icon.svg + render-icons.mjs (Chromium-rendered PWA icons)
-  Services/        CardPool, SetupRandomizer (set-agnostic), GameStateService (state + storage)
-  Components/      ResultCard.razor
-  Pages/           Home (randomiser), Settings (sets/options), About (disclaimer + rules)
-  Layout/          App shell + bottom navigation
-tests/             xUnit tests for the randomiser (counts, required groups, rerolls, toggles)
-.github/workflows/ deploy.yml — build + deploy to GitHub Pages
+  Models/            Card & setup domain types (GameCard, Scheme, SetupRule, GameSetup…)
+  Data/              SetJson (parse + validate) and SetCatalog (runtime loader)
+  Services/          CardPool, SetupRandomizer (set-agnostic), GameStateService (state + storage)
+  Components/        ResultCard, TeamIcon
+  Pages/             Home (randomiser), Settings (sets/options), About (disclaimer + rules)
+  Layout/            App shell + bottom navigation
+  wwwroot/data/      sets.json — the content (all sets/cards), loaded at runtime
+  wwwroot/teams/     team badge SVGs
+assets/              icon.svg + render-icons.mjs (Chromium-rendered PWA icons)
+tests/               xUnit tests for the randomiser + a validation pass over sets.json
+.github/workflows/   deploy.yml — build + deploy to GitHub Pages
 ```
 
 ## Run locally
@@ -54,12 +56,19 @@ dotnet test  tests              # run the randomiser test suite
 
 ## Adding an expansion set
 
-No randomiser changes needed:
+Content lives in **`src/wwwroot/data/sets.json`** and is loaded at runtime — no code or
+randomiser changes needed (and, once hosted from a database/API, no redeploy):
 
-1. Copy `src/Data/ExampleExpansion.cs` to e.g. `DarkCity.cs`.
-2. Fill in the set's Masterminds (with `AlwaysLeadsGroupId`), Schemes (with any `SchemeSetup`
-   deltas/notes), Villain Groups, Henchmen, and Heroes. Set `IsExample = false`.
-3. Register it in `src/Data/SetRegistry.cs` (`AllSets`).
+1. Add a set object to the JSON array: `id`, `name`, `released`, `standalone`, arrays of
+   `masterminds` (each may declare `alwaysLeadsGroupId`), `schemes` (with a `setup` block —
+   `twists`, deltas, forced groups, `bystanders`, `notes`), `villainGroups`, `henchmen`, `heroes`.
+2. Give every set/card a **stable, unique `id`** — ids are permanent local-storage keys for a
+   player's owned/in-play selections, so never rename or reuse one.
+3. If the set introduces a **new hero team**, add `wwwroot/teams/<slug>.svg` and map the team name
+   in `Components/TeamIcon.razor` (the only change that needs a redeploy).
+
+`SetJson.Validate` (run on load and in tests) checks ids are unique and every "always-leads" /
+forced-group reference resolves.
 
 It now appears as a toggle under **Sets** and is drawn from whenever enabled.
 

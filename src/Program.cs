@@ -10,6 +10,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 builder.Services.AddSingleton<SetupRandomizer>();
+builder.Services.AddSingleton<Legendary.Companion.Data.SetCatalog>();
 builder.Services.AddSingleton<GameStateService>();
 
 await builder.Build().RunAsync();

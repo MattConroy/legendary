@@ -18,8 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- Copy-paste starter for new sets; not part of the build until copied & renamed. -->
-    <Compile Remove="Data\_Template.cs" />
+    <!-- Content sets are deserialised from JSON via reflection at runtime; root this
+         assembly so the model types survive publish trimming. -->
+    <TrimmerRootAssembly Include="Legendary.Companion" />
   </ItemGroup>
 
 </Project>
