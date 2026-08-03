@@ -1418,5 +1418,85 @@
         "team": "X-Men"
       }
     ]
+  },
+  {
+    "id": "fear-itself",
+    "name": "Fear Itself",
+    "description": "Small mix-in box: the Worthy of the Serpent. Combine it with another set.",
+    "released": "2015-11-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "fi:uru-iron-man",
+        "name": "Uru-Enchanted Iron Man",
+        "alwaysLeadsGroupId": "fi:the-mighty"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "fi:fear-itself",
+        "name": "Fear Itself",
+        "setup": {
+          "twists": 10
+        }
+      },
+      {
+        "id": "fi:last-stand",
+        "name": "Last Stand at Avengers Tower",
+        "setup": {
+          "twists": 6
+        }
+      },
+      {
+        "id": "fi:the-traitor",
+        "name": "The Traitor",
+        "setup": {
+          "twists": 8,
+          "notes": [
+            "2+ players only; uses a Betrayal Deck."
+          ]
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "fi:the-mighty",
+        "name": "The Mighty"
+      }
+    ],
+    "henchmen": [],
+    "heroes": [
+      {
+        "id": "fi:greithoth",
+        "name": "Greithoth, Breaker of Wills",
+        "team": "Foes of Asgard"
+      },
+      {
+        "id": "fi:kuurth",
+        "name": "Kuurth, Breaker of Stone",
+        "team": "Foes of Asgard"
+      },
+      {
+        "id": "fi:nerkkod",
+        "name": "Nerkkod, Breaker of Oceans",
+        "team": "Foes of Asgard"
+      },
+      {
+        "id": "fi:nul",
+        "name": "Nul, Breaker of Worlds",
+        "team": "Foes of Asgard"
+      },
+      {
+        "id": "fi:skirn",
+        "name": "Skirn, Breaker of Men",
+        "team": "Foes of Asgard"
+      },
+      {
+        "id": "fi:skadi",
+        "name": "Skadi",
+        "team": "HYDRA"
+      }
+    ]
   }
 ]
