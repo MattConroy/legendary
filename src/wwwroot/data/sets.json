@@ -115,11 +115,11 @@
     "villainGroups": [
       {
         "id": "core:brotherhood",
-        "name": "The Brotherhood"
+        "name": "Brotherhood"
       },
       {
         "id": "core:enemies-of-asgard",
-        "name": "The Enemies of Asgard"
+        "name": "Enemies of Asgard"
       },
       {
         "id": "core:hydra",
@@ -127,7 +127,11 @@
       },
       {
         "id": "core:masters-of-evil",
-        "name": "The Masters of Evil"
+        "name": "Masters of Evil"
+      },
+      {
+        "id": "core:radiation",
+        "name": "Radiation"
       },
       {
         "id": "core:skrulls",
@@ -352,7 +356,7 @@
     "villainGroups": [
       {
         "id": "dc:four-horsemen",
-        "name": "The Four Horsemen"
+        "name": "Four Horsemen"
       },
       {
         "id": "dc:marauders",
@@ -368,7 +372,7 @@
       },
       {
         "id": "dc:underworld",
-        "name": "The Underworld"
+        "name": "Underworld"
       },
       {
         "id": "dc:emissaries-of-evil",
