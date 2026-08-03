@@ -418,19 +418,51 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 
 .set-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .set {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+.set__row {
     display: grid;
     grid-template-columns: 1fr 44px 44px;
     align-items: center;
     gap: 10px;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: 12px;
     padding: 10px 14px;
 }
 .set--unowned { opacity: 0.7; }
 .set__info { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; min-width: 0; }
+.set__toggle {
+    background: none; border: none; padding: 4px 0; margin: 0; cursor: pointer;
+    text-align: left; font: inherit; color: inherit; width: 100%;
+}
+.set__caret {
+    color: var(--muted); font-size: 0.7rem; margin-right: 2px;
+    display: inline-block; transition: transform 0.15s ease; transform: translateY(-1px);
+}
+.set__caret--open { transform: translateY(-1px) rotate(90deg); }
 .set__name { font-weight: 800; color: #fff; display: inline-flex; align-items: center; gap: 8px; }
 .set__date { font-size: 0.75rem; color: var(--muted); }
+
+.set__contents {
+    padding: 4px 14px 14px 14px;
+    border-top: 1px solid var(--border);
+    display: flex; flex-direction: column; gap: 12px;
+}
+.set-group__title {
+    margin: 10px 0 6px; font-size: 0.66rem; font-weight: 800;
+    text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted);
+}
+.set-group__count {
+    color: var(--gold); margin-left: 4px;
+}
+.tag-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.tag {
+    font-size: 0.78rem; color: #e9e9ee;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 999px; padding: 3px 10px;
+}
+.tag--hero { display: inline-flex; align-items: center; gap: 6px; padding-left: 6px; }
+.tag--hero .team-icon { width: 16px; height: 16px; }
 
 .pill {
     font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
