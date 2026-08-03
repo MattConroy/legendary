@@ -83,11 +83,12 @@ public sealed record SchemeSetup
     public int VillainGroupDelta { get; init; }
     public int HenchmenDelta { get; init; }
 
-    /// <summary>A Villain Group this Scheme forces into the setup (marked Required).</summary>
-    public string? RequiredVillainGroupId { get; init; }
+    /// <summary>Villain Groups this Scheme forces into the setup (marked Required).
+    /// May reference groups from other sets (e.g. the Kree-Skrull War forcing the Core Skrulls).</summary>
+    public IReadOnlyList<string> RequiredVillainGroupIds { get; init; } = [];
 
-    /// <summary>A Henchman Group this Scheme forces into the setup (marked Required).</summary>
-    public string? RequiredHenchmenGroupId { get; init; }
+    /// <summary>Henchman Groups this Scheme forces into the setup (marked Required).</summary>
+    public IReadOnlyList<string> RequiredHenchmenGroupIds { get; init; } = [];
 
     /// <summary>Bystanders in the Villain Deck when the Scheme overrides the default.</summary>
     public int? Bystanders { get; init; }

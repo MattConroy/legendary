@@ -116,8 +116,8 @@ public sealed class SetupRandomizer
     {
         var category = CategoryOf<T>();
         var ids = new List<string?> { mastermind.AlwaysLeadsGroupId };
-        if (category == CardCategory.VillainGroup) ids.Add(scheme.Setup.RequiredVillainGroupId);
-        if (category == CardCategory.Henchmen) ids.Add(scheme.Setup.RequiredHenchmenGroupId);
+        if (category == CardCategory.VillainGroup) ids.AddRange(scheme.Setup.RequiredVillainGroupIds);
+        if (category == CardCategory.Henchmen) ids.AddRange(scheme.Setup.RequiredHenchmenGroupIds);
 
         var result = new List<T>();
         foreach (var id in ids)

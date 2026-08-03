@@ -299,6 +299,48 @@ public class SetupRandomizerTests
         Assert.Equal(twists, setup.EffectiveTwists);
     }
 
+    [Fact]
+    public void Guardians_has_the_expected_roster_and_always_leads()
+    {
+        var g = Set("guardians-of-the-galaxy");
+        Assert.Equal(2, g.Masterminds.Count);
+        Assert.Equal(4, g.Schemes.Count);
+        Assert.Equal(2, g.VillainGroups.Count);
+        Assert.Empty(g.Henchmen);
+        Assert.Equal(5, g.Heroes.Count);
+
+        Assert.Equal("gotg:kree-starforce", g.Masterminds.Single(m => m.Name.StartsWith("Supreme")).AlwaysLeadsGroupId);
+        Assert.Equal("gotg:infinity-gems", g.Masterminds.Single(m => m.Name == "Thanos").AlwaysLeadsGroupId);
+    }
+
+    [Fact]
+    public void Kree_skrull_war_forces_kree_starforce_and_the_core_skrulls()
+    {
+        var pool = CardPool.From([Set("core"), Set("guardians-of-the-galaxy")]);
+        var setup = WithScheme(Rng(2), pool, 4, "gotg:kree-skrull-war");
+        Assert.Contains(setup.VillainGroups, v => v.Card.Id == "gotg:kree-starforce" && v.IsRequired);
+        Assert.Contains(setup.VillainGroups, v => v.Card.Id == "core:skrulls" && v.IsRequired);
+    }
+
+    [Fact]
+    public void Forge_the_infinity_gauntlet_forces_infinity_gems()
+    {
+        var pool = CardPool.From([Set("core"), Set("guardians-of-the-galaxy")]);
+        var setup = WithScheme(Rng(5), pool, 3, "gotg:infinity-gauntlet");
+        Assert.Contains(setup.VillainGroups, v => v.Card.Id == "gotg:infinity-gems" && v.IsRequired);
+    }
+
+    [Theory]
+    [InlineData(2, 7)]
+    [InlineData(3, 8)]
+    [InlineData(5, 10)]
+    public void Unite_the_shards_twists_scale_with_players(int players, int twists)
+    {
+        var pool = CardPool.From([Set("core"), Set("guardians-of-the-galaxy")]);
+        var setup = WithScheme(Rng(6), pool, players, "gotg:unite-the-shards");
+        Assert.Equal(twists, setup.EffectiveTwists);
+    }
+
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)
     {
         var ids = items.Select(i => i.Card.Id).ToList();

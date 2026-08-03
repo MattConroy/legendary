@@ -80,9 +80,11 @@
         "setup": {
           "twists": 8,
           "heroes": 6,
-          "requiredVillainGroupId": "core:skrulls",
           "notes": [
             "Play with 6 Heroes."
+          ],
+          "requiredVillainGroupIds": [
+            "core:skrulls"
           ]
         },
         "id": "core:secret-invasion",
@@ -298,7 +300,9 @@
       {
         "setup": {
           "twists": 8,
-          "requiredHenchmenGroupId": "dc:maggia-goons"
+          "requiredHenchmenGroupIds": [
+            "dc:maggia-goons"
+          ]
         },
         "id": "dc:organized-crimewave",
         "name": "Organized Crime Wave"
@@ -553,6 +557,118 @@
         "team": "Unaffiliated",
         "id": "ff:silver-surfer",
         "name": "Silver Surfer"
+      }
+    ]
+  },
+  {
+    "id": "guardians-of-the-galaxy",
+    "name": "Guardians of the Galaxy",
+    "description": "Small-box expansion: the Guardians vs. Thanos and the Kree, introducing Shards.",
+    "released": "2014-01-01",
+    "standalone": false,
+    "enabledByDefault": false,
+    "masterminds": [
+      {
+        "id": "gotg:supreme-intelligence",
+        "name": "Supreme Intelligence of the Kree",
+        "alwaysLeadsGroupId": "gotg:kree-starforce"
+      },
+      {
+        "id": "gotg:thanos",
+        "name": "Thanos",
+        "alwaysLeadsGroupId": "gotg:infinity-gems"
+      }
+    ],
+    "schemes": [
+      {
+        "id": "gotg:infinity-gauntlet",
+        "name": "Forge the Infinity Gauntlet",
+        "setup": {
+          "twists": 8,
+          "requiredVillainGroupIds": [
+            "gotg:infinity-gems"
+          ],
+          "notes": [
+            "Always include the Infinity Gems Villain Group."
+          ]
+        }
+      },
+      {
+        "id": "gotg:nega-bomb",
+        "name": "Intergalactic Kree Nega-Bomb",
+        "setup": {
+          "twists": 8,
+          "notes": [
+            "Build a 6-Bystander Nega-Bomb deck."
+          ]
+        }
+      },
+      {
+        "id": "gotg:kree-skrull-war",
+        "name": "The Kree-Skrull War",
+        "setup": {
+          "twists": 8,
+          "requiredVillainGroupIds": [
+            "gotg:kree-starforce",
+            "core:skrulls"
+          ],
+          "notes": [
+            "Always include Kree Starforce and the Skrulls (Core Set)."
+          ]
+        }
+      },
+      {
+        "id": "gotg:unite-the-shards",
+        "name": "Unite the Shards",
+        "setup": {
+          "twistsByPlayers": {
+            "1": 6,
+            "2": 7,
+            "3": 8,
+            "4": 9,
+            "5": 10
+          },
+          "notes": [
+            "Twists = players + 5; uses 30 Shard tokens."
+          ]
+        }
+      }
+    ],
+    "villainGroups": [
+      {
+        "id": "gotg:kree-starforce",
+        "name": "Kree Starforce"
+      },
+      {
+        "id": "gotg:infinity-gems",
+        "name": "Infinity Gems"
+      }
+    ],
+    "heroes": [
+      {
+        "id": "gotg:drax",
+        "name": "Drax the Destroyer",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "gotg:gamora",
+        "name": "Gamora",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "gotg:groot",
+        "name": "Groot",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "gotg:rocket-raccoon",
+        "name": "Rocket Raccoon",
+        "team": "Guardians of the Galaxy"
+      },
+      {
+        "id": "gotg:star-lord",
+        "name": "Star-Lord",
+        "team": "Guardians of the Galaxy"
       }
     ]
   }

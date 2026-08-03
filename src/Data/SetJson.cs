@@ -33,27 +33,31 @@ public static class SetJson
     /// </summary>
     public static void Validate(IReadOnlyList<CardSet> sets)
     {
-        var ids = new HashSet<string>();
+        var setIds = new HashSet<string>();
         foreach (var set in sets)
         {
-            if (!ids.Add(set.Id))
+            if (!setIds.Add(set.Id))
                 throw new InvalidDataException($"Duplicate set id '{set.Id}'.");
+        }
 
-            var groups = set.VillainGroups.Select(v => v.Id)
-                .Concat(set.Henchmen.Select(h => h.Id))
-                .ToHashSet();
+        // Scheme-forced groups may reference other sets (a small box leaning on the
+        // Core Skrulls, say), so validate references against every known group.
+        var allVillains = sets.SelectMany(s => s.VillainGroups.Select(v => v.Id)).ToHashSet();
+        var allHenchmen = sets.SelectMany(s => s.Henchmen.Select(h => h.Id)).ToHashSet();
 
+        foreach (var set in sets)
+        {
             foreach (var mm in set.Masterminds)
             {
-                if (mm.AlwaysLeadsGroupId is { } g && !groups.Contains(g))
+                if (mm.AlwaysLeadsGroupId is { } g && !allVillains.Contains(g) && !allHenchmen.Contains(g))
                     throw new InvalidDataException($"{set.Id}: Mastermind '{mm.Name}' leads unknown group '{g}'.");
             }
 
             foreach (var s in set.Schemes)
             {
-                if (s.Setup.RequiredVillainGroupId is { } rv && set.VillainGroups.All(v => v.Id != rv))
+                foreach (var rv in s.Setup.RequiredVillainGroupIds.Where(rv => !allVillains.Contains(rv)))
                     throw new InvalidDataException($"{set.Id}: Scheme '{s.Name}' requires unknown villain group '{rv}'.");
-                if (s.Setup.RequiredHenchmenGroupId is { } rh && set.Henchmen.All(h => h.Id != rh))
+                foreach (var rh in s.Setup.RequiredHenchmenGroupIds.Where(rh => !allHenchmen.Contains(rh)))
                     throw new InvalidDataException($"{set.Id}: Scheme '{s.Name}' requires unknown henchman group '{rh}'.");
             }
         }
