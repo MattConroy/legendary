@@ -3,7 +3,7 @@
     "id": "core",
     "name": "Core Set",
     "description": "Legendary: A Marvel Deck Building Game — the original base game.",
-    "released": "2012-01-01",
+    "released": "2012-06-01",
     "standalone": true,
     "enabledByDefault": true,
     "masterminds": [
@@ -242,7 +242,7 @@
     "id": "dark-city",
     "name": "Dark City",
     "description": "Big-box expansion: X-Men, X-Force & Marvel Knights heroes vs. Apocalypse and more.",
-    "released": "2013-01-01",
+    "released": "2013-04-01",
     "standalone": false,
     "enabledByDefault": true,
     "masterminds": [
@@ -481,7 +481,7 @@
     "id": "fantastic-four",
     "name": "Fantastic Four",
     "description": "First small-box expansion: the Fantastic Four & Silver Surfer vs. Galactus and Mole Man.",
-    "released": "2013-01-01",
+    "released": "2013-08-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -568,7 +568,7 @@
     "id": "guardians-of-the-galaxy",
     "name": "Guardians of the Galaxy",
     "description": "Small-box expansion: the Guardians vs. Thanos and the Kree, introducing Shards.",
-    "released": "2014-01-01",
+    "released": "2014-06-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -680,7 +680,7 @@
     "id": "paint-the-town-red",
     "name": "Paint the Town Red",
     "description": "Spider-Man small-box expansion: Spider-Friends vs. Carnage and Mysterio.",
-    "released": "2014-01-01",
+    "released": "2014-03-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -776,7 +776,7 @@
     "id": "villains",
     "name": "Villains",
     "description": "Play the bad guys. Commanders, Adversaries and Allies invert the usual roles, so it slots into the same setup — just enable it on its own.",
-    "released": "2014-01-01",
+    "released": "2014-09-01",
     "standalone": true,
     "enabledByDefault": false,
     "masterminds": [
@@ -995,7 +995,7 @@
     "id": "secret-wars-vol-1",
     "name": "Secret Wars Volume 1",
     "description": "A Battleworld big box: Barons rule domains stitched together from dead universes.",
-    "released": "2015-01-01",
+    "released": "2015-06-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -1202,7 +1202,7 @@
     "id": "secret-wars-vol-2",
     "name": "Secret Wars Volume 2",
     "description": "More Battleworld domains, plus the Ambitions mechanic.",
-    "released": "2015-01-01",
+    "released": "2015-09-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -1429,7 +1429,7 @@
     "id": "fear-itself",
     "name": "Fear Itself",
     "description": "Small mix-in box: the Worthy of the Serpent. Combine it with another set.",
-    "released": "2015-01-01",
+    "released": "2015-03-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -1509,7 +1509,7 @@
     "id": "captain-america-75",
     "name": "Captain America 75th Anniversary",
     "description": "Small box marking Cap's 75th: WWII villains and Captain Americas across eras.",
-    "released": "2016-01-01",
+    "released": "2016-03-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -1605,7 +1605,7 @@
     "id": "civil-war",
     "name": "Civil War",
     "description": "Big box: the Superhuman Registration Act splits Earth's heroes into warring camps.",
-    "released": "2016-01-01",
+    "released": "2016-06-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -1838,7 +1838,7 @@
     "id": "deadpool",
     "name": "Deadpool",
     "description": "Small box of chaos: Deadpool and his mercenary 'friends' break the fourth wall.",
-    "released": "2016-01-01",
+    "released": "2016-09-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -1946,7 +1946,7 @@
     "id": "noir",
     "name": "Noir",
     "description": "Small box: gritty noir versions of familiar heroes.",
-    "released": "2017-01-01",
+    "released": "2017-03-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -2034,7 +2034,7 @@
     "id": "x-men-box",
     "name": "X-Men",
     "description": "Big box devoted to the X-Men and their greatest foes.",
-    "released": "2017-01-01",
+    "released": "2017-06-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -2265,7 +2265,7 @@
     "id": "spider-man-homecoming",
     "name": "Spider-Man Homecoming",
     "description": "Small box tied to the Homecoming film.",
-    "released": "2017-01-01",
+    "released": "2017-09-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -2348,7 +2348,7 @@
     "id": "champions",
     "name": "Champions",
     "description": "Small box: the young-hero Champions team.",
-    "released": "2018-01-01",
+    "released": "2018-02-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -2436,7 +2436,7 @@
     "id": "world-war-hulk",
     "name": "World War Hulk",
     "description": "Big box: the Hulk returns from Sakaar with the Warbound.",
-    "released": "2018-01-01",
+    "released": "2018-05-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -2655,7 +2655,7 @@
     "id": "marvel-studios-phase-1",
     "name": "Marvel Studios Phase 1",
     "description": "MCU Phase 1 box themed on the first Avengers films.",
-    "released": "2018-01-01",
+    "released": "2018-10-01",
     "standalone": true,
     "enabledByDefault": false,
     "masterminds": [
@@ -2821,7 +2821,7 @@
     "id": "ant-man",
     "name": "Ant-Man",
     "description": "Small box for Ant-Man and the Wasp.",
-    "released": "2018-01-01",
+    "released": "2018-07-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -2909,7 +2909,7 @@
     "id": "venom",
     "name": "Venom",
     "description": "Small box: the Venomverse symbiotes.",
-    "released": "2019-01-01",
+    "released": "2019-02-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -2998,7 +2998,7 @@
     "id": "dimensions",
     "name": "Dimensions",
     "description": "Small mix-in box: a Mastermind, henchmen and offbeat heroes to fold into another game.",
-    "released": "2019-01-01",
+    "released": "2019-05-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3052,7 +3052,7 @@
     "id": "revelations",
     "name": "Revelations",
     "description": "Small box of cosmic and mystic revelations.",
-    "released": "2019-01-01",
+    "released": "2019-07-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3189,7 +3189,7 @@
     "id": "s-h-i-e-l-d",
     "name": "S.H.I.E.L.D.",
     "description": "Small box: agents of S.H.I.E.L.D. go undercover.",
-    "released": "2019-01-01",
+    "released": "2019-10-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3272,7 +3272,7 @@
     "id": "heroes-of-asgard",
     "name": "Heroes of Asgard",
     "description": "Small box: the Worthy heroes of Asgard.",
-    "released": "2020-01-01",
+    "released": "2020-02-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3360,7 +3360,7 @@
     "id": "into-the-cosmos",
     "name": "Into the Cosmos",
     "description": "Small box of cosmic heroes and Shards.",
-    "released": "2020-01-01",
+    "released": "2020-07-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3490,7 +3490,7 @@
     "id": "black-panther",
     "name": "Black Panther",
     "description": "Small box: the Heroes of Wakanda.",
-    "released": "2022-01-01",
+    "released": "2022-08-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3578,7 +3578,7 @@
     "id": "new-mutants",
     "name": "New Mutants",
     "description": "Small box of the New Mutants under sun and moon.",
-    "released": "2020-01-01",
+    "released": "2020-05-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3667,7 +3667,7 @@
     "id": "realm-of-kings",
     "name": "Realm of Kings",
     "description": "Small box: the royal Inhumans.",
-    "released": "2020-01-01",
+    "released": "2020-10-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3756,7 +3756,7 @@
     "id": "annihilation",
     "name": "Annihilation",
     "description": "Small box: the Annihilation Wave threatens the cosmos.",
-    "released": "2021-01-01",
+    "released": "2021-06-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3844,7 +3844,7 @@
     "id": "messiah-complex",
     "name": "Messiah Complex",
     "description": "Small box: X-Factor and mutant clones.",
-    "released": "2022-01-01",
+    "released": "2022-02-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -3969,7 +3969,7 @@
     "id": "doctor-strange-and-the-shadows-of-nightmare",
     "name": "Doctor Strange and the Shadows of Nightmare",
     "description": "Small box of mystic artifacts and demons.",
-    "released": "2022-01-01",
+    "released": "2022-04-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -4063,7 +4063,7 @@
     "id": "black-widow",
     "name": "Black Widow",
     "description": "Small box of spies working Undercover.",
-    "released": "2022-01-01",
+    "released": "2022-10-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -4151,7 +4151,7 @@
     "id": "marvel-studios-guardians-of-the-galaxy",
     "name": "Marvel Studios' Guardians of the Galaxy",
     "description": "Small MCU box of Artifacts.",
-    "released": "2022-01-01",
+    "released": "2022-06-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -4240,7 +4240,7 @@
     "id": "marvel-studios-what-if",
     "name": "Marvel Studios What If...?",
     "description": "Small box: the Guardians of the Multiverse.",
-    "released": "2023-01-01",
+    "released": "2023-08-01",
     "standalone": true,
     "enabledByDefault": false,
     "masterminds": [
@@ -4377,7 +4377,7 @@
     "id": "2099",
     "name": "2099",
     "description": "Small box of cyber-modded 2099 heroes.",
-    "released": "2024-01-01",
+    "released": "2024-06-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -4464,7 +4464,7 @@
     "id": "ant-man-and-the-wasp",
     "name": "Ant-Man and the Wasp",
     "description": "Small box exploring the Quantum Realm.",
-    "released": "2024-01-01",
+    "released": "2024-03-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -4593,7 +4593,7 @@
     "id": "midnight-sons",
     "name": "Midnight Sons",
     "description": "Small box of monster hunters under sun and moon.",
-    "released": "2023-01-01",
+    "released": "2023-04-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
@@ -4682,7 +4682,7 @@
     "id": "weapon-x",
     "name": "Weapon X",
     "description": "Small box of the Weapon X program.",
-    "released": "2024-01-01",
+    "released": "2024-09-01",
     "standalone": false,
     "enabledByDefault": false,
     "masterminds": [
