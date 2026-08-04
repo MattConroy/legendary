@@ -9,8 +9,9 @@
 
     private string Label => string.IsNullOrWhiteSpace(Team) ? "Unaffiliated" : Team!;
 
-    // Teams without a card-accurate PNG keep their original SVG glyph.
-    private static readonly HashSet<string> SvgSlugs = new() { "guardians-of-the-multiverse", "unaffiliated" };
+    // Only "Unaffiliated" (no team) keeps an original SVG glyph; every real team
+    // has a card-accurate PNG.
+    private static readonly HashSet<string> SvgSlugs = new() { "unaffiliated" };
 
     private string Src => $"teams/{Slug}.{(SvgSlugs.Contains(Slug) ? "svg" : "png")}";
 
