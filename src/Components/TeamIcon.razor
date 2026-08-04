@@ -1,5 +1,6 @@
-@* Renders a hero's team badge from wwwroot/teams/<slug>.svg. The badges are our
-   own colour-coded designs (canonical team colours, original glyph shapes). *@
+@* Renders a hero's team badge from wwwroot/teams/<slug>.{png,svg}. Most badges are
+   card-accurate faction icons (PNG); a couple with no card icon fall back to our
+   original glyph designs (SVG). *@
 
 <img class="team-icon" src="@Src" alt="@Label" title="@Label" loading="lazy" />
 
@@ -8,7 +9,10 @@
 
     private string Label => string.IsNullOrWhiteSpace(Team) ? "Unaffiliated" : Team!;
 
-    private string Src => $"teams/{Slug}.svg";
+    // Teams without a card-accurate PNG keep their original SVG glyph.
+    private static readonly HashSet<string> SvgSlugs = new() { "guardians-of-the-multiverse", "unaffiliated" };
+
+    private string Src => $"teams/{Slug}.{(SvgSlugs.Contains(Slug) ? "svg" : "png")}";
 
     private string Slug => Team switch
     {

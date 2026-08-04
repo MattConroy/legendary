@@ -313,7 +313,7 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
     font-weight: 600;
 }
 .tag__name { color: #fff; }
-.team-icon { width: 18px; height: 18px; flex: 0 0 auto; display: block; }
+.team-icon { width: 18px; height: 18px; flex: 0 0 auto; display: block; object-fit: contain; }
 .tag__meta { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
 
 /* Heroes: one per row — name, then a fixed icon column, then the team name.
