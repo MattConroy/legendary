@@ -18,7 +18,8 @@
   ],
   "am:queen-s-vengeance": [
     "chivalrous-duel",
-    "microscopic-size-changing"
+    "microscopic-size-changing",
+    "size-changing"
   ],
   "am:trap-heroes-in-the-microverse": [
     "size-changing"
@@ -52,8 +53,10 @@
     "size-changing"
   ],
   "amw:armada-of-kang": [
+    "conqueror",
     "double-cross",
-    "microscopic-size-changing"
+    "microscopic-size-changing",
+    "size-changing"
   ],
   "amw:cassie-lang": [
     "microscopic-size-changing",
@@ -64,10 +67,12 @@
     "size-changing"
   ],
   "amw:darren-cross": [
+    "conqueror",
     "double-cross",
     "transform"
   ],
   "amw:freedom-fighters": [
+    "conqueror",
     "explore"
   ],
   "amw:ghost-chasers": [
@@ -84,9 +89,11 @@
     "size-changing"
   ],
   "amw:jentorra": [
+    "conqueror",
     "explore"
   ],
   "amw:kang-quantum-conqueror": [
+    "conqueror",
     "transform"
   ],
   "amw:quantum-hound": [
@@ -94,7 +101,11 @@
   ],
   "amw:quantum-realm": [
     "explore",
-    "microscopic-size-changing"
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "amw:quantumnauts": [
+    "conqueror"
   ],
   "amw:safeguard-dark-secrets": [
     "heist"
@@ -103,23 +114,52 @@
     "heist"
   ],
   "amw:tardigrade": [
-    "microscopic-size-changing"
+    "microscopic-size-changing",
+    "size-changing"
   ],
   "amw:wasp": [
     "heist",
     "microscopic-size-changing",
     "size-changing"
   ],
+  "anh:annihilation-wave": [
+    "momentum"
+  ],
+  "anh:annihilus": [
+    "momentum"
+  ],
   "anh:brainstorm": [
     "man-out-of-time"
   ],
+  "anh:breach-parallel-dimensions": [
+    "focus"
+  ],
+  "anh:fantastic-four-united": [
+    "focus"
+  ],
+  "anh:heralds-of-galactus": [
+    "conqueror",
+    "focus"
+  ],
+  "anh:kang-the-conqueror": [
+    "conqueror"
+  ],
   "anh:psi-lord": [
+    "focus",
     "man-out-of-time"
   ],
+  "anh:super-skrull": [
+    "conqueror",
+    "focus"
+  ],
   "anh:timelines-of-kang": [
+    "conqueror",
     "man-out-of-time"
   ],
   "bp:enemies-of-wakanda": [
+    "empowered"
+  ],
+  "bp:klaw": [
     "empowered"
   ],
   "bp:plunder-wakandas-vibranium": [
@@ -175,6 +215,9 @@
     "man-out-of-time",
     "savior"
   ],
+  "cap:arnim-zola": [
+    "abomination"
+  ],
   "cap:baron-heinrich-zemo": [
     "savior"
   ],
@@ -202,7 +245,8 @@
   "champ:gwenpool": [
     "cheering-crowds",
     "demolish",
-    "size-changing"
+    "size-changing",
+    "versatile"
   ],
   "champ:monsters-unleashed": [
     "demolish",
@@ -210,11 +254,13 @@
   ],
   "champ:ms-marvel": [
     "cheering-crowds",
-    "size-changing"
+    "size-changing",
+    "versatile"
   ],
   "champ:nova": [
     "cheering-crowds",
-    "size-changing"
+    "size-changing",
+    "versatile"
   ],
   "champ:pagliacci": [
     "demolish"
@@ -225,7 +271,8 @@
   ],
   "champ:viv-vision": [
     "cheering-crowds",
-    "size-changing"
+    "size-changing",
+    "versatile"
   ],
   "champ:wrecking-crew": [
     "demolish"
@@ -272,6 +319,9 @@
   "cw:luke-cage": [
     "divided",
     "fortify"
+  ],
+  "cw:maria-hill": [
+    "s-h-i-e-l-d-clearance"
   ],
   "cw:misty-knight": [
     "bribe"
@@ -324,6 +374,12 @@
   "dc:domino": [
     "versatile"
   ],
+  "dc:forge": [
+    "versatile"
+  ],
+  "dc:iron-fist": [
+    "versatile"
+  ],
   "dc:kingpin": [
     "bribe"
   ],
@@ -334,7 +390,8 @@
     "teleport"
   ],
   "dim:jessica-jones": [
-    "investigate"
+    "investigate",
+    "switcheroo"
   ],
   "dim:jjj": [
     "investigate"
@@ -356,8 +413,12 @@
   "dp:deadpool": [
     "excessive-violence"
   ],
+  "dp:evil-deadpool": [
+    "revenge"
+  ],
   "dp:evil-deadpool-corpse": [
-    "excessive-violence"
+    "excessive-violence",
+    "revenge"
   ],
   "dp:slapstick": [
     "excessive-violence"
@@ -372,13 +433,16 @@
     "demonic-bargain"
   ],
   "dss:clea": [
+    "artifact",
     "demonic-bargain",
     "ritual-artifact"
   ],
   "dss:doctor-strange": [
+    "artifact",
     "ritual-artifact"
   ],
   "dss:doctor-voodoo": [
+    "artifact",
     "ritual-artifact"
   ],
   "dss:dormammu": [
@@ -394,10 +458,12 @@
     "astral-plane"
   ],
   "dss:the-ancient-one": [
+    "artifact",
     "astral-plane",
     "ritual-artifact"
   ],
   "dss:the-vishanti": [
+    "artifact",
     "demonic-bargain",
     "ritual-artifact"
   ],
@@ -410,27 +476,44 @@
   "ff:heralds-of-galactus": [
     "cosmic-threat"
   ],
+  "ff:human-torch": [
+    "focus"
+  ],
+  "ff:invisible-woman": [
+    "focus"
+  ],
+  "ff:silver-surfer": [
+    "focus"
+  ],
   "ff:subterranea": [
     "burrow"
+  ],
+  "ff:thing": [
+    "focus"
   ],
   "fi:greithoth": [
     "artifact",
     "thrown-artifact"
   ],
   "fi:kuurth": [
+    "artifact",
     "thrown-artifact"
   ],
   "fi:nerkkod": [
+    "artifact",
     "thrown-artifact"
   ],
   "fi:nul": [
+    "artifact",
     "demolish",
     "thrown-artifact"
   ],
   "fi:skadi": [
+    "artifact",
     "thrown-artifact"
   ],
   "fi:skirn": [
+    "artifact",
     "thrown-artifact"
   ],
   "gotg:drax": [
@@ -452,6 +535,7 @@
     "worthy"
   ],
   "hoa:beta-ray-bill": [
+    "artifact",
     "thrown-artifact",
     "worthy"
   ],
@@ -461,26 +545,44 @@
     "villainous-weapon",
     "worthy"
   ],
+  "hoa:hela-goddess-of-death": [
+    "conqueror"
+  ],
   "hoa:lady-sif": [
+    "artifact",
     "thrown-artifact"
   ],
   "hoa:malekith-the-accursed": [
+    "artifact",
     "thrown-artifact",
     "villainous-weapon"
   ],
   "hoa:omens-of-ragnarok": [
     "artifact",
+    "conqueror",
     "villainous-weapon"
   ],
+  "hoa:the-warriors-three": [
+    "conqueror"
+  ],
   "hoa:thor": [
+    "artifact",
     "thrown-artifact",
     "worthy"
   ],
   "hoa:valkyrie": [
+    "artifact",
+    "conqueror",
     "thrown-artifact"
   ],
   "hoa:war-of-the-frost-giants": [
     "worthy"
+  ],
+  "itc:adam-warlock": [
+    "shards"
+  ],
+  "itc:black-order-of-thanos": [
+    "danger-sense"
   ],
   "itc:captain-mar-vell": [
     "danger-sense"
@@ -495,11 +597,18 @@
   "itc:from-beyond": [
     "cosmic-threat"
   ],
+  "itc:moondragon": [
+    "danger-sense"
+  ],
   "itc:nova": [
     "cosmic-threat"
   ],
+  "itc:quasar": [
+    "shards"
+  ],
   "itc:ronan-the-accuser": [
-    "contest-of-champions"
+    "contest-of-champions",
+    "shards"
   ],
   "itc:the-beyonder": [
     "cosmic-threat"
@@ -509,6 +618,13 @@
   ],
   "itc:the-grandmaster": [
     "contest-of-champions"
+  ],
+  "itc:universal-church-of-truth": [
+    "shards"
+  ],
+  "itc:yondu": [
+    "danger-sense",
+    "shards"
   ],
   "mcx:acolytes": [
     "shatter"
@@ -525,6 +641,7 @@
   "mcx:m": [
     "clone",
     "investigate",
+    "tactical-formation",
     "when-recruited"
   ],
   "mcx:mr-sinister-clones": [
@@ -532,7 +649,8 @@
   ],
   "mcx:multiple-man": [
     "clone",
-    "investigate"
+    "investigate",
+    "tactical-formation"
   ],
   "mcx:purifiers": [
     "clone",
@@ -551,22 +669,30 @@
   "mcx:shatterstar": [
     "clone",
     "shatter",
+    "tactical-formation",
     "when-recruited"
   ],
   "mcx:siryn": [
     "investigate",
-    "shatter"
+    "shatter",
+    "tactical-formation"
   ],
   "mcx:stepford-cuckoos": [
-    "investigate"
+    "clone",
+    "investigate",
+    "tactical-formation",
+    "when-recruited"
   ],
   "mcx:strong-guy": [
-    "investigate"
+    "investigate",
+    "tactical-formation"
   ],
   "mcx:warpath": [
-    "investigate"
+    "investigate",
+    "tactical-formation"
   ],
   "mds:blade-daywalker": [
+    "blood-frenzy",
     "moonlight-sunlight",
     "patrol"
   ],
@@ -576,26 +702,26 @@
     "patrol"
   ],
   "mds:fallen": [
-    "blood-frenzy"
+    "blood-frenzy",
+    "haunt"
   ],
   "mds:lilin": [
     "hunt-for-victims",
     "moonlight-sunlight"
   ],
   "mds:midnight-massacre": [
+    "blood-frenzy",
     "moonlight-sunlight"
   ],
   "mds:morbius": [
     "blood-frenzy",
     "moonlight-sunlight"
   ],
-  "mds:ritual-sacrifice-to-summon-chthon": [
-    "transform"
-  ],
   "mds:sire-vampires-at-the-blood-bank": [
     "blood-frenzy"
   ],
   "mds:werewolf-by-night": [
+    "blood-frenzy",
     "moonlight-sunlight"
   ],
   "mds:wong-master-of-the-mystic-arts": [
@@ -606,16 +732,19 @@
     "haunt"
   ],
   "msg:drax": [
+    "artifact",
     "divided",
     "excessive-violence",
     "triggered-artifact"
   ],
   "msg:followers-of-ronan": [
+    "artifact",
     "command",
     "triggered-artifact",
     "villainous-weapon"
   ],
   "msg:gamora": [
+    "artifact",
     "divided",
     "triggered-artifact"
   ],
@@ -624,23 +753,39 @@
     "excessive-kindness"
   ],
   "msg:ravagers": [
+    "artifact",
     "command",
     "triggered-artifact",
     "villainous-weapon"
   ],
   "msg:rocket-groot": [
+    "artifact",
     "divided",
     "excessive-kindness",
     "excessive-violence",
     "triggered-artifact"
   ],
   "msg:ronan-the-accuser": [
+    "artifact",
     "triggered-artifact",
     "villainous-weapon"
   ],
   "msg:star-lord": [
+    "artifact",
     "divided",
     "triggered-artifact"
+  ],
+  "msp1:chitauri": [
+    "conqueror"
+  ],
+  "msp1:gamma-hunters": [
+    "conqueror"
+  ],
+  "msp1:iron-foes": [
+    "conqueror"
+  ],
+  "msp1:iron-monger": [
+    "conqueror"
   ],
   "nm:belasco-demon-lord-of-limbo": [
     "moonlight-sunlight",
@@ -738,35 +883,34 @@
   "rev:dark-avengers": [
     "last-stand"
   ],
-  "rev:earthquake-drains-the-ocean": [
-    "transform"
+  "rev:darkhawk": [
+    "hyperspeed"
   ],
   "rev:hoods-gang": [
     "dark-memories"
   ],
-  "rev:house-of-m": [
-    "transform"
-  ],
   "rev:photon": [
+    "hyperspeed",
     "last-stand"
   ],
   "rev:quicksilver": [
     "hyperspeed"
   ],
   "rev:ronin": [
-    "dark-memories"
+    "dark-memories",
+    "hyperspeed"
   ],
   "rev:scarlet-witch": [
     "dark-memories"
   ],
-  "rev:secret-hydra-corruption": [
-    "transform"
+  "rev:speed": [
+    "hyperspeed"
   ],
   "rev:the-hood": [
     "dark-memories"
   ],
-  "rev:the-korvac-saga": [
-    "transform"
+  "rev:war-machine": [
+    "hyperspeed"
   ],
   "rok:black-bolt": [
     "when-recruited"
@@ -778,6 +922,7 @@
     "abomination"
   ],
   "rok:gorgon": [
+    "abomination",
     "teleport",
     "when-recruited"
   ],
@@ -786,6 +931,9 @@
   ],
   "rok:karnak": [
     "when-recruited"
+  ],
+  "rok:maximus-the-mad": [
+    "abomination"
   ],
   "rok:medusa": [
     "when-recruited"
@@ -799,6 +947,7 @@
     "undercover"
   ],
   "shl:deathlok": [
+    "s-h-i-e-l-d-level",
     "undercover"
   ],
   "shl:hydra-elite": [
@@ -819,15 +968,21 @@
     "hydra-level",
     "undercover"
   ],
+  "smh:adrian-toomes": [
+    "striker"
+  ],
   "smh:happy-hogan": [
     "coordinate",
+    "danger-sense",
     "striker"
   ],
   "smh:high-tech-spider-man": [
-    "coordinate"
+    "coordinate",
+    "danger-sense"
   ],
   "smh:peter-parker-homecoming": [
     "coordinate",
+    "danger-sense",
     "wall-crawl"
   ],
   "smh:peter-s-allies": [
@@ -837,13 +992,16 @@
     "striker"
   ],
   "smh:tony-stark": [
-    "coordinate"
+    "coordinate",
+    "danger-sense"
   ],
   "smh:vulture-tech": [
+    "danger-sense",
     "striker",
     "wall-crawl"
   ],
   "sw1:domain-of-apocalypse": [
+    "cross-dimensional-rampage",
     "teleport"
   ],
   "sw1:dr-strange": [
@@ -858,8 +1016,17 @@
   "sw1:magik": [
     "teleport"
   ],
+  "sw1:manhattan-earth-1610": [
+    "cross-dimensional-rampage"
+  ],
   "sw1:nimrod": [
     "teleport"
+  ],
+  "sw1:old-man-logan": [
+    "cross-dimensional-rampage"
+  ],
+  "sw1:sentinel-territories": [
+    "cross-dimensional-rampage"
   ],
   "sw1:thanos": [
     "teleport"
@@ -868,7 +1035,11 @@
     "rise-of-the-living-dead"
   ],
   "sw1:wasteland": [
-    "bribe"
+    "bribe",
+    "cross-dimensional-rampage"
+  ],
+  "sw1:wasteland-hulk": [
+    "cross-dimensional-rampage"
   ],
   "sw1:zombie-green-goblin": [
     "rise-of-the-living-dead"
@@ -894,6 +1065,7 @@
     "patrol"
   ],
   "sw2:deadpool-s-secret-secret-wars": [
+    "circle-of-kung-fu",
     "fateful-resurrection",
     "spectrum"
   ],
@@ -913,8 +1085,8 @@
     "fateful-resurrection",
     "patrol"
   ],
-  "sw2:king-hyperion": [
-    "charge"
+  "sw2:k-un-lun": [
+    "circle-of-kung-fu"
   ],
   "sw2:magma-men": [
     "fateful-resurrection"
@@ -960,7 +1132,11 @@
     "charge",
     "spectrum"
   ],
+  "sw2:zheng-zhu": [
+    "circle-of-kung-fu"
+  ],
   "venom:carnage": [
+    "digest",
     "excessive-violence",
     "indigestion"
   ],
@@ -977,13 +1153,19 @@
     "symbiote-bond"
   ],
   "venom:venom": [
+    "digest",
     "excessive-violence",
     "indigestion"
   ],
   "venom:venom-rocket": [
+    "digest",
     "excessive-violence"
   ],
+  "venom:venomized-dr-strange": [
+    "digest"
+  ],
   "venom:venompool": [
+    "digest",
     "excessive-violence",
     "indigestion"
   ],
@@ -1019,6 +1201,7 @@
     "empowered"
   ],
   "wif:captain-carter": [
+    "liberate",
     "what-if"
   ],
   "wif:doctor-strange-supreme": [
@@ -1029,18 +1212,30 @@
     "soulbind",
     "what-if"
   ],
+  "wif:intergalactic-party-animals": [
+    "cross-dimensional-rampage"
+  ],
   "wif:killmonger-spec-ops": [
+    "liberate",
     "what-if"
   ],
   "wif:marvel-zombies": [
     "rise-of-the-living-dead"
   ],
   "wif:party-thor": [
+    "cross-dimensional-rampage",
     "what-if"
+  ],
+  "wif:rival-overlords": [
+    "soulbind"
   ],
   "wif:star-lord-tchalla": [
     "empowered",
     "what-if"
+  ],
+  "wif:stranges-demons": [
+    "cross-dimensional-rampage",
+    "soulbind"
   ],
   "wif:uatu-the-watcher": [
     "empowered",
@@ -1048,15 +1243,21 @@
     "what-if"
   ],
   "wif:ultron-infinity": [
+    "cross-dimensional-rampage",
     "empowered"
   ],
   "wif:ultron-sentries": [
     "empowered"
   ],
+  "wif:vibranium-liberator-drones": [
+    "liberate"
+  ],
   "wif:zombie-avengers": [
+    "cross-dimensional-rampage",
     "rise-of-the-living-dead"
   ],
   "wif:zombie-scarlet-witch": [
+    "cross-dimensional-rampage",
     "rise-of-the-living-dead"
   ],
   "wpx:berserkers": [
@@ -1103,10 +1304,12 @@
   ],
   "wwh:bruce-banner": [
     "outwit",
+    "smash",
     "transform"
   ],
   "wwh:caiera": [
     "outwit",
+    "smash",
     "transform"
   ],
   "wwh:code-red": [
@@ -1119,6 +1322,8 @@
     "outwit"
   ],
   "wwh:gladiator-hulk": [
+    "cross-dimensional-rampage",
+    "smash",
     "transform",
     "wounded-fury"
   ],
@@ -1127,9 +1332,11 @@
   ],
   "wwh:hulkbuster-iron-man": [
     "outwit",
+    "smash",
     "transform"
   ],
   "wwh:illuminati": [
+    "cross-dimensional-rampage",
     "outwit"
   ],
   "wwh:illuminati-secret-society": [
@@ -1141,6 +1348,7 @@
     "wounded-fury"
   ],
   "wwh:joe-fixit-grey-hulk": [
+    "smash",
     "transform"
   ],
   "wwh:king-hulk-sakaarson": [
@@ -1157,6 +1365,7 @@
   ],
   "wwh:miek-the-unhived": [
     "feast",
+    "smash",
     "transform"
   ],
   "wwh:namora": [
@@ -1168,6 +1377,7 @@
     "transform"
   ],
   "wwh:rick-jones": [
+    "smash",
     "transform"
   ],
   "wwh:sakaar-imperial-guard": [
@@ -1183,9 +1393,11 @@
   ],
   "wwh:she-hulk": [
     "outwit",
+    "smash",
     "transform"
   ],
   "wwh:skaar-son-of-hulk": [
+    "smash",
     "transform",
     "wounded-fury"
   ],
@@ -1193,6 +1405,7 @@
     "transform"
   ],
   "wwh:the-sentry": [
+    "cross-dimensional-rampage",
     "transform"
   ],
   "wwh:warbound": [

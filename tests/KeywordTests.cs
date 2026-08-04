@@ -90,5 +90,16 @@ public class KeywordTests
 
         // Sanity: Nightcrawler carries Teleport.
         Assert.Contains("teleport", cardKeywords["dc:nightcrawler"]);
+
+        // Regression: keywords written with a number ("Versatile 3") must still tag.
+        Assert.Contains("versatile", cardKeywords["dc:domino"]);
+        Assert.Contains("teleport", cardKeywords["dc:cable"]);
+
+        // Regression: the generic "This Scheme Transforms" flip mechanic must NOT
+        // be mistaken for the Transform keyword.
+        var schemeIds = Sets.SelectMany(s => s.Schemes.Select(c => c.Id)).ToHashSet();
+        foreach (var (cardId, kws) in cardKeywords)
+            if (schemeIds.Contains(cardId))
+                Assert.DoesNotContain("transform", kws);
     }
 }

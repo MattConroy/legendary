@@ -1280,11 +1280,8 @@
       "When a Master Strike or Mastermind Tactic ability occurs, it will tell you to \"Transform\" the Mastermind, meaning flip it over to its other side. (Don't also do the Master Strike ability of the new side.) A Mastermind only uses the abilities and Attack of its currently face up side. Ignore the special abilities and values on the currently face down side."
     ],
     "sets": [
-      "ant-man-and-the-wasp",
-      "messiah-complex",
-      "midnight-sons",
-      "revelations",
-      "world-war-hulk"
+      "world-war-hulk",
+      "ant-man-and-the-wasp"
     ]
   },
   {
