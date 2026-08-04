@@ -159,6 +159,9 @@
   "bp:enemies-of-wakanda": [
     "empowered"
   ],
+  "bp:king-black-panther": [
+    "throne-s-favor"
+  ],
   "bp:klaw": [
     "empowered"
   ],
@@ -169,7 +172,11 @@
     "empowered"
   ],
   "bp:queen-storm-of-wakanda": [
-    "empowered"
+    "empowered",
+    "throne-s-favor"
+  ],
+  "bp:seize-the-wakandan-throne": [
+    "throne-s-favor"
   ],
   "bw:black-widow": [
     "dark-memories",
@@ -516,20 +523,48 @@
     "artifact",
     "thrown-artifact"
   ],
+  "fi:the-mighty": [
+    "fight-or-fail",
+    "uru-enchanted-weapon"
+  ],
+  "fi:uru-iron-man": [
+    "demolish",
+    "uru-enchanted-weapon"
+  ],
   "gotg:drax": [
-    "artifact"
+    "artifact",
+    "shards"
   ],
   "gotg:gamora": [
-    "artifact"
+    "artifact",
+    "shards"
+  ],
+  "gotg:groot": [
+    "shards"
+  ],
+  "gotg:infinity-gauntlet": [
+    "shards"
   ],
   "gotg:infinity-gems": [
-    "artifact"
+    "artifact",
+    "shards"
+  ],
+  "gotg:kree-starforce": [
+    "shards"
   ],
   "gotg:rocket-raccoon": [
-    "artifact"
+    "artifact",
+    "shards"
   ],
   "gotg:star-lord": [
-    "artifact"
+    "artifact",
+    "shards"
+  ],
+  "gotg:supreme-intelligence": [
+    "shards"
+  ],
+  "gotg:unite-the-shards": [
+    "shards"
   ],
   "hoa:asgardian-test-of-worth": [
     "worthy"
@@ -579,35 +614,58 @@
     "worthy"
   ],
   "itc:adam-warlock": [
+    "burning-shards",
     "shards"
   ],
   "itc:black-order-of-thanos": [
     "danger-sense"
   ],
   "itc:captain-mar-vell": [
-    "danger-sense"
+    "danger-sense",
+    "shards"
   ],
   "itc:celestials": [
     "celestial-boon",
-    "cosmic-threat"
+    "cosmic-threat",
+    "shards"
+  ],
+  "itc:destroy-the-nova-corps": [
+    "shards"
   ],
   "itc:elders-of-the-universe": [
-    "contest-of-champions"
+    "contest-of-champions",
+    "shards"
   ],
   "itc:from-beyond": [
     "cosmic-threat"
   ],
+  "itc:magus": [
+    "shards"
+  ],
   "itc:moondragon": [
-    "danger-sense"
+    "danger-sense",
+    "shards"
+  ],
+  "itc:nebula": [
+    "shards"
   ],
   "itc:nova": [
-    "cosmic-threat"
+    "cosmic-threat",
+    "shards"
+  ],
+  "itc:phyla-vell": [
+    "shards"
   ],
   "itc:quasar": [
+    "burning-shards",
     "shards"
   ],
   "itc:ronan-the-accuser": [
+    "burning-shards",
     "contest-of-champions",
+    "shards"
+  ],
+  "itc:sidera-maris-bridge-builders": [
     "shards"
   ],
   "itc:the-beyonder": [
@@ -617,9 +675,11 @@
     "contest-of-champions"
   ],
   "itc:the-grandmaster": [
-    "contest-of-champions"
+    "contest-of-champions",
+    "shards"
   ],
   "itc:universal-church-of-truth": [
+    "burning-shards",
     "shards"
   ],
   "itc:yondu": [
@@ -913,13 +973,18 @@
     "hyperspeed"
   ],
   "rok:black-bolt": [
+    "throne-s-favor",
     "when-recruited"
   ],
   "rok:crystal": [
+    "throne-s-favor",
     "when-recruited"
   ],
   "rok:devolve-with-xerogen-crystals": [
     "abomination"
+  ],
+  "rok:emperor-vulcan-of-the-shiar": [
+    "throne-s-favor"
   ],
   "rok:gorgon": [
     "abomination",
@@ -936,7 +1001,14 @@
     "abomination"
   ],
   "rok:medusa": [
+    "throne-s-favor",
     "when-recruited"
+  ],
+  "rok:shiar-imperial-elite": [
+    "throne-s-favor"
+  ],
+  "rok:war-of-kings": [
+    "throne-s-favor"
   ],
   "shl:a-i-m-hydra-offshoot": [
     "hydra-level",
@@ -1169,6 +1241,10 @@
     "excessive-violence",
     "indigestion"
   ],
+  "villains:avengers": [
+    "demolish",
+    "elusive"
+  ],
   "villains:bullseye": [
     "dodge"
   ],
@@ -1190,8 +1266,24 @@
   "villains:mystique": [
     "dodge"
   ],
+  "villains:professor-x": [
+    "x-treme-attack"
+  ],
+  "villains:spider-friends": [
+    "elusive"
+  ],
   "villains:ultron": [
     "dodge"
+  ],
+  "villains:uncanny-avengers": [
+    "x-treme-attack"
+  ],
+  "villains:uncanny-x-men": [
+    "elusive",
+    "x-treme-attack"
+  ],
+  "villains:x-men-first-class": [
+    "x-treme-attack"
   ],
   "wif:apocalyptic-black-widow": [
     "liberate",

@@ -8,7 +8,11 @@
     <h1 class="page-title">Keywords</h1>
     <p class="muted small">Ability keywords from every expansion, with their rulebook definitions — so you don't have to leaf through the books.</p>
 
-    @if (!Catalog.IsLoaded)
+    @if (_loadFailed)
+    {
+        <p class="notice notice--warn">Couldn't load the keyword glossary. Check your connection and reload.</p>
+    }
+    else if (!Catalog.IsLoaded)
     {
         <p class="muted">Loading…</p>
     }
@@ -75,13 +79,22 @@
     private Dictionary<string, string> _names = new();
     private Dictionary<string, int> _order = new();
 
+    private bool _loadFailed;
+
     protected override async Task OnInitializedAsync()
     {
-        await State.InitializeAsync();       // loads the set catalogue (names/order)
-        await Catalog.EnsureLoadedAsync();   // loads the keyword glossary
-        var ordered = State.AllSets.OrderBy(s => s.Released).ThenBy(s => s.Name).ToList();
-        _names = ordered.ToDictionary(s => s.Id, s => s.Name);
-        _order = ordered.Select((s, i) => (s.Id, i)).ToDictionary(t => t.Id, t => t.i);
+        try
+        {
+            await State.InitializeAsync();       // loads the set catalogue (names/order)
+            await Catalog.EnsureLoadedAsync();   // loads the keyword glossary
+            var ordered = State.AllSets.OrderBy(s => s.Released).ThenBy(s => s.Name).ToList();
+            _names = ordered.ToDictionary(s => s.Id, s => s.Name);
+            _order = ordered.Select((s, i) => (s.Id, i)).ToDictionary(t => t.Id, t => t.i);
+        }
+        catch
+        {
+            _loadFailed = true;
+        }
     }
 
     private IEnumerable<CardSet> SetsWithKeywords

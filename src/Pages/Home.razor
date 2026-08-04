@@ -180,7 +180,8 @@
     protected override async Task OnInitializedAsync()
     {
         await State.InitializeAsync();
-        await Keywords.EnsureLoadedAsync();
+        // Keywords are a secondary feature — never let their loading break the randomiser.
+        try { await Keywords.EnsureLoadedAsync(); } catch { /* "Keywords in play" just won't show */ }
         StateHasChanged();
     }
 

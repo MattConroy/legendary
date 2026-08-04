@@ -102,4 +102,27 @@ public class KeywordTests
             if (schemeIds.Contains(cardId))
                 Assert.DoesNotContain("transform", kws);
     }
+
+    [Fact]
+    public void Every_keyword_set_membership_has_at_least_one_tagged_card()
+    {
+        // Guards both directions: a keyword claiming a set it never appears on
+        // (pollution), and a set whose keyword is never tagged on a card (coverage gap).
+        var cardKeywords = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string[]>>(
+            File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "card-keywords.json")), SetJson.Options)!;
+        var cardSet = Sets.SelectMany(s =>
+            s.Masterminds.Select(c => c.Id).Concat(s.Schemes.Select(c => c.Id))
+             .Concat(s.VillainGroups.Select(c => c.Id)).Concat(s.Henchmen.Select(c => c.Id))
+             .Concat(s.Heroes.Select(c => c.Id)).Select(id => (id, set: s.Id)))
+            .ToDictionary(t => t.id, t => t.set);
+
+        var tagged = cardKeywords
+            .SelectMany(kv => kv.Value.Select(kw => (kw, set: cardSet[kv.Key])))
+            .ToHashSet();
+
+        foreach (var k in Keywords)
+            foreach (var sid in k.Sets)
+                Assert.True(tagged.Contains((k.Id, sid)),
+                    $"Keyword '{k.Name}' lists set '{sid}' but no card there is tagged with it.");
+    }
 }

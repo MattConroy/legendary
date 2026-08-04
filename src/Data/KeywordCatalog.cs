@@ -29,8 +29,20 @@ public sealed class KeywordCatalog
     {
         if (_keywords is not null) return;
         var keywords = KeywordJson.Deserialize(await _http.GetStringAsync(KeywordsUrl));
-        var cards = await _http.GetFromJsonAsync<Dictionary<string, string[]>>(CardKeywordsUrl, SetJson.Options)
+
+        // The per-card tags are a nice-to-have; if they fail to load, the glossary
+        // still works and "keywords in play" just stays empty.
+        Dictionary<string, string[]> cards;
+        try
+        {
+            cards = await _http.GetFromJsonAsync<Dictionary<string, string[]>>(CardKeywordsUrl, SetJson.Options)
                     ?? new Dictionary<string, string[]>();
+        }
+        catch
+        {
+            cards = new Dictionary<string, string[]>();
+        }
+
         _keywords = keywords;
         _byId = keywords.ToDictionary(k => k.Id);
         _cardKeywords = cards;
