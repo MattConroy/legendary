@@ -27,6 +27,7 @@
   <ItemGroup>
     <None Include="../src/wwwroot/data/sets.json" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
     <None Include="../src/wwwroot/data/keywords.json" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
+    <None Include="../src/wwwroot/data/card-keywords.json" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
   </ItemGroup>
 
 </Project>

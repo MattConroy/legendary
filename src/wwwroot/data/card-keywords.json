@@ -1,0 +1,1348 @@
+{
+  "am:age-of-ultron": [
+    "empowered"
+  ],
+  "am:ant-man": [
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "am:black-knight": [
+    "empowered"
+  ],
+  "am:jocasta": [
+    "empowered",
+    "size-changing"
+  ],
+  "am:pull-earth-into-medieval-times": [
+    "chivalrous-duel"
+  ],
+  "am:queen-s-vengeance": [
+    "chivalrous-duel",
+    "microscopic-size-changing"
+  ],
+  "am:trap-heroes-in-the-microverse": [
+    "size-changing"
+  ],
+  "am:ultron": [
+    "empowered"
+  ],
+  "am:ultron-s-legacy": [
+    "empowered",
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "am:wasp": [
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "am:wonder-man": [
+    "empowered",
+    "size-changing"
+  ],
+  "amw:ant-army": [
+    "antics",
+    "heist",
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "amw:ant-man": [
+    "antics",
+    "heist",
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "amw:armada-of-kang": [
+    "double-cross",
+    "microscopic-size-changing"
+  ],
+  "amw:cassie-lang": [
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "amw:cross-technologies": [
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "amw:darren-cross": [
+    "double-cross",
+    "transform"
+  ],
+  "amw:freedom-fighters": [
+    "explore"
+  ],
+  "amw:ghost-chasers": [
+    "double-cross",
+    "heist",
+    "size-changing"
+  ],
+  "amw:ghost-master-thief": [
+    "transform"
+  ],
+  "amw:janet-van-dyne": [
+    "explore",
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "amw:jentorra": [
+    "explore"
+  ],
+  "amw:kang-quantum-conqueror": [
+    "transform"
+  ],
+  "amw:quantum-hound": [
+    "explore"
+  ],
+  "amw:quantum-realm": [
+    "explore",
+    "microscopic-size-changing"
+  ],
+  "amw:safeguard-dark-secrets": [
+    "heist"
+  ],
+  "amw:scott-lang-cat-burglar": [
+    "heist"
+  ],
+  "amw:tardigrade": [
+    "microscopic-size-changing"
+  ],
+  "amw:wasp": [
+    "heist",
+    "microscopic-size-changing",
+    "size-changing"
+  ],
+  "anh:brainstorm": [
+    "man-out-of-time"
+  ],
+  "anh:psi-lord": [
+    "man-out-of-time"
+  ],
+  "anh:timelines-of-kang": [
+    "man-out-of-time"
+  ],
+  "bp:enemies-of-wakanda": [
+    "empowered"
+  ],
+  "bp:plunder-wakandas-vibranium": [
+    "empowered"
+  ],
+  "bp:princess-shuri": [
+    "empowered"
+  ],
+  "bp:queen-storm-of-wakanda": [
+    "empowered"
+  ],
+  "bw:black-widow": [
+    "dark-memories",
+    "dodge",
+    "undercover"
+  ],
+  "bw:corrupt-the-spy-agencies": [
+    "undercover",
+    "unleash"
+  ],
+  "bw:elite-assassins": [
+    "dark-memories",
+    "undercover",
+    "unleash"
+  ],
+  "bw:falcon-winter-soldier": [
+    "dark-memories",
+    "divided",
+    "dodge"
+  ],
+  "bw:red-guardian": [
+    "undercover",
+    "unleash",
+    "when-recruited"
+  ],
+  "bw:sniper-rifle-assassins": [
+    "dodge"
+  ],
+  "bw:train-black-widows-in-the-red-room": [
+    "dark-memories",
+    "undercover"
+  ],
+  "bw:white-tiger": [
+    "dark-memories",
+    "dodge"
+  ],
+  "bw:yelena-belova": [
+    "dodge",
+    "undercover",
+    "unleash"
+  ],
+  "cap:agent-x-13": [
+    "man-out-of-time",
+    "savior"
+  ],
+  "cap:baron-heinrich-zemo": [
+    "savior"
+  ],
+  "cap:captain-america-1941": [
+    "man-out-of-time",
+    "savior"
+  ],
+  "cap:captain-america-falcon": [
+    "savior"
+  ],
+  "cap:steve-rogers-director-of-s-h-i-e-l-d": [
+    "man-out-of-time",
+    "savior"
+  ],
+  "cap:winter-soldier": [
+    "man-out-of-time"
+  ],
+  "cap:zola-s-creations": [
+    "abomination"
+  ],
+  "champ:fin-fang-foom": [
+    "demolish",
+    "size-changing"
+  ],
+  "champ:gwenpool": [
+    "cheering-crowds",
+    "demolish",
+    "size-changing"
+  ],
+  "champ:monsters-unleashed": [
+    "demolish",
+    "size-changing"
+  ],
+  "champ:ms-marvel": [
+    "cheering-crowds",
+    "size-changing"
+  ],
+  "champ:nova": [
+    "cheering-crowds",
+    "size-changing"
+  ],
+  "champ:pagliacci": [
+    "demolish"
+  ],
+  "champ:totally-awesome-hulk": [
+    "cheering-crowds",
+    "size-changing"
+  ],
+  "champ:viv-vision": [
+    "cheering-crowds",
+    "size-changing"
+  ],
+  "champ:wrecking-crew": [
+    "demolish"
+  ],
+  "cw:cape-killers": [
+    "s-h-i-e-l-d-clearance"
+  ],
+  "cw:captain-america-secret-avenger": [
+    "divided"
+  ],
+  "cw:cloak-dagger": [
+    "divided",
+    "phasing"
+  ],
+  "cw:csa-special-marshals": [
+    "fortify",
+    "size-changing"
+  ],
+  "cw:daredevil": [
+    "divided"
+  ],
+  "cw:falcon": [
+    "divided"
+  ],
+  "cw:goliath": [
+    "divided",
+    "size-changing"
+  ],
+  "cw:great-lakes-avengers": [
+    "fortify",
+    "size-changing"
+  ],
+  "cw:hercules": [
+    "divided"
+  ],
+  "cw:heroes-for-hire": [
+    "bribe",
+    "fortify"
+  ],
+  "cw:hulkling": [
+    "divided",
+    "size-changing"
+  ],
+  "cw:luke-cage": [
+    "divided",
+    "fortify"
+  ],
+  "cw:misty-knight": [
+    "bribe"
+  ],
+  "cw:patriot": [
+    "divided"
+  ],
+  "cw:peter-parker": [
+    "divided"
+  ],
+  "cw:registration-enforcers": [
+    "size-changing"
+  ],
+  "cw:s-h-i-e-l-d-elite": [
+    "fortify",
+    "s-h-i-e-l-d-clearance"
+  ],
+  "cw:speedball": [
+    "divided"
+  ],
+  "cw:stature": [
+    "divided",
+    "size-changing"
+  ],
+  "cw:storm-black-panther": [
+    "divided"
+  ],
+  "cw:superhuman-registration-act": [
+    "fortify",
+    "size-changing"
+  ],
+  "cw:thunderbolts": [
+    "fortify"
+  ],
+  "cw:tigra": [
+    "divided"
+  ],
+  "cw:vision": [
+    "divided",
+    "phasing",
+    "size-changing"
+  ],
+  "cw:wiccan": [
+    "divided",
+    "phasing"
+  ],
+  "dc:cable": [
+    "teleport"
+  ],
+  "dc:domino": [
+    "versatile"
+  ],
+  "dc:kingpin": [
+    "bribe"
+  ],
+  "dc:maggia-goons": [
+    "bribe"
+  ],
+  "dc:nightcrawler": [
+    "teleport"
+  ],
+  "dim:jessica-jones": [
+    "investigate"
+  ],
+  "dim:jjj": [
+    "investigate"
+  ],
+  "dim:man-thing": [
+    "teleport"
+  ],
+  "dim:ms-america": [
+    "investigate",
+    "teleport"
+  ],
+  "dim:squirrel-girl": [
+    "investigate",
+    "switcheroo"
+  ],
+  "dp:bob-agent-of-hydra": [
+    "excessive-violence"
+  ],
+  "dp:deadpool": [
+    "excessive-violence"
+  ],
+  "dp:evil-deadpool-corpse": [
+    "excessive-violence"
+  ],
+  "dp:slapstick": [
+    "excessive-violence"
+  ],
+  "dp:solo": [
+    "excessive-violence"
+  ],
+  "dp:stingray": [
+    "excessive-violence"
+  ],
+  "dss:claim-souls-for-demons": [
+    "demonic-bargain"
+  ],
+  "dss:clea": [
+    "demonic-bargain",
+    "ritual-artifact"
+  ],
+  "dss:doctor-strange": [
+    "ritual-artifact"
+  ],
+  "dss:doctor-voodoo": [
+    "ritual-artifact"
+  ],
+  "dss:dormammu": [
+    "demonic-bargain"
+  ],
+  "dss:fear-lords": [
+    "astral-plane"
+  ],
+  "dss:lords-of-the-netherworld": [
+    "demonic-bargain"
+  ],
+  "dss:nightmare": [
+    "astral-plane"
+  ],
+  "dss:the-ancient-one": [
+    "astral-plane",
+    "ritual-artifact"
+  ],
+  "dss:the-vishanti": [
+    "demonic-bargain",
+    "ritual-artifact"
+  ],
+  "dss:war-for-the-dream-dimension": [
+    "astral-plane"
+  ],
+  "ff:galactus": [
+    "cosmic-threat"
+  ],
+  "ff:heralds-of-galactus": [
+    "cosmic-threat"
+  ],
+  "ff:subterranea": [
+    "burrow"
+  ],
+  "fi:greithoth": [
+    "artifact",
+    "thrown-artifact"
+  ],
+  "fi:kuurth": [
+    "thrown-artifact"
+  ],
+  "fi:nerkkod": [
+    "thrown-artifact"
+  ],
+  "fi:nul": [
+    "demolish",
+    "thrown-artifact"
+  ],
+  "fi:skadi": [
+    "thrown-artifact"
+  ],
+  "fi:skirn": [
+    "thrown-artifact"
+  ],
+  "gotg:drax": [
+    "artifact"
+  ],
+  "gotg:gamora": [
+    "artifact"
+  ],
+  "gotg:infinity-gems": [
+    "artifact"
+  ],
+  "gotg:rocket-raccoon": [
+    "artifact"
+  ],
+  "gotg:star-lord": [
+    "artifact"
+  ],
+  "hoa:asgardian-test-of-worth": [
+    "worthy"
+  ],
+  "hoa:beta-ray-bill": [
+    "thrown-artifact",
+    "worthy"
+  ],
+  "hoa:dark-council": [
+    "artifact",
+    "thrown-artifact",
+    "villainous-weapon",
+    "worthy"
+  ],
+  "hoa:lady-sif": [
+    "thrown-artifact"
+  ],
+  "hoa:malekith-the-accursed": [
+    "thrown-artifact",
+    "villainous-weapon"
+  ],
+  "hoa:omens-of-ragnarok": [
+    "artifact",
+    "villainous-weapon"
+  ],
+  "hoa:thor": [
+    "thrown-artifact",
+    "worthy"
+  ],
+  "hoa:valkyrie": [
+    "thrown-artifact"
+  ],
+  "hoa:war-of-the-frost-giants": [
+    "worthy"
+  ],
+  "itc:captain-mar-vell": [
+    "danger-sense"
+  ],
+  "itc:celestials": [
+    "celestial-boon",
+    "cosmic-threat"
+  ],
+  "itc:elders-of-the-universe": [
+    "contest-of-champions"
+  ],
+  "itc:from-beyond": [
+    "cosmic-threat"
+  ],
+  "itc:nova": [
+    "cosmic-threat"
+  ],
+  "itc:ronan-the-accuser": [
+    "contest-of-champions"
+  ],
+  "itc:the-beyonder": [
+    "cosmic-threat"
+  ],
+  "itc:the-contest-of-champions": [
+    "contest-of-champions"
+  ],
+  "itc:the-grandmaster": [
+    "contest-of-champions"
+  ],
+  "mcx:acolytes": [
+    "shatter"
+  ],
+  "mcx:clan-yashida": [
+    "chivalrous-duel"
+  ],
+  "mcx:exodus": [
+    "shatter"
+  ],
+  "mcx:lady-deathstrike": [
+    "prey"
+  ],
+  "mcx:m": [
+    "clone",
+    "investigate",
+    "when-recruited"
+  ],
+  "mcx:mr-sinister-clones": [
+    "clone"
+  ],
+  "mcx:multiple-man": [
+    "clone",
+    "investigate"
+  ],
+  "mcx:purifiers": [
+    "clone",
+    "prey"
+  ],
+  "mcx:reavers": [
+    "prey"
+  ],
+  "mcx:rictor": [
+    "investigate",
+    "shatter"
+  ],
+  "mcx:sentinel-squad-o-n-e": [
+    "clone"
+  ],
+  "mcx:shatterstar": [
+    "clone",
+    "shatter",
+    "when-recruited"
+  ],
+  "mcx:siryn": [
+    "investigate",
+    "shatter"
+  ],
+  "mcx:stepford-cuckoos": [
+    "investigate"
+  ],
+  "mcx:strong-guy": [
+    "investigate"
+  ],
+  "mcx:warpath": [
+    "investigate"
+  ],
+  "mds:blade-daywalker": [
+    "moonlight-sunlight",
+    "patrol"
+  ],
+  "mds:elsa-bloodstone": [
+    "blood-frenzy",
+    "hunt-for-victims",
+    "patrol"
+  ],
+  "mds:fallen": [
+    "blood-frenzy"
+  ],
+  "mds:lilin": [
+    "hunt-for-victims",
+    "moonlight-sunlight"
+  ],
+  "mds:midnight-massacre": [
+    "moonlight-sunlight"
+  ],
+  "mds:morbius": [
+    "blood-frenzy",
+    "moonlight-sunlight"
+  ],
+  "mds:ritual-sacrifice-to-summon-chthon": [
+    "transform"
+  ],
+  "mds:sire-vampires-at-the-blood-bank": [
+    "blood-frenzy"
+  ],
+  "mds:werewolf-by-night": [
+    "moonlight-sunlight"
+  ],
+  "mds:wong-master-of-the-mystic-arts": [
+    "moonlight-sunlight",
+    "patrol"
+  ],
+  "mds:zarathos": [
+    "haunt"
+  ],
+  "msg:drax": [
+    "divided",
+    "excessive-violence",
+    "triggered-artifact"
+  ],
+  "msg:followers-of-ronan": [
+    "command",
+    "triggered-artifact",
+    "villainous-weapon"
+  ],
+  "msg:gamora": [
+    "divided",
+    "triggered-artifact"
+  ],
+  "msg:mantis": [
+    "divided",
+    "excessive-kindness"
+  ],
+  "msg:ravagers": [
+    "command",
+    "triggered-artifact",
+    "villainous-weapon"
+  ],
+  "msg:rocket-groot": [
+    "divided",
+    "excessive-kindness",
+    "excessive-violence",
+    "triggered-artifact"
+  ],
+  "msg:ronan-the-accuser": [
+    "triggered-artifact",
+    "villainous-weapon"
+  ],
+  "msg:star-lord": [
+    "divided",
+    "triggered-artifact"
+  ],
+  "nm:belasco-demon-lord-of-limbo": [
+    "moonlight-sunlight",
+    "waking-nightmare"
+  ],
+  "nm:crash-the-moon-into-the-sun": [
+    "moonlight-sunlight"
+  ],
+  "nm:demons-of-limbo": [
+    "moonlight-sunlight",
+    "waking-nightmare"
+  ],
+  "nm:emma-frost-the-white-queen": [
+    "waking-nightmare"
+  ],
+  "nm:hellions": [
+    "moonlight-sunlight",
+    "waking-nightmare"
+  ],
+  "nm:mirage": [
+    "moonlight-sunlight",
+    "waking-nightmare"
+  ],
+  "nm:sunspot": [
+    "moonlight-sunlight"
+  ],
+  "nm:warlock": [
+    "moonlight-sunlight"
+  ],
+  "nm:wolfsbane": [
+    "moonlight-sunlight"
+  ],
+  "noir:angel-noir": [
+    "investigate"
+  ],
+  "noir:charles-xavier": [
+    "hidden-witness",
+    "investigate"
+  ],
+  "noir:daredevil-noir": [
+    "investigate"
+  ],
+  "noir:find-the-split-personality-killer": [
+    "investigate"
+  ],
+  "noir:goblin-s-freak-show": [
+    "hidden-witness"
+  ],
+  "noir:hidden-heart-of-darkness": [
+    "investigate"
+  ],
+  "noir:iron-man-noir": [
+    "investigate"
+  ],
+  "noir:luke-cage-noir": [
+    "investigate"
+  ],
+  "noir:silence-the-witnesses": [
+    "hidden-witness"
+  ],
+  "noir:spider-man-noir": [
+    "investigate"
+  ],
+  "noir:the-goblin-underworld-boss": [
+    "hidden-witness",
+    "investigate"
+  ],
+  "noir:x-men-noir": [
+    "investigate"
+  ],
+  "ptr:black-cat": [
+    "wall-crawl"
+  ],
+  "ptr:carnage": [
+    "feast"
+  ],
+  "ptr:maximum-carnage": [
+    "feast"
+  ],
+  "ptr:moon-knight": [
+    "wall-crawl"
+  ],
+  "ptr:scarlet-spider": [
+    "wall-crawl"
+  ],
+  "ptr:spider-woman": [
+    "wall-crawl"
+  ],
+  "ptr:symbiote-spider-man": [
+    "wall-crawl"
+  ],
+  "rev:captain-marvel-agent-of-s-h-i-e-l-d": [
+    "last-stand"
+  ],
+  "rev:dark-avengers": [
+    "last-stand"
+  ],
+  "rev:earthquake-drains-the-ocean": [
+    "transform"
+  ],
+  "rev:hoods-gang": [
+    "dark-memories"
+  ],
+  "rev:house-of-m": [
+    "transform"
+  ],
+  "rev:photon": [
+    "last-stand"
+  ],
+  "rev:quicksilver": [
+    "hyperspeed"
+  ],
+  "rev:ronin": [
+    "dark-memories"
+  ],
+  "rev:scarlet-witch": [
+    "dark-memories"
+  ],
+  "rev:secret-hydra-corruption": [
+    "transform"
+  ],
+  "rev:the-hood": [
+    "dark-memories"
+  ],
+  "rev:the-korvac-saga": [
+    "transform"
+  ],
+  "rok:black-bolt": [
+    "when-recruited"
+  ],
+  "rok:crystal": [
+    "when-recruited"
+  ],
+  "rok:devolve-with-xerogen-crystals": [
+    "abomination"
+  ],
+  "rok:gorgon": [
+    "teleport",
+    "when-recruited"
+  ],
+  "rok:inhuman-rebellion": [
+    "abomination"
+  ],
+  "rok:karnak": [
+    "when-recruited"
+  ],
+  "rok:medusa": [
+    "when-recruited"
+  ],
+  "shl:a-i-m-hydra-offshoot": [
+    "hydra-level",
+    "undercover"
+  ],
+  "shl:agent-phil-coulson": [
+    "s-h-i-e-l-d-level",
+    "undercover"
+  ],
+  "shl:deathlok": [
+    "undercover"
+  ],
+  "shl:hydra-elite": [
+    "hydra-level"
+  ],
+  "shl:hydra-high-council": [
+    "hydra-level"
+  ],
+  "shl:mockingbird": [
+    "s-h-i-e-l-d-level",
+    "undercover"
+  ],
+  "shl:quake": [
+    "s-h-i-e-l-d-level",
+    "undercover"
+  ],
+  "shl:s-h-i-e-l-d-vs-hydra-war": [
+    "hydra-level",
+    "undercover"
+  ],
+  "smh:happy-hogan": [
+    "coordinate",
+    "striker"
+  ],
+  "smh:high-tech-spider-man": [
+    "coordinate"
+  ],
+  "smh:peter-parker-homecoming": [
+    "coordinate",
+    "wall-crawl"
+  ],
+  "smh:peter-s-allies": [
+    "coordinate"
+  ],
+  "smh:salvagers": [
+    "striker"
+  ],
+  "smh:tony-stark": [
+    "coordinate"
+  ],
+  "smh:vulture-tech": [
+    "striker",
+    "wall-crawl"
+  ],
+  "sw1:domain-of-apocalypse": [
+    "teleport"
+  ],
+  "sw1:dr-strange": [
+    "teleport"
+  ],
+  "sw1:ghost-racers": [
+    "rise-of-the-living-dead"
+  ],
+  "sw1:limbo": [
+    "teleport"
+  ],
+  "sw1:magik": [
+    "teleport"
+  ],
+  "sw1:nimrod": [
+    "teleport"
+  ],
+  "sw1:thanos": [
+    "teleport"
+  ],
+  "sw1:the-deadlands": [
+    "rise-of-the-living-dead"
+  ],
+  "sw1:wasteland": [
+    "bribe"
+  ],
+  "sw1:zombie-green-goblin": [
+    "rise-of-the-living-dead"
+  ],
+  "sw2:agent-venom": [
+    "patrol",
+    "spectrum",
+    "wall-crawl"
+  ],
+  "sw2:arkon-the-magnificent": [
+    "patrol",
+    "spectrum",
+    "wall-crawl"
+  ],
+  "sw2:beast": [
+    "patrol",
+    "wall-crawl"
+  ],
+  "sw2:captain-britain": [
+    "patrol"
+  ],
+  "sw2:corvus-glaive": [
+    "patrol"
+  ],
+  "sw2:deadpool-s-secret-secret-wars": [
+    "fateful-resurrection",
+    "spectrum"
+  ],
+  "sw2:dr-punisher-soldier-supreme": [
+    "patrol"
+  ],
+  "sw2:elsa-bloodstone": [
+    "patrol",
+    "spectrum",
+    "wall-crawl"
+  ],
+  "sw2:fountain-eternal-life": [
+    "fateful-resurrection"
+  ],
+  "sw2:guardians-of-knowhere": [
+    "charge",
+    "fateful-resurrection",
+    "patrol"
+  ],
+  "sw2:king-hyperion": [
+    "charge"
+  ],
+  "sw2:magma-men": [
+    "fateful-resurrection"
+  ],
+  "sw2:monster-metropolis": [
+    "charge",
+    "fateful-resurrection"
+  ],
+  "sw2:ruby-summers": [
+    "teleport"
+  ],
+  "sw2:shang-chi": [
+    "patrol",
+    "wall-crawl"
+  ],
+  "sw2:shiklah": [
+    "fateful-resurrection"
+  ],
+  "sw2:silk": [
+    "spectrum",
+    "wall-crawl"
+  ],
+  "sw2:spider-gwen": [
+    "patrol",
+    "wall-crawl"
+  ],
+  "sw2:spider-infected": [
+    "wall-crawl"
+  ],
+  "sw2:the-captain-and-the-devil": [
+    "patrol",
+    "spectrum"
+  ],
+  "sw2:time-traveling-jean-grey": [
+    "patrol"
+  ],
+  "sw2:utopolis": [
+    "charge",
+    "patrol",
+    "spectrum"
+  ],
+  "sw2:x-men-92": [
+    "charge",
+    "spectrum"
+  ],
+  "venom:carnage": [
+    "excessive-violence",
+    "indigestion"
+  ],
+  "venom:hybrid": [
+    "symbiote-bond"
+  ],
+  "venom:invasion-of-the-venom-symbiotes": [
+    "symbiote-bond"
+  ],
+  "venom:life-foundation": [
+    "symbiote-bond"
+  ],
+  "venom:poisons": [
+    "symbiote-bond"
+  ],
+  "venom:venom": [
+    "excessive-violence",
+    "indigestion"
+  ],
+  "venom:venom-rocket": [
+    "excessive-violence"
+  ],
+  "venom:venompool": [
+    "excessive-violence",
+    "indigestion"
+  ],
+  "villains:bullseye": [
+    "dodge"
+  ],
+  "villains:electro": [
+    "dodge"
+  ],
+  "villains:green-goblin": [
+    "dodge"
+  ],
+  "villains:kraven": [
+    "dodge"
+  ],
+  "villains:magneto": [
+    "dodge"
+  ],
+  "villains:mysterio": [
+    "dodge"
+  ],
+  "villains:mystique": [
+    "dodge"
+  ],
+  "villains:ultron": [
+    "dodge"
+  ],
+  "wif:apocalyptic-black-widow": [
+    "liberate",
+    "what-if"
+  ],
+  "wif:black-order-guards": [
+    "empowered"
+  ],
+  "wif:captain-carter": [
+    "what-if"
+  ],
+  "wif:doctor-strange-supreme": [
+    "soulbind",
+    "what-if"
+  ],
+  "wif:gamora-destroyer-of-thanos": [
+    "soulbind",
+    "what-if"
+  ],
+  "wif:killmonger-spec-ops": [
+    "what-if"
+  ],
+  "wif:marvel-zombies": [
+    "rise-of-the-living-dead"
+  ],
+  "wif:party-thor": [
+    "what-if"
+  ],
+  "wif:star-lord-tchalla": [
+    "empowered",
+    "what-if"
+  ],
+  "wif:uatu-the-watcher": [
+    "empowered",
+    "soulbind",
+    "what-if"
+  ],
+  "wif:ultron-infinity": [
+    "empowered"
+  ],
+  "wif:ultron-sentries": [
+    "empowered"
+  ],
+  "wif:zombie-avengers": [
+    "rise-of-the-living-dead"
+  ],
+  "wif:zombie-scarlet-witch": [
+    "rise-of-the-living-dead"
+  ],
+  "wpx:berserkers": [
+    "berserk",
+    "fail"
+  ],
+  "wpx:fantomex": [
+    "weapon-x-sequence"
+  ],
+  "wpx:go-after-heroes-loved-ones": [
+    "berserk"
+  ],
+  "wpx:marrow": [
+    "berserk",
+    "weapon-x-sequence"
+  ],
+  "wpx:romulus": [
+    "weapon-x-sequence"
+  ],
+  "wpx:sabretooth": [
+    "berserk",
+    "fail"
+  ],
+  "wpx:weapon-h": [
+    "berserk",
+    "weapon-x-sequence"
+  ],
+  "wpx:weapon-plus": [
+    "berserk",
+    "fail",
+    "weapon-x-sequence"
+  ],
+  "wpx:weapon-x-wolverine": [
+    "berserk",
+    "weapon-x-sequence"
+  ],
+  "wwh:amadeus-cho": [
+    "outwit",
+    "transform"
+  ],
+  "wwh:aspects-of-the-void": [
+    "feast",
+    "wounded-fury"
+  ],
+  "wwh:bruce-banner": [
+    "outwit",
+    "transform"
+  ],
+  "wwh:caiera": [
+    "outwit",
+    "transform"
+  ],
+  "wwh:code-red": [
+    "wounded-fury"
+  ],
+  "wwh:cytoplasm-spikes": [
+    "feast"
+  ],
+  "wwh:death-s-heads": [
+    "outwit"
+  ],
+  "wwh:gladiator-hulk": [
+    "transform",
+    "wounded-fury"
+  ],
+  "wwh:hiroim": [
+    "transform"
+  ],
+  "wwh:hulkbuster-iron-man": [
+    "outwit",
+    "transform"
+  ],
+  "wwh:illuminati": [
+    "outwit"
+  ],
+  "wwh:illuminati-secret-society": [
+    "outwit",
+    "transform"
+  ],
+  "wwh:intelligencia": [
+    "outwit",
+    "wounded-fury"
+  ],
+  "wwh:joe-fixit-grey-hulk": [
+    "transform"
+  ],
+  "wwh:king-hulk-sakaarson": [
+    "transform"
+  ],
+  "wwh:korg": [
+    "outwit",
+    "smash",
+    "transform"
+  ],
+  "wwh:m-o-d-o-k": [
+    "outwit",
+    "transform"
+  ],
+  "wwh:miek-the-unhived": [
+    "feast",
+    "transform"
+  ],
+  "wwh:namora": [
+    "smash",
+    "transform"
+  ],
+  "wwh:no-name-brood-queen": [
+    "feast",
+    "transform"
+  ],
+  "wwh:rick-jones": [
+    "transform"
+  ],
+  "wwh:sakaar-imperial-guard": [
+    "feast",
+    "outwit"
+  ],
+  "wwh:sakaaran-hivelings": [
+    "feast"
+  ],
+  "wwh:sentry": [
+    "feast",
+    "transform"
+  ],
+  "wwh:she-hulk": [
+    "outwit",
+    "transform"
+  ],
+  "wwh:skaar-son-of-hulk": [
+    "transform",
+    "wounded-fury"
+  ],
+  "wwh:the-red-king": [
+    "transform"
+  ],
+  "wwh:the-sentry": [
+    "transform"
+  ],
+  "wwh:warbound": [
+    "feast",
+    "wounded-fury"
+  ],
+  "xm:arcade": [
+    "human-shields"
+  ],
+  "xm:aurora-northstar": [
+    "berserk",
+    "divided",
+    "lightshow",
+    "soaring-flight"
+  ],
+  "xm:banshee": [
+    "piercing-energy",
+    "soaring-flight",
+    "x-gene"
+  ],
+  "xm:beast": [
+    "berserk",
+    "x-gene"
+  ],
+  "xm:cannonball": [
+    "soaring-flight"
+  ],
+  "xm:colossus-wolverine": [
+    "berserk",
+    "divided",
+    "soaring-flight",
+    "x-gene"
+  ],
+  "xm:dark-descendants": [
+    "dominate",
+    "x-gene"
+  ],
+  "xm:dazzler": [
+    "lightshow",
+    "piercing-energy"
+  ],
+  "xm:havok": [
+    "berserk",
+    "lightshow",
+    "x-gene"
+  ],
+  "xm:hellfire-club": [
+    "dominate"
+  ],
+  "xm:jubilee": [
+    "lightshow"
+  ],
+  "xm:kitty-pryde": [
+    "soaring-flight",
+    "x-gene"
+  ],
+  "xm:legion": [
+    "berserk",
+    "divided",
+    "lightshow",
+    "piercing-energy",
+    "soaring-flight"
+  ],
+  "xm:longshot": [
+    "berserk"
+  ],
+  "xm:mojo": [
+    "human-shields"
+  ],
+  "xm:mojoverse": [
+    "human-shields"
+  ],
+  "xm:murderworld": [
+    "human-shields"
+  ],
+  "xm:onslaught": [
+    "dominate"
+  ],
+  "xm:phoenix": [
+    "berserk",
+    "piercing-energy",
+    "soaring-flight"
+  ],
+  "xm:polaris": [
+    "piercing-energy",
+    "soaring-flight",
+    "x-gene"
+  ],
+  "xm:psylocke": [
+    "piercing-energy",
+    "x-gene"
+  ],
+  "xm:shadow-king": [
+    "dominate"
+  ],
+  "xm:shadow-x": [
+    "dominate",
+    "x-gene"
+  ],
+  "xm:shi-ar-death-commandos": [
+    "human-shields"
+  ],
+  "xm:shi-ar-imperial-guard": [
+    "dominate"
+  ],
+  "xm:shi-ar-patrol-craft": [
+    "soaring-flight"
+  ],
+  "xm:sisterhood-of-mutants": [
+    "dominate"
+  ],
+  "xm:x-23": [
+    "berserk",
+    "x-gene"
+  ],
+  "y99:alchemax-enforcers": [
+    "cyber-mod"
+  ],
+  "y99:alchemax-executives": [
+    "cyber-mod",
+    "undercover"
+  ],
+  "y99:become-president-of-the-united-states": [
+    "undercover"
+  ],
+  "y99:doctor-doom-2099": [
+    "cyber-mod",
+    "fated-future",
+    "undercover"
+  ],
+  "y99:false-aesir-of-alchemax": [
+    "fight-or-fail",
+    "uru-enchanted-weapon"
+  ],
+  "y99:ghost-rider-2099": [
+    "cyber-mod",
+    "fated-future",
+    "undercover"
+  ],
+  "y99:hulk-2099": [
+    "cyber-mod",
+    "fated-future",
+    "undercover"
+  ],
+  "y99:ravage-2099": [
+    "fated-future"
+  ],
+  "y99:spider-man-2099": [
+    "cyber-mod",
+    "fated-future",
+    "undercover"
+  ]
+}

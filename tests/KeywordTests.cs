@@ -64,4 +64,31 @@ public class KeywordTests
         foreach (var name in new[] { "Ambush", "Fight", "Escape", "Rescue" })
             Assert.DoesNotContain(Keywords, k => k.Name == name);
     }
+
+    [Fact]
+    public void Card_keyword_tags_resolve_to_real_cards_and_keywords()
+    {
+        var cardKeywords = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string[]>>(
+            File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "card-keywords.json")), SetJson.Options)!;
+
+        var cardIds = Sets.SelectMany(s =>
+            s.Masterminds.Select(c => c.Id)
+             .Concat(s.Schemes.Select(c => c.Id))
+             .Concat(s.VillainGroups.Select(c => c.Id))
+             .Concat(s.Henchmen.Select(c => c.Id))
+             .Concat(s.Heroes.Select(c => c.Id))).ToHashSet();
+        var keywordIds = Keywords.Select(k => k.Id).ToHashSet();
+
+        Assert.NotEmpty(cardKeywords);
+        foreach (var (cardId, kws) in cardKeywords)
+        {
+            Assert.Contains(cardId, cardIds);
+            Assert.NotEmpty(kws);
+            foreach (var kw in kws)
+                Assert.Contains(kw, keywordIds);
+        }
+
+        // Sanity: Nightcrawler carries Teleport.
+        Assert.Contains("teleport", cardKeywords["dc:nightcrawler"]);
+    }
 }

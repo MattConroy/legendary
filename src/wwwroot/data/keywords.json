@@ -366,7 +366,7 @@
   {
     "id": "demolish",
     "name": "Demolish",
-    "summary": "Demolish each player\" means \"Reveal the top card of the Ally (Hero) Deck, note its cost, and put it on the bottom of the Ally Deck.",
+    "summary": "\"Demolish each player\" — reveal the top Hero-Deck card, note its cost and put it on the bottom; each player then reveals their hand and discards a card of that cost.",
     "rules": [
       "\"Demolish each player\" means \"Reveal the top card of the Ally (Hero) Deck, note its cost, and put it on the bottom of the Ally Deck. Each player reveals their hand and discards a card with that cost.\""
     ],
@@ -463,7 +463,7 @@
   {
     "id": "double-cross",
     "name": "Double-Cross",
-    "summary": "Double-Cross each player\" means each player reveals their hand and discards one of their highest-cost \"doubles\" (a card sharing a cost with another card in their hand).",
+    "summary": "\"Double-Cross each player\" — each player reveals their hand and discards one of their highest-cost \"doubles\" (a card sharing a cost with another card in hand).",
     "rules": [
       "\"Double-Cross each player\" means each player reveals their hand and discards one of their highest-cost \"doubles\" (a card that shares a cost with another card in their hand).",
       "Example: the costs in your hand are 0,0,4,4,4,6 — you must discard one of your 4-cost cards."
@@ -1103,7 +1103,7 @@
   {
     "id": "soaring-flight",
     "name": "Soaring Flight",
-    "summary": "Soaring Flight\" means \"When you recruit this Hero, set it aside.",
+    "summary": "When you recruit this Hero, set it aside; add it to your hand at the end of your turn as an extra card.",
     "rules": [
       "This ability represents X-Men flying into action as rapid reinforcements. \"Soaring Flight\" means \"When you recruit this Hero, set it aside. At the end of this turn, add it to your new hand as an extra card.\""
     ],
@@ -1140,7 +1140,7 @@
   {
     "id": "striker",
     "name": "Striker",
-    "summary": "It means \"This gets +1 Attack for each Master Strike in the KO pile and/or stacked next to the Mastermind.",
+    "summary": "Gets +1 Attack for each Master Strike in the KO pile and/or stacked next to the Mastermind (Double/Triple Striker = ×2/×3).",
     "rules": [
       "This keyword represents Villains and Masterminds that get more confident and powerful as the Mastermind smashes Heroes. It means \"This gets +1 Attack for each Master Strike in the KO pile and/or stacked next to the Mastermind.\"",
       "A couple of Hero cards also have the Striker ability and give you +Attack the same way.",
