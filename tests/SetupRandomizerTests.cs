@@ -597,6 +597,42 @@ public class SetupRandomizerTests
         Assert.DoesNotContain(m, x => x.Name is "Yellowjacket" or "Ghost, Intangible" or "Kang, Multiverse Conqueror");
     }
 
+    [Fact]
+    public void Every_mastermind_and_scheme_has_a_difficulty_1_to_5()
+    {
+        foreach (var set in Sets)
+        {
+            foreach (var m in set.Masterminds)
+                Assert.InRange(m.Difficulty ?? -1, 1, 5);
+            foreach (var sc in set.Schemes)
+                Assert.InRange(sc.Difficulty ?? -1, 1, 5);
+        }
+    }
+
+    [Theory]
+    [InlineData(2, DifficultyBand.Easy)]
+    [InlineData(3, DifficultyBand.Easy)]
+    [InlineData(4, DifficultyBand.Medium)]
+    [InlineData(7, DifficultyBand.Medium)]
+    [InlineData(8, DifficultyBand.Hard)]
+    [InlineData(10, DifficultyBand.Hard)]
+    public void Threat_bands_use_the_agreed_thresholds(int score, DifficultyBand band)
+        => Assert.Equal(band, Threat.Band(score));
+
+    [Fact]
+    public void Threat_score_is_the_mastermind_plus_scheme_out_of_ten()
+    {
+        // With two rated components, average x2 == their sum.
+        for (var i = 0; i < 50; i++)
+        {
+            var setup = Rng(i).Generate((i % 5) + 1, AllPool());
+            var mm = ((Mastermind)setup.Mastermind.Card).Difficulty!.Value;
+            var sc = ((Scheme)setup.Scheme.Card).Difficulty!.Value;
+            Assert.Equal(mm + sc, Threat.Score(setup));
+            Assert.InRange(Threat.Score(setup)!.Value, 2, 10);
+        }
+    }
+
     private static void AssertDistinct(IReadOnlyList<SetupSelection> items)
     {
         var ids = items.Select(i => i.Card.Id).ToList();

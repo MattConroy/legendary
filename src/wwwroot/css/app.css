@@ -586,3 +586,26 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .kw-play__item:last-child { padding-bottom: 0; border-bottom: none; }
 .kw-play__name { font-weight: 800; color: var(--gold); font-size: 0.9rem; }
 .kw-play__def { color: #d0d0d8; font-size: 0.84rem; line-height: 1.45; }
+
+/* ---------- Difficulty target + threat ---------- */
+.seg { display: flex; gap: 6px; flex: 1; min-width: 0; }
+.seg__btn {
+    flex: 1 1 0; min-width: 0; padding: 9px 4px; border-radius: 10px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+    font: inherit; font-weight: 700; font-size: 0.82rem; cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.seg__btn--active { background: var(--marvel); border-color: var(--marvel); color: #fff; }
+
+.threat {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px; border-radius: 12px; margin-bottom: 2px;
+    border: 1px solid var(--accent);
+}
+.threat--easy   { --accent: #35c26b; background: rgba(53, 194, 107, 0.12); }
+.threat--medium { --accent: var(--gold); background: rgba(240, 180, 41, 0.12); }
+.threat--hard   { --accent: var(--marvel); background: rgba(230, 36, 41, 0.13); }
+.threat__title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); font-weight: 800; }
+.threat__score { font-size: 1.25rem; font-weight: 900; color: #fff; line-height: 1; }
+.threat__max { font-size: 0.8rem; color: var(--muted); font-weight: 700; }
+.threat__band { margin-left: auto; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.82rem; }

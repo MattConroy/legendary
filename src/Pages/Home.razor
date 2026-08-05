@@ -23,6 +23,19 @@
         </div>
     </div>
 
+    <div class="players">
+        <span class="players__label">Difficulty</span>
+        <div class="seg" role="group" aria-label="Target difficulty">
+            @foreach (var (label, band) in Targets)
+            {
+                <button class="seg__btn @(State.Target == band ? "seg__btn--active" : "")"
+                        @onclick="() => SetTarget(band)" aria-pressed="@(State.Target == band)">
+                    @label
+                </button>
+            }
+        </div>
+    </div>
+
     <button class="btn btn--primary btn--hero" @onclick="Randomize" disabled="@(!Playable)">
         <span class="btn--hero__icon">🎲</span>
         @(State.Setup is null ? "Randomise setup" : "Randomise again")
@@ -38,6 +51,16 @@
     @if (State.Setup is { } setup)
     {
         <div class="results">
+            @if (Threat.Score(setup) is { } threat)
+            {
+                var band = Threat.Band(threat);
+                <div class="threat threat--@band.ToString().ToLowerInvariant()">
+                    <span class="threat__title">Threat</span>
+                    <span class="threat__score">@threat<span class="threat__max">/10</span></span>
+                    <span class="threat__band">@band</span>
+                </div>
+            }
+
             <ResultCard Title="Mastermind" Icon="💀" Accent="mastermind"
                         OnReroll="() => Reroll(CardCategory.Mastermind)">
                 <div class="single">
@@ -195,7 +218,17 @@
         foreach (var h in setup.Heroes) yield return h.Card.Id;
     }
 
+    private static readonly (string Label, DifficultyBand? Band)[] Targets =
+    {
+        ("Any", null),
+        ("Easy", DifficultyBand.Easy),
+        ("Medium", DifficultyBand.Medium),
+        ("Hard", DifficultyBand.Hard),
+    };
+
     private void SetPlayers(int n) => _ = State.SetPlayersAsync(n);
+
+    private void SetTarget(DifficultyBand? band) => _ = State.SetTargetAsync(band);
 
     private void Randomize() => State.Randomize();
 

@@ -19,6 +19,7 @@ public sealed class GameStateService
     private const string EnabledSetsKey = "legendary.enabledSets";
     private const string OwnedSetsKey = "legendary.ownedSets";
     private const string SortKey = "legendary.setSort";
+    private const string TargetKey = "legendary.difficultyTarget";
 
     private readonly IJSRuntime _js;
     private readonly SetupRandomizer _randomizer;
@@ -39,6 +40,9 @@ public sealed class GameStateService
     public GameSetup? Setup { get; private set; }
     public SetSort Sort { get; private set; } = SetSort.Date;
     public bool SortDescending { get; private set; }
+
+    /// <summary>Difficulty the randomiser aims for; null means "Any" (no bias).</summary>
+    public DifficultyBand? Target { get; private set; }
 
     public event Action? OnChange;
 
@@ -93,6 +97,9 @@ public sealed class GameStateService
                 if (Enum.TryParse<SetSort>(parts[0], ignoreCase: true, out var key)) Sort = key;
                 SortDescending = parts.Length > 1 && parts[1] == "desc";
             }
+
+            var target = await _js.InvokeAsync<string?>("localStorage.getItem", TargetKey);
+            if (Enum.TryParse<DifficultyBand>(target, ignoreCase: true, out var band)) Target = band;
         }
         catch
         {
@@ -183,12 +190,45 @@ public sealed class GameStateService
         NotifyChanged();
     }
 
+    public async Task SetTargetAsync(DifficultyBand? target)
+    {
+        Target = target;
+        await PersistAsync(TargetKey, target?.ToString() ?? "");
+        NotifyChanged();
+    }
+
     public void Randomize()
     {
         var pool = CurrentPool;
         if (!pool.IsPlayable) return;
-        Setup = _randomizer.Generate(Players, pool);
+        Setup = GenerateForTarget(pool);
         NotifyChanged();
+    }
+
+    // Draws a setup, then (if a difficulty target is set) rerolls the Mastermind
+    // and Scheme toward that band, keeping the closest match found. Best-effort:
+    // if the enabled pool can't reach the target, it returns the nearest it saw.
+    private GameSetup GenerateForTarget(CardPool pool)
+    {
+        var setup = _randomizer.Generate(Players, pool);
+        if (Target is not { } target) return setup;
+
+        var best = setup;
+        var bestDist = BandDistance(best, target);
+        for (var i = 0; i < 200 && bestDist > 0; i++)
+        {
+            setup = _randomizer.Reroll(setup, CardCategory.Mastermind, pool);
+            setup = _randomizer.Reroll(setup, CardCategory.Scheme, pool);
+            var dist = BandDistance(setup, target);
+            if (dist < bestDist) { best = setup; bestDist = dist; }
+        }
+        return best;
+    }
+
+    private static int BandDistance(GameSetup setup, DifficultyBand target)
+    {
+        if (Threat.Score(setup) is not { } score) return 0; // unrated — accept anything
+        return Math.Abs((int)Threat.Band(score) - (int)target);
     }
 
     public void Reroll(CardCategory category)

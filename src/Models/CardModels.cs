@@ -43,6 +43,9 @@ public sealed record Mastermind : GameCard
 
     /// <summary>Extra setup steps this Mastermind imposes (shown on its card).</summary>
     public IReadOnlyList<string> Notes { get; init; } = [];
+
+    /// <summary>Editorial 1–5 difficulty rating (community/best-effort, tunable). Null if unrated.</summary>
+    public int? Difficulty { get; init; }
 }
 
 public sealed record Scheme : GameCard
@@ -54,6 +57,9 @@ public sealed record Scheme : GameCard
     /// per the official Scheme setup text.
     /// </summary>
     public SchemeSetup Setup { get; init; } = SchemeSetup.None;
+
+    /// <summary>Editorial 1–5 difficulty rating (community/best-effort, tunable). Null if unrated.</summary>
+    public int? Difficulty { get; init; }
 }
 
 /// <summary>

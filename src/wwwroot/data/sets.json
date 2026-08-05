@@ -41,7 +41,8 @@
           ]
         },
         "id": "core:legacy-virus",
-        "name": "The Legacy Virus"
+        "name": "The Legacy Virus",
+        "difficulty": 4
       },
       {
         "setup": {
@@ -49,7 +50,8 @@
           "bystanders": 12
         },
         "id": "core:midtown-bank",
-        "name": "Midtown Bank Robbery"
+        "name": "Midtown Bank Robbery",
+        "difficulty": 2
       },
       {
         "setup": {
@@ -60,14 +62,16 @@
           ]
         },
         "id": "core:negative-zone",
-        "name": "Negative Zone Prison Breakout"
+        "name": "Negative Zone Prison Breakout",
+        "difficulty": 4
       },
       {
         "setup": {
           "twists": 7
         },
         "id": "core:dark-dimension",
-        "name": "Portals to the Dark Dimension"
+        "name": "Portals to the Dark Dimension",
+        "difficulty": 5
       },
       {
         "setup": {
@@ -78,7 +82,8 @@
           ]
         },
         "id": "core:killbots",
-        "name": "Replace Earth's Leaders with Killbots"
+        "name": "Replace Earth's Leaders with Killbots",
+        "difficulty": 3
       },
       {
         "setup": {
@@ -92,7 +97,8 @@
           ]
         },
         "id": "core:secret-invasion",
-        "name": "Secret Invasion of the Skrull Shapeshifters"
+        "name": "Secret Invasion of the Skrull Shapeshifters",
+        "difficulty": 4
       },
       {
         "setup": {
@@ -106,14 +112,16 @@
           }
         },
         "id": "core:civil-war",
-        "name": "Super Hero Civil War"
+        "name": "Super Hero Civil War",
+        "difficulty": 4
       },
       {
         "setup": {
           "twists": 8
         },
         "id": "core:cosmic-cube",
-        "name": "Unleash the Power of the Cosmic Cube"
+        "name": "Unleash the Power of the Cosmic Cube",
+        "difficulty": 4
       }
     ],
     "villainGroups": [
@@ -290,7 +298,8 @@
           ]
         },
         "id": "dc:capture-baby-hope",
-        "name": "Capture Baby Hope"
+        "name": "Capture Baby Hope",
+        "difficulty": 2
       },
       {
         "setup": {
@@ -301,14 +310,16 @@
           ]
         },
         "id": "dc:detonate-helicarrier",
-        "name": "Detonate the Helicarrier"
+        "name": "Detonate the Helicarrier",
+        "difficulty": 4
       },
       {
         "setup": {
           "twists": 8
         },
         "id": "dc:earthquake-generator",
-        "name": "Massive Earthquake Generator"
+        "name": "Massive Earthquake Generator",
+        "difficulty": 3
       },
       {
         "setup": {
@@ -318,7 +329,8 @@
           ]
         },
         "id": "dc:organized-crimewave",
-        "name": "Organized Crime Wave"
+        "name": "Organized Crime Wave",
+        "difficulty": 3
       },
       {
         "setup": {
@@ -328,7 +340,8 @@
           ]
         },
         "id": "dc:save-humanity",
-        "name": "Save Humanity"
+        "name": "Save Humanity",
+        "difficulty": 3
       },
       {
         "setup": {
@@ -339,7 +352,8 @@
           ]
         },
         "id": "dc:steal-plutonium",
-        "name": "Steal the Weaponized Plutonium"
+        "name": "Steal the Weaponized Plutonium",
+        "difficulty": 3
       },
       {
         "setup": {
@@ -347,7 +361,8 @@
           "bystanders": 0
         },
         "id": "dc:transform-demons",
-        "name": "Transform Citizens Into Demons"
+        "name": "Transform Citizens Into Demons",
+        "difficulty": 4
       },
       {
         "setup": {
@@ -359,7 +374,8 @@
           ]
         },
         "id": "dc:xcutioners-song",
-        "name": "X-Cutioner's Song"
+        "name": "X-Cutioner's Song",
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -513,28 +529,32 @@
           "twists": 6
         },
         "id": "ff:cosmic-rays",
-        "name": "Bathe the Earth in Cosmic Rays"
+        "name": "Bathe the Earth in Cosmic Rays",
+        "difficulty": 4
       },
       {
         "setup": {
           "twists": 8
         },
         "id": "ff:melted-glaciers",
-        "name": "Flood the Planet with Melted Glaciers"
+        "name": "Flood the Planet with Melted Glaciers",
+        "difficulty": 3
       },
       {
         "setup": {
           "twists": 7
         },
         "id": "ff:force-field",
-        "name": "Invincible Force Field"
+        "name": "Invincible Force Field",
+        "difficulty": 4
       },
       {
         "setup": {
           "twists": 8
         },
         "id": "ff:negative-zone",
-        "name": "Pull Reality Into the Negative Zone"
+        "name": "Pull Reality Into the Negative Zone",
+        "difficulty": 4
       }
     ],
     "villainGroups": [
@@ -608,7 +628,8 @@
           "notes": [
             "Always include the Infinity Gems Villain Group."
           ]
-        }
+        },
+        "difficulty": 5
       },
       {
         "id": "gotg:nega-bomb",
@@ -618,7 +639,8 @@
           "notes": [
             "Build a 6-Bystander Nega-Bomb deck."
           ]
-        }
+        },
+        "difficulty": 4
       },
       {
         "id": "gotg:kree-skrull-war",
@@ -632,7 +654,8 @@
           "notes": [
             "Always include Kree Starforce and the Skrulls (Core Set)."
           ]
-        }
+        },
+        "difficulty": 4
       },
       {
         "id": "gotg:unite-the-shards",
@@ -648,7 +671,8 @@
           "notes": [
             "Twists = players + 5; uses 30 Shard tokens."
           ]
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -716,7 +740,8 @@
         "name": "The Clone Saga",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "ptr:daily-bugle",
@@ -726,7 +751,8 @@
           "notes": [
             "Add 6 extra Henchmen from one Henchman Group to the Hero Deck."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "ptr:splice-spider-dna",
@@ -739,14 +765,16 @@
           "notes": [
             "Include the Sinister Six as one of the Villain Groups."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "ptr:web-of-lies",
         "name": "Weave a Web of Lies",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 4
       }
     ],
     "villainGroups": [
@@ -826,42 +854,48 @@
         "name": "Build an Underground MegaVault Prison",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "villains:power-suppressing-cells",
         "name": "Cage Villains in Power-Suppressing Cells",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "villains:crown-thor",
         "name": "Crown Thor King of Asgard",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "villains:crush-hydra",
         "name": "Crush HYDRA",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "villains:graduation-x-academy",
         "name": "Graduation at Xavier's X-Academy",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "villains:infiltrate-the-lair",
         "name": "Infiltrate the Lair with Spies",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "villains:mass-produce-war-machine",
@@ -874,14 +908,16 @@
           "notes": [
             "Include S.H.I.E.L.D. Assault Squad as one of the Backup Adversary (Henchman) groups."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "villains:norn-stones",
         "name": "Resurrect Heroes with Norn Stones",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -1049,14 +1085,16 @@
         "name": "Build an Army of Annihilation",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw1:corrupt-next-generation",
         "name": "Corrupt the Next Generation of Heroes",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw1:bare-hands",
@@ -1066,14 +1104,16 @@
           "notes": [
             "Solo: add an extra Villain Group."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw1:dark-alliance",
         "name": "Dark Alliance",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw1:fragmented-realities",
@@ -1084,28 +1124,32 @@
           "notes": [
             "Adds an extra Villain Group."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw1:master-of-tyrants",
         "name": "Master of Tyrants",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw1:pan-dimensional-plague",
         "name": "Pan-Dimensional Plague",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw1:smash-two-dimensions",
         "name": "Smash Two Dimensions Together",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -1264,14 +1308,16 @@
           "notes": [
             "Adds an extra Villain Group."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw2:enthrone-barons",
         "name": "Enthrone the Barons of Battleworld",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw2:fountain-eternal-life",
@@ -1281,14 +1327,16 @@
           "twistsByPlayers": {
             "1": 4
           }
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw2:god-emperor",
         "name": "The God-Emperor of Battleworld",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw2:mark-of-khonshu",
@@ -1301,28 +1349,32 @@
           "notes": [
             "Always include the Khonshu Guardians."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw2:mysteries-kung-fu",
         "name": "Master the Mysteries of Kung-Fu",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw2:secret-wars",
         "name": "Secret Wars",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "sw2:sinister-ambitions",
         "name": "Sinister Ambitions",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -1473,14 +1525,16 @@
         "name": "Fear Itself",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "fi:last-stand",
         "name": "Last Stand at Avengers Tower",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "fi:the-traitor",
@@ -1490,7 +1544,8 @@
           "notes": [
             "2+ players only; uses a Betrayal Deck."
           ]
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -1560,7 +1615,8 @@
         "name": "Brainwash the Military",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cap:change-wwii",
@@ -1571,7 +1627,8 @@
           "notes": [
             "Adds an extra Villain Group."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cap:slay-ancestors",
@@ -1582,14 +1639,16 @@
           "notes": [
             "Play with 8 Heroes."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cap:enigma-code",
         "name": "The Unbreakable Enigma Code",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -1679,14 +1738,16 @@
           "notes": [
             "Hero Deck has 3 Heroes of one Team and 3 of another."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cw:dark-reign-hammer",
         "name": "Dark Reign of H.A.M.M.E.R. Officers",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cw:epic-civil-war",
@@ -1700,21 +1761,24 @@
           "heroesByPlayers": {
             "1": 4
           }
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cw:imprison-superhumans",
         "name": "Imprison Unregistered Superhumans",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cw:nitro-crowds",
         "name": "Nitro the Supervillain Threatens Crowds",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cw:predict-future-crime",
@@ -1725,7 +1789,8 @@
           "notes": [
             "Adds an extra Villain Group."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cw:secret-identities",
@@ -1736,14 +1801,16 @@
           "notes": [
             "Play with 7 Heroes."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "cw:us-split",
         "name": "United States Split by Civil War",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -1906,7 +1973,8 @@
           "notes": [
             "Use Deadpool as one of the Heroes."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "dp:chimichanga",
@@ -1917,7 +1985,8 @@
           "notes": [
             "3-5 players: add an extra Villain Group."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "dp:writes-a-scheme",
@@ -1927,7 +1996,8 @@
           "notes": [
             "Randomly combines other Schemes."
           ]
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "dp:everybody-hates",
@@ -1937,7 +2007,8 @@
           "notes": [
             "Use at least one Mercs for Money Hero."
           ]
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -2006,28 +2077,32 @@
         "name": "Find the Split Personality Killer",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "noir:silence-the-witnesses",
         "name": "Silence the Witnesses",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "noir:five-families-of-crime",
         "name": "Five Families of Crime",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "noir:hidden-heart-of-darkness",
         "name": "Hidden Heart of Darkness",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -2120,56 +2195,64 @@
         "name": "Alien Brood Encounters",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "xm:anti-mutant-hatred",
         "name": "Anti-Mutant Hatred",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "xm:the-dark-phoenix-saga",
         "name": "The Dark Phoenix Saga",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "xm:horror-of-horrors",
         "name": "Horror of Horrors",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "xm:mutant-hunting-super-sentinels",
         "name": "Mutant-Hunting Super Sentinels",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "xm:nuclear-armageddon",
         "name": "Nuclear Armageddon",
         "setup": {
           "twists": 5
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "xm:televised-deathtraps-of-mojoworld",
         "name": "Televised Deathtraps of Mojoworld",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "xm:x-men-danger-room-goes-berserk",
         "name": "X-Men Danger Room Goes Berserk",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -2327,28 +2410,32 @@
         "name": "Distract the Hero",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "smh:explosion-at-the-washington-monument",
         "name": "Explosion at the Washington Monument",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "smh:ferry-disaster",
         "name": "Ferry Disaster",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "smh:scavenge-alien-weaponry",
         "name": "Scavenge Alien Weaponry",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -2417,28 +2504,32 @@
         "name": "Clash of the Monsters Unleashed",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "champ:divide-and-conquer",
         "name": "Divide and Conquer",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "champ:hypnotize-every-human",
         "name": "Hypnotize Every Human",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "champ:steal-all-oxygen-on-earth",
         "name": "Steal All Oxygen on Earth",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -2531,56 +2622,64 @@
         "name": "Break the Planet Asunder",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wwh:cytoplasm-spike-invasion",
         "name": "Cytoplasm Spike Invasion",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wwh:fall-of-the-hulks",
         "name": "Fall of the Hulks",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wwh:gladiator-pits-of-sakaar",
         "name": "Gladiator Pits of Sakaar",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wwh:mutating-gamma-rays",
         "name": "Mutating Gamma Rays",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wwh:shoot-hulk-into-space",
         "name": "Shoot Hulk into Space",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wwh:subjugate-with-obedience-disks",
         "name": "Subjugate with Obedience Disks",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wwh:world-war-hulk",
         "name": "World War Hulk",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -2739,35 +2838,40 @@
         "setup": {
           "twists": 8,
           "henchmenDelta": 1
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "msp1:destroy-the-cities-of-earth",
         "name": "Destroy the Cities of Earth!",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "msp1:enslave-minds-with-the-chitauri-scepter",
         "name": "Enslave Minds with the Chitauri Scepter",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "msp1:invade-asgard",
         "name": "Invade Asgard",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "msp1:radioactive-palladium-poisoning",
         "name": "Radioactive Palladium Poisoning",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "msp1:replace-earth-s-leaders-with-hydra",
@@ -2775,7 +2879,8 @@
         "setup": {
           "twists": 5,
           "bystanders": 18
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "msp1:super-hero-civil-war",
@@ -2786,14 +2891,16 @@
             "4": 5,
             "5": 5
           }
-        }
+        },
+        "difficulty": 4
       },
       {
         "id": "msp1:unleash-the-power-of-the-cosmic-cube",
         "name": "Unleash the Power of the Cosmic Cube",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 4
       }
     ],
     "villainGroups": [
@@ -2901,28 +3008,32 @@
         "name": "Age of Ultron",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "am:pull-earth-into-medieval-times",
         "name": "Pull Earth into Medieval Times",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "am:transform-commuters-into-giant-ants",
         "name": "Transform Commuters into Giant Ants",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "am:trap-heroes-in-the-microverse",
         "name": "Trap Heroes in the Microverse",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -2992,28 +3103,32 @@
         "setup": {
           "twists": 8,
           "henchmenDelta": 1
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "venom:maximum-carnage",
         "name": "Maximum Carnage",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "venom:paralyzing-venom",
         "name": "Paralyzing Venom",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "venom:symbiotic-absorption",
         "name": "Symbiotic Absorption",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -3144,14 +3259,16 @@
         "setup": {
           "twists": 11,
           "villainGroupDelta": 1
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "rev:house-of-m",
         "name": "House of M",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 4
       },
       {
         "id": "rev:secret-hydra-corruption",
@@ -3164,14 +3281,16 @@
             "4": 11,
             "5": 11
           }
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "rev:the-korvac-saga",
         "name": "The Korvac Saga",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 4
       }
     ],
     "villainGroups": [
@@ -3277,28 +3396,32 @@
         "name": "S.H.I.E.L.D. vs. HYDRA War",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "shl:hail-hydra",
         "name": "Hail Hydra",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "shl:hydra-helicarriers-hunt-heroes",
         "name": "Hydra Helicarriers Hunt Heroes",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "shl:secret-empire-of-betrayal",
         "name": "Secret Empire of Betrayal",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -3362,28 +3485,32 @@
         "name": "Asgardian Test of Worth",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "hoa:the-dark-world-of-svartalfheim",
         "name": "The Dark World of Svartalfheim",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "hoa:ragnarok-twilight-of-the-gods",
         "name": "Ragnarok, Twilight of the Gods",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "hoa:war-of-the-frost-giants",
         "name": "War of the Frost Giants",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -3458,28 +3585,32 @@
         "name": "The Contest of Champions",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "itc:turn-the-soul-of-adam-warlock",
         "name": "Turn the Soul of Adam Warlock",
         "setup": {
           "twists": 14
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "itc:destroy-the-nova-corps",
         "name": "Destroy the Nova Corps",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "itc:annihilation-conquest",
         "name": "Annihilation: Conquest",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -3585,28 +3716,32 @@
         "name": "Seize the Wakandan Throne",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "bp:poison-lakes-with-nanite-microbots",
         "name": "Poison Lakes with Nanite Microbots",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "bp:plunder-wakandas-vibranium",
         "name": "Plunder Wakanda's Vibranium",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "bp:provoke-clash-of-nations",
         "name": "Provoke Clash of Nations",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -3675,21 +3810,24 @@
         "name": "The Demon Bear Saga",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "nm:crash-the-moon-into-the-sun",
         "name": "Crash the Moon into the Sun",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "nm:trapped-in-the-insane-asylum",
         "name": "Trapped in the Insane Asylum",
         "setup": {
           "twists": 2
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "nm:superhuman-baseball-game",
@@ -3697,7 +3835,8 @@
         "setup": {
           "twists": 9,
           "villainGroupDelta": 1
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -3766,21 +3905,24 @@
         "name": "Ruin the Perfect Wedding",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "rok:war-of-kings",
         "name": "War of Kings",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "rok:tornado-of-terrigen-mists",
         "name": "Tornado of Terrigen Mists",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "rok:devolve-with-xerogen-crystals",
@@ -3788,7 +3930,8 @@
         "setup": {
           "twists": 8,
           "henchmenDelta": 1
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -3857,28 +4000,32 @@
         "name": "Pulse Waves From the Negative Zone",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "anh:sneak-attack-the-heroes-homes",
         "name": "Sneak Attack the Heroes' Homes",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "anh:put-humanity-on-trial",
         "name": "Put Humanity on Trial",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "anh:breach-parallel-dimensions",
         "name": "Breach Parallel Dimensions",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -3953,28 +4100,32 @@
         "name": "Hack Cerebro Servers to Control the Mutant Messiah",
         "setup": {
           "twists": 10
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "mcx:drain-mutants-powers-to-open-rifts-to-future-timelines",
         "name": "Drain Mutants' Powers to Open Rifts to Future Timelines",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "mcx:hire-singularity-investigations-to-reveal-the-heroes-evil-clones",
         "name": "Hire Singularity Investigations to Reveal the Heroes' Evil Clones",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "mcx:raid-gene-banks-to-unleash-an-anti-mutant-bioweapon",
         "name": "Raid Gene Banks to Unleash an Anti-Mutant Bioweapon",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -4075,7 +4226,8 @@
         "name": "Claim Souls for Demons",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "dss:war-for-the-dream-dimension",
@@ -4083,7 +4235,8 @@
         "setup": {
           "twists": 7,
           "villainGroupDelta": 1
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "dss:cursed-pages-of-the-darkhold-tome",
@@ -4091,7 +4244,8 @@
         "setup": {
           "twists": 11,
           "villainGroupDelta": 1
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "dss:duels-of-science-and-magic",
@@ -4102,7 +4256,8 @@
             "4": 10,
             "5": 11
           }
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -4171,28 +4326,32 @@
         "name": "Corrupt The Spy Agencies",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "bw:train-black-widows-in-the-red-room",
         "name": "Train Black Widows in the Red Room",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "bw:sniper-rifle-assassins",
         "name": "Sniper Rifle Assassins",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "bw:frame-heroes-for-murder",
         "name": "Frame Heroes For Murder",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -4261,7 +4420,8 @@
         "setup": {
           "twists": 8,
           "villainGroupDelta": 1
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "msg:provoke-the-sovereign-war-fleet",
@@ -4269,21 +4429,24 @@
         "setup": {
           "twists": 11,
           "villainGroupDelta": 1
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "msg:star-lords-awesome-mix-tape",
         "name": "Star-Lord's Awesome Mix Tape",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "msg:unleash-the-abilisk-space-monster",
         "name": "Unleash the Abilisk Space Monster",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -4363,28 +4526,32 @@
         "name": "Breach the Nexus of All Realities",
         "setup": {
           "twists": 2
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wif:collect-an-interstellar-zoo",
         "name": "Collect an Interstellar Zoo",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wif:marvel-zombies",
         "name": "Marvel Zombies",
         "setup": {
           "twists": 4
-        }
+        },
+        "difficulty": 4
       },
       {
         "id": "wif:trash-earth-with-hugest-party-ever",
         "name": "Trash Earth with Hugest Party Ever",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -4492,28 +4659,32 @@
         "name": "Become President of the United States",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "y99:befoul-earth-into-a-polluted-wasteland",
         "name": "Befoul Earth into a Polluted Wasteland",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "y99:pull-reality-into-cyberspace",
         "name": "Pull Reality into Cyberspace",
         "setup": {
           "twists": 7
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "y99:subjugate-earth-with-mega-corporations",
         "name": "Subjugate Earth with Mega-Corporations",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -4588,28 +4759,32 @@
         "name": "Auction Shrink Tech to Highest Bidder",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "amw:escape-an-imprisoning-dimension",
         "name": "Escape an Imprisoning Dimension",
         "setup": {
           "twists": 5
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "amw:safeguard-dark-secrets",
         "name": "Safeguard Dark Secrets",
         "setup": {
           "twists": 5
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "amw:siphon-energy-from-the-quantum-realm",
         "name": "Siphon Energy from the Quantum Realm",
         "setup": {
           "twists": 9
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -4714,14 +4889,16 @@
         "name": "Midnight Massacre",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "mds:ritual-sacrifice-to-summon-chthon",
         "name": "Ritual Sacrifice To Summon Chthon",
         "setup": {
           "twists": 6
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "mds:sire-vampires-at-the-blood-bank",
@@ -4729,14 +4906,16 @@
         "setup": {
           "twists": 10,
           "henchmenDelta": 1
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "mds:wager-at-blackjack-for-heroes-souls",
         "name": "Wager at Blackjack For Heroes' Souls",
         "setup": {
           "twists": 11
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
@@ -4810,7 +4989,8 @@
         "name": "Condition Logan into Weapon X",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wpx:go-after-heroes-loved-ones",
@@ -4823,14 +5003,16 @@
             "4": 10,
             "5": 11
           }
-        }
+        },
+        "difficulty": 3
       },
       {
         "id": "wpx:wipe-heroes-memories",
         "name": "Wipe Heroes' Memories",
         "setup": {
           "twists": 8
-        }
+        },
+        "difficulty": 3
       }
     ],
     "villainGroups": [
