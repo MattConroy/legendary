@@ -10,22 +10,26 @@
       {
         "alwaysLeadsGroupId": "core:doombot-legion",
         "id": "core:dr-doom",
-        "name": "Dr. Doom"
+        "name": "Dr. Doom",
+        "difficulty": 3
       },
       {
         "alwaysLeadsGroupId": "core:enemies-of-asgard",
         "id": "core:loki",
-        "name": "Loki"
+        "name": "Loki",
+        "difficulty": 2
       },
       {
         "alwaysLeadsGroupId": "core:brotherhood",
         "id": "core:magneto",
-        "name": "Magneto"
+        "name": "Magneto",
+        "difficulty": 3
       },
       {
         "alwaysLeadsGroupId": "core:hydra",
         "id": "core:red-skull",
-        "name": "Red Skull"
+        "name": "Red Skull",
+        "difficulty": 1
       }
     ],
     "schemes": [
@@ -249,27 +253,32 @@
       {
         "alwaysLeadsGroupId": "dc:four-horsemen",
         "id": "dc:apocalypse",
-        "name": "Apocalypse"
+        "name": "Apocalypse",
+        "difficulty": 5
       },
       {
         "alwaysLeadsGroupId": "dc:streets-of-new-york",
         "id": "dc:kingpin",
-        "name": "Kingpin"
+        "name": "Kingpin",
+        "difficulty": 3
       },
       {
         "alwaysLeadsGroupId": "dc:underworld",
         "id": "dc:mephisto",
-        "name": "Mephisto"
+        "name": "Mephisto",
+        "difficulty": 3
       },
       {
         "alwaysLeadsGroupId": "dc:marauders",
         "id": "dc:mister-sinister",
-        "name": "Mister Sinister"
+        "name": "Mister Sinister",
+        "difficulty": 4
       },
       {
         "alwaysLeadsGroupId": "dc:mutant-liberation-front",
         "id": "dc:stryfe",
-        "name": "Stryfe"
+        "name": "Stryfe",
+        "difficulty": 2
       }
     ],
     "schemes": [
@@ -488,12 +497,14 @@
       {
         "alwaysLeadsGroupId": "ff:heralds-of-galactus",
         "id": "ff:galactus",
-        "name": "Galactus"
+        "name": "Galactus",
+        "difficulty": 5
       },
       {
         "alwaysLeadsGroupId": "ff:subterranea",
         "id": "ff:mole-man",
-        "name": "Mole Man"
+        "name": "Mole Man",
+        "difficulty": 2
       }
     ],
     "schemes": [
@@ -575,12 +586,14 @@
       {
         "id": "gotg:supreme-intelligence",
         "name": "Supreme Intelligence of the Kree",
-        "alwaysLeadsGroupId": "gotg:kree-starforce"
+        "alwaysLeadsGroupId": "gotg:kree-starforce",
+        "difficulty": 3
       },
       {
         "id": "gotg:thanos",
         "name": "Thanos",
-        "alwaysLeadsGroupId": "gotg:infinity-gems"
+        "alwaysLeadsGroupId": "gotg:infinity-gems",
+        "difficulty": 5
       }
     ],
     "schemes": [
@@ -687,12 +700,14 @@
       {
         "id": "ptr:carnage",
         "name": "Carnage",
-        "alwaysLeadsGroupId": "ptr:maximum-carnage"
+        "alwaysLeadsGroupId": "ptr:maximum-carnage",
+        "difficulty": 4
       },
       {
         "id": "ptr:mysterio",
         "name": "Mysterio",
-        "alwaysLeadsGroupId": "ptr:sinister-six"
+        "alwaysLeadsGroupId": "ptr:sinister-six",
+        "difficulty": 5
       }
     ],
     "schemes": [
@@ -783,22 +798,26 @@
       {
         "id": "villains:dr-strange",
         "name": "Dr. Strange",
-        "alwaysLeadsGroupId": "villains:defenders"
+        "alwaysLeadsGroupId": "villains:defenders",
+        "difficulty": 3
       },
       {
         "id": "villains:nick-fury",
         "name": "Nick Fury",
-        "alwaysLeadsGroupId": "villains:avengers"
+        "alwaysLeadsGroupId": "villains:avengers",
+        "difficulty": 3
       },
       {
         "id": "villains:odin",
         "name": "Odin",
-        "alwaysLeadsGroupId": "villains:asgardian-warriors"
+        "alwaysLeadsGroupId": "villains:asgardian-warriors",
+        "difficulty": 4
       },
       {
         "id": "villains:professor-x",
         "name": "Professor X",
-        "alwaysLeadsGroupId": "villains:x-men-first-class"
+        "alwaysLeadsGroupId": "villains:x-men-first-class",
+        "difficulty": 4
       }
     ],
     "schemes": [
@@ -1002,22 +1021,26 @@
       {
         "id": "sw1:madelyne-pryor",
         "name": "Madelyne Pryor, Goblin Queen",
-        "alwaysLeadsGroupId": "sw1:limbo"
+        "alwaysLeadsGroupId": "sw1:limbo",
+        "difficulty": 3
       },
       {
         "id": "sw1:nimrod",
         "name": "Nimrod, Super Sentinel",
-        "alwaysLeadsGroupId": "sw1:sentinel-territories"
+        "alwaysLeadsGroupId": "sw1:sentinel-territories",
+        "difficulty": 4
       },
       {
         "id": "sw1:wasteland-hulk",
         "name": "Wasteland Hulk",
-        "alwaysLeadsGroupId": "sw1:wasteland"
+        "alwaysLeadsGroupId": "sw1:wasteland",
+        "difficulty": 3
       },
       {
         "id": "sw1:zombie-green-goblin",
         "name": "Zombie Green Goblin",
-        "alwaysLeadsGroupId": "sw1:the-deadlands"
+        "alwaysLeadsGroupId": "sw1:the-deadlands",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -1209,22 +1232,26 @@
       {
         "id": "sw2:zheng-zhu",
         "name": "Immortal Emperor Zheng-Zhu",
-        "alwaysLeadsGroupId": "sw2:k-un-lun"
+        "alwaysLeadsGroupId": "sw2:k-un-lun",
+        "difficulty": 3
       },
       {
         "id": "sw2:king-hyperion",
         "name": "King Hyperion",
-        "alwaysLeadsGroupId": "sw2:utopolis"
+        "alwaysLeadsGroupId": "sw2:utopolis",
+        "difficulty": 4
       },
       {
         "id": "sw2:shiklah",
         "name": "Shiklah, the Demon Bride",
-        "alwaysLeadsGroupId": "sw2:monster-metropolis"
+        "alwaysLeadsGroupId": "sw2:monster-metropolis",
+        "difficulty": 3
       },
       {
         "id": "sw2:spider-queen",
         "name": "Spider-Queen",
-        "alwaysLeadsGroupId": "sw2:spider-infected"
+        "alwaysLeadsGroupId": "sw2:spider-infected",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -1436,7 +1463,8 @@
       {
         "id": "fi:uru-iron-man",
         "name": "Uru-Enchanted Iron Man",
-        "alwaysLeadsGroupId": "fi:the-mighty"
+        "alwaysLeadsGroupId": "fi:the-mighty",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -1516,12 +1544,14 @@
       {
         "id": "cap:arnim-zola",
         "name": "Arnim Zola",
-        "alwaysLeadsGroupId": "cap:zola-s-creations"
+        "alwaysLeadsGroupId": "cap:zola-s-creations",
+        "difficulty": 2
       },
       {
         "id": "cap:baron-heinrich-zemo",
         "name": "Baron Heinrich Zemo",
-        "alwaysLeadsGroupId": "cap:masters-of-evil-wwii"
+        "alwaysLeadsGroupId": "cap:masters-of-evil-wwii",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -1612,27 +1642,32 @@
       {
         "id": "cw:authoritarian-iron-man",
         "name": "Authoritarian Iron Man",
-        "alwaysLeadsGroupId": "cw:superhuman-registration-act"
+        "alwaysLeadsGroupId": "cw:superhuman-registration-act",
+        "difficulty": 4
       },
       {
         "id": "cw:baron-helmut-zemo",
         "name": "Baron Helmut Zemo",
-        "alwaysLeadsGroupId": "cw:thunderbolts"
+        "alwaysLeadsGroupId": "cw:thunderbolts",
+        "difficulty": 3
       },
       {
         "id": "cw:maria-hill",
         "name": "Maria Hill, Director of S.H.I.E.L.D.",
-        "alwaysLeadsGroupId": "cw:s-h-i-e-l-d-elite"
+        "alwaysLeadsGroupId": "cw:s-h-i-e-l-d-elite",
+        "difficulty": 5
       },
       {
         "id": "cw:misty-knight",
         "name": "Misty Knight",
-        "alwaysLeadsGroupId": "cw:heroes-for-hire"
+        "alwaysLeadsGroupId": "cw:heroes-for-hire",
+        "difficulty": 3
       },
       {
         "id": "cw:ragnarok",
         "name": "Ragnarok",
-        "alwaysLeadsGroupId": "cw:registration-enforcers"
+        "alwaysLeadsGroupId": "cw:registration-enforcers",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -1845,12 +1880,14 @@
       {
         "id": "dp:evil-deadpool",
         "name": "Evil Deadpool",
-        "alwaysLeadsGroupId": "dp:evil-deadpool-corpse"
+        "alwaysLeadsGroupId": "dp:evil-deadpool-corpse",
+        "difficulty": 2
       },
       {
         "id": "dp:macho-gomez",
         "name": "Macho Gomez",
-        "alwaysLeadsGroupId": "dp:deadpool-s-friends"
+        "alwaysLeadsGroupId": "dp:deadpool-s-friends",
+        "difficulty": 2
       }
     ],
     "schemes": [
@@ -1953,12 +1990,14 @@
       {
         "id": "noir:charles-xavier",
         "name": "Charles Xavier",
-        "alwaysLeadsGroupId": "noir:x-men-noir"
+        "alwaysLeadsGroupId": "noir:x-men-noir",
+        "difficulty": 4
       },
       {
         "id": "noir:the-goblin-underworld-boss",
         "name": "The Goblin, Underworld Boss",
-        "alwaysLeadsGroupId": "noir:goblin-s-freak-show"
+        "alwaysLeadsGroupId": "noir:goblin-s-freak-show",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -2041,32 +2080,38 @@
       {
         "id": "xm:arcade",
         "name": "Arcade",
-        "alwaysLeadsGroupId": "xm:murderworld"
+        "alwaysLeadsGroupId": "xm:murderworld",
+        "difficulty": 4
       },
       {
         "id": "xm:dark-phoenix",
         "name": "Dark Phoenix",
-        "alwaysLeadsGroupId": "xm:hellfire-club"
+        "alwaysLeadsGroupId": "xm:hellfire-club",
+        "difficulty": 5
       },
       {
         "id": "xm:deathbird",
         "name": "Deathbird",
-        "alwaysLeadsGroupId": "xm:shi-ar-imperial-guard"
+        "alwaysLeadsGroupId": "xm:shi-ar-imperial-guard",
+        "difficulty": 3
       },
       {
         "id": "xm:mojo",
         "name": "Mojo",
-        "alwaysLeadsGroupId": "xm:mojoverse"
+        "alwaysLeadsGroupId": "xm:mojoverse",
+        "difficulty": 2
       },
       {
         "id": "xm:onslaught",
         "name": "Onslaught",
-        "alwaysLeadsGroupId": "xm:dark-descendants"
+        "alwaysLeadsGroupId": "xm:dark-descendants",
+        "difficulty": 5
       },
       {
         "id": "xm:shadow-king",
         "name": "Shadow King",
-        "alwaysLeadsGroupId": "xm:shadow-x"
+        "alwaysLeadsGroupId": "xm:shadow-x",
+        "difficulty": 4
       }
     ],
     "schemes": [
@@ -2272,7 +2317,8 @@
       {
         "id": "smh:adrian-toomes",
         "name": "Adrian Toomes",
-        "alwaysLeadsGroupId": "smh:salvagers"
+        "alwaysLeadsGroupId": "smh:salvagers",
+        "difficulty": 2
       }
     ],
     "schemes": [
@@ -2355,12 +2401,14 @@
       {
         "id": "champ:fin-fang-foom",
         "name": "Fin Fang Foom",
-        "alwaysLeadsGroupId": "champ:monsters-unleashed"
+        "alwaysLeadsGroupId": "champ:monsters-unleashed",
+        "difficulty": 5
       },
       {
         "id": "champ:pagliacci",
         "name": "Pagliacci",
-        "alwaysLeadsGroupId": "champ:wrecking-crew"
+        "alwaysLeadsGroupId": "champ:wrecking-crew",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -2443,32 +2491,38 @@
       {
         "id": "wwh:general-ross",
         "name": "General Ross",
-        "alwaysLeadsGroupId": "wwh:code-red"
+        "alwaysLeadsGroupId": "wwh:code-red",
+        "difficulty": 3
       },
       {
         "id": "wwh:illuminati-secret-society",
         "name": "Illuminati, Secret Society",
-        "alwaysLeadsGroupId": "wwh:illuminati"
+        "alwaysLeadsGroupId": "wwh:illuminati",
+        "difficulty": 4
       },
       {
         "id": "wwh:king-hulk-sakaarson",
         "name": "King Hulk, Sakaarson",
-        "alwaysLeadsGroupId": "wwh:warbound"
+        "alwaysLeadsGroupId": "wwh:warbound",
+        "difficulty": 5
       },
       {
         "id": "wwh:m-o-d-o-k",
         "name": "M.O.D.O.K.",
-        "alwaysLeadsGroupId": "wwh:intelligencia"
+        "alwaysLeadsGroupId": "wwh:intelligencia",
+        "difficulty": 3
       },
       {
         "id": "wwh:the-red-king",
         "name": "The Red King",
-        "alwaysLeadsGroupId": "wwh:sakaar-imperial-guard"
+        "alwaysLeadsGroupId": "wwh:sakaar-imperial-guard",
+        "difficulty": 3
       },
       {
         "id": "wwh:the-sentry",
         "name": "The Sentry",
-        "alwaysLeadsGroupId": "wwh:aspects-of-the-void"
+        "alwaysLeadsGroupId": "wwh:aspects-of-the-void",
+        "difficulty": 5
       }
     ],
     "schemes": [
@@ -2662,17 +2716,20 @@
       {
         "id": "msp1:iron-monger",
         "name": "Iron Monger",
-        "alwaysLeadsGroupId": "msp1:iron-foes"
+        "alwaysLeadsGroupId": "msp1:iron-foes",
+        "difficulty": 2
       },
       {
         "id": "msp1:loki",
         "name": "Loki",
-        "alwaysLeadsGroupId": "msp1:enemies-of-asgard"
+        "alwaysLeadsGroupId": "msp1:enemies-of-asgard",
+        "difficulty": 2
       },
       {
         "id": "msp1:red-skull",
         "name": "Red Skull",
-        "alwaysLeadsGroupId": "msp1:hydra"
+        "alwaysLeadsGroupId": "msp1:hydra",
+        "difficulty": 1
       }
     ],
     "schemes": [
@@ -2828,12 +2885,14 @@
       {
         "id": "am:ultron",
         "name": "Ultron",
-        "alwaysLeadsGroupId": "am:ultron-s-legacy"
+        "alwaysLeadsGroupId": "am:ultron-s-legacy",
+        "difficulty": 4
       },
       {
         "id": "am:morgana-le-fay",
         "name": "Morgana Le Fay",
-        "alwaysLeadsGroupId": "am:queen-s-vengeance"
+        "alwaysLeadsGroupId": "am:queen-s-vengeance",
+        "difficulty": 5
       }
     ],
     "schemes": [
@@ -2916,12 +2975,14 @@
       {
         "id": "venom:hybrid",
         "name": "Hybrid",
-        "alwaysLeadsGroupId": "venom:life-foundation"
+        "alwaysLeadsGroupId": "venom:life-foundation",
+        "difficulty": 2
       },
       {
         "id": "venom:poison-thanos",
         "name": "Poison Thanos",
-        "alwaysLeadsGroupId": "venom:poisons"
+        "alwaysLeadsGroupId": "venom:poisons",
+        "difficulty": 5
       }
     ],
     "schemes": [
@@ -3005,7 +3066,8 @@
       {
         "id": "dim:jjj",
         "name": "J. Jonah Jameson",
-        "alwaysLeadsGroupId": "dim:spider-slayer"
+        "alwaysLeadsGroupId": "dim:spider-slayer",
+        "difficulty": 2
       }
     ],
     "schemes": [],
@@ -3059,17 +3121,20 @@
       {
         "id": "rev:grim-reaper",
         "name": "Grim Reaper",
-        "alwaysLeadsGroupId": "rev:lethal-legion"
+        "alwaysLeadsGroupId": "rev:lethal-legion",
+        "difficulty": 3
       },
       {
         "id": "rev:mandarin",
         "name": "Mandarin",
-        "alwaysLeadsGroupId": "rev:mandarins-rings"
+        "alwaysLeadsGroupId": "rev:mandarins-rings",
+        "difficulty": 4
       },
       {
         "id": "rev:the-hood",
         "name": "The Hood",
-        "alwaysLeadsGroupId": "rev:hoods-gang"
+        "alwaysLeadsGroupId": "rev:hoods-gang",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -3196,12 +3261,14 @@
       {
         "id": "shl:hydra-high-council",
         "name": "Hydra High Council",
-        "alwaysLeadsGroupId": "shl:hydra-elite"
+        "alwaysLeadsGroupId": "shl:hydra-elite",
+        "difficulty": 4
       },
       {
         "id": "shl:hydra-super-adaptoid",
         "name": "Hydra Super-Adaptoid",
-        "alwaysLeadsGroupId": "shl:a-i-m-hydra-offshoot"
+        "alwaysLeadsGroupId": "shl:a-i-m-hydra-offshoot",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -3279,12 +3346,14 @@
       {
         "id": "hoa:malekith-the-accursed",
         "name": "Malekith the Accursed",
-        "alwaysLeadsGroupId": "hoa:dark-council"
+        "alwaysLeadsGroupId": "hoa:dark-council",
+        "difficulty": 3
       },
       {
         "id": "hoa:hela-goddess-of-death",
         "name": "Hela, Goddess of Death",
-        "alwaysLeadsGroupId": "hoa:omens-of-ragnarok"
+        "alwaysLeadsGroupId": "hoa:omens-of-ragnarok",
+        "difficulty": 4
       }
     ],
     "schemes": [
@@ -3367,17 +3436,20 @@
       {
         "id": "itc:magus",
         "name": "Magus",
-        "alwaysLeadsGroupId": "itc:universal-church-of-truth"
+        "alwaysLeadsGroupId": "itc:universal-church-of-truth",
+        "difficulty": 3
       },
       {
         "id": "itc:the-grandmaster",
         "name": "The Grandmaster",
-        "alwaysLeadsGroupId": "itc:elders-of-the-universe"
+        "alwaysLeadsGroupId": "itc:elders-of-the-universe",
+        "difficulty": 4
       },
       {
         "id": "itc:the-beyonder",
         "name": "The Beyonder",
-        "alwaysLeadsGroupId": "itc:from-beyond"
+        "alwaysLeadsGroupId": "itc:from-beyond",
+        "difficulty": 5
       }
     ],
     "schemes": [
@@ -3497,12 +3569,14 @@
       {
         "id": "bp:killmonger",
         "name": "Killmonger",
-        "alwaysLeadsGroupId": "bp:killmongers-league"
+        "alwaysLeadsGroupId": "bp:killmongers-league",
+        "difficulty": 3
       },
       {
         "id": "bp:klaw",
         "name": "Klaw",
-        "alwaysLeadsGroupId": "bp:enemies-of-wakanda"
+        "alwaysLeadsGroupId": "bp:enemies-of-wakanda",
+        "difficulty": 2
       }
     ],
     "schemes": [
@@ -3585,12 +3659,14 @@
       {
         "id": "nm:belasco-demon-lord-of-limbo",
         "name": "Belasco, Demon Lord of Limbo",
-        "alwaysLeadsGroupId": "nm:demons-of-limbo"
+        "alwaysLeadsGroupId": "nm:demons-of-limbo",
+        "difficulty": 3
       },
       {
         "id": "nm:emma-frost-the-white-queen",
         "name": "Emma Frost, The White Queen",
-        "alwaysLeadsGroupId": "nm:hellions"
+        "alwaysLeadsGroupId": "nm:hellions",
+        "difficulty": 4
       }
     ],
     "schemes": [
@@ -3674,12 +3750,14 @@
       {
         "id": "rok:maximus-the-mad",
         "name": "Maximus the Mad",
-        "alwaysLeadsGroupId": "rok:inhuman-rebellion"
+        "alwaysLeadsGroupId": "rok:inhuman-rebellion",
+        "difficulty": 3
       },
       {
         "id": "rok:emperor-vulcan-of-the-shiar",
         "name": "Emperor Vulcan of the Shi'ar",
-        "alwaysLeadsGroupId": "rok:shiar-imperial-elite"
+        "alwaysLeadsGroupId": "rok:shiar-imperial-elite",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -3763,12 +3841,14 @@
       {
         "id": "anh:annihilus",
         "name": "Annihilus",
-        "alwaysLeadsGroupId": "anh:annihilation-wave"
+        "alwaysLeadsGroupId": "anh:annihilation-wave",
+        "difficulty": 5
       },
       {
         "id": "anh:kang-the-conqueror",
         "name": "Kang the Conqueror",
-        "alwaysLeadsGroupId": "anh:timelines-of-kang"
+        "alwaysLeadsGroupId": "anh:timelines-of-kang",
+        "difficulty": 5
       }
     ],
     "schemes": [
@@ -3851,17 +3931,20 @@
       {
         "id": "mcx:lady-deathstrike",
         "name": "Lady Deathstrike",
-        "alwaysLeadsGroupId": "mcx:reavers"
+        "alwaysLeadsGroupId": "mcx:reavers",
+        "difficulty": 4
       },
       {
         "id": "mcx:bastion-fused-sentinel",
         "name": "Bastion, Fused Sentinel",
-        "alwaysLeadsGroupId": "mcx:purifiers"
+        "alwaysLeadsGroupId": "mcx:purifiers",
+        "difficulty": 3
       },
       {
         "id": "mcx:exodus",
         "name": "Exodus",
-        "alwaysLeadsGroupId": "mcx:acolytes"
+        "alwaysLeadsGroupId": "mcx:acolytes",
+        "difficulty": 5
       }
     ],
     "schemes": [
@@ -3976,12 +4059,14 @@
       {
         "id": "dss:dormammu",
         "name": "Dormammu",
-        "alwaysLeadsGroupId": "dss:lords-of-the-netherworld"
+        "alwaysLeadsGroupId": "dss:lords-of-the-netherworld",
+        "difficulty": 4
       },
       {
         "id": "dss:nightmare",
         "name": "Nightmare",
-        "alwaysLeadsGroupId": "dss:fear-lords"
+        "alwaysLeadsGroupId": "dss:fear-lords",
+        "difficulty": 4
       }
     ],
     "schemes": [
@@ -4070,12 +4155,14 @@
       {
         "id": "bw:taskmaster",
         "name": "Taskmaster",
-        "alwaysLeadsGroupId": "bw:taskmasters-thunderbolts"
+        "alwaysLeadsGroupId": "bw:taskmasters-thunderbolts",
+        "difficulty": 2
       },
       {
         "id": "bw:indestructible-man",
         "name": "Indestructible Man",
-        "alwaysLeadsGroupId": "bw:elite-assassins"
+        "alwaysLeadsGroupId": "bw:elite-assassins",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -4158,11 +4245,13 @@
       {
         "id": "msg:ronan-the-accuser",
         "name": "Ronan the Accuser",
-        "alwaysLeadsGroupId": "msg:followers-of-ronan"
+        "alwaysLeadsGroupId": "msg:followers-of-ronan",
+        "difficulty": 3
       },
       {
         "id": "msg:ego-the-living-planet",
-        "name": "Ego, The Living Planet"
+        "name": "Ego, The Living Planet",
+        "difficulty": 4
       }
     ],
     "schemes": [
@@ -4246,22 +4335,26 @@
     "masterminds": [
       {
         "id": "wif:hank-pym-yellowjacket",
-        "name": "Hank Pym, Yellowjacket"
+        "name": "Hank Pym, Yellowjacket",
+        "difficulty": 4
       },
       {
         "id": "wif:killmonger-the-betrayer",
         "name": "Killmonger, the Betrayer",
-        "alwaysLeadsGroupId": "wif:vibranium-liberator-drones"
+        "alwaysLeadsGroupId": "wif:vibranium-liberator-drones",
+        "difficulty": 3
       },
       {
         "id": "wif:ultron-infinity",
         "name": "Ultron Infinity",
-        "alwaysLeadsGroupId": "wif:ultron-sentries"
+        "alwaysLeadsGroupId": "wif:ultron-sentries",
+        "difficulty": 5
       },
       {
         "id": "wif:zombie-scarlet-witch",
         "name": "Zombie Scarlet Witch",
-        "alwaysLeadsGroupId": "wif:zombie-avengers"
+        "alwaysLeadsGroupId": "wif:zombie-avengers",
+        "difficulty": 4
       }
     ],
     "schemes": [
@@ -4384,11 +4477,13 @@
       {
         "id": "y99:alchemax-executives",
         "name": "Alchemax Executives",
-        "alwaysLeadsGroupId": "y99:alchemax-enforcers"
+        "alwaysLeadsGroupId": "y99:alchemax-enforcers",
+        "difficulty": 3
       },
       {
         "id": "y99:sinister-six-2099",
-        "name": "Sinister Six 2099"
+        "name": "Sinister Six 2099",
+        "difficulty": 4
       }
     ],
     "schemes": [
@@ -4471,17 +4566,20 @@
       {
         "id": "amw:darren-cross",
         "name": "Darren Cross",
-        "alwaysLeadsGroupId": "amw:cross-technologies"
+        "alwaysLeadsGroupId": "amw:cross-technologies",
+        "difficulty": 2
       },
       {
         "id": "amw:ghost-master-thief",
         "name": "Ghost, Master Thief",
-        "alwaysLeadsGroupId": "amw:ghost-chasers"
+        "alwaysLeadsGroupId": "amw:ghost-chasers",
+        "difficulty": 3
       },
       {
         "id": "amw:kang-quantum-conqueror",
         "name": "Kang, Quantum Conqueror",
-        "alwaysLeadsGroupId": "amw:armada-of-kang"
+        "alwaysLeadsGroupId": "amw:armada-of-kang",
+        "difficulty": 5
       }
     ],
     "schemes": [
@@ -4600,12 +4698,14 @@
       {
         "id": "mds:zarathos",
         "name": "Zarathos",
-        "alwaysLeadsGroupId": "mds:fallen"
+        "alwaysLeadsGroupId": "mds:fallen",
+        "difficulty": 4
       },
       {
         "id": "mds:lilith-mother-of-demons",
         "name": "Lilith, Mother of Demons",
-        "alwaysLeadsGroupId": "mds:lilin"
+        "alwaysLeadsGroupId": "mds:lilin",
+        "difficulty": 3
       }
     ],
     "schemes": [
@@ -4688,17 +4788,20 @@
     "masterminds": [
       {
         "id": "wpx:omega-red",
-        "name": "Omega Red"
+        "name": "Omega Red",
+        "difficulty": 4
       },
       {
         "id": "wpx:romulus",
         "name": "Romulus",
-        "alwaysLeadsGroupId": "wpx:weapon-plus"
+        "alwaysLeadsGroupId": "wpx:weapon-plus",
+        "difficulty": 3
       },
       {
         "id": "wpx:sabretooth",
         "name": "Sabretooth",
-        "alwaysLeadsGroupId": "wpx:berserkers"
+        "alwaysLeadsGroupId": "wpx:berserkers",
+        "difficulty": 4
       }
     ],
     "schemes": [
