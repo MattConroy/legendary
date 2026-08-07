@@ -611,13 +611,26 @@ public class SetupRandomizerTests
 
     [Theory]
     [InlineData(2, DifficultyBand.Easy)]
-    [InlineData(3, DifficultyBand.Easy)]
-    [InlineData(4, DifficultyBand.Medium)]
+    [InlineData(4, DifficultyBand.Easy)]
+    [InlineData(5, DifficultyBand.Medium)]
     [InlineData(7, DifficultyBand.Medium)]
     [InlineData(8, DifficultyBand.Hard)]
     [InlineData(10, DifficultyBand.Hard)]
     public void Threat_bands_use_the_agreed_thresholds(int score, DifficultyBand band)
         => Assert.Equal(band, Threat.Band(score));
+
+    [Fact]
+    public void Every_difficulty_band_is_reachable()
+    {
+        // Guards the calibration: some mastermind+scheme pair must land in each band,
+        // or a target (esp. Easy) could never be honoured.
+        var mm = Sets.SelectMany(s => s.Masterminds).Select(m => m.Difficulty!.Value).ToList();
+        var sc = Sets.SelectMany(s => s.Schemes).Select(s => s.Difficulty!.Value).ToList();
+        var bands = (from m in mm from s in sc select Threat.Band(m + s)).Distinct().ToHashSet();
+        Assert.Contains(DifficultyBand.Easy, bands);
+        Assert.Contains(DifficultyBand.Medium, bands);
+        Assert.Contains(DifficultyBand.Hard, bands);
+    }
 
     [Fact]
     public void Threat_score_is_the_mastermind_plus_scheme_out_of_ten()

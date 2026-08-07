@@ -19,9 +19,13 @@ public static class Threat
         return (int)Math.Round(ratings.Average() * 2, MidpointRounding.AwayFromZero);
     }
 
-    /// <summary>Band for a score: 1–3 Easy, 4–7 Medium, 8–10 Hard.</summary>
+    /// <summary>
+    /// Band for a score. The score runs 2–10 (two 1–5 components), so the bands are
+    /// equal thirds of that range — 2–4 Easy, 5–7 Medium, 8–10 Hard — which keeps
+    /// every band reachable (a genuinely easy game needs both components low).
+    /// </summary>
     public static DifficultyBand Band(int score) =>
-        score <= 3 ? DifficultyBand.Easy : score <= 7 ? DifficultyBand.Medium : DifficultyBand.Hard;
+        score <= 4 ? DifficultyBand.Easy : score <= 7 ? DifficultyBand.Medium : DifficultyBand.Hard;
 
     private static IEnumerable<int> Ratings(GameSetup setup)
     {
