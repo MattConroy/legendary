@@ -1,0 +1,153 @@
+@page "/cards"
+@inject GameStateService State
+@inject IKeywordRepository Keywords
+
+<PageTitle>Legendary — Cards</PageTitle>
+
+<div class="cards-page">
+    <h1 class="page-title">Cards</h1>
+    <p class="muted small">Browse every card in the sets you own or borrow — heroes, masterminds, schemes, villains and henchmen. Card facts only; tap “view card” to see the real card on the Legendary wiki.</p>
+
+    @if (State.AllSets.Count == 0)
+    {
+        <p class="muted">Loading…</p>
+    }
+    else
+    {
+        <div class="kw-controls">
+            <input type="search" class="kw-search" placeholder="Search cards…"
+                   value="@_search" @oninput="e => _search = e.Value?.ToString() ?? string.Empty"
+                   aria-label="Search cards" />
+            <select class="kw-filter" value="@_category" @onchange="e => _category = e.Value?.ToString() ?? string.Empty"
+                    aria-label="Filter by type">
+                <option value="">All types</option>
+                @foreach (var (value, label) in Categories)
+                {
+                    <option value="@value">@label</option>
+                }
+            </select>
+            <select class="kw-filter" value="@_setFilter" @onchange="e => _setFilter = e.Value?.ToString() ?? string.Empty"
+                    aria-label="Filter by set">
+                <option value="">All sets</option>
+                @foreach (var s in State.SortedSets)
+                {
+                    <option value="@s.Id">@s.Name</option>
+                }
+            </select>
+        </div>
+
+        var results = Filtered();
+        <p class="muted small kw-count">@results.Count card@(results.Count == 1 ? "" : "s")</p>
+
+        @if (results.Count == 0)
+        {
+            <p class="muted">No cards match.</p>
+        }
+        else
+        {
+            <ul class="cat-list">
+                <Virtualize Items="results" Context="entry" OverscanCount="6">
+                    @{
+                        var card = entry.Card;
+                        var team = (card as Hero)?.Team;
+                        var band = (card as Mastermind)?.ThreatBand ?? (card as Scheme)?.ThreatBand;
+                        var kws = Keywords.IsLoaded ? Keywords.InPlay(new[] { card.Id }) : [];
+                    }
+                    <li class="cat">
+                        <div class="cat__main">
+                            @if (card is Hero)
+                            {
+                                <TeamIcon Team="@team" />
+                            }
+                            <span class="cat__name">@card.Name</span>
+                            <span class="cat__badge">@CategoryLabel(card.Category)</span>
+                            @if (band is { } b)
+                            {
+                                <span class="tpill tpill--@b.ToString().ToLowerInvariant()">
+                                    <span class="tpill__label">Threat</span>
+                                    <span class="tpill__value">@b</span>
+                                </span>
+                            }
+                        </div>
+                        <div class="cat__meta">
+                            <span class="cat__set">@entry.SetName</span>
+                            @if (!string.IsNullOrEmpty(team))
+                            {
+                                <span class="cat__set">· @team</span>
+                            }
+                            <a class="cat__link" href="@CardLink(card.Name)" target="_blank" rel="noopener noreferrer">view card ↗</a>
+                        </div>
+                        @if (kws.Count > 0)
+                        {
+                            <ul class="tag-list cat__kws">
+                                @foreach (var k in kws)
+                                {
+                                    <li class="tag" title="@k.Summary">@k.Name</li>
+                                }
+                            </ul>
+                        }
+                    </li>
+                </Virtualize>
+            </ul>
+        }
+    }
+</div>
+
+@code {
+    private string _search = string.Empty;
+    private string _category = string.Empty;
+    private string _setFilter = string.Empty;
+
+    private List<Entry> _all = [];
+
+    // Established Legendary card database — we link out rather than host imagery.
+    private const string CardDbSearch = "https://marvel-legendary.fandom.com/wiki/Special:Search?query=";
+
+    private static readonly (string Value, string Label)[] Categories =
+    {
+        (nameof(CardCategory.Hero), "Heroes"),
+        (nameof(CardCategory.Mastermind), "Masterminds"),
+        (nameof(CardCategory.Scheme), "Schemes"),
+        (nameof(CardCategory.VillainGroup), "Villain Groups"),
+        (nameof(CardCategory.Henchmen), "Henchmen"),
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        await State.InitializeAsync();
+        // Keywords are secondary — never let them break browsing.
+        try { await Keywords.EnsureLoadedAsync(); } catch { /* chips just won't show */ }
+
+        _all = State.AllSets
+            .SelectMany(set => set.AllCards.Select(c => new Entry(c, set.Name, set.Id)))
+            .ToList();
+    }
+
+    private List<Entry> Filtered()
+    {
+        var q = _search.Trim();
+        IEnumerable<Entry> items = _all;
+
+        if (Enum.TryParse<CardCategory>(_category, out var cat))
+            items = items.Where(e => e.Card.Category == cat);
+        if (_setFilter.Length > 0)
+            items = items.Where(e => e.SetId == _setFilter);
+        if (q.Length > 0)
+            items = items.Where(e => e.Card.Name.Contains(q, StringComparison.OrdinalIgnoreCase));
+
+        return items
+            .OrderBy(e => e.Card.Name, StringComparer.OrdinalIgnoreCase)
+            .ToList();
+    }
+
+    private static string CategoryLabel(CardCategory category) => category switch
+    {
+        CardCategory.VillainGroup => "Villain",
+        CardCategory.Henchmen => "Henchmen",
+        _ => category.ToString(),
+    };
+
+    private static string CardLink(string name) => CardDbSearch + Uri.EscapeDataString(name);
+
+    private readonly record struct Entry(GameCard Card, string SetName, string SetId);
+}
