@@ -22,4 +22,11 @@ public sealed record Keyword
 
     /// <summary>Ids of the sets this keyword appears in.</summary>
     public IReadOnlyList<string> Sets { get; init; } = [];
+
+    /// <summary>
+    /// True when the full <see cref="Rules"/> add meaningful detail beyond the
+    /// <see cref="Summary"/> — i.e. worth offering a "Full rules" expander.
+    /// </summary>
+    public bool HasFullRules =>
+        Rules.Count > 0 && string.Join(" ", Rules).Length > Summary.Length + 24;
 }

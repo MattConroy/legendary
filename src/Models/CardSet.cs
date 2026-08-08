@@ -34,4 +34,12 @@ public sealed record CardSet
     public IReadOnlyList<VillainGroup> VillainGroups { get; init; } = [];
     public IReadOnlyList<Henchmen> Henchmen { get; init; } = [];
     public IReadOnlyList<Hero> Heroes { get; init; } = [];
+
+    /// <summary>Every card in this set, across all categories.</summary>
+    public IEnumerable<GameCard> AllCards =>
+        Masterminds.Cast<GameCard>()
+            .Concat(Schemes)
+            .Concat(VillainGroups)
+            .Concat(Henchmen)
+            .Concat(Heroes);
 }

@@ -34,9 +34,13 @@ GitHub Pages. Works offline once loaded.
 
 ```
 src/
-  Models/            Card & setup domain types (GameCard, Scheme, SetupRule, GameSetup…)
-  Data/              SetJson (parse + validate) and SetCatalog (runtime loader)
-  Services/          CardPool, SetupRandomizer (set-agnostic), GameStateService (state + storage)
+  Models/            Card & setup domain types with their own behaviour (GameCard, Scheme,
+                     SetupRule, GameSetup, Threat…)
+  Abstractions/      Repository ports the app depends on (ISetRepository, IKeywordRepository,
+                     IPreferenceRepository) — returning domain objects
+  Data/              JSON parse+validate (SetJson/KeywordJson) and the repository adapters
+                     (HttpSetRepository, HttpKeywordRepository, LocalStoragePreferenceRepository)
+  Services/          CardPool, SetupRandomizer (set-agnostic), GameStateService (state)
   Components/        ResultCard, TeamIcon
   Pages/             Home (randomiser), Settings (sets/options), About (disclaimer + rules)
   Layout/            App shell + bottom navigation

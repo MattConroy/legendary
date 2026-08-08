@@ -1,7 +1,7 @@
 @page "/"
 @implements IDisposable
 @inject GameStateService State
-@inject Legendary.Companion.Data.KeywordCatalog Keywords
+@inject IKeywordRepository Keywords
 
 <PageTitle>Legendary — Setup Randomiser</PageTitle>
 
@@ -51,13 +51,12 @@
     @if (State.Setup is { } setup)
     {
         <div class="results">
-            @if (Threat.Score(setup) is { } threat)
+            @if (setup.Threat is { } threat)
             {
-                var band = Threat.Band(threat);
-                <div class="threat threat--@band.ToString().ToLowerInvariant()">
+                <div class="threat threat--@threat.Band.ToString().ToLowerInvariant()">
                     <span class="threat__title">Threat</span>
-                    <span class="threat__score">@threat<span class="threat__max">/10</span></span>
-                    <span class="threat__band">@band</span>
+                    <span class="threat__score">@threat.Score<span class="threat__max">/10</span></span>
+                    <span class="threat__band">@threat.Band</span>
                 </div>
             }
 
@@ -153,7 +152,7 @@
             </ResultCard>
 
             @{
-                var inPlay = Keywords.InPlay(SetupCardIds(setup));
+                var inPlay = Keywords.InPlay(setup.AllCardIds);
             }
             @if (inPlay.Count > 0)
             {
@@ -206,16 +205,6 @@
         // Keywords are a secondary feature — never let their loading break the randomiser.
         try { await Keywords.EnsureLoadedAsync(); } catch { /* "Keywords in play" just won't show */ }
         StateHasChanged();
-    }
-
-    // Every card the roll put on the table, so we can look up their keywords.
-    private static IEnumerable<string> SetupCardIds(GameSetup setup)
-    {
-        yield return setup.Mastermind.Card.Id;
-        yield return setup.Scheme.Card.Id;
-        foreach (var v in setup.VillainGroups) yield return v.Card.Id;
-        foreach (var h in setup.Henchmen) yield return h.Card.Id;
-        foreach (var h in setup.Heroes) yield return h.Card.Id;
     }
 
     private static readonly (string Label, DifficultyBand? Band)[] Targets =

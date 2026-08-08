@@ -1,6 +1,6 @@
 @page "/keywords"
 @inject GameStateService State
-@inject Legendary.Companion.Data.KeywordCatalog Catalog
+@inject IKeywordRepository Catalog
 
 <PageTitle>Legendary — Keywords</PageTitle>
 
@@ -47,7 +47,7 @@
                     <li class="kw">
                         <div class="kw__name">@k.Name</div>
                         <div class="kw__def">@k.Summary</div>
-                        @if (HasFullRules(k))
+                        @if (k.HasFullRules)
                         {
                             <details class="kw__rules">
                                 <summary>Full rules</summary>
@@ -117,10 +117,6 @@
                         || k.Rules.Any(r => r.Contains(q, StringComparison.OrdinalIgnoreCase)))
             .OrderBy(k => k.Name, StringComparer.OrdinalIgnoreCase);
     }
-
-    // Only offer the expander when the full rules add detail beyond the summary.
-    private static bool HasFullRules(Keyword k)
-        => k.Rules.Count > 0 && string.Join(" ", k.Rules).Length > k.Summary.Length + 24;
 
     private string SetName(string id) => _names.TryGetValue(id, out var n) ? n : id;
     private int SetOrder(string id) => _order.TryGetValue(id, out var i) ? i : int.MaxValue;

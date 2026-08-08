@@ -31,4 +31,29 @@ public sealed record GameSetup
 
     /// <summary>Bystanders in the Villain Deck, after the Scheme's own rules.</summary>
     public required int EffectiveBystanders { get; init; }
+
+    /// <summary>Every card this roll put on the table, across all categories.</summary>
+    public IEnumerable<GameCard> AllCards
+    {
+        get
+        {
+            yield return Mastermind.Card;
+            yield return Scheme.Card;
+            foreach (var v in VillainGroups) yield return v.Card;
+            foreach (var h in Henchmen) yield return h.Card;
+            foreach (var h in Heroes) yield return h.Card;
+        }
+    }
+
+    /// <summary>Ids of every card on the table — e.g. to look up their keywords.</summary>
+    public IEnumerable<string> AllCardIds => AllCards.Select(c => c.Id);
+
+    /// <summary>
+    /// This setup's overall Threat, or null when the Mastermind is unrated. The
+    /// Mastermind sets the base and the Scheme applies a small ±1 modifier.
+    /// </summary>
+    public Threat? Threat =>
+        (Mastermind.Card as Mastermind)?.ThreatBase is { } baseline
+            ? Models.Threat.From(baseline, (Scheme.Card as Scheme)?.ThreatModifier)
+            : null;
 }

@@ -46,6 +46,12 @@ public sealed record Mastermind : GameCard
 
     /// <summary>Editorial 1–5 difficulty rating (community/best-effort, tunable). Null if unrated.</summary>
     public int? Difficulty { get; init; }
+
+    /// <summary>
+    /// This Mastermind's base contribution to a setup's Threat: rating × 2 − 1
+    /// (1, 3, 5, 7, 9), so it anchors the 1–10 scale. Null when unrated.
+    /// </summary>
+    public int? ThreatBase => Difficulty is { } d ? d * 2 - 1 : null;
 }
 
 public sealed record Scheme : GameCard
@@ -60,6 +66,13 @@ public sealed record Scheme : GameCard
 
     /// <summary>Editorial 1–5 difficulty rating (community/best-effort, tunable). Null if unrated.</summary>
     public int? Difficulty { get; init; }
+
+    /// <summary>
+    /// This Scheme's small ±1 Threat modifier — its rating relative to an average
+    /// of 3, clamped to [−1, +1], since scheme difficulty is contextual. Null when
+    /// unrated (treated as no nudge).
+    /// </summary>
+    public int? ThreatModifier => Difficulty is { } d ? Math.Clamp(d - 3, -1, 1) : null;
 }
 
 /// <summary>
@@ -101,6 +114,32 @@ public sealed record SchemeSetup
 
     /// <summary>Short factual setup notes surfaced to the player.</summary>
     public IReadOnlyList<string> Notes { get; init; } = [];
+
+    // ----- how this scheme resolves each count from the base setup table -----
+    // These apply only the scheme's own rules; clamping to the available pool and
+    // honouring required groups is the randomiser's job (it alone knows the pool).
+
+    /// <summary>Heroes in the Hero Deck at the given player count: a per-player
+    /// override, an absolute override, or the base table plus this scheme's delta.</summary>
+    public int HeroesFor(SetupRule rule, int players)
+    {
+        if (HeroesByPlayers is { } byPlayers && byPlayers.TryGetValue(players, out var v)) return v;
+        if (Heroes is { } absolute) return absolute;
+        return rule.Heroes + HeroDelta;
+    }
+
+    /// <summary>Villain Groups for this scheme (base table plus its delta).</summary>
+    public int VillainGroupsFor(SetupRule rule) => rule.VillainGroups + VillainGroupDelta;
+
+    /// <summary>Henchman Groups for this scheme (base table plus its delta).</summary>
+    public int HenchmenFor(SetupRule rule) => rule.Henchmen + HenchmenDelta;
+
+    /// <summary>Scheme Twists to shuffle in at the given player count.</summary>
+    public int TwistsFor(int players) =>
+        TwistsByPlayers is { } byPlayers && byPlayers.TryGetValue(players, out var v) ? v : Twists;
+
+    /// <summary>Bystanders in the Villain Deck: this scheme's override, else the base rule.</summary>
+    public int BystandersFor(SetupRule rule) => Bystanders ?? rule.Bystanders;
 }
 
 public sealed record VillainGroup : GameCard

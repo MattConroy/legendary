@@ -617,7 +617,32 @@ public class SetupRandomizerTests
     [InlineData(8, DifficultyBand.Hard)]
     [InlineData(10, DifficultyBand.Hard)]
     public void Threat_bands_use_the_agreed_thresholds(int score, DifficultyBand band)
-        => Assert.Equal(band, Threat.Band(score));
+        => Assert.Equal(band, new Threat(score).Band);
+
+    [Theory]
+    [InlineData(1, 1)]   // rating 1 -> base 1
+    [InlineData(2, 3)]
+    [InlineData(3, 5)]
+    [InlineData(4, 7)]
+    [InlineData(5, 9)]   // rating 5 -> base 9
+    public void Mastermind_threat_base_is_rating_times_two_minus_one(int rating, int expected)
+        => Assert.Equal(expected, new Mastermind { Id = "m", Name = "M", Difficulty = rating }.ThreatBase);
+
+    [Theory]
+    [InlineData(1, -1)]  // below average -> nudge down
+    [InlineData(2, -1)]
+    [InlineData(3, 0)]   // average -> no nudge
+    [InlineData(4, 1)]
+    [InlineData(5, 1)]   // above average -> nudge up (clamped)
+    public void Scheme_threat_modifier_is_rating_minus_three_clamped(int rating, int expected)
+        => Assert.Equal(expected, new Scheme { Id = "s", Name = "S", Difficulty = rating }.ThreatModifier);
+
+    [Fact]
+    public void Unrated_cards_contribute_no_threat()
+    {
+        Assert.Null(new Mastermind { Id = "m", Name = "M" }.ThreatBase);
+        Assert.Null(new Scheme { Id = "s", Name = "S" }.ThreatModifier);
+    }
 
     [Theory]
     [InlineData(1, 1, 1)]    // Red Skull + easy scheme -> floor
@@ -627,32 +652,39 @@ public class SetupRandomizerTests
     [InlineData(5, 3, 9)]    // brutal mastermind, neutral scheme
     [InlineData(5, 5, 10)]   // Thanos + brutal scheme -> ceiling
     [InlineData(4, 1, 6)]    // hard mastermind, easy scheme nudges -1
-    public void Threat_score_is_mastermind_base_plus_small_scheme_modifier(int mm, int scheme, int expected)
-        => Assert.Equal(expected, Threat.Score(mm, scheme));
+    public void Threat_is_mastermind_base_plus_small_scheme_modifier(int mm, int scheme, int expected)
+    {
+        var m = new Mastermind { Id = "m", Name = "M", Difficulty = mm };
+        var s = new Scheme { Id = "s", Name = "S", Difficulty = scheme };
+        Assert.Equal(expected, Threat.From(m.ThreatBase!.Value, s.ThreatModifier).Score);
+    }
 
     [Fact]
     public void Every_difficulty_band_is_reachable()
     {
         // Guards the calibration: some mastermind+scheme pair must land in each band,
         // or a target (esp. Easy) could never be honoured.
-        var mm = Sets.SelectMany(s => s.Masterminds).Select(m => m.Difficulty!.Value).ToList();
-        var sc = Sets.SelectMany(s => s.Schemes).Select(s => s.Difficulty!.Value).ToList();
-        var bands = (from m in mm from s in sc select Threat.Band(Threat.Score(m, s))).Distinct().ToHashSet();
+        var masterminds = Sets.SelectMany(s => s.Masterminds).ToList();
+        var schemes = Sets.SelectMany(s => s.Schemes).ToList();
+        var bands = (from m in masterminds
+                     from s in schemes
+                     select Threat.From(m.ThreatBase!.Value, s.ThreatModifier).Band)
+                    .Distinct().ToHashSet();
         Assert.Contains(DifficultyBand.Easy, bands);
         Assert.Contains(DifficultyBand.Medium, bands);
         Assert.Contains(DifficultyBand.Hard, bands);
     }
 
     [Fact]
-    public void Threat_score_from_a_setup_matches_the_formula_and_stays_in_range()
+    public void Setup_threat_combines_the_card_contributions_and_stays_in_range()
     {
         for (var i = 0; i < 50; i++)
         {
             var setup = Rng(i).Generate((i % 5) + 1, AllPool());
-            var mm = ((Mastermind)setup.Mastermind.Card).Difficulty!.Value;
-            var sc = ((Scheme)setup.Scheme.Card).Difficulty;
-            Assert.Equal(Threat.Score(mm, sc), Threat.Score(setup));
-            Assert.InRange(Threat.Score(setup)!.Value, 1, 10);
+            var mm = (Mastermind)setup.Mastermind.Card;
+            var sc = (Scheme)setup.Scheme.Card;
+            Assert.Equal(Threat.From(mm.ThreatBase!.Value, sc.ThreatModifier), setup.Threat!.Value);
+            Assert.InRange(setup.Threat!.Value.Score, 1, 10);
         }
     }
 

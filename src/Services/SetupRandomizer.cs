@@ -89,26 +89,16 @@ public sealed class SetupRandomizer
     {
         var s = scheme.Setup;
 
-        var heroes = Clamp(ResolveHeroes(rule, s, players), 1, pool.Heroes.Count);
+        var heroes = Clamp(s.HeroesFor(rule, players), 1, pool.Heroes.Count);
 
         // A category must have room for every group forced into it.
         var reqVillains = RequiredOf<VillainGroup>(mastermind, scheme, pool).Count;
         var reqHenchmen = RequiredOf<Henchmen>(mastermind, scheme, pool).Count;
 
-        var villains = Clamp(Math.Max(rule.VillainGroups + s.VillainGroupDelta, reqVillains), 1, pool.VillainGroups.Count);
-        var henchmen = Clamp(Math.Max(rule.Henchmen + s.HenchmenDelta, reqHenchmen), 1, pool.Henchmen.Count);
+        var villains = Clamp(Math.Max(s.VillainGroupsFor(rule), reqVillains), 1, pool.VillainGroups.Count);
+        var henchmen = Clamp(Math.Max(s.HenchmenFor(rule), reqHenchmen), 1, pool.Henchmen.Count);
         return new Counts(heroes, villains, henchmen);
     }
-
-    private static int ResolveHeroes(SetupRule rule, SchemeSetup s, int players)
-    {
-        if (s.HeroesByPlayers is { } byPlayers && byPlayers.TryGetValue(players, out var v)) return v;
-        if (s.Heroes is { } absolute) return absolute;
-        return rule.Heroes + s.HeroDelta;
-    }
-
-    private static int ResolveTwists(SchemeSetup s, int players) =>
-        s.TwistsByPlayers is { } byPlayers && byPlayers.TryGetValue(players, out var v) ? v : s.Twists;
 
     // ----- required-group resolution (Mastermind "Always Leads" + Scheme-forced) -----
 
@@ -213,8 +203,8 @@ public sealed class SetupRandomizer
             EffectiveHeroCount = counts.Heroes,
             EffectiveVillainGroupCount = counts.Villains,
             EffectiveHenchmenCount = counts.Henchmen,
-            EffectiveTwists = ResolveTwists(scheme.Setup, players),
-            EffectiveBystanders = scheme.Setup.Bystanders ?? rule.Bystanders,
+            EffectiveTwists = scheme.Setup.TwistsFor(players),
+            EffectiveBystanders = scheme.Setup.BystandersFor(rule),
         };
     }
 

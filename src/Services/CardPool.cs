@@ -29,14 +29,8 @@ public sealed class CardPool
             Heroes = sets.SelectMany(s => s.Heroes).ToList(),
         };
 
-        foreach (var card in pool.Masterminds.Cast<GameCard>()
-                     .Concat(pool.Schemes)
-                     .Concat(pool.VillainGroups)
-                     .Concat(pool.Henchmen)
-                     .Concat(pool.Heroes))
-        {
+        foreach (var card in sets.SelectMany(s => s.AllCards))
             pool._byId[card.Id] = card;
-        }
 
         return pool;
     }

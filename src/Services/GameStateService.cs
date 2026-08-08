@@ -1,7 +1,5 @@
-using System.Text.Json;
-using Legendary.Companion.Data;
+using Legendary.Companion.Abstractions;
 using Legendary.Companion.Models;
-using Microsoft.JSInterop;
 
 namespace Legendary.Companion.Services;
 
@@ -9,9 +7,10 @@ public enum SetSort { Name, Date }
 
 /// <summary>
 /// Holds the app's live state (player count, which sets are owned/enabled, the
-/// current setup, the Sets-page sort) and persists preferences to local storage.
-/// Content sets are loaded at runtime from <see cref="SetCatalog"/>. UI components
-/// subscribe to <see cref="OnChange"/> to re-render.
+/// current setup, the Sets-page sort) and persists preferences through an
+/// <see cref="IPreferenceRepository"/>. Content sets come from an
+/// <see cref="ISetRepository"/>. UI components subscribe to <see cref="OnChange"/>
+/// to re-render.
 /// </summary>
 public sealed class GameStateService
 {
@@ -21,19 +20,19 @@ public sealed class GameStateService
     private const string SortKey = "legendary.setSort";
     private const string TargetKey = "legendary.difficultyTarget";
 
-    private readonly IJSRuntime _js;
     private readonly SetupRandomizer _randomizer;
-    private readonly SetCatalog _catalog;
+    private readonly ISetRepository _sets;
+    private readonly IPreferenceRepository _prefs;
     private readonly HashSet<string> _ownedSetIds = [];
     private readonly HashSet<string> _enabledSetIds = [];
 
     private bool _initialized;
 
-    public GameStateService(IJSRuntime js, SetupRandomizer randomizer, SetCatalog catalog)
+    public GameStateService(SetupRandomizer randomizer, ISetRepository sets, IPreferenceRepository prefs)
     {
-        _js = js;
         _randomizer = randomizer;
-        _catalog = catalog;
+        _sets = sets;
+        _prefs = prefs;
     }
 
     public int Players { get; private set; } = 2;
@@ -46,7 +45,7 @@ public sealed class GameStateService
 
     public event Action? OnChange;
 
-    public IReadOnlyList<CardSet> AllSets => _catalog.Sets;
+    public IReadOnlyList<CardSet> AllSets => _sets.Sets;
 
     public IReadOnlyList<CardSet> SortedSets
     {
@@ -65,58 +64,48 @@ public sealed class GameStateService
 
     /// <summary>The randomiser draws from every enabled set (owned or borrowed).</summary>
     public CardPool CurrentPool =>
-        CardPool.From(_catalog.Sets.Where(s => _enabledSetIds.Contains(s.Id)));
+        CardPool.From(_sets.Sets.Where(s => _enabledSetIds.Contains(s.Id)));
 
     public async Task InitializeAsync()
     {
         if (_initialized) return;
         _initialized = true;
 
-        await _catalog.EnsureLoadedAsync();
+        await _sets.EnsureLoadedAsync();
 
-        // Defaults from the loaded catalog, then override from local storage.
-        foreach (var id in _catalog.Sets.Where(s => s.EnabledByDefault).Select(s => s.Id))
+        // Defaults from the loaded catalog, then override from stored preferences.
+        foreach (var id in _sets.Sets.Where(s => s.EnabledByDefault).Select(s => s.Id))
         {
             _ownedSetIds.Add(id);
             _enabledSetIds.Add(id);
         }
 
-        try
+        if (int.TryParse(await _prefs.GetAsync(PlayersKey), out var p) && p is >= 1 and <= 5)
+            Players = p;
+
+        await LoadSetIdsAsync(OwnedSetsKey, _ownedSetIds);
+        await LoadSetIdsAsync(EnabledSetsKey, _enabledSetIds);
+
+        var sort = await _prefs.GetAsync(SortKey);
+        if (!string.IsNullOrWhiteSpace(sort))
         {
-            var players = await _js.InvokeAsync<string?>("localStorage.getItem", PlayersKey);
-            if (int.TryParse(players, out var p) && p is >= 1 and <= 5)
-                Players = p;
-
-            await LoadSetIdsAsync(OwnedSetsKey, _ownedSetIds);
-            await LoadSetIdsAsync(EnabledSetsKey, _enabledSetIds);
-
-            var sort = await _js.InvokeAsync<string?>("localStorage.getItem", SortKey);
-            if (!string.IsNullOrWhiteSpace(sort))
-            {
-                var parts = sort.Split(':');
-                if (Enum.TryParse<SetSort>(parts[0], ignoreCase: true, out var key)) Sort = key;
-                SortDescending = parts.Length > 1 && parts[1] == "desc";
-            }
-
-            var target = await _js.InvokeAsync<string?>("localStorage.getItem", TargetKey);
-            if (Enum.TryParse<DifficultyBand>(target, ignoreCase: true, out var band)) Target = band;
+            var parts = sort.Split(':');
+            if (Enum.TryParse<SetSort>(parts[0], ignoreCase: true, out var key)) Sort = key;
+            SortDescending = parts.Length > 1 && parts[1] == "desc";
         }
-        catch
-        {
-            // Local storage may be unavailable (private mode) — keep defaults.
-        }
+
+        if (Enum.TryParse<DifficultyBand>(await _prefs.GetAsync(TargetKey), ignoreCase: true, out var band))
+            Target = band;
 
         NotifyChanged();
     }
 
     private async Task LoadSetIdsAsync(string key, HashSet<string> target)
     {
-        var json = await _js.InvokeAsync<string?>("localStorage.getItem", key);
-        if (string.IsNullOrWhiteSpace(json)) return;
-        var ids = JsonSerializer.Deserialize<List<string>>(json);
-        if (ids is null) return;
+        var ids = await _prefs.GetListAsync(key);
+        if (ids is null) return; // never saved — keep the defaults
         target.Clear();
-        foreach (var id in ids.Where(id => _catalog.FindById(id) is not null))
+        foreach (var id in ids.Where(id => _sets.FindById(id) is not null))
             target.Add(id);
     }
 
@@ -125,7 +114,7 @@ public sealed class GameStateService
         players = Math.Clamp(players, 1, 5);
         if (players == Players) return;
         Players = players;
-        await PersistAsync(PlayersKey, Players.ToString());
+        await _prefs.SetAsync(PlayersKey, Players.ToString());
         NotifyChanged();
     }
 
@@ -135,32 +124,32 @@ public sealed class GameStateService
     /// </summary>
     public async Task SetOwnedAsync(string setId, bool owned)
     {
-        if (_catalog.FindById(setId) is null) return;
+        if (_sets.FindById(setId) is null) return;
 
         if (owned)
         {
             _ownedSetIds.Add(setId);
             _enabledSetIds.Add(setId);
-            await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
+            await _prefs.SetListAsync(EnabledSetsKey, _enabledSetIds);
         }
         else
         {
             _ownedSetIds.Remove(setId);
         }
 
-        await PersistAsync(OwnedSetsKey, Serialize(_ownedSetIds));
+        await _prefs.SetListAsync(OwnedSetsKey, _ownedSetIds);
         NotifyChanged();
     }
 
     /// <summary>Enable/disable a set for the next game (independent of ownership).</summary>
     public async Task SetEnabledAsync(string setId, bool enabled)
     {
-        if (_catalog.FindById(setId) is null) return;
+        if (_sets.FindById(setId) is null) return;
 
         if (enabled) _enabledSetIds.Add(setId);
         else _enabledSetIds.Remove(setId);
 
-        await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
+        await _prefs.SetListAsync(EnabledSetsKey, _enabledSetIds);
         NotifyChanged();
     }
 
@@ -168,8 +157,8 @@ public sealed class GameStateService
     public async Task SetAllEnabledAsync(bool enabled)
     {
         _enabledSetIds.Clear();
-        if (enabled) _enabledSetIds.UnionWith(_catalog.Sets.Select(s => s.Id));
-        await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
+        if (enabled) _enabledSetIds.UnionWith(_sets.Sets.Select(s => s.Id));
+        await _prefs.SetListAsync(EnabledSetsKey, _enabledSetIds);
         NotifyChanged();
     }
 
@@ -178,7 +167,7 @@ public sealed class GameStateService
     {
         if (enabled) _enabledSetIds.UnionWith(_ownedSetIds);
         else _enabledSetIds.ExceptWith(_ownedSetIds);
-        await PersistAsync(EnabledSetsKey, Serialize(_enabledSetIds));
+        await _prefs.SetListAsync(EnabledSetsKey, _enabledSetIds);
         NotifyChanged();
     }
 
@@ -186,14 +175,14 @@ public sealed class GameStateService
     {
         if (Sort == key) SortDescending = !SortDescending;
         else { Sort = key; SortDescending = false; }
-        await PersistAsync(SortKey, $"{Sort}:{(SortDescending ? "desc" : "asc")}".ToLowerInvariant());
+        await _prefs.SetAsync(SortKey, $"{Sort}:{(SortDescending ? "desc" : "asc")}".ToLowerInvariant());
         NotifyChanged();
     }
 
     public async Task SetTargetAsync(DifficultyBand? target)
     {
         Target = target;
-        await PersistAsync(TargetKey, target?.ToString() ?? "");
+        await _prefs.SetAsync(TargetKey, target?.ToString() ?? "");
         NotifyChanged();
     }
 
@@ -227,8 +216,8 @@ public sealed class GameStateService
 
     private static int BandDistance(GameSetup setup, DifficultyBand target)
     {
-        if (Threat.Score(setup) is not { } score) return 0; // unrated — accept anything
-        return Math.Abs((int)Threat.Band(score) - (int)target);
+        if (setup.Threat is not { } threat) return 0; // unrated — accept anything
+        return Math.Abs((int)threat.Band - (int)target);
     }
 
     public void Reroll(CardCategory category)
@@ -238,14 +227,6 @@ public sealed class GameStateService
         if (!pool.IsPlayable) return;
         Setup = _randomizer.Reroll(Setup, category, pool);
         NotifyChanged();
-    }
-
-    private static string Serialize(HashSet<string> ids) => JsonSerializer.Serialize(ids.ToList());
-
-    private async Task PersistAsync(string key, string value)
-    {
-        try { await _js.InvokeVoidAsync("localStorage.setItem", key, value); }
-        catch { /* ignore storage failures */ }
     }
 
     private void NotifyChanged() => OnChange?.Invoke();

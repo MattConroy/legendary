@@ -1,14 +1,15 @@
 using System.Net.Http.Json;
-using System.Text.Json;
+using Legendary.Companion.Abstractions;
 using Legendary.Companion.Models;
 
 namespace Legendary.Companion.Data;
 
 /// <summary>
-/// Loads the keyword glossary and the per-card keyword tags at runtime and caches
-/// them. Mirrors <see cref="SetCatalog"/>: content is data, not code.
+/// <see cref="IKeywordRepository"/> backed by <c>data/keywords.json</c> and
+/// <c>data/card-keywords.json</c>, fetched over HTTP at runtime and cached.
+/// Mirrors <see cref="HttpSetRepository"/>: content is data, not code.
 /// </summary>
-public sealed class KeywordCatalog
+public sealed class HttpKeywordRepository : IKeywordRepository
 {
     private const string KeywordsUrl = "data/keywords.json";
     private const string CardKeywordsUrl = "data/card-keywords.json";
@@ -18,9 +19,8 @@ public sealed class KeywordCatalog
     private IReadOnlyDictionary<string, Keyword> _byId = new Dictionary<string, Keyword>();
     private IReadOnlyDictionary<string, string[]> _cardKeywords = new Dictionary<string, string[]>();
 
-    public KeywordCatalog(HttpClient http) => _http = http;
+    public HttpKeywordRepository(HttpClient http) => _http = http;
 
-    /// <summary>All keywords, loaded once and cached.</summary>
     public IReadOnlyList<Keyword> Keywords => _keywords ?? [];
 
     public bool IsLoaded => _keywords is not null;
@@ -50,7 +50,6 @@ public sealed class KeywordCatalog
 
     public Keyword? ById(string id) => _byId.GetValueOrDefault(id);
 
-    /// <summary>The keywords appearing on the given cards, de-duplicated and ordered by name.</summary>
     public IReadOnlyList<Keyword> InPlay(IEnumerable<string> cardIds)
     {
         var ids = new HashSet<string>();
