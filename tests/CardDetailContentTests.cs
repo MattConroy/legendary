@@ -24,14 +24,20 @@ public class CardDetailContentTests
     public class Decks
     {
         [Fact]
-        public void Every_base_set_hero_has_a_fourteen_card_deck()
+        public void Every_hero_deck_totals_fourteen_cards()
         {
-            // The core heroes are the shipped increment; each hero deck is 14 cards.
-            foreach (var hero in Set("core").Heroes)
-            {
-                var deck = CardDetails[hero.Id];
+            // Every Legendary hero deck is 14 cards (transformed flip-sides excluded).
+            foreach (var (id, deck) in CardDetails)
                 Assert.Equal(14, deck.Sum(c => c.Copies));
-            }
+        }
+
+        [Fact]
+        public void Covers_every_hero_in_the_catalogue()
+        {
+            var heroIds = Sets.SelectMany(s => s.Heroes.Select(h => h.Id)).ToHashSet();
+            Assert.Equal(heroIds.Count, CardDetails.Count);
+            foreach (var id in heroIds)
+                Assert.Contains(id, CardDetails.Keys);
         }
 
         [Fact]

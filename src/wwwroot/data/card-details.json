@@ -512,5 +512,9916 @@
    "variable": true,
    "cost": 8
   }
+ ],
+ "dc:angel": [
+  {
+   "name": "Diving Catch",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "High-Speed Chase",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 3
+  },
+  {
+   "name": "Drop off a Friend",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Strength of Spirit",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "dc:bishop": [
+  {
+   "name": "Absorb Energies",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Whatever the Cost",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 2
+  },
+  {
+   "name": "Concussive Blast",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Firepower from the Future",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "dc:iceman": [
+  {
+   "name": "Deep Freeze",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Ice Slide",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Frost Spike Armor",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Impenetrable Ice Wall",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 7,
+   "cost": 8
+  }
+ ],
+ "dc:jean-grey": [
+  {
+   "name": "Psychic Search",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Read Your Thoughts",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Mind Over Matter",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Telekinetic Mastery",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "dc:nightcrawler": [
+  {
+   "name": "Bamf!",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Blend Into Shadows",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Swashbuckler",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Along for the Ride",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "dc:professor-x": [
+  {
+   "name": "Class Dismissed",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Psionic Astral Form",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Telepathic Probe",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Mind Control",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "dc:cable": [
+  {
+   "name": "Disaster Survivalist",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Strike at the Heart of Evil",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Rapid Response Force",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Army of One",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "dc:colossus": [
+  {
+   "name": "Draw Their Fire",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 1
+  },
+  {
+   "name": "Invulnerability",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Silent Statue",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Russian Heavy Tank",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "dc:domino": [
+  {
+   "name": "Lucky Break",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 1
+  },
+  {
+   "name": "Ready for Anything",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Specialized Ammunition",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Against All Odds",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "dc:forge": [
+  {
+   "name": "Dirty Work",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Reboot",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Overdrive",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "B.F.G.",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "dc:wolverine-xforce": [
+  {
+   "name": "Animal Instincts",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Sudden Ambush",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "No Mercy",
+   "copies": 3,
+   "class": "Strength",
+   "cost": 4
+  },
+  {
+   "name": "Reckless Abandon",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 7
+  }
+ ],
+ "dc:blade": [
+  {
+   "name": "Night Hunter",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Stalk the Prey",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Nowhere to Hide",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Vampiric Surge",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "dc:daredevil": [
+  {
+   "name": "Backflip",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Radar Sense",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Blind Justice",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "The Man Without Fear",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 7,
+   "cost": 8
+  }
+ ],
+ "dc:elektra": [
+  {
+   "name": "First Strike",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 1
+  },
+  {
+   "name": "Ninjitsu",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Sai Blades",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Silent Meditation",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "dc:ghost-rider": [
+  {
+   "name": "Blazing Hellfire",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Hell on Wheels",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Infernal Chains",
+   "copies": 3,
+   "class": "Strength",
+   "cost": 2
+  },
+  {
+   "name": "Penance Stare",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "dc:iron-fist": [
+  {
+   "name": "Focus Chi",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Wield the Iron Fist",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Ancient Legacy",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 1
+  },
+  {
+   "name": "Living Weapon",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 8,
+   "cost": 9
+  }
+ ],
+ "dc:punisher": [
+  {
+   "name": "Boom Goes the Dynamite",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 2
+  },
+  {
+   "name": "Hail of Bullets",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Hostile Interrogation",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "The Punisher",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "ff:mister-fantastic": [
+  {
+   "name": "Twisting Equations",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Unstable Molecules",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 5
+  },
+  {
+   "name": "One Gigantic Hand",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Ultimate Nullifier",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "ff:invisible-woman": [
+  {
+   "name": "Disappearing Act",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Four of a Kind",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Unseen Rescue",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Invisible Barrier",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "ff:human-torch": [
+  {
+   "name": "Call for Backup",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Hothead",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "cost": 4
+  },
+  {
+   "name": "Flame On!",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Nova Flame",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 6,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "ff:thing": [
+  {
+   "name": "It Started on Yancy Street",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Knuckle Sandwich",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Crime Stopper",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "It's Clobberin' Time!",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "ff:silver-surfer": [
+  {
+   "name": "Epic Destiny",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Warp Speed",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "The Power Cosmic",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Energy Surge",
+   "copies": 1,
+   "class": "Ranged",
+   "cost": 7
+  }
+ ],
+ "gotg:drax": [
+  {
+   "name": "Knives of the Hunter",
+   "copies": 5,
+   "class": "Strength",
+   "cost": 3
+  },
+  {
+   "name": "Interstellar Tracker",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "The Destroyer",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Avatar of Destruction",
+   "copies": 1,
+   "class": "Instinct",
+   "cost": 7
+  }
+ ],
+ "gotg:gamora": [
+  {
+   "name": "Bounty Hunter",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 2
+  },
+  {
+   "name": "Deadliest Woman in the Universe",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 3
+  },
+  {
+   "name": "Galactic Assassin",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Godslayer Blade",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 8
+  }
+ ],
+ "gotg:groot": [
+  {
+   "name": "Prune the Growths",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Surviving Sprig",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Groot and Branches",
+   "copies": 3,
+   "class": "Covert",
+   "cost": 4
+  },
+  {
+   "name": "I Am Groot",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "gotg:rocket-raccoon": [
+  {
+   "name": "Gritty Scavenger",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Trigger Happy",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Incoming Detector",
+   "copies": 3,
+   "class": "Instinct",
+   "cost": 4
+  },
+  {
+   "name": "Vengeance is Rocket",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "gotg:star-lord": [
+  {
+   "name": "Element Guns",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 4
+  },
+  {
+   "name": "Legendary Outlaw",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Implanted Memory Chip",
+   "copies": 3,
+   "class": "Tech",
+   "cost": 6
+  },
+  {
+   "name": "Sentient Starship",
+   "copies": 1,
+   "class": "Ranged",
+   "cost": 8
+  }
+ ],
+ "ptr:black-cat": [
+  {
+   "name": "Casual Bank Robbery",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Pickpocket",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 1
+  },
+  {
+   "name": "Jinx",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Cat Burglar",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "ptr:scarlet-spider": [
+  {
+   "name": "Flip Out",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Perfect Hunter",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Leap from Above",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Sting of the Spider",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "ptr:spider-woman": [
+  {
+   "name": "Bioelectric Shock",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Radioactive Spider",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 2
+  },
+  {
+   "name": "Venom Blast",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Arachno-Pheromones",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 7
+  }
+ ],
+ "ptr:symbiote-spider-man": [
+  {
+   "name": "Dark Strength",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Spider-Sense Tingling",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 2
+  },
+  {
+   "name": "Shadowed Spider",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Thwip!",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "cost": 2
+  }
+ ],
+ "ptr:moon-knight": [
+  {
+   "name": "Climbing Claws",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Lunar Communion",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Crescent Moon Darts",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Golden Ankh of Khonshu",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "villains:dr-octopus": [
+  {
+   "name": "Brilliant Research",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Crazed Experiments",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Eighth Time's a Charm",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Octo-Pulverize",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "villains:electro": [
+  {
+   "name": "Electroshock Therapy",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 2
+  },
+  {
+   "name": "Shocking Robbery",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Supercharge",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Anti-Matter",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "villains:green-goblin": [
+  {
+   "name": "Goblin Glider",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Pumpkin Bombs",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Unstable Kidnapper",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Experimental Goblin Serum",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "villains:kraven": [
+  {
+   "name": "Ceaseless Tracker",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Corner the Prey",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Hunt Down",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "He's the Best Around",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "villains:mysterio": [
+  {
+   "name": "Psychedelic Mist",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Shifting Decoy",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Holographic Illusion",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "False Reflection",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "villains:venom": [
+  {
+   "name": "Devour",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Symbiote Takeover",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Horrify the Populace",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Ravenous Greed",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "villains:juggernaut": [
+  {
+   "name": "Crimson Gem of Cyttorak",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Size Matters",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Runaway Train",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 5
+  },
+  {
+   "name": "Unstoppable Force",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "villains:magneto": [
+  {
+   "name": "Magnetic Levitation",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Mutants Will Rule",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Weapons from Scrap Metal",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Master of Magnetism",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "villains:mystique": [
+  {
+   "name": "Hidden Weapons",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Show Your True Colors",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Turn the Tide",
+   "copies": 3,
+   "class": "Instinct",
+   "cost": 4
+  },
+  {
+   "name": "Spy Games",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "villains:sabretooth": [
+  {
+   "name": "Leap of the Tiger",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Take One for the Team",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Stealthy Predator",
+   "copies": 3,
+   "class": "Covert",
+   "cost": 2
+  },
+  {
+   "name": "Upper Hand",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "villains:enchantress": [
+  {
+   "name": "Enchant the Senses",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Soul Sacrifice",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Irresistible Bribe",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Unending Anguish",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 7
+  }
+ ],
+ "villains:loki": [
+  {
+   "name": "All Humans Are Expendable",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Illusionary Bindings",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Father of Lies",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "God of Mischief",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "villains:bullseye": [
+  {
+   "name": "Everything's a Weapon",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Fulfill the Contract",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Specialist Assassin",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Perfect Aim",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "villains:kingpin": [
+  {
+   "name": "Pull the Strings",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 3
+  },
+  {
+   "name": "Recruitment Day",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Import Illegal Weapons",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Endless Underlings",
+   "copies": 1,
+   "class": "Strength",
+   "cost": 8
+  }
+ ],
+ "villains:ultron": [
+  {
+   "name": "Army of Ultrons",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Encephalo-Ray",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Genetic Experimentation",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Molecular Rearrangement",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "sw1:apocalyptic-kitty-pryde": [
+  {
+   "name": "Phase Out",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Infiltrate HQ",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Disrupt Circuits",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Untouchable",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "sw1:black-bolt": [
+  {
+   "name": "Destructive Whisper",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Speak No Words",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Silence is Golden",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Hypersonic Scream",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "cost": 8
+  }
+ ],
+ "sw1:black-panther": [
+  {
+   "name": "Catlike Reflexes",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Multifaceted Genius",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Stalk the Urban Jungle",
+   "copies": 3,
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "King of Wakanda",
+   "copies": 1,
+   "cost": 7
+  }
+ ],
+ "sw1:captain-marvel": [
+  {
+   "name": "Absorb Energies",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Supersonic Flight",
+   "copies": 5,
+   "kind": "attack",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Marvelous Strength",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Cosmic Energies",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "sw1:dr-strange": [
+  {
+   "name": "Cloak of Levitation",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Trust Me, I'm a Doctor",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Fight the Future",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Sorcerer Supreme",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 7
+  }
+ ],
+ "sw1:lady-thor": [
+  {
+   "name": "Mysterious Origin",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Chosen by Asgard",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Heir to the Hammer",
+   "copies": 3,
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Living Thunderstorm",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "sw1:magik": [
+  {
+   "name": "Rally the New Mutants",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 2
+  },
+  {
+   "name": "Travel through Limbo",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Dimensional Portal",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Wield the Soulsword",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "sw1:maximus": [
+  {
+   "name": "Mental Domination",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Enslave the Will",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Pieces on a Chessboard",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Inhuman Mastery",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "sw1:namor-the-sub-mariner": [
+  {
+   "name": "Lead the Armies of Atlantis",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Ruler of the Seas",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Feed the Sharks",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "Imperius Rex",
+   "copies": 1,
+   "class": "Strength",
+   "cost": 7
+  }
+ ],
+ "sw1:old-man-logan": [
+  {
+   "name": "Last Survivor",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Loner",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Rage Out",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "No More Heroes",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "sw1:proxima-midnight": [
+  {
+   "name": "Inspiration Through Power",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Master Combatant",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "General of the Black Order",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Supernova Spear",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "sw1:superior-iron-man": [
+  {
+   "name": "Armor Upgrades",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Optimized Technology",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Superior to Others",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "#Humblebrag",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "sw1:thanos": [
+  {
+   "name": "Revel in Destruction",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Transdimensional Overlord",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Galactic Domination",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Utter Annihilation",
+   "copies": 1,
+   "class": "Ranged",
+   "cost": 8
+  }
+ ],
+ "sw1:ultimate-spider-man": [
+  {
+   "name": "Marvel Team-Up",
+   "copies": 5,
+   "cost": 2
+  },
+  {
+   "name": "Leaping Spider",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Web-Slinger",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Hero from Another Dimension",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  }
+ ],
+ "sw2:agent-venom": [
+  {
+   "name": "Multi-Gun",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Government Payroll",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Big Slimeportunity",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "Shapeshifting Symbiote",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "sw2:arkon-the-magnificent": [
+  {
+   "name": "All-Terrain Barbarian",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Quiver of Thunderbolts",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Warlord of Open Spaces",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Lord of Dragons",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "sw2:beast": [
+  {
+   "name": "Balanced Attack",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Upside-down Thinking",
+   "copies": 5,
+   "cost": 4
+  },
+  {
+   "name": "Doctor of Beatdown",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Multi-Variable Smackulus",
+   "copies": 1,
+   "kind": "attack",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "sw2:black-swan": [
+  {
+   "name": "Apocalyptic Vision",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Witness the End",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Dark Foretelling",
+   "copies": 3,
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Telepathic Control",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "sw2:the-captain-and-the-devil": [
+  {
+   "name": "Jurassic America",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Patriotic Chomp",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Feeding Grounds",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Dino-Roar of Triumph",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "sw2:captain-britain": [
+  {
+   "name": "Combined Strength",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Transatlantic Savior",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Raise the Union Jack",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Lead the Captain Britain Corps",
+   "copies": 1,
+   "class": "Strength",
+   "cost": 7
+  }
+ ],
+ "sw2:corvus-glaive": [
+  {
+   "name": "Culling Blade",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Let None Escape You",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Rictus Grin",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Atom-Splitting Glaive",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 6,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "sw2:dr-punisher-soldier-supreme": [
+  {
+   "name": "Sweep the Streets of Trash",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "You're a Slow Learner",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Ice Magic",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Calm Before the Storm",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "sw2:elsa-bloodstone": [
+  {
+   "name": "Bloodstone Pendant",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Monster Hunter",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Defend the S.H.I.E.L.D. Wall",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Prodigy of Ulysses Bloodstone",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 6,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "sw2:phoenix-force-cyclops": [
+  {
+   "name": "Burn Out",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Reincarnate",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 3
+  },
+  {
+   "name": "Rise from the Ashes",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Destruction Is Creation",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "sw2:ruby-summers": [
+  {
+   "name": "Guerrilla Warfare",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Heir to Legends",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Form of Solid Ruby",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Extinction Blast",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 10,
+   "cost": 8
+  }
+ ],
+ "sw2:shang-chi": [
+  {
+   "name": "Shuffling Footwork",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Acrobatic Kung-Fu",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Seek the Empty Mind",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Muscle Memory",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "sw2:silk": [
+  {
+   "name": "Long-Range Spider-Sense",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 2
+  },
+  {
+   "name": "Cascading Maneuver",
+   "copies": 5,
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Silk Stalking",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Borrowed Cloaking Device",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  }
+ ],
+ "sw2:soulsword-colossus": [
+  {
+   "name": "Invade the Inferno",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Steel Interception",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Possessed by the Soulsword",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Rescue My Family from Hell",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "sw2:spider-gwen": [
+  {
+   "name": "Fateful Bridge",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 2
+  },
+  {
+   "name": "Save the Day",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "First Adventure",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Intertwining Webs",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  }
+ ],
+ "sw2:time-traveling-jean-grey": [
+  {
+   "name": "Throw Over the Railing",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Bridge to a Better Future",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 4
+  },
+  {
+   "name": "Telekinesis",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Change History",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "fi:greithoth": [
+  {
+   "name": "Mace of Chains",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 3
+  },
+  {
+   "name": "Absorb Metal",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Break the Will to Resist",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Body of Uru",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "fi:kuurth": [
+  {
+   "name": "Unstoppable Sledge",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 4
+  },
+  {
+   "name": "Reach for Power",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Contest of Strength",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Break Every Bone",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "fi:nerkkod": [
+  {
+   "name": "Pull of the Tides",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Feed My Undersea Legions",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Cudgel of the Deep",
+   "copies": 3,
+   "class": "Ranged",
+   "cost": 5
+  },
+  {
+   "name": "Break Their Loyalties",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "fi:nul": [
+  {
+   "name": "Demolition Derby",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Otherworldly Maul",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 4
+  },
+  {
+   "name": "Nul Smash!",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Break the World",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "fi:skirn": [
+  {
+   "name": "Towering Leader",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 3
+  },
+  {
+   "name": "Underhanded Dealings",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Titanic Bludgeon",
+   "copies": 3,
+   "class": "Ranged",
+   "cost": 2
+  },
+  {
+   "name": "Break Your Hopes",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "fi:skadi": [
+  {
+   "name": "Dark Prophecy",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Ancient Oath of HYDRA",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "cost": 5
+  },
+  {
+   "name": "Hammer of the Serpent",
+   "copies": 3,
+   "class": "Strength",
+   "cost": 5
+  },
+  {
+   "name": "War Banner of HYDRA",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 7
+  }
+ ],
+ "cap:agent-x-13": [
+  {
+   "name": "Sniper Squad",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Paramilitary Ops",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Spy Network",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Mobilize for War",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "cap:captain-america-falcon": [
+  {
+   "name": "Aerial Catch",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Winged Salvation",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Flying Shield Block",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Star-Spangled Hero",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "cap:captain-america-1941": [
+  {
+   "name": "Devoted Patriot",
+   "copies": 5,
+   "class": "Strength",
+   "cost": 3
+  },
+  {
+   "name": "Storm the Beachhead",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Liberate the Prisoners",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Punch Evil in the Face",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "cap:steve-rogers-director-of-s-h-i-e-l-d": [
+  {
+   "name": "International Strike Force",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Reassign to Civilian Duty",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Shadow of Wars Past",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Save the World",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "cap:winter-soldier": [
+  {
+   "name": "Bionic Arm",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Sniper Nest",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "KGB Training",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "2>4",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "cw:captain-america-secret-avenger": [
+  {
+   "name": "Bold Leadership",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Inspire a Nation/Inspire a Man",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Secret Avengers Assemble!",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Freedom Never Dies",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "cw:cloak-dagger": [
+  {
+   "name": "Above/Below",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Flee/Fight",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Darkness/Light",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Penumbra",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "cw:daredevil": [
+  {
+   "name": "Dual Existence",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 2
+  },
+  {
+   "name": "Roundhouse Side Kick",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Hidden Identity/Revealed Identity",
+   "copies": 3,
+   "kind": "recruit",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Master of Martial Arts",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "cw:falcon": [
+  {
+   "name": "Rapid Reinforcements",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Talk with Birds/Squawk Back",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Scout the Battlefield",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Fly in a Friend",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "cw:goliath": [
+  {
+   "name": "Brilliant Biochemist/Massive Warrior",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Growth Industry",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Being Big is Best",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Enormous Implications",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "cw:hercules": [
+  {
+   "name": "Crowd Favorite",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Manly Dullard/Boy Genius",
+   "copies": 5,
+   "kind": "attack",
+   "value": 3,
+   "cost": 3
+  },
+  {
+   "name": "Prince of Power",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Son of Zeus",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "cw:hulkling": [
+  {
+   "name": "Cellular Regeneration",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Half-Kree/Half-Skrull",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 3,
+   "cost": 4
+  },
+  {
+   "name": "Impersonate",
+   "copies": 3,
+   "class": "Covert",
+   "cost": 6
+  },
+  {
+   "name": "Enormous Shapeshifter",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "cw:luke-cage": [
+  {
+   "name": "Take a Bullet for the Team",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Cautious/Reckless",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Sweet Christmas",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Unbreakable Skin",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "cw:patriot": [
+  {
+   "name": "Intuitive Tactician",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "New Generation of Heroes",
+   "copies": 5,
+   "class": "Strength",
+   "cost": 2
+  },
+  {
+   "name": "Incredible Effort/Effortless",
+   "copies": 3,
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Lead the Young Avengers",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 8
+  }
+ ],
+ "cw:peter-parker": [
+  {
+   "name": "Conflicted Loyalties",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Spider-Man Unmasked",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Protect My Family/Hot Bowl of Soup",
+   "copies": 3,
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Reluctant Celebrity",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 2
+  }
+ ],
+ "cw:speedball": [
+  {
+   "name": "Bounce Around",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Reckless Rescue Attempt",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Double Down/Bubble Up",
+   "copies": 3,
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Kinetic Force Field",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "cw:stature": [
+  {
+   "name": "Shrink to Nothing",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Crush Ants/Crush File Sizes",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Growing Confidence",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Trample the Tiny",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "cw:storm-black-panther": [
+  {
+   "name": "Gathering Rain Clouds/Gathering Clues",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Lightning Strike/Pouncing Strike",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Tsunami of Water/Tsunami of Justice",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "King & Queen of Wakanda",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "cw:tigra": [
+  {
+   "name": "Friendship/Ferocity",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Supernatural Senses",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Can't Surprise a Cat",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Mystic Talisman",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "cw:vision": [
+  {
+   "name": "Solar Energy",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Through Solid Objects",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Lighter than Air/Harder than Diamond",
+   "copies": 3,
+   "kind": "recruit",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Insubstantial Accomplishments",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "cw:wiccan": [
+  {
+   "name": "Astral Projection",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Sorcerous Illusions",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Supersonic Spells/Supersonic Speed",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Clairvoyance",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "cost": 7
+  }
+ ],
+ "dp:bob-agent-of-hydra": [
+  {
+   "name": "Bullets Flying, Bob Hiding",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 3
+  },
+  {
+   "name": "HYDRA Half-Wit",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 2
+  },
+  {
+   "name": "How Do I Get Out of Here??",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Epic Middle Manager",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "dp:deadpool": [
+  {
+   "name": "It'll Grow Back",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 4
+  },
+  {
+   "name": "Nighttime Is the Right Time",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Running Commentary",
+   "copies": 3,
+   "class": "Covert",
+   "cost": 5
+  },
+  {
+   "name": "Deadpool Rage!",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "dp:slapstick": [
+  {
+   "name": "Napoleon Complex",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Saturday Morning Harpoons",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 3
+  },
+  {
+   "name": "Surprise Chainsaw",
+   "copies": 3,
+   "class": "Strength",
+   "cost": 6
+  },
+  {
+   "name": "Electroplasmic Insanity",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "dp:solo": [
+  {
+   "name": "Half-Cocked",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 2
+  },
+  {
+   "name": "Merc's Gotta Get Paid",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Guns on My Guns",
+   "copies": 3,
+   "class": "Tech",
+   "cost": 5
+  },
+  {
+   "name": "Cut in Half",
+   "copies": 1,
+   "class": "Instinct",
+   "cost": 7
+  }
+ ],
+ "dp:stingray": [
+  {
+   "name": "Deck Chairs on the Titanic",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 4
+  },
+  {
+   "name": "Superpowered Swimsuit",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 2
+  },
+  {
+   "name": "Sting of the Stingray's Sting",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "PhD in Oceanography",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "noir:angel-noir": [
+  {
+   "name": "Impetuous Dive",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Multitalented",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Identical Twin Brother",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Missing Person Case",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 8
+  }
+ ],
+ "noir:daredevil-noir": [
+  {
+   "name": "Balancing Act",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Listen for Heartbeats",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Discover the Bodies",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Hitting Rock Bottom",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "noir:iron-man-noir": [
+  {
+   "name": "Steam-Powered Arsenal",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "cost": 3
+  },
+  {
+   "name": "Mechanized Plate-Mail",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Learn from Enemies",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Adventurers Assemble!",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "noir:luke-cage-noir": [
+  {
+   "name": "Private Investigations",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Follow Big Leads",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Unbreakable Cage",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Weight of the World",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "noir:spider-man-noir": [
+  {
+   "name": "Gumshoe's Revolver",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Webs of Darkness",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Solve the Crime",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 2
+  },
+  {
+   "name": "Spider-Totem's Chosen",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  }
+ ],
+ "xm:aurora-northstar": [
+  {
+   "name": "Northern Lights",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Blazing Flare/Blazing Fists",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Twin Blast",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Mach 10",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "xm:banshee": [
+  {
+   "name": "Sonar Detection",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 2
+  },
+  {
+   "name": "Speed of Sound",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 3
+  },
+  {
+   "name": "Sonic Blastwave",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Bone-Shattering Howl",
+   "copies": 1,
+   "class": "Ranged",
+   "cost": 8
+  }
+ ],
+ "xm:beast": [
+  {
+   "name": "Captivating Conundrum",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Furry Fury",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Calculated Rage",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Recursive Pummeling",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "xm:cannonball": [
+  {
+   "name": "Kinetic Blast Field",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Carry to the Air",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Natural Leader",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Human Cannon",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "xm:colossus-wolverine": [
+  {
+   "name": "Reliable/Unpredictable",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Fastball Special",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Insane Disregard for Danger",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Uncanny X-Men",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "xm:dazzler": [
+  {
+   "name": "Convert Sound to Light",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Dazzling Glamour",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "City-Wide Mega Concert",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Inspire the World",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "xm:havok": [
+  {
+   "name": "Blinding Burst",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Unleash Havok",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Concussive Plasma",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Radiation Focus Array",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "xm:jubilee": [
+  {
+   "name": "Light a Spark",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Blasting Fireworks",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Unexpected Explosion",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Prismatic Cascade",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "xm:kitty-pryde": [
+  {
+   "name": "Intangible Qualities",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Going through a Phase",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Ghost in the Machine",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Lockheed, Kitty's Dragon",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "xm:legion": [
+  {
+   "name": "Bend Steel/Bend Light",
+   "copies": 5,
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Split Personality/Split Eardrums",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Channel Time/Channel Fire",
+   "copies": 3,
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Maelstrom of Clashing Powers",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "xm:longshot": [
+  {
+   "name": "Fortune Favors the Bold",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 3
+  },
+  {
+   "name": "Flurry of Blades",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Make My Own Luck",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Escape from Mojo World",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "xm:phoenix": [
+  {
+   "name": "Life & Death Incarnate",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 3
+  },
+  {
+   "name": "Obliterating Fire",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 4
+  },
+  {
+   "name": "Reincarnating Phoenix",
+   "copies": 3,
+   "class": "Covert",
+   "cost": 6
+  },
+  {
+   "name": "Driven Mad by Power",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 6,
+   "variable": true,
+   "cost": 9
+  }
+ ],
+ "xm:polaris": [
+  {
+   "name": "Ride the Magnetic Waves",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Electromagnetic Pulse",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 4
+  },
+  {
+   "name": "Subtle Attunement",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "Reverse Polarity",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "xm:psylocke": [
+  {
+   "name": "Psychic Knife",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 2
+  },
+  {
+   "name": "Precognition",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Butterfly Effect",
+   "copies": 3,
+   "class": "Covert",
+   "cost": 5
+  },
+  {
+   "name": "Telepathic Ninjutsu",
+   "copies": 1,
+   "class": "Instinct",
+   "cost": 7
+  }
+ ],
+ "xm:x-23": [
+  {
+   "name": "Adamantium Footclaws",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Healing Factor Genome",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Bioengineered Assassin",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Heir to Wolverine",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "smh:happy-hogan": [
+  {
+   "name": "Head of Security",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Watchful Eye",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Loyal Friend",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Asset Management",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  }
+ ],
+ "smh:high-tech-spider-man": [
+  {
+   "name": "Advanced Targeting System",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 2
+  },
+  {
+   "name": "Recon Drone Connection",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Spider-Grip",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 2
+  },
+  {
+   "name": "Friendly Neighborhood ...",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  }
+ ],
+ "smh:peter-s-allies": [
+  {
+   "name": "Michelle",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Ned",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Liz",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "May Parker",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "smh:peter-parker-homecoming": [
+  {
+   "name": "Avenger in Training",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Heightened Senses",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 2
+  },
+  {
+   "name": "Homemade Web-Shooters",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Something is Happening",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  }
+ ],
+ "smh:tony-stark": [
+  {
+   "name": "Genius, Billionaire ...",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Stay Out of Trouble",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Little Grey Area",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "As Usual, I Did All the Work",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "champ:gwenpool": [
+  {
+   "name": "Come On, Nobody Reads Card Names",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "I'll Rescue You If I Feel Like It",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "I Heard Keywords Are Powerful",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "I'm the Best at Board Games",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "champ:ms-marvel": [
+  {
+   "name": "Long Arm of the Law",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 3
+  },
+  {
+   "name": "Big Impact",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Need to Stretch My Legs",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "Rising Hope",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 9
+  }
+ ],
+ "champ:nova": [
+  {
+   "name": "Space Cop",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Interstellar Hero",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Holographic Projection",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Growing Nova Force",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 9
+  }
+ ],
+ "champ:totally-awesome-hulk": [
+  {
+   "name": "Beloved Behemoth",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Incredible Mind, Awesome Body",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Growing Pains",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "7th Smartest Man in the World",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 9
+  }
+ ],
+ "champ:viv-vision": [
+  {
+   "name": "Walking Wi-Fi",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Expanding Neural Network",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Crowdsourcing",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Alter Molecular Density",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 5,
+   "cost": 9
+  }
+ ],
+ "wwh:amadeus-cho": [
+  {
+   "name": "Extrapolate",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Gamma-Draining Nanites",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 3
+  },
+  {
+   "name": "Renegade Genius",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Visualize the Variables",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "wwh:bruce-banner": [
+  {
+   "name": "Solve the Impossible",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Gamma Bomb Disaster",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Dangerous Testing",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Gamma Ray Experiment",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "wwh:caiera": [
+  {
+   "name": "Shadow Queen",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Shadowforged Blade",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Focus The Old Power",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "Dutiful Protector",
+   "copies": 1,
+   "class": "Instinct",
+   "cost": 7
+  }
+ ],
+ "wwh:gladiator-hulk": [
+  {
+   "name": "Don't Make Me Angry",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Seize The Throne",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "The Green Scar",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Double-Fisted Smashing",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wwh:hiroim": [
+  {
+   "name": "Seek Redemption",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Save from the Rubble",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Mystic Shadow Priest",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "Blade of the People",
+   "copies": 1,
+   "class": "Instinct",
+   "cost": 7
+  }
+ ],
+ "wwh:hulkbuster-iron-man": [
+  {
+   "name": "Pound for Pound",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Attune Techtonic Transducer",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Build the Suit",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Final Battle",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wwh:joe-fixit-grey-hulk": [
+  {
+   "name": "Carefully Considered Smashing",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Threaten And Bribe",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Ambitious Enforcer",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Hulk Runs This Town",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "wwh:korg": [
+  {
+   "name": "Nothing Beats Rock",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Move Mountains",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Forged by Fire",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Kronan Tactician",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wwh:miek-the-unhived": [
+  {
+   "name": "This Bug Smashes You",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Devouring Frenzy",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Endless Appetite",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Metamorphosis",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "wwh:namora": [
+  {
+   "name": "Crushing Tsunami",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Heart of the Ocean",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Herculean Effort",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Turning The Tide",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "wwh:no-name-brood-queen": [
+  {
+   "name": "Surprise Attack",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Appetite for Destruction",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Bursting with Life",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "World Spanning Hunger",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wwh:rick-jones": [
+  {
+   "name": "Hacktivist",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Seek the Nega-Bands",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Irradiated Blood",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Caught in Kree-Skrull War",
+   "copies": 1,
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "wwh:sentry": [
+  {
+   "name": "Agoraphobia",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 2
+  },
+  {
+   "name": "Rival Personalities",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Mournful Sentinel",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Vast Unstable Power",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wwh:she-hulk": [
+  {
+   "name": "Hurl Legal Objections",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Window of Opportunity",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Radioactive Riot",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Jade Giantess",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "wwh:skaar-son-of-hulk": [
+  {
+   "name": "Anger Management",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Scarred Past",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Mood Swings",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Planetary-Level Revenge",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "msp1:black-widow": [
+  {
+   "name": "Dangerous Rescue",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Mission Accomplished",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 2
+  },
+  {
+   "name": "Covert Operation",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Silent Sniper",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "msp1:captain-america": [
+  {
+   "name": "Avengers Assemble!",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Perfect Teamwork",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Diving Block",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "A Day Unlike Any Other",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "msp1:hawkeye": [
+  {
+   "name": "Quick Draw",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Team Player",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Covering Fire",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Impossible Trick Shot",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "msp1:hulk": [
+  {
+   "name": "Growing Anger",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Unstoppable Hulk",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Crazed Rampage",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 5
+  },
+  {
+   "name": "Hulk Smash!",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "msp1:iron-man": [
+  {
+   "name": "Endless Invention",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 3
+  },
+  {
+   "name": "Repulsor Rays",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Arc Reactor",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Quantum Breakthrough",
+   "copies": 1,
+   "class": "Tech",
+   "cost": 7
+  }
+ ],
+ "msp1:nick-fury": [
+  {
+   "name": "Battlefield Promotion",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 4
+  },
+  {
+   "name": "High-Tech Weaponry",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Legendary Commander",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Pure Fury",
+   "copies": 1,
+   "class": "Tech",
+   "cost": 8
+  }
+ ],
+ "msp1:thor": [
+  {
+   "name": "Odinson",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Surge of Power",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Call Lightning",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "God of Thunder",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "am:ant-man": [
+  {
+   "name": "Ride the Ants",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Risky Science",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Giant Ego",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Pym Particles",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "cost": 9
+  }
+ ],
+ "am:wasp": [
+  {
+   "name": "Bio-Electric Sting",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Tiny Winged Justice",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Swarm Tactics",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Founding Avenger",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 9
+  }
+ ],
+ "am:jocasta": [
+  {
+   "name": "Creation of Ultron",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Reprocess",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Holographic Image Inducer",
+   "copies": 3,
+   "class": "Tech",
+   "cost": 6
+  },
+  {
+   "name": "Electromagnetic Eyebeams",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "am:wonder-man": [
+  {
+   "name": "One-Hit Wonder",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Ionic Energy",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Absorb Ambient Power",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "8th Wonder of the World",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "am:black-knight": [
+  {
+   "name": "Amulet of Avalon",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Defend the Weak",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Flying Steed",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "The Ebony Blade",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "venom:carnage": [
+  {
+   "name": "Rending Claws",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Carnivore",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Gruesome Feast",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Feast or Famine",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "venom:venom": [
+  {
+   "name": "Devouring Drool",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Razor Teeth",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Symbiotic Adaptation",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Insatiable Hunger",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "venom:venom-rocket": [
+  {
+   "name": "Hungry for Action",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Spring the Trap",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Serious Overkill",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Ultimate Survivor",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "venom:venomized-dr-strange": [
+  {
+   "name": "Cauldron of the Cosmos",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "See Future Timelines",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Complete the Grand Ritual",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Crystal of Kadavus",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "venom:venompool": [
+  {
+   "name": "Digest That Chimichanga",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Shenanigans",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 3
+  },
+  {
+   "name": "Can I Get a Little Gratitude",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Play to the Crowd",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "dim:howard-the-duck": [
+  {
+   "name": "Traveling Companion",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Rebel Without a Cause",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Right Place, Wrong Time",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Interplanetary Visitor",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "dim:jessica-jones": [
+  {
+   "name": "Alter Ego",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Alias Investigations",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Crack the Case",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Uncover Hidden Evil",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "dim:man-thing": [
+  {
+   "name": "Form from Ooze",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Burn the Fearful",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Travel the Nexus of Realities",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Eternity of Solitude",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "dim:ms-america": [
+  {
+   "name": "Star Power",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Search Parallel Dimensions",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Kick a Hole in Reality",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Hyper-Cosmic Awareness",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "dim:squirrel-girl": [
+  {
+   "name": "Find Tiny Friends",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 2
+  },
+  {
+   "name": "Nut Punch",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Squirrelgility",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Unbeatable Squirrel Girl",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "rev:captain-marvel-agent-of-s-h-i-e-l-d": [
+  {
+   "name": "The Sword of S.H.I.E.L.D.",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Radiant Blast",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Dominate the Battlefield",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Higher, Further, Faster",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "rev:darkhawk": [
+  {
+   "name": "Balance the Darkforce",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Hawk Dive",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Travel to Nullspace",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Warflight",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "rev:hellcat": [
+  {
+   "name": "Catlike Agility",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Part-Time PI",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Demon Sight",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Second Chance at Life",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "rev:photon": [
+  {
+   "name": "Infrared Conversation",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 3
+  },
+  {
+   "name": "Ultraviolet Radiation",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Light the Way",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Coruscating Vengeance",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 6,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "rev:quicksilver": [
+  {
+   "name": "Too Fast to See",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Perpetual Motion",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Jittery Impatience",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "Around the World Punch",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "rev:ronin": [
+  {
+   "name": "Mysterious Identity",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Storm of Arrows",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Haunted by Loss",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Brooding Fury",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "rev:scarlet-witch": [
+  {
+   "name": "Hex Bolt",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Alter Reality",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Chaos Magic",
+   "copies": 3,
+   "class": "Covert",
+   "cost": 4
+  },
+  {
+   "name": "Warp Time and Space",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "rev:speed": [
+  {
+   "name": "Accelerate",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Speedy Delivery",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Race to the Rescue",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Break the Sound Barrier",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "rev:war-machine": [
+  {
+   "name": "Simulated Target Practice",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Military-Industrial Complex",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Hypersonic Cannon",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Overwhelming Firepower",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "shl:agent-phil-coulson": [
+  {
+   "name": "Impeccable Planning",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Build the Strike Team",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Approve Orbital Strike",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Fake But Inspiring Death",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "shl:quake": [
+  {
+   "name": "Going Underground",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 3
+  },
+  {
+   "name": "Aftershock",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Tectonic Wave",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Roil the Earth",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "shl:deathlok": [
+  {
+   "name": "Authorize Lethal Force",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Reanimate Into Service",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Headlok",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Behind Enemy Lines",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "shl:mockingbird": [
+  {
+   "name": "Take Cover",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Battle Staves",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Spymaster",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Infinity Formula",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "hoa:thor": [
+  {
+   "name": "Test of Virtue",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Divine Lightning",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Mjolnir",
+   "copies": 3,
+   "class": "Strength",
+   "cost": 4
+  },
+  {
+   "name": "Royal Decree",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "hoa:beta-ray-bill": [
+  {
+   "name": "Hope of the Korbinites",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 1
+  },
+  {
+   "name": "Bio-Engineered Cyborg",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Stormbreaker",
+   "copies": 3,
+   "class": "Ranged",
+   "cost": 4
+  },
+  {
+   "name": "The Warship Skuttlebutt",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "hoa:valkyrie": [
+  {
+   "name": "Dragonfang",
+   "copies": 5,
+   "class": "Strength",
+   "cost": 3
+  },
+  {
+   "name": "Flying Stallion",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Usher to Valhalla",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Ride of the Valkyries",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "hoa:lady-sif": [
+  {
+   "name": "Dimensional Blade",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 2
+  },
+  {
+   "name": "Weapons Master",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Winged Helm",
+   "copies": 3,
+   "class": "Strength",
+   "cost": 3
+  },
+  {
+   "name": "Golden Apples of Idunn",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 7
+  }
+ ],
+ "hoa:the-warriors-three": [
+  {
+   "name": "Fandral the Dashing",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Hogun the Grim",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Volstagg the Valiant",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Three Stand as One",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "itc:captain-mar-vell": [
+  {
+   "name": "Cosmic Awareness",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Kree Genetics",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Channel the Nega-Bands",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "Protector of the Universe",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "itc:quasar": [
+  {
+   "name": "Manipulate Gravitons",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Cosmic Champion",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "The Quantum Bands",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "cost": 5
+  },
+  {
+   "name": "The Star Brand",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "itc:adam-warlock": [
+  {
+   "name": "Transmute Matter",
+   "copies": 5,
+   "class": "Covert",
+   "cost": 3
+  },
+  {
+   "name": "Regenerative Cocoon",
+   "copies": 5,
+   "class": "Strength",
+   "cost": 4
+  },
+  {
+   "name": "Soulblast",
+   "copies": 3,
+   "class": "Covert",
+   "cost": 5
+  },
+  {
+   "name": "Manifest the Soul Gem",
+   "copies": 1,
+   "class": "Ranged",
+   "cost": 8
+  }
+ ],
+ "itc:moondragon": [
+  {
+   "name": "Peaceful Meditation",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Psionic Warning",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Psychokinetic Blast",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Lunar Dragon Form",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "itc:nova": [
+  {
+   "name": "Draw From the Worldmind",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Electromagnetic Wave",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Declare Galactic Threat",
+   "copies": 3,
+   "class": "Tech",
+   "cost": 6
+  },
+  {
+   "name": "Mobilize the Nova Corps",
+   "copies": 1,
+   "class": "Ranged",
+   "cost": 8
+  }
+ ],
+ "itc:yondu": [
+  {
+   "name": "Whistling Arrow",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 2
+  },
+  {
+   "name": "Interstellar Hunter",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Anticipate Their Movements",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Space Pirate",
+   "copies": 1,
+   "class": "Tech",
+   "cost": 7
+  }
+ ],
+ "itc:phyla-vell": [
+  {
+   "name": "Channel Cosmic Power",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 2
+  },
+  {
+   "name": "Quantum Sword",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Martyr",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Avatar of Oblivion",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "itc:ronan-the-accuser": [
+  {
+   "name": "Universal Weapon",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 3
+  },
+  {
+   "name": "Rally Kree Warriors",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Accuse Enemies of the Empire",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Seek the Infinity Gems",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "itc:nebula": [
+  {
+   "name": "Ruthless Cyborg",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Galactic Rogue",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Illusion Device",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Daring Raid",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "bp:king-black-panther": [
+  {
+   "name": "Unseen Protector",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Vibranium Claws",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Heart-Shaped Herb",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Unite the Tribes of Wakanda",
+   "copies": 1,
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "bp:queen-storm-of-wakanda": [
+  {
+   "name": "Hurricane Winds",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Torrential Downpour",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Forked Lightning",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Thunderous Tempest",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "bp:general-okoye": [
+  {
+   "name": "To My Last Breath",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Lead the Dora Milaje",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Sovereign Bodyguard",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Direct the Agents of Wakanda",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "bp:princess-shuri": [
+  {
+   "name": "Vibranium Experiments",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Kimoyo Beads",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Shock Net",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Become the Next Black Panther",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 7
+  }
+ ],
+ "bp:white-wolf": [
+  {
+   "name": "Cloaking Tech Ambush",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Secret Assignment",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Command the Hatut Zeraze",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Reflective Vibranium Armor",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "nm:sunspot": [
+  {
+   "name": "Absorb Radiation",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Solar-Powered",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Thermokinetic Fury",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Empyreal Force",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "nm:wolfsbane": [
+  {
+   "name": "Wolf Out",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Night Vision",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Howl at the Moon",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Nocturnal Savagery",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "nm:mirage": [
+  {
+   "name": "Empathic Link",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Dreams Made Real",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Nightmare Wolves",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Haunted By the Demon Bear",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "nm:warlock": [
+  {
+   "name": "Earthling Choices",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 2
+  },
+  {
+   "name": "Analyze Planetary Rotation",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Techno-Organic Adaptation",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Nanite Shapeshifter",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "nm:karma": [
+  {
+   "name": "Sow Rivalry",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Temporary Possession",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Karmic Balance",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Control Like a Puppet",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "rok:black-bolt": [
+  {
+   "name": "Break the Silence",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Worldess Murmur",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 5
+  },
+  {
+   "name": "Declaration of War",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "The King's Speech",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "rok:medusa": [
+  {
+   "name": "Queen of the Inhumans",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Splitting Hairs",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Royal Command",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Headstrong",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "rok:crystal": [
+  {
+   "name": "Earth, Air, Fire, and Water",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Master the Four Elements",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Elemental Princess",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Weave Four Into One",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "rok:karnak": [
+  {
+   "name": "Brilliant Strategist",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Find Fatal Flaw",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Shatter the Weak Point",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Seek the Center",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 7
+  }
+ ],
+ "rok:gorgon": [
+  {
+   "name": "Lockjaw, Inhuman's Best Friend",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Stomping Shockwave",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Trample Underhoof",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Lead the Inhuman Elite",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "anh:fantastic-four-united": [
+  {
+   "name": "Thing",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Human Torch",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Invisible Woman",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Mr. Fantastic",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 7
+  }
+ ],
+ "anh:psi-lord": [
+  {
+   "name": "Avert Future Tragedy",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Interdimensional Rescue",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Slip the Timestream",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Reshape Reality",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 7
+  }
+ ],
+ "anh:brainstorm": [
+  {
+   "name": "Time Loop Experiments",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Borrow from the Future",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Reprogram Doombot Legions",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Protégé of Dr. Doom",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "anh:heralds-of-galactus": [
+  {
+   "name": "Silver Surfer",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Firelord",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Stardust",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Galactus Hungers",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 8,
+   "variable": true,
+   "cost": 10
+  }
+ ],
+ "anh:super-skrull": [
+  {
+   "name": "Stretching Credibility",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Rock Solid",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Transparent Motives",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Put to the Torch",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "mcx:multiple-man": [
+  {
+   "name": "Me, Myself, and I",
+   "copies": 4,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Finding Myself",
+   "copies": 4,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Perfect Match",
+   "copies": 4,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Reabsorb Duplicates",
+   "copies": 2,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  }
+ ],
+ "mcx:shatterstar": [
+  {
+   "name": "Strive for Greatness",
+   "copies": 4,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Gladiator's Blades",
+   "copies": 4,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Bioelectric Surge",
+   "copies": 4,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Gene-Spliced Creation",
+   "copies": 2,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  }
+ ],
+ "mcx:stepford-cuckoos": [
+  {
+   "name": "Find Mutants with Cerebro",
+   "copies": 4,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Shared Thoughts",
+   "copies": 4,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Telepathic Warning",
+   "copies": 4,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Mind Wipe",
+   "copies": 2,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  }
+ ],
+ "mcx:m": [
+  {
+   "name": "Uncover Family Secrets",
+   "copies": 4,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Penance Form",
+   "copies": 4,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Three Sisters Combined",
+   "copies": 4,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Interweaving Powers",
+   "copies": 2,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  }
+ ],
+ "mcx:strong-guy": [
+  {
+   "name": "X-Factor Investigation",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Absorb Kinetic Energy",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Go Big",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Treasure Hunt",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 8
+  }
+ ],
+ "mcx:warpath": [
+  {
+   "name": "Grim Tracker",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Endless Endurance",
+   "copies": 5,
+   "class": "Strength",
+   "cost": 5
+  },
+  {
+   "name": "Dangerous Maneuver",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Superhuman Senses",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "mcx:siryn": [
+  {
+   "name": "Echolocation",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Hypnotic Call",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Three-Octave Arpeggio",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Splintering Shriek",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 8
+  }
+ ],
+ "mcx:rictor": [
+  {
+   "name": "Underground Cave-In",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Unearth Tectonic Power",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Trace the Fault Lines",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Massive Earthquake",
+   "copies": 1,
+   "class": "Ranged",
+   "cost": 7
+  }
+ ],
+ "dss:doctor-strange": [
+  {
+   "name": "Wand of Watoomb",
+   "copies": 5,
+   "class": "Ranged",
+   "cost": 3
+  },
+  {
+   "name": "Keeper of the Sanctum",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Book Of Cagliostro",
+   "copies": 3,
+   "class": "Instinct",
+   "cost": 2
+  },
+  {
+   "name": "The Eye of Agamotto",
+   "copies": 1,
+   "class": "Ranged",
+   "cost": 8
+  }
+ ],
+ "dss:clea": [
+  {
+   "name": "Prepare Dark Magic",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Demonic Descendant",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Bind the Dark Dimension",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "The Purple Gem",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 7
+  }
+ ],
+ "dss:doctor-voodoo": [
+  {
+   "name": "Commune with the Spirit World",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Medallion of Many Loas",
+   "copies": 5,
+   "class": "Tech",
+   "cost": 4
+  },
+  {
+   "name": "Staff of Legba",
+   "copies": 3,
+   "class": "Strength",
+   "cost": 6
+  },
+  {
+   "name": "Possessed by Brother’s Spirit",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "dss:the-ancient-one": [
+  {
+   "name": "Astral Confrontation",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Teachings of Kamar-Taj",
+   "copies": 5,
+   "class": "Instinct",
+   "cost": 5
+  },
+  {
+   "name": "War of the Mind",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "The Orb of Agamotto",
+   "copies": 1,
+   "class": "Instinct",
+   "cost": 8
+  }
+ ],
+ "dss:the-vishanti": [
+  {
+   "name": "Oshtur",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Hoggoth",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Agamotto",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "The Book of the Vishanti",
+   "copies": 1,
+   "class": "Covert",
+   "cost": 7
+  }
+ ],
+ "bw:black-widow": [
+  {
+   "name": "Evasive Acrobatics",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Widow's Bite",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Weave A Web of Spies",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Infiltrate the Conspiracy",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "bw:yelena-belova": [
+  {
+   "name": "Strike and Fade",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 2
+  },
+  {
+   "name": "Unveil Identity",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Twilight Ops",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Destroy the Red Room",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "bw:red-guardian": [
+  {
+   "name": "Sleeper Agent",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Magnetic Shield",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Death Was Only A Ruse",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Champion of the Winter Guard",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "bw:white-tiger": [
+  {
+   "name": "Amulets of the Tiger God",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Dark Influence of the Hand",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Camouflaged Huntress",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Shadowed Resurrection",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 8
+  }
+ ],
+ "bw:falcon-winter-soldier": [
+  {
+   "name": "Attune/Atone",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 3,
+   "cost": 3
+  },
+  {
+   "name": "Relocate/Reload",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "New Wings/New Plan",
+   "copies": 3,
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Captain America's Legacy",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "msg:star-lord": [
+  {
+   "name": "Starship Sensors",
+   "copies": 3,
+   "class": "Tech",
+   "cost": 2
+  },
+  {
+   "name": "Borrowed Nova Blaster",
+   "copies": 3,
+   "class": "Ranged",
+   "cost": 3
+  },
+  {
+   "name": "Expandable Helmet",
+   "copies": 3,
+   "class": "Tech",
+   "cost": 5
+  },
+  {
+   "name": "Give/Take",
+   "copies": 2,
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Don't Need That Stuff",
+   "copies": 2,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Hadron Enforcer",
+   "copies": 1,
+   "class": "Ranged",
+   "cost": 7
+  }
+ ],
+ "msg:gamora": [
+  {
+   "name": "Sharpen Blades",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Resourceful Fugitive",
+   "copies": 3,
+   "class": "Covert",
+   "cost": 4
+  },
+  {
+   "name": "Retractable Sword",
+   "copies": 3,
+   "class": "Instinct",
+   "cost": 5
+  },
+  {
+   "name": "Forgive/Resent",
+   "copies": 2,
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Stolen Necroblaster",
+   "copies": 2,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Guardians Escape",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "msg:rocket-groot": [
+  {
+   "name": "Baby Groot",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Passion/Compassion",
+   "copies": 3,
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Don't Press This Button/Press the Button",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Gravity Mines",
+   "copies": 2,
+   "class": "Tech",
+   "cost": 4
+  },
+  {
+   "name": "Tricky/Simple",
+   "copies": 2,
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "We Are Groot",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "msg:drax": [
+  {
+   "name": "Nothing Goes Over My Head",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Prison Riot",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "I Am Invisible/Xandar Is Invincible",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Dual Knives",
+   "copies": 2,
+   "class": "Strength",
+   "cost": 4
+  },
+  {
+   "name": "Remove His Spine/Also Illegal",
+   "copies": 2,
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Revenge For My Family",
+   "copies": 1,
+   "class": "Strength",
+   "cost": 8
+  }
+ ],
+ "msg:mantis": [
+  {
+   "name": "Empathic Bond",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Selfless/Selfish",
+   "copies": 3,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Inspire Courage",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Sleep",
+   "copies": 2,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Emotional Wave",
+   "copies": 2,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Discover the Dead",
+   "copies": 1,
+   "class": "Instinct",
+   "cost": 7
+  }
+ ],
+ "wif:apocalyptic-black-widow": [
+  {
+   "name": "Humanity's Final Hope",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Plant Hidden Asset",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 4
+  },
+  {
+   "name": "Precision Strike",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Relentless",
+   "copies": 2,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "The Last Avenger",
+   "copies": 2,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Time to Save the Multiverse",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wif:captain-carter": [
+  {
+   "name": "Super Soldier Serum",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Wartime Logistics",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Coordinated Assault",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "The Shield of Britain",
+   "copies": 2,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Give Them All We've Got",
+   "copies": 2,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "cost": 6
+  },
+  {
+   "name": "Icon of Hope",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wif:doctor-strange-supreme": [
+  {
+   "name": "Seize Infernal Power",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Summon Demon Minions",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Wards of the Vishanti",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "To Save Christine",
+   "copies": 2,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Break the Absolute Point in Time",
+   "copies": 2,
+   "class": "Instinct",
+   "cost": 6
+  },
+  {
+   "name": "Stygian Communion",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 8
+  }
+ ],
+ "wif:gamora-destroyer-of-thanos": [
+  {
+   "name": "Assassin's Stealth",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Tactical Insight",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Wield the Blade of Thanos",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Titanicide",
+   "copies": 2,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Destroy an Infinity Stone",
+   "copies": 2,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "The Infinity Crusher",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wif:killmonger-spec-ops": [
+  {
+   "name": "Hunt New Prey",
+   "copies": 3,
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "No Matter the Price",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Violence Leaves Scars",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Hostage Rescue",
+   "copies": 2,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Plot a Betrayal",
+   "copies": 2,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "I'm the King, Baby!",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "wif:party-thor": [
+  {
+   "name": "Forecast Says Thunder",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 2
+  },
+  {
+   "name": "Worthy Challenge",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Destructive Feast",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Asgardian Rager",
+   "copies": 2,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Only Son",
+   "copies": 2,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Worthy of the Lightning",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "wif:star-lord-tchalla": [
+  {
+   "name": "Fight or Flight",
+   "copies": 3,
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Interstellar Adventures",
+   "copies": 3,
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Plan the Heist",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Unexpected Exit",
+   "copies": 2,
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Cross the Multiverse",
+   "copies": 2,
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Colliding Dreams",
+   "copies": 1,
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "wif:uatu-the-watcher": [
+  {
+   "name": "Diverging Timestreams",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Another Dimension Crumbles",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Break the Oath",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Anoint a Champion",
+   "copies": 2,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "History Repeats",
+   "copies": 2,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Convoke the Guardians",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "y99:doctor-doom-2099": [
+  {
+   "name": "Doomblast",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Subvert This New Future",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Flesh-Grafted Doombots",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Tear Through Time Itself",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 6,
+   "cost": 8
+  }
+ ],
+ "y99:ghost-rider-2099": [
+  {
+   "name": "Cyber-Specter",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Hell Ride",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Death Beyond Death",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Infernal Chainsaw",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "y99:hulk-2099": [
+  {
+   "name": "Rage Incarnate",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Push Pain Under the Surface",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Massive Gamma Detonation",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 5,
+   "cost": 6
+  },
+  {
+   "name": "Cataclysmic Frenzy",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "y99:ravage-2099": [
+  {
+   "name": "Down in the Dregs",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Toxic Mutations",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Detect Vibrations",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Overhorns and Underhorns",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "y99:spider-man-2099": [
+  {
+   "name": "Retractable Talons",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Venomous Fangs",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Spider-Silk Webbing",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Spider-Sense Telepathy",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "amw:ant-army": [
+  {
+   "name": "Antagonize",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Anticipate",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Up the Ante",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "cost": 1
+  },
+  {
+   "name": "Anti-Tank Weapons",
+   "copies": 2,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Antiproton Experiments",
+   "copies": 2,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Revolutionary Anthem",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 9
+  }
+ ],
+ "amw:ant-man": [
+  {
+   "name": "Hitch a Ride",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Look Out for the Little Guy!",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Shrink Away",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Bug Swarm",
+   "copies": 2,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Tiny Little Risk",
+   "copies": 2,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "cost": 6
+  },
+  {
+   "name": "Giant-Man",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 6,
+   "variable": true,
+   "cost": 9
+  }
+ ],
+ "amw:cassie-lang": [
+  {
+   "name": "Colossal Stomp",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Giant Hug",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Start Small",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 2
+  },
+  {
+   "name": "Learn from the Past",
+   "copies": 2,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Quantum Beacon",
+   "copies": 2,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Inspire Revolution",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 9
+  }
+ ],
+ "amw:freedom-fighters": [
+  {
+   "name": "Mystics",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Steel Warrior",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Xolum",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Quaz",
+   "copies": 2,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Veb",
+   "copies": 2,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Freedom Forever",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "amw:janet-van-dyne": [
+  {
+   "name": "Prepare for War",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Search for Peace",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Wasp of Another Generation",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Quantum Contradiction",
+   "copies": 2,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Subatomic Size",
+   "copies": 2,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Finally Found You",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "amw:jentorra": [
+  {
+   "name": "Hit and Run",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Take the High Ground",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Unite the Oppressed",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Find Your Courage",
+   "copies": 2,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Lead Powerful Allies",
+   "copies": 2,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Conquer the Conqueror",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "amw:scott-lang-cat-burglar": [
+  {
+   "name": "Petty Larceny",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 1
+  },
+  {
+   "name": "Shocking Support",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "X-Con Security Van",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Anything for Cassie",
+   "copies": 2,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Putting a Crew Together",
+   "copies": 2,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "The Big Score",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "amw:wasp": [
+  {
+   "name": "Flitting Sting",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Master Physicist",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Positive Ions",
+   "copies": 3,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Follow My Lead",
+   "copies": 2,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Infiltrate",
+   "copies": 2,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Hope Returns",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "recruit",
+   "value": 4,
+   "variable": true,
+   "cost": 9
+  }
+ ],
+ "mds:blade-daywalker": [
+  {
+   "name": "Where Monsters Lurk",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Ride By Moonlight",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Hunt High and Low",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Creature of Dawn and Dask",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "mds:elsa-bloodstone": [
+  {
+   "name": "Axe of the Slayer",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Silver Bullets",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Stalk the Night Stalkers",
+   "copies": 3,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 3,
+   "cost": 6
+  },
+  {
+   "name": "Vengeance of the Bloodstone Gem",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "mds:morbius": [
+  {
+   "name": "Mesmerize",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Insatiable Craving",
+   "copies": 5,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Scalded By Sunlight",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "It's Morbin' Time!",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "cost": 7
+  }
+ ],
+ "mds:werewolf-by-night": [
+  {
+   "name": "Starlit Path",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Snarling Fangs",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Release the Beast",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Track the Captives",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "mds:wong-master-of-the-mystic-arts": [
+  {
+   "name": "Bridge Between Dimensions",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Searing Shards of Sunlight",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Seal the Rift",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Face Your Demons",
+   "copies": 1,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 6,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wpx:fantomex": [
+  {
+   "name": "Sentient Bullets",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 1
+  },
+  {
+   "name": "Three Brains",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Misdirection",
+   "copies": 3,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Weapon XIII",
+   "copies": 1,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  }
+ ],
+ "wpx:marrow": [
+  {
+   "name": "Bone Shards",
+   "copies": 5,
+   "class": "Ranged",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Hyper-Adaptive Skeleton",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 1,
+   "variable": true,
+   "cost": 2
+  },
+  {
+   "name": "Osteogenesis",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "recruit",
+   "value": 1,
+   "cost": 6
+  },
+  {
+   "name": "Metabolic Overdrive",
+   "copies": 1,
+   "class": "Covert",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "wpx:weapon-h": [
+  {
+   "name": "Evolving Abilities",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "The Future of Warfare",
+   "copies": 5,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Slice and Smash",
+   "copies": 3,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Ultimate Killing Machine",
+   "copies": 1,
+   "class": "Strength",
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "wpx:weapon-x-wolverine": [
+  {
+   "name": "Infuse Skeleton with Adamantium",
+   "copies": 5,
+   "class": "Tech",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Raging Regeneration",
+   "copies": 5,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Violent Conditioning",
+   "copies": 3,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Escape the Weapon X Lab",
+   "copies": 1,
+   "class": "Instinct",
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  }
  ]
 }
