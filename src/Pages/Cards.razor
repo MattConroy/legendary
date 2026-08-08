@@ -15,18 +15,19 @@
     }
     else
     {
+        <div class="tabs" role="tablist" aria-label="Card type">
+            @foreach (var (value, label) in Categories)
+            {
+                <button class="tab @(_category == value ? "tab--active" : "")" role="tab"
+                        aria-selected="@(_category == value)" @onclick="() => _category = value">
+                    @label
+                </button>
+            }
+        </div>
         <div class="kw-controls">
             <input type="search" class="kw-search" placeholder="Search cards…"
                    value="@_search" @oninput="e => _search = e.Value?.ToString() ?? string.Empty"
                    aria-label="Search cards" />
-            <select class="kw-filter" value="@_category" @onchange="e => _category = e.Value?.ToString() ?? string.Empty"
-                    aria-label="Filter by type">
-                <option value="">All types</option>
-                @foreach (var (value, label) in Categories)
-                {
-                    <option value="@value">@label</option>
-                }
-            </select>
             <select class="kw-filter" value="@_setFilter" @onchange="e => _setFilter = e.Value?.ToString() ?? string.Empty"
                     aria-label="Filter by set">
                 <option value="">All sets</option>
@@ -69,33 +70,20 @@
                             {
                                 <span class="cat__caret @(open ? "cat__caret--open" : "")" aria-hidden="true">▸</span>
                             }
-                            <div class="cat__body">
-                                <div class="cat__main">
-                                    @if (card is Hero)
-                                    {
-                                        <TeamIcon Team="@team" />
-                                    }
-                                    <span class="cat__name">@card.Name</span>
-                                    <span class="cat__badge">@CategoryLabel(card.Category)</span>
-                                    @if (band is { } b)
-                                    {
-                                        <span class="tpill tpill--@b.ToString().ToLowerInvariant()">
-                                            <span class="tpill__label">Threat</span>
-                                            <span class="tpill__value">@b</span>
-                                        </span>
-                                    }
-                                </div>
-                                <div class="cat__meta">
-                                    <span class="cat__set">@entry.SetName</span>
-                                    @if (!string.IsNullOrEmpty(team))
-                                    {
-                                        <span class="cat__set">· @team</span>
-                                    }
-                                    @if (deck.Count > 0)
-                                    {
-                                        <span class="cat__set">· @TotalCards(deck) cards</span>
-                                    }
-                                </div>
+                            <div class="cat__main">
+                                @if (card is Hero)
+                                {
+                                    <TeamIcon Team="@team" />
+                                }
+                                <span class="cat__name">@card.Name</span>
+                                <span class="cat__set">@entry.SetName</span>
+                                @if (band is { } b)
+                                {
+                                    <span class="tpill tpill--@b.ToString().ToLowerInvariant()">
+                                        <span class="tpill__label">Threat</span>
+                                        <span class="tpill__value">@b</span>
+                                    </span>
+                                }
                             </div>
                         </div>
                         @if (open && deck.Count > 0)
@@ -150,7 +138,7 @@
 
 @code {
     private string _search = string.Empty;
-    private string _category = string.Empty;
+    private string _category = nameof(CardCategory.Hero);
     private string _setFilter = string.Empty;
 
     private List<Entry> _all = [];
@@ -209,18 +197,9 @@
         if (deckCount > 0 && e.Key is "Enter" or " ") Toggle(id);
     }
 
-    private static int TotalCards(IReadOnlyList<CardDetail> deck) => deck.Sum(c => c.Copies);
-
     private static string Resource(string kind) => kind == "recruit" ? "Recruit" : "Attack";
 
     private static string ValText(CardDetail d) => $"{d.Value}{(d.Variable ? "+" : "")}";
-
-    private static string CategoryLabel(CardCategory category) => category switch
-    {
-        CardCategory.VillainGroup => "Villain",
-        CardCategory.Henchmen => "Henchmen",
-        _ => category.ToString(),
-    };
 
     private readonly record struct Entry(GameCard Card, string SetName, string SetId);
 }

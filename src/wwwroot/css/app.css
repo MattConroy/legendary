@@ -623,13 +623,20 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .tpill__value { color: var(--accent); text-transform: uppercase; letter-spacing: 0.3px; font-size: 0.74rem; }
 
 /* Card catalogue (Cards page) */
+.tabs { display: flex; gap: 4px; overflow-x: auto; margin-bottom: 8px; -webkit-overflow-scrolling: touch; }
+.tab {
+    flex: 0 0 auto; background: var(--surface); border: 1px solid var(--border); color: var(--muted);
+    border-radius: 999px; padding: 5px 12px; font-size: 0.8rem; font-weight: 700;
+    cursor: pointer; white-space: nowrap; font-family: inherit;
+}
+.tab--active { background: var(--marvel); border-color: var(--marvel); color: #fff; }
 .cat-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .cat {
     background: var(--surface); border: 1px solid var(--border);
     border-radius: 12px; overflow: hidden;
 }
 .cat__head {
-    display: flex; align-items: flex-start; gap: 8px; padding: 10px 12px;
+    display: flex; align-items: center; gap: 8px; padding: 10px 12px;
     color: inherit; font: inherit; text-align: left; width: 100%;
 }
 .cat__head.is-clickable { cursor: pointer; }
@@ -663,15 +670,16 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .stat__icon { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 .stat__num {
     position: relative; font-weight: 900; font-size: 0.62rem; color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.9);
+    -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.95); paint-order: stroke fill;
     font-variant-numeric: tabular-nums;
 }
-/* Dark number reads better on the gold recruit/cost tokens. */
-.stat--recruit .stat__num { color: #241a00; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4); }
+/* Dark number with a light outline reads better on the gold recruit/cost tokens. */
+.stat--recruit .stat__num { color: #241a00; -webkit-text-stroke: 0.8px rgba(255, 255, 255, 0.9); }
 
 .cost { position: relative; display: inline-grid; place-items: center; width: 20px; height: 20px; flex: none; }
 .cost__icon { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 .cost__num {
     position: relative; font-weight: 900; font-size: 0.6rem; color: #241a00;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4); font-variant-numeric: tabular-nums;
+    -webkit-text-stroke: 0.8px rgba(255, 255, 255, 0.9); paint-order: stroke fill;
+    font-variant-numeric: tabular-nums;
 }
