@@ -625,10 +625,17 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 /* Card catalogue (Cards page) */
 .cat-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .cat {
-    display: flex; flex-direction: column; gap: 6px;
     background: var(--surface); border: 1px solid var(--border);
-    border-radius: 12px; padding: 10px 12px;
+    border-radius: 12px; overflow: hidden;
 }
+.cat__head {
+    display: flex; align-items: flex-start; gap: 8px; padding: 10px 12px;
+    color: inherit; font: inherit; text-align: left; width: 100%;
+}
+.cat__head.is-clickable { cursor: pointer; }
+.cat__head.is-clickable:hover { background: var(--surface-2); }
+.cat__head:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+.cat__body { display: flex; flex-direction: column; gap: 6px; flex: 1 1 auto; min-width: 0; }
 .cat__main { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .cat__name { font-weight: 800; color: #fff; }
 .cat__badge {
@@ -637,41 +644,30 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 }
 .cat__meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .cat__set { color: var(--muted); font-size: 0.78rem; }
-.cat__link { margin-left: auto; color: var(--gold); font-weight: 700; font-size: 0.78rem; white-space: nowrap; }
-.cat__kws { margin: 2px 0 0; }
-.cat__expand {
-    display: inline-flex; align-items: center; gap: 4px; cursor: pointer;
-    background: none; border: none; padding: 0; color: var(--muted);
-    font-size: 0.78rem; font-weight: 700; font-family: inherit;
-}
-.cat__caret { transition: transform 0.15s ease; display: inline-block; }
+.cat__kws { margin: 0 12px 10px; }
+.cat__caret { color: var(--muted); transition: transform 0.15s ease; margin-top: 2px; }
 .cat__caret--open { transform: rotate(90deg); }
 
-.deck { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.deck { list-style: none; margin: 0 12px 10px; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .deck__card {
-    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    display: flex; align-items: center; gap: 8px;
     background: var(--bg-2); border: 1px solid var(--border);
-    border-radius: 8px; padding: 6px 10px; font-size: 0.85rem;
+    border-radius: 8px; padding: 5px 10px; font-size: 0.85rem;
 }
-.deck__copies { color: var(--muted); font-weight: 800; font-variant-numeric: tabular-nums; min-width: 2.2em; }
-.deck__name { color: var(--text); font-weight: 600; }
-.deck__stat {
-    font-weight: 800; font-size: 0.72rem; border-radius: 999px; padding: 1px 7px;
-    border: 1px solid var(--accent); color: var(--accent);
-}
-.deck__stat--attack  { --accent: var(--marvel); }
-.deck__stat--recruit { --accent: var(--gold); }
-.deck__cost { color: var(--muted); font-size: 0.75rem; }
-.deck__link { margin-left: auto; color: var(--gold); font-weight: 700; white-space: nowrap; }
+.deck__cls { width: 22px; height: 22px; flex: none; object-fit: contain; }
+.deck__copies { color: var(--muted); font-weight: 800; font-variant-numeric: tabular-nums; flex: none; }
+.deck__name { color: var(--text); font-weight: 600; flex: 1 1 auto; min-width: 0; }
 
-/* Hero Class chip (Covert / Instinct / Ranged / Strength / Tech) */
-.cls {
-    font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
-    border-radius: 999px; padding: 1px 7px; border: 1px solid var(--accent); color: var(--accent);
-    white-space: nowrap;
+/* Attack/Recruit value: the icon with the number on top */
+.stat { position: relative; display: inline-grid; place-items: center; width: 28px; height: 28px; flex: none; }
+.stat__icon { position: absolute; inset: 0; width: 100%; height: 100%; }
+.stat__num {
+    position: relative; font-weight: 900; font-size: 0.72rem; color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); font-variant-numeric: tabular-nums;
 }
-.cls--strength { --accent: var(--marvel); }
-.cls--instinct { --accent: var(--gold); }
-.cls--covert   { --accent: var(--scheme); }
-.cls--tech     { --accent: var(--henchmen); }
-.cls--ranged   { --accent: var(--hero); }
+.cost {
+    flex: none; width: 22px; height: 22px; border-radius: 50%;
+    border: 1px solid var(--border); color: var(--muted);
+    display: grid; place-items: center; font-size: 0.7rem; font-weight: 800;
+    font-variant-numeric: tabular-nums;
+}

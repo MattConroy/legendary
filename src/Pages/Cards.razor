@@ -55,36 +55,48 @@
                         var kws = Keywords.IsLoaded ? Keywords.InPlay(new[] { card.Id }) : [];
                         var deck = CardDetails.IsLoaded ? CardDetails.For(card.Id) : [];
                         var open = _expanded.Contains(card.Id);
+                        var clickable = deck.Count > 0;
+                        var headClass = clickable ? "cat__head is-clickable" : "cat__head";
+                        string? roleAttr = clickable ? "button" : null;
+                        string? tabAttr = clickable ? "0" : null;
+                        bool? expandedAttr = clickable ? open : null;
                     }
                     <li class="cat">
-                        <div class="cat__main">
-                            @if (card is Hero)
-                            {
-                                <TeamIcon Team="@team" />
-                            }
-                            <span class="cat__name">@card.Name</span>
-                            <span class="cat__badge">@CategoryLabel(card.Category)</span>
-                            @if (band is { } b)
-                            {
-                                <span class="tpill tpill--@b.ToString().ToLowerInvariant()">
-                                    <span class="tpill__label">Threat</span>
-                                    <span class="tpill__value">@b</span>
-                                </span>
-                            }
-                        </div>
-                        <div class="cat__meta">
-                            <span class="cat__set">@entry.SetName</span>
-                            @if (!string.IsNullOrEmpty(team))
-                            {
-                                <span class="cat__set">· @team</span>
-                            }
+                        <div class="@headClass" role="@roleAttr" tabindex="@tabAttr" aria-expanded="@expandedAttr"
+                             @onclick="() => TryToggle(card.Id, deck.Count)"
+                             @onkeydown="e => OnHeadKey(e, card.Id, deck.Count)">
                             @if (deck.Count > 0)
                             {
-                                <button class="cat__expand" type="button" @onclick="() => Toggle(card.Id)" aria-expanded="@open">
-                                    <span class="cat__caret @(open ? "cat__caret--open" : "")" aria-hidden="true">▸</span>
-                                    @TotalCards(deck) cards
-                                </button>
+                                <span class="cat__caret @(open ? "cat__caret--open" : "")" aria-hidden="true">▸</span>
                             }
+                            <div class="cat__body">
+                                <div class="cat__main">
+                                    @if (card is Hero)
+                                    {
+                                        <TeamIcon Team="@team" />
+                                    }
+                                    <span class="cat__name">@card.Name</span>
+                                    <span class="cat__badge">@CategoryLabel(card.Category)</span>
+                                    @if (band is { } b)
+                                    {
+                                        <span class="tpill tpill--@b.ToString().ToLowerInvariant()">
+                                            <span class="tpill__label">Threat</span>
+                                            <span class="tpill__value">@b</span>
+                                        </span>
+                                    }
+                                </div>
+                                <div class="cat__meta">
+                                    <span class="cat__set">@entry.SetName</span>
+                                    @if (!string.IsNullOrEmpty(team))
+                                    {
+                                        <span class="cat__set">· @team</span>
+                                    }
+                                    @if (deck.Count > 0)
+                                    {
+                                        <span class="cat__set">· @TotalCards(deck) cards</span>
+                                    }
+                                </div>
+                            </div>
                         </div>
                         @if (open && deck.Count > 0)
                         {
@@ -92,19 +104,26 @@
                                 @foreach (var d in deck)
                                 {
                                     <li class="deck__card">
-                                        <span class="deck__copies">@d.Copies×</span>
                                         @if (d.Class is { } cls)
                                         {
-                                            <span class="cls cls--@cls.ToLowerInvariant()" title="@cls">@cls</span>
+                                            <img class="deck__cls" src="classes/@(cls.ToLowerInvariant()).png" alt="@cls" title="@cls" />
                                         }
-                                        <span class="deck__name">@d.Name</span>
-                                        @if (d.Kind is not null && d.Value is { } val)
+                                        else
                                         {
-                                            <span class="deck__stat deck__stat--@d.Kind">@val@(d.Variable ? "+" : "") @Resource(d.Kind)</span>
+                                            <span class="deck__cls"></span>
+                                        }
+                                        <span class="deck__copies">@d.Copies×</span>
+                                        <span class="deck__name">@d.Name</span>
+                                        @if (d.Kind is not null && d.Value is not null)
+                                        {
+                                            <span class="stat" title="@ValText(d) @Resource(d.Kind)">
+                                                <img class="stat__icon" src="classes/@(d.Kind).svg" alt="@Resource(d.Kind)" />
+                                                <span class="stat__num">@ValText(d)</span>
+                                            </span>
                                         }
                                         @if (d.Cost is { } cost)
                                         {
-                                            <span class="deck__cost">Cost @cost</span>
+                                            <span class="cost" title="Cost @cost">@cost</span>
                                         }
                                     </li>
                                 }
@@ -177,9 +196,21 @@
         if (!_expanded.Remove(id)) _expanded.Add(id);
     }
 
+    private void TryToggle(string id, int deckCount)
+    {
+        if (deckCount > 0) Toggle(id);
+    }
+
+    private void OnHeadKey(KeyboardEventArgs e, string id, int deckCount)
+    {
+        if (deckCount > 0 && e.Key is "Enter" or " ") Toggle(id);
+    }
+
     private static int TotalCards(IReadOnlyList<CardDetail> deck) => deck.Sum(c => c.Copies);
 
     private static string Resource(string kind) => kind == "recruit" ? "Recruit" : "Attack";
+
+    private static string ValText(CardDetail d) => $"{d.Value}{(d.Variable ? "+" : "")}";
 
     private static string CategoryLabel(CardCategory category) => category switch
     {
