@@ -4,32 +4,31 @@ namespace Legendary.Companion.Models;
 public enum DifficultyBand { Easy, Medium, Hard }
 
 /// <summary>
-/// Turns the editorial 1–5 difficulty ratings on a setup's cards into a single
-/// Threat score out of 10. Score = average of the rated components × 2, so more
-/// components (villains later) fold in without changing the /10 scale. Today the
-/// rated components are the Mastermind and the Scheme.
+/// Turns the editorial difficulty ratings on a setup into a single Threat score
+/// out of 10. The Mastermind is the anchor — the most reliable signal — setting a
+/// base of <c>rating × 2 − 1</c> (1, 3, 5, 7, 9). The Scheme is a small ±1 modifier
+/// (its rating relative to an average of 3), since scheme difficulty is contextual.
+/// Villain groups can fold in later as another small modifier. Result clamps to 1–10.
 /// </summary>
 public static class Threat
 {
-    /// <summary>Threat out of 10, or null if nothing in the setup is rated yet.</summary>
+    /// <summary>Threat out of 10, or null if the Mastermind isn't rated.</summary>
     public static int? Score(GameSetup setup)
     {
-        var ratings = Ratings(setup).ToList();
-        if (ratings.Count == 0) return null;
-        return (int)Math.Round(ratings.Average() * 2, MidpointRounding.AwayFromZero);
+        if ((setup.Mastermind.Card as Mastermind)?.Difficulty is not { } mastermind)
+            return null;
+        return Score(mastermind, (setup.Scheme.Card as Scheme)?.Difficulty);
     }
 
-    /// <summary>
-    /// Band for a score. The score runs 2–10 (two 1–5 components), so the bands are
-    /// equal thirds of that range — 2–4 Easy, 5–7 Medium, 8–10 Hard — which keeps
-    /// every band reachable (a genuinely easy game needs both components low).
-    /// </summary>
-    public static DifficultyBand Band(int score) =>
-        score <= 4 ? DifficultyBand.Easy : score <= 7 ? DifficultyBand.Medium : DifficultyBand.Hard;
-
-    private static IEnumerable<int> Ratings(GameSetup setup)
+    /// <summary>Pure scoring: Mastermind base + small Scheme modifier, clamped 1–10.</summary>
+    public static int Score(int mastermind, int? scheme)
     {
-        if ((setup.Mastermind.Card as Mastermind)?.Difficulty is { } m) yield return m;
-        if ((setup.Scheme.Card as Scheme)?.Difficulty is { } s) yield return s;
+        var baseline = mastermind * 2 - 1;
+        var modifier = scheme is { } s ? Math.Clamp(s - 3, -1, 1) : 0;
+        return Math.Clamp(baseline + modifier, 1, 10);
     }
+
+    /// <summary>Band for a score: 1–3 Easy, 4–7 Medium, 8–10 Hard.</summary>
+    public static DifficultyBand Band(int score) =>
+        score <= 3 ? DifficultyBand.Easy : score <= 7 ? DifficultyBand.Medium : DifficultyBand.Hard;
 }

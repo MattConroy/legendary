@@ -610,14 +610,25 @@ public class SetupRandomizerTests
     }
 
     [Theory]
-    [InlineData(2, DifficultyBand.Easy)]
-    [InlineData(4, DifficultyBand.Easy)]
-    [InlineData(5, DifficultyBand.Medium)]
+    [InlineData(1, DifficultyBand.Easy)]
+    [InlineData(3, DifficultyBand.Easy)]
+    [InlineData(4, DifficultyBand.Medium)]
     [InlineData(7, DifficultyBand.Medium)]
     [InlineData(8, DifficultyBand.Hard)]
     [InlineData(10, DifficultyBand.Hard)]
     public void Threat_bands_use_the_agreed_thresholds(int score, DifficultyBand band)
         => Assert.Equal(band, Threat.Band(score));
+
+    [Theory]
+    [InlineData(1, 1, 1)]    // Red Skull + easy scheme -> floor
+    [InlineData(1, 3, 1)]    // base 1, no nudge
+    [InlineData(3, 3, 5)]    // medium mastermind, neutral scheme
+    [InlineData(3, 5, 6)]    // scheme nudges +1
+    [InlineData(5, 3, 9)]    // brutal mastermind, neutral scheme
+    [InlineData(5, 5, 10)]   // Thanos + brutal scheme -> ceiling
+    [InlineData(4, 1, 6)]    // hard mastermind, easy scheme nudges -1
+    public void Threat_score_is_mastermind_base_plus_small_scheme_modifier(int mm, int scheme, int expected)
+        => Assert.Equal(expected, Threat.Score(mm, scheme));
 
     [Fact]
     public void Every_difficulty_band_is_reachable()
@@ -626,23 +637,22 @@ public class SetupRandomizerTests
         // or a target (esp. Easy) could never be honoured.
         var mm = Sets.SelectMany(s => s.Masterminds).Select(m => m.Difficulty!.Value).ToList();
         var sc = Sets.SelectMany(s => s.Schemes).Select(s => s.Difficulty!.Value).ToList();
-        var bands = (from m in mm from s in sc select Threat.Band(m + s)).Distinct().ToHashSet();
+        var bands = (from m in mm from s in sc select Threat.Band(Threat.Score(m, s))).Distinct().ToHashSet();
         Assert.Contains(DifficultyBand.Easy, bands);
         Assert.Contains(DifficultyBand.Medium, bands);
         Assert.Contains(DifficultyBand.Hard, bands);
     }
 
     [Fact]
-    public void Threat_score_is_the_mastermind_plus_scheme_out_of_ten()
+    public void Threat_score_from_a_setup_matches_the_formula_and_stays_in_range()
     {
-        // With two rated components, average x2 == their sum.
         for (var i = 0; i < 50; i++)
         {
             var setup = Rng(i).Generate((i % 5) + 1, AllPool());
             var mm = ((Mastermind)setup.Mastermind.Card).Difficulty!.Value;
-            var sc = ((Scheme)setup.Scheme.Card).Difficulty!.Value;
-            Assert.Equal(mm + sc, Threat.Score(setup));
-            Assert.InRange(Threat.Score(setup)!.Value, 2, 10);
+            var sc = ((Scheme)setup.Scheme.Card).Difficulty;
+            Assert.Equal(Threat.Score(mm, sc), Threat.Score(setup));
+            Assert.InRange(Threat.Score(setup)!.Value, 1, 10);
         }
     }
 
