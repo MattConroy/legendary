@@ -53,7 +53,7 @@ public sealed record GameSetup
     /// Mastermind sets the base and the Scheme applies a small ±1 modifier.
     /// </summary>
     public Threat? Threat =>
-        (Mastermind.Card as Mastermind)?.ThreatBase is { } baseline
+        Mastermind.Card is Mastermind { ThreatBase: { } baseline }
             ? Models.Threat.From(baseline, (Scheme.Card as Scheme)?.ThreatModifier)
             : null;
 }
