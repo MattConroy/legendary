@@ -94,6 +94,10 @@
                                 {
                                     <li class="deck__card">
                                         <span class="deck__copies">@d.Copies×</span>
+                                        @if (d.Class is { } cls)
+                                        {
+                                            <span class="cls cls--@cls.ToLowerInvariant()" title="@cls">@cls</span>
+                                        }
                                         <span class="deck__name">@d.Name</span>
                                         @if (d.Kind is not null && d.Value is { } val)
                                         {

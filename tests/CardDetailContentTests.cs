@@ -42,5 +42,15 @@ public class CardDetailContentTests
                     if (card.Value is not null)
                         Assert.Contains(card.Kind, new[] { "attack", "recruit" });
         }
+
+        [Fact]
+        public void Any_class_is_one_of_the_five_hero_classes()
+        {
+            var classes = new[] { "Covert", "Instinct", "Ranged", "Strength", "Tech" };
+            foreach (var deck in CardDetails.Values)
+                foreach (var card in deck)
+                    if (card.Class is not null)
+                        Assert.Contains(card.Class, classes);
+        }
     }
 }

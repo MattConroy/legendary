@@ -12,6 +12,10 @@ public sealed record CardDetail
     /// <summary>How many copies of this card the deck contains.</summary>
     public required int Copies { get; init; }
 
+    /// <summary>Hero Class: Covert, Instinct, Ranged, Strength or Tech. Null for the
+    /// class-less starter cards (and any card whose class isn't recorded).</summary>
+    public string? Class { get; init; }
+
     /// <summary>The resource this card provides: "attack", "recruit", or null (effect-only).</summary>
     public string? Kind { get; init; }
 

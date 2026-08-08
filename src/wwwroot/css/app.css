@@ -663,3 +663,15 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .deck__stat--recruit { --accent: var(--gold); }
 .deck__cost { color: var(--muted); font-size: 0.75rem; }
 .deck__link { margin-left: auto; color: var(--gold); font-weight: 700; white-space: nowrap; }
+
+/* Hero Class chip (Covert / Instinct / Ranged / Strength / Tech) */
+.cls {
+    font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
+    border-radius: 999px; padding: 1px 7px; border: 1px solid var(--accent); color: var(--accent);
+    white-space: nowrap;
+}
+.cls--strength { --accent: var(--marvel); }
+.cls--instinct { --accent: var(--gold); }
+.cls--covert   { --accent: var(--scheme); }
+.cls--tech     { --accent: var(--henchmen); }
+.cls--ranged   { --accent: var(--hero); }
