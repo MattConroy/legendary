@@ -14,13 +14,16 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
   </ItemGroup>
 
-  <!-- Compile the pure (non-Blazor) logic directly so tests don't depend on the WASM app. -->
+  <!-- Compile the pure (non-Blazor) logic directly so tests don't depend on the WASM app.
+       GameStateService now depends only on the repository ports, so it compiles here too. -->
   <ItemGroup>
     <Compile Include="../src/Models/**/*.cs" />
+    <Compile Include="../src/Abstractions/**/*.cs" />
     <Compile Include="../src/Data/SetJson.cs" />
     <Compile Include="../src/Data/KeywordJson.cs" />
     <Compile Include="../src/Services/CardPool.cs" />
     <Compile Include="../src/Services/SetupRandomizer.cs" />
+    <Compile Include="../src/Services/GameStateService.cs" />
   </ItemGroup>
 
   <!-- The tests validate the real content JSON. -->

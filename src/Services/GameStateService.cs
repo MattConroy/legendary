@@ -14,7 +14,7 @@ public enum SetSort { Name, Date }
 /// </summary>
 public sealed class GameStateService
 {
-    private const string PlayersKey = "legendary.players";
+    private const string DefaultPlayersKey = "legendary.players";
     private const string EnabledSetsKey = "legendary.enabledSets";
     private const string OwnedSetsKey = "legendary.ownedSets";
     private const string SortKey = "legendary.setSort";
@@ -35,7 +35,13 @@ public sealed class GameStateService
         _prefs = prefs;
     }
 
+    /// <summary>Player count for the current game. Starts from <see cref="DefaultPlayers"/>
+    /// and can be changed per-game on the setup screen without altering the saved default.</summary>
     public int Players { get; private set; } = 2;
+
+    /// <summary>The saved default player count, edited on the Sets &amp; Options screen.</summary>
+    public int DefaultPlayers { get; private set; } = 2;
+
     public GameSetup? Setup { get; private set; }
     public SetSort Sort { get; private set; } = SetSort.Date;
     public bool SortDescending { get; private set; }
@@ -80,8 +86,11 @@ public sealed class GameStateService
             _enabledSetIds.Add(id);
         }
 
-        if (int.TryParse(await _prefs.GetAsync(PlayersKey), out var p) && p is >= 1 and <= 5)
-            Players = p;
+        if (int.TryParse(await _prefs.GetAsync(DefaultPlayersKey), out var p) && p is >= 1 and <= 5)
+        {
+            DefaultPlayers = p;
+            Players = p; // the current game starts at the saved default
+        }
 
         await LoadSetIdsAsync(OwnedSetsKey, _ownedSetIds);
         await LoadSetIdsAsync(EnabledSetsKey, _enabledSetIds);
@@ -109,12 +118,23 @@ public sealed class GameStateService
             target.Add(id);
     }
 
-    public async Task SetPlayersAsync(int players)
+    /// <summary>Change the player count for the current game only — not persisted,
+    /// so it never overwrites the saved default.</summary>
+    public void SetPlayers(int players)
     {
         players = Math.Clamp(players, 1, 5);
         if (players == Players) return;
         Players = players;
-        await _prefs.SetAsync(PlayersKey, Players.ToString());
+        NotifyChanged();
+    }
+
+    /// <summary>Change the saved default player count and apply it to the current game.</summary>
+    public async Task SetDefaultPlayersAsync(int players)
+    {
+        players = Math.Clamp(players, 1, 5);
+        DefaultPlayers = players;
+        Players = players;
+        await _prefs.SetAsync(DefaultPlayersKey, players.ToString());
         NotifyChanged();
     }
 

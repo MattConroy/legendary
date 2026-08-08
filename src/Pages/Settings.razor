@@ -13,9 +13,9 @@
             @for (var n = 1; n <= 5; n++)
             {
                 var count = n;
-                <button class="chip @(State.Players == count ? "chip--active" : "")"
-                        @onclick="() => State.SetPlayersAsync(count)"
-                        aria-pressed="@(State.Players == count)">
+                <button class="chip @(State.DefaultPlayers == count ? "chip--active" : "")"
+                        @onclick="() => State.SetDefaultPlayersAsync(count)"
+                        aria-pressed="@(State.DefaultPlayers == count)">
                     @count
                 </button>
             }
