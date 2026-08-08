@@ -52,6 +52,10 @@ public sealed record Mastermind : GameCard
     /// (1, 3, 5, 7, 9), so it anchors the 1–10 scale. Null when unrated.
     /// </summary>
     public int? ThreatBase => Difficulty is { } d ? d * 2 - 1 : null;
+
+    /// <summary>The band this Mastermind's base threat falls in — its anchor
+    /// level, before any Scheme modifier. Null when unrated.</summary>
+    public DifficultyBand? ThreatBand => ThreatBase is { } b ? new Threat(b).Band : null;
 }
 
 public sealed record Scheme : GameCard
@@ -73,6 +77,18 @@ public sealed record Scheme : GameCard
     /// unrated (treated as no nudge).
     /// </summary>
     public int? ThreatModifier => Difficulty is { } d ? Math.Clamp(d - 3, -1, 1) : null;
+
+    /// <summary>
+    /// How this Scheme shifts the overall threat, as a band: Easy lowers it (−1),
+    /// Medium is neutral (0), Hard raises it (+1). Null when unrated.
+    /// </summary>
+    public DifficultyBand? ThreatBand => ThreatModifier switch
+    {
+        -1 => DifficultyBand.Easy,
+        0 => DifficultyBand.Medium,
+        1 => DifficultyBand.Hard,
+        _ => null,
+    };
 }
 
 /// <summary>

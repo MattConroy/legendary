@@ -20,4 +20,20 @@ public class SchemeTests
         public void Is_null_when_the_scheme_is_unrated()
             => Assert.Null(new Scheme { Id = "s", Name = "S" }.ThreatModifier);
     }
+
+    public class ThreatBand
+    {
+        [Theory]
+        [InlineData(1, DifficultyBand.Easy)]     // −1, lowers the threat
+        [InlineData(2, DifficultyBand.Easy)]     // −1
+        [InlineData(3, DifficultyBand.Medium)]   //  0, neutral
+        [InlineData(4, DifficultyBand.Hard)]     // +1, raises the threat
+        [InlineData(5, DifficultyBand.Hard)]     // +1
+        public void Maps_the_modifier_to_a_band(int rating, DifficultyBand band)
+            => Assert.Equal(band, new Scheme { Id = "s", Name = "S", Difficulty = rating }.ThreatBand);
+
+        [Fact]
+        public void Is_null_when_the_scheme_is_unrated()
+            => Assert.Null(new Scheme { Id = "s", Name = "S" }.ThreatBand);
+    }
 }
