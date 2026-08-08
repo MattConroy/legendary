@@ -14,6 +14,7 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddSingleton<SetupRandomizer>();
 builder.Services.AddSingleton<ISetRepository, HttpSetRepository>();
 builder.Services.AddSingleton<IKeywordRepository, HttpKeywordRepository>();
+builder.Services.AddSingleton<ICardDetailRepository, HttpCardDetailRepository>();
 builder.Services.AddSingleton<IPreferenceRepository, LocalStoragePreferenceRepository>();
 builder.Services.AddSingleton<GameStateService>();
 

@@ -23,6 +23,9 @@ internal static class Content
         JsonSerializer.Deserialize<Dictionary<string, string[]>>(
             File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "card-keywords.json")), SetJson.Options)!;
 
+    public static readonly IReadOnlyDictionary<string, IReadOnlyList<CardDetail>> CardDetails =
+        CardDetailJson.Deserialize(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "card-details.json")));
+
     public static CardSet Set(string id) => Sets.First(s => s.Id == id);
 
     public static CardPool CorePool() => CardPool.From([Set("core")]);

@@ -1,0 +1,456 @@
+{
+ "core:black-widow": [
+  {
+   "name": "Dangerous Rescue",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Mission Accomplished",
+   "copies": 5,
+   "cost": 2
+  },
+  {
+   "name": "Covert Operation",
+   "copies": 3,
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Silent Sniper",
+   "copies": 1,
+   "kind": "attack",
+   "value": 4,
+   "cost": 7
+  }
+ ],
+ "core:captain-america": [
+  {
+   "name": "Avengers Assemble!",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Perfect Teamwork",
+   "copies": 5,
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Diving Block",
+   "copies": 3,
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "A Day Unlike Any Other",
+   "copies": 1,
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "core:cyclops": [
+  {
+   "name": "Determination",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 3,
+   "cost": 2
+  },
+  {
+   "name": "Optic Blast",
+   "copies": 5,
+   "kind": "attack",
+   "value": 3,
+   "cost": 3
+  },
+  {
+   "name": "Unending Energy",
+   "copies": 3,
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "X-Men United",
+   "copies": 1,
+   "kind": "attack",
+   "value": 6,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "core:deadpool": [
+  {
+   "name": "Here, Hold This for a Second",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Oddball",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Hey, Can I Get a Do-Over?",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Random Acts of Unkindness",
+   "copies": 1,
+   "kind": "attack",
+   "value": 6,
+   "cost": 7
+  }
+ ],
+ "core:emma-frost": [
+  {
+   "name": "Mental Discipline",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Shadowed Thoughts",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Psychic Link",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Diamond Form",
+   "copies": 1,
+   "kind": "recruit",
+   "value": 0,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "core:gambit": [
+  {
+   "name": "Card Shark",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Stack the Deck",
+   "copies": 5,
+   "cost": 2
+  },
+  {
+   "name": "Hypnotic Charm",
+   "copies": 3,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "High Stakes Jackpot",
+   "copies": 1,
+   "kind": "attack",
+   "value": 4,
+   "variable": true,
+   "cost": 7
+  }
+ ],
+ "core:hawkeye": [
+  {
+   "name": "Quick Draw",
+   "copies": 5,
+   "kind": "attack",
+   "value": 1,
+   "cost": 3
+  },
+  {
+   "name": "Team Player",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Covering Fire",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "cost": 5
+  },
+  {
+   "name": "Impossible Trick Shot",
+   "copies": 1,
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "core:hulk": [
+  {
+   "name": "Growing Anger",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Unstoppable Hulk",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Crazed Rampage",
+   "copies": 3,
+   "kind": "attack",
+   "value": 4,
+   "cost": 5
+  },
+  {
+   "name": "Hulk Smash!",
+   "copies": 1,
+   "kind": "attack",
+   "value": 5,
+   "variable": true,
+   "cost": 8
+  }
+ ],
+ "core:iron-man": [
+  {
+   "name": "Endless Invention",
+   "copies": 5,
+   "cost": 3
+  },
+  {
+   "name": "Repulsor Rays",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Arc Reactor",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 5
+  },
+  {
+   "name": "Quantum Breakthrough",
+   "copies": 1,
+   "cost": 7
+  }
+ ],
+ "core:nick-fury": [
+  {
+   "name": "Battlefield Promotion",
+   "copies": 5,
+   "cost": 4
+  },
+  {
+   "name": "High-Tech Weaponry",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Legendary Commander",
+   "copies": 3,
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "Pure Fury",
+   "copies": 1,
+   "cost": 8
+  }
+ ],
+ "core:rogue": [
+  {
+   "name": "Borrowed Brawn",
+   "copies": 5,
+   "kind": "attack",
+   "value": 1,
+   "variable": true,
+   "cost": 4
+  },
+  {
+   "name": "Energy Drain",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Copy Powers",
+   "copies": 3,
+   "cost": 5
+  },
+  {
+   "name": "Steal Abilities",
+   "copies": 1,
+   "kind": "attack",
+   "value": 4,
+   "cost": 8
+  }
+ ],
+ "core:spider-man": [
+  {
+   "name": "Astonishing Strength",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Great Responsibility",
+   "copies": 5,
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Web-Shooters",
+   "copies": 3,
+   "cost": 2
+  },
+  {
+   "name": "The Amazing Spider-Man",
+   "copies": 1,
+   "cost": 2
+  }
+ ],
+ "core:storm": [
+  {
+   "name": "Gathering Stormclouds",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Lightning Bolt",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Spinning Cyclone",
+   "copies": 3,
+   "kind": "attack",
+   "value": 4,
+   "cost": 6
+  },
+  {
+   "name": "Tidal Wave",
+   "copies": 1,
+   "kind": "attack",
+   "value": 5,
+   "cost": 7
+  }
+ ],
+ "core:thor": [
+  {
+   "name": "Odinson",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "variable": true,
+   "cost": 3
+  },
+  {
+   "name": "Surge of Power",
+   "copies": 5,
+   "kind": "recruit",
+   "value": 2,
+   "cost": 4
+  },
+  {
+   "name": "Call Lightning",
+   "copies": 3,
+   "kind": "attack",
+   "value": 3,
+   "variable": true,
+   "cost": 6
+  },
+  {
+   "name": "God of Thunder",
+   "copies": 1,
+   "kind": "recruit",
+   "value": 5,
+   "cost": 8
+  }
+ ],
+ "core:wolverine": [
+  {
+   "name": "Healing Factor",
+   "copies": 5,
+   "kind": "attack",
+   "value": 2,
+   "cost": 3
+  },
+  {
+   "name": "Keen Senses",
+   "copies": 5,
+   "kind": "attack",
+   "value": 1,
+   "cost": 2
+  },
+  {
+   "name": "Frenzied Slashing",
+   "copies": 3,
+   "kind": "attack",
+   "value": 2,
+   "cost": 5
+  },
+  {
+   "name": "Berserker Rage",
+   "copies": 1,
+   "kind": "attack",
+   "value": 0,
+   "variable": true,
+   "cost": 8
+  }
+ ]
+}

@@ -21,6 +21,7 @@
     <Compile Include="../src/Abstractions/**/*.cs" />
     <Compile Include="../src/Data/SetJson.cs" />
     <Compile Include="../src/Data/KeywordJson.cs" />
+    <Compile Include="../src/Data/CardDetailJson.cs" />
     <Compile Include="../src/Services/CardPool.cs" />
     <Compile Include="../src/Services/SetupRandomizer.cs" />
     <Compile Include="../src/Services/GameStateService.cs" />
@@ -31,6 +32,7 @@
     <None Include="../src/wwwroot/data/sets.json" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
     <None Include="../src/wwwroot/data/keywords.json" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
     <None Include="../src/wwwroot/data/card-keywords.json" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
+    <None Include="../src/wwwroot/data/card-details.json" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
   </ItemGroup>
 
 </Project>

@@ -639,3 +639,27 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .cat__set { color: var(--muted); font-size: 0.78rem; }
 .cat__link { margin-left: auto; color: var(--gold); font-weight: 700; font-size: 0.78rem; white-space: nowrap; }
 .cat__kws { margin: 2px 0 0; }
+.cat__expand {
+    display: inline-flex; align-items: center; gap: 4px; cursor: pointer;
+    background: none; border: none; padding: 0; color: var(--muted);
+    font-size: 0.78rem; font-weight: 700; font-family: inherit;
+}
+.cat__caret { transition: transform 0.15s ease; display: inline-block; }
+.cat__caret--open { transform: rotate(90deg); }
+
+.deck { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.deck__card {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    background: var(--bg-2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 6px 10px; font-size: 0.85rem;
+}
+.deck__copies { color: var(--muted); font-weight: 800; font-variant-numeric: tabular-nums; min-width: 2.2em; }
+.deck__name { color: var(--text); font-weight: 600; }
+.deck__stat {
+    font-weight: 800; font-size: 0.72rem; border-radius: 999px; padding: 1px 7px;
+    border: 1px solid var(--accent); color: var(--accent);
+}
+.deck__stat--attack  { --accent: var(--marvel); }
+.deck__stat--recruit { --accent: var(--gold); }
+.deck__cost { color: var(--muted); font-size: 0.75rem; }
+.deck__link { margin-left: auto; color: var(--gold); font-weight: 700; white-space: nowrap; }

@@ -1,6 +1,7 @@
 @page "/cards"
 @inject GameStateService State
 @inject IKeywordRepository Keywords
+@inject ICardDetailRepository CardDetails
 
 <PageTitle>Legendary — Cards</PageTitle>
 
@@ -52,6 +53,8 @@
                         var team = (card as Hero)?.Team;
                         var band = (card as Mastermind)?.ThreatBand ?? (card as Scheme)?.ThreatBand;
                         var kws = Keywords.IsLoaded ? Keywords.InPlay(new[] { card.Id }) : [];
+                        var deck = CardDetails.IsLoaded ? CardDetails.For(card.Id) : [];
+                        var open = _expanded.Contains(card.Id);
                     }
                     <li class="cat">
                         <div class="cat__main">
@@ -75,8 +78,37 @@
                             {
                                 <span class="cat__set">· @team</span>
                             }
+                            @if (deck.Count > 0)
+                            {
+                                <button class="cat__expand" type="button" @onclick="() => Toggle(card.Id)" aria-expanded="@open">
+                                    <span class="cat__caret @(open ? "cat__caret--open" : "")" aria-hidden="true">▸</span>
+                                    @TotalCards(deck) cards
+                                </button>
+                            }
                             <a class="cat__link" href="@CardLink(card.Name)" target="_blank" rel="noopener noreferrer">view card ↗</a>
                         </div>
+                        @if (open && deck.Count > 0)
+                        {
+                            <ul class="deck">
+                                @foreach (var d in deck)
+                                {
+                                    <li class="deck__card">
+                                        <span class="deck__copies">@d.Copies×</span>
+                                        <span class="deck__name">@d.Name</span>
+                                        @if (d.Kind is not null && d.Value is { } val)
+                                        {
+                                            <span class="deck__stat deck__stat--@d.Kind">@val@(d.Variable ? "+" : "") @Resource(d.Kind)</span>
+                                        }
+                                        @if (d.Cost is { } cost)
+                                        {
+                                            <span class="deck__cost">Cost @cost</span>
+                                        }
+                                        <a class="deck__link" href="@CardLink(d.Name)" target="_blank" rel="noopener noreferrer"
+                                           title="View @d.Name on the wiki">↗</a>
+                                    </li>
+                                }
+                            </ul>
+                        }
                         @if (kws.Count > 0)
                         {
                             <ul class="tag-list cat__kws">
@@ -99,6 +131,7 @@
     private string _setFilter = string.Empty;
 
     private List<Entry> _all = [];
+    private readonly HashSet<string> _expanded = [];
 
     // Established Legendary card database — we link out rather than host imagery.
     private const string CardDbSearch = "https://marvel-legendary.fandom.com/wiki/Special:Search?query=";
@@ -139,6 +172,15 @@
             .OrderBy(e => e.Card.Name, StringComparer.OrdinalIgnoreCase)
             .ToList();
     }
+
+    private void Toggle(string id)
+    {
+        if (!_expanded.Remove(id)) _expanded.Add(id);
+    }
+
+    private static int TotalCards(IReadOnlyList<CardDetail> deck) => deck.Sum(c => c.Copies);
+
+    private static string Resource(string kind) => kind == "recruit" ? "Recruit" : "Attack";
 
     private static string CategoryLabel(CardCategory category) => category switch
     {
