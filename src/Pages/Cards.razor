@@ -85,7 +85,6 @@
                                     @TotalCards(deck) cards
                                 </button>
                             }
-                            <a class="cat__link" href="@CardLink(card.Name)" target="_blank" rel="noopener noreferrer">view card ↗</a>
                         </div>
                         @if (open && deck.Count > 0)
                         {
@@ -107,8 +106,6 @@
                                         {
                                             <span class="deck__cost">Cost @cost</span>
                                         }
-                                        <a class="deck__link" href="@CardLink(d.Name)" target="_blank" rel="noopener noreferrer"
-                                           title="View @d.Name on the wiki">↗</a>
                                     </li>
                                 }
                             </ul>
@@ -137,9 +134,6 @@
     private List<Entry> _all = [];
     private readonly HashSet<string> _expanded = [];
 
-    // Established Legendary card database — we link out rather than host imagery.
-    private const string CardDbSearch = "https://marvel-legendary.fandom.com/wiki/Special:Search?query=";
-
     private static readonly (string Value, string Label)[] Categories =
     {
         (nameof(CardCategory.Hero), "Heroes"),
@@ -154,6 +148,7 @@
         await State.InitializeAsync();
         // Keywords are secondary — never let them break browsing.
         try { await Keywords.EnsureLoadedAsync(); } catch { /* chips just won't show */ }
+        try { await CardDetails.EnsureLoadedAsync(); } catch { /* breakdowns just won't show */ }
 
         _all = State.AllSets
             .SelectMany(set => set.AllCards.Select(c => new Entry(c, set.Name, set.Id)))
@@ -192,8 +187,6 @@
         CardCategory.Henchmen => "Henchmen",
         _ => category.ToString(),
     };
-
-    private static string CardLink(string name) => CardDbSearch + Uri.EscapeDataString(name);
 
     private readonly record struct Entry(GameCard Card, string SetName, string SetId);
 }
