@@ -91,29 +91,40 @@
                                 @foreach (var d in deck)
                                 {
                                     <li class="deck__card">
-                                        @if (d.Class is { } cls)
+                                        <div class="deck__row">
+                                            @if (d.Class is { } cls)
+                                            {
+                                                <img class="deck__cls" src="classes/@(cls.ToLowerInvariant()).png" alt="@cls" title="@cls" />
+                                            }
+                                            else
+                                            {
+                                                <span class="deck__cls"></span>
+                                            }
+                                            <span class="deck__copies">@d.Copies×</span>
+                                            <span class="deck__name">@d.Name</span>
+                                            @if (d.Kind is not null && d.Value is not null)
+                                            {
+                                                <span class="stat stat--@d.Kind" title="@ValText(d) @Resource(d.Kind)">
+                                                    <img class="stat__icon" src="classes/@(d.Kind).svg" alt="@Resource(d.Kind)" />
+                                                    <span class="stat__num">@ValText(d)</span>
+                                                </span>
+                                            }
+                                            @if (d.Cost is { } cost)
+                                            {
+                                                <span class="cost" title="Cost @cost">
+                                                    <img class="cost__icon" src="classes/cost.svg" alt="Cost" />
+                                                    <span class="cost__num">@cost</span>
+                                                </span>
+                                            }
+                                        </div>
+                                        @if (d.Keywords.Count > 0)
                                         {
-                                            <img class="deck__cls" src="classes/@(cls.ToLowerInvariant()).png" alt="@cls" title="@cls" />
-                                        }
-                                        else
-                                        {
-                                            <span class="deck__cls"></span>
-                                        }
-                                        <span class="deck__copies">@d.Copies×</span>
-                                        <span class="deck__name">@d.Name</span>
-                                        @if (d.Kind is not null && d.Value is not null)
-                                        {
-                                            <span class="stat stat--@d.Kind" title="@ValText(d) @Resource(d.Kind)">
-                                                <img class="stat__icon" src="classes/@(d.Kind).svg" alt="@Resource(d.Kind)" />
-                                                <span class="stat__num">@ValText(d)</span>
-                                            </span>
-                                        }
-                                        @if (d.Cost is { } cost)
-                                        {
-                                            <span class="cost" title="Cost @cost">
-                                                <img class="cost__icon" src="classes/cost.svg" alt="Cost" />
-                                                <span class="cost__num">@cost</span>
-                                            </span>
+                                            <ul class="tag-list deck__kws">
+                                                @foreach (var kw in d.Keywords)
+                                                {
+                                                    <li class="tag">@kw</li>
+                                                }
+                                            </ul>
                                         }
                                     </li>
                                 }

@@ -27,4 +27,8 @@ public sealed record CardDetail
 
     /// <summary>Recruit cost to buy the card, when it has one.</summary>
     public int? Cost { get; init; }
+
+    /// <summary>Ability keyword tokens printed on the card, with their values where
+    /// given (e.g. "Versatile 2", "Teleport"). Empty if the card has none.</summary>
+    public IReadOnlyList<string> Keywords { get; init; } = [];
 }

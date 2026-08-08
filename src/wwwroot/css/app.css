@@ -657,10 +657,12 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 
 .deck { list-style: none; margin: 0 12px 10px; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .deck__card {
-    display: flex; align-items: center; gap: 8px;
+    display: flex; flex-direction: column; gap: 4px;
     background: var(--bg-2); border: 1px solid var(--border);
     border-radius: 8px; padding: 5px 10px; font-size: 0.85rem;
 }
+.deck__row { display: flex; align-items: center; gap: 8px; }
+.deck__kws { margin: 0 0 2px 26px; }
 .deck__cls { width: 18px; height: 18px; flex: none; object-fit: contain; }
 .deck__copies { color: var(--muted); font-weight: 800; font-variant-numeric: tabular-nums; flex: none; }
 .deck__name { color: var(--text); font-weight: 600; flex: 1 1 auto; min-width: 0; }
