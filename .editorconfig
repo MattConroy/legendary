@@ -1,0 +1,17 @@
+root = true
+
+[*.cs]
+
+# --- Static-analysis guardrails (curated) -------------------------------------
+# These few rules are promoted to build errors so refactors stay self-policing:
+# dead private members and leftover using directives fail the build rather than
+# lingering. The rest of the IDE ruleset is left at its default (suggestion), so
+# the repo's house style — explicit constructors, .ToList()/new() — is not forced.
+
+dotnet_diagnostic.IDE0005.severity = error   # unnecessary using directive
+dotnet_diagnostic.IDE0051.severity = error   # unused private member
+dotnet_diagnostic.IDE0052.severity = error   # unread private member
+
+# Compiler dead-code warnings, promoted to errors for the same reason.
+dotnet_diagnostic.CS0168.severity = error    # variable declared but never used
+dotnet_diagnostic.CS0219.severity = error    # variable assigned but never used

@@ -1,0 +1,16 @@
+<Project>
+
+  <!-- Applies to every project in the repo (src and tests). -->
+  <PropertyGroup>
+    <!-- Run the Roslyn IDE analyzers (IDE####) as part of the build, not just in
+         the editor / dotnet format, so the guardrails in .editorconfig are enforced. -->
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+
+    <!-- IDE0005 (unnecessary using directive) is only reported during a build when
+         the XML documentation file is generated. We don't require XML docs, so turn
+         generation on but silence the "missing doc comment" warning it produces. -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+</Project>
