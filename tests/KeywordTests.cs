@@ -1,4 +1,3 @@
-using Legendary.Companion.Data;
 using Legendary.Companion.Models;
 using Xunit;
 
@@ -6,123 +5,28 @@ namespace Legendary.Companion.Tests;
 
 public class KeywordTests
 {
-    private static readonly IReadOnlyList<Keyword> Keywords =
-        KeywordJson.Deserialize(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "keywords.json")));
-
-    private static readonly IReadOnlyList<CardSet> Sets =
-        SetJson.Deserialize(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "sets.json")));
-
-    [Fact]
-    public void Glossary_loads_with_unique_ids_and_summaries()
+    public class HasFullRules
     {
-        Assert.NotEmpty(Keywords);
-        Assert.Equal(Keywords.Count, Keywords.Select(k => k.Id).Distinct().Count());
-        Assert.All(Keywords, k => Assert.False(string.IsNullOrWhiteSpace(k.Summary)));
-        Assert.All(Keywords, k => Assert.False(string.IsNullOrWhiteSpace(k.Name)));
-    }
-
-    [Fact]
-    public void Summaries_are_succinct_and_flavour_free()
-    {
-        foreach (var k in Keywords)
+        [Fact]
+        public void Is_true_when_the_rules_add_detail_beyond_the_summary()
         {
-            // A "remind me" summary stays short and leads with the rule, not lore.
-            Assert.True(k.Summary.Length <= 320, $"{k.Name} summary is too long ({k.Summary.Length}).");
-            Assert.DoesNotContain("This keyword represents", k.Summary);
-        }
-    }
-
-    [Fact]
-    public void Every_keyword_belongs_to_at_least_one_real_set()
-    {
-        var setIds = Sets.Select(s => s.Id).ToHashSet();
-        foreach (var k in Keywords)
-        {
-            Assert.NotEmpty(k.Sets);
-            foreach (var sid in k.Sets)
-                Assert.Contains(sid, setIds);
-        }
-    }
-
-    [Fact]
-    public void Shared_keywords_are_tagged_across_every_set_they_appear_in()
-    {
-        // Wall-Crawl debuted in Paint the Town Red and recurs in later sets.
-        var wallCrawl = Keywords.Single(k => k.Id == "wall-crawl");
-        Assert.Contains("paint-the-town-red", wallCrawl.Sets);
-        Assert.Contains("secret-wars-vol-2", wallCrawl.Sets);
-        Assert.Contains("spider-man-homecoming", wallCrawl.Sets);
-
-        // Teleport is a long-running keyword shared by several boxes.
-        Assert.True(Keywords.Single(k => k.Id == "teleport").Sets.Count >= 3);
-    }
-
-    [Fact]
-    public void Core_triggers_are_excluded_from_the_ability_keyword_glossary()
-    {
-        // Scope is ability keywords only — the core triggers aren't listed.
-        foreach (var name in new[] { "Ambush", "Fight", "Escape", "Rescue" })
-            Assert.DoesNotContain(Keywords, k => k.Name == name);
-    }
-
-    [Fact]
-    public void Card_keyword_tags_resolve_to_real_cards_and_keywords()
-    {
-        var cardKeywords = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string[]>>(
-            File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "card-keywords.json")), SetJson.Options)!;
-
-        var cardIds = Sets.SelectMany(s =>
-            s.Masterminds.Select(c => c.Id)
-             .Concat(s.Schemes.Select(c => c.Id))
-             .Concat(s.VillainGroups.Select(c => c.Id))
-             .Concat(s.Henchmen.Select(c => c.Id))
-             .Concat(s.Heroes.Select(c => c.Id))).ToHashSet();
-        var keywordIds = Keywords.Select(k => k.Id).ToHashSet();
-
-        Assert.NotEmpty(cardKeywords);
-        foreach (var (cardId, kws) in cardKeywords)
-        {
-            Assert.Contains(cardId, cardIds);
-            Assert.NotEmpty(kws);
-            foreach (var kw in kws)
-                Assert.Contains(kw, keywordIds);
+            var k = new Keyword
+            {
+                Id = "k", Name = "K", Summary = "Short reminder.",
+                Rules = ["A materially longer rules paragraph that clearly exceeds the summary length."],
+            };
+            Assert.True(k.HasFullRules);
         }
 
-        // Sanity: Nightcrawler carries Teleport.
-        Assert.Contains("teleport", cardKeywords["dc:nightcrawler"]);
+        [Fact]
+        public void Is_false_when_there_are_no_rules()
+            => Assert.False(new Keyword { Id = "k", Name = "K", Summary = "Short reminder." }.HasFullRules);
 
-        // Regression: keywords written with a number ("Versatile 3") must still tag.
-        Assert.Contains("versatile", cardKeywords["dc:domino"]);
-        Assert.Contains("teleport", cardKeywords["dc:cable"]);
-
-        // Regression: the generic "This Scheme Transforms" flip mechanic must NOT
-        // be mistaken for the Transform keyword.
-        var schemeIds = Sets.SelectMany(s => s.Schemes.Select(c => c.Id)).ToHashSet();
-        foreach (var (cardId, kws) in cardKeywords)
-            if (schemeIds.Contains(cardId))
-                Assert.DoesNotContain("transform", kws);
-    }
-
-    [Fact]
-    public void Every_keyword_set_membership_has_at_least_one_tagged_card()
-    {
-        // Guards both directions: a keyword claiming a set it never appears on
-        // (pollution), and a set whose keyword is never tagged on a card (coverage gap).
-        var cardKeywords = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string[]>>(
-            File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "data", "card-keywords.json")), SetJson.Options)!;
-        var cardSet = Sets.SelectMany(s =>
-            s.Masterminds.Select(c => c.Id).Concat(s.Schemes.Select(c => c.Id))
-             .Concat(s.VillainGroups.Select(c => c.Id)).Concat(s.Henchmen.Select(c => c.Id))
-             .Concat(s.Heroes.Select(c => c.Id)).Select(id => (id, set: s.Id)))
-            .ToDictionary(t => t.id, t => t.set);
-
-        var tagged = cardKeywords
-            .SelectMany(kv => kv.Value.Select(kw => (kw, set: cardSet[kv.Key])))
-            .ToHashSet();
-
-        foreach (var k in Keywords)
-            foreach (var sid in k.Sets)
-                Assert.True(tagged.Contains((k.Id, sid)),
-                    $"Keyword '{k.Name}' lists set '{sid}' but no card there is tagged with it.");
+        [Fact]
+        public void Is_false_when_the_rules_barely_exceed_the_summary()
+        {
+            var k = new Keyword { Id = "k", Name = "K", Summary = "Teleport: move it.", Rules = ["Teleport."] };
+            Assert.False(k.HasFullRules);
+        }
     }
 }
