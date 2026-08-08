@@ -117,14 +117,14 @@
                                         @if (d.Kind is not null && d.Value is not null)
                                         {
                                             <span class="stat stat--@d.Kind" title="@ValText(d) @Resource(d.Kind)">
-                                                <img class="stat__icon" src="classes/@(d.Kind).png" alt="@Resource(d.Kind)" />
+                                                <img class="stat__icon" src="classes/@(d.Kind).svg" alt="@Resource(d.Kind)" />
                                                 <span class="stat__num">@ValText(d)</span>
                                             </span>
                                         }
                                         @if (d.Cost is { } cost)
                                         {
                                             <span class="cost" title="Cost @cost">
-                                                <img class="cost__icon" src="classes/cost.png" alt="Cost" />
+                                                <img class="cost__icon" src="classes/cost.svg" alt="Cost" />
                                                 <span class="cost__num">@cost</span>
                                             </span>
                                         }
