@@ -87,12 +87,12 @@
                         OnReroll="() => Reroll(CardCategory.Scheme)">
                 <div class="single">
                     <span class="single__name">@setup.Scheme.Card.Name</span>
-                    @if (setup.Scheme.Card is Scheme scheme && scheme.ThreatBand is { } scBand)
+                    @if ((setup.Scheme.Card as Scheme)?.ThreatBand is { } scBand)
                     {
                         <span class="tpill tpill--@scBand.ToString().ToLowerInvariant()"
-                              title="Adjusts the overall threat by @Signed(scheme.ThreatModifier)">
+                              title="How much this scheme shifts the overall threat">
                             <span class="tpill__label">Threat</span>
-                            <span class="tpill__value">@scBand @Signed(scheme.ThreatModifier)</span>
+                            <span class="tpill__value">@scBand</span>
                         </span>
                     }
                 </div>
@@ -241,14 +241,6 @@
 
     private static string Count(int actual, int target) =>
         actual == target ? $"{actual}" : $"{actual} of {target}";
-
-    // The scheme's contribution to the overall threat, with an explicit sign.
-    private static string Signed(int? modifier) => modifier switch
-    {
-        > 0 => $"+{modifier}",
-        < 0 => $"−{-modifier}",   // U+2212 minus, to match the rest of the UI
-        _ => "±0",
-    };
 
     private void StateChanged() => InvokeAsync(StateHasChanged);
 
