@@ -12692,7 +12692,8 @@
       "cost": 4,
       "keywords": [
         "Patrol"
-      ]
+      ],
+      "effect": "Patrol the Rooftops: if empty, draw a card. Patrol the Sewers: if empty, +1 {recruit}."
     },
     {
       "name": "Ride By Moonlight",
@@ -12701,7 +12702,8 @@
       "kind": "attack",
       "value": 3,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "You may move a Villain to another city space (swap if occupied). Moonlight: +1 {attack}."
     },
     {
       "name": "Hunt High and Low",
@@ -12712,7 +12714,8 @@
       "cost": 3,
       "keywords": [
         "Patrol"
-      ]
+      ],
+      "effect": "Patrol the Rooftops: if empty, reveal the top card of your deck; you may KO it. Patrol the Sewers: if empty, reveal the bottom card of your deck; you may KO it."
     },
     {
       "name": "Creature of Dawn and Dask",
@@ -12721,7 +12724,8 @@
       "kind": "attack",
       "value": 4,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "Sunlight: +2 {attack} and you may put a Hero from the HQ on the bottom of the Hero Deck. Moonlight: Blood Frenzy."
     }
   ],
   "mds:elsa-bloodstone": [
@@ -12735,7 +12739,8 @@
       "cost": 3,
       "keywords": [
         "Patrol"
-      ]
+      ],
+      "effect": "Patrol the Streets: if empty, +2 {recruit}; if not, +2 {attack}. {instinct}: instead get both."
     },
     {
       "name": "Silver Bullets",
@@ -12747,7 +12752,8 @@
       "cost": 4,
       "keywords": [
         "Patrol"
-      ]
+      ],
+      "effect": "Patrol the Streets: if empty, +1 {attack}. {tech}: +1 {attack}."
     },
     {
       "name": "Stalk the Night Stalkers",
@@ -12755,7 +12761,8 @@
       "class": "Tech",
       "kind": "attack",
       "value": 3,
-      "cost": 6
+      "cost": 6,
+      "effect": "You may have a Villain or Mastermind Hunt for Victims; if it KOs a Bystander this way, you may KO a Hero from hand or discard. {tech}: if a Bystander is KO'd this way, you may rescue it instead of KOing it."
     },
     {
       "name": "Vengeance of the Bloodstone Gem",
@@ -12767,7 +12774,8 @@
       "cost": 8,
       "keywords": [
         "Patrol"
-      ]
+      ],
+      "effect": "Patrol any city space: if empty, get the printed Recruit and Attack of the Hero in the HQ space beneath it. {marvel-knights}{marvel-knights}: Blood Frenzy."
     }
   ],
   "mds:morbius": [
@@ -12778,7 +12786,8 @@
       "kind": "recruit",
       "value": 2,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "Moonlight: Blood Frenzy, gaining Recruit instead of Attack."
     },
     {
       "name": "Insatiable Craving",
@@ -12787,7 +12796,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "{covert}: Blood Frenzy."
     },
     {
       "name": "Scalded By Sunlight",
@@ -12796,7 +12806,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "Sunlight: you may gain a Wound for +2 {attack}. Moonlight: you may KO a Wound from hand or discard for +2 {attack}."
     },
     {
       "name": "It's Morbin' Time!",
@@ -12804,7 +12815,8 @@
       "class": "Covert",
       "kind": "attack",
       "value": 3,
-      "cost": 7
+      "cost": 7,
+      "effect": "{covert}: Blood Frenzy, drawing that many cards instead of gaining Attack."
     }
   ],
   "mds:werewolf-by-night": [
@@ -12815,7 +12827,8 @@
       "kind": "attack",
       "value": 1,
       "variable": true,
-      "cost": 2
+      "cost": 2,
+      "effect": "Sunlight: +1 {attack}. Moonlight: draw a card."
     },
     {
       "name": "Snarling Fangs",
@@ -12823,7 +12836,8 @@
       "class": "Strength",
       "kind": "attack",
       "value": 2,
-      "cost": 3
+      "cost": 3,
+      "effect": "Sunlight: you may put a Hero from the HQ on the bottom of the Hero Deck. Moonlight: whenever you defeat a Villain or Mastermind this turn, you may KO one of your Heroes."
     },
     {
       "name": "Release the Beast",
@@ -12832,7 +12846,8 @@
       "kind": "recruit",
       "value": 0,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "Sunlight: +3 {recruit}. Moonlight: Blood Frenzy. {instinct}: instead get both."
     },
     {
       "name": "Track the Captives",
@@ -12841,7 +12856,8 @@
       "kind": "attack",
       "value": 5,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "Moonlight: whenever you defeat a Villain or Mastermind this turn, you may rescue a Bystander or gain a Hero from the HQ or Sidekick Deck costing less than that enemy's Attack. {instinct}: +2 {attack}."
     }
   ],
   "mds:wong-master-of-the-mystic-arts": [
@@ -12854,7 +12870,8 @@
       "cost": 2,
       "keywords": [
         "Patrol"
-      ]
+      ],
+      "effect": "Patrol the Bridge: if empty, draw a card."
     },
     {
       "name": "Searing Shards of Sunlight",
@@ -12863,7 +12880,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "Sunlight: +1 {attack}. {ranged}: +1 {attack}."
     },
     {
       "name": "Seal the Rift",
@@ -12875,7 +12893,8 @@
       "cost": 5,
       "keywords": [
         "Patrol"
-      ]
+      ],
+      "effect": "Patrol the Bridge: if empty, draw two cards; if not, +5 {attack} usable only against Villains on the Bridge."
     },
     {
       "name": "Face Your Demons",
@@ -12884,7 +12903,8 @@
       "kind": "attack",
       "value": 6,
       "variable": true,
-      "cost": 8
+      "cost": 8,
+      "effect": "Once this turn, you may fight the top Bystander as a 4-Attack \"Darkhold Demon\" Villain with Fight: KO up to two of your Heroes, then rescue it as a Bystander. Sunlight: +2 {attack}."
     }
   ],
   "wpx:fantomex": [
