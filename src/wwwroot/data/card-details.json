@@ -12930,7 +12930,8 @@
       "cost": 2,
       "keywords": [
         "Weapon X Sequence"
-      ]
+      ],
+      "effect": "Weapon X Sequence, getting Recruit instead of Attack. If you got at least 3 {recruit} this way, draw a card."
     },
     {
       "name": "Misdirection",
@@ -12942,7 +12943,8 @@
       "cost": 3,
       "keywords": [
         "Weapon X Sequence"
-      ]
+      ],
+      "effect": "When you draw a new hand this turn, draw an extra card, then put a card from hand on top of your deck."
     },
     {
       "name": "Weapon XIII",
@@ -12954,7 +12956,8 @@
       "cost": 4,
       "keywords": [
         "Weapon X Sequence"
-      ]
+      ],
+      "effect": "{tech}: you may KO one of your cards that shares a cost with another of your cards."
     }
   ],
   "wpx:marrow": [
@@ -12965,7 +12968,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "{x-force}: Berserk."
     },
     {
       "name": "Hyper-Adaptive Skeleton",
@@ -12974,7 +12978,8 @@
       "kind": "recruit",
       "value": 1,
       "variable": true,
-      "cost": 2
+      "cost": 2,
+      "effect": "For all your Heroes' Berserk abilities this turn, also gain the Berserked cards' printed Recruit as well as their printed Attack. {strength}: Berserk."
     },
     {
       "name": "Osteogenesis",
@@ -12982,7 +12987,8 @@
       "class": "Strength",
       "kind": "recruit",
       "value": 1,
-      "cost": 6
+      "cost": 6,
+      "effect": "Draw two cards, then put a card from hand on top of your deck."
     },
     {
       "name": "Metabolic Overdrive",
@@ -12994,7 +13000,8 @@
       "cost": 7,
       "keywords": [
         "Weapon X Sequence"
-      ]
+      ],
+      "effect": "Reveal the top six cards of your deck; discard all costing 0 and put the rest back in any order."
     }
   ],
   "wpx:weapon-h": [
@@ -13005,7 +13012,8 @@
       "kind": "recruit",
       "value": 0,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "You may have this card make Recruit instead of Attack (including the ability below). {instinct}: +1 {attack}."
     },
     {
       "name": "The Future of Warfare",
@@ -13014,7 +13022,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "Look at the top card of your deck; discard it or put it back. {strength}: Berserk."
     },
     {
       "name": "Slice and Smash",
@@ -13026,7 +13035,8 @@
       "cost": 5,
       "keywords": [
         "Berserk"
-      ]
+      ],
+      "effect": "{strength}: you may KO the card you Berserked."
     },
     {
       "name": "Ultimate Killing Machine",
@@ -13038,7 +13048,8 @@
       "cost": 8,
       "keywords": [
         "Weapon X Sequence"
-      ]
+      ],
+      "effect": "{strength}: using the Wound Deck, Berserk six times, putting those discarded Wounds on the bottom of the Wound Deck."
     }
   ],
   "wpx:weapon-x-wolverine": [
@@ -13052,7 +13063,8 @@
       "cost": 5,
       "keywords": [
         "Weapon X Sequence"
-      ]
+      ],
+      "effect": "To play this, put another card from hand on top of your deck."
     },
     {
       "name": "Raging Regeneration",
@@ -13064,7 +13076,8 @@
       "cost": 4,
       "keywords": [
         "Berserk"
-      ]
+      ],
+      "effect": "{instinct}: you may KO a Wound from hand or discard to Berserk again."
     },
     {
       "name": "Violent Conditioning",
@@ -13073,7 +13086,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "You may gain a Wound to Berserk twice."
     },
     {
       "name": "Escape the Weapon X Lab",
@@ -13085,7 +13099,8 @@
       "cost": 6,
       "keywords": [
         "Weapon X Sequence"
-      ]
+      ],
+      "effect": "{instinct}: you may reveal cards from the Wound Deck until an Enraging Wound; gain it to your hand and put the others on the bottom. If you gain a Wound this way, Berserk."
     }
   ]
 }
