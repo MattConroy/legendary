@@ -10808,7 +10808,8 @@
       "cost": 3,
       "keywords": [
         "Dodge"
-      ]
+      ],
+      "effect": "Dodge. When you Dodge with or play this, you may also Dodge with another card from hand."
     },
     {
       "name": "Widow's Bite",
@@ -10832,7 +10833,8 @@
       "cost": 5,
       "keywords": [
         "Dodge"
-      ]
+      ],
+      "effect": "Dodge. If you drew any cards this turn, you may send one of your other Heroes Undercover."
     },
     {
       "name": "Infiltrate the Conspiracy",
@@ -10841,7 +10843,8 @@
       "kind": "attack",
       "value": 4,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "You may send one of your Heroes Undercover. +3 {attack} if you have at least 4 Bystanders and/or Undercover Heroes in your Victory Pile."
     }
   ],
   "bw:yelena-belova": [
@@ -10851,7 +10854,8 @@
       "class": "Covert",
       "kind": "attack",
       "value": 3,
-      "cost": 2
+      "cost": 2,
+      "effect": "Send this Undercover."
     },
     {
       "name": "Unveil Identity",
@@ -10859,7 +10863,8 @@
       "class": "Instinct",
       "kind": "recruit",
       "value": 2,
-      "cost": 3
+      "cost": 3,
+      "effect": "{instinct}: you may Unleash one of your Heroes from Undercover."
     },
     {
       "name": "Twilight Ops",
@@ -10870,7 +10875,8 @@
       "cost": 6,
       "keywords": [
         "Dodge"
-      ]
+      ],
+      "effect": "Dodge. When you Dodge with this, you may Unleash one of your other Heroes from Undercover. When you play this, send it Undercover."
     },
     {
       "name": "Destroy the Red Room",
@@ -10878,7 +10884,8 @@
       "class": "Tech",
       "kind": "attack",
       "value": 4,
-      "cost": 8
+      "cost": 8,
+      "effect": "You may Unleash one of your Heroes from Undercover. You may send a Hero from your discard pile Undercover."
     }
   ],
   "bw:red-guardian": [
@@ -10891,7 +10898,8 @@
       "cost": 3,
       "keywords": [
         "When Recruited"
-      ]
+      ],
+      "effect": "When Recruited: send this Undercover; Unleash it when you fight a Villain. On play — {covert}: draw a card."
     },
     {
       "name": "Magnetic Shield",
@@ -10903,7 +10911,8 @@
       "cost": 4,
       "keywords": [
         "When Recruited"
-      ]
+      ],
+      "effect": "When Recruited: send this Undercover; Unleash it when you recruit another {covert} Hero. On play — {covert}: +2 {attack}."
     },
     {
       "name": "Death Was Only A Ruse",
@@ -10914,7 +10923,8 @@
       "cost": 6,
       "keywords": [
         "When Recruited"
-      ]
+      ],
+      "effect": "When Recruited: send this Undercover; Unleash it when a Master Strike is completed or any player fights the Mastermind. On play — {covert}: you may send one of your other Heroes Undercover."
     },
     {
       "name": "Champion of the Winter Guard",
@@ -10926,7 +10936,8 @@
       "cost": 8,
       "keywords": [
         "When Recruited"
-      ]
+      ],
+      "effect": "When Recruited: send this Undercover; Unleash it when a Scheme Twist is completed or you play your third {covert} Hero in a turn. On play — {covert}: +2 {attack} per other {covert} Hero you played this turn."
     }
   ],
   "bw:white-tiger": [
@@ -10936,7 +10947,8 @@
       "class": "Strength",
       "kind": "recruit",
       "value": 2,
-      "cost": 4
+      "cost": 4,
+      "effect": "Reveal the top two cards of your deck; draw one costing 0 and discard the rest."
     },
     {
       "name": "Dark Influence of the Hand",
@@ -10949,7 +10961,8 @@
       "keywords": [
         "Dodge",
         "Dark Memories"
-      ]
+      ],
+      "effect": "Dodge. Dark Memories. Once this turn, you may fight the top Bystander as a 3-Attack \"Hand Ninjas\" Henchman with Fight: +1 {recruit}, then rescue it as a Bystander."
     },
     {
       "name": "Camouflaged Huntress",
@@ -10957,7 +10970,8 @@
       "class": "Covert",
       "kind": "attack",
       "value": 3,
-      "cost": 5
+      "cost": 5,
+      "effect": "Whenever you defeat a Henchman this turn, you may KO one of your cards."
     },
     {
       "name": "Shadowed Resurrection",
@@ -10968,7 +10982,8 @@
       "cost": 8,
       "keywords": [
         "Dark Memories"
-      ]
+      ],
+      "effect": "Dark Memories, drawing that many cards instead of gaining Attack."
     }
   ],
   "bw:falcon-winter-soldier": [
@@ -10981,7 +10996,8 @@
       "keywords": [
         "Divided",
         "Dark Memories"
-      ]
+      ],
+      "effect": "Divided. Attune ({ranged}): discard a card to play this side. Atone ({strength}): Dark Memories."
     },
     {
       "name": "Relocate/Reload",
@@ -10993,7 +11009,8 @@
       "keywords": [
         "Divided",
         "Dodge"
-      ]
+      ],
+      "effect": "Divided. Relocate ({instinct}): Dodge; {instinct}: +1 {attack}. Reload ({tech}): {tech}: draw a card."
     },
     {
       "name": "New Wings/New Plan",
@@ -11004,7 +11021,8 @@
       "cost": 5,
       "keywords": [
         "Divided"
-      ]
+      ],
+      "effect": "Divided. New Wings ({tech}): if you discarded any cards this turn, +4 {attack}. New Plans ({covert}): draw two cards."
     },
     {
       "name": "Captain America's Legacy",
@@ -11013,7 +11031,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "+1 {attack} per Hero Class you have. {avengers}: Dark Memories."
     }
   ],
   "msg:star-lord": [
