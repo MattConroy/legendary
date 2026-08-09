@@ -3082,6 +3082,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "Spectrum: +1 {recruit} and +1 {attack}.",
    "keywords": [
     "Spectrum"
    ]
@@ -3093,6 +3094,7 @@
    "value": 0,
    "variable": true,
    "cost": 3,
+   "effect": "Patrol the Bank: if empty +2 {recruit}, otherwise +2 {attack}.",
    "keywords": [
     "Wall-Crawl",
     "Patrol"
@@ -3105,6 +3107,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 6,
+   "effect": "Patrol the Sewers: if empty, draw a card.",
    "keywords": [
     "Wall-Crawl",
     "Patrol"
@@ -3118,6 +3121,7 @@
    "value": 0,
    "variable": true,
    "cost": 7,
+   "effect": "+1 {recruit} per other {recruit}-icon card and +1 {attack} per other {attack}-icon card played this turn.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -3131,6 +3135,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
+   "effect": "Patrol the Sewers: if empty, +1 {recruit}.",
    "keywords": [
     "Wall-Crawl",
     "Patrol"
@@ -3143,6 +3148,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Spectrum: draw a card.",
    "keywords": [
     "Spectrum"
    ]
@@ -3155,6 +3161,7 @@
    "value": 3,
    "variable": true,
    "cost": 5,
+   "effect": "Patrol two adjacent city spaces: if both empty, +1 {attack}.",
    "keywords": [
     "Patrol"
    ]
@@ -3167,6 +3174,7 @@
    "value": 0,
    "variable": true,
    "cost": 7,
+   "effect": "Patrol the Rooftops: if empty, +4 {recruit} and +4 {attack}; if not, defeat the Villain there for free.",
    "keywords": [
     "Patrol"
    ]
@@ -3178,12 +3186,14 @@
    "copies": 5,
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Reveal your top card; draw it if it's {tech} or {strength}."
   },
   {
    "name": "Upside-down Thinking",
    "copies": 5,
    "cost": 4,
+   "effect": "Patrol any city space: if empty, the Hero in the HQ under it costs 3 less this turn.",
    "keywords": [
     "Wall-Crawl",
     "Patrol"
@@ -3195,14 +3205,16 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "+1 {attack} per other {strength} card and +1 {attack} per other {tech} card played this turn."
   },
   {
    "name": "Multi-Variable Smackulus",
    "copies": 1,
    "kind": "attack",
    "value": 4,
-   "cost": 8
+   "cost": 8,
+   "effect": "{strength} {strength} {tech} {tech}: draw three cards."
   }
  ],
  "sw2:black-swan": [
@@ -3213,7 +3225,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{ranged}: reveal the top Villain Deck card; if a Scheme Twist, +2 {attack}; otherwise put it back on top or bottom."
   },
   {
    "name": "Witness the End",
@@ -3221,14 +3234,16 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 5
+   "cost": 5,
+   "effect": "{instinct}: optionally KO a card from hand or discard to draw a card."
   },
   {
    "name": "Dark Foretelling",
    "copies": 3,
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "{instinct} {ranged}: reveal the top three Villain Deck cards; rescue any Bystanders, replace the rest in any order."
   },
   {
    "name": "Telepathic Control",
@@ -3237,7 +3252,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Reveal the top five Villain Deck cards; +{attack} equal to one's printed VP; replace in any order. {cabal}: use two of them instead."
   }
  ],
  "sw2:the-captain-and-the-devil": [
@@ -3248,6 +3264,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "Spectrum: +2 {recruit}.",
    "keywords": [
     "Spectrum"
    ]
@@ -3260,6 +3277,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "Spectrum: +2 {attack}.",
    "keywords": [
     "Spectrum"
    ]
@@ -3271,6 +3289,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 6,
+   "effect": "Patrol the Streets: if empty, you may KO a card from hand or discard.",
    "keywords": [
     "Patrol"
    ]
@@ -3281,7 +3300,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 6,
-   "cost": 8
+   "cost": 8,
+   "effect": "Each time you defeat a Villain this turn, each Villain and Mastermind adjacent to it gets -2 Attack this turn."
   }
  ],
  "sw2:captain-britain": [
@@ -3292,7 +3312,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "+1 {attack} per different team icon among your Heroes."
   },
   {
    "name": "Transatlantic Savior",
@@ -3301,7 +3322,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "+1 {recruit} per different team icon among your Heroes."
   },
   {
    "name": "Raise the Union Jack",
@@ -3309,6 +3331,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 5,
+   "effect": "Patrol the Rooftops: if empty, reveal your top two cards; if they have different team icons draw them, otherwise replace in any order.",
    "keywords": [
     "Patrol"
    ]
@@ -3317,7 +3340,8 @@
    "name": "Lead the Captain Britain Corps",
    "copies": 1,
    "class": "Strength",
-   "cost": 7
+   "cost": 7,
+   "effect": "Draw three extra cards when you draw your next hand."
   }
  ],
  "sw2:corvus-glaive": [
@@ -3327,7 +3351,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "KO a Bystander from the Bystander Deck; if it's a Special Bystander, you may use its Rescue effect."
   },
   {
    "name": "Let None Escape You",
@@ -3336,6 +3361,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "Patrol the Escape Pile: if it has no Bystanders, +2 {attack}; otherwise +2 {recruit}.",
    "keywords": [
     "Patrol"
    ]
@@ -3347,7 +3373,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "{cabal}: KO a Bystander from the Bystander Stack; +1 {attack} per four Bystanders in the KO pile."
   },
   {
    "name": "Atom-Splitting Glaive",
@@ -3356,7 +3383,8 @@
    "kind": "attack",
    "value": 6,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "{cabal}: you may KO a Bystander from the Escape Pile and from each player's Victory pile; +1 {attack} per Bystander KO'd."
   }
  ],
  "sw2:dr-punisher-soldier-supreme": [
@@ -3366,6 +3394,7 @@
    "kind": "recruit",
    "value": 1,
    "cost": 2,
+   "effect": "Patrol the Streets: if empty, draw a card.",
    "keywords": [
     "Patrol"
    ]
@@ -3377,7 +3406,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{tech}: reveal your top card; if it costs 0, KO it and +1 {attack}."
   },
   {
    "name": "Ice Magic",
@@ -3386,7 +3416,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Reveal the top Villain Deck card; if a Villain you may fight it this turn. {ranged} {ranged}: +{attack} equal to its printed VP."
   },
   {
    "name": "Calm Before the Storm",
@@ -3396,6 +3427,7 @@
    "value": 5,
    "variable": true,
    "cost": 7,
+   "effect": "Patrol every city space: +1 {attack} per empty space.",
    "keywords": [
     "Patrol"
    ]
@@ -3410,6 +3442,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
+   "effect": "Spectrum: optionally KO a card from hand or discard for +1 {recruit}.",
    "keywords": [
     "Spectrum"
    ]
@@ -3420,6 +3453,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Patrol the Sewers: if empty, rescue a Bystander.",
    "keywords": [
     "Patrol"
    ]
@@ -3432,6 +3466,7 @@
    "value": 0,
    "variable": true,
    "cost": 6,
+   "effect": "+1 {attack} per other {shield} Hero played this turn.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -3444,6 +3479,7 @@
    "value": 6,
    "variable": true,
    "cost": 8,
+   "effect": "Spectrum: +3 {attack}.",
    "keywords": [
     "Spectrum"
    ]
@@ -3457,20 +3493,23 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "You may KO this card for +2 {attack}."
   },
   {
    "name": "Reincarnate",
    "copies": 5,
    "class": "Covert",
-   "cost": 3
+   "cost": 3,
+   "effect": "KO this card; gain a cost-4-or-less Hero from the S.H.I.E.L.D. Officer stack or HQ to your hand."
   },
   {
    "name": "Rise from the Ashes",
    "copies": 3,
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "{instinct} {ranged}: gain a Hero that was KO'd this turn."
   },
   {
    "name": "Destruction Is Creation",
@@ -3478,7 +3517,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 4,
-   "cost": 8
+   "cost": 8,
+   "effect": "KO up to three cards from hand; draw that many."
   }
  ],
  "sw2:ruby-summers": [
@@ -3488,14 +3528,16 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "If an effect discards this on your turn, Teleport it instead; off your turn, set it aside and add it to your hand at end of turn."
   },
   {
    "name": "Heir to Legends",
    "copies": 5,
    "kind": "recruit",
    "value": 2,
-   "cost": 5
+   "cost": 5,
+   "effect": "Discard a card from hand to play this."
   },
   {
    "name": "Form of Solid Ruby",
@@ -3504,7 +3546,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "{x-men}: +2 {recruit} each time you defeat a Villain or Mastermind this turn."
   },
   {
    "name": "Extinction Blast",
@@ -3512,7 +3555,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 10,
-   "cost": 8
+   "cost": 8,
+   "effect": "Discard three cards from hand to play this."
   }
  ],
  "sw2:shang-chi": [
@@ -3522,7 +3566,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{instinct}: you may shuffle your discard pile into your deck."
   },
   {
    "name": "Acrobatic Kung-Fu",
@@ -3531,6 +3576,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "Patrol the Rooftops: if empty, +1 {attack}.",
    "keywords": [
     "Wall-Crawl",
     "Patrol"
@@ -3544,6 +3590,7 @@
    "value": 3,
    "variable": true,
    "cost": 5,
+   "effect": "Patrol your discard pile: if empty, +2 {attack}.",
    "keywords": [
     "Patrol"
    ]
@@ -3555,6 +3602,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 7,
+   "effect": "When shuffling your deck with this in it, you may set it aside and put it on top after the shuffle.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -3568,6 +3616,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 2,
+   "effect": "Spectrum: reveal your top card; draw it if it costs 2 or less.",
    "keywords": [
     "Spectrum"
    ]
@@ -3578,6 +3627,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
+   "effect": "Spectrum: draw a card.",
    "keywords": [
     "Wall-Crawl",
     "Spectrum"
@@ -3589,7 +3639,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 1,
-   "cost": 2
+   "cost": 2,
+   "effect": "{spider-friends}: reveal your top card; KO it if it costs 0, draw it if it costs 1 or 2."
   },
   {
    "name": "Borrowed Cloaking Device",
@@ -3598,6 +3649,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
+   "effect": "Spectrum: reveal your top four cards; take any totalling 2 cost or less, replace the rest in any order.",
    "keywords": [
     "Wall-Crawl",
     "Spectrum"
@@ -3611,14 +3663,16 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{covert}: once this turn you may fight the top Bystander Stack card as a 3-Attack Demon Villain (Fight: KO one of your Heroes)."
   },
   {
    "name": "Steel Interception",
    "copies": 5,
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "If a player would gain a Wound, you may discard this to draw two cards instead."
   },
   {
    "name": "Possessed by the Soulsword",
@@ -3627,7 +3681,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "{strength}: Cross-Dimensional Colossus Rampage; +2 {attack} if at least one other player didn't reveal a Colossus card."
   },
   {
    "name": "Rescue My Family from Hell",
@@ -3635,7 +3690,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "{x-men}: you may gain an {x-men} Hero from the HQ or KO pile to your hand."
   }
  ],
  "sw2:spider-gwen": [
@@ -3645,6 +3701,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 2,
+   "effect": "Patrol the Bridge: if empty, reveal your top card; draw it if it costs 2 or less.",
    "keywords": [
     "Patrol"
    ]
@@ -3657,6 +3714,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "Patrol the Rooftops: if empty, rescue a Bystander, then +1 {attack} per two Bystanders in your Victory pile.",
    "keywords": [
     "Patrol"
    ]
@@ -3669,6 +3727,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "Patrol the Bank: if empty, +1 {attack}. Patrol your Victory pile: if empty, +1 {attack}.",
    "keywords": [
     "Wall-Crawl",
     "Patrol"
@@ -3682,6 +3741,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "Reveal your top three cards, replace in any order; +1 {attack} per revealed card costing 2 or less.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -3694,13 +3754,15 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{covert}: a chosen Villain on the Rooftops or Bridge gets -2 Attack this turn."
   },
   {
    "name": "Bridge to a Better Future",
    "copies": 5,
    "class": "Instinct",
    "cost": 4,
+   "effect": "Patrol the Bridge: if empty, draw an extra card when you draw your next hand.",
    "keywords": [
     "Patrol"
    ]
@@ -3710,7 +3772,8 @@
    "copies": 3,
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "Move a Villain to an adjacent space (swap if occupied)."
   },
   {
    "name": "Change History",
@@ -3718,7 +3781,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "{x-men}: Patrol any city space: if empty, gain the Hero in the HQ under it and put it on top of your deck."
   }
  ],
  "fi:greithoth": [
