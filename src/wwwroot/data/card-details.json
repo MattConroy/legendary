@@ -3613,6 +3613,7 @@
    "copies": 5,
    "class": "Instinct",
    "cost": 3,
+   "effect": "Thrown Artifact - when thrown: +2 {recruit}.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -3624,7 +3625,8 @@
    "kind": "attack",
    "value": 1,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "If you control an Artifact, +2 {attack}."
   },
   {
    "name": "Break the Will to Resist",
@@ -3633,7 +3635,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{covert}: each player discards their bottom card; +1 {attack} per non-grey card discarded."
   },
   {
    "name": "Body of Uru",
@@ -3642,7 +3645,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "+{attack} equal to the total Artifacts controlled by players and in the Lair."
   }
  ],
  "fi:kuurth": [
@@ -3651,6 +3655,7 @@
    "copies": 5,
    "class": "Ranged",
    "cost": 4,
+   "effect": "Thrown Artifact - when thrown: +2 {attack}.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -3662,7 +3667,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Reveal your top or bottom card; if it costs 4 or more, +2 {recruit}."
   },
   {
    "name": "Contest of Strength",
@@ -3671,7 +3677,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{foes-of-asgard}: discard any player's top card, then reveal your top or bottom card; if it costs at least as much, +2 {attack}."
   },
   {
    "name": "Break Every Bone",
@@ -3680,7 +3687,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Reveal a card from hand, your top card and your bottom card; +{attack} equal to their total cost."
   }
  ],
  "fi:nerkkod": [
@@ -3690,7 +3698,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Move an Adversary to an adjacent space (swap if occupied)."
   },
   {
    "name": "Feed My Undersea Legions",
@@ -3698,13 +3707,15 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Each time you defeat an Adversary on the Bridge this turn, you may KO one of your cards from hand or discard to gain a New Recruit."
   },
   {
    "name": "Cudgel of the Deep",
    "copies": 3,
    "class": "Ranged",
    "cost": 5,
+   "effect": "Thrown Artifact - when thrown: +3 {attack}, only against Adversaries on the Bridge or the Commander.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -3715,7 +3726,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "{foes-of-asgard}: each opponent reveals their hand; take a New Recruit or Madame HYDRA from each."
   }
  ],
  "fi:nul": [
@@ -3725,13 +3737,15 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength}: choose a player and Demolish them; if they discard, draw a card."
   },
   {
    "name": "Otherworldly Maul",
    "copies": 5,
    "class": "Instinct",
    "cost": 4,
+   "effect": "Thrown Artifact - when thrown: +2 {attack} per {strength} Ally played this turn.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -3742,7 +3756,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "All players slap the table; the last other player to do so gains a Bindings."
   },
   {
    "name": "Break the World",
@@ -3750,7 +3765,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 6,
-   "cost": 8
+   "cost": 8,
+   "effect": "KO up to two cards from hand or discard; for each Bindings KO'd, Demolish every other player."
   }
  ],
  "fi:skirn": [
@@ -3758,7 +3774,8 @@
    "name": "Towering Leader",
    "copies": 5,
    "class": "Instinct",
-   "cost": 3
+   "cost": 3,
+   "effect": "Gain two New Recruits. {instinct}: gain a third."
   },
   {
    "name": "Underhanded Dealings",
@@ -3766,13 +3783,15 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Look at your bottom card; keep or discard it. {covert}: draw a card from the bottom of your deck."
   },
   {
    "name": "Titanic Bludgeon",
    "copies": 3,
    "class": "Ranged",
    "cost": 2,
+   "effect": "Thrown Artifact - when thrown: +1 {attack} per card drawn this turn.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -3783,7 +3802,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "Each player reveals a {covert} Ally or discards a card; draw a card per card discarded."
   }
  ],
  "fi:skadi": [
@@ -3793,7 +3813,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{tech}: gain a Madame HYDRA."
   },
   {
    "name": "Ancient Oath of HYDRA",
@@ -3801,13 +3822,15 @@
    "class": "Tech",
    "kind": "attack",
    "value": 1,
-   "cost": 5
+   "cost": 5,
+   "effect": "You may discard a {hydra} Ally to draw two cards."
   },
   {
    "name": "Hammer of the Serpent",
    "copies": 3,
    "class": "Strength",
    "cost": 5,
+   "effect": "Thrown Artifact - when thrown: +2 {attack} per card you discarded this turn.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -3817,6 +3840,7 @@
    "copies": 1,
    "class": "Covert",
    "cost": 7,
+   "effect": "Thrown Artifact - when thrown: +1 {attack} per other {hydra} card played this turn.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -3829,7 +3853,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 1,
-   "cost": 3
+   "cost": 3,
+   "effect": "{shield} x4: Woman Out of Time."
   },
   {
    "name": "Paramilitary Ops",
@@ -3838,7 +3863,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "+1 {attack} per other cost-1-or-more {shield} Hero played this turn."
   },
   {
    "name": "Spy Network",
@@ -3847,7 +3873,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Choose: gain a S.H.I.E.L.D. Officer, or +2 {attack}. {covert}: Woman Out of Time."
   },
   {
    "name": "Mobilize for War",
@@ -3857,6 +3884,7 @@
    "value": 4,
    "variable": true,
    "cost": 7,
+   "effect": "KO up to two {shield} Heroes from hand or discard. Savior: +1 {attack} per card KO'd.",
    "keywords": [
     "Savior"
    ]
@@ -3869,7 +3897,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{instinct}: rescue a Bystander."
   },
   {
    "name": "Winged Salvation",
@@ -3879,6 +3908,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "Savior: +2 {attack}.",
    "keywords": [
     "Savior"
    ]
@@ -3889,7 +3919,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "Once per turn, if a player would gain a Wound, you may reveal this to rescue a Bystander instead."
   },
   {
    "name": "Star-Spangled Hero",
@@ -3899,6 +3930,7 @@
    "value": 0,
    "variable": true,
    "cost": 7,
+   "effect": "+2 {attack} per Hero Class you have. Savior: +2 {recruit} per Hero Class you have.",
    "keywords": [
     "Savior"
    ]
@@ -3909,7 +3941,8 @@
    "name": "Devoted Patriot",
    "copies": 5,
    "class": "Strength",
-   "cost": 3
+   "cost": 3,
+   "effect": "Draw a card. {strength}: Man Out of Time."
   },
   {
    "name": "Storm the Beachhead",
@@ -3919,6 +3952,7 @@
    "value": 0,
    "variable": true,
    "cost": 5,
+   "effect": "+1 {attack} per Hero Class you have. Man Out of Time.",
    "keywords": [
     "Man Out of Time"
    ]
@@ -3929,7 +3963,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "{avengers}: rescue a Bystander."
   },
   {
    "name": "Punch Evil in the Face",
@@ -3938,6 +3973,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 8,
+   "effect": "Savior: Man Out of Time.",
    "keywords": [
     "Savior"
    ]
@@ -3952,6 +3988,7 @@
    "value": 0,
    "variable": true,
    "cost": 3,
+   "effect": "+1 {recruit} per Hero Class you have. Savior: +1 {attack} per Hero Class you have.",
    "keywords": [
     "Savior"
    ]
@@ -3962,7 +3999,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 5
+   "cost": 5,
+   "effect": "{shield} x3: you may KO a {shield} Hero you played this turn to rescue a Bystander."
   },
   {
    "name": "Shadow of Wars Past",
@@ -3971,6 +4009,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "Savior: Man Out of Time.",
    "keywords": [
     "Savior"
    ]
@@ -3983,6 +4022,7 @@
    "value": 4,
    "variable": true,
    "cost": 8,
+   "effect": "Rescue a Bystander. Savior: +3 {attack}.",
    "keywords": [
     "Savior"
    ]
@@ -3995,7 +4035,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{tech}: Man Out of Time."
   },
   {
    "name": "Sniper Nest",
@@ -4003,7 +4044,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 1,
-   "cost": 4
+   "cost": 4,
+   "effect": "Draw a card. {tech}: Man Out of Time."
   },
   {
    "name": "KGB Training",
@@ -4012,7 +4054,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "If you played at least 7 other cards this turn, +2 {attack}."
   },
   {
    "name": "2>4",
@@ -4020,7 +4063,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "A Hero in your hand gains Man Out of Time this turn. {tech}: another Hero in your hand gains it too."
   }
  ],
  "cw:captain-america-secret-avenger": [
@@ -4678,6 +4722,7 @@
    "copies": 5,
    "class": "Covert",
    "cost": 3,
+   "effect": "Excessive Violence: draw a card.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -4686,7 +4731,8 @@
    "name": "HYDRA Half-Wit",
    "copies": 5,
    "class": "Tech",
-   "cost": 2
+   "cost": 2,
+   "effect": "Reveal your top card; draw it if it's {hydra} or {shield}."
   },
   {
    "name": "How Do I Get Out of Here??",
@@ -4694,7 +4740,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "{covert}: look at another player's top card and ask them a yes/no question about it; if they answer correctly they draw it, otherwise you draw it."
   },
   {
    "name": "Epic Middle Manager",
@@ -4703,6 +4750,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 8,
+   "effect": "Excessive Violence: KO up to two {hydra} or {shield} Heroes from your discard; draw a card for each.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -4713,7 +4761,8 @@
    "name": "It'll Grow Back",
    "copies": 5,
    "class": "Instinct",
-   "cost": 4
+   "cost": 4,
+   "effect": "If you have a Wound in hand or discard, KO it for +1 {attack}; otherwise gain a Wound."
   },
   {
    "name": "Nighttime Is the Right Time",
@@ -4722,13 +4771,15 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Between 8pm and midnight, +2 {attack}; otherwise +2 {recruit}. {tech}: take both."
   },
   {
    "name": "Running Commentary",
    "copies": 3,
    "class": "Covert",
-   "cost": 5
+   "cost": 5,
+   "effect": "+½ {attack} per other card with flavour text played this turn."
   },
   {
    "name": "Deadpool Rage!",
@@ -4737,6 +4788,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 7,
+   "effect": "Excessive Violence: take another turn after this one (once per game).",
    "keywords": [
     "Excessive Violence"
    ]
@@ -4750,13 +4802,15 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{ranged}: if any player is taller than you, draw a card; if any is shorter, +1 {recruit} (both if both)."
   },
   {
    "name": "Saturday Morning Harpoons",
    "copies": 5,
    "class": "Ranged",
    "cost": 3,
+   "effect": "Excessive Violence: rescue a Bystander.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -4766,6 +4820,7 @@
    "copies": 3,
    "class": "Strength",
    "cost": 6,
+   "effect": "Excessive Violence: draw an extra card when you draw your next hand.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -4777,6 +4832,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 8,
+   "effect": "Excessive Violence: recruit a Hero from the HQ for free, then you may shuffle your discard pile into your deck.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -4797,6 +4853,7 @@
    "value": 0,
    "variable": true,
    "cost": 3,
+   "effect": "Excessive Violence: +1 {recruit}.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -4805,13 +4862,15 @@
    "name": "Guns on My Guns",
    "copies": 3,
    "class": "Tech",
-   "cost": 5
+   "cost": 5,
+   "effect": "{tech}: if your top card's art shows a gun, draw it."
   },
   {
    "name": "Cut in Half",
    "copies": 1,
    "class": "Instinct",
-   "cost": 7
+   "cost": 7,
+   "effect": "Choose a Villain; halve its Attack this turn. {mercs-for-money}: halve the Mastermind's Attack for one fight this turn."
   }
  ],
  "dp:stingray": [
@@ -4819,13 +4878,15 @@
    "name": "Deck Chairs on the Titanic",
    "copies": 5,
    "class": "Tech",
-   "cost": 4
+   "cost": 4,
+   "effect": "Draw a card. Move a Villain to an adjacent space (swap if occupied)."
   },
   {
    "name": "Superpowered Swimsuit",
    "copies": 5,
    "class": "Tech",
-   "cost": 2
+   "cost": 2,
+   "effect": "Draw a card. {tech}: +2 {attack}, only against Villains in the Sewers or Bridge or the Mastermind."
   },
   {
    "name": "Sting of the Stingray's Sting",
@@ -4834,6 +4895,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 5,
+   "effect": "Excessive Violence: you may KO one of your cards from hand or discard.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -4845,7 +4907,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "You may KO a card from hand or discard. {mercs-for-money}: +½ {attack} per Hero in the KO pile."
   }
  ],
  "noir:angel-noir": [
