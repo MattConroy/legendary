@@ -14,7 +14,7 @@
       "copies": 5,
       "class": "Tech",
       "cost": 2,
-      "effect": "Draw a card. {tech}: rescue a Bystander."
+      "effect": "Draw a card.\n{tech}: rescue a Bystander."
     },
     {
       "name": "Covert Operation",
@@ -219,7 +219,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "Reveal your top card and keep or discard it. {instinct}: do the same to each opponent's deck."
+      "effect": "Reveal your top card and keep or discard it.\n{instinct}: do the same to each opponent's deck."
     },
     {
       "name": "High Stakes Jackpot",
@@ -318,7 +318,7 @@
       "copies": 5,
       "class": "Tech",
       "cost": 3,
-      "effect": "Draw a card. {tech}: draw another."
+      "effect": "Draw a card.\n{tech}: draw another."
     },
     {
       "name": "Repulsor Rays",
@@ -345,7 +345,7 @@
       "copies": 1,
       "class": "Tech",
       "cost": 7,
-      "effect": "Draw two. {tech}: draw two more."
+      "effect": "Draw two.\n{tech}: draw two more."
     }
   ],
   "core:nick-fury": [
@@ -446,7 +446,7 @@
       "copies": 3,
       "class": "Tech",
       "cost": 2,
-      "effect": "Rescue a Bystander. Reveal your top card; draw it if it costs 2 or less."
+      "effect": "Rescue a Bystander.\nReveal your top card; draw it if it costs 2 or less."
     },
     {
       "name": "The Amazing Spider-Man",
@@ -491,7 +491,7 @@
       "kind": "attack",
       "value": 5,
       "cost": 7,
-      "effect": "Villains you fight on the Bridge get -2 {attack} this turn. {ranged}: the Mastermind gets -2 {attack} this turn."
+      "effect": "Villains you fight on the Bridge get -2 {attack} this turn.\n{ranged}: the Mastermind gets -2 {attack} this turn."
     }
   ],
   "core:thor": [
@@ -570,7 +570,7 @@
       "value": 0,
       "variable": true,
       "cost": 8,
-      "effect": "Draw three cards. {instinct}: +1 {attack} per extra card drawn this turn."
+      "effect": "Draw three cards.\n{instinct}: +1 {attack} per extra card drawn this turn."
     }
   ],
   "dc:angel": [
@@ -626,7 +626,7 @@
       "copies": 5,
       "class": "Ranged",
       "cost": 2,
-      "effect": "Draw a card. {covert}: you may KO a card from hand or discard."
+      "effect": "Draw a card.\n{covert}: you may KO a card from hand or discard."
     },
     {
       "name": "Concussive Blast",
@@ -646,7 +646,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Discard your top four cards; +{attack} equal to their printed {attack}. {x-men}: KO any of them."
+      "effect": "Discard your top four cards; +{attack} equal to their printed {attack}.\n{x-men}: KO any of them."
     }
   ],
   "dc:iceman": [
@@ -658,7 +658,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. {ranged}: +1 {recruit} per other {ranged} Hero played this turn."
+      "effect": "Draw a card.\n{ranged}: +1 {recruit} per other {ranged} Hero played this turn."
     },
     {
       "name": "Ice Slide",
@@ -726,7 +726,7 @@
       "value": 5,
       "variable": true,
       "cost": 7,
-      "effect": "+1 {attack} each time you rescue a Bystander this turn. {x-men}: rescue a Bystander per other {x-men} Hero played this turn."
+      "effect": "+1 {attack} each time you rescue a Bystander this turn.\n{x-men}: rescue a Bystander per other {x-men} Hero played this turn."
     }
   ],
   "dc:nightcrawler": [
@@ -783,7 +783,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "You may put a Hero from the HQ on the bottom of the Hero Deck. {instinct}: you may KO a card from hand or discard."
+      "effect": "You may put a Hero from the HQ on the bottom of the Hero Deck.\n{instinct}: you may KO a card from hand or discard."
     },
     {
       "name": "Psionic Astral Form",
@@ -906,7 +906,7 @@
       "value": 0,
       "variable": true,
       "cost": 1,
-      "effect": "Draw a card. {x-force}: Versatile 1."
+      "effect": "Draw a card.\n{x-force}: Versatile 1."
     },
     {
       "name": "Ready for Anything",
@@ -994,7 +994,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. {instinct}: +2 {attack}."
+      "effect": "Draw a card.\n{instinct}: +2 {attack}."
     },
     {
       "name": "Sudden Ambush",
@@ -1011,7 +1011,7 @@
       "copies": 3,
       "class": "Strength",
       "cost": 4,
-      "effect": "Draw a card. You may KO a card from hand or discard."
+      "effect": "Draw a card.\nYou may KO a card from hand or discard."
     },
     {
       "name": "Reckless Abandon",
@@ -1121,7 +1121,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. {covert}: +2 {recruit}."
+      "effect": "Draw a card.\n{covert}: +2 {recruit}."
     },
     {
       "name": "Sai Blades",
@@ -1141,7 +1141,7 @@
       "value": 5,
       "variable": true,
       "cost": 7,
-      "effect": "The next Hero you recruit this turn goes to your hand. {marvel-knights}: +2 {recruit}."
+      "effect": "The next Hero you recruit this turn goes to your hand.\n{marvel-knights}: +2 {recruit}."
     }
   ],
   "dc:ghost-rider": [
@@ -1170,7 +1170,7 @@
       "copies": 3,
       "class": "Strength",
       "cost": 2,
-      "effect": "Draw a card. {strength}: defeat a Villain of 3 {attack} or less for free."
+      "effect": "Draw a card.\n{strength}: defeat a Villain of 3 {attack} or less for free."
     },
     {
       "name": "Penance Stare",
@@ -1180,7 +1180,7 @@
       "value": 3,
       "variable": true,
       "cost": 8,
-      "effect": "Each player KOs a Villain from their Victory pile; +1 {attack} for each. {marvel-knights}: put one into your Victory pile."
+      "effect": "Each player KOs a Villain from their Victory pile; +1 {attack} for each.\n{marvel-knights}: put one into your Victory pile."
     }
   ],
   "dc:iron-fist": [
@@ -1212,7 +1212,7 @@
       "value": 0,
       "variable": true,
       "cost": 1,
-      "effect": "Draw a card. {strength} x2: Versatile 2."
+      "effect": "Draw a card.\n{strength} x2: Versatile 2."
     },
     {
       "name": "Living Weapon",
@@ -1230,7 +1230,7 @@
       "copies": 5,
       "class": "Tech",
       "cost": 2,
-      "effect": "Reveal your top card; KO it if it costs 0. {tech}: draw a card."
+      "effect": "Reveal your top card; KO it if it costs 0.\n{tech}: draw a card."
     },
     {
       "name": "Hail of Bullets",
@@ -1240,7 +1240,7 @@
       "value": 2,
       "variable": true,
       "cost": 5,
-      "effect": "Reveal the top Villain Deck card; if a Villain, +{attack} equal to its printed VP. {tech} x2: you may defeat it for free."
+      "effect": "Reveal the top Villain Deck card; if a Villain, +{attack} equal to its printed VP.\n{tech} x2: you may defeat it for free."
     },
     {
       "name": "Hostile Interrogation",
@@ -1301,7 +1301,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Cancel the fight effect of an Enemy you fight this turn. Focus 1 {recruit} -> +1 {attack} against the Mastermind only.",
+      "effect": "Cancel the fight effect of an Enemy you fight this turn.\nFocus 1 {recruit} -> +1 {attack} against the Mastermind only.",
       "keywords": [
         "Focus 1"
       ]
@@ -1426,7 +1426,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 6,
-      "effect": "Rescue a Bystander each time you defeat a Villain in the Bank this turn. Focus 1 {recruit} -> move a Villain to an adjacent space (swap if occupied).",
+      "effect": "Rescue a Bystander each time you defeat a Villain in the Bank this turn.\nFocus 1 {recruit} -> move a Villain to an adjacent space (swap if occupied).",
       "keywords": [
         "Focus 1"
       ]
@@ -1505,7 +1505,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "Look at your top card; keep or discard it. {instinct}: you may KO the discarded card."
+      "effect": "Look at your top card; keep or discard it.\n{instinct}: you may KO the discarded card."
     },
     {
       "name": "The Destroyer",
@@ -1539,7 +1539,7 @@
       "copies": 5,
       "class": "Instinct",
       "cost": 3,
-      "effect": "Gain two Shards. {covert}: gain another Shard."
+      "effect": "Gain two Shards.\n{covert}: gain another Shard."
     },
     {
       "name": "Galactic Assassin",
@@ -1548,7 +1548,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 5,
-      "effect": "A chosen Villain gains no Attack from Shards this turn. {covert} {covert}: the Mastermind gains no Attack from Shards this turn."
+      "effect": "A chosen Villain gains no Attack from Shards this turn.\n{covert} {covert}: the Mastermind gains no Attack from Shards this turn."
     },
     {
       "name": "Godslayer Blade",
@@ -1585,7 +1585,7 @@
       "copies": 3,
       "class": "Covert",
       "cost": 4,
-      "effect": "Gain two Shards; you may spend Shards as {recruit} this turn. {covert}: another player gains a Shard."
+      "effect": "Gain two Shards; you may spend Shards as {recruit} this turn.\n{covert}: another player gains a Shard."
     },
     {
       "name": "I Am Groot",
@@ -1722,7 +1722,7 @@
       "value": 5,
       "variable": true,
       "cost": 8,
-      "effect": "Each opponent reveals a {covert} Hero or gives up a Bystander from their Victory pile; rescue those. {spider-friends}: +1 {attack} per Bystander rescued this turn."
+      "effect": "Each opponent reveals a {covert} Hero or gives up a Bystander from their Victory pile; rescue those.\n{spider-friends}: +1 {attack} per Bystander rescued this turn."
     }
   ],
   "ptr:scarlet-spider": [
@@ -1812,7 +1812,7 @@
       "copies": 1,
       "class": "Covert",
       "cost": 7,
-      "effect": "Recruit a Hero from the HQ for free. {spider-friends}: put that Hero on top of your deck."
+      "effect": "Recruit a Hero from the HQ for free.\n{spider-friends}: put that Hero on top of your deck."
     }
   ],
   "ptr:symbiote-spider-man": [
@@ -1901,7 +1901,7 @@
       "kind": "attack",
       "value": 6,
       "cost": 8,
-      "effect": "Each time you defeat a Villain on the Rooftops this turn, rescue Bystanders equal to its printed VP. {tech}: move a Villain to the Rooftops (swap if occupied)."
+      "effect": "Each time you defeat a Villain on the Rooftops this turn, rescue Bystanders equal to its printed VP.\n{tech}: move a Villain to the Rooftops (swap if occupied)."
     }
   ],
   "villains:dr-octopus": [
@@ -1963,7 +1963,7 @@
       "value": 0,
       "variable": true,
       "cost": 3,
-      "effect": "+3 {attack}, only against Adversaries in the Bank. {ranged}: instead +3 {attack} only against the Commander.",
+      "effect": "+3 {attack}, only against Adversaries in the Bank.\n{ranged}: instead +3 {attack} only against the Commander.",
       "keywords": [
         "Dodge"
       ]
@@ -1985,7 +1985,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 7,
-      "effect": "All Adversaries and the Commander get -1 Attack this turn. {sinister-six} {sinister-six}: repeat."
+      "effect": "All Adversaries and the Commander get -1 Attack this turn.\n{sinister-six} {sinister-six}: repeat."
     }
   ],
   "villains:green-goblin": [
@@ -2122,7 +2122,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "Put a Lair card on the bottom of the Ally Deck; +{recruit} equal to its printed {recruit} and +{attack} equal to its printed {attack}. {sinister-six}: repeat for each other {sinister-six} Ally played this turn (a different Lair card each time)."
+      "effect": "Put a Lair card on the bottom of the Ally Deck; +{recruit} equal to its printed {recruit} and +{attack} equal to its printed {attack}.\n{sinister-six}: repeat for each other {sinister-six} Ally played this turn (a different Lair card each time)."
     }
   ],
   "villains:venom": [
@@ -2162,7 +2162,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "Each opponent reveals an {instinct} Ally or KOs a Bystander from their Victory pile. {instinct}: kidnap all Bystanders KO'd this turn; +1 {recruit} per Bystander kidnapped this turn."
+      "effect": "Each opponent reveals an {instinct} Ally or KOs a Bystander from their Victory pile.\n{instinct}: kidnap all Bystanders KO'd this turn; +1 {recruit} per Bystander kidnapped this turn."
     }
   ],
   "villains:juggernaut": [
@@ -2329,7 +2329,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Each player reveals an {instinct} Ally or reveals their top card; KO any of those top cards you choose. {instinct}: +1 {attack} per card KO'd this turn."
+      "effect": "Each player reveals an {instinct} Ally or reveals their top card; KO any of those top cards you choose.\n{instinct}: +1 {attack} per card KO'd this turn."
     }
   ],
   "villains:enchantress": [
@@ -2359,14 +2359,14 @@
       "kind": "recruit",
       "value": 3,
       "cost": 6,
-      "effect": "Choose an Adversary; you may spend any mix of Recruit and Attack to fight it this turn. {covert} {covert}: also the Commander."
+      "effect": "Choose an Adversary; you may spend any mix of Recruit and Attack to fight it this turn.\n{covert} {covert}: also the Commander."
     },
     {
       "name": "Unending Anguish",
       "copies": 1,
       "class": "Covert",
       "cost": 7,
-      "effect": "Draw three cards. {foes-of-asgard}: then put this on the bottom of your deck."
+      "effect": "Draw three cards.\n{foes-of-asgard}: then put this on the bottom of your deck."
     }
   ],
   "villains:loki": [
@@ -2457,7 +2457,7 @@
       "copies": 5,
       "class": "Covert",
       "cost": 3,
-      "effect": "This turn, New Recruits you gain go to your hand. Gain a New Recruit."
+      "effect": "This turn, New Recruits you gain go to your hand.\nGain a New Recruit."
     },
     {
       "name": "Recruitment Day",
@@ -2483,7 +2483,7 @@
       "copies": 1,
       "class": "Strength",
       "cost": 8,
-      "effect": "Gain three New Recruits. {crime-syndicate} {crime-syndicate}: New Recruits you'd return this turn go to the bottom of your deck instead."
+      "effect": "Gain three New Recruits.\n{crime-syndicate} {crime-syndicate}: New Recruits you'd return this turn go to the bottom of your deck instead."
     }
   ],
   "villains:ultron": [
@@ -2529,7 +2529,7 @@
       "value": 5,
       "variable": true,
       "cost": 8,
-      "effect": "Each opponent reveals a {tech} Ally or discards their hand; those who discard draw 5. {tech}: +3 {attack} per discarded Ally costing 7 or more."
+      "effect": "Each opponent reveals a {tech} Ally or discards their hand; those who discard draw 5.\n{tech}: +3 {attack} per discarded Ally costing 7 or more."
     }
   ],
   "sw1:apocalyptic-kitty-pryde": [
@@ -2639,7 +2639,7 @@
       "name": "King of Wakanda",
       "copies": 1,
       "cost": 7,
-      "effect": "{instinct} {tech}: gain three Sidekicks. {illuminati}: put them on top of your deck."
+      "effect": "{instinct} {tech}: gain three Sidekicks.\n{illuminati}: put them on top of your deck."
     }
   ],
   "sw1:captain-marvel": [
@@ -2763,7 +2763,7 @@
       "copies": 5,
       "class": "Covert",
       "cost": 2,
-      "effect": "Gain a Sidekick. {covert}: gain another."
+      "effect": "Gain a Sidekick.\n{covert}: gain another."
     },
     {
       "name": "Travel through Limbo",
@@ -2839,7 +2839,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Each opponent reveals a {tech} Hero or gives up a Henchman Villain from their Victory pile; defeat all those for free. {cabal}: +1 {attack} per Henchman defeated this turn."
+      "effect": "Each opponent reveals a {tech} Hero or gives up a Henchman Villain from their Victory pile; defeat all those for free.\n{cabal}: +1 {attack} per Henchman defeated this turn."
     }
   ],
   "sw1:namor-the-sub-mariner": [
@@ -2875,7 +2875,7 @@
       "copies": 1,
       "class": "Strength",
       "cost": 7,
-      "effect": "Defeat a Villain for free. {instinct} {instinct} {strength} {strength}: instead defeat the Mastermind once for free."
+      "effect": "Defeat a Villain for free.\n{instinct} {instinct} {strength} {strength}: instead defeat the Mastermind once for free."
     }
   ],
   "sw1:old-man-logan": [
@@ -3040,7 +3040,7 @@
       "name": "Marvel Team-Up",
       "copies": 5,
       "cost": 2,
-      "effect": "{strength} {instinct}: gain a Sidekick. Reveal your top card; draw it if it costs 2 or less."
+      "effect": "{strength} {instinct}: gain a Sidekick.\nReveal your top card; draw it if it costs 2 or less."
     },
     {
       "name": "Leaping Spider",
@@ -3050,7 +3050,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Reveal your top card; draw it if it costs 2 or less. {strength}: +2 {attack}."
+      "effect": "Reveal your top card; draw it if it costs 2 or less.\n{strength}: +2 {attack}."
     },
     {
       "name": "Web-Slinger",
@@ -3060,7 +3060,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "+2 {attack}, only against the Mastermind or Villains on the Rooftops or Bridge. Reveal your top card; draw it if it costs 2 or less."
+      "effect": "+2 {attack}, only against the Mastermind or Villains on the Rooftops or Bridge.\nReveal your top card; draw it if it costs 2 or less."
     },
     {
       "name": "Hero from Another Dimension",
@@ -3253,7 +3253,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "Reveal the top five Villain Deck cards; +{attack} equal to one's printed VP; replace in any order. {cabal}: use two of them instead."
+      "effect": "Reveal the top five Villain Deck cards; +{attack} equal to one's printed VP; replace in any order.\n{cabal}: use two of them instead."
     }
   ],
   "sw2:the-captain-and-the-devil": [
@@ -3417,7 +3417,7 @@
       "value": 2,
       "variable": true,
       "cost": 3,
-      "effect": "Reveal the top Villain Deck card; if a Villain you may fight it this turn. {ranged} {ranged}: +{attack} equal to its printed VP."
+      "effect": "Reveal the top Villain Deck card; if a Villain you may fight it this turn.\n{ranged} {ranged}: +{attack} equal to its printed VP."
     },
     {
       "name": "Calm Before the Storm",
@@ -3727,7 +3727,7 @@
       "value": 1,
       "variable": true,
       "cost": 2,
-      "effect": "Patrol the Bank: if empty, +1 {attack}. Patrol your Victory pile: if empty, +1 {attack}.",
+      "effect": "Patrol the Bank: if empty, +1 {attack}.\nPatrol your Victory pile: if empty, +1 {attack}.",
       "keywords": [
         "Wall-Crawl",
         "Patrol"
@@ -3953,7 +3953,7 @@
       "copies": 5,
       "class": "Instinct",
       "cost": 3,
-      "effect": "Gain two New Recruits. {instinct}: gain a third."
+      "effect": "Gain two New Recruits.\n{instinct}: gain a third."
     },
     {
       "name": "Underhanded Dealings",
@@ -3962,7 +3962,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 4,
-      "effect": "Look at your bottom card; keep or discard it. {covert}: draw a card from the bottom of your deck."
+      "effect": "Look at your bottom card; keep or discard it.\n{covert}: draw a card from the bottom of your deck."
     },
     {
       "name": "Titanic Bludgeon",
@@ -4052,7 +4052,7 @@
       "value": 0,
       "variable": true,
       "cost": 4,
-      "effect": "Choose: gain a S.H.I.E.L.D. Officer, or +2 {attack}. {covert}: Woman Out of Time."
+      "effect": "Choose: gain a S.H.I.E.L.D. Officer, or +2 {attack}.\n{covert}: Woman Out of Time."
     },
     {
       "name": "Mobilize for War",
@@ -4062,7 +4062,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "KO up to two {shield} Heroes from hand or discard. Savior: +1 {attack} per card KO'd.",
+      "effect": "KO up to two {shield} Heroes from hand or discard.\nSavior: +1 {attack} per card KO'd.",
       "keywords": [
         "Savior"
       ]
@@ -4108,7 +4108,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "+2 {attack} per Hero Class you have. Savior: +2 {recruit} per Hero Class you have.",
+      "effect": "+2 {attack} per Hero Class you have.\nSavior: +2 {recruit} per Hero Class you have.",
       "keywords": [
         "Savior"
       ]
@@ -4120,7 +4120,7 @@
       "copies": 5,
       "class": "Strength",
       "cost": 3,
-      "effect": "Draw a card. {strength}: Man Out of Time."
+      "effect": "Draw a card.\n{strength}: Man Out of Time."
     },
     {
       "name": "Storm the Beachhead",
@@ -4130,7 +4130,7 @@
       "value": 0,
       "variable": true,
       "cost": 5,
-      "effect": "+1 {attack} per Hero Class you have. Man Out of Time.",
+      "effect": "+1 {attack} per Hero Class you have.\nMan Out of Time.",
       "keywords": [
         "Man Out of Time"
       ]
@@ -4166,7 +4166,7 @@
       "value": 0,
       "variable": true,
       "cost": 3,
-      "effect": "+1 {recruit} per Hero Class you have. Savior: +1 {attack} per Hero Class you have.",
+      "effect": "+1 {recruit} per Hero Class you have.\nSavior: +1 {attack} per Hero Class you have.",
       "keywords": [
         "Savior"
       ]
@@ -4200,7 +4200,7 @@
       "value": 4,
       "variable": true,
       "cost": 8,
-      "effect": "Rescue a Bystander. Savior: +3 {attack}.",
+      "effect": "Rescue a Bystander.\nSavior: +3 {attack}.",
       "keywords": [
         "Savior"
       ]
@@ -4223,7 +4223,7 @@
       "kind": "recruit",
       "value": 1,
       "cost": 4,
-      "effect": "Draw a card. {tech}: Man Out of Time."
+      "effect": "Draw a card.\n{tech}: Man Out of Time."
     },
     {
       "name": "KGB Training",
@@ -4242,7 +4242,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 7,
-      "effect": "A Hero in your hand gains Man Out of Time this turn. {tech}: another Hero in your hand gains it too."
+      "effect": "A Hero in your hand gains Man Out of Time this turn.\n{tech}: another Hero in your hand gains it too."
     }
   ],
   "cw:captain-america-secret-avenger": [
@@ -4262,7 +4262,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 3,
-      "effect": "Divided ({avengers}). Nation: gain a Sidekick.",
+      "effect": "Divided ({avengers}).\nNation: gain a Sidekick.",
       "keywords": [
         "Divided"
       ]
@@ -4294,7 +4294,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 3,
-      "effect": "Divided. Below ({marvel-knights}): +3 {recruit}, usable only for Heroes in the HQ under the Sewers.",
+      "effect": "Divided.\nBelow ({marvel-knights}): +3 {recruit}, usable only for Heroes in the HQ under the Sewers.",
       "keywords": [
         "Divided"
       ]
@@ -4306,7 +4306,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "Divided, Phasing. Flee ({covert}): +1 {recruit}. Fight ({ranged}): +1 {attack}.",
+      "effect": "Divided, Phasing.\nFlee ({covert}): +1 {recruit}.\nFight ({ranged}): +1 {attack}.",
       "keywords": [
         "Divided",
         "Phasing"
@@ -4318,7 +4318,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 6,
-      "effect": "Divided. Darkness ({covert}): reveal your top card; if it costs 0, KO it. Light ({ranged}): reveal your top card; if it costs 1 or more, draw it.",
+      "effect": "Divided.\nDarkness ({covert}): reveal your top card; if it costs 0, KO it.\nLight ({ranged}): reveal your top card; if it costs 1 or more, draw it.",
       "keywords": [
         "Divided"
       ]
@@ -4356,7 +4356,7 @@
       "kind": "recruit",
       "value": 3,
       "cost": 6,
-      "effect": "Divided. Hidden ({avengers}): the next Hero you recruit this turn goes on top of your deck. Revealed ({marvel-knights}): +1 {attack} per different Hero cost you have.",
+      "effect": "Divided.\nHidden ({avengers}): the next Hero you recruit this turn goes on top of your deck.\nRevealed ({marvel-knights}): +1 {attack} per different Hero cost you have.",
       "keywords": [
         "Divided"
       ]
@@ -4381,7 +4381,7 @@
       "value": 2,
       "variable": true,
       "cost": 3,
-      "effect": "Bottom a Hero from the HQ. {tech}: if it had a {recruit} icon, +1 {recruit}."
+      "effect": "Bottom a Hero from the HQ.\n{tech}: if it had a {recruit} icon, +1 {recruit}."
     },
     {
       "name": "Talk with Birds/Squawk Back",
@@ -4389,7 +4389,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 4,
-      "effect": "Divided ({avengers}). Talk with Birds ({ranged}): gain a Sidekick. Squawk Back: look at your top three cards, draw one, replace the rest.",
+      "effect": "Divided ({avengers}).\nTalk with Birds ({ranged}): gain a Sidekick.\nSquawk Back: look at your top three cards, draw one, replace the rest.",
       "keywords": [
         "Divided"
       ]
@@ -4483,7 +4483,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 3,
-      "effect": "Divided. Dullard ({avengers}): discard a card from hand to play this. Genius: draw a card.",
+      "effect": "Divided.\nDullard ({avengers}): discard a card from hand to play this.\nGenius: draw a card.",
       "keywords": [
         "Divided"
       ]
@@ -4505,7 +4505,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "Rescue a Bystander; +1 {attack} per Bystander in your Victory pile. {avengers}: +1 {recruit} per Bystander in your Victory pile."
+      "effect": "Rescue a Bystander; +1 {attack} per Bystander in your Victory pile.\n{avengers}: +1 {recruit} per Bystander in your Victory pile."
     }
   ],
   "cw:hulkling": [
@@ -4528,7 +4528,7 @@
       "kind": "recruit",
       "value": 3,
       "cost": 4,
-      "effect": "Divided, Size-Changing. Kree ({strength}): gain a Wound. Skrull: {covert} side.",
+      "effect": "Divided, Size-Changing.\nKree ({strength}): gain a Wound.\nSkrull: {covert} side.",
       "keywords": [
         "Divided",
         "Size-Changing"
@@ -4574,7 +4574,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 3,
-      "effect": "Divided. Reckless ({marvel-knights}): gain a Wound.",
+      "effect": "Divided.\nReckless ({marvel-knights}): gain a Wound.",
       "keywords": [
         "Divided"
       ]
@@ -4623,7 +4623,7 @@
       "value": 1,
       "variable": true,
       "cost": 5,
-      "effect": "Divided ({avengers}). Effort ({covert}): +3 {attack}.",
+      "effect": "Divided ({avengers}).\nEffort ({covert}): +3 {attack}.",
       "keywords": [
         "Divided"
       ]
@@ -4655,7 +4655,7 @@
       "kind": "attack",
       "value": 1,
       "cost": 2,
-      "effect": "Gain a Sidekick. {instinct}: put it on top of your deck."
+      "effect": "Gain a Sidekick.\n{instinct}: put it on top of your deck."
     },
     {
       "name": "Protect My Family/Hot Bowl of Soup",
@@ -4663,7 +4663,7 @@
       "kind": "attack",
       "value": 1,
       "cost": 2,
-      "effect": "Divided. Protect ({avengers}): rescue a Bystander. Soup ({spider-friends}): you may KO a Wound from hand or discard.",
+      "effect": "Divided.\nProtect ({avengers}): rescue a Bystander.\nSoup ({spider-friends}): you may KO a Wound from hand or discard.",
       "keywords": [
         "Divided"
       ]
@@ -4706,7 +4706,7 @@
       "value": 0,
       "variable": true,
       "cost": 5,
-      "effect": "Divided ({new-warriors}). Double Down: draw two cards. Bubble Up: +3 {attack}, only against Villains on the Bridge or the Mastermind.",
+      "effect": "Divided ({new-warriors}).\nDouble Down: draw two cards.\nBubble Up: +3 {attack}, only against Villains on the Bridge or the Mastermind.",
       "keywords": [
         "Divided"
       ]
@@ -4730,7 +4730,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. {tech}: +1 {attack}.",
+      "effect": "Draw a card.\n{tech}: +1 {attack}.",
       "keywords": [
         "Size-Changing"
       ]
@@ -4741,7 +4741,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 5,
-      "effect": "Divided, Size-Changing. Ants ({strength}): defeat a Villain of 3 Attack or less. File Sizes ({tech}): draw a card.",
+      "effect": "Divided, Size-Changing.\nAnts ({strength}): defeat a Villain of 3 Attack or less.\nFile Sizes ({tech}): draw a card.",
       "keywords": [
         "Divided",
         "Size-Changing"
@@ -4780,7 +4780,7 @@
       "kind": "recruit",
       "value": 1,
       "cost": 2,
-      "effect": "Divided. Rain Clouds ({x-men}, {ranged}): draw a card. Clues ({avengers}, {instinct}): draw a card.",
+      "effect": "Divided.\nRain Clouds ({x-men}, {ranged}): draw a card.\nClues ({avengers}, {instinct}): draw a card.",
       "keywords": [
         "Divided"
       ]
@@ -4791,7 +4791,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 3,
-      "effect": "Divided. Lightning ({x-men}): Villains you fight on the Rooftops this turn get -1 Attack. Pouncing ({avengers}): move a Villain to an adjacent empty space.",
+      "effect": "Divided.\nLightning ({x-men}): Villains you fight on the Rooftops this turn get -1 Attack.\nPouncing ({avengers}): move a Villain to an adjacent empty space.",
       "keywords": [
         "Divided"
       ]
@@ -4802,7 +4802,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 5,
-      "effect": "Divided. Water ({x-men}, {ranged}): +2 {attack} only against the Mastermind. Justice ({avengers}, {covert}): you may KO a card from hand or discard.",
+      "effect": "Divided.\nWater ({x-men}, {ranged}): +2 {attack} only against the Mastermind.\nJustice ({avengers}, {covert}): you may KO a card from hand or discard.",
       "keywords": [
         "Divided"
       ]
@@ -4824,7 +4824,7 @@
       "kind": "recruit",
       "value": 1,
       "cost": 2,
-      "effect": "Divided ({avengers}). Friendship ({covert}): gain a Sidekick. Ferocity ({instinct}): draw a card.",
+      "effect": "Divided ({avengers}).\nFriendship ({covert}): gain a Sidekick.\nFerocity ({instinct}): draw a card.",
       "keywords": [
         "Divided"
       ]
@@ -4836,7 +4836,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 3,
-      "effect": "Look at your top card; keep or discard it. {instinct} {instinct}: you may KO the discarded card."
+      "effect": "Look at your top card; keep or discard it.\n{instinct} {instinct}: you may KO the discarded card."
     },
     {
       "name": "Can't Surprise a Cat",
@@ -4855,7 +4855,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "Recruit a Hero from the HQ for free. {avengers}: gain its printed {recruit} and {attack}."
+      "effect": "Recruit a Hero from the HQ for free.\n{avengers}: gain its printed {recruit} and {attack}."
     }
   ],
   "cw:vision": [
@@ -4943,7 +4943,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 4,
-      "effect": "Divided ({avengers}). Spells ({ranged}): draw a card. Speed: draw a card; {covert}: draw another.",
+      "effect": "Divided ({avengers}).\nSpells ({ranged}): draw a card.\nSpeed: draw a card; {covert}: draw another.",
       "keywords": [
         "Divided"
       ]
@@ -5014,7 +5014,7 @@
       "value": 0,
       "variable": true,
       "cost": 3,
-      "effect": "Between 8pm and midnight, +2 {attack}; otherwise +2 {recruit}. {tech}: take both."
+      "effect": "Between 8pm and midnight, +2 {attack}; otherwise +2 {recruit}.\n{tech}: take both."
     },
     {
       "name": "Running Commentary",
@@ -5112,7 +5112,7 @@
       "copies": 1,
       "class": "Instinct",
       "cost": 7,
-      "effect": "Choose a Villain; halve its Attack this turn. {mercs-for-money}: halve the Mastermind's Attack for one fight this turn."
+      "effect": "Choose a Villain; halve its Attack this turn.\n{mercs-for-money}: halve the Mastermind's Attack for one fight this turn."
     }
   ],
   "dp:stingray": [
@@ -5121,14 +5121,14 @@
       "copies": 5,
       "class": "Tech",
       "cost": 4,
-      "effect": "Draw a card. Move a Villain to an adjacent space (swap if occupied)."
+      "effect": "Draw a card.\nMove a Villain to an adjacent space (swap if occupied)."
     },
     {
       "name": "Superpowered Swimsuit",
       "copies": 5,
       "class": "Tech",
       "cost": 2,
-      "effect": "Draw a card. {tech}: +2 {attack}, only against Villains in the Sewers or Bridge or the Mastermind."
+      "effect": "Draw a card.\n{tech}: +2 {attack}, only against Villains in the Sewers or Bridge or the Mastermind."
     },
     {
       "name": "Sting of the Stingray's Sting",
@@ -5150,7 +5150,7 @@
       "value": 4,
       "variable": true,
       "cost": 8,
-      "effect": "You may KO a card from hand or discard. {mercs-for-money}: +½ {attack} per Hero in the KO pile."
+      "effect": "You may KO a card from hand or discard.\n{mercs-for-money}: +½ {attack} per Hero in the KO pile."
     }
   ],
   "noir:angel-noir": [
@@ -5273,7 +5273,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 7,
-      "effect": "This turn, Investigate looks at three cards instead of two. Choose Recruit or Attack; Investigate for a card with that icon."
+      "effect": "This turn, Investigate looks at three cards instead of two.\nChoose Recruit or Attack; Investigate for a card with that icon."
     }
   ],
   "noir:luke-cage-noir": [
@@ -5382,7 +5382,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "Divided. Flare - Lightshow: +2 {recruit}. Fists - Berserk.",
+      "effect": "Divided.\nFlare - Lightshow: +2 {recruit}.\nFists - Berserk.",
       "keywords": [
         "Divided",
         "Lightshow",
@@ -5410,7 +5410,7 @@
       "kind": "recruit",
       "value": 4,
       "cost": 7,
-      "effect": "All Heroes you recruit this turn gain Soaring Flight. Lightshow: +2 {attack} per Lightshow card played this turn.",
+      "effect": "All Heroes you recruit this turn gain Soaring Flight.\nLightshow: +2 {attack} per Lightshow card played this turn.",
       "keywords": [
         "Soaring Flight",
         "Lightshow"
@@ -5423,7 +5423,7 @@
       "copies": 5,
       "class": "Covert",
       "cost": 2,
-      "effect": "Draw a card. X-Gene {covert}: +1 Piercing.",
+      "effect": "Draw a card.\nX-Gene {covert}: +1 Piercing.",
       "keywords": [
         "Piercing Energy",
         "X-Gene"
@@ -5576,7 +5576,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "Divided. Unpredictable - Berserk twice.",
+      "effect": "Divided.\nUnpredictable - Berserk twice.",
       "keywords": [
         "Divided",
         "Berserk"
@@ -5696,7 +5696,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "Discard a card from hand to play this. Berserk twice.",
+      "effect": "Discard a card from hand to play this.\nBerserk twice.",
       "keywords": [
         "Berserk"
       ]
@@ -5738,7 +5738,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. Lightshow: +1 {recruit} per Lightshow card played this turn.",
+      "effect": "Draw a card.\nLightshow: +1 {recruit} per Lightshow card played this turn.",
       "keywords": [
         "Lightshow"
       ]
@@ -5751,7 +5751,7 @@
       "value": 1,
       "variable": true,
       "cost": 4,
-      "effect": "Draw a card. Lightshow: +1 {attack} per Lightshow card played this turn.",
+      "effect": "Draw a card.\nLightshow: +1 {attack} per Lightshow card played this turn.",
       "keywords": [
         "Lightshow"
       ]
@@ -5837,7 +5837,7 @@
       "value": 1,
       "variable": true,
       "cost": 2,
-      "effect": "Divided. Steel - Berserk. Light - Lightshow: +2 {recruit}.",
+      "effect": "Divided.\nSteel - Berserk.\nLight - Lightshow: +2 {recruit}.",
       "keywords": [
         "Divided",
         "Berserk",
@@ -5863,7 +5863,7 @@
       "value": 0,
       "variable": true,
       "cost": 5,
-      "effect": "Divided. Time: draw two cards. Fire: +1 {attack} per different Hero Class in your discard.",
+      "effect": "Divided.\nTime: draw two cards.\nFire: +1 {attack} per different Hero Class in your discard.",
       "keywords": [
         "Divided"
       ]
@@ -5912,7 +5912,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 6,
-      "effect": "Look at your top card; keep or discard it. {covert}: you may KO the discarded card."
+      "effect": "Look at your top card; keep or discard it.\n{covert}: you may KO the discarded card."
     },
     {
       "name": "Escape from Mojo World",
@@ -5922,7 +5922,7 @@
       "value": 5,
       "variable": true,
       "cost": 7,
-      "effect": "Reveal the top Villain Deck card; if a Villain you may bottom it. {x-men}: +{attack} equal to its printed VP."
+      "effect": "Reveal the top Villain Deck card; if a Villain you may bottom it.\n{x-men}: +{attack} equal to its printed VP."
     }
   ],
   "xm:phoenix": [
@@ -5933,7 +5933,7 @@
       "kind": "recruit",
       "value": 3,
       "cost": 3,
-      "effect": "KO this card. You may KO a card from hand or discard."
+      "effect": "KO this card.\nYou may KO a card from hand or discard."
     },
     {
       "name": "Obliterating Fire",
@@ -5951,7 +5951,7 @@
       "copies": 3,
       "class": "Covert",
       "cost": 6,
-      "effect": "Draw two cards. You may put a Hero KO'd this turn into your discard."
+      "effect": "Draw two cards.\nYou may put a Hero KO'd this turn into your discard."
     },
     {
       "name": "Driven Mad by Power",
@@ -5961,7 +5961,7 @@
       "value": 6,
       "variable": true,
       "cost": 9,
-      "effect": "Berserk four times, then KO all cards you Berserked. If this makes at least 13 Attack, the Phoenix devours the Earth: you win, Evil wins, and all other players lose.",
+      "effect": "Berserk four times, then KO all cards you Berserked.\nIf this makes at least 13 Attack, the Phoenix devours the Earth: you win, Evil wins, and all other players lose.",
       "keywords": [
         "Berserk"
       ]
@@ -6022,7 +6022,7 @@
       "copies": 5,
       "class": "Instinct",
       "cost": 2,
-      "effect": "Draw a card. {instinct}: +1 Piercing.",
+      "effect": "Draw a card.\n{instinct}: +1 Piercing.",
       "keywords": [
         "Piercing Energy"
       ]
@@ -6165,7 +6165,7 @@
       "copies": 5,
       "class": "Covert",
       "cost": 2,
-      "effect": "Reveal your top card; draw it if it costs 2 or less. {covert}: draw a card."
+      "effect": "Reveal your top card; draw it if it costs 2 or less.\n{covert}: draw a card."
     },
     {
       "name": "Recon Drone Connection",
@@ -6271,7 +6271,7 @@
       "copies": 5,
       "class": "Covert",
       "cost": 2,
-      "effect": "Danger Sense 2. Reveal your top card; draw it if it costs 2 or less.",
+      "effect": "Danger Sense 2.\nReveal your top card; draw it if it costs 2 or less.",
       "keywords": [
         "Danger Sense 2"
       ]
@@ -6408,7 +6408,7 @@
       "copies": 5,
       "class": "Covert",
       "cost": 3,
-      "effect": "Draw a card. {covert}: rescue a Bystander.",
+      "effect": "Draw a card.\n{covert}: rescue a Bystander.",
       "keywords": [
         "Size-Changing"
       ]
@@ -6634,7 +6634,7 @@
       "value": 0,
       "variable": true,
       "cost": 6,
-      "effect": "+1 {attack} per different Hero cost you have. Outwit: draw a card.",
+      "effect": "+1 {attack} per different Hero cost you have.\nOutwit: draw a card.",
       "keywords": [
         "Outwit"
       ]
@@ -6646,7 +6646,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 8,
-      "effect": "This turn, each Outwit ability you use you may use an extra time. Outwit: look at your top card; KO it or put it back.",
+      "effect": "This turn, each Outwit ability you use you may use an extra time.\nOutwit: look at your top card; KO it or put it back.",
       "keywords": [
         "Outwit"
       ]
@@ -6751,7 +6751,7 @@
       "value": 0,
       "variable": true,
       "cost": 3,
-      "effect": "Draw a card. Smash 2.",
+      "effect": "Draw a card.\nSmash 2.",
       "keywords": [
         "Smash 2"
       ]
@@ -6787,7 +6787,7 @@
       "value": 0,
       "variable": true,
       "cost": 8,
-      "effect": "Your Smashes give double Attack this turn. Smash 3.",
+      "effect": "Your Smashes give double Attack this turn.\nSmash 3.",
       "keywords": [
         "Smash 3"
       ]
@@ -6838,7 +6838,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. {tech}: +2 {attack}."
+      "effect": "Draw a card.\n{tech}: +2 {attack}."
     },
     {
       "name": "Attune Techtonic Transducer",
@@ -6920,7 +6920,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. {strength}: Smash 2; if you Smash a Wound, KO it."
+      "effect": "Draw a card.\n{strength}: Smash 2; if you Smash a Wound, KO it."
     },
     {
       "name": "Move Mountains",
@@ -6974,7 +6974,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 4,
-      "effect": "Look at your top card; put it on top or bottom. {instinct}: you may Feast."
+      "effect": "Look at your top card; put it on top or bottom.\n{instinct}: you may Feast."
     },
     {
       "name": "Endless Appetite",
@@ -7004,7 +7004,7 @@
       "value": 0,
       "variable": true,
       "cost": 3,
-      "effect": "Draw a card. {ranged}: Smash 3."
+      "effect": "Draw a card.\n{ranged}: Smash 3."
     },
     {
       "name": "Heart of the Ocean",
@@ -7052,7 +7052,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 4,
-      "effect": "Look at your top card; keep or discard it. {covert}: you may Feast."
+      "effect": "Look at your top card; keep or discard it.\n{covert}: you may Feast."
     },
     {
       "name": "Bursting with Life",
@@ -7146,7 +7146,7 @@
       "value": 0,
       "variable": true,
       "cost": 8,
-      "effect": "Reveal the top five Hero Deck cards; +{attack} equal to their total printed Attack; bottom them. If this makes 12 or more Attack, Transform into The Void Mastermind, added at the start of next turn with one random Tactic."
+      "effect": "Reveal the top five Hero Deck cards; +{attack} equal to their total printed Attack; bottom them.\nIf this makes 12 or more Attack, Transform into The Void Mastermind, added at the start of next turn with one random Tactic."
     }
   ],
   "wwh:she-hulk": [
@@ -7249,7 +7249,7 @@
       "copies": 5,
       "class": "Tech",
       "cost": 2,
-      "effect": "Draw a card. {tech}: rescue a Bystander."
+      "effect": "Draw a card.\n{tech}: rescue a Bystander."
     },
     {
       "name": "Covert Operation",
@@ -7398,7 +7398,7 @@
       "copies": 5,
       "class": "Tech",
       "cost": 3,
-      "effect": "Draw a card. {tech}: draw another."
+      "effect": "Draw a card.\n{tech}: draw another."
     },
     {
       "name": "Repulsor Rays",
@@ -7425,7 +7425,7 @@
       "copies": 1,
       "class": "Tech",
       "cost": 7,
-      "effect": "Draw two. {tech}: draw two more."
+      "effect": "Draw two.\n{tech}: draw two more."
     }
   ],
   "msp1:nick-fury": [
@@ -7669,7 +7669,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "You may bottom a HQ card. {ranged}: get Empowered by Ranged."
+      "effect": "You may bottom a HQ card.\n{ranged}: get Empowered by Ranged."
     },
     {
       "name": "Absorb Ambient Power",
@@ -7756,7 +7756,7 @@
       "value": 0,
       "variable": true,
       "cost": 4,
-      "effect": "Digest 4: draw two cards. Indigestion: +2 {recruit}.",
+      "effect": "Digest 4: draw two cards.\nIndigestion: +2 {recruit}.",
       "keywords": [
         "Digest 4",
         "Indigestion"
@@ -7796,7 +7796,7 @@
       "value": 0,
       "variable": true,
       "cost": 3,
-      "effect": "Digest 3: +2 {attack}. Indigestion: +2 {recruit}. {instinct}: instead, both.",
+      "effect": "Digest 3: +2 {attack}.\nIndigestion: +2 {recruit}.\n{instinct}: instead, both.",
       "keywords": [
         "Digest 3",
         "Indigestion"
@@ -7833,7 +7833,7 @@
       "value": 0,
       "variable": true,
       "cost": 8,
-      "effect": "Digest 8: KO a card from your Victory pile for +6 {attack}. Indigestion: KO a card from hand or discard for +6 {recruit}. {venomverse} {venomverse}: instead, both.",
+      "effect": "Digest 8: KO a card from your Victory pile for +6 {attack}.\nIndigestion: KO a card from hand or discard for +6 {recruit}.\n{venomverse} {venomverse}: instead, both.",
       "keywords": [
         "Digest 8",
         "Indigestion"
@@ -7925,7 +7925,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 8,
-      "effect": "Reveal your top three cards; draw one, discard one, KO one. {venomverse} {venomverse}: do it again."
+      "effect": "Reveal your top three cards; draw one, discard one, KO one.\n{venomverse} {venomverse}: do it again."
     }
   ],
   "venom:venompool": [
@@ -7937,7 +7937,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Digest 2: +2 {attack}. Indigestion: rescue a Bystander. {strength}: instead, both.",
+      "effect": "Digest 2: +2 {attack}.\nIndigestion: rescue a Bystander.\n{strength}: instead, both.",
       "keywords": [
         "Digest 2",
         "Indigestion"
@@ -7957,7 +7957,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 5,
-      "effect": "Each time you rescue a Bystander this turn, do any rescue ability on it an extra time. Excessive Violence: rescue a Bystander.",
+      "effect": "Each time you rescue a Bystander this turn, do any rescue ability on it an extra time.\nExcessive Violence: rescue a Bystander.",
       "keywords": [
         "Excessive Violence"
       ]
@@ -7970,7 +7970,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Digest 7: +1 {attack} per two Bystanders in your Victory pile. Indigestion: rescue two Bystanders. {venomverse} {venomverse}: instead, both.",
+      "effect": "Digest 7: +1 {attack} per two Bystanders in your Victory pile.\nIndigestion: rescue two Bystanders.\n{venomverse} {venomverse}: instead, both.",
       "keywords": [
         "Digest 7",
         "Indigestion"
@@ -8201,7 +8201,7 @@
       "kind": "attack",
       "value": 5,
       "cost": 8,
-      "effect": "A Hero in your hand gains Switcheroo for a number 1-5. {instinct} {instinct}: a number 1-8 instead."
+      "effect": "A Hero in your hand gains Switcheroo for a number 1-5.\n{instinct} {instinct}: a number 1-8 instead."
     }
   ],
   "rev:captain-marvel-agent-of-s-h-i-e-l-d": [
@@ -8242,7 +8242,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "Choose: draw three cards or Last Stand. {strength} {strength}: instead, both."
+      "effect": "Choose: draw three cards or Last Stand.\n{strength} {strength}: instead, both."
     }
   ],
   "rev:darkhawk": [
@@ -8283,7 +8283,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "This turn, your Hyperspeed gives both Recruit and Attack from icons. Hyperspeed 7. {tech} {tech}: Hyperspeed 9 instead.",
+      "effect": "This turn, your Hyperspeed gives both Recruit and Attack from icons.\nHyperspeed 7.\n{tech} {tech}: Hyperspeed 9 instead.",
       "keywords": [
         "Hyperspeed 7"
       ]
@@ -8308,7 +8308,7 @@
       "value": 2,
       "variable": true,
       "cost": 3,
-      "effect": "Reveal the top card of any deck; if not a Scheme Twist, you may bottom it. {instinct}: choose - draw a card or +1 {recruit}."
+      "effect": "Reveal the top card of any deck; if not a Scheme Twist, you may bottom it.\n{instinct}: choose - draw a card or +1 {recruit}."
     },
     {
       "name": "Demon Sight",
@@ -8318,7 +8318,7 @@
       "value": 2,
       "variable": true,
       "cost": 5,
-      "effect": "Guess Villain, Bystander, Strike or Twist, then reveal the top Villain Deck card; if right, +2 {attack}. {avengers}: if it was a Villain, you may fight it this turn."
+      "effect": "Guess Villain, Bystander, Strike or Twist, then reveal the top Villain Deck card; if right, +2 {attack}.\n{avengers}: if it was a Villain, you may fight it this turn."
     },
     {
       "name": "Second Chance at Life",
@@ -8336,7 +8336,7 @@
       "copies": 5,
       "class": "Ranged",
       "cost": 3,
-      "effect": "Discard a card to play this. Draw two cards."
+      "effect": "Discard a card to play this.\nDraw two cards."
     },
     {
       "name": "Ultraviolet Radiation",
@@ -8346,7 +8346,7 @@
       "value": 3,
       "variable": true,
       "cost": 4,
-      "effect": "Discard a card to play this. {ranged}: Hyperspeed 3."
+      "effect": "Discard a card to play this.\n{ranged}: Hyperspeed 3."
     },
     {
       "name": "Light the Way",
@@ -8378,7 +8378,7 @@
       "value": 0,
       "variable": true,
       "cost": 3,
-      "effect": "Hyperspeed 3 for Recruit. {instinct}: Hyperspeed 3 for Recruit and Attack instead.",
+      "effect": "Hyperspeed 3 for Recruit.\n{instinct}: Hyperspeed 3 for Recruit and Attack instead.",
       "keywords": [
         "Hyperspeed 3"
       ]
@@ -8400,7 +8400,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 6,
-      "effect": "Look at your top card; keep or discard it. {instinct}: you may KO the discarded card."
+      "effect": "Look at your top card; keep or discard it.\n{instinct}: you may KO the discarded card."
     },
     {
       "name": "Around the World Punch",
@@ -8410,7 +8410,7 @@
       "value": 0,
       "variable": true,
       "cost": 8,
-      "effect": "Hyperspeed your entire remaining deck (no reshuffle). {avengers} x4: first put your discard on top of your deck.",
+      "effect": "Hyperspeed your entire remaining deck (no reshuffle).\n{avengers} x4: first put your discard on top of your deck.",
       "keywords": [
         "Hyperspeed"
       ]
@@ -8434,7 +8434,7 @@
       "value": 0,
       "variable": true,
       "cost": 4,
-      "effect": "Hyperspeed 4. {ranged}: draw a card.",
+      "effect": "Hyperspeed 4.\n{ranged}: draw a card.",
       "keywords": [
         "Hyperspeed 4"
       ]
@@ -8457,7 +8457,7 @@
       "value": 3,
       "variable": true,
       "cost": 7,
-      "effect": "Dark Memories. {strength}: Dark Memories again.",
+      "effect": "Dark Memories.\n{strength}: Dark Memories again.",
       "keywords": [
         "Dark Memories"
       ]
@@ -8480,7 +8480,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "Reveal your top card; keep or discard it. {covert}: Dark Memories."
+      "effect": "Reveal your top card; keep or discard it.\n{covert}: Dark Memories."
     },
     {
       "name": "Chaos Magic",
@@ -8497,7 +8497,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "Reveal the top three Hero Deck cards; take one to hand, replace the rest on top or bottom in any order. {avengers} x3: Dark Memories."
+      "effect": "Reveal the top three Hero Deck cards; take one to hand, replace the rest on top or bottom in any order.\n{avengers} x3: Dark Memories."
     }
   ],
   "rev:speed": [
@@ -8509,7 +8509,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Hyperspeed 2. {instinct}: Hyperspeed 6 instead.",
+      "effect": "Hyperspeed 2.\n{instinct}: Hyperspeed 6 instead.",
       "keywords": [
         "Hyperspeed 2"
       ]
@@ -8540,7 +8540,7 @@
       "value": 0,
       "variable": true,
       "cost": 8,
-      "effect": "Look at your top six cards; draw two, replace the rest on top or bottom in any order. {covert}: Hyperspeed 6."
+      "effect": "Look at your top six cards; draw two, replace the rest on top or bottom in any order.\n{covert}: Hyperspeed 6."
     }
   ],
   "rev:war-machine": [
@@ -8571,7 +8571,7 @@
       "value": 0,
       "variable": true,
       "cost": 5,
-      "effect": "Hyperspeed 5. {ranged}: you may KO a card from your discard.",
+      "effect": "Hyperspeed 5.\n{ranged}: you may KO a card from your discard.",
       "keywords": [
         "Hyperspeed 5"
       ]
@@ -8606,7 +8606,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 4,
-      "effect": "Reveal the top S.H.I.E.L.D. Officer; gain it or bottom it. {covert}: you may send it Undercover."
+      "effect": "Reveal the top S.H.I.E.L.D. Officer; gain it or bottom it.\n{covert}: you may send it Undercover."
     },
     {
       "name": "Approve Orbital Strike",
@@ -8626,7 +8626,7 @@
       "value": 4,
       "variable": true,
       "cost": 8,
-      "effect": "When another {shield} Hero is KO'd (any turn), you may discard this to send it Undercover into your Victory pile and draw three cards. S.H.I.E.L.D. Level 8: +4 {attack}.",
+      "effect": "When another {shield} Hero is KO'd (any turn), you may discard this to send it Undercover into your Victory pile and draw three cards.\nS.H.I.E.L.D. Level 8: +4 {attack}.",
       "keywords": [
         "S.H.I.E.L.D. Level 8"
       ]
@@ -8640,7 +8640,7 @@
       "kind": "recruit",
       "value": 3,
       "cost": 3,
-      "effect": "Discard a {shield} Hero to play this. {ranged}: you may send the discarded Hero Undercover."
+      "effect": "Discard a {shield} Hero to play this.\n{ranged}: you may send the discarded Hero Undercover."
     },
     {
       "name": "Aftershock",
@@ -8663,7 +8663,7 @@
       "value": 2,
       "variable": true,
       "cost": 6,
-      "effect": "When you fight a Villain whose Attack exceeds your S.H.I.E.L.D. Level this turn, you may send a S.H.I.E.L.D. Officer Undercover. S.H.I.E.L.D. Level 4: +4 {attack}.",
+      "effect": "When you fight a Villain whose Attack exceeds your S.H.I.E.L.D. Level this turn, you may send a S.H.I.E.L.D. Officer Undercover.\nS.H.I.E.L.D. Level 4: +4 {attack}.",
       "keywords": [
         "S.H.I.E.L.D. Level 4"
       ]
@@ -8688,7 +8688,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. S.H.I.E.L.D. Level 1: +1 {attack}.",
+      "effect": "Draw a card.\nS.H.I.E.L.D. Level 1: +1 {attack}.",
       "keywords": [
         "S.H.I.E.L.D. Level 1"
       ]
@@ -8709,7 +8709,7 @@
       "kind": "recruit",
       "value": 3,
       "cost": 5,
-      "effect": "S.H.I.E.L.D. Level 3: +3 {attack}. Below Level 3: you may send a {shield} card from your discard Undercover.",
+      "effect": "S.H.I.E.L.D. Level 3: +3 {attack}.\nBelow Level 3: you may send a {shield} card from your discard Undercover.",
       "keywords": [
         "S.H.I.E.L.D. Level 3"
       ]
@@ -8722,7 +8722,7 @@
       "value": 0,
       "variable": true,
       "cost": 8,
-      "effect": "Send a {shield} Hero from your discard Undercover. S.H.I.E.L.D. Level 3: gain the total printed Recruit of the {shield} Heroes in your Victory pile.",
+      "effect": "Send a {shield} Hero from your discard Undercover.\nS.H.I.E.L.D. Level 3: gain the total printed Recruit of the {shield} Heroes in your Victory pile.",
       "keywords": [
         "S.H.I.E.L.D. Level 3"
       ]
@@ -8736,7 +8736,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "Look at your top card; keep or discard it. {instinct}: if it was a {shield} Hero, you may send it Undercover."
+      "effect": "Look at your top card; keep or discard it.\n{instinct}: if it was a {shield} Hero, you may send it Undercover."
     },
     {
       "name": "Battle Staves",
@@ -8768,7 +8768,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "Draw a card. Send two S.H.I.E.L.D. Officers Undercover; then +1 {recruit} and +1 {attack} per 2 S.H.I.E.L.D. Levels."
+      "effect": "Draw a card.\nSend two S.H.I.E.L.D. Officers Undercover; then +1 {recruit} and +1 {attack} per 2 S.H.I.E.L.D. Levels."
     }
   ],
   "hoa:thor": [
@@ -8869,7 +8869,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "Rooftops Conqueror 1. When an Ambush is played, you may discard this to draw two extra cards at end of turn."
+      "effect": "Rooftops Conqueror 1.\nWhen an Ambush is played, you may discard this to draw two extra cards at end of turn."
     },
     {
       "name": "Usher to Valhalla",
@@ -8879,7 +8879,7 @@
       "value": 2,
       "variable": true,
       "cost": 6,
-      "effect": "Bridge Conqueror 1. {heroes-of-asgard}: the first time you defeat a Villain this turn, you may KO one of your cards from hand or discard."
+      "effect": "Bridge Conqueror 1.\n{heroes-of-asgard}: the first time you defeat a Villain this turn, you may KO one of your cards from hand or discard."
     },
     {
       "name": "Ride of the Valkyries",
@@ -8889,7 +8889,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Streets Conqueror 1. {instinct}: +1 {attack} per 4 Heroes in the KO pile."
+      "effect": "Streets Conqueror 1.\n{instinct}: +1 {attack} per 4 Heroes in the KO pile."
     }
   ],
   "hoa:lady-sif": [
@@ -8918,7 +8918,7 @@
       "copies": 3,
       "class": "Strength",
       "cost": 3,
-      "effect": "Thrown Artifact - throw for +1 {attack}. Any turn, if a player would gain a Wound, you may throw this to prevent it and draw two cards.",
+      "effect": "Thrown Artifact - throw for +1 {attack}.\nAny turn, if a player would gain a Wound, you may throw this to prevent it and draw two cards.",
       "keywords": [
         "Thrown Artifact"
       ]
@@ -8942,7 +8942,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 3,
-      "effect": "Move a Villain to an adjacent space (swap if occupied). {covert}: draw a card."
+      "effect": "Move a Villain to an adjacent space (swap if occupied).\n{covert}: draw a card."
     },
     {
       "name": "Hogun the Grim",
@@ -8961,7 +8961,7 @@
       "value": 3,
       "variable": true,
       "cost": 6,
-      "effect": "Bridge Conqueror 1. {instinct}: Bridge Conqueror 3 instead."
+      "effect": "Bridge Conqueror 1.\n{instinct}: Bridge Conqueror 3 instead."
     },
     {
       "name": "Three Stand as One",
@@ -8971,7 +8971,7 @@
       "value": 4,
       "variable": true,
       "cost": 8,
-      "effect": "If you played at least three other differently-named non-grey Heroes this turn, +3 {attack}. {heroes-of-asgard}: Streets Conqueror 3."
+      "effect": "If you played at least three other differently-named non-grey Heroes this turn, +3 {attack}.\n{heroes-of-asgard}: Streets Conqueror 3."
     }
   ],
   "itc:captain-mar-vell": [
@@ -8982,7 +8982,7 @@
       "kind": "attack",
       "value": 1,
       "cost": 2,
-      "effect": "If Danger Sense would give you Attack this turn, gain that many Shards instead. Danger Sense 1. {ranged}: Danger Sense 2 instead.",
+      "effect": "If Danger Sense would give you Attack this turn, gain that many Shards instead.\nDanger Sense 1.\n{ranged}: Danger Sense 2 instead.",
       "keywords": [
         "Danger Sense 1"
       ]
@@ -9046,7 +9046,7 @@
       "kind": "attack",
       "value": 1,
       "cost": 5,
-      "effect": "Gain a Shard. Burn 2 Shards: you may KO a card from hand or discard."
+      "effect": "Gain a Shard.\nBurn 2 Shards: you may KO a card from hand or discard."
     },
     {
       "name": "The Star Brand",
@@ -9056,7 +9056,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Gain a Shard each time you defeat a Villain or Mastermind this turn. Burn 4 Shards: +7 {attack}."
+      "effect": "Gain a Shard each time you defeat a Villain or Mastermind this turn.\nBurn 4 Shards: +7 {attack}."
     }
   ],
   "itc:adam-warlock": [
@@ -9065,28 +9065,28 @@
       "copies": 5,
       "class": "Covert",
       "cost": 3,
-      "effect": "Gain a Shard. Burn 2 Shards: halve a HQ Hero's cost this turn (round up)."
+      "effect": "Gain a Shard.\nBurn 2 Shards: halve a HQ Hero's cost this turn (round up)."
     },
     {
       "name": "Regenerative Cocoon",
       "copies": 5,
       "class": "Strength",
       "cost": 4,
-      "effect": "Discard a card to play this. Draw two extra cards when you draw your next hand."
+      "effect": "Discard a card to play this.\nDraw two extra cards when you draw your next hand."
     },
     {
       "name": "Soulblast",
       "copies": 3,
       "class": "Covert",
       "cost": 5,
-      "effect": "Gain 2 Shards. {covert}: Burn 4 Shards: defeat a Villain."
+      "effect": "Gain 2 Shards.\n{covert}: Burn 4 Shards: defeat a Villain."
     },
     {
       "name": "Manifest the Soul Gem",
       "copies": 1,
       "class": "Ranged",
       "cost": 8,
-      "effect": "Gain 4 Shards. {avengers} {avengers}: Burn 8 Shards: defeat the Mastermind once, then reveal the top Villain Deck card; if a Master Strike, the Magus Mastermind joins next turn with one random Tactic."
+      "effect": "Gain 4 Shards.\n{avengers} {avengers}: Burn 8 Shards: defeat the Mastermind once, then reveal the top Villain Deck card; if a Master Strike, the Magus Mastermind joins next turn with one random Tactic."
     }
   ],
   "itc:moondragon": [
@@ -9107,7 +9107,7 @@
       "value": 1,
       "variable": true,
       "cost": 4,
-      "effect": "Danger Sense 2. {instinct}: if it revealed any Scheme Twists, gain a Shard.",
+      "effect": "Danger Sense 2.\n{instinct}: if it revealed any Scheme Twists, gain a Shard.",
       "keywords": [
         "Danger Sense 2"
       ]
@@ -9120,7 +9120,7 @@
       "value": 1,
       "variable": true,
       "cost": 6,
-      "effect": "Danger Sense 4. {avengers}: if it revealed at least two Master Strikes, you may shuffle the Villain Deck.",
+      "effect": "Danger Sense 4.\n{avengers}: if it revealed at least two Master Strikes, you may shuffle the Villain Deck.",
       "keywords": [
         "Danger Sense 4"
       ]
@@ -9148,7 +9148,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. {tech}: +1 {recruit} or +1 {attack}."
+      "effect": "Draw a card.\n{tech}: +1 {recruit} or +1 {attack}."
     },
     {
       "name": "Electromagnetic Wave",
@@ -9158,14 +9158,14 @@
       "value": 0,
       "variable": true,
       "cost": 3,
-      "effect": "Choose: +2 {recruit} or gain a Shard. {ranged}: instead, both."
+      "effect": "Choose: +2 {recruit} or gain a Shard.\n{ranged}: instead, both."
     },
     {
       "name": "Declare Galactic Threat",
       "copies": 3,
       "class": "Tech",
       "cost": 6,
-      "effect": "A Villain gains Cosmic Threat (Tech) this turn, replacing any prior Cosmic Threat. If no Villains were in the city, draw two cards instead."
+      "effect": "A Villain gains Cosmic Threat (Tech) this turn, replacing any prior Cosmic Threat.\nIf no Villains were in the city, draw two cards instead."
     },
     {
       "name": "Mobilize the Nova Corps",
@@ -9181,7 +9181,7 @@
       "copies": 5,
       "class": "Ranged",
       "cost": 2,
-      "effect": "Gain a Shard. {ranged}: Burn any number of Shards: defeat a Villain whose printed VP equals the Shards burned."
+      "effect": "Gain a Shard.\n{ranged}: Burn any number of Shards: defeat a Villain whose printed VP equals the Shards burned."
     },
     {
       "name": "Interstellar Hunter",
@@ -9191,7 +9191,7 @@
       "value": 1,
       "variable": true,
       "cost": 3,
-      "effect": "Danger Sense 2. {covert}: if it revealed any Master Strikes, draw a card.",
+      "effect": "Danger Sense 2.\n{covert}: if it revealed any Master Strikes, draw a card.",
       "keywords": [
         "Danger Sense 2"
       ]
@@ -9204,7 +9204,7 @@
       "value": 1,
       "variable": true,
       "cost": 5,
-      "effect": "Danger Sense 3. {guardians-of-the-galaxy}: you may do the Fight effect of a Henchman Villain revealed this way (without defeating it).",
+      "effect": "Danger Sense 3.\n{guardians-of-the-galaxy}: you may do the Fight effect of a Henchman Villain revealed this way (without defeating it).",
       "keywords": [
         "Danger Sense 3"
       ]
@@ -9214,7 +9214,7 @@
       "copies": 1,
       "class": "Tech",
       "cost": 7,
-      "effect": "Choose: gain a HQ Hero for free, or gain a Shard per empty city space. {guardians-of-the-galaxy} x3: do both."
+      "effect": "Choose: gain a HQ Hero for free, or gain a Shard per empty city space.\n{guardians-of-the-galaxy} x3: do both."
     }
   ],
   "itc:phyla-vell": [
@@ -9223,7 +9223,7 @@
       "copies": 5,
       "class": "Instinct",
       "cost": 2,
-      "effect": "Gain a Shard. {instinct}: draw a card."
+      "effect": "Gain a Shard.\n{instinct}: draw a card."
     },
     {
       "name": "Quantum Sword",
@@ -9261,7 +9261,7 @@
       "copies": 5,
       "class": "Tech",
       "cost": 3,
-      "effect": "Gain a Shard. Burn 2 Shards: draw two cards."
+      "effect": "Gain a Shard.\nBurn 2 Shards: draw two cards."
     },
     {
       "name": "Rally Kree Warriors",
@@ -9270,7 +9270,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 4,
-      "effect": "Gain a Shard each time you rescue a Bystander this turn. {strength}: rescue a Bystander."
+      "effect": "Gain a Shard each time you rescue a Bystander this turn.\n{strength}: rescue a Bystander."
     },
     {
       "name": "Accuse Enemies of the Empire",
@@ -9314,7 +9314,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 5,
-      "effect": "A Villain gains a Shard. {instinct} {tech}: take a Shard from a Villain."
+      "effect": "A Villain gains a Shard.\n{instinct} {tech}: take a Shard from a Villain."
     },
     {
       "name": "Illusion Device",
@@ -9538,7 +9538,7 @@
       "kind": "recruit",
       "value": 1,
       "cost": 2,
-      "effect": "Moonlight: you may bottom a HQ Hero. Sunlight: draw a card."
+      "effect": "Moonlight: you may bottom a HQ Hero.\nSunlight: draw a card."
     },
     {
       "name": "Solar-Powered",
@@ -9558,7 +9558,7 @@
       "value": 4,
       "variable": true,
       "cost": 6,
-      "effect": "Bottom a card from hand to play this. Sunlight: +1 {attack} per other {x-men} card played this turn."
+      "effect": "Bottom a card from hand to play this.\nSunlight: +1 {attack} per other {x-men} card played this turn."
     },
     {
       "name": "Empyreal Force",
@@ -9568,7 +9568,7 @@
       "value": 3,
       "variable": true,
       "cost": 8,
-      "effect": "Bottom any number of HQ Heroes. Sunlight: +1 {attack} per even-cost Hero in the HQ."
+      "effect": "Bottom any number of HQ Heroes.\nSunlight: +1 {attack} per even-cost Hero in the HQ."
     }
   ],
   "nm:wolfsbane": [
@@ -9579,7 +9579,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "Sunlight: you may bottom a HQ Hero. Moonlight: draw a card."
+      "effect": "Sunlight: you may bottom a HQ Hero.\nMoonlight: draw a card."
     },
     {
       "name": "Night Vision",
@@ -9607,7 +9607,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Look at your top three cards; discard any, replace the rest. Moonlight: +{attack} equal to the total printed Attack of cards discarded from your deck this turn."
+      "effect": "Look at your top three cards; discard any, replace the rest.\nMoonlight: +{attack} equal to the total printed Attack of cards discarded from your deck this turn."
     }
   ],
   "nm:mirage": [
@@ -9647,7 +9647,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "+2 {attack} each time an effect discards a card from your hand this turn. Moonlight: you may have a Waking Nightmare."
+      "effect": "+2 {attack} each time an effect discards a card from your hand this turn.\nMoonlight: you may have a Waking Nightmare."
     }
   ],
   "nm:warlock": [
@@ -9666,7 +9666,7 @@
       "value": 0,
       "variable": true,
       "cost": 3,
-      "effect": "Sunlight: +2 {recruit}. Moonlight: +2 {attack}. {tech}: instead, both."
+      "effect": "Sunlight: +2 {recruit}.\nMoonlight: +2 {attack}.\n{tech}: instead, both."
     },
     {
       "name": "Techno-Organic Adaptation",
@@ -9685,7 +9685,7 @@
       "value": 0,
       "variable": true,
       "cost": 7,
-      "effect": "Sunlight: draw three cards. Moonlight: +3 {recruit} and +3 {attack}. {x-men} x4: instead, both."
+      "effect": "Sunlight: draw three cards.\nMoonlight: +3 {recruit} and +3 {attack}.\n{x-men} x4: instead, both."
     }
   ],
   "nm:karma": [
@@ -9738,7 +9738,7 @@
       "value": 2,
       "variable": true,
       "cost": 3,
-      "effect": "When Recruited: you may KO one of your no-rules-text cards. {ranged}: gain the Throne's Favor, or spend it for +2 {recruit}.",
+      "effect": "When Recruited: you may KO one of your no-rules-text cards.\n{ranged}: gain the Throne's Favor, or spend it for +2 {recruit}.",
       "keywords": [
         "When Recruited"
       ]
@@ -9779,7 +9779,7 @@
       "value": 1,
       "variable": true,
       "cost": 2,
-      "effect": "When Recruited: gain the Throne's Favor. Otherwise gain the Throne's Favor, or spend it for +2 {attack}.",
+      "effect": "When Recruited: gain the Throne's Favor.\nOtherwise gain the Throne's Favor, or spend it for +2 {attack}.",
       "keywords": [
         "When Recruited"
       ]
@@ -9791,7 +9791,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 3,
-      "effect": "When Recruited: draw a card and gain the Throne's Favor. {instinct}: gain the Throne's Favor, or spend it to draw a card.",
+      "effect": "When Recruited: draw a card and gain the Throne's Favor.\n{instinct}: gain the Throne's Favor, or spend it to draw a card.",
       "keywords": [
         "When Recruited"
       ]
@@ -9803,7 +9803,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 5,
-      "effect": "When Recruited: gain the Throne's Favor. {inhumans}: gain the Throne's Favor, or spend it to KO one of your cards.",
+      "effect": "When Recruited: gain the Throne's Favor.\n{inhumans}: gain the Throne's Favor, or spend it to KO one of your cards.",
       "keywords": [
         "When Recruited"
       ]
@@ -9815,7 +9815,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 7,
-      "effect": "When Recruited: draw two cards and gain the Throne's Favor. Otherwise gain the Throne's Favor, or spend it to draw two cards.",
+      "effect": "When Recruited: draw two cards and gain the Throne's Favor.\nOtherwise gain the Throne's Favor, or spend it to draw two cards.",
       "keywords": [
         "When Recruited"
       ]
@@ -9839,7 +9839,7 @@
       "kind": "recruit",
       "value": 1,
       "cost": 4,
-      "effect": "Choose Strength, Instinct, Covert or Ranged; this card is only that class this turn. Draw a card."
+      "effect": "Choose Strength, Instinct, Covert or Ranged; this card is only that class this turn.\nDraw a card."
     },
     {
       "name": "Elemental Princess",
@@ -9848,7 +9848,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 6,
-      "effect": "When Recruited: you may KO one of your cards that isn't Strength/Instinct/Covert/Ranged. Otherwise gain the Throne's Favor, or spend it to make this card all four of those classes this turn.",
+      "effect": "When Recruited: you may KO one of your cards that isn't Strength/Instinct/Covert/Ranged.\nOtherwise gain the Throne's Favor, or spend it to make this card all four of those classes this turn.",
       "keywords": [
         "When Recruited"
       ]
@@ -9860,7 +9860,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 8,
-      "effect": "When Recruited: you may gain a Strength/Instinct/Covert/Ranged HQ Hero costing 4 or less. Otherwise reveal your top four cards; take one of each of those four classes to hand and replace the rest.",
+      "effect": "When Recruited: you may gain a Strength/Instinct/Covert/Ranged HQ Hero costing 4 or less.\nOtherwise reveal your top four cards; take one of each of those four classes to hand and replace the rest.",
       "keywords": [
         "When Recruited"
       ]
@@ -9874,7 +9874,7 @@
       "kind": "attack",
       "value": 1,
       "cost": 2,
-      "effect": "When Recruited: +1 {attack}. {covert}: draw an extra card when you draw your next hand.",
+      "effect": "When Recruited: +1 {attack}.\n{covert}: draw an extra card when you draw your next hand.",
       "keywords": [
         "When Recruited"
       ]
@@ -9887,7 +9887,7 @@
       "value": 0,
       "variable": true,
       "cost": 4,
-      "effect": "When Recruited: +2 {attack}. Choose a Villain Group; +1 {recruit} per Villain from it in your Victory pile.",
+      "effect": "When Recruited: +2 {attack}.\nChoose a Villain Group; +1 {recruit} per Villain from it in your Victory pile.",
       "keywords": [
         "When Recruited"
       ]
@@ -9900,7 +9900,7 @@
       "value": 0,
       "variable": true,
       "cost": 5,
-      "effect": "When Recruited: +3 {attack}. Choose a Villain Group; +1 {attack} per Villain from it in your Victory pile.",
+      "effect": "When Recruited: +3 {attack}.\nChoose a Villain Group; +1 {attack} per Villain from it in your Victory pile.",
       "keywords": [
         "When Recruited"
       ]
@@ -9910,7 +9910,7 @@
       "copies": 1,
       "class": "Covert",
       "cost": 7,
-      "effect": "When Recruited: +4 {attack}. Each card you play this turn (including this), you may first use its When Recruited ability.",
+      "effect": "When Recruited: +4 {attack}.\nEach card you play this turn (including this), you may first use its When Recruited ability.",
       "keywords": [
         "When Recruited"
       ]
@@ -9924,7 +9924,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "When Recruited: you may Teleport a 0-cost Hero from your hand. {covert}: you may Teleport another card from your hand.",
+      "effect": "When Recruited: you may Teleport a 0-cost Hero from your hand.\n{covert}: you may Teleport another card from your hand.",
       "keywords": [
         "When Recruited"
       ]
@@ -9937,7 +9937,7 @@
       "value": 2,
       "variable": true,
       "cost": 5,
-      "effect": "When Recruited: Sewers Abomination. {strength}: Streets Abomination.",
+      "effect": "When Recruited: Sewers Abomination.\n{strength}: Streets Abomination.",
       "keywords": [
         "When Recruited"
       ]
@@ -9950,7 +9950,7 @@
       "value": 1,
       "variable": true,
       "cost": 6,
-      "effect": "When Recruited: you may KO one of your cards with no Attack icon. Highest Abomination.",
+      "effect": "When Recruited: you may KO one of your cards with no Attack icon.\nHighest Abomination.",
       "keywords": [
         "When Recruited"
       ]
@@ -9963,7 +9963,7 @@
       "value": 4,
       "variable": true,
       "cost": 8,
-      "effect": "When Recruited: Bridge Abomination. Teleport. {inhumans}: Rooftops Abomination.",
+      "effect": "When Recruited: Bridge Abomination.\nTeleport.\n{inhumans}: Rooftops Abomination.",
       "keywords": [
         "When Recruited",
         "Teleport"
@@ -9982,7 +9982,7 @@
       "keywords": [
         "Focus 3"
       ],
-      "effect": "{fantastic-four}: +1 {recruit}. Focus 3 {recruit} -> +2 {attack}."
+      "effect": "{fantastic-four}: +1 {recruit}.\nFocus 3 {recruit} -> +2 {attack}."
     },
     {
       "name": "Human Torch",
@@ -9995,7 +9995,7 @@
         "Focus 2",
         "Focus 6"
       ],
-      "effect": "Focus 2 {recruit} -> KO up to two Wounds from hand and/or discard. Focus 6 {recruit} -> +6 {attack} and gain a Wound."
+      "effect": "Focus 2 {recruit} -> KO up to two Wounds from hand and/or discard.\nFocus 6 {recruit} -> +6 {attack} and gain a Wound."
     },
     {
       "name": "Invisible Woman",
@@ -10008,7 +10008,7 @@
       "keywords": [
         "Focus 4"
       ],
-      "effect": "+2 {recruit} if you played another card costing 4 this turn. Focus 4 {recruit} -> rescue a Bystander, then you may KO a card from hand or discard."
+      "effect": "+2 {recruit} if you played another card costing 4 this turn.\nFocus 4 {recruit} -> rescue a Bystander, then you may KO a card from hand or discard."
     },
     {
       "name": "Mr. Fantastic",
@@ -10020,7 +10020,7 @@
       "keywords": [
         "Focus 5"
       ],
-      "effect": "Draw two cards. Focus 5 {recruit} -> +7 {attack} against the Mastermind only."
+      "effect": "Draw two cards.\nFocus 5 {recruit} -> +7 {attack} against the Mastermind only."
     }
   ],
   "anh:psi-lord": [
@@ -10034,7 +10034,7 @@
       "keywords": [
         "Focus 2"
       ],
-      "effect": "Focus 2 {recruit} -> reveal the top Villain Deck card; if it's a Master Strike, +3 {attack}, KO it, and replace it with the top Bystander. {instinct}: Man Out of Time."
+      "effect": "Focus 2 {recruit} -> reveal the top Villain Deck card; if it's a Master Strike, +3 {attack}, KO it, and replace it with the top Bystander.\n{instinct}: Man Out of Time."
     },
     {
       "name": "Interdimensional Rescue",
@@ -10047,7 +10047,7 @@
       "keywords": [
         "Focus 1"
       ],
-      "effect": "Focus 1 {recruit} -> reveal the top Villain Deck card; if it's a Bystander, +2 {attack}, rescue it, and shuffle the top Bystander into the Villain Deck. {covert}: Man Out of Time."
+      "effect": "Focus 1 {recruit} -> reveal the top Villain Deck card; if it's a Bystander, +2 {attack}, rescue it, and shuffle the top Bystander into the Villain Deck.\n{covert}: Man Out of Time."
     },
     {
       "name": "Slip the Timestream",
@@ -10059,7 +10059,7 @@
       "keywords": [
         "Focus 1"
       ],
-      "effect": "Focus 1 {recruit} -> reveal the top Villain Deck card; if it's a Villain, +1 {attack} and you may fight it this turn. {instinct}{covert}: Man Out of Time."
+      "effect": "Focus 1 {recruit} -> reveal the top Villain Deck card; if it's a Villain, +1 {attack} and you may fight it this turn.\n{instinct}{covert}: Man Out of Time."
     },
     {
       "name": "Reshape Reality",
@@ -10071,7 +10071,7 @@
       "keywords": [
         "Focus 3"
       ],
-      "effect": "Focus 3 {recruit} -> reveal the top Villain Deck card; if it's a Scheme Twist, +4 {attack} and shuffle the Villain Deck. {fantastic-four}{fantastic-four}: Man Out of Time."
+      "effect": "Focus 3 {recruit} -> reveal the top Villain Deck card; if it's a Scheme Twist, +4 {attack} and shuffle the Villain Deck.\n{fantastic-four}{fantastic-four}: Man Out of Time."
     }
   ],
   "anh:brainstorm": [
@@ -10082,7 +10082,7 @@
       "kind": "recruit",
       "value": 1,
       "cost": 2,
-      "effect": "Draw a card, then put a card from hand on top of your deck. {tech}: Woman Out of Time."
+      "effect": "Draw a card, then put a card from hand on top of your deck.\n{tech}: Woman Out of Time."
     },
     {
       "name": "Borrow from the Future",
@@ -10091,7 +10091,7 @@
       "kind": "attack",
       "value": 1,
       "cost": 3,
-      "effect": "Reveal the top card of your deck; if it costs 2 or more, draw it, otherwise discard it or put it back. {ranged}: Woman Out of Time."
+      "effect": "Reveal the top card of your deck; if it costs 2 or more, draw it, otherwise discard it or put it back.\n{ranged}: Woman Out of Time."
     },
     {
       "name": "Reprogram Doombot Legions",
@@ -10110,7 +10110,7 @@
       "value": 4,
       "variable": true,
       "cost": 8,
-      "effect": "Use one of Dr. Doom's Mastermind Tactics (each once per game): take another turn; or draw three extra cards at end of turn; or recruit a {tech} or {ranged} Hero free; or each other player draws or discards a card. If all are used, +4 {attack} instead."
+      "effect": "Use one of Dr. Doom's Mastermind Tactics (each once per game): take another turn; or draw three extra cards at end of turn; or recruit a {tech} or {ranged} Hero free; or each other player draws or discards a card.\nIf all are used, +4 {attack} instead."
     }
   ],
   "anh:heralds-of-galactus": [
@@ -10134,7 +10134,7 @@
       "value": 2,
       "variable": true,
       "cost": 3,
-      "effect": "This turn, your Heroes' Conqueror abilities also give {attack} for destroyed city spaces. {ranged}: Bridge Conqueror 2."
+      "effect": "This turn, your Heroes' Conqueror abilities also give {attack} for destroyed city spaces.\n{ranged}: Bridge Conqueror 2."
     },
     {
       "name": "Stardust",
@@ -10147,7 +10147,7 @@
         "Focus 4",
         "Focus 11"
       ],
-      "effect": "Focus 4 {recruit} -> Rooftops Conqueror 4. Focus 11 {recruit} -> search the Hero Deck, HQ, or your deck/discard for Galactus Hungers and put it on top of your deck (shuffle any deck searched)."
+      "effect": "Focus 4 {recruit} -> Rooftops Conqueror 4.\nFocus 11 {recruit} -> search the Hero Deck, HQ, or your deck/discard for Galactus Hungers and put it on top of your deck (shuffle any deck searched)."
     },
     {
       "name": "Galactus Hungers",
@@ -10157,7 +10157,7 @@
       "value": 8,
       "variable": true,
       "cost": 10,
-      "effect": "If you played another Heralds of Galactus Hero this turn, destroy the leftmost city space, defeat any Villain there, and get +2 {attack} per destroyed city space. If this destroys the last city space, you win, Evil wins, and all other players lose."
+      "effect": "If you played another Heralds of Galactus Hero this turn, destroy the leftmost city space, defeat any Villain there, and get +2 {attack} per destroyed city space.\nIf this destroys the last city space, you win, Evil wins, and all other players lose."
     }
   ],
   "anh:super-skrull": [
@@ -10184,7 +10184,7 @@
       "keywords": [
         "Focus 3"
       ],
-      "effect": "{strength}: Sewers Conqueror 1. Focus 3 {attack} -> +2 {recruit}."
+      "effect": "{strength}: Sewers Conqueror 1.\nFocus 3 {attack} -> +2 {recruit}."
     },
     {
       "name": "Transparent Motives",
@@ -10197,7 +10197,7 @@
       "keywords": [
         "Focus 3"
       ],
-      "effect": "Bank Conqueror 1. Focus 3 {attack} -> you may KO a card from hand or discard."
+      "effect": "Bank Conqueror 1.\nFocus 3 {attack} -> you may KO a card from hand or discard."
     },
     {
       "name": "Put to the Torch",
@@ -10207,7 +10207,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Bridge Conqueror 1. Streets Conqueror 1. You may gain a Wound; if you do, Rooftops Conqueror 4."
+      "effect": "Bridge Conqueror 1.\nStreets Conqueror 1.\nYou may gain a Wound; if you do, Rooftops Conqueror 4."
     }
   ],
   "mcx:multiple-man": [
@@ -10221,7 +10221,7 @@
       "keywords": [
         "Tactical Formation 444"
       ],
-      "effect": "Tactical Formation 444: draw a card. {instinct}: Clone."
+      "effect": "Tactical Formation 444: draw a card.\n{instinct}: Clone."
     },
     {
       "name": "Finding Myself",
@@ -10233,7 +10233,7 @@
       "keywords": [
         "Investigate"
       ],
-      "effect": "Investigate for a card sharing a name with one of your cards (you needn't name it first). {tech}: Clone."
+      "effect": "Investigate for a card sharing a name with one of your cards (you needn't name it first).\n{tech}: Clone."
     },
     {
       "name": "Perfect Match",
@@ -10243,7 +10243,7 @@
       "value": 1,
       "variable": true,
       "cost": 4,
-      "effect": "+1 {attack} per card name you played at least twice this turn. {tech}: Clone."
+      "effect": "+1 {attack} per card name you played at least twice this turn.\n{tech}: Clone."
     },
     {
       "name": "Reabsorb Duplicates",
@@ -10255,7 +10255,7 @@
       "keywords": [
         "Tactical Formation 44"
       ],
-      "effect": "Tactical Formation 44: you may KO a card from hand or discard. {x-factor}: Clone."
+      "effect": "Tactical Formation 44: you may KO a card from hand or discard.\n{x-factor}: Clone."
     }
   ],
   "mcx:shatterstar": [
@@ -10270,7 +10270,7 @@
       "keywords": [
         "When Recruited"
       ],
-      "effect": "When Recruited: {instinct}: Clone. {instinct}: +2 {recruit} usable only for Heroes costing 5 or more."
+      "effect": "When Recruited: {instinct}: Clone.\n{instinct}: +2 {recruit} usable only for Heroes costing 5 or more."
     },
     {
       "name": "Gladiator's Blades",
@@ -10282,7 +10282,7 @@
       "keywords": [
         "When Recruited"
       ],
-      "effect": "When Recruited: {instinct}: Clone. {instinct}: draw a card."
+      "effect": "When Recruited: {instinct}: Clone.\n{instinct}: draw a card."
     },
     {
       "name": "Bioelectric Surge",
@@ -10296,7 +10296,7 @@
         "When Recruited",
         "Tactical Formation 55"
       ],
-      "effect": "When Recruited: {ranged}: Clone. Tactical Formation 55: +1 {attack}."
+      "effect": "When Recruited: {ranged}: Clone.\nTactical Formation 55: +1 {attack}."
     },
     {
       "name": "Gene-Spliced Creation",
@@ -10308,7 +10308,7 @@
       "keywords": [
         "When Recruited"
       ],
-      "effect": "When Recruited: {x-force}: Clone. {ranged}{instinct}: Shatter the Mastermind."
+      "effect": "When Recruited: {x-force}: Clone.\n{ranged}{instinct}: Shatter the Mastermind."
     }
   ],
   "mcx:stepford-cuckoos": [
@@ -10322,7 +10322,7 @@
       "keywords": [
         "When Recruited"
       ],
-      "effect": "When Recruited: Clone. {tech}: Investigate the Sidekick Stack for a card and put it in your discard pile."
+      "effect": "When Recruited: Clone.\n{tech}: Investigate the Sidekick Stack for a card and put it in your discard pile."
     },
     {
       "name": "Shared Thoughts",
@@ -10337,7 +10337,7 @@
         "Tactical Formation 22",
         "Tactical Formation 33"
       ],
-      "effect": "When Recruited: Clone. Tactical Formation 22: +1 {attack}. Tactical Formation 33: Investigate for a card with an Attack icon."
+      "effect": "When Recruited: Clone.\nTactical Formation 22: +1 {attack}.\nTactical Formation 33: Investigate for a card with an Attack icon."
     },
     {
       "name": "Telepathic Warning",
@@ -10352,7 +10352,7 @@
         "Tactical Formation 22",
         "Tactical Formation 33"
       ],
-      "effect": "When Recruited: Clone. Tactical Formation 22: +1 {attack}. Tactical Formation 33: reveal the top Villain Deck card; if it's a Master Strike, +1 {attack} and you may shuffle the Villain Deck."
+      "effect": "When Recruited: Clone.\nTactical Formation 22: +1 {attack}.\nTactical Formation 33: reveal the top Villain Deck card; if it's a Master Strike, +1 {attack} and you may shuffle the Villain Deck."
     },
     {
       "name": "Mind Wipe",
@@ -10366,7 +10366,7 @@
         "When Recruited",
         "Tactical Formation 223"
       ],
-      "effect": "When Recruited: Clone. Tactical Formation 223: reveal the top Villain Deck card; if it's a Villain, +2 {attack} and you may fight it this turn; if you fight it, put a Bystander on top of the Villain Deck."
+      "effect": "When Recruited: Clone.\nTactical Formation 223: reveal the top Villain Deck card; if it's a Villain, +2 {attack} and you may fight it this turn; if you fight it, put a Bystander on top of the Villain Deck."
     }
   ],
   "mcx:m": [
@@ -10381,7 +10381,7 @@
         "When Recruited",
         "Investigate"
       ],
-      "effect": "When Recruited: {covert}: Clone. Investigate for a card that costs 3."
+      "effect": "When Recruited: {covert}: Clone.\nInvestigate for a card that costs 3."
     },
     {
       "name": "Penance Form",
@@ -10394,7 +10394,7 @@
       "keywords": [
         "When Recruited"
       ],
-      "effect": "When Recruited: {strength}: Clone. KO a Wound from hand or discard for +1 {attack}; otherwise gain a Wound."
+      "effect": "When Recruited: {strength}: Clone.\nKO a Wound from hand or discard for +1 {attack}; otherwise gain a Wound."
     },
     {
       "name": "Three Sisters Combined",
@@ -10408,7 +10408,7 @@
         "When Recruited",
         "Tactical Formation 333"
       ],
-      "effect": "When Recruited: {strength}: Clone. Draw a card. Tactical Formation 333: +2 {attack}."
+      "effect": "When Recruited: {strength}: Clone.\nDraw a card.\nTactical Formation 333: +2 {attack}."
     },
     {
       "name": "Interweaving Powers",
@@ -10422,7 +10422,7 @@
         "When Recruited",
         "Tactical Formation 3333"
       ],
-      "effect": "When Recruited: {x-factor}: Clone. Tactical Formation 3333: +3 {attack}."
+      "effect": "When Recruited: {x-factor}: Clone.\nTactical Formation 3333: +3 {attack}."
     }
   ],
   "mcx:strong-guy": [
@@ -10501,7 +10501,7 @@
       "keywords": [
         "Tactical Formation 225"
       ],
-      "effect": "Reveal the top card of your deck; if it costs 0, you may KO it. Tactical Formation 225: +3 {attack}."
+      "effect": "Reveal the top card of your deck; if it costs 0, you may KO it.\nTactical Formation 225: +3 {attack}."
     },
     {
       "name": "Superhuman Senses",
@@ -10511,7 +10511,7 @@
       "value": 3,
       "variable": true,
       "cost": 7,
-      "effect": "+1 {attack} each time you reveal or look at cards from your deck this turn (drawing or discarding doesn't count). Choose a cost of 1 or more; Investigate for a card of that cost."
+      "effect": "+1 {attack} each time you reveal or look at cards from your deck this turn (drawing or discarding doesn't count).\nChoose a cost of 1 or more; Investigate for a card of that cost."
     }
   ],
   "mcx:siryn": [
@@ -10553,7 +10553,7 @@
       "keywords": [
         "Shatter"
       ],
-      "effect": "Shatter the Mastermind. KO up to two cards from hand and/or discard."
+      "effect": "Shatter the Mastermind.\nKO up to two cards from hand and/or discard."
     }
   ],
   "mcx:rictor": [
@@ -10745,7 +10745,7 @@
       "value": 3,
       "variable": true,
       "cost": 6,
-      "effect": "You may fight the Mastermind using Recruit instead of Attack this turn. {covert}: +3 {recruit}."
+      "effect": "You may fight the Mastermind using Recruit instead of Attack this turn.\n{covert}: +3 {recruit}."
     },
     {
       "name": "The Orb of Agamotto",
@@ -10785,7 +10785,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 4,
-      "effect": "Reveal the top card of your deck; discard it or put it back. {ranged}: you may choose a player to make a Demonic Bargain to draw two extra cards at end of turn."
+      "effect": "Reveal the top card of your deck; discard it or put it back.\n{ranged}: you may choose a player to make a Demonic Bargain to draw two extra cards at end of turn."
     },
     {
       "name": "The Book of the Vishanti",
@@ -10795,7 +10795,7 @@
       "keywords": [
         "Ritual Artifact"
       ],
-      "effect": "Ritual Artifact — if any player gained a Wound, you may set this aside to KO up to one Wound from any player's discard, then draw three cards; then discard it. Usable on any player's turn."
+      "effect": "Ritual Artifact — if any player gained a Wound, you may set this aside to KO up to one Wound from any player's discard, then draw three cards; then discard it.\nUsable on any player's turn."
     }
   ],
   "bw:black-widow": [
@@ -10809,7 +10809,7 @@
       "keywords": [
         "Dodge"
       ],
-      "effect": "Dodge. When you Dodge with or play this, you may also Dodge with another card from hand."
+      "effect": "Dodge.\nWhen you Dodge with or play this, you may also Dodge with another card from hand."
     },
     {
       "name": "Widow's Bite",
@@ -10834,7 +10834,7 @@
       "keywords": [
         "Dodge"
       ],
-      "effect": "Dodge. If you drew any cards this turn, you may send one of your other Heroes Undercover."
+      "effect": "Dodge.\nIf you drew any cards this turn, you may send one of your other Heroes Undercover."
     },
     {
       "name": "Infiltrate the Conspiracy",
@@ -10844,7 +10844,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "You may send one of your Heroes Undercover. +3 {attack} if you have at least 4 Bystanders and/or Undercover Heroes in your Victory Pile."
+      "effect": "You may send one of your Heroes Undercover.\n+3 {attack} if you have at least 4 Bystanders and/or Undercover Heroes in your Victory Pile."
     }
   ],
   "bw:yelena-belova": [
@@ -10876,7 +10876,7 @@
       "keywords": [
         "Dodge"
       ],
-      "effect": "Dodge. When you Dodge with this, you may Unleash one of your other Heroes from Undercover. When you play this, send it Undercover."
+      "effect": "Dodge.\nWhen you Dodge with this, you may Unleash one of your other Heroes from Undercover.\nWhen you play this, send it Undercover."
     },
     {
       "name": "Destroy the Red Room",
@@ -10885,7 +10885,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 8,
-      "effect": "You may Unleash one of your Heroes from Undercover. You may send a Hero from your discard pile Undercover."
+      "effect": "You may Unleash one of your Heroes from Undercover.\nYou may send a Hero from your discard pile Undercover."
     }
   ],
   "bw:red-guardian": [
@@ -10899,7 +10899,7 @@
       "keywords": [
         "When Recruited"
       ],
-      "effect": "When Recruited: send this Undercover; Unleash it when you fight a Villain. On play — {covert}: draw a card."
+      "effect": "When Recruited: send this Undercover; Unleash it when you fight a Villain.\nOn play — {covert}: draw a card."
     },
     {
       "name": "Magnetic Shield",
@@ -10912,7 +10912,7 @@
       "keywords": [
         "When Recruited"
       ],
-      "effect": "When Recruited: send this Undercover; Unleash it when you recruit another {covert} Hero. On play — {covert}: +2 {attack}."
+      "effect": "When Recruited: send this Undercover; Unleash it when you recruit another {covert} Hero.\nOn play — {covert}: +2 {attack}."
     },
     {
       "name": "Death Was Only A Ruse",
@@ -10924,7 +10924,7 @@
       "keywords": [
         "When Recruited"
       ],
-      "effect": "When Recruited: send this Undercover; Unleash it when a Master Strike is completed or any player fights the Mastermind. On play — {covert}: you may send one of your other Heroes Undercover."
+      "effect": "When Recruited: send this Undercover; Unleash it when a Master Strike is completed or any player fights the Mastermind.\nOn play — {covert}: you may send one of your other Heroes Undercover."
     },
     {
       "name": "Champion of the Winter Guard",
@@ -10937,7 +10937,7 @@
       "keywords": [
         "When Recruited"
       ],
-      "effect": "When Recruited: send this Undercover; Unleash it when a Scheme Twist is completed or you play your third {covert} Hero in a turn. On play — {covert}: +2 {attack} per other {covert} Hero you played this turn."
+      "effect": "When Recruited: send this Undercover; Unleash it when a Scheme Twist is completed or you play your third {covert} Hero in a turn.\nOn play — {covert}: +2 {attack} per other {covert} Hero you played this turn."
     }
   ],
   "bw:white-tiger": [
@@ -10962,7 +10962,7 @@
         "Dodge",
         "Dark Memories"
       ],
-      "effect": "Dodge. Dark Memories. Once this turn, you may fight the top Bystander as a 3-Attack \"Hand Ninjas\" Henchman with Fight: +1 {recruit}, then rescue it as a Bystander."
+      "effect": "Dodge.\nDark Memories.\nOnce this turn, you may fight the top Bystander as a 3-Attack \"Hand Ninjas\" Henchman with Fight: +1 {recruit}, then rescue it as a Bystander."
     },
     {
       "name": "Camouflaged Huntress",
@@ -10997,7 +10997,7 @@
         "Divided",
         "Dark Memories"
       ],
-      "effect": "Divided. Attune ({ranged}): discard a card to play this side. Atone ({strength}): Dark Memories."
+      "effect": "Divided.\nAttune ({ranged}): discard a card to play this side.\nAtone ({strength}): Dark Memories."
     },
     {
       "name": "Relocate/Reload",
@@ -11010,7 +11010,7 @@
         "Divided",
         "Dodge"
       ],
-      "effect": "Divided. Relocate ({instinct}): Dodge; {instinct}: +1 {attack}. Reload ({tech}): {tech}: draw a card."
+      "effect": "Divided.\nRelocate ({instinct}): Dodge; {instinct}: +1 {attack}.\nReload ({tech}): {tech}: draw a card."
     },
     {
       "name": "New Wings/New Plan",
@@ -11022,7 +11022,7 @@
       "keywords": [
         "Divided"
       ],
-      "effect": "Divided. New Wings ({tech}): if you discarded any cards this turn, +4 {attack}. New Plans ({covert}): draw two cards."
+      "effect": "Divided.\nNew Wings ({tech}): if you discarded any cards this turn, +4 {attack}.\nNew Plans ({covert}): draw two cards."
     },
     {
       "name": "Captain America's Legacy",
@@ -11032,7 +11032,7 @@
       "value": 2,
       "variable": true,
       "cost": 7,
-      "effect": "+1 {attack} per Hero Class you have. {avengers}: Dark Memories."
+      "effect": "+1 {attack} per Hero Class you have.\n{avengers}: Dark Memories."
     }
   ],
   "msg:star-lord": [
@@ -11076,7 +11076,7 @@
       "keywords": [
         "Divided"
       ],
-      "effect": "Divided. Give ({covert}): you may discard an Artifact you control for +1 {recruit}. Take ({ranged}): {guardians-of-the-galaxy}: reveal the top card of your deck; if it's an Artifact, draw it."
+      "effect": "Divided.\nGive ({covert}): you may discard an Artifact you control for +1 {recruit}.\nTake ({ranged}): {guardians-of-the-galaxy}: reveal the top card of your deck; if it's an Artifact, draw it."
     },
     {
       "name": "Don't Need That Stuff",
@@ -11114,7 +11114,7 @@
       "copies": 3,
       "class": "Covert",
       "cost": 4,
-      "effect": "To play this, put a card from hand on the bottom of your deck. Draw two cards."
+      "effect": "To play this, put a card from hand on the bottom of your deck.\nDraw two cards."
     },
     {
       "name": "Retractable Sword",
@@ -11135,7 +11135,7 @@
       "keywords": [
         "Divided"
       ],
-      "effect": "Divided. Forgive ({covert}): draw a card. Resent ({instinct}): +1 {attack}."
+      "effect": "Divided.\nForgive ({covert}): draw a card.\nResent ({instinct}): +1 {attack}."
     },
     {
       "name": "Stolen Necroblaster",
@@ -11181,7 +11181,7 @@
         "Excessive Violence",
         "Excessive Kindness"
       ],
-      "effect": "Divided. Passion ({tech}): Excessive Violence: draw a card. Compassion ({covert}): Excessive Kindness: draw a card."
+      "effect": "Divided.\nPassion ({tech}): Excessive Violence: draw a card.\nCompassion ({covert}): Excessive Kindness: draw a card."
     },
     {
       "name": "Don't Press This Button/Press the Button",
@@ -11193,7 +11193,7 @@
       "keywords": [
         "Divided"
       ],
-      "effect": "Divided. Don't Press This Button ({ranged}): +1 {attack}. Press the Button ({tech}): you may KO a card from hand or discard."
+      "effect": "Divided.\nDon't Press This Button ({ranged}): +1 {attack}.\nPress the Button ({tech}): you may KO a card from hand or discard."
     },
     {
       "name": "Gravity Mines",
@@ -11215,7 +11215,7 @@
       "keywords": [
         "Divided"
       ],
-      "effect": "Divided. Tricky ({tech}): if you have at least five different card names, +2 {recruit}. Simple ({strength}): 3 {attack}, no ability."
+      "effect": "Divided.\nTricky ({tech}): if you have at least five different card names, +2 {recruit}.\nSimple ({strength}): 3 {attack}, no ability."
     },
     {
       "name": "We Are Groot",
@@ -11264,7 +11264,7 @@
         "Divided",
         "Excessive Violence"
       ],
-      "effect": "Divided. I Am Invisible ({instinct}): Excessive Violence: reveal the top card of your deck; if it's {strength} or {instinct}, draw it. Xandar Is Invincible ({tech}): if there are no Villains in the city, +1 {recruit}."
+      "effect": "Divided.\nI Am Invisible ({instinct}): Excessive Violence: reveal the top card of your deck; if it's {strength} or {instinct}, draw it.\nXandar Is Invincible ({tech}): if there are no Villains in the city, +1 {recruit}."
     },
     {
       "name": "Dual Knives",
@@ -11286,7 +11286,7 @@
         "Divided",
         "Excessive Violence"
       ],
-      "effect": "Divided. Remove His Spine ({strength}): Excessive Violence: reveal the top card of your deck; you may KO it. Also Illegal ({instinct}): +1 {recruit}."
+      "effect": "Divided.\nRemove His Spine ({strength}): Excessive Violence: reveal the top card of your deck; you may KO it.\nAlso Illegal ({instinct}): +1 {recruit}."
     },
     {
       "name": "Revenge For My Family",
@@ -11296,7 +11296,7 @@
       "keywords": [
         "Excessive Violence"
       ],
-      "effect": "Double your Attack. Excessive Violence: you may KO a Villain from your Victory Pile to use its Fight effect."
+      "effect": "Double your Attack.\nExcessive Violence: you may KO a Villain from your Victory Pile to use its Fight effect."
     }
   ],
   "msg:mantis": [
@@ -11321,7 +11321,7 @@
       "keywords": [
         "Divided"
       ],
-      "effect": "Divided. Selfless ({instinct}): draw a card, and another player draws a card. Selfish ({ranged}): draw a card, and another player discards a card."
+      "effect": "Divided.\nSelfless ({instinct}): draw a card, and another player draws a card.\nSelfish ({ranged}): draw a card, and another player discards a card."
     },
     {
       "name": "Inspire Courage",
@@ -11388,7 +11388,7 @@
       "kind": "recruit",
       "value": 1,
       "cost": 4,
-      "effect": "Draw a card. You may have a Villain capture a Bystander."
+      "effect": "Draw a card.\nYou may have a Villain capture a Bystander."
     },
     {
       "name": "Precision Strike",
@@ -11408,7 +11408,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. {covert}: Liberate 3."
+      "effect": "Draw a card.\n{covert}: Liberate 3."
     },
     {
       "name": "The Last Avenger",
@@ -11542,7 +11542,7 @@
       "keywords": [
         "Soulbind"
       ],
-      "effect": "Draw a card. {instinct} Soulbind a Bystander or Villain: +2 {attack}; if it's a Special Bystander, you may do its Rescue effect."
+      "effect": "Draw a card.\n{instinct} Soulbind a Bystander or Villain: +2 {attack}; if it's a Special Bystander, you may do its Rescue effect."
     },
     {
       "name": "Break the Absolute Point in Time",
@@ -11573,7 +11573,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card. {covert}: +2 {recruit}."
+      "effect": "Draw a card.\n{covert}: +2 {recruit}."
     },
     {
       "name": "Tactical Insight",
@@ -11674,7 +11674,7 @@
       "value": 4,
       "variable": true,
       "cost": 6,
-      "effect": "Each Villain worth 3 VP or more captures a Bystander. {tech}: Liberate 2."
+      "effect": "Each Villain worth 3 VP or more captures a Bystander.\n{tech}: Liberate 2."
     },
     {
       "name": "I'm the King, Baby!",
@@ -11684,7 +11684,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "+1 {attack} per different Villain Group in your Victory Pile. {strength}: Liberate 2 for each Mastermind Tactic in your Victory Pile."
+      "effect": "+1 {attack} per different Villain Group in your Victory Pile.\n{strength}: Liberate 2 for each Mastermind Tactic in your Victory Pile."
     }
   ],
   "wif:party-thor": [
@@ -11724,7 +11724,7 @@
       "value": 3,
       "variable": true,
       "cost": 5,
-      "effect": "{ranged}: Cross-Dimensional Party Rampage. If any players gained a Wound this way, +3 {attack}."
+      "effect": "{ranged}: Cross-Dimensional Party Rampage.\nIf any players gained a Wound this way, +3 {attack}."
     },
     {
       "name": "Only Son",
@@ -11754,7 +11754,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Choose: get Empowered by {strength}, or Empowered by {covert}. {strength}{covert}: draw a card."
+      "effect": "Choose: get Empowered by {strength}, or Empowered by {covert}.\n{strength}{covert}: draw a card."
     },
     {
       "name": "Interstellar Adventures",
@@ -11797,7 +11797,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Choose any number of Heroes in the HQ and put them on the bottom of the Hero Deck. You get Empowered by multicolored cards."
+      "effect": "Choose any number of Heroes in the HQ and put them on the bottom of the Hero Deck.\nYou get Empowered by multicolored cards."
     }
   ],
   "wif:uatu-the-watcher": [
@@ -11809,7 +11809,7 @@
       "value": 1,
       "variable": true,
       "cost": 2,
-      "effect": "Draw a card, then put a card from hand on top of your deck. {covert}: +1 {recruit}."
+      "effect": "Draw a card, then put a card from hand on top of your deck.\n{covert}: +1 {recruit}."
     },
     {
       "name": "Another Dimension Crumbles",
@@ -11876,7 +11876,7 @@
       "keywords": [
         "Cyber-Mod"
       ],
-      "effect": "Cyber-Mod {ranged}: +1 {attack}. Cyber-Mod {ranged}{ranged}{ranged}: instead +3 {attack}."
+      "effect": "Cyber-Mod {ranged}: +1 {attack}.\nCyber-Mod {ranged}{ranged}{ranged}: instead +3 {attack}."
     },
     {
       "name": "Subvert This New Future",
@@ -11908,7 +11908,7 @@
         "Fated Future",
         "Cyber-Mod"
       ],
-      "effect": "You may send a card from hand or discard Undercover. Fated Future. Cyber-Mod {ranged}{ranged}: if you haven't taken any extra turns this game, you may take another turn after this one (skip the Villain Deck card at its start)."
+      "effect": "You may send a card from hand or discard Undercover.\nFated Future.\nCyber-Mod {ranged}{ranged}: if you haven't taken any extra turns this game, you may take another turn after this one (skip the Villain Deck card at its start)."
     }
   ],
   "y99:ghost-rider-2099": [
@@ -11923,7 +11923,7 @@
       "keywords": [
         "Cyber-Mod"
       ],
-      "effect": "Cyber-Mod {tech}: +1 {recruit}. Cyber-Mod {tech}{tech}: draw a card."
+      "effect": "Cyber-Mod {tech}: +1 {recruit}.\nCyber-Mod {tech}{tech}: draw a card."
     },
     {
       "name": "Hell Ride",
@@ -11936,7 +11936,7 @@
       "keywords": [
         "Cyber-Mod"
       ],
-      "effect": "You may send this and a card from the HQ Undercover for +2 {attack}. Cyber-Mod {tech}{tech}{tech}: +2 {attack}."
+      "effect": "You may send this and a card from the HQ Undercover for +2 {attack}.\nCyber-Mod {tech}{tech}{tech}: +2 {attack}."
     },
     {
       "name": "Death Beyond Death",
@@ -11959,7 +11959,7 @@
       "keywords": [
         "Cyber-Mod"
       ],
-      "effect": "You may send a card from the HQ Undercover. Cyber-Mod {tech}: Fated Future and +1 {attack} per {tech} card in your Victory Pile."
+      "effect": "You may send a card from the HQ Undercover.\nCyber-Mod {tech}: Fated Future and +1 {attack} per {tech} card in your Victory Pile."
     }
   ],
   "y99:hulk-2099": [
@@ -11975,7 +11975,7 @@
         "Cyber-Mod",
         "Cyber-Mod 4"
       ],
-      "effect": "Cyber-Mod Wound: +1 {attack}. Cyber-Mod 4 Wounds: instead +2 {attack}."
+      "effect": "Cyber-Mod Wound: +1 {attack}.\nCyber-Mod 4 Wounds: instead +2 {attack}."
     },
     {
       "name": "Push Pain Under the Surface",
@@ -11984,7 +11984,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 4,
-      "effect": "You may send a Wound from hand or discard Undercover. {strength}: you may send a Hero from hand or discard Undercover instead."
+      "effect": "You may send a Wound from hand or discard Undercover.\n{strength}: you may send a Hero from hand or discard Undercover instead."
     },
     {
       "name": "Massive Gamma Detonation",
@@ -11993,7 +11993,7 @@
       "kind": "attack",
       "value": 5,
       "cost": 6,
-      "effect": "To play this, discard two cards or gain a Wound. {tech}: Fated Future."
+      "effect": "To play this, discard two cards or gain a Wound.\n{tech}: Fated Future."
     },
     {
       "name": "Cataclysmic Frenzy",
@@ -12006,7 +12006,7 @@
       "keywords": [
         "Cyber-Mod"
       ],
-      "effect": "For each player, either send a Wound from that player's discard Undercover into your Victory Pile, or that player gains a Wound. Cyber-Mod Wound: +1 {attack} per Wound in your Victory Pile."
+      "effect": "For each player, either send a Wound from that player's discard Undercover into your Victory Pile, or that player gains a Wound.\nCyber-Mod Wound: +1 {attack} per Wound in your Victory Pile."
     }
   ],
   "y99:ravage-2099": [
@@ -12036,7 +12036,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 6,
-      "effect": "Reveal the top two cards of the Villain Deck and put them back in any order. Fated Future."
+      "effect": "Reveal the top two cards of the Villain Deck and put them back in any order.\nFated Future."
     },
     {
       "name": "Overhorns and Underhorns",
@@ -12046,7 +12046,7 @@
       "value": 3,
       "variable": true,
       "cost": 8,
-      "effect": "Reveal the top card of your deck; +{attack} equal to its cost; discard it or put it back. {marvel-knights}: do the same with the bottom card of your deck."
+      "effect": "Reveal the top card of your deck; +{attack} equal to its cost; discard it or put it back.\n{marvel-knights}: do the same with the bottom card of your deck."
     }
   ],
   "y99:spider-man-2099": [
@@ -12060,7 +12060,7 @@
       "keywords": [
         "Cyber-Mod"
       ],
-      "effect": "You may send this Undercover. Cyber-Mod {covert}: draw a card."
+      "effect": "You may send this Undercover.\nCyber-Mod {covert}: draw a card."
     },
     {
       "name": "Venomous Fangs",
@@ -12081,7 +12081,7 @@
       "kind": "recruit",
       "value": 3,
       "cost": 5,
-      "effect": "The next Hero you recruit this turn goes on top of your deck. {strength}: Fated Future."
+      "effect": "The next Hero you recruit this turn goes on top of your deck.\n{strength}: Fated Future."
     },
     {
       "name": "Spider-Sense Telepathy",
@@ -12090,7 +12090,7 @@
       "kind": "attack",
       "value": 5,
       "cost": 7,
-      "effect": "Reveal the top three cards of the Hero Deck; you may send one Undercover; put the rest back in any order. {spider-friends}: you may play a copy of the card you sent Undercover this way."
+      "effect": "Reveal the top three cards of the Hero Deck; you may send one Undercover; put the rest back in any order.\n{spider-friends}: you may play a copy of the card you sent Undercover this way."
     }
   ],
   "amw:ant-army": [
@@ -12173,7 +12173,7 @@
         "Antics",
         "Heist"
       ],
-      "effect": "Antics: +2 {attack}. Heist: +2 {attack}; if the revealed Villain Deck card is a Scheme Twist, +2 {attack} more and you may shuffle that deck."
+      "effect": "Antics: +2 {attack}.\nHeist: +2 {attack}; if the revealed Villain Deck card is a Scheme Twist, +2 {attack} more and you may shuffle that deck."
     }
   ],
   "amw:ant-man": [
@@ -12314,7 +12314,7 @@
       "keywords": [
         "Microscopic Size-Changing"
       ],
-      "effect": "{tech}: reveal the top Villain Deck card; if it's a Bystander, rescue it; if it's a Villain worth 2 VP or less, you may fight it this turn. If you rescue or defeat it, skip the Villain Deck card next turn."
+      "effect": "{tech}: reveal the top Villain Deck card; if it's a Bystander, rescue it; if it's a Villain worth 2 VP or less, you may fight it this turn.\nIf you rescue or defeat it, skip the Villain Deck card next turn."
     },
     {
       "name": "Inspire Revolution",
@@ -12348,7 +12348,7 @@
       "value": 1,
       "variable": true,
       "cost": 4,
-      "effect": "Streets Conqueror 1. Draw a card."
+      "effect": "Streets Conqueror 1.\nDraw a card."
     },
     {
       "name": "Xolum",
@@ -12358,7 +12358,7 @@
       "value": 2,
       "variable": true,
       "cost": 5,
-      "effect": "Bridge Conqueror 1. {ranged}: +2 {attack}."
+      "effect": "Bridge Conqueror 1.\n{ranged}: +2 {attack}."
     },
     {
       "name": "Quaz",
@@ -12377,7 +12377,7 @@
       "kind": "attack",
       "value": 1,
       "cost": 2,
-      "effect": "Reveal the top card of your deck; if any of its icons contain a \"hole\" (0, 4, 6, 8, or 9), draw it. {instinct}: you may KO the card you drew this way."
+      "effect": "Reveal the top card of your deck; if any of its icons contain a \"hole\" (0, 4, 6, 8, or 9), draw it.\n{instinct}: you may KO the card you drew this way."
     },
     {
       "name": "Freedom Forever",
@@ -12389,7 +12389,7 @@
       "keywords": [
         "Explore"
       ],
-      "effect": "Explore. {instinct}: you may choose a player to gain the Found Hero."
+      "effect": "Explore.\n{instinct}: you may choose a player to gain the Found Hero."
     }
   ],
   "amw:janet-van-dyne": [
@@ -12446,7 +12446,7 @@
       "keywords": [
         "Microscopic Size-Changing"
       ],
-      "effect": "Draw a card. {covert}{covert}: +2 {attack}."
+      "effect": "Draw a card.\n{covert}{covert}: +2 {attack}."
     },
     {
       "name": "Finally Found You",
@@ -12459,7 +12459,7 @@
       "keywords": [
         "Explore"
       ],
-      "effect": "Explore. {covert}: +{recruit} equal to the Found Hero's printed Recruit and +{attack} equal to its printed Attack."
+      "effect": "Explore.\n{covert}: +{recruit} equal to the Found Hero's printed Recruit and +{attack} equal to its printed Attack."
     }
   ],
   "amw:jentorra": [
@@ -12470,7 +12470,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "You may move a Villain to an adjacent space (swap if occupied). {instinct}: +2 {attack}."
+      "effect": "You may move a Villain to an adjacent space (swap if occupied).\n{instinct}: +2 {attack}."
     },
     {
       "name": "Take the High Ground",
@@ -12479,7 +12479,7 @@
       "kind": "attack",
       "value": 1,
       "cost": 2,
-      "effect": "Bridge Conqueror 1. If there are no Villains on the Rooftops, draw a card."
+      "effect": "Bridge Conqueror 1.\nIf there are no Villains on the Rooftops, draw a card."
     },
     {
       "name": "Unite the Oppressed",
@@ -12519,7 +12519,7 @@
       "value": 5,
       "variable": true,
       "cost": 7,
-      "effect": "Bridge Conqueror 1. +1 {attack} per Villain worth 4 VP or more and per Mastermind Tactic in your Victory Pile."
+      "effect": "Bridge Conqueror 1.\n+1 {attack} per Villain worth 4 VP or more and per Mastermind Tactic in your Victory Pile."
     }
   ],
   "amw:scott-lang-cat-burglar": [
@@ -12571,7 +12571,7 @@
       "keywords": [
         "Heist"
       ],
-      "effect": "Whenever you gain a Wound this turn, return that Wound to the Wound Deck. Heist: rescue a Bystander."
+      "effect": "Whenever you gain a Wound this turn, return that Wound to the Wound Deck.\nHeist: rescue a Bystander."
     },
     {
       "name": "Putting a Crew Together",
@@ -12665,7 +12665,7 @@
         "Microscopic Size-Changing",
         "Heist"
       ],
-      "effect": "When you draw a new hand this turn, draw an extra card. Heist: +3 {attack}."
+      "effect": "When you draw a new hand this turn, draw an extra card.\nHeist: +3 {attack}."
     },
     {
       "name": "Hope Returns",
@@ -12693,7 +12693,7 @@
       "keywords": [
         "Patrol"
       ],
-      "effect": "Patrol the Rooftops: if empty, draw a card. Patrol the Sewers: if empty, +1 {recruit}."
+      "effect": "Patrol the Rooftops: if empty, draw a card.\nPatrol the Sewers: if empty, +1 {recruit}."
     },
     {
       "name": "Ride By Moonlight",
@@ -12703,7 +12703,7 @@
       "value": 3,
       "variable": true,
       "cost": 5,
-      "effect": "You may move a Villain to another city space (swap if occupied). Moonlight: +1 {attack}."
+      "effect": "You may move a Villain to another city space (swap if occupied).\nMoonlight: +1 {attack}."
     },
     {
       "name": "Hunt High and Low",
@@ -12715,7 +12715,7 @@
       "keywords": [
         "Patrol"
       ],
-      "effect": "Patrol the Rooftops: if empty, reveal the top card of your deck; you may KO it. Patrol the Sewers: if empty, reveal the bottom card of your deck; you may KO it."
+      "effect": "Patrol the Rooftops: if empty, reveal the top card of your deck; you may KO it.\nPatrol the Sewers: if empty, reveal the bottom card of your deck; you may KO it."
     },
     {
       "name": "Creature of Dawn and Dask",
@@ -12725,7 +12725,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "Sunlight: +2 {attack} and you may put a Hero from the HQ on the bottom of the Hero Deck. Moonlight: Blood Frenzy."
+      "effect": "Sunlight: +2 {attack} and you may put a Hero from the HQ on the bottom of the Hero Deck.\nMoonlight: Blood Frenzy."
     }
   ],
   "mds:elsa-bloodstone": [
@@ -12740,7 +12740,7 @@
       "keywords": [
         "Patrol"
       ],
-      "effect": "Patrol the Streets: if empty, +2 {recruit}; if not, +2 {attack}. {instinct}: instead get both."
+      "effect": "Patrol the Streets: if empty, +2 {recruit}; if not, +2 {attack}.\n{instinct}: instead get both."
     },
     {
       "name": "Silver Bullets",
@@ -12753,7 +12753,7 @@
       "keywords": [
         "Patrol"
       ],
-      "effect": "Patrol the Streets: if empty, +1 {attack}. {tech}: +1 {attack}."
+      "effect": "Patrol the Streets: if empty, +1 {attack}.\n{tech}: +1 {attack}."
     },
     {
       "name": "Stalk the Night Stalkers",
@@ -12762,7 +12762,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 6,
-      "effect": "You may have a Villain or Mastermind Hunt for Victims; if it KOs a Bystander this way, you may KO a Hero from hand or discard. {tech}: if a Bystander is KO'd this way, you may rescue it instead of KOing it."
+      "effect": "You may have a Villain or Mastermind Hunt for Victims; if it KOs a Bystander this way, you may KO a Hero from hand or discard.\n{tech}: if a Bystander is KO'd this way, you may rescue it instead of KOing it."
     },
     {
       "name": "Vengeance of the Bloodstone Gem",
@@ -12775,7 +12775,7 @@
       "keywords": [
         "Patrol"
       ],
-      "effect": "Patrol any city space: if empty, get the printed Recruit and Attack of the Hero in the HQ space beneath it. {marvel-knights}{marvel-knights}: Blood Frenzy."
+      "effect": "Patrol any city space: if empty, get the printed Recruit and Attack of the Hero in the HQ space beneath it.\n{marvel-knights}{marvel-knights}: Blood Frenzy."
     }
   ],
   "mds:morbius": [
@@ -12807,7 +12807,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "Sunlight: you may gain a Wound for +2 {attack}. Moonlight: you may KO a Wound from hand or discard for +2 {attack}."
+      "effect": "Sunlight: you may gain a Wound for +2 {attack}.\nMoonlight: you may KO a Wound from hand or discard for +2 {attack}."
     },
     {
       "name": "It's Morbin' Time!",
@@ -12828,7 +12828,7 @@
       "value": 1,
       "variable": true,
       "cost": 2,
-      "effect": "Sunlight: +1 {attack}. Moonlight: draw a card."
+      "effect": "Sunlight: +1 {attack}.\nMoonlight: draw a card."
     },
     {
       "name": "Snarling Fangs",
@@ -12837,7 +12837,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 3,
-      "effect": "Sunlight: you may put a Hero from the HQ on the bottom of the Hero Deck. Moonlight: whenever you defeat a Villain or Mastermind this turn, you may KO one of your Heroes."
+      "effect": "Sunlight: you may put a Hero from the HQ on the bottom of the Hero Deck.\nMoonlight: whenever you defeat a Villain or Mastermind this turn, you may KO one of your Heroes."
     },
     {
       "name": "Release the Beast",
@@ -12847,7 +12847,7 @@
       "value": 0,
       "variable": true,
       "cost": 5,
-      "effect": "Sunlight: +3 {recruit}. Moonlight: Blood Frenzy. {instinct}: instead get both."
+      "effect": "Sunlight: +3 {recruit}.\nMoonlight: Blood Frenzy.\n{instinct}: instead get both."
     },
     {
       "name": "Track the Captives",
@@ -12857,7 +12857,7 @@
       "value": 5,
       "variable": true,
       "cost": 7,
-      "effect": "Moonlight: whenever you defeat a Villain or Mastermind this turn, you may rescue a Bystander or gain a Hero from the HQ or Sidekick Deck costing less than that enemy's Attack. {instinct}: +2 {attack}."
+      "effect": "Moonlight: whenever you defeat a Villain or Mastermind this turn, you may rescue a Bystander or gain a Hero from the HQ or Sidekick Deck costing less than that enemy's Attack.\n{instinct}: +2 {attack}."
     }
   ],
   "mds:wong-master-of-the-mystic-arts": [
@@ -12881,7 +12881,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "Sunlight: +1 {attack}. {ranged}: +1 {attack}."
+      "effect": "Sunlight: +1 {attack}.\n{ranged}: +1 {attack}."
     },
     {
       "name": "Seal the Rift",
@@ -12904,7 +12904,7 @@
       "value": 6,
       "variable": true,
       "cost": 8,
-      "effect": "Once this turn, you may fight the top Bystander as a 4-Attack \"Darkhold Demon\" Villain with Fight: KO up to two of your Heroes, then rescue it as a Bystander. Sunlight: +2 {attack}."
+      "effect": "Once this turn, you may fight the top Bystander as a 4-Attack \"Darkhold Demon\" Villain with Fight: KO up to two of your Heroes, then rescue it as a Bystander.\nSunlight: +2 {attack}."
     }
   ],
   "wpx:fantomex": [
@@ -12931,7 +12931,7 @@
       "keywords": [
         "Weapon X Sequence"
       ],
-      "effect": "Weapon X Sequence, getting Recruit instead of Attack. If you got at least 3 {recruit} this way, draw a card."
+      "effect": "Weapon X Sequence, getting Recruit instead of Attack.\nIf you got at least 3 {recruit} this way, draw a card."
     },
     {
       "name": "Misdirection",
@@ -12979,7 +12979,7 @@
       "value": 1,
       "variable": true,
       "cost": 2,
-      "effect": "For all your Heroes' Berserk abilities this turn, also gain the Berserked cards' printed Recruit as well as their printed Attack. {strength}: Berserk."
+      "effect": "For all your Heroes' Berserk abilities this turn, also gain the Berserked cards' printed Recruit as well as their printed Attack.\n{strength}: Berserk."
     },
     {
       "name": "Osteogenesis",
@@ -13013,7 +13013,7 @@
       "value": 0,
       "variable": true,
       "cost": 4,
-      "effect": "You may have this card make Recruit instead of Attack (including the ability below). {instinct}: +1 {attack}."
+      "effect": "You may have this card make Recruit instead of Attack (including the ability below).\n{instinct}: +1 {attack}."
     },
     {
       "name": "The Future of Warfare",
@@ -13023,7 +13023,7 @@
       "value": 2,
       "variable": true,
       "cost": 3,
-      "effect": "Look at the top card of your deck; discard it or put it back. {strength}: Berserk."
+      "effect": "Look at the top card of your deck; discard it or put it back.\n{strength}: Berserk."
     },
     {
       "name": "Slice and Smash",
@@ -13100,7 +13100,7 @@
       "keywords": [
         "Weapon X Sequence"
       ],
-      "effect": "{instinct}: you may reveal cards from the Wound Deck until an Enraging Wound; gain it to your hand and put the others on the bottom. If you gain a Wound this way, Berserk."
+      "effect": "{instinct}: you may reveal cards from the Wound Deck until an Enraging Wound; gain it to your hand and put the others on the bottom.\nIf you gain a Wound this way, Berserk."
     }
   ]
 }
