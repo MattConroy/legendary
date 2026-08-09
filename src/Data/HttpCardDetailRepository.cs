@@ -12,17 +12,18 @@ public sealed class HttpCardDetailRepository : ICardDetailRepository
 {
     private const string Url = "data/card-details.json";
 
-    private readonly HttpClient _http;
+    private readonly IHttpClientFactory _httpClientFactory;
     private IReadOnlyDictionary<string, IReadOnlyList<CardDetail>>? _byId;
 
-    public HttpCardDetailRepository(HttpClient http) => _http = http;
+    public HttpCardDetailRepository(IHttpClientFactory httpClientFactory) => _httpClientFactory = httpClientFactory;
 
     public bool IsLoaded => _byId is not null;
 
     public async Task EnsureLoadedAsync()
     {
         if (_byId is not null) return;
-        _byId = CardDetailJson.Deserialize(await _http.GetStringAsync(Url));
+        var http = _httpClientFactory.CreateClient(ContentHttpClient.Name);
+        _byId = CardDetailJson.Deserialize(await http.GetStringAsync(Url));
     }
 
     public IReadOnlyList<CardDetail> For(string cardId) =>

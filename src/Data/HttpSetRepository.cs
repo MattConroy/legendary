@@ -14,10 +14,10 @@ public sealed class HttpSetRepository : ISetRepository
 {
     private const string Url = "data/sets.json";
 
-    private readonly HttpClient _http;
+    private readonly IHttpClientFactory _httpClientFactory;
     private IReadOnlyList<CardSet>? _sets;
 
-    public HttpSetRepository(HttpClient http) => _http = http;
+    public HttpSetRepository(IHttpClientFactory httpClientFactory) => _httpClientFactory = httpClientFactory;
 
     public IReadOnlyList<CardSet> Sets => _sets ?? [];
 
@@ -26,7 +26,8 @@ public sealed class HttpSetRepository : ISetRepository
     public async Task EnsureLoadedAsync()
     {
         if (_sets is not null) return;
-        var json = await _http.GetStringAsync(Url);
+        var http = _httpClientFactory.CreateClient(ContentHttpClient.Name);
+        var json = await http.GetStringAsync(Url);
         _sets = SetJson.Deserialize(json);
     }
 

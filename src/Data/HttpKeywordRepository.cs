@@ -14,12 +14,12 @@ public sealed class HttpKeywordRepository : IKeywordRepository
     private const string KeywordsUrl = "data/keywords.json";
     private const string CardKeywordsUrl = "data/card-keywords.json";
 
-    private readonly HttpClient _http;
+    private readonly IHttpClientFactory _httpClientFactory;
     private IReadOnlyList<Keyword>? _keywords;
     private IReadOnlyDictionary<string, Keyword> _byId = new Dictionary<string, Keyword>();
     private IReadOnlyDictionary<string, string[]> _cardKeywords = new Dictionary<string, string[]>();
 
-    public HttpKeywordRepository(HttpClient http) => _http = http;
+    public HttpKeywordRepository(IHttpClientFactory httpClientFactory) => _httpClientFactory = httpClientFactory;
 
     public IReadOnlyList<Keyword> Keywords => _keywords ?? [];
 
@@ -28,14 +28,15 @@ public sealed class HttpKeywordRepository : IKeywordRepository
     public async Task EnsureLoadedAsync()
     {
         if (_keywords is not null) return;
-        var keywords = KeywordJson.Deserialize(await _http.GetStringAsync(KeywordsUrl));
+        var http = _httpClientFactory.CreateClient(ContentHttpClient.Name);
+        var keywords = KeywordJson.Deserialize(await http.GetStringAsync(KeywordsUrl));
 
         // The per-card tags are a nice-to-have; if they fail to load, the glossary
         // still works and "keywords in play" just stays empty.
         Dictionary<string, string[]> cards;
         try
         {
-            cards = await _http.GetFromJsonAsync<Dictionary<string, string[]>>(CardKeywordsUrl, SetJson.Options)
+            cards = await http.GetFromJsonAsync<Dictionary<string, string[]>>(CardKeywordsUrl, SetJson.Options)
                     ?? new Dictionary<string, string[]>();
         }
         catch
