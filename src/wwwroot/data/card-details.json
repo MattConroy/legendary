@@ -6614,6 +6614,7 @@
    "kind": "recruit",
    "value": 1,
    "cost": 2,
+   "effect": "Outwit: draw a card.",
    "keywords": [
     "Outwit"
    ]
@@ -6622,7 +6623,8 @@
    "name": "Gamma-Draining Nanites",
    "copies": 5,
    "class": "Tech",
-   "cost": 3
+   "cost": 3,
+   "effect": "Draw a card; if you drew two cards this turn, Transform into Like Totally Smart Hulk."
   },
   {
    "name": "Renegade Genius",
@@ -6632,6 +6634,7 @@
    "value": 0,
    "variable": true,
    "cost": 6,
+   "effect": "+1 {attack} per different Hero cost you have. Outwit: draw a card.",
    "keywords": [
     "Outwit"
    ]
@@ -6643,6 +6646,7 @@
    "kind": "attack",
    "value": 4,
    "cost": 8,
+   "effect": "This turn, each Outwit ability you use you may use an extra time. Outwit: look at your top card; KO it or put it back.",
    "keywords": [
     "Outwit"
    ]
@@ -6656,6 +6660,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
+   "effect": "Outwit: draw an extra card when you draw your next hand.",
    "keywords": [
     "Outwit"
    ]
@@ -6667,6 +6672,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "Outwit: Transform into Savage Hulk Unleashed.",
    "keywords": [
     "Outwit"
    ]
@@ -6677,7 +6683,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "{tech}: reveal your top card; if it costs 0, KO it."
   },
   {
    "name": "Gamma Ray Experiment",
@@ -6686,6 +6693,7 @@
    "kind": "attack",
    "value": 4,
    "cost": 7,
+   "effect": "Outwit: look at your top three cards; draw one, KO one, put one back.",
    "keywords": [
     "Outwit"
    ]
@@ -6699,6 +6707,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
+   "effect": "Outwit: draw a card.",
    "keywords": [
     "Outwit"
    ]
@@ -6710,7 +6719,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{covert}: Smash 2."
   },
   {
    "name": "Focus The Old Power",
@@ -6719,6 +6729,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 6,
+   "effect": "Outwit: you may KO a card from hand or discard.",
    "keywords": [
     "Outwit"
    ]
@@ -6727,7 +6738,8 @@
    "name": "Dutiful Protector",
    "copies": 1,
    "class": "Instinct",
-   "cost": 7
+   "cost": 7,
+   "effect": "Double your current {recruit}; if at least 3 Heroes per player are in the KO pile, Transform into Vengeful Destructor."
   }
  ],
  "wwh:gladiator-hulk": [
@@ -6739,6 +6751,7 @@
    "value": 0,
    "variable": true,
    "cost": 3,
+   "effect": "Draw a card. Smash 2.",
    "keywords": [
     "Smash 2"
    ]
@@ -6751,6 +6764,7 @@
    "value": 0,
    "variable": true,
    "cost": 4,
+   "effect": "Smash 3; if you discarded at least two cards this turn, Transform into Hulk Is King and put it on top of your deck.",
    "keywords": [
     "Smash 3"
    ]
@@ -6762,7 +6776,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{strength}: Cross-Dimensional Hulk Rampage; if any players gained a Wound, you get Wounded Fury."
   },
   {
    "name": "Double-Fisted Smashing",
@@ -6772,6 +6787,7 @@
    "value": 0,
    "variable": true,
    "cost": 8,
+   "effect": "Your Smashes give double Attack this turn. Smash 3.",
    "keywords": [
     "Smash 3"
    ]
@@ -6784,7 +6800,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{covert}: the first time you defeat a Villain this turn, rescue a Bystander."
   },
   {
    "name": "Save from the Rubble",
@@ -6792,7 +6809,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 1,
-   "cost": 4
+   "cost": 4,
+   "effect": "Draw a card; if at least two Bystanders are in your Victory pile, Transform into Hiroim Redeemed."
   },
   {
    "name": "Mystic Shadow Priest",
@@ -6800,13 +6818,15 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 6
+   "cost": 6,
+   "effect": "{warbound}: you may KO a 0-cost card from any player's discard; if it's a Wound, rescue a Bystander."
   },
   {
    "name": "Blade of the People",
    "copies": 1,
    "class": "Instinct",
-   "cost": 7
+   "cost": 7,
+   "effect": "Choose: rescue three Bystanders, or defeat any Villain or Mastermind with Attack below the number of Bystanders in your Victory pile."
   }
  ],
  "wwh:hulkbuster-iron-man": [
@@ -6817,7 +6837,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "Draw a card. {tech}: +2 {attack}."
   },
   {
    "name": "Attune Techtonic Transducer",
@@ -6827,6 +6848,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "Outwit: Smash 2.",
    "keywords": [
     "Outwit"
    ]
@@ -6837,7 +6859,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "{tech} {strength}: Transform into Ultra-Massive Armor."
   },
   {
    "name": "Final Battle",
@@ -6846,7 +6869,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "+2 {attack} per other {tech} or {strength} card played this turn."
   }
  ],
  "wwh:joe-fixit-grey-hulk": [
@@ -6856,7 +6880,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength}: Smash 2."
   },
   {
    "name": "Threaten And Bribe",
@@ -6864,7 +6889,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Choose a Villain; you may spend any mix of Recruit and Attack to fight it this turn."
   },
   {
    "name": "Ambitious Enforcer",
@@ -6872,7 +6898,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "When you defeat a 6+-Attack Villain this turn, Transform into Underworld Boss and put it on top of your deck."
   },
   {
    "name": "Hulk Runs This Town",
@@ -6880,7 +6907,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "You may spend any mix of Recruit and Attack to fight the Mastermind this turn."
   }
  ],
  "wwh:korg": [
@@ -6891,7 +6919,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "Draw a card. {strength}: Smash 2; if you Smash a Wound, KO it."
   },
   {
    "name": "Move Mountains",
@@ -6900,6 +6929,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "Outwit: draw a card.",
    "keywords": [
     "Outwit"
    ]
@@ -6910,7 +6940,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength} {strength}: Transform into Lord of Granite."
   },
   {
    "name": "Kronan Tactician",
@@ -6919,7 +6950,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Bottom all HQ cards in random order; +{attack} equal to their total printed Attack."
   }
  ],
  "wwh:miek-the-unhived": [
@@ -6941,7 +6973,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Look at your top card; put it on top or bottom. {instinct}: you may Feast."
   },
   {
    "name": "Endless Appetite",
@@ -6949,7 +6982,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "Each time a card is KO'd from your deck this turn, you may draw a card."
   },
   {
    "name": "Metamorphosis",
@@ -6957,7 +6991,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "You may Feast; if a card with an Attack icon was KO'd from your deck this turn, Transform into Hive King Miek."
   }
  ],
  "wwh:namora": [
@@ -6968,7 +7003,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Draw a card. {ranged}: Smash 3."
   },
   {
    "name": "Heart of the Ocean",
@@ -6977,7 +7013,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "+1 {attack}, only against Villains in the Sewers or Bridge or the Mastermind."
   },
   {
    "name": "Herculean Effort",
@@ -6985,7 +7022,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "When you defeat a Villain in the Sewers or Bridge, Transform into Master of Depths and put it on top of your deck."
   },
   {
    "name": "Turning The Tide",
@@ -6993,7 +7031,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "{covert}: if the Bridge is empty, you may move a Villain there from another space; it gets -3 Attack this turn."
   }
  ],
  "wwh:no-name-brood-queen": [
@@ -7003,7 +7042,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 1,
-   "cost": 2
+   "cost": 2,
+   "effect": "If this is the first card played this turn, draw a card."
   },
   {
    "name": "Appetite for Destruction",
@@ -7011,7 +7051,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Look at your top card; keep or discard it. {covert}: you may Feast."
   },
   {
    "name": "Bursting with Life",
@@ -7019,7 +7060,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "You may Feast; if a non-grey Hero was KO'd from your deck this turn, Transform into Torrent of Broodlings."
   },
   {
    "name": "World Spanning Hunger",
@@ -7028,7 +7070,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Look at your top card, then Feast up to three times; +2 {attack} per non-grey Hero KO'd from your deck this turn."
   }
  ],
  "wwh:rick-jones": [
@@ -7037,28 +7080,32 @@
    "copies": 5,
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{tech}: reveal your top card; draw it if it's a {shield}."
   },
   {
    "name": "Seek the Nega-Bands",
    "copies": 5,
    "kind": "recruit",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Reveal your top card; if it costs 3 or more, Transform into Captain Marvel."
   },
   {
    "name": "Irradiated Blood",
    "copies": 3,
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "If at least 5 Villains are in your Victory pile, Transform into A-Bomb and put it on top of your deck."
   },
   {
    "name": "Caught in Kree-Skrull War",
    "copies": 1,
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "If you defeat two Villains this turn, Transform into The Destiny Force and put it on top of your deck."
   }
  ],
  "wwh:sentry": [
@@ -7067,6 +7114,7 @@
    "copies": 5,
    "class": "Covert",
    "cost": 2,
+   "effect": "Transform into Golden Guardian of Good and put it in your discard.",
    "keywords": [
     "Transform"
    ]
@@ -7078,7 +7126,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "+1 {attack} per card that Transformed this turn."
   },
   {
    "name": "Mournful Sentinel",
@@ -7086,7 +7135,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Reveal your top card; if it costs 1 or more, Transform into The Void Unchained and put it on top of your deck."
   },
   {
    "name": "Vast Unstable Power",
@@ -7095,7 +7145,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Reveal the top five Hero Deck cards; +{attack} equal to their total printed Attack; bottom them. If this makes 12 or more Attack, Transform into The Void Mastermind, added at the start of next turn with one random Tactic."
   }
  ],
  "wwh:she-hulk": [
@@ -7105,7 +7156,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Once this turn, if you made at least 6 {recruit} this turn, Transform into Hurl Trucks."
   },
   {
    "name": "Window of Opportunity",
@@ -7114,6 +7166,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "Outwit: draw a card.",
    "keywords": [
     "Outwit"
    ]
@@ -7124,7 +7177,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "Once this turn, if you made at least 6 {recruit} this turn, you may KO a card from hand or discard."
   },
   {
    "name": "Jade Giantess",
@@ -7132,7 +7186,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 4,
-   "cost": 8
+   "cost": 8,
+   "effect": "For every 2 {recruit} made this turn, reveal the top Hero Deck card, bottom it, and gain its printed Attack."
   }
  ],
  "wwh:skaar-son-of-hulk": [
@@ -7143,7 +7198,8 @@
    "kind": "attack",
    "value": 1,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength}: Smash 3."
   },
   {
    "name": "Scarred Past",
@@ -7152,7 +7208,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{instinct}: Wounded Fury."
   },
   {
    "name": "Mood Swings",
@@ -7160,7 +7217,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "{instinct}: you may gain a Wound; if you do, Transform into Raging Savage."
   },
   {
    "name": "Planetary-Level Revenge",
@@ -7170,6 +7228,7 @@
    "value": 4,
    "variable": true,
    "cost": 8,
+   "effect": "Wounded Fury; then you may KO any number of Wounds from hand and/or discard and draw that many.",
    "keywords": [
     "Wounded Fury"
    ]
