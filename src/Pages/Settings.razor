@@ -27,11 +27,11 @@
             <h2 class="panel__title">Content sets</h2>
             <div class="sort" role="group" aria-label="Sort sets">
                 <span class="sort__label">Sort</span>
-                <button class="sort__btn @(State.Sort == SetSort.Name ? "sort__btn--active" : "")"
+                <button class="sort__button @(State.Sort == SetSort.Name ? "sort__button--active" : "")"
                         @onclick="() => State.SetSortAsync(SetSort.Name)">
                     Name @(SortArrow(SetSort.Name))
                 </button>
-                <button class="sort__btn @(State.Sort == SetSort.Date ? "sort__btn--active" : "")"
+                <button class="sort__button @(State.Sort == SetSort.Date ? "sort__button--active" : "")"
                         @onclick="() => State.SetSortAsync(SetSort.Date)">
                     Date @(SortArrow(SetSort.Date))
                 </button>
@@ -41,11 +41,11 @@
         <p class="muted small sets-hint"><strong>Own</strong> marks your collection. <strong>Play</strong> picks which sets go into this game's shuffle.</p>
         <div class="sets-actions">
             <span class="sets-actions__label">Play:</span>
-            <button class="linkbtn" @onclick="() => State.SetAllEnabledAsync(true)">All</button>
-            <button class="linkbtn" @onclick="() => State.SetAllEnabledAsync(false)">None</button>
+            <button class="link-button" @onclick="() => State.SetAllEnabledAsync(true)">All</button>
+            <button class="link-button" @onclick="() => State.SetAllEnabledAsync(false)">None</button>
             <span class="sets-actions__sep">·</span>
-            <button class="linkbtn" @onclick="() => State.SetOwnedEnabledAsync(true)">Owned</button>
-            <button class="linkbtn" @onclick="() => State.SetOwnedEnabledAsync(false)">Not owned</button>
+            <button class="link-button" @onclick="() => State.SetOwnedEnabledAsync(true)">Owned</button>
+            <button class="link-button" @onclick="() => State.SetOwnedEnabledAsync(false)">Not owned</button>
         </div>
 
         <div class="set-cols"><span>Set</span><span>Own</span><span>Play</span></div>

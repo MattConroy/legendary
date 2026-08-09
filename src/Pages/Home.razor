@@ -25,10 +25,10 @@
 
     <div class="players">
         <span class="players__label">Difficulty</span>
-        <div class="seg" role="group" aria-label="Target difficulty">
+        <div class="segmented" role="group" aria-label="Target difficulty">
             @foreach (var (label, band) in Targets)
             {
-                <button class="seg__btn @(State.Target == band ? "seg__btn--active" : "")"
+                <button class="segmented__button @(State.Target == band ? "segmented__button--active" : "")"
                         @onclick="() => SetTarget(band)" aria-pressed="@(State.Target == band)">
                     @label
                 </button>
@@ -36,8 +36,8 @@
         </div>
     </div>
 
-    <button class="btn btn--primary btn--hero" @onclick="Randomize" disabled="@(!Playable)">
-        <span class="btn--hero__icon">🎲</span>
+    <button class="button button--primary button--hero" @onclick="Randomize" disabled="@(!Playable)">
+        <span class="button--hero__icon">🎲</span>
         @(State.Setup is null ? "Randomise setup" : "Randomise again")
     </button>
 
