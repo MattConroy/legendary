@@ -9343,7 +9343,8 @@
    "kind": "recruit",
    "value": 1,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "{instinct} {covert}. Heroes of Wakanda Ambush: rescue a Bystander. Play: gain the Throne's Favor, or spend it for +2 {recruit}."
   },
   {
    "name": "Vibranium Claws",
@@ -9351,14 +9352,16 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{instinct} {tech}. Instinct Ambush: +2 {attack}. Play: gain the Throne's Favor, or spend it for +2 {attack}."
   },
   {
    "name": "Heart-Shaped Herb",
    "copies": 3,
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "{strength} {covert}. Covert Ambush: look at your top card; draw or KO it. Play - {covert}: gain the Throne's Favor, or look at your top card and draw or KO it."
   },
   {
    "name": "Unite the Tribes of Wakanda",
@@ -9366,7 +9369,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "{strength} {ranged}. Heroes of Wakanda Ambush: +1 {attack} per Hero Class you have. Play - {heroes-of-wakanda}: gain the Throne's Favor, or spend it for +1 {recruit} and +1 {attack} per Hero Class you have."
   }
  ],
  "bp:queen-storm-of-wakanda": [
@@ -9376,7 +9380,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Move a Villain to an adjacent space (swap if occupied). {covert}: get Empowered by Covert."
   },
   {
    "name": "Torrential Downpour",
@@ -9385,14 +9390,16 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Ranged Ambush: get Empowered by Ranged. Play - {ranged}: get Empowered by Ranged."
   },
   {
    "name": "Forked Lightning",
    "copies": 3,
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "{covert} {ranged}. Wound Villains on the Rooftops and Bridge. {covert} {ranged}: gain the Throne's Favor, or spend it to Wound the Mastermind twice."
   },
   {
    "name": "Thunderous Tempest",
@@ -9401,7 +9408,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Bottom up to three HQ Heroes. {heroes-of-wakanda}: gain the Throne's Favor, or spend it to get Empowered by Covert, then by Ranged."
   }
  ],
  "bp:general-okoye": [
@@ -9412,7 +9420,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Instinct Ambush: draw a card. Play - {instinct}: you may draw a card and +1 {attack}; if you do, gain a Wound."
   },
   {
    "name": "Lead the Dora Milaje",
@@ -9420,7 +9429,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{strength} {instinct}. You may gain a S.H.I.E.L.D. Officer. {strength}: instead, you may KO a S.H.I.E.L.D. Officer or Wound from hand or discard for +2 {attack}."
   },
   {
    "name": "Sovereign Bodyguard",
@@ -9428,7 +9438,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "Once per turn, when a player gains a Wound, you may reveal this to return it to the Wound Stack, draw a card, and Wound a Villain."
   },
   {
    "name": "Direct the Agents of Wakanda",
@@ -9437,7 +9448,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "{heroes-of-wakanda}: you may KO a {shield} Hero or Wound from hand or discard for +2 {attack}."
   }
  ],
  "bp:princess-shuri": [
@@ -9448,7 +9460,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "Tech Ambush: draw a card. Play: draw a card. {tech}: get Empowered by Tech."
   },
   {
    "name": "Kimoyo Beads",
@@ -9456,7 +9469,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{tech} {ranged}. Get Empowered by a colour of your choice, taking Recruit instead of Attack."
   },
   {
    "name": "Shock Net",
@@ -9465,7 +9479,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "You may bottom a HQ card. {tech}: get Empowered by a colour of your choice."
   },
   {
    "name": "Become the Next Black Panther",
@@ -9473,7 +9488,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 3,
-   "cost": 7
+   "cost": 7,
+   "effect": "{heroes-of-wakanda}: this turn, each card entering the HQ also gains 'Ambush: if you have any cards sharing its colour, +2 {attack}'."
   }
  ],
  "bp:white-wolf": [
@@ -9483,7 +9499,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Tech Ambush: Wound a Villain. Play - {tech}: Wound a Villain."
   },
   {
    "name": "Secret Assignment",
@@ -9492,14 +9509,16 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Covert Ambush: Wound the Mastermind. Play - {covert}: if any Villain or Mastermind has any Wounds, +2 {recruit}."
   },
   {
    "name": "Command the Hatut Zeraze",
    "copies": 3,
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "{covert} {tech}. Heroes of Wakanda Ambush: you may KO one of your cards. Play - {heroes-of-wakanda}: if any Villain or Mastermind has Wounds, you may KO a card from hand or discard."
   },
   {
    "name": "Reflective Vibranium Armor",
@@ -9507,7 +9526,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "Tech Ambush: Wound each Villain and the Mastermind. Play: if a Master Strike would occur, you may reveal this to KO it and Wound the Mastermind instead."
   }
  ],
  "nm:sunspot": [
@@ -9718,6 +9738,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
+   "effect": "When Recruited: you may KO one of your no-rules-text cards. {ranged}: gain the Throne's Favor, or spend it for +2 {recruit}.",
    "keywords": [
     "When Recruited"
    ]
@@ -9736,7 +9757,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "{inhumans}: gain the Throne's Favor, or spend it to reveal your top two cards, take any with no rules text to hand, and replace the rest."
   },
   {
    "name": "The King's Speech",
@@ -9744,7 +9766,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 5,
-   "cost": 8
+   "cost": 8,
+   "effect": "Gain the Throne's Favor, or spend it: choose Speak (take revealed rules-text cards from your top three to hand) or Don't Speak (KO any with no rules text); replace the rest."
   }
  ],
  "rok:medusa": [
@@ -9756,6 +9779,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "When Recruited: gain the Throne's Favor. Otherwise gain the Throne's Favor, or spend it for +2 {attack}.",
    "keywords": [
     "When Recruited"
    ]
@@ -9767,6 +9791,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "When Recruited: draw a card and gain the Throne's Favor. {instinct}: gain the Throne's Favor, or spend it to draw a card.",
    "keywords": [
     "When Recruited"
    ]
@@ -9778,6 +9803,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 5,
+   "effect": "When Recruited: gain the Throne's Favor. {inhumans}: gain the Throne's Favor, or spend it to KO one of your cards.",
    "keywords": [
     "When Recruited"
    ]
@@ -9789,6 +9815,7 @@
    "kind": "attack",
    "value": 4,
    "cost": 7,
+   "effect": "When Recruited: draw two cards and gain the Throne's Favor. Otherwise gain the Throne's Favor, or spend it to draw two cards.",
    "keywords": [
     "When Recruited"
    ]
@@ -9802,7 +9829,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength} {instinct} {covert} {ranged}: +3 {attack}."
   },
   {
    "name": "Master the Four Elements",
@@ -9810,7 +9838,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 1,
-   "cost": 4
+   "cost": 4,
+   "effect": "Choose Strength, Instinct, Covert or Ranged; this card is only that class this turn. Draw a card."
   },
   {
    "name": "Elemental Princess",
@@ -9819,6 +9848,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 6,
+   "effect": "When Recruited: you may KO one of your cards that isn't Strength/Instinct/Covert/Ranged. Otherwise gain the Throne's Favor, or spend it to make this card all four of those classes this turn.",
    "keywords": [
     "When Recruited"
    ]
@@ -9830,6 +9860,7 @@
    "kind": "attack",
    "value": 4,
    "cost": 8,
+   "effect": "When Recruited: you may gain a Strength/Instinct/Covert/Ranged HQ Hero costing 4 or less. Otherwise reveal your top four cards; take one of each of those four classes to hand and replace the rest.",
    "keywords": [
     "When Recruited"
    ]
@@ -9843,6 +9874,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
+   "effect": "When Recruited: +1 {attack}. {covert}: draw an extra card when you draw your next hand.",
    "keywords": [
     "When Recruited"
    ]
@@ -9855,6 +9887,7 @@
    "value": 0,
    "variable": true,
    "cost": 4,
+   "effect": "When Recruited: +2 {attack}. Choose a Villain Group; +1 {recruit} per Villain from it in your Victory pile.",
    "keywords": [
     "When Recruited"
    ]
@@ -9867,6 +9900,7 @@
    "value": 0,
    "variable": true,
    "cost": 5,
+   "effect": "When Recruited: +3 {attack}. Choose a Villain Group; +1 {attack} per Villain from it in your Victory pile.",
    "keywords": [
     "When Recruited"
    ]
@@ -9876,6 +9910,7 @@
    "copies": 1,
    "class": "Covert",
    "cost": 7,
+   "effect": "When Recruited: +4 {attack}. Each card you play this turn (including this), you may first use its When Recruited ability.",
    "keywords": [
     "When Recruited"
    ]
@@ -9889,6 +9924,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
+   "effect": "When Recruited: you may Teleport a 0-cost Hero from your hand. {covert}: you may Teleport another card from your hand.",
    "keywords": [
     "When Recruited"
    ]
@@ -9901,6 +9937,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
+   "effect": "When Recruited: Sewers Abomination. {strength}: Streets Abomination.",
    "keywords": [
     "When Recruited"
    ]
@@ -9913,6 +9950,7 @@
    "value": 1,
    "variable": true,
    "cost": 6,
+   "effect": "When Recruited: you may KO one of your cards with no Attack icon. Highest Abomination.",
    "keywords": [
     "When Recruited"
    ]
@@ -9925,6 +9963,7 @@
    "value": 4,
    "variable": true,
    "cost": 8,
+   "effect": "When Recruited: Bridge Abomination. Teleport. {inhumans}: Rooftops Abomination.",
    "keywords": [
     "When Recruited",
     "Teleport"
