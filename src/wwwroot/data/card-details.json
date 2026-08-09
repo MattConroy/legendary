@@ -7,14 +7,14 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
-   "effect": "Covert: optionally KO a card from hand or discard to rescue a Bystander."
+   "effect": "{covert}: optionally KO a card from hand or discard to rescue a Bystander."
   },
   {
    "name": "Mission Accomplished",
    "copies": 5,
    "class": "Tech",
    "cost": 2,
-   "effect": "Draw a card. Tech: rescue a Bystander."
+   "effect": "Draw a card. {tech}: rescue a Bystander."
   },
   {
    "name": "Covert Operation",
@@ -24,7 +24,7 @@
    "value": 0,
    "variable": true,
    "cost": 4,
-   "effect": "+1 Attack per Bystander in your Victory pile."
+   "effect": "+1 {attack} per Bystander in your Victory pile."
   },
   {
    "name": "Silent Sniper",
@@ -45,7 +45,7 @@
    "value": 0,
    "variable": true,
    "cost": 3,
-   "effect": "+1 Recruit per Hero colour you have."
+   "effect": "+1 {recruit} per Hero colour you have."
   },
   {
    "name": "Perfect Teamwork",
@@ -55,7 +55,7 @@
    "value": 0,
    "variable": true,
    "cost": 4,
-   "effect": "+1 Attack per Hero colour you have."
+   "effect": "+1 {attack} per Hero colour you have."
   },
   {
    "name": "Diving Block",
@@ -74,7 +74,7 @@
    "value": 3,
    "variable": true,
    "cost": 7,
-   "effect": "Avengers: +3 Attack per other Avengers Hero played this turn."
+   "effect": "{avengers}: +3 {attack} per other {avengers} Hero played this turn."
   }
  ],
  "core:cyclops": [
@@ -113,7 +113,7 @@
    "value": 6,
    "variable": true,
    "cost": 8,
-   "effect": "X-Men: +2 Attack per other X-Men Hero played this turn."
+   "effect": "{x-men}: +2 {attack} per other {x-men} Hero played this turn."
   }
  ],
  "core:deadpool": [
@@ -134,7 +134,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
-   "effect": "+1 Attack per other odd-cost Hero played this turn."
+   "effect": "+1 {attack} per other odd-cost Hero played this turn."
   },
   {
    "name": "Hey, Can I Get a Do-Over?",
@@ -173,7 +173,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "Covert: you may play the top Villain Deck card for +2 Attack."
+   "effect": "{covert}: you may play the top Villain Deck card for +2 {attack}."
   },
   {
    "name": "Psychic Link",
@@ -182,7 +182,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 5,
-   "effect": "Each player may reveal another X-Men Hero to draw a card."
+   "effect": "Each player may reveal another {x-men} Hero to draw a card."
   },
   {
    "name": "Diamond Form",
@@ -192,7 +192,7 @@
    "value": 0,
    "variable": true,
    "cost": 7,
-   "effect": "+3 Recruit each time you defeat a Villain or Mastermind this turn."
+   "effect": "+3 {recruit} each time you defeat a Villain or Mastermind this turn."
   }
  ],
  "core:gambit": [
@@ -203,7 +203,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
-   "effect": "Reveal your top card; draw it if it's an X-Men Hero."
+   "effect": "Reveal your top card; draw it if it's an {x-men} Hero."
   },
   {
    "name": "Stack the Deck",
@@ -219,7 +219,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
-   "effect": "Reveal your top card and keep or discard it. Instinct: do the same to each opponent's deck."
+   "effect": "Reveal your top card and keep or discard it. {instinct}: do the same to each opponent's deck."
   },
   {
    "name": "High Stakes Jackpot",
@@ -229,7 +229,7 @@
    "value": 4,
    "variable": true,
    "cost": 7,
-   "effect": "Reveal your top card; gain Attack equal to its cost."
+   "effect": "Reveal your top card; gain {attack} equal to its cost."
   }
  ],
  "core:hawkeye": [
@@ -250,7 +250,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "Avengers: +1 Attack."
+   "effect": "{avengers}: +1 {attack}."
   },
   {
    "name": "Covering Fire",
@@ -259,7 +259,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 5,
-   "effect": "Tech: all other players either each draw or each discard (your choice)."
+   "effect": "{tech}: all other players either each draw or each discard (your choice)."
   },
   {
    "name": "Impossible Trick Shot",
@@ -280,7 +280,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
-   "effect": "Strength: +1 Attack."
+   "effect": "{strength}: +1 {attack}."
   },
   {
    "name": "Unstoppable Hulk",
@@ -290,7 +290,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "Optionally KO a Wound from hand or discard for +2 Attack."
+   "effect": "Optionally KO a Wound from hand or discard for +2 {attack}."
   },
   {
    "name": "Crazed Rampage",
@@ -309,7 +309,7 @@
    "value": 5,
    "variable": true,
    "cost": 8,
-   "effect": "Strength: +5 Attack."
+   "effect": "{strength}: +5 {attack}."
   }
  ],
  "core:iron-man": [
@@ -318,7 +318,7 @@
    "copies": 5,
    "class": "Tech",
    "cost": 3,
-   "effect": "Draw a card. Tech: draw another."
+   "effect": "Draw a card. {tech}: draw another."
   },
   {
    "name": "Repulsor Rays",
@@ -328,7 +328,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
-   "effect": "Ranged: +1 Attack."
+   "effect": "{ranged}: +1 {attack}."
   },
   {
    "name": "Arc Reactor",
@@ -338,14 +338,14 @@
    "value": 3,
    "variable": true,
    "cost": 5,
-   "effect": "Tech: +1 Attack per other Tech Hero played this turn."
+   "effect": "{tech}: +1 {attack} per other {tech} Hero played this turn."
   },
   {
    "name": "Quantum Breakthrough",
    "copies": 1,
    "class": "Tech",
    "cost": 7,
-   "effect": "Draw two. Tech: draw two more."
+   "effect": "Draw two. {tech}: draw two more."
   }
  ],
  "core:nick-fury": [
@@ -354,7 +354,7 @@
    "copies": 5,
    "class": "Covert",
    "cost": 4,
-   "effect": "Optionally KO a S.H.I.E.L.D. Hero from hand or discard to gain a S.H.I.E.L.D. Officer to hand."
+   "effect": "Optionally KO a {shield} Hero from hand or discard to gain a {shield} Officer to hand."
   },
   {
    "name": "High-Tech Weaponry",
@@ -364,7 +364,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
-   "effect": "Tech: +1 Attack."
+   "effect": "{tech}: +1 {attack}."
   },
   {
    "name": "Legendary Commander",
@@ -374,14 +374,14 @@
    "value": 1,
    "variable": true,
    "cost": 6,
-   "effect": "+1 Attack per other S.H.I.E.L.D. Hero played this turn."
+   "effect": "+1 {attack} per other {shield} Hero played this turn."
   },
   {
    "name": "Pure Fury",
    "copies": 1,
    "class": "Tech",
    "cost": 8,
-   "effect": "Defeat any Villain or Mastermind with Attack below the number of S.H.I.E.L.D. Heroes in the KO pile."
+   "effect": "Defeat any Villain or Mastermind with {attack} below the number of {shield} Heroes in the KO pile."
   }
  ],
  "core:rogue": [
@@ -393,7 +393,7 @@
    "value": 1,
    "variable": true,
    "cost": 4,
-   "effect": "Strength: +3 Attack."
+   "effect": "{strength}: +3 {attack}."
   },
   {
    "name": "Energy Drain",
@@ -403,14 +403,14 @@
    "value": 2,
    "variable": true,
    "cost": 3,
-   "effect": "Covert: optionally KO a card from hand or discard for +1 Recruit."
+   "effect": "{covert}: optionally KO a card from hand or discard for +1 {recruit}."
   },
   {
    "name": "Copy Powers",
    "copies": 3,
    "class": "Covert",
    "cost": 5,
-   "effect": "Play as a copy of another Hero you played this turn; it counts as Covert and the copied colour."
+   "effect": "Play as a copy of another Hero you played this turn; it counts as {covert} and the copied colour."
   },
   {
    "name": "Steal Abilities",
@@ -464,7 +464,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
-   "effect": "Ranged: draw a card."
+   "effect": "{ranged}: draw a card."
   },
   {
    "name": "Lightning Bolt",
@@ -473,7 +473,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
-   "effect": "Villains you fight on the Rooftops get -2 Attack this turn."
+   "effect": "Villains you fight on the Rooftops get -2 {attack} this turn."
   },
   {
    "name": "Spinning Cyclone",
@@ -491,7 +491,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 7,
-   "effect": "Villains you fight on the Bridge get -2 Attack this turn. Ranged: the Mastermind gets -2 Attack this turn."
+   "effect": "Villains you fight on the Bridge get -2 {attack} this turn. {ranged}: the Mastermind gets -2 {attack} this turn."
   }
  ],
  "core:thor": [
@@ -503,7 +503,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
-   "effect": "Strength: +2 Recruit."
+   "effect": "{strength}: +2 {recruit}."
   },
   {
    "name": "Surge of Power",
@@ -512,7 +512,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
-   "effect": "If you generated 8+ Recruit this turn, +3 Attack."
+   "effect": "If you generated 8+ {recruit} this turn, +3 {attack}."
   },
   {
    "name": "Call Lightning",
@@ -522,7 +522,7 @@
    "value": 3,
    "variable": true,
    "cost": 6,
-   "effect": "Ranged: +3 Attack."
+   "effect": "{ranged}: +3 {attack}."
   },
   {
    "name": "God of Thunder",
@@ -531,7 +531,7 @@
    "kind": "recruit",
    "value": 5,
    "cost": 8,
-   "effect": "You may spend Recruit as Attack this turn."
+   "effect": "You may spend {recruit} as {attack} this turn."
   }
  ],
  "core:wolverine": [
@@ -551,7 +551,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
-   "effect": "Instinct: draw a card."
+   "effect": "{instinct}: draw a card."
   },
   {
    "name": "Frenzied Slashing",
@@ -560,7 +560,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 5,
-   "effect": "Instinct: draw two cards."
+   "effect": "{instinct}: draw two cards."
   },
   {
    "name": "Berserker Rage",
@@ -570,7 +570,7 @@
    "value": 0,
    "variable": true,
    "cost": 8,
-   "effect": "Draw three cards. Instinct: +1 Attack per extra card drawn this turn."
+   "effect": "Draw three cards. {instinct}: +1 {attack} per extra card drawn this turn."
   }
  ],
  "dc:angel": [
@@ -598,7 +598,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
-   "effect": "Optionally discard a card for +Attack equal to its cost."
+   "effect": "Optionally discard a card for +{attack} equal to its cost."
   },
   {
    "name": "Strength of Spirit",
@@ -619,14 +619,14 @@
    "value": 0,
    "variable": true,
    "cost": 3,
-   "effect": "+2 Recruit each time one of your cards is KO'd this turn."
+   "effect": "+2 {recruit} each time one of your cards is KO'd this turn."
   },
   {
    "name": "Whatever the Cost",
    "copies": 5,
    "class": "Ranged",
    "cost": 2,
-   "effect": "Draw a card. Covert: you may KO a card from hand or discard."
+   "effect": "Draw a card. {covert}: you may KO a card from hand or discard."
   },
   {
    "name": "Concussive Blast",
@@ -636,7 +636,7 @@
    "value": 3,
    "variable": true,
    "cost": 5,
-   "effect": "Ranged x2: +3 Attack."
+   "effect": "{ranged} x2: +3 {attack}."
   },
   {
    "name": "Firepower from the Future",
@@ -646,7 +646,7 @@
    "value": 4,
    "variable": true,
    "cost": 7,
-   "effect": "Discard your top four cards; +Attack equal to their printed Attack. X-Men: KO any of them."
+   "effect": "Discard your top four cards; +{attack} equal to their printed {attack}. {x-men}: KO any of them."
   }
  ],
  "dc:iceman": [
@@ -658,7 +658,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
-   "effect": "Draw a card. Ranged: +1 Recruit per other Ranged Hero played this turn."
+   "effect": "Draw a card. {ranged}: +1 {recruit} per other {ranged} Hero played this turn."
   },
   {
    "name": "Ice Slide",
@@ -668,7 +668,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "Ranged: +1 Attack per other Ranged Hero played this turn."
+   "effect": "{ranged}: +1 {attack} per other {ranged} Hero played this turn."
   },
   {
    "name": "Frost Spike Armor",
@@ -677,7 +677,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 5,
-   "effect": "Ranged: draw a card for each Ranged Hero played this turn."
+   "effect": "{ranged}: draw a card for each {ranged} Hero played this turn."
   },
   {
    "name": "Impenetrable Ice Wall",
@@ -697,7 +697,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
-   "effect": "X-Men: rescue a Bystander."
+   "effect": "{x-men}: rescue a Bystander."
   },
   {
    "name": "Read Your Thoughts",
@@ -707,7 +707,7 @@
    "value": 3,
    "variable": true,
    "cost": 5,
-   "effect": "+1 Recruit each time you rescue a Bystander this turn."
+   "effect": "+1 {recruit} each time you rescue a Bystander this turn."
   },
   {
    "name": "Mind Over Matter",
@@ -726,7 +726,7 @@
    "value": 5,
    "variable": true,
    "cost": 7,
-   "effect": "+1 Attack each time you rescue a Bystander this turn. X-Men: rescue a Bystander per other X-Men Hero played this turn."
+   "effect": "+1 {attack} each time you rescue a Bystander this turn. {x-men}: rescue a Bystander per other {x-men} Hero played this turn."
   }
  ],
  "dc:nightcrawler": [
@@ -760,7 +760,7 @@
    "value": 3,
    "variable": true,
    "cost": 5,
-   "effect": "Covert + Instinct: +3 Attack."
+   "effect": "{covert} + {instinct}: +3 {attack}."
   },
   {
    "name": "Along for the Ride",
@@ -783,7 +783,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
-   "effect": "You may put a Hero from the HQ on the bottom of the Hero Deck. Instinct: you may KO a card from hand or discard."
+   "effect": "You may put a Hero from the HQ on the bottom of the Hero Deck. {instinct}: you may KO a card from hand or discard."
   },
   {
    "name": "Psionic Astral Form",
@@ -793,7 +793,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
-   "effect": "X-Men: +2 Attack."
+   "effect": "{x-men}: +2 {attack}."
   },
   {
    "name": "Telepathic Probe",
@@ -811,7 +811,7 @@
    "kind": "attack",
    "value": 6,
    "cost": 8,
-   "effect": "When you defeat a Villain this turn, you may gain it as a grey Hero giving +Attack equal to its Attack (you keep its VP)."
+   "effect": "When you defeat a Villain this turn, you may gain it as a grey Hero giving +{attack} equal to its {attack} (you keep its VP)."
   }
  ],
  "dc:cable": [
@@ -832,7 +832,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "+2 Attack, but only when fighting Masterminds."
+   "effect": "+2 {attack}, but only when fighting Masterminds."
   },
   {
    "name": "Rapid Response Force",
@@ -842,7 +842,7 @@
    "value": 3,
    "variable": true,
    "cost": 6,
-   "effect": "X-Force: +1 Attack per other X-Force Hero played this turn.",
+   "effect": "{x-force}: +1 {attack} per other {x-force} Hero played this turn.",
    "keywords": [
     "Teleport"
    ]
@@ -855,7 +855,7 @@
    "value": 5,
    "variable": true,
    "cost": 8,
-   "effect": "KO any number of cards from hand; +1 Attack for each."
+   "effect": "KO any number of cards from hand; +1 {attack} for each."
   }
  ],
  "dc:colossus": [
@@ -885,7 +885,7 @@
    "value": 4,
    "variable": true,
    "cost": 6,
-   "effect": "Strength: +2 Attack."
+   "effect": "{strength}: +2 {attack}."
   },
   {
    "name": "Russian Heavy Tank",
@@ -906,7 +906,7 @@
    "value": 0,
    "variable": true,
    "cost": 1,
-   "effect": "Draw a card. X-Force: Versatile 1."
+   "effect": "Draw a card. {x-force}: Versatile 1."
   },
   {
    "name": "Ready for Anything",
@@ -928,7 +928,7 @@
    "value": 0,
    "variable": true,
    "cost": 5,
-   "effect": "Optionally discard a card: +4 Recruit if it had a Recruit icon, +4 Attack if it had an Attack icon."
+   "effect": "Optionally discard a card: +4 {recruit} if it had a {recruit} icon, +4 {attack} if it had an {attack} icon."
   },
   {
    "name": "Against All Odds",
@@ -938,7 +938,7 @@
    "value": 0,
    "variable": true,
    "cost": 7,
-   "effect": "X-Force: this and your other Versatile abilities give both Recruit and Attack for the rest of the turn.",
+   "effect": "{x-force}: this and your other Versatile abilities give both {recruit} and {attack} for the rest of the turn.",
    "keywords": [
     "Versatile 5"
    ]
@@ -952,7 +952,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
-   "effect": "Tech: Villains you fight in the Sewers get -2 Attack this turn."
+   "effect": "{tech}: Villains you fight in the Sewers get -2 {attack} this turn."
   },
   {
    "name": "Reboot",
@@ -961,7 +961,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
-   "effect": "Tech: you may discard a card to draw two."
+   "effect": "{tech}: you may discard a card to draw two."
   },
   {
    "name": "Overdrive",
@@ -982,7 +982,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 7,
-   "effect": "Tech x2: defeat the Mastermind once for free."
+   "effect": "{tech} x2: defeat the Mastermind once for free."
   }
  ],
  "dc:wolverine-xforce": [
@@ -994,7 +994,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
-   "effect": "Draw a card. Instinct: +2 Attack."
+   "effect": "Draw a card. {instinct}: +2 {attack}."
   },
   {
    "name": "Sudden Ambush",
@@ -1004,7 +1004,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "If you drew any extra cards this turn, +2 Attack."
+   "effect": "If you drew any extra cards this turn, +2 {attack}."
   },
   {
    "name": "No Mercy",
@@ -1032,7 +1032,7 @@
    "value": 0,
    "variable": true,
    "cost": 4,
-   "effect": "+2 Recruit each time you defeat a Villain in the Sewers or Rooftops this turn."
+   "effect": "+2 {recruit} each time you defeat a Villain in the Sewers or Rooftops this turn."
   },
   {
    "name": "Stalk the Prey",
@@ -1060,7 +1060,7 @@
    "value": 0,
    "variable": true,
    "cost": 7,
-   "effect": "+1 Attack per Villain in your Victory pile."
+   "effect": "+1 {attack} per Villain in your Victory pile."
   }
  ],
  "dc:daredevil": [
@@ -1081,7 +1081,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "Name a cost, reveal your top card; if it matches, +2 Attack."
+   "effect": "Name a cost, reveal your top card; if it matches, +2 {attack}."
   },
   {
    "name": "Blind Justice",
@@ -1111,7 +1111,7 @@
    "value": 1,
    "variable": true,
    "cost": 1,
-   "effect": "If this is the first card played this turn, +1 Attack."
+   "effect": "If this is the first card played this turn, +1 {attack}."
   },
   {
    "name": "Ninjitsu",
@@ -1121,7 +1121,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
-   "effect": "Draw a card. Covert: +2 Recruit."
+   "effect": "Draw a card. {covert}: +2 {recruit}."
   },
   {
    "name": "Sai Blades",
@@ -1131,7 +1131,7 @@
    "value": 4,
    "variable": true,
    "cost": 6,
-   "effect": "+1 Attack per Hero costing 1 or 2 you played this turn."
+   "effect": "+1 {attack} per Hero costing 1 or 2 you played this turn."
   },
   {
    "name": "Silent Meditation",
@@ -1141,7 +1141,7 @@
    "value": 5,
    "variable": true,
    "cost": 7,
-   "effect": "The next Hero you recruit this turn goes to your hand. Marvel Knights: +2 Recruit."
+   "effect": "The next Hero you recruit this turn goes to your hand. {marvel-knights}: +2 {recruit}."
   }
  ],
  "dc:ghost-rider": [
@@ -1153,7 +1153,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
-   "effect": "Optionally KO a Villain from your Victory pile for +3 Attack."
+   "effect": "Optionally KO a Villain from your Victory pile for +3 {attack}."
   },
   {
    "name": "Hell on Wheels",
@@ -1163,14 +1163,14 @@
    "value": 2,
    "variable": true,
    "cost": 3,
-   "effect": "Marvel Knights: +2 Recruit."
+   "effect": "{marvel-knights}: +2 {recruit}."
   },
   {
    "name": "Infernal Chains",
    "copies": 3,
    "class": "Strength",
    "cost": 2,
-   "effect": "Draw a card. Strength: defeat a Villain of 3 Attack or less for free."
+   "effect": "Draw a card. {strength}: defeat a Villain of 3 {attack} or less for free."
   },
   {
    "name": "Penance Stare",
@@ -1180,7 +1180,7 @@
    "value": 3,
    "variable": true,
    "cost": 8,
-   "effect": "Each player KOs a Villain from their Victory pile; +1 Attack for each. Marvel Knights: put one into your Victory pile."
+   "effect": "Each player KOs a Villain from their Victory pile; +1 {attack} for each. {marvel-knights}: put one into your Victory pile."
   }
  ],
  "dc:iron-fist": [
@@ -1192,7 +1192,7 @@
    "value": 0,
    "variable": true,
    "cost": 3,
-   "effect": "+1 Recruit per different Hero cost you have."
+   "effect": "+1 {recruit} per different Hero cost you have."
   },
   {
    "name": "Wield the Iron Fist",
@@ -1202,7 +1202,7 @@
    "value": 0,
    "variable": true,
    "cost": 4,
-   "effect": "+1 Attack per different Hero cost you have."
+   "effect": "+1 {attack} per different Hero cost you have."
   },
   {
    "name": "Ancient Legacy",
@@ -1212,7 +1212,7 @@
    "value": 0,
    "variable": true,
    "cost": 1,
-   "effect": "Draw a card. Strength x2: Versatile 2."
+   "effect": "Draw a card. {strength} x2: Versatile 2."
   },
   {
    "name": "Living Weapon",
@@ -1230,7 +1230,7 @@
    "copies": 5,
    "class": "Tech",
    "cost": 2,
-   "effect": "Reveal your top card; KO it if it costs 0. Tech: draw a card."
+   "effect": "Reveal your top card; KO it if it costs 0. {tech}: draw a card."
   },
   {
    "name": "Hail of Bullets",
@@ -1240,7 +1240,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
-   "effect": "Reveal the top Villain Deck card; if a Villain, +Attack equal to its printed VP. Tech x2: you may defeat it for free."
+   "effect": "Reveal the top Villain Deck card; if a Villain, +{attack} equal to its printed VP. {tech} x2: you may defeat it for free."
   },
   {
    "name": "Hostile Interrogation",
@@ -1250,7 +1250,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
-   "effect": "Strength: each opponent reveals their top card and discards it if it costs 4 or more; +1 Recruit per card discarded."
+   "effect": "{strength}: each opponent reveals their top card and discards it if it costs 4 or more; +1 {recruit} per card discarded."
   },
   {
    "name": "The Punisher",
@@ -1260,7 +1260,7 @@
    "value": 4,
    "variable": true,
    "cost": 8,
-   "effect": "Reveal from the Hero Deck until two share a cost; +1 Attack per card revealed, then bottom them in random order."
+   "effect": "Reveal from the Hero Deck until two share a cost; +1 {attack} per card revealed, then bottom them in random order."
   }
  ],
  "ff:mister-fantastic": [
