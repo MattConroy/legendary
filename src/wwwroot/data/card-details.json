@@ -5369,6 +5369,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Lightshow: draw a card.",
    "keywords": [
     "Soaring Flight",
     "Lightshow"
@@ -5381,6 +5382,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "Divided. Flare - Lightshow: +2 {recruit}. Fists - Berserk.",
    "keywords": [
     "Divided",
     "Lightshow",
@@ -5395,6 +5397,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
+   "effect": "Lightshow: +3 {attack}.",
    "keywords": [
     "Soaring Flight",
     "Lightshow"
@@ -5407,6 +5410,7 @@
    "kind": "recruit",
    "value": 4,
    "cost": 7,
+   "effect": "All Heroes you recruit this turn gain Soaring Flight. Lightshow: +2 {attack} per Lightshow card played this turn.",
    "keywords": [
     "Soaring Flight",
     "Lightshow"
@@ -5419,6 +5423,7 @@
    "copies": 5,
    "class": "Covert",
    "cost": 2,
+   "effect": "Draw a card. X-Gene {covert}: +1 Piercing.",
    "keywords": [
     "Piercing Energy",
     "X-Gene"
@@ -5441,6 +5446,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 5,
+   "effect": "{ranged}: you may have this produce Piercing instead of Recruit.",
    "keywords": [
     "Piercing Energy"
    ]
@@ -5450,6 +5456,7 @@
    "copies": 1,
    "class": "Ranged",
    "cost": 8,
+   "effect": "{ranged} {covert}: you may use Attack as Piercing this turn.",
    "keywords": [
     "Piercing Energy"
    ]
@@ -5463,6 +5470,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
+   "effect": "X-Gene {tech}: draw a card.",
    "keywords": [
     "X-Gene"
    ]
@@ -5475,6 +5483,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "X-Gene {strength}: Berserk.",
    "keywords": [
     "Berserk",
     "X-Gene"
@@ -5488,6 +5497,7 @@
    "value": 3,
    "variable": true,
    "cost": 5,
+   "effect": "Look at your top card; keep or discard it.",
    "keywords": [
     "Berserk"
    ]
@@ -5500,6 +5510,7 @@
    "value": 3,
    "variable": true,
    "cost": 8,
+   "effect": "X-Gene {x-men}: you may return a 0-cost, 3-cost and 4-cost card from your discard to your hand.",
    "keywords": [
     "Berserk",
     "X-Gene"
@@ -5515,6 +5526,7 @@
    "value": 1,
    "variable": true,
    "cost": 3,
+   "effect": "{instinct}: +2 {attack}.",
    "keywords": [
     "Soaring Flight"
    ]
@@ -5526,6 +5538,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "{strength}: the next Hero you recruit this turn gains Soaring Flight.",
    "keywords": [
     "Soaring Flight"
    ]
@@ -5537,6 +5550,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 6,
+   "effect": "{strength}: return a {shield} Hero from your discard to your hand.",
    "keywords": [
     "Soaring Flight"
    ]
@@ -5549,6 +5563,7 @@
    "value": 4,
    "variable": true,
    "cost": 8,
+   "effect": "If you played at least 6 other cards this turn, +2 {attack}.",
    "keywords": [
     "Soaring Flight"
    ]
@@ -5561,6 +5576,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
+   "effect": "Divided. Unpredictable - Berserk twice.",
    "keywords": [
     "Divided",
     "Berserk"
@@ -5574,6 +5590,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "X-Gene {instinct}: Berserk.",
    "keywords": [
     "Soaring Flight",
     "X-Gene"
@@ -5587,6 +5604,7 @@
    "value": 4,
    "variable": true,
    "cost": 6,
+   "effect": "If you have a Wound in hand or discard, KO it; otherwise gain a Wound.",
    "keywords": [
     "Berserk"
    ]
@@ -5599,6 +5617,7 @@
    "value": 3,
    "variable": true,
    "cost": 7,
+   "effect": "Berserk three times, then draw a card per X-Men card you Berserked.",
    "keywords": [
     "Berserk"
    ]
@@ -5612,6 +5631,7 @@
    "kind": "recruit",
    "value": 1,
    "cost": 3,
+   "effect": "Lightshow: +1 Piercing per Lightshow card played this turn.",
    "keywords": [
     "Piercing Energy",
     "Lightshow"
@@ -5625,6 +5645,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "Lightshow: +2 {attack}.",
    "keywords": [
     "Lightshow"
    ]
@@ -5636,6 +5657,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 5,
+   "effect": "Lightshow: draw two extra cards when you draw your next hand.",
    "keywords": [
     "Lightshow"
    ]
@@ -5647,6 +5669,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 7,
+   "effect": "Lightshow: put a Hero from the HQ on top of your deck.",
    "keywords": [
     "Lightshow"
    ]
@@ -5660,6 +5683,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
+   "effect": "Lightshow: +3 {attack}, only against the Mastermind.",
    "keywords": [
     "Lightshow"
    ]
@@ -5672,6 +5696,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "Discard a card from hand to play this. Berserk twice.",
    "keywords": [
     "Berserk"
    ]
@@ -5684,6 +5709,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
+   "effect": "X-Gene {ranged}: +1 {attack} per {ranged} card in your discard.",
    "keywords": [
     "X-Gene"
    ]
@@ -5696,6 +5722,7 @@
    "value": 3,
    "variable": true,
    "cost": 7,
+   "effect": "X-Gene {ranged}: +{attack} equal to the total printed Attack of the {ranged} cards in your discard.",
    "keywords": [
     "Berserk",
     "X-Gene"
@@ -5711,6 +5738,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "Draw a card. Lightshow: +1 {recruit} per Lightshow card played this turn.",
    "keywords": [
     "Lightshow"
    ]
@@ -5723,6 +5751,7 @@
    "value": 1,
    "variable": true,
    "cost": 4,
+   "effect": "Draw a card. Lightshow: +1 {attack} per Lightshow card played this turn.",
    "keywords": [
     "Lightshow"
    ]
@@ -5734,6 +5763,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 5,
+   "effect": "Lightshow: look at your top card; if it costs 0, KO it.",
    "keywords": [
     "Lightshow"
    ]
@@ -5746,6 +5776,7 @@
    "value": 0,
    "variable": true,
    "cost": 7,
+   "effect": "Lightshow: +1 {recruit} and +1 {attack} per Lightshow card played this turn.",
    "keywords": [
     "Lightshow"
    ]
@@ -5759,7 +5790,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Bottom a HQ card; +2 {recruit} if it had a {recruit} icon, +2 {attack} if it had an {attack} icon (both if both)."
   },
   {
    "name": "Going through a Phase",
@@ -5768,6 +5800,7 @@
    "kind": "recruit",
    "value": 1,
    "cost": 4,
+   "effect": "X-Gene {x-men}: draw a card.",
    "keywords": [
     "X-Gene"
    ]
@@ -5779,7 +5812,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "+1 {attack} per different cost among the Heroes in the HQ."
   },
   {
    "name": "Lockheed, Kitty's Dragon",
@@ -5789,6 +5823,7 @@
    "value": 0,
    "variable": true,
    "cost": 8,
+   "effect": "Bottom a HQ card; +{attack} equal to its cost.",
    "keywords": [
     "Soaring Flight"
    ]
@@ -5802,6 +5837,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "Divided. Steel - Berserk. Light - Lightshow: +2 {recruit}.",
    "keywords": [
     "Divided",
     "Berserk",
@@ -5814,6 +5850,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Divided: a plain side and a Piercing Energy side.",
    "keywords": [
     "Divided",
     "Piercing Energy"
@@ -5826,6 +5863,7 @@
    "value": 0,
    "variable": true,
    "cost": 5,
+   "effect": "Divided. Time: draw two cards. Fire: +1 {attack} per different Hero Class in your discard.",
    "keywords": [
     "Divided"
    ]
@@ -5838,6 +5876,7 @@
    "value": 3,
    "variable": true,
    "cost": 8,
+   "effect": "Reveal the top three Hero Deck cards; +{attack} equal to their total printed Attack; then bottom them.",
    "keywords": [
     "Soaring Flight"
    ]
@@ -5850,7 +5889,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 3,
-   "cost": 3
+   "cost": 3,
+   "effect": "Put a card from hand on top of your deck to play this."
   },
   {
    "name": "Flurry of Blades",
@@ -5860,6 +5900,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "{tech}: Berserk.",
    "keywords": [
     "Berserk"
    ]
@@ -5870,7 +5911,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "Look at your top card; keep or discard it. {covert}: you may KO the discarded card."
   },
   {
    "name": "Escape from Mojo World",
@@ -5879,7 +5921,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Reveal the top Villain Deck card; if a Villain you may bottom it. {x-men}: +{attack} equal to its printed VP."
   }
  ],
  "xm:phoenix": [
@@ -5889,13 +5932,15 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 3,
-   "cost": 3
+   "cost": 3,
+   "effect": "KO this card. You may KO a card from hand or discard."
   },
   {
    "name": "Obliterating Fire",
    "copies": 5,
    "class": "Ranged",
    "cost": 4,
+   "effect": "KO this card.",
    "keywords": [
     "Soaring Flight",
     "Piercing Energy"
@@ -5905,7 +5950,8 @@
    "name": "Reincarnating Phoenix",
    "copies": 3,
    "class": "Covert",
-   "cost": 6
+   "cost": 6,
+   "effect": "Draw two cards. You may put a Hero KO'd this turn into your discard."
   },
   {
    "name": "Driven Mad by Power",
@@ -5915,6 +5961,7 @@
    "value": 6,
    "variable": true,
    "cost": 9,
+   "effect": "Berserk four times, then KO all cards you Berserked. If this makes at least 13 Attack, the Phoenix devours the Earth: you win, Evil wins, and all other players lose.",
    "keywords": [
     "Berserk"
    ]
@@ -5928,6 +5975,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
+   "effect": "{covert}: draw an extra card when you draw your next hand.",
    "keywords": [
     "Soaring Flight"
    ]
@@ -5937,6 +5985,7 @@
    "copies": 5,
    "class": "Ranged",
    "cost": 4,
+   "effect": "{ranged}: draw a card.",
    "keywords": [
     "Piercing Energy"
    ]
@@ -5948,6 +5997,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 6,
+   "effect": "{covert}: look at your top two cards; you may KO one; replace the rest.",
    "keywords": [
     "Soaring Flight"
    ]
@@ -5959,6 +6009,7 @@
    "kind": "recruit",
    "value": 4,
    "cost": 8,
+   "effect": "X-Gene {x-men}: you may use Recruit as Attack and vice versa this turn.",
    "keywords": [
     "Soaring Flight",
     "X-Gene"
@@ -5971,6 +6022,7 @@
    "copies": 5,
    "class": "Instinct",
    "cost": 2,
+   "effect": "Draw a card. {instinct}: +1 Piercing.",
    "keywords": [
     "Piercing Energy"
    ]
@@ -5981,13 +6033,15 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Reveal the top Hero Deck card; you may recruit it this turn; if you do, draw a card."
   },
   {
    "name": "Butterfly Effect",
    "copies": 3,
    "class": "Covert",
    "cost": 5,
+   "effect": "X-Gene {covert}: +1 Piercing.",
    "keywords": [
     "Piercing Energy",
     "X-Gene"
@@ -5998,6 +6052,7 @@
    "copies": 1,
    "class": "Instinct",
    "cost": 7,
+   "effect": "Reveal the top Hero Deck card; a player of your choice takes it to their hand.",
    "keywords": [
     "Piercing Energy"
    ]
@@ -6011,6 +6066,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "X-Gene {instinct}: draw a card.",
    "keywords": [
     "X-Gene"
    ]
@@ -6023,6 +6079,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "You may KO a Wound from hand or discard.",
    "keywords": [
     "Berserk"
    ]
@@ -6035,6 +6092,7 @@
    "value": 2,
    "variable": true,
    "cost": 6,
+   "effect": "X-Gene {instinct}: you may KO a card from hand or discard.",
    "keywords": [
     "Berserk",
     "X-Gene"
@@ -6048,6 +6106,7 @@
    "value": 3,
    "variable": true,
    "cost": 7,
+   "effect": "X-Gene {instinct}: Berserk once per {instinct} card in your discard.",
    "keywords": [
     "Berserk",
     "X-Gene"
