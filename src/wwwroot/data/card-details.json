@@ -7,7 +7,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
-   "effect": "{covert}: optionally KO a card from hand or discard to rescue a Bystander."
+   "effect": "{covert}: you may KO a card from hand or discard to rescue a Bystander."
   },
   {
    "name": "Mission Accomplished",
@@ -152,7 +152,7 @@
    "kind": "attack",
    "value": 6,
    "cost": 7,
-   "effect": "Optionally take a Wound to hand; then everyone passes a card to their left."
+   "effect": "You may take a Wound to hand; then everyone passes a card to their left."
   }
  ],
  "core:emma-frost": [
@@ -290,7 +290,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "Optionally KO a Wound from hand or discard for +2 {attack}."
+   "effect": "You may KO a Wound from hand or discard for +2 {attack}."
   },
   {
    "name": "Crazed Rampage",
@@ -354,7 +354,7 @@
    "copies": 5,
    "class": "Covert",
    "cost": 4,
-   "effect": "Optionally KO a {shield} Hero from hand or discard to gain a {shield} Officer to hand."
+   "effect": "You may KO a {shield} Hero from hand or discard to gain a {shield} Officer to hand."
   },
   {
    "name": "High-Tech Weaponry",
@@ -403,7 +403,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
-   "effect": "{covert}: optionally KO a card from hand or discard for +1 {recruit}."
+   "effect": "{covert}: you may KO a card from hand or discard for +1 {recruit}."
   },
   {
    "name": "Copy Powers",
@@ -542,7 +542,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
-   "effect": "Optionally KO a Wound from hand or discard to draw a card."
+   "effect": "You may KO a Wound from hand or discard to draw a card."
   },
   {
    "name": "Keen Senses",
@@ -598,7 +598,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
-   "effect": "Optionally discard a card for +{attack} equal to its cost."
+   "effect": "You may discard a card for +{attack} equal to its cost."
   },
   {
    "name": "Strength of Spirit",
@@ -928,7 +928,7 @@
    "value": 0,
    "variable": true,
    "cost": 5,
-   "effect": "Optionally discard a card: +4 {recruit} if it had a {recruit} icon, +4 {attack} if it had an {attack} icon."
+   "effect": "You may discard a card: +4 {recruit} if it had a {recruit} icon, +4 {attack} if it had an {attack} icon."
   },
   {
    "name": "Against All Odds",
@@ -1153,7 +1153,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
-   "effect": "Optionally KO a Villain from your Victory pile for +3 {attack}."
+   "effect": "You may KO a Villain from your Victory pile for +3 {attack}."
   },
   {
    "name": "Hell on Wheels",
@@ -1361,7 +1361,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
-   "effect": "Optionally KO a Wound from hand or discard for +1 {recruit}."
+   "effect": "You may KO a Wound from hand or discard for +1 {recruit}."
   },
   {
    "name": "Hothead",
@@ -1569,7 +1569,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
-   "effect": "{strength}: optionally KO a card from hand or discard to gain a Shard."
+   "effect": "{strength}: you may KO a card from hand or discard to gain a Shard."
   },
   {
    "name": "Surviving Sprig",
@@ -2134,7 +2134,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "Optionally KO a Bystander from your Victory pile for +2 {attack}."
+   "effect": "You may KO a Bystander from your Victory pile for +2 {attack}."
   },
   {
    "name": "Symbiote Takeover",
@@ -2377,7 +2377,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
-   "effect": "{covert}: optionally KO a card from hand or discard to gain a New Recruit."
+   "effect": "{covert}: you may KO a card from hand or discard to gain a New Recruit."
   },
   {
    "name": "Illusionary Bindings",
@@ -2541,7 +2541,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
-   "effect": "{covert}: optionally KO a card from hand or discard for +1 {attack}."
+   "effect": "{covert}: you may KO a card from hand or discard for +1 {attack}."
   },
   {
    "name": "Infiltrate HQ",
@@ -2699,7 +2699,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
-   "effect": "{instinct} {ranged}: {illuminati}: optionally KO a card from hand or discard for +1 {recruit}."
+   "effect": "{instinct} {ranged}: {illuminati}: you may KO a card from hand or discard for +1 {recruit}."
   },
   {
    "name": "Fight the Future",
@@ -2868,7 +2868,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 6,
-   "effect": "{strength} {instinct}: optionally KO a card from hand or discard to draw a card."
+   "effect": "{strength} {instinct}: you may KO a card from hand or discard to draw a card."
   },
   {
    "name": "Imperius Rex",
@@ -2886,7 +2886,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
-   "effect": "{instinct}: optionally KO a card from hand or discard; if it's a Wound, draw a card."
+   "effect": "{instinct}: you may KO a card from hand or discard; if it's a Wound, draw a card."
   },
   {
    "name": "Loner",
@@ -3013,7 +3013,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
-   "effect": "Optionally KO a Bystander from your Victory pile for +2 {attack}.",
+   "effect": "You may KO a Bystander from your Victory pile for +2 {attack}.",
    "keywords": [
     "Teleport"
    ]
@@ -3235,7 +3235,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 5,
-   "effect": "{instinct}: optionally KO a card from hand or discard to draw a card."
+   "effect": "{instinct}: you may KO a card from hand or discard to draw a card."
   },
   {
    "name": "Dark Foretelling",
@@ -3442,7 +3442,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
-   "effect": "Spectrum: optionally KO a card from hand or discard for +1 {recruit}.",
+   "effect": "Spectrum: you may KO a card from hand or discard for +1 {recruit}.",
    "keywords": [
     "Spectrum"
    ]
@@ -4253,7 +4253,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "+1 {recruit} per Hero Class you have."
   },
   {
    "name": "Inspire a Nation/Inspire a Man",
@@ -4261,6 +4262,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Divided ({avengers}). Nation: gain a Sidekick.",
    "keywords": [
     "Divided"
    ]
@@ -4272,7 +4274,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "+1 {attack} per Sidekick and other {avengers} Hero played this turn."
   },
   {
    "name": "Freedom Never Dies",
@@ -4280,7 +4283,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "Set aside each Sidekick or other {avengers} Hero you play this turn; at end of turn bottom them in random order before drawing."
   }
  ],
  "cw:cloak-dagger": [
@@ -4290,6 +4294,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Divided. Below ({marvel-knights}): +3 {recruit}, usable only for Heroes in the HQ under the Sewers.",
    "keywords": [
     "Divided"
    ]
@@ -4301,6 +4306,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "Divided, Phasing. Flee ({covert}): +1 {recruit}. Fight ({ranged}): +1 {attack}.",
    "keywords": [
     "Divided",
     "Phasing"
@@ -4312,6 +4318,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 6,
+   "effect": "Divided. Darkness ({covert}): reveal your top card; if it costs 0, KO it. Light ({ranged}): reveal your top card; if it costs 1 or more, draw it.",
    "keywords": [
     "Divided"
    ]
@@ -4322,7 +4329,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "When you play a Divided card this turn, play both of its sides as two separate cards."
   }
  ],
  "cw:daredevil": [
@@ -4330,7 +4338,8 @@
    "name": "Dual Existence",
    "copies": 5,
    "class": "Instinct",
-   "cost": 2
+   "cost": 2,
+   "effect": "Look at your top two cards; draw one and put the other back."
   },
   {
    "name": "Roundhouse Side Kick",
@@ -4338,7 +4347,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Name a cost, reveal your top card; if it matches, gain a Sidekick."
   },
   {
    "name": "Hidden Identity/Revealed Identity",
@@ -4346,6 +4356,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 6,
+   "effect": "Divided. Hidden ({avengers}): the next Hero you recruit this turn goes on top of your deck. Revealed ({marvel-knights}): +1 {attack} per different Hero cost you have.",
    "keywords": [
     "Divided"
    ]
@@ -4357,7 +4368,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "{avengers}: discard your top two cards; if they have different costs, +2 {attack}, then repeat."
   }
  ],
  "cw:falcon": [
@@ -4368,7 +4380,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Bottom a Hero from the HQ. {tech}: if it had a {recruit} icon, +1 {recruit}."
   },
   {
    "name": "Talk with Birds/Squawk Back",
@@ -4376,6 +4389,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "Divided ({avengers}). Talk with Birds ({ranged}): gain a Sidekick. Squawk Back: look at your top three cards, draw one, replace the rest.",
    "keywords": [
     "Divided"
    ]
@@ -4387,7 +4401,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "+1 {attack} per HQ card with an {attack} icon."
   },
   {
    "name": "Fly in a Friend",
@@ -4396,7 +4411,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "{avengers}: +{attack} equal to a HQ Hero's printed {attack}."
   }
  ],
  "cw:goliath": [
@@ -4406,6 +4422,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "Divided, Size-Changing: a {tech} side and a {strength} side.",
    "keywords": [
     "Divided",
     "Size-Changing"
@@ -4418,6 +4435,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 5,
+   "effect": "{tech}: draw a card.",
    "keywords": [
     "Size-Changing"
    ]
@@ -4430,6 +4448,7 @@
    "value": 3,
    "variable": true,
    "cost": 6,
+   "effect": "+1 {attack} per other cost-4-or-more card played this turn.",
    "keywords": [
     "Size-Changing"
    ]
@@ -4442,6 +4461,7 @@
    "value": 0,
    "variable": true,
    "cost": 8,
+   "effect": "+{attack} equal to the cost of another card you played this turn.",
    "keywords": [
     "Size-Changing"
    ]
@@ -4454,7 +4474,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "{instinct}: rescue a Bystander each time you defeat a Villain this turn."
   },
   {
    "name": "Manly Dullard/Boy Genius",
@@ -4462,6 +4483,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 3,
+   "effect": "Divided. Dullard ({avengers}): discard a card from hand to play this. Genius: draw a card.",
    "keywords": [
     "Divided"
    ]
@@ -4472,7 +4494,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "{strength}: reveal your top card; if it costs 0, KO it."
   },
   {
    "name": "Son of Zeus",
@@ -4481,7 +4504,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Rescue a Bystander; +1 {attack} per Bystander in your Victory pile. {avengers}: +1 {recruit} per Bystander in your Victory pile."
   }
  ],
  "cw:hulkling": [
@@ -4493,6 +4517,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
+   "effect": "You may KO a Wound from hand or discard for +1 {attack}.",
    "keywords": [
     "Size-Changing"
    ]
@@ -4503,6 +4528,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 4,
+   "effect": "Divided, Size-Changing. Kree ({strength}): gain a Wound. Skrull: {covert} side.",
    "keywords": [
     "Divided",
     "Size-Changing"
@@ -4513,6 +4539,7 @@
    "copies": 3,
    "class": "Covert",
    "cost": 6,
+   "effect": "Play as a copy of another Hero you played this turn; it counts as {covert} plus the copied class and colour.",
    "keywords": [
     "Size-Changing"
    ]
@@ -4525,6 +4552,7 @@
    "value": 4,
    "variable": true,
    "cost": 8,
+   "effect": "{covert}: +4 {attack}.",
    "keywords": [
     "Size-Changing"
    ]
@@ -4537,7 +4565,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 1,
-   "cost": 4
+   "cost": 4,
+   "effect": "If a player would gain a Wound, you may discard this to draw two cards instead."
   },
   {
    "name": "Cautious/Reckless",
@@ -4545,6 +4574,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Divided. Reckless ({marvel-knights}): gain a Wound.",
    "keywords": [
     "Divided"
    ]
@@ -4555,7 +4585,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "{instinct}: look at your top three cards; discard them all or replace in any order."
   },
   {
    "name": "Unbreakable Skin",
@@ -4563,7 +4594,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 6,
-   "cost": 8
+   "cost": 8,
+   "effect": "{avengers}: Fortify the Wound Stack (no one can gain Wounds while fortified); discard this at the start of your next turn."
   }
  ],
  "cw:patriot": [
@@ -4574,13 +4606,15 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "+1 {attack} per Hero Name among your non-{shield} Heroes."
   },
   {
    "name": "New Generation of Heroes",
    "copies": 5,
    "class": "Strength",
-   "cost": 2
+   "cost": 2,
+   "effect": "+1 {recruit} per Hero Name among your non-{shield} Heroes."
   },
   {
    "name": "Incredible Effort/Effortless",
@@ -4589,6 +4623,7 @@
    "value": 1,
    "variable": true,
    "cost": 5,
+   "effect": "Divided ({avengers}). Effort ({covert}): +3 {attack}.",
    "keywords": [
     "Divided"
    ]
@@ -4599,7 +4634,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 3,
-   "cost": 8
+   "cost": 8,
+   "effect": "Reveal your top three cards; if at least three different Hero Names, draw them, otherwise replace in any order."
   }
  ],
  "cw:peter-parker": [
@@ -4609,7 +4645,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 1,
-   "cost": 2
+   "cost": 2,
+   "effect": "{tech}: reveal your top card; draw it if it costs 2 or less."
   },
   {
    "name": "Spider-Man Unmasked",
@@ -4617,7 +4654,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 1,
-   "cost": 2
+   "cost": 2,
+   "effect": "Gain a Sidekick. {instinct}: put it on top of your deck."
   },
   {
    "name": "Protect My Family/Hot Bowl of Soup",
@@ -4625,6 +4663,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
+   "effect": "Divided. Protect ({avengers}): rescue a Bystander. Soup ({spider-friends}): you may KO a Wound from hand or discard.",
    "keywords": [
     "Divided"
    ]
@@ -4636,7 +4675,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "{instinct}: +1 {attack} per extra card drawn this turn."
   }
  ],
  "cw:speedball": [
@@ -4647,7 +4687,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{covert}: if any Bystanders are in the city or KO pile, +2 {attack}."
   },
   {
    "name": "Reckless Rescue Attempt",
@@ -4655,7 +4696,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{ranged}: reveal the top Villain Deck card; if a Villain, rescue a Bystander, otherwise KO a Bystander from the Bystander Deck."
   },
   {
    "name": "Double Down/Bubble Up",
@@ -4664,6 +4706,7 @@
    "value": 0,
    "variable": true,
    "cost": 5,
+   "effect": "Divided ({new-warriors}). Double Down: draw two cards. Bubble Up: +3 {attack}, only against Villains on the Bridge or the Mastermind.",
    "keywords": [
     "Divided"
    ]
@@ -4674,7 +4717,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "If a Master Strike would occur, you may reveal this to KO it, cancel its effects, and draw a card."
   }
  ],
  "cw:stature": [
@@ -4686,6 +4730,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "Draw a card. {tech}: +1 {attack}.",
    "keywords": [
     "Size-Changing"
    ]
@@ -4696,6 +4741,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 5,
+   "effect": "Divided, Size-Changing. Ants ({strength}): defeat a Villain of 3 Attack or less. File Sizes ({tech}): draw a card.",
    "keywords": [
     "Divided",
     "Size-Changing"
@@ -4709,6 +4755,7 @@
    "value": 2,
    "variable": true,
    "cost": 6,
+   "effect": "{strength}: +1 {attack} per Villain in your Victory pile with printed Attack 3 or less.",
    "keywords": [
     "Size-Changing"
    ]
@@ -4720,6 +4767,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 8,
+   "effect": "{strength}: defeat each Villain of 4 Attack or less.",
    "keywords": [
     "Size-Changing"
    ]
@@ -4732,6 +4780,7 @@
    "kind": "recruit",
    "value": 1,
    "cost": 2,
+   "effect": "Divided. Rain Clouds ({x-men}, {ranged}): draw a card. Clues ({avengers}, {instinct}): draw a card.",
    "keywords": [
     "Divided"
    ]
@@ -4742,6 +4791,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Divided. Lightning ({x-men}): Villains you fight on the Rooftops this turn get -1 Attack. Pouncing ({avengers}): move a Villain to an adjacent empty space.",
    "keywords": [
     "Divided"
    ]
@@ -4752,6 +4802,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 5,
+   "effect": "Divided. Water ({x-men}, {ranged}): +2 {attack} only against the Mastermind. Justice ({avengers}, {covert}): you may KO a card from hand or discard.",
    "keywords": [
     "Divided"
    ]
@@ -4762,7 +4813,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "Reveal any number of multi-class cards from hand; gain that many Sidekicks."
   }
  ],
  "cw:tigra": [
@@ -4772,6 +4824,7 @@
    "kind": "recruit",
    "value": 1,
    "cost": 2,
+   "effect": "Divided ({avengers}). Friendship ({covert}): gain a Sidekick. Ferocity ({instinct}): draw a card.",
    "keywords": [
     "Divided"
    ]
@@ -4782,7 +4835,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Look at your top card; keep or discard it. {instinct} {instinct}: you may KO the discarded card."
   },
   {
    "name": "Can't Surprise a Cat",
@@ -4790,7 +4844,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 5
+   "cost": 5,
+   "effect": "If an Ambush would occur, you may discard this to cancel it and draw two cards."
   },
   {
    "name": "Mystic Talisman",
@@ -4799,7 +4854,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Recruit a Hero from the HQ for free. {avengers}: gain its printed {recruit} and {attack}."
   }
  ],
  "cw:vision": [
@@ -4811,6 +4867,7 @@
    "value": 1,
    "variable": true,
    "cost": 3,
+   "effect": "{ranged}: +2 {attack}.",
    "keywords": [
     "Phasing"
    ]
@@ -4822,6 +4879,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "Name a Hero Class; reveal your top card; if it matches, draw it.",
    "keywords": [
     "Phasing"
    ]
@@ -4832,6 +4890,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 6,
+   "effect": "Divided, Phasing, Size-Changing: a {ranged} side and a {tech} side.",
    "keywords": [
     "Divided",
     "Size-Changing",
@@ -4845,6 +4904,7 @@
    "kind": "attack",
    "value": 4,
    "cost": 7,
+   "effect": "You may swap a card from hand with your top two cards.",
    "keywords": [
     "Phasing"
    ]
@@ -4859,6 +4919,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "Name a cost; reveal your top card; if it matches, +1 {attack}.",
    "keywords": [
     "Phasing"
    ]
@@ -4871,6 +4932,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "{covert}: +2 {recruit}.",
    "keywords": [
     "Phasing"
    ]
@@ -4881,6 +4943,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "Divided ({avengers}). Spells ({ranged}): draw a card. Speed: draw a card; {covert}: draw another.",
    "keywords": [
     "Divided"
    ]
@@ -4891,7 +4954,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 3,
-   "cost": 7
+   "cost": 7,
+   "effect": "Name a cost; reveal your top card; if it matches, draw it and draw another."
   }
  ],
  "dp:bob-agent-of-hydra": [
