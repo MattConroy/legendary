@@ -117,6 +117,10 @@
                                                 </span>
                                             }
                                         </div>
+                                        @if (!string.IsNullOrEmpty(d.Effect))
+                                        {
+                                            <p class="deck__effect">@d.Effect</p>
+                                        }
                                         @if (d.Keywords.Count > 0)
                                         {
                                             <ul class="tag-list deck__kws">

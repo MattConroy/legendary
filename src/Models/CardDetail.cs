@@ -28,6 +28,10 @@ public sealed record CardDetail
     /// <summary>Recruit cost to buy the card, when it has one.</summary>
     public int? Cost { get; init; }
 
+    /// <summary>A concise, original description of the card's mechanic (our own
+    /// words, keyword/number tokens kept exact, flavour excluded). Null if none.</summary>
+    public string? Effect { get; init; }
+
     /// <summary>Ability keyword tokens printed on the card, with their values where
     /// given (e.g. "Versatile 2", "Teleport"). Empty if the card has none.</summary>
     public IReadOnlyList<string> Keywords { get; init; } = [];
