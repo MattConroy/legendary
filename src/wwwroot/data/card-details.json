@@ -1271,6 +1271,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
+   "effect": "Focus 2 {recruit} -> draw an extra card when you draw your next hand.",
    "keywords": [
     "Focus 2"
    ]
@@ -1279,7 +1280,8 @@
    "name": "Unstable Molecules",
    "copies": 5,
    "class": "Tech",
-   "cost": 5
+   "cost": 5,
+   "effect": "Draw two cards."
   },
   {
    "name": "One Gigantic Hand",
@@ -1288,7 +1290,8 @@
    "kind": "attack",
    "value": 1,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{fantastic-four}: +1 {attack} per card in your hand."
   },
   {
    "name": "Ultimate Nullifier",
@@ -1298,6 +1301,7 @@
    "value": 4,
    "variable": true,
    "cost": 7,
+   "effect": "Cancel the fight effect of an Enemy you fight this turn. Focus 1 {recruit} -> +1 {attack} against the Mastermind only.",
    "keywords": [
     "Focus 1"
    ]
@@ -1311,6 +1315,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "Focus 2 {recruit} -> you may KO a card from hand or discard.",
    "keywords": [
     "Focus 2"
    ]
@@ -1322,7 +1327,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "If you played another cost-4 card this turn, +2 {attack}."
   },
   {
    "name": "Unseen Rescue",
@@ -1331,6 +1337,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "Focus 2 {recruit} -> rescue a Bystander (up to four times per turn).",
    "keywords": [
     "Focus 2"
    ]
@@ -1341,7 +1348,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "You may reveal this to cancel an ambush effect and draw two cards instead."
   }
  ],
  "ff:human-torch": [
@@ -1352,7 +1360,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Optionally KO a Wound from hand or discard for +1 {recruit}."
   },
   {
    "name": "Hothead",
@@ -1360,7 +1369,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 4,
-   "cost": 4
+   "cost": 4,
+   "effect": "Gain a Wound."
   },
   {
    "name": "Flame On!",
@@ -1370,6 +1380,7 @@
    "value": 4,
    "variable": true,
    "cost": 6,
+   "effect": "Focus 6 {recruit} -> +4 {attack}.",
    "keywords": [
     "Focus 6"
    ]
@@ -1381,7 +1392,8 @@
    "kind": "attack",
    "value": 6,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "{fantastic-four}: +1 {attack} per city space containing a Villain."
   }
  ],
  "ff:thing": [
@@ -1392,7 +1404,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{fantastic-four}: +2 {recruit}."
   },
   {
    "name": "Knuckle Sandwich",
@@ -1401,6 +1414,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 5,
+   "effect": "Focus 3 {recruit} -> +2 {attack}.",
    "keywords": [
     "Focus 3"
    ]
@@ -1412,6 +1426,7 @@
    "kind": "attack",
    "value": 4,
    "cost": 6,
+   "effect": "Rescue a Bystander each time you defeat a Villain in the Bank this turn. Focus 1 {recruit} -> move a Villain to an adjacent space (swap if occupied).",
    "keywords": [
     "Focus 1"
    ]
@@ -1423,7 +1438,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "{strength}: +3 {attack} per other {strength} card played this turn."
   }
  ],
  "ff:silver-surfer": [
@@ -1434,6 +1450,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "Focus 6 {recruit} -> defeat a Villain of 5 or 6 Attack.",
    "keywords": [
     "Focus 6"
    ]
@@ -1445,6 +1462,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
+   "effect": "Focus 2 {recruit} -> draw a card.",
    "keywords": [
     "Focus 2"
    ]
@@ -1456,6 +1474,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 6,
+   "effect": "Focus 9 {recruit} -> +9 {attack}.",
    "keywords": [
     "Focus 9"
    ]
@@ -1464,7 +1483,8 @@
    "name": "Energy Surge",
    "copies": 1,
    "class": "Ranged",
-   "cost": 7
+   "cost": 7,
+   "effect": "Double your current {recruit}."
   }
  ],
  "gotg:drax": [
@@ -1473,6 +1493,7 @@
    "copies": 5,
    "class": "Strength",
    "cost": 3,
+   "effect": "Once per turn: +1 {attack}.",
    "keywords": [
     "Artifact"
    ]
@@ -1483,7 +1504,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Look at your top card; keep or discard it. {instinct}: you may KO the discarded card."
   },
   {
    "name": "The Destroyer",
@@ -1491,13 +1513,15 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "{guardians-of-the-galaxy}: each opponent reveals an {instinct} Hero or discards an Artifact; gain a Shard per Artifact discarded."
   },
   {
    "name": "Avatar of Destruction",
    "copies": 1,
    "class": "Instinct",
-   "cost": 7
+   "cost": 7,
+   "effect": "Double your current {attack}."
   }
  ],
  "gotg:gamora": [
@@ -1507,13 +1531,15 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 2
+   "cost": 2,
+   "effect": "A Villain gains a Shard."
   },
   {
    "name": "Deadliest Woman in the Universe",
    "copies": 5,
    "class": "Instinct",
-   "cost": 3
+   "cost": 3,
+   "effect": "Gain two Shards. {covert}: gain another Shard."
   },
   {
    "name": "Galactic Assassin",
@@ -1521,13 +1547,15 @@
    "class": "Covert",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "A chosen Villain gains no Attack from Shards this turn. {covert} {covert}: the Mastermind gains no Attack from Shards this turn."
   },
   {
    "name": "Godslayer Blade",
    "copies": 1,
    "class": "Covert",
    "cost": 8,
+   "effect": "Once per turn gain two Shards; once per turn spend 5 Shards for +10 {attack}.",
    "keywords": [
     "Artifact"
    ]
@@ -1540,7 +1568,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "{strength}: optionally KO a card from hand or discard to gain a Shard."
   },
   {
    "name": "Surviving Sprig",
@@ -1548,13 +1577,15 @@
    "class": "Strength",
    "kind": "attack",
    "value": 1,
-   "cost": 3
+   "cost": 3,
+   "effect": "Draw an extra card when you draw your next hand."
   },
   {
    "name": "Groot and Branches",
    "copies": 3,
    "class": "Covert",
-   "cost": 4
+   "cost": 4,
+   "effect": "Gain two Shards; you may spend Shards as {recruit} this turn. {covert}: another player gains a Shard."
   },
   {
    "name": "I Am Groot",
@@ -1562,7 +1593,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 5,
-   "cost": 8
+   "cost": 8,
+   "effect": "When you next recruit a Hero this turn, gain Shards equal to its cost."
   }
  ],
  "gotg:rocket-raccoon": [
@@ -1572,7 +1604,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "You may discard a card to draw a card."
   },
   {
    "name": "Trigger Happy",
@@ -1580,13 +1613,15 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "{guardians-of-the-galaxy}: gain a Shard per other {guardians-of-the-galaxy} Hero played this turn."
   },
   {
    "name": "Incoming Detector",
    "copies": 3,
    "class": "Instinct",
    "cost": 4,
+   "effect": "When a Master Strike or Villain Ambush resolves, you may gain a Shard.",
    "keywords": [
     "Artifact"
    ]
@@ -1598,7 +1633,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "{tech}: +1 {attack} per Master Strike in the KO pile or stacked by the Mastermind."
   }
  ],
  "gotg:star-lord": [
@@ -1607,6 +1643,7 @@
    "copies": 5,
    "class": "Ranged",
    "cost": 4,
+   "effect": "Once per turn: gain a Shard.",
    "keywords": [
     "Artifact"
    ]
@@ -1617,13 +1654,15 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Copy a 'once per turn' ability from any player's Artifact."
   },
   {
    "name": "Implanted Memory Chip",
    "copies": 3,
    "class": "Tech",
    "cost": 6,
+   "effect": "Once per turn: draw a card.",
    "keywords": [
     "Artifact"
    ]
@@ -1633,6 +1672,7 @@
    "copies": 1,
    "class": "Ranged",
    "cost": 8,
+   "effect": "Once per turn: gain a Shard per Artifact you control.",
    "keywords": [
     "Artifact"
    ]
@@ -1647,6 +1687,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "+1 {recruit}, usable only for the Hero in the HQ space under the Bank.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1659,6 +1700,7 @@
    "value": 0,
    "variable": true,
    "cost": 1,
+   "effect": "Reveal any player's top card; gain {attack} equal to its printed {recruit} plus its printed {attack}.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1669,7 +1711,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "Each player reveals their top card; discard any of them you choose."
   },
   {
    "name": "Cat Burglar",
@@ -1678,7 +1721,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Each opponent reveals a {covert} Hero or gives up a Bystander from their Victory pile; rescue those. {spider-friends}: +1 {attack} per Bystander rescued this turn."
   }
  ],
  "ptr:scarlet-spider": [
@@ -1689,6 +1733,7 @@
    "kind": "recruit",
    "value": 1,
    "cost": 2,
+   "effect": "{spider-friends}: draw a card.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1700,6 +1745,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 4,
+   "effect": "Draw a card.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1712,6 +1758,7 @@
    "value": 3,
    "variable": true,
    "cost": 6,
+   "effect": "{instinct}: +2 {attack}.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1722,7 +1769,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "Each time you put a card on top of your deck this turn, you may draw it."
   }
  ],
  "ptr:spider-woman": [
@@ -1733,6 +1781,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "Reveal your top card; draw it if it has an {attack} icon.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1743,7 +1792,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 3,
-   "cost": 2
+   "cost": 2,
+   "effect": "Put a card from hand on top of your deck to play this."
   },
   {
    "name": "Venom Blast",
@@ -1752,6 +1802,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 6,
+   "effect": "Reveal your top card; draw it if it has a {recruit} icon.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1760,7 +1811,8 @@
    "name": "Arachno-Pheromones",
    "copies": 1,
    "class": "Covert",
-   "cost": 7
+   "cost": 7,
+   "effect": "Recruit a Hero from the HQ for free. {spider-friends}: put that Hero on top of your deck."
   }
  ],
  "ptr:symbiote-spider-man": [
@@ -1772,6 +1824,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "Reveal your top card; if it costs 1 or 2, +2 {attack}.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1780,7 +1833,8 @@
    "name": "Spider-Sense Tingling",
    "copies": 5,
    "class": "Instinct",
-   "cost": 2
+   "cost": 2,
+   "effect": "Reveal your top two cards; take those costing 2 or less and replace the rest in any order."
   },
   {
    "name": "Shadowed Spider",
@@ -1790,6 +1844,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "+1 {attack} per other cost-1-or-2 Hero played this turn.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1800,7 +1855,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 4,
-   "cost": 2
+   "cost": 2,
+   "effect": "Put two cards from hand on top of your deck to play this."
   }
  ],
  "ptr:moon-knight": [
@@ -1812,6 +1868,7 @@
    "value": 2,
    "variable": true,
    "cost": 3,
+   "effect": "{instinct}: +1 {recruit}.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1823,6 +1880,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Each time you defeat a Villain on the Rooftops this turn, you may KO one of your cards from hand or discard.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -1833,7 +1891,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "Reveal your top card; draw it if it's {instinct} or {tech}."
   },
   {
    "name": "Golden Ankh of Khonshu",
@@ -1841,7 +1900,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 6,
-   "cost": 8
+   "cost": 8,
+   "effect": "Each time you defeat a Villain on the Rooftops this turn, rescue Bystanders equal to its printed VP. {tech}: move a Villain to the Rooftops (swap if occupied)."
   }
  ],
  "villains:dr-octopus": [
