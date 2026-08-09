@@ -63,7 +63,7 @@
                         string? tabAttr = clickable ? "0" : null;
                         bool? expandedAttr = clickable ? open : null;
                     }
-                    <li class="cat">
+                    <li class="cat @(open && deck.Count > 0 ? "cat--open" : "")">
                         <div class="@headClass" role="@roleAttr" tabindex="@tabAttr" aria-expanded="@expandedAttr"
                              @onclick="() => TryToggle(card.Id, deck.Count)"
                              @onkeydown="e => OnHeadKey(e, card.Id, deck.Count)">

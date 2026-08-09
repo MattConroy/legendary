@@ -644,8 +644,16 @@ a.tag:hover, a.tag:focus-visible { border-color: var(--gold); color: #fff; }
     color: inherit; font: inherit; text-align: left; width: 100%;
 }
 .cat__head.is-clickable { cursor: pointer; }
-.cat__head.is-clickable:hover { background: var(--surface-2); }
+/* Only real pointers get hover, so a tap on a phone doesn't leave the head
+   stuck with a highlight that covers just the top line of the panel. */
+@media (hover: hover) and (pointer: fine) {
+    .cat__head.is-clickable:hover { background: var(--surface-2); }
+}
 .cat__head:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+/* The expanded card is highlighted as a whole panel (head + deck), not just the
+   top line. */
+.cat--open { background: var(--surface-2); border-color: var(--border-strong, var(--border)); }
+.cat--open .cat__head.is-clickable:hover { background: transparent; }
 .cat__body { display: flex; flex-direction: column; gap: 6px; flex: 1 1 auto; min-width: 0; }
 .cat__main { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .cat__name { font-weight: 800; color: #fff; }
