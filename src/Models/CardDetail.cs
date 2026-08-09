@@ -12,9 +12,10 @@ public sealed record CardDetail
     /// <summary>How many copies of this card the deck contains.</summary>
     public required int Copies { get; init; }
 
-    /// <summary>Hero Class: Covert, Instinct, Ranged, Strength or Tech. Null for the
-    /// class-less starter cards (and any card whose class isn't recorded).</summary>
-    public string? Class { get; init; }
+    /// <summary>Hero Class(es): Covert, Instinct, Ranged, Strength and/or Tech.
+    /// Most cards have one; some (Divided cards and a few multi-class cards) have two.
+    /// Empty for the class-less starter cards.</summary>
+    public IReadOnlyList<string> Classes { get; init; } = [];
 
     /// <summary>The resource this card provides: "attack", "recruit", or null (effect-only).</summary>
     public string? Kind { get; init; }

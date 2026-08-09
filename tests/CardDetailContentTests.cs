@@ -50,13 +50,21 @@ public class CardDetailContentTests
         }
 
         [Fact]
-        public void Any_class_is_one_of_the_five_hero_classes()
+        public void Every_class_is_one_of_the_five_hero_classes()
         {
             var classes = new[] { "Covert", "Instinct", "Ranged", "Strength", "Tech" };
             foreach (var deck in CardDetails.Values)
                 foreach (var card in deck)
-                    if (card.Class is not null)
-                        Assert.Contains(card.Class, classes);
+                    foreach (var cls in card.Classes)
+                        Assert.Contains(cls, classes);
+        }
+
+        [Fact]
+        public void No_card_declares_more_than_two_classes()
+        {
+            foreach (var deck in CardDetails.Values)
+                foreach (var card in deck)
+                    Assert.True(card.Classes.Count <= 2, $"{card.Name} has {card.Classes.Count} classes");
         }
     }
 }

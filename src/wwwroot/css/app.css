@@ -470,6 +470,10 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .tag--hero { display: inline-flex; align-items: center; gap: 6px; padding-left: 6px; }
 .tag--hero .team-icon { width: 16px; height: 16px; }
 
+/* Keyword chips that link to the glossary. */
+a.tag { text-decoration: none; cursor: pointer; transition: border-color 0.15s, color 0.15s; }
+a.tag:hover, a.tag:focus-visible { border-color: var(--gold); color: #fff; }
+
 .pill {
     flex: 0 0 auto;
     font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
@@ -667,7 +671,10 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .deck__effect { color: var(--muted); }
 .deck__effect strong { color: #fff; font-weight: 900; }
 .deck__kws { margin: 0 0 2px 26px; }
-.deck__cls { width: 18px; height: 18px; flex: none; object-fit: contain; }
+/* Class column: one icon normally, stacked vertically for dual-class cards so the
+   row grows taller as needed rather than pushing icons into the text. */
+.deck__cls { width: 18px; flex: none; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.deck__cls img { width: 18px; height: 18px; object-fit: contain; display: block; }
 .deck__copies { color: var(--muted); font-weight: 800; font-variant-numeric: tabular-nums; flex: none; }
 .deck__name { color: var(--text); font-weight: 600; flex: 1 1 auto; min-width: 0; }
 

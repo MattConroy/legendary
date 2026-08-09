@@ -2,6 +2,7 @@
 @inject GameStateService State
 @inject IKeywordRepository Keywords
 @inject ICardDetailRepository CardDetails
+@inject NavigationManager Nav
 
 <PageTitle>Legendary — Cards</PageTitle>
 
@@ -19,16 +20,16 @@
             @foreach (var (value, label) in Categories)
             {
                 <button class="tab @(_category == value ? "tab--active" : "")" role="tab"
-                        aria-selected="@(_category == value)" @onclick="() => _category = value">
+                        aria-selected="@(_category == value)" @onclick="() => SetCategory(value)">
                     @label
                 </button>
             }
         </div>
         <div class="kw-controls">
             <input type="search" class="kw-search" placeholder="Search cards…"
-                   value="@_search" @oninput="e => _search = e.Value?.ToString() ?? string.Empty"
+                   value="@_search" @oninput="e => SetSearch(e.Value?.ToString() ?? string.Empty)"
                    aria-label="Search cards" />
-            <select class="kw-filter" value="@_setFilter" @onchange="e => _setFilter = e.Value?.ToString() ?? string.Empty"
+            <select class="kw-filter" value="@_setFilter" @onchange="e => SetSetFilter(e.Value?.ToString() ?? string.Empty)"
                     aria-label="Filter by set">
                 <option value="">All sets</option>
                 @foreach (var s in State.SortedSets)
@@ -92,14 +93,12 @@
                                 {
                                     <li class="deck__card">
                                         <div class="deck__row">
-                                            @if (d.Class is { } cls)
-                                            {
-                                                <img class="deck__cls" src="classes/@(cls.ToLowerInvariant()).png" alt="@cls" title="@cls" />
-                                            }
-                                            else
-                                            {
-                                                <span class="deck__cls"></span>
-                                            }
+                                            <span class="deck__cls">
+                                                @foreach (var cls in d.Classes)
+                                                {
+                                                    <img src="classes/@(cls.ToLowerInvariant()).png" alt="@cls" title="@cls" />
+                                                }
+                                            </span>
                                             <span class="deck__copies">@d.Copies×</span>
                                             <span class="deck__name">@d.Name</span>
                                             @if (d.Kind is not null && d.Value is not null)
@@ -126,7 +125,7 @@
                                             <ul class="tag-list deck__kws">
                                                 @foreach (var kw in d.Keywords)
                                                 {
-                                                    <li class="tag">@kw</li>
+                                                    <li><a class="tag" href="keywords?q=@Uri.EscapeDataString(KwBase(kw))">@kw</a></li>
                                                 }
                                             </ul>
                                         }
@@ -139,7 +138,7 @@
                             <ul class="tag-list cat__kws">
                                 @foreach (var k in kws)
                                 {
-                                    <li class="tag" title="@k.Summary">@k.Name</li>
+                                    <li><a class="tag" href="keywords?q=@Uri.EscapeDataString(k.Name)" title="@k.Summary">@k.Name</a></li>
                                 }
                             </ul>
                         }
@@ -177,7 +176,48 @@
         _all = State.AllSets
             .SelectMany(set => set.AllCards.Select(c => new Entry(c, set.Name, set.Id)))
             .ToList();
+
+        // Restore filter state from the URL so leaving and coming back keeps your place.
+        var q = ParseQuery(Nav.Uri);
+        if (q.TryGetValue("cat", out var cat) && Enum.TryParse<CardCategory>(cat, out _)) _category = cat;
+        if (q.TryGetValue("set", out var set)) _setFilter = set;
+        if (q.TryGetValue("q", out var search)) _search = search;
     }
+
+    private void SetCategory(string value) { _category = value; SyncUrl(); }
+    private void SetSearch(string value) { _search = value; SyncUrl(); }
+    private void SetSetFilter(string value) { _setFilter = value; SyncUrl(); }
+
+    // Mirror the current filters into the URL (replacing history, so typing doesn't
+    // spam the back stack) so the state survives navigating away and back.
+    private void SyncUrl()
+    {
+        var uri = Nav.GetUriWithQueryParameters(new Dictionary<string, object?>
+        {
+            ["cat"] = _category == nameof(CardCategory.Hero) ? null : _category,
+            ["set"] = string.IsNullOrEmpty(_setFilter) ? null : _setFilter,
+            ["q"] = string.IsNullOrEmpty(_search) ? null : _search,
+        });
+        Nav.NavigateTo(uri, forceLoad: false, replace: true);
+    }
+
+    private static Dictionary<string, string> ParseQuery(string uri)
+    {
+        var result = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        var i = uri.IndexOf('?');
+        if (i < 0) return result;
+        foreach (var pair in uri[(i + 1)..].Split('&', StringSplitOptions.RemoveEmptyEntries))
+        {
+            var kv = pair.Split('=', 2);
+            result[Uri.UnescapeDataString(kv[0])] = kv.Length > 1 ? Uri.UnescapeDataString(kv[1]) : string.Empty;
+        }
+        return result;
+    }
+
+    // A card's keyword token can carry a value (e.g. "Focus 3"); link to the base
+    // keyword ("Focus") so the glossary search finds it.
+    private static string KwBase(string keyword) =>
+        System.Text.RegularExpressions.Regex.Replace(keyword, @"\s+\d+$", "");
 
     private List<Entry> Filtered()
     {
