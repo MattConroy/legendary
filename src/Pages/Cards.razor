@@ -119,7 +119,7 @@
                                         </div>
                                         @if (!string.IsNullOrEmpty(d.Effect))
                                         {
-                                            <p class="deck__effect">@d.Effect</p>
+                                            <p class="deck__effect">@EffectHtml(d.Effect)</p>
                                         }
                                         @if (d.Keywords.Count > 0)
                                         {
@@ -212,6 +212,88 @@
     }
 
     private static string Resource(string kind) => kind == "recruit" ? "Recruit" : "Attack";
+
+    // Inline-icon substitution for effect notes: swap resource words, class names
+    // and team names for their icons. Longest tokens first so multi-word names win.
+    private static readonly (string Token, string Kind, string Val)[] IconTokens = BuildIconTokens();
+
+    private static (string, string, string)[] BuildIconTokens()
+    {
+        string[] teams =
+        {
+            "Guardians of the Multiverse", "Guardians of the Galaxy", "Marvel Knights", "S.H.I.E.L.D.",
+            "Fantastic Four", "Sinister Six", "Crime Syndicate", "Foes of Asgard", "Heroes of Asgard",
+            "Heroes of Wakanda", "New Warriors", "Mercs for Money", "Spider-Friends", "X-Force", "X-Factor",
+            "X-Men", "Avengers", "Brotherhood", "Illuminati", "Cabal", "HYDRA", "Champions", "Warbound",
+            "Venomverse", "Inhumans",
+        };
+        string[] classes = { "Covert", "Instinct", "Ranged", "Strength", "Tech" };
+        var list = new List<(string, string, string)>();
+        foreach (var t in teams) list.Add((t, "team", TeamSlug(t)));
+        foreach (var c in classes) list.Add((c, "class", c.ToLowerInvariant()));
+        list.Add(("Attack", "attack", ""));
+        list.Add(("Recruit", "recruit", ""));
+        return list.OrderByDescending(x => x.Item1.Length).ToArray();
+    }
+
+    private static MarkupString EffectHtml(string s)
+    {
+        var html = new System.Text.StringBuilder();
+        var text = new System.Text.StringBuilder();
+        bool Boundary(int i) => i < 0 || i >= s.Length || !char.IsLetter(s[i]);
+        void Flush() { if (text.Length > 0) { html.Append(System.Net.WebUtility.HtmlEncode(text.ToString())); text.Clear(); } }
+
+        for (var i = 0; i < s.Length;)
+        {
+            var matched = false;
+            if (Boundary(i - 1))
+            {
+                foreach (var (tok, kind, val) in IconTokens)
+                {
+                    if (i + tok.Length <= s.Length && string.CompareOrdinal(s, i, tok, 0, tok.Length) == 0 && Boundary(i + tok.Length))
+                    {
+                        Flush();
+                        var src = kind switch { "team" => $"teams/{val}.png", "class" => $"classes/{val}.png", _ => $"classes/{kind}.svg" };
+                        html.Append($"<img class=\"ic\" src=\"{src}\" alt=\"{tok}\" title=\"{tok}\" />");
+                        i += tok.Length; matched = true; break;
+                    }
+                }
+            }
+            if (!matched) { text.Append(s[i]); i++; }
+        }
+        Flush();
+        return new MarkupString(html.ToString());
+    }
+
+    private static string TeamSlug(string team) => team switch
+    {
+        "Avengers" => "avengers",
+        "Fantastic Four" => "fantastic-four",
+        "Guardians of the Galaxy" => "guardians-of-the-galaxy",
+        "Guardians of the Multiverse" => "guardians-of-the-multiverse",
+        "X-Men" => "x-men",
+        "X-Force" => "x-force",
+        "X-Factor" => "x-factor",
+        "Marvel Knights" => "marvel-knights",
+        "S.H.I.E.L.D." => "shield",
+        "Spider-Friends" => "spider-friends",
+        "Sinister Six" => "sinister-six",
+        "Brotherhood" => "brotherhood",
+        "Foes of Asgard" => "foes-of-asgard",
+        "Crime Syndicate" => "crime-syndicate",
+        "Illuminati" => "illuminati",
+        "Cabal" => "cabal",
+        "HYDRA" => "hydra",
+        "New Warriors" => "new-warriors",
+        "Mercs for Money" => "mercs-for-money",
+        "Champions" => "champions",
+        "Warbound" => "warbound",
+        "Venomverse" => "venomverse",
+        "Heroes of Asgard" => "heroes-of-asgard",
+        "Inhumans" => "inhumans",
+        "Heroes of Wakanda" => "heroes-of-wakanda",
+        _ => "unaffiliated",
+    };
 
     private static string ValText(CardDetail d) => $"{d.Value}{(d.Variable ? "+" : "")}";
 

@@ -662,7 +662,8 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
     border-radius: 8px; padding: 5px 10px; font-size: 0.85rem;
 }
 .deck__row { display: flex; align-items: center; gap: 8px; }
-.deck__effect { margin: 0 0 0 26px; color: var(--text); font-size: 0.8rem; line-height: 1.35; }
+.deck__effect { margin: 0 0 0 26px; color: var(--text); font-size: 0.8rem; line-height: 1.5; }
+.deck__effect .ic { height: 1.15em; width: auto; vertical-align: -0.22em; margin: 0 1px; }
 .deck__kws { margin: 0 0 2px 26px; }
 .deck__cls { width: 18px; height: 18px; flex: none; object-fit: contain; }
 .deck__copies { color: var(--muted); font-weight: 800; font-variant-numeric: tabular-nums; flex: none; }
