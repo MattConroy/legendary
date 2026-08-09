@@ -78,60 +78,10 @@
                         </div>
                         @if (open && deck.Count > 0)
                         {
-                            <ul class="deck">
-                                @foreach (var d in deck)
-                                {
-                                    <li class="deck__card">
-                                        <div class="deck__row">
-                                            <span class="deck__cls">
-                                                @foreach (var cls in d.Classes)
-                                                {
-                                                    <img src="classes/@(cls.ToLowerInvariant()).png" alt="@cls" title="@cls" />
-                                                }
-                                            </span>
-                                            <span class="deck__copies">@d.Copies×</span>
-                                            <span class="deck__name">@d.Name</span>
-                                            @if (d.Kind is not null && d.Value is not null)
-                                            {
-                                                <span class="stat stat--@d.Kind" title="@ValText(d) @Resource(d.Kind)">
-                                                    <img class="stat__icon" src="classes/@(d.Kind).svg" alt="@Resource(d.Kind)" />
-                                                    <span class="stat__num">@ValText(d)</span>
-                                                </span>
-                                            }
-                                            @if (d.Cost is { } cost)
-                                            {
-                                                <span class="cost" title="Cost @cost">
-                                                    <img class="cost__icon" src="classes/cost.svg" alt="Cost" />
-                                                    <span class="cost__num">@cost</span>
-                                                </span>
-                                            }
-                                        </div>
-                                        @if (!string.IsNullOrEmpty(d.Effect))
-                                        {
-                                            <p class="deck__effect">@EffectHtml(d.Effect)</p>
-                                        }
-                                        @if (d.Keywords.Count > 0)
-                                        {
-                                            <ul class="tag-list deck__kws">
-                                                @foreach (var kw in d.Keywords)
-                                                {
-                                                    <li><a class="tag" href="keywords?q=@Uri.EscapeDataString(KwBase(kw))">@kw</a></li>
-                                                }
-                                            </ul>
-                                        }
-                                    </li>
-                                }
-                            </ul>
+                            <CardDeck Deck="deck" />
                         }
-                        @if (kws.Count > 0)
-                        {
-                            <ul class="tag-list cat__kws">
-                                @foreach (var k in kws)
-                                {
-                                    <li><a class="tag" href="keywords?q=@Uri.EscapeDataString(k.Name)" title="@k.Summary">@k.Name</a></li>
-                                }
-                            </ul>
-                        }
+                        <KeywordChips Class="cat__kws"
+                                      Items="kws.Select(k => (k.Name, k.Name, (string?)k.Summary))" />
                     </li>
                 </Virtualize>
             </ul>
@@ -204,11 +154,6 @@
         return result;
     }
 
-    // A card's keyword token can carry a value (e.g. "Focus 3"); link to the base
-    // keyword ("Focus") so the glossary search finds it.
-    private static string KwBase(string keyword) =>
-        System.Text.RegularExpressions.Regex.Replace(keyword, @"\s+\d+$", "");
-
     private List<Entry> Filtered()
     {
         var q = _search.Trim();
@@ -240,42 +185,6 @@
     {
         if (deckCount > 0 && e.Key is "Enter" or " ") Toggle(id);
     }
-
-    private static string Resource(string kind) => kind == "recruit" ? "Recruit" : "Attack";
-
-    // Effect notes carry explicit {slug} tokens for icons (e.g. "{avengers}", "+3 {attack}").
-    // Only those tokens are swapped for icons; signed numbers are bolded.
-    private static readonly System.Text.RegularExpressions.Regex TokenRe = new(@"\{([a-z0-9-]+)\}");
-    private static readonly System.Text.RegularExpressions.Regex NumRe = new(@"([+\-]\d+)");
-    private static readonly HashSet<string> ResourceSlugs = new() { "attack", "recruit", "cost" };
-    private static readonly HashSet<string> ClassSlugs = new() { "covert", "instinct", "ranged", "strength", "tech" };
-
-    private static MarkupString EffectHtml(string s)
-    {
-        var html = new System.Text.StringBuilder();
-        var last = 0;
-        foreach (System.Text.RegularExpressions.Match m in TokenRe.Matches(s))
-        {
-            if (m.Index > last) html.Append(Boldify(s[last..m.Index]));
-            var slug = m.Groups[1].Value;
-            var src = ResourceSlugs.Contains(slug) ? $"classes/{slug}.svg"
-                : ClassSlugs.Contains(slug) ? $"classes/{slug}.png"
-                : $"teams/{slug}.png";
-            html.Append($"<img class=\"ic\" src=\"{src}\" alt=\"{slug}\" />");
-            last = m.Index + m.Length;
-        }
-        if (last < s.Length) html.Append(Boldify(s[last..]));
-        return new MarkupString(html.ToString());
-    }
-
-    // Encode text, bold signed numbers (+4, -2) so bonuses stand out, and turn
-    // the card's own line breaks (\n) into <br> so multi-effect cards read line
-    // by line just like the printed card.
-    private static string Boldify(string t) =>
-        NumRe.Replace(System.Net.WebUtility.HtmlEncode(t), "<strong>$1</strong>")
-             .Replace("\n", "<br>");
-
-    private static string ValText(CardDetail d) => $"{d.Value}{(d.Variable ? "+" : "")}";
 
     private readonly record struct Entry(GameCard Card, string SetName, string SetId);
 }

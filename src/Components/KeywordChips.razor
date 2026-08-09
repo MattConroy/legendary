@@ -1,0 +1,21 @@
+@* A row of keyword chips that link to the glossary (Keywords page) via ?q=. Used
+   for a card's printed keyword tokens and for the keywords-in-play on a card. *@
+
+@if (Items.Any())
+{
+    <ul class="tag-list @Class">
+        @foreach (var (label, query, title) in Items)
+        {
+            <li><a class="tag" href="keywords?q=@Uri.EscapeDataString(query)" title="@title">@label</a></li>
+        }
+    </ul>
+}
+
+@code {
+    /// <summary>Each chip: the visible label, the glossary query it links to, and an
+    /// optional tooltip.</summary>
+    [Parameter, EditorRequired] public IEnumerable<(string Label, string Query, string? Title)> Items { get; set; } = [];
+
+    /// <summary>Extra class on the list for placement (e.g. "deck__kws", "cat__kws").</summary>
+    [Parameter] public string? Class { get; set; }
+}
