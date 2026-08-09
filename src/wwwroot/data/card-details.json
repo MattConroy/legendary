@@ -6121,6 +6121,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
+   "effect": "KO all Wounds you gained this turn.",
    "keywords": [
     "Coordinate"
    ]
@@ -6132,7 +6133,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{instinct}: Danger Sense 2; if it revealed any Master Strikes, KO them, then you may KO a card from hand or discard."
   },
   {
    "name": "Loyal Friend",
@@ -6162,7 +6164,8 @@
    "name": "Advanced Targeting System",
    "copies": 5,
    "class": "Covert",
-   "cost": 2
+   "cost": 2,
+   "effect": "Reveal your top card; draw it if it costs 2 or less. {covert}: draw a card."
   },
   {
    "name": "Recon Drone Connection",
@@ -6184,6 +6187,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 2,
+   "effect": "{tech}: choose two Villains in adjacent city spaces; each gets -1 Attack this turn.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -6196,6 +6200,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "+3 {attack}, only against the Mastermind or Villains on the Rooftops or Streets.",
    "keywords": [
     "Wall-Crawl",
     "Coordinate"
@@ -6209,7 +6214,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "You may choose a Villain or Mastermind; you can fight it using only Recruit this turn."
   },
   {
    "name": "Ned",
@@ -6219,6 +6225,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "{covert}: +2 {recruit}.",
    "keywords": [
     "Coordinate"
    ]
@@ -6229,7 +6236,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "When you Coordinate a card to another player, you may reveal this to draw two cards instead of one."
   },
   {
    "name": "May Parker",
@@ -6238,6 +6246,7 @@
    "kind": "recruit",
    "value": 5,
    "cost": 7,
+   "effect": "{spider-friends}: each Villain gets -2 Attack this turn; the next time you fight the Mastermind this turn, it gets -2 Attack.",
    "keywords": [
     "Coordinate"
    ]
@@ -6252,6 +6261,7 @@
    "value": 2,
    "variable": true,
    "cost": 2,
+   "effect": "{instinct}: Danger Sense 1; if it revealed a Villain, you may fight it.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -6261,6 +6271,7 @@
    "copies": 5,
    "class": "Covert",
    "cost": 2,
+   "effect": "Danger Sense 2. Reveal your top card; draw it if it costs 2 or less.",
    "keywords": [
     "Danger Sense 2"
    ]
@@ -6273,6 +6284,7 @@
    "value": 2,
    "variable": true,
    "cost": 2,
+   "effect": "{tech}: Danger Sense 1; if it revealed a Bystander, rescue it.",
    "keywords": [
     "Wall-Crawl"
    ]
@@ -6285,6 +6297,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "Danger Sense 4; if it revealed any Scheme Twists, you may shuffle the Villain Deck.",
    "keywords": [
     "Wall-Crawl",
     "Coordinate",
@@ -6312,6 +6325,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "{tech}: Danger Sense 2.",
    "keywords": [
     "Coordinate"
    ]
@@ -6323,7 +6337,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{avengers}: Danger Sense 1; if it revealed a Villain, Villains from that group get -1 Attack this turn."
   },
   {
    "name": "As Usual, I Did All the Work",
@@ -6332,6 +6347,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 7,
+   "effect": "If another player accepts this Coordinate, at end of turn move all cards that entered their Victory pile this turn into yours.",
    "keywords": [
     "Coordinate"
    ]
@@ -6346,6 +6362,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "{covert}: Versatile 3 instead of Versatile 1.",
    "keywords": [
     "Versatile 1"
    ]
@@ -6356,7 +6373,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Reveal the top Bystander Deck card; if a Special Bystander, rescue it, otherwise bottom it."
   },
   {
    "name": "I Heard Keywords Are Powerful",
@@ -6365,6 +6383,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 6,
+   "effect": "{instinct}: draw a card.",
    "keywords": [
     "Size-Changing",
     "Cheering Crowds"
@@ -6377,6 +6396,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 7,
+   "effect": "Demolish each other player; draw a card per player who discards.",
    "keywords": [
     "Demolish"
    ]
@@ -6388,6 +6408,7 @@
    "copies": 5,
    "class": "Covert",
    "cost": 3,
+   "effect": "Draw a card. {covert}: rescue a Bystander.",
    "keywords": [
     "Size-Changing"
    ]
@@ -6412,6 +6433,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 6,
+   "effect": "{champions}: you may KO a card from hand or discard.",
    "keywords": [
     "Size-Changing",
     "Cheering Crowds"
@@ -6441,6 +6463,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "{champions}: rescue a Bystander.",
    "keywords": [
     "Versatile 1"
    ]
@@ -6465,7 +6488,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{ranged}: Versatile 3."
   },
   {
    "name": "Growing Nova Force",
@@ -6475,6 +6499,7 @@
    "value": 0,
    "variable": true,
    "cost": 9,
+   "effect": "+1 {recruit} per other {recruit}-icon card and +1 {attack} per other {attack}-icon card played this turn.",
    "keywords": [
     "Size-Changing"
    ]
@@ -6488,6 +6513,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "{strength}: the first time you defeat a Villain this turn, rescue a Bystander.",
    "keywords": [
     "Size-Changing"
    ]
@@ -6499,6 +6525,7 @@
    "kind": "recruit",
    "value": 1,
    "cost": 4,
+   "effect": "Draw a card.",
    "keywords": [
     "Size-Changing",
     "Cheering Crowds"
@@ -6512,6 +6539,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
+   "effect": "If you have a Wound in hand or discard, KO it for +2 {attack}; otherwise gain a Wound.",
    "keywords": [
     "Size-Changing"
    ]
@@ -6524,6 +6552,7 @@
    "value": 5,
    "variable": true,
    "cost": 9,
+   "effect": "+1 {attack} per extra card drawn this turn.",
    "keywords": [
     "Size-Changing"
    ]
@@ -6536,7 +6565,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{tech}: rescue a Bystander each time you recruit a Hero from the HQ this turn."
   },
   {
    "name": "Expanding Neural Network",
@@ -6545,6 +6575,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "{tech}: draw an extra card when you draw your next hand.",
    "keywords": [
     "Size-Changing"
    ]
@@ -6569,6 +6600,7 @@
    "kind": "recruit",
    "value": 5,
    "cost": 9,
+   "effect": "+2 {attack} each time you recruit a Hero this turn.",
    "keywords": [
     "Size-Changing"
    ]
