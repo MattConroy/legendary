@@ -66,10 +66,7 @@
                     <span class="single__name">@setup.Mastermind.Card.Name</span>
                     @if ((setup.Mastermind.Card as Mastermind)?.ThreatBand is { } mmBand)
                     {
-                        <span class="tpill tpill--@mmBand.ToString().ToLowerInvariant()"
-                              title="Sets the base threat for this game">
-                            <span class="tpill__value">@mmBand</span>
-                        </span>
+                        <ThreatPill Band="mmBand" Title="Sets the base threat for this game" />
                     }
                 </div>
                 <p class="card__meta">⚔️ Shuffle <strong>@setup.Rule.MasterStrikes Master Strikes</strong> into the Villain Deck.</p>
@@ -88,10 +85,7 @@
                     <span class="single__name">@setup.Scheme.Card.Name</span>
                     @if ((setup.Scheme.Card as Scheme)?.ThreatBand is { } scBand)
                     {
-                        <span class="tpill tpill--@scBand.ToString().ToLowerInvariant()"
-                              title="How much this scheme shifts the overall threat">
-                            <span class="tpill__value">@scBand</span>
-                        </span>
+                        <ThreatPill Band="scBand" Title="How much this scheme shifts the overall threat" />
                     }
                 </div>
                 <p class="card__meta">🌀 Shuffle <strong>@setup.EffectiveTwists Scheme Twists</strong> into the Villain Deck.</p>

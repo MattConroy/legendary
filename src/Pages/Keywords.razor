@@ -19,19 +19,11 @@
     }
     else
     {
-        <div class="kw-controls">
-            <input type="search" class="kw-search" placeholder="Search keywords…"
-                   value="@_search" @oninput="e => SetSearch(e.Value?.ToString() ?? string.Empty)"
-                   aria-label="Search keywords" />
-            <select class="kw-filter" value="@_setFilter" @onchange="e => SetSetFilter(e.Value?.ToString() ?? string.Empty)"
-                    aria-label="Filter by expansion">
-                <option value="">All expansions</option>
-                @foreach (var s in SetsWithKeywords)
-                {
-                    <option value="@s.Id">@s.Name</option>
-                }
-            </select>
-        </div>
+        <FilterBar Search="_search" SearchChanged="SetSearch"
+                   SetFilter="_setFilter" SetFilterChanged="SetSetFilter"
+                   Sets="SetsWithKeywords.Select(s => (s.Id, s.Name))"
+                   AllLabel="All expansions" SearchPlaceholder="Search keywords…"
+                   SearchLabel="Search keywords" FilterLabel="Filter by expansion" />
 
         var results = Filtered().ToList();
         <p class="muted small kw-count">@results.Count keyword@(results.Count == 1 ? "" : "s")</p>

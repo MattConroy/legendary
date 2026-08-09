@@ -544,16 +544,6 @@ a.tag:hover, a.tag:focus-visible { border-color: var(--gold); color: #fff; }
 #blazor-error-ui .reload { color: #fff; text-decoration: underline; }
 
 /* ---------- Keywords page ---------- */
-.kw-controls {
-    display: flex; gap: 10px; margin: 4px 0 6px; flex-wrap: wrap;
-}
-.kw-search, .kw-filter {
-    background: var(--surface); border: 1px solid var(--border); color: var(--text);
-    border-radius: 10px; padding: 10px 12px; font: inherit;
-}
-.kw-search { flex: 1 1 180px; min-width: 0; }
-.kw-filter { flex: 0 1 auto; max-width: 100%; }
-.kw-search:focus, .kw-filter:focus { outline: none; border-color: var(--gold); }
 .kw-count { margin: 2px 0 12px; }
 
 .kw-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
@@ -613,18 +603,6 @@ a.tag:hover, a.tag:focus-visible { border-color: var(--gold); color: #fff; }
 .threat__score { font-size: 1.25rem; font-weight: 900; color: #fff; line-height: 1; }
 .threat__max { font-size: 0.8rem; color: var(--muted); font-weight: 700; }
 .threat__band { margin-left: auto; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.82rem; }
-
-/* Per-card threat pill (Mastermind anchor level, Scheme ± modifier). */
-.tpill {
-    display: inline-flex; align-items: center; gap: 6px; align-self: flex-start;
-    padding: 2px 9px; border-radius: 999px; margin-top: 2px;
-    border: 1px solid var(--accent); background: var(--tpill-bg); font-weight: 800;
-}
-.tpill--easy   { --accent: #35c26b; --tpill-bg: rgba(53, 194, 107, 0.12); }
-.tpill--medium { --accent: var(--gold); --tpill-bg: rgba(240, 180, 41, 0.12); }
-.tpill--hard   { --accent: var(--marvel); --tpill-bg: rgba(230, 36, 41, 0.13); }
-.tpill__label { text-transform: uppercase; letter-spacing: 1px; color: var(--muted); font-size: 0.6rem; }
-.tpill__value { color: var(--accent); text-transform: uppercase; letter-spacing: 0.3px; font-size: 0.74rem; }
 
 /* Card catalogue (Cards page) */
 .tabs { display: flex; gap: 4px; overflow-x: auto; margin-bottom: 8px; -webkit-overflow-scrolling: touch; }

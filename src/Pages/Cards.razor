@@ -25,19 +25,11 @@
                 </button>
             }
         </div>
-        <div class="kw-controls">
-            <input type="search" class="kw-search" placeholder="Search cards…"
-                   value="@_search" @oninput="e => SetSearch(e.Value?.ToString() ?? string.Empty)"
-                   aria-label="Search cards" />
-            <select class="kw-filter" value="@_setFilter" @onchange="e => SetSetFilter(e.Value?.ToString() ?? string.Empty)"
-                    aria-label="Filter by set">
-                <option value="">All sets</option>
-                @foreach (var s in State.SortedSets)
-                {
-                    <option value="@s.Id">@s.Name</option>
-                }
-            </select>
-        </div>
+        <FilterBar Search="_search" SearchChanged="SetSearch"
+                   SetFilter="_setFilter" SetFilterChanged="SetSetFilter"
+                   Sets="State.SortedSets.Select(s => (s.Id, s.Name))"
+                   AllLabel="All sets" SearchPlaceholder="Search cards…"
+                   SearchLabel="Search cards" FilterLabel="Filter by set" />
 
         var results = Filtered();
         <p class="muted small kw-count">@results.Count card@(results.Count == 1 ? "" : "s")</p>
@@ -80,9 +72,7 @@
                                 <span class="cat__set">@entry.SetName</span>
                                 @if (band is { } b)
                                 {
-                                    <span class="tpill tpill--@b.ToString().ToLowerInvariant()">
-                                        <span class="tpill__value">@b</span>
-                                    </span>
+                                    <ThreatPill Band="b" />
                                 }
                             </div>
                         </div>
