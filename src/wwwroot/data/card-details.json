@@ -10606,7 +10606,8 @@
       "cost": 3,
       "keywords": [
         "Ritual Artifact"
-      ]
+      ],
+      "effect": "Ritual Artifact — if you drew a card, you may discard this for +3 {attack}."
     },
     {
       "name": "Keeper of the Sanctum",
@@ -10614,7 +10615,8 @@
       "class": "Instinct",
       "kind": "attack",
       "value": 2,
-      "cost": 4
+      "cost": 4,
+      "effect": "If you control an Artifact, draw a card."
     },
     {
       "name": "Book Of Cagliostro",
@@ -10623,7 +10625,8 @@
       "cost": 2,
       "keywords": [
         "Ritual Artifact"
-      ]
+      ],
+      "effect": "Ritual Artifact — if you fought a Villain, you may discard this for +{recruit} equal to that enemy's VP."
     },
     {
       "name": "The Eye of Agamotto",
@@ -10632,7 +10635,8 @@
       "cost": 8,
       "keywords": [
         "Ritual Artifact"
-      ]
+      ],
+      "effect": "Ritual Artifact — if you played another Artifact or three other cards of the same Hero Class, you may discard this for +7 {attack}."
     }
   ],
   "dss:clea": [
@@ -10642,7 +10646,8 @@
       "class": "Ranged",
       "kind": "attack",
       "value": 2,
-      "cost": 3
+      "cost": 3,
+      "effect": "Draw a card, then put a card from hand on top of your deck."
     },
     {
       "name": "Demonic Descendant",
@@ -10651,7 +10656,8 @@
       "kind": "recruit",
       "value": 2,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "You may make a Demonic Bargain for +2 {recruit}."
     },
     {
       "name": "Bind the Dark Dimension",
@@ -10659,7 +10665,8 @@
       "class": "Ranged",
       "kind": "attack",
       "value": 3,
-      "cost": 6
+      "cost": 6,
+      "effect": "{ranged}: you may choose a player to make a Demonic Bargain to KO up to one Hero of their choice from their hand or discard."
     },
     {
       "name": "The Purple Gem",
@@ -10668,7 +10675,8 @@
       "cost": 7,
       "keywords": [
         "Ritual Artifact"
-      ]
+      ],
+      "effect": "Ritual Artifact — if any cards were revealed, looked at, or discarded from any deck, you may discard this for +6 {attack} (drawing or playing doesn't count)."
     }
   ],
   "dss:doctor-voodoo": [
@@ -10678,7 +10686,8 @@
       "class": "Covert",
       "kind": "recruit",
       "value": 2,
-      "cost": 3
+      "cost": 3,
+      "effect": "You may discard an Artifact you control or three cards from hand to KO a card from hand or discard."
     },
     {
       "name": "Medallion of Many Loas",
@@ -10687,7 +10696,8 @@
       "cost": 4,
       "keywords": [
         "Ritual Artifact"
-      ]
+      ],
+      "effect": "Ritual Artifact — if you have at least three Hero Classes, you may discard this for +1 {attack} per Hero Class you have (including this one)."
     },
     {
       "name": "Staff of Legba",
@@ -10696,7 +10706,8 @@
       "cost": 6,
       "keywords": [
         "Ritual Artifact"
-      ]
+      ],
+      "effect": "Ritual Artifact — if you recruited a Hero, you may discard this for +{attack} equal to that Hero's cost."
     },
     {
       "name": "Possessed by Brother’s Spirit",
@@ -10705,7 +10716,8 @@
       "kind": "recruit",
       "value": 0,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "The first time one of your Heroes (in play, deck, or discard) is KO'd this turn, +4 {recruit} or +4 {attack}."
     }
   ],
   "dss:the-ancient-one": [
@@ -10715,13 +10727,15 @@
       "class": "Covert",
       "kind": "recruit",
       "value": 2,
-      "cost": 3
+      "cost": 3,
+      "effect": "You may have a Villain from the city enter the Astral Plane."
     },
     {
       "name": "Teachings of Kamar-Taj",
       "copies": 5,
       "class": "Instinct",
-      "cost": 5
+      "cost": 5,
+      "effect": "Draw two cards."
     },
     {
       "name": "War of the Mind",
@@ -10730,7 +10744,8 @@
       "kind": "recruit",
       "value": 3,
       "variable": true,
-      "cost": 6
+      "cost": 6,
+      "effect": "You may fight the Mastermind using Recruit instead of Attack this turn. {covert}: +3 {recruit}."
     },
     {
       "name": "The Orb of Agamotto",
@@ -10739,7 +10754,8 @@
       "cost": 8,
       "keywords": [
         "Ritual Artifact"
-      ]
+      ],
+      "effect": "Ritual Artifact — if you fought a Villain or Mastermind, you may set this aside to reveal the top four cards of your deck: KO up to one, take two into your hand, and put the rest back on top in any order; then discard it."
     }
   ],
   "dss:the-vishanti": [
@@ -10749,7 +10765,8 @@
       "class": "Strength",
       "kind": "recruit",
       "value": 2,
-      "cost": 3
+      "cost": 3,
+      "effect": "You may KO a Wound from hand or discard to draw a card."
     },
     {
       "name": "Hoggoth",
@@ -10758,7 +10775,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "You may make a Demonic Bargain for +2 {attack}."
     },
     {
       "name": "Agamotto",
@@ -10766,7 +10784,8 @@
       "class": "Ranged",
       "kind": "attack",
       "value": 2,
-      "cost": 4
+      "cost": 4,
+      "effect": "Reveal the top card of your deck; discard it or put it back. {ranged}: you may choose a player to make a Demonic Bargain to draw two extra cards at end of turn."
     },
     {
       "name": "The Book of the Vishanti",
@@ -10775,7 +10794,8 @@
       "cost": 7,
       "keywords": [
         "Ritual Artifact"
-      ]
+      ],
+      "effect": "Ritual Artifact — if any player gained a Wound, you may set this aside to KO up to one Wound from any player's discard, then draw three cards; then discard it. Usable on any player's turn."
     }
   ],
   "bw:black-widow": [
