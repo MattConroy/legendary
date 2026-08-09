@@ -6,10 +6,10 @@
     {
         <li class="deck__card">
             <div class="deck__row">
-                <span class="deck__cls">
-                    @foreach (var cls in d.Classes)
+                <span class="deck__classes">
+                    @foreach (var heroClass in d.Classes)
                     {
-                        <img src="classes/@(cls.ToLowerInvariant()).png" alt="@cls" title="@cls" />
+                        <img src="classes/@(heroClass.ToLowerInvariant()).png" alt="@heroClass" title="@heroClass" />
                     }
                 </span>
                 <span class="deck__copies">@d.Copies×</span>
@@ -33,7 +33,7 @@
             {
                 <p class="deck__effect">@EffectHtml(d.Effect)</p>
             }
-            <KeywordChips Class="deck__kws" Items="d.Keywords.Select(kw => (kw, KwBase(kw), (string?)null))" />
+            <KeywordChips Class="deck__keywords" Items="d.Keywords.Select(kw => (kw, KwBase(kw), (string?)null))" />
         </li>
     }
 </ul>
@@ -68,7 +68,7 @@
             var src = ResourceSlugs.Contains(slug) ? $"classes/{slug}.svg"
                 : ClassSlugs.Contains(slug) ? $"classes/{slug}.png"
                 : $"teams/{slug}.png";
-            html.Append($"<img class=\"ic\" src=\"{src}\" alt=\"{slug}\" />");
+            html.Append($"<img class=\"effect-icon\" src=\"{src}\" alt=\"{slug}\" />");
             last = m.Index + m.Length;
         }
         if (last < s.Length) html.Append(Boldify(s[last..]));

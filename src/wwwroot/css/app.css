@@ -544,42 +544,42 @@ a.tag:hover, a.tag:focus-visible { border-color: var(--gold); color: #fff; }
 #blazor-error-ui .reload { color: #fff; text-decoration: underline; }
 
 /* ---------- Keywords page ---------- */
-.kw-count { margin: 2px 0 12px; }
+.result-count { margin: 2px 0 12px; }
 
-.kw-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-.kw {
+.keyword-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.keyword {
     background: var(--surface); border: 1px solid var(--border);
     border-left: 3px solid var(--gold); border-radius: 12px; padding: 12px 14px;
 }
-.kw__name { font-weight: 800; color: #fff; font-size: 1.02rem; }
-.kw__def { margin: 4px 0 8px; color: #d7d7de; line-height: 1.5; font-size: 0.9rem; }
-.kw__sets { margin-top: 8px; }
-.kw__set { font-size: 0.7rem; color: var(--muted); }
+.keyword__name { font-weight: 800; color: #fff; font-size: 1.02rem; }
+.keyword__def { margin: 4px 0 8px; color: #d7d7de; line-height: 1.5; font-size: 0.9rem; }
+.keyword__sets { margin-top: 8px; }
+.keyword__set { font-size: 0.7rem; color: var(--muted); }
 
-.kw__rules { margin: 0 0 8px; }
-.kw__rules > summary {
+.keyword__rules { margin: 0 0 8px; }
+.keyword__rules > summary {
     cursor: pointer; color: var(--gold); font-size: 0.78rem; font-weight: 700;
     list-style: none; display: inline-flex; align-items: center; gap: 4px; user-select: none;
 }
-.kw__rules > summary::-webkit-details-marker { display: none; }
-.kw__rules > summary::before { content: "▸"; font-size: 0.7rem; transition: transform 0.15s ease; }
-.kw__rules[open] > summary::before { transform: rotate(90deg); }
-.kw__rules-list {
+.keyword__rules > summary::-webkit-details-marker { display: none; }
+.keyword__rules > summary::before { content: "▸"; font-size: 0.7rem; transition: transform 0.15s ease; }
+.keyword__rules[open] > summary::before { transform: rotate(90deg); }
+.keyword__rules-list {
     list-style: none; margin: 8px 0 2px; padding: 8px 0 0;
     border-top: 1px dashed var(--border);
     display: flex; flex-direction: column; gap: 6px;
 }
-.kw__rules-list li { color: #c7c7d0; font-size: 0.84rem; line-height: 1.5; }
+.keyword__rules-list li { color: #c7c7d0; font-size: 0.84rem; line-height: 1.5; }
 
 /* ---------- Keywords in play (Setup results) ---------- */
-.kw-play__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-.kw-play__item {
+.keywords-in-play__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.keywords-in-play__item {
     display: flex; flex-direction: column; gap: 1px;
     padding-bottom: 8px; border-bottom: 1px dashed var(--border);
 }
-.kw-play__item:last-child { padding-bottom: 0; border-bottom: none; }
-.kw-play__name { font-weight: 800; color: var(--gold); font-size: 0.9rem; }
-.kw-play__def { color: #d0d0d8; font-size: 0.84rem; line-height: 1.45; }
+.keywords-in-play__item:last-child { padding-bottom: 0; border-bottom: none; }
+.keywords-in-play__name { font-weight: 800; color: var(--gold); font-size: 0.9rem; }
+.keywords-in-play__def { color: #d0d0d8; font-size: 0.84rem; line-height: 1.45; }
 
 /* ---------- Difficulty target + threat ---------- */
 .seg { display: flex; gap: 6px; flex: 1; min-width: 0; }
@@ -612,11 +612,11 @@ a.tag:hover, a.tag:focus-visible { border-color: var(--gold); color: #fff; }
     cursor: pointer; white-space: nowrap; font-family: inherit;
 }
 .tab--active { background: var(--marvel); border-color: var(--marvel); color: #fff; }
-.cat-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.card-entry-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 /* Keyword-chip list under a card header (rendered by KeywordChips, so it can't be
    scoped to CardEntry). */
-.cat__kws { margin: 0 12px 10px; }
+.card-entry__keywords { margin: 0 12px 10px; }
 
 /* Keyword-chip lists inside a card (rendered by KeywordChips; margins live here
    because the component is placement-agnostic). */
-.deck__kws { margin: 0 0 2px 26px; }
+.deck__keywords { margin: 0 0 2px 26px; }

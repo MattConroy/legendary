@@ -1,10 +1,10 @@
-.kw-controls {
+.filter-bar {
     display: flex;
     gap: 10px;
     margin: 4px 0 6px;
     flex-wrap: wrap;
 }
-.kw-search, .kw-filter {
+.filter-bar__search, .filter-bar__select {
     background: var(--surface);
     border: 1px solid var(--border);
     color: var(--text);
@@ -14,5 +14,5 @@
 
     &:focus { outline: none; border-color: var(--gold); }
 }
-.kw-search { flex: 1 1 180px; min-width: 0; }
-.kw-filter { flex: 0 1 auto; max-width: 100%; }
+.filter-bar__search { flex: 1 1 180px; min-width: 0; }
+.filter-bar__select { flex: 0 1 auto; max-width: 100%; }

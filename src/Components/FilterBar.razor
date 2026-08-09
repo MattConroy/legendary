@@ -1,11 +1,11 @@
 @* Shared search box + "filter by set/expansion" select used on the Cards and
    Keywords pages. The parent owns the state; this just renders and reports changes. *@
 
-<div class="kw-controls">
-    <input type="search" class="kw-search" placeholder="@SearchPlaceholder"
+<div class="filter-bar">
+    <input type="search" class="filter-bar__search" placeholder="@SearchPlaceholder"
            value="@Search" @oninput="e => SearchChanged.InvokeAsync(e.Value?.ToString() ?? string.Empty)"
            aria-label="@SearchLabel" />
-    <select class="kw-filter" value="@SetFilter"
+    <select class="filter-bar__select" value="@SetFilter"
             @onchange="e => SetFilterChanged.InvokeAsync(e.Value?.ToString() ?? string.Empty)"
             aria-label="@FilterLabel">
         <option value="">@AllLabel</option>

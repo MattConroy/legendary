@@ -1,4 +1,4 @@
-.cat {
+.card-entry {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
@@ -6,16 +6,16 @@
 
     /* The expanded card is highlighted as a whole panel (head + deck), not just
        the top line. */
-    &.cat--open {
+    &.card-entry--open {
         background: var(--surface-2);
         border-color: var(--border-strong, var(--border));
 
         /* an already-open card's head shouldn't re-tint on hover */
-        .cat__head.is-clickable:hover { background: transparent; }
+        .card-entry__head.is-clickable:hover { background: transparent; }
     }
 }
 
-.cat__head {
+.card-entry__head {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -32,17 +32,17 @@
 /* Only real pointers get hover, so a tap on a phone doesn't leave the head stuck
    with a highlight covering just the top line of the panel. */
 @media (hover: hover) and (pointer: fine) {
-    .cat__head.is-clickable:hover { background: var(--surface-2); }
+    .card-entry__head.is-clickable:hover { background: var(--surface-2); }
 }
 
-.cat__main { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.cat__name { font-weight: 800; color: #fff; }
-.cat__set { color: var(--muted); font-size: 0.78rem; }
+.card-entry__main { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.card-entry__name { font-weight: 800; color: #fff; }
+.card-entry__set { color: var(--muted); font-size: 0.78rem; }
 
-.cat__caret {
+.card-entry__caret {
     color: var(--muted);
     transition: transform 0.15s ease;
     margin-top: 2px;
 
-    &.cat__caret--open { transform: rotate(90deg); }
+    &.card-entry__caret--open { transform: rotate(90deg); }
 }

@@ -1,20 +1,20 @@
 @* One row in the card browser: a clickable header (team badge, name, set, threat
    pill) that expands to show the card's deck breakdown and keywords-in-play. *@
 
-<li class="cat @(Open && Deck.Count > 0 ? "cat--open" : "")">
+<li class="card-entry @(Open && Deck.Count > 0 ? "card-entry--open" : "")">
     <div class="@HeadClass" role="@RoleAttr" tabindex="@TabAttr" aria-expanded="@ExpandedAttr"
          @onclick="Toggle" @onkeydown="OnKey">
         @if (Deck.Count > 0)
         {
-            <span class="cat__caret @(Open ? "cat__caret--open" : "")" aria-hidden="true">▸</span>
+            <span class="card-entry__caret @(Open ? "card-entry__caret--open" : "")" aria-hidden="true">▸</span>
         }
-        <div class="cat__main">
+        <div class="card-entry__main">
             @if (Card is Hero hero)
             {
                 <TeamIcon Team="@hero.Team" />
             }
-            <span class="cat__name">@Card.Name</span>
-            <span class="cat__set">@SetName</span>
+            <span class="card-entry__name">@Card.Name</span>
+            <span class="card-entry__set">@SetName</span>
             @if (Band is { } b)
             {
                 <ThreatPill Band="b" />
@@ -25,7 +25,7 @@
     {
         <CardDeck Deck="Deck" />
     }
-    <KeywordChips Class="cat__kws" Items="Kws.Select(k => (k.Name, k.Name, (string?)k.Summary))" />
+    <KeywordChips Class="card-entry__keywords" Items="Kws.Select(k => (k.Name, k.Name, (string?)k.Summary))" />
 </li>
 
 @code {
@@ -37,7 +37,7 @@
     [Parameter] public EventCallback OnToggle { get; set; }
 
     private bool Clickable => Deck.Count > 0;
-    private string HeadClass => Clickable ? "cat__head is-clickable" : "cat__head";
+    private string HeadClass => Clickable ? "card-entry__head is-clickable" : "card-entry__head";
     private string? RoleAttr => Clickable ? "button" : null;
     private string? TabAttr => Clickable ? "0" : null;
     private bool? ExpandedAttr => Clickable ? Open : null;

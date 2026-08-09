@@ -32,7 +32,7 @@
                    SearchLabel="Search cards" FilterLabel="Filter by set" />
 
         var results = Filtered();
-        <p class="muted small kw-count">@results.Count card@(results.Count == 1 ? "" : "s")</p>
+        <p class="muted small result-count">@results.Count card@(results.Count == 1 ? "" : "s")</p>
 
         @if (results.Count == 0)
         {
@@ -40,14 +40,14 @@
         }
         else
         {
-            <ul class="cat-list">
+            <ul class="card-entry-list">
                 <Virtualize Items="results" Context="entry" OverscanCount="6">
                     @{
                         var card = entry.Card;
                         var deck = CardDetails.IsLoaded ? CardDetails.For(card.Id) : [];
-                        var kws = Keywords.IsLoaded ? Keywords.InPlay(new[] { card.Id }) : [];
+                        var keywords = Keywords.IsLoaded ? Keywords.InPlay(new[] { card.Id }) : [];
                     }
-                    <CardEntry Card="card" SetName="@entry.SetName" Deck="deck" Kws="kws"
+                    <CardEntry Card="card" SetName="@entry.SetName" Deck="deck" Kws="keywords"
                                Open="_expanded.Contains(card.Id)"
                                OnToggle="() => Toggle(card.Id)" />
                 </Virtualize>
@@ -85,10 +85,10 @@
             .ToList();
 
         // Restore filter state from the URL so leaving and coming back keeps your place.
-        var q = ParseQuery(Nav.Uri);
-        if (q.TryGetValue("cat", out var cat) && Enum.TryParse<CardCategory>(cat, out _)) _category = cat;
-        if (q.TryGetValue("set", out var set)) _setFilter = set;
-        if (q.TryGetValue("q", out var search)) _search = search;
+        var query = ParseQuery(Nav.Uri);
+        if (query.TryGetValue("category", out var category) && Enum.TryParse<CardCategory>(category, out _)) _category = category;
+        if (query.TryGetValue("set", out var set)) _setFilter = set;
+        if (query.TryGetValue("search", out var search)) _search = search;
     }
 
     private void SetCategory(string value) { _category = value; SyncUrl(); }
@@ -101,9 +101,9 @@
     {
         var uri = Nav.GetUriWithQueryParameters(new Dictionary<string, object?>
         {
-            ["cat"] = _category == nameof(CardCategory.Hero) ? null : _category,
+            ["category"] = _category == nameof(CardCategory.Hero) ? null : _category,
             ["set"] = string.IsNullOrEmpty(_setFilter) ? null : _setFilter,
-            ["q"] = string.IsNullOrEmpty(_search) ? null : _search,
+            ["search"] = string.IsNullOrEmpty(_search) ? null : _search,
         });
         Nav.NavigateTo(uri, forceLoad: false, replace: true);
     }
@@ -126,8 +126,8 @@
         var q = _search.Trim();
         IEnumerable<Entry> items = _all;
 
-        if (Enum.TryParse<CardCategory>(_category, out var cat))
-            items = items.Where(e => e.Card.Category == cat);
+        if (Enum.TryParse<CardCategory>(_category, out var parsed))
+            items = items.Where(e => e.Card.Category == parsed);
         if (_setFilter.Length > 0)
             items = items.Where(e => e.SetId == _setFilter);
         if (q.Length > 0)

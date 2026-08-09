@@ -1,12 +1,12 @@
 /* Per-card threat pill (Mastermind anchor level, Scheme ± modifier). */
-.tpill {
+.threat-pill {
     display: inline-flex; align-items: center; gap: 6px; align-self: flex-start;
     padding: 2px 9px; border-radius: 999px; margin-top: 2px;
-    border: 1px solid var(--accent); background: var(--tpill-bg); font-weight: 800;
+    border: 1px solid var(--accent); background: var(--threat-pill-bg); font-weight: 800;
 
-    &.tpill--easy   { --accent: #35c26b; --tpill-bg: rgba(53, 194, 107, 0.12); }
-    &.tpill--medium { --accent: var(--gold); --tpill-bg: rgba(240, 180, 41, 0.12); }
-    &.tpill--hard   { --accent: var(--marvel); --tpill-bg: rgba(230, 36, 41, 0.13); }
+    &.threat-pill--easy   { --accent: #35c26b; --threat-pill-bg: rgba(53, 194, 107, 0.12); }
+    &.threat-pill--medium { --accent: var(--gold); --threat-pill-bg: rgba(240, 180, 41, 0.12); }
+    &.threat-pill--hard   { --accent: var(--marvel); --threat-pill-bg: rgba(230, 36, 41, 0.13); }
 
-    .tpill__value { color: var(--accent); text-transform: uppercase; letter-spacing: 0.3px; font-size: 0.74rem; }
+    .threat-pill__value { color: var(--accent); text-transform: uppercase; letter-spacing: 0.3px; font-size: 0.74rem; }
 }

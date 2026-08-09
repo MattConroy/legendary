@@ -6,7 +6,7 @@
     <ul class="tag-list @Class">
         @foreach (var (label, query, title) in Items)
         {
-            <li><a class="tag" href="keywords?q=@Uri.EscapeDataString(query)" title="@title">@label</a></li>
+            <li><a class="tag" href="keywords?search=@Uri.EscapeDataString(query)" title="@title">@label</a></li>
         }
     </ul>
 }
@@ -16,6 +16,6 @@
     /// optional tooltip.</summary>
     [Parameter, EditorRequired] public IEnumerable<(string Label, string Query, string? Title)> Items { get; set; } = [];
 
-    /// <summary>Extra class on the list for placement (e.g. "deck__kws", "cat__kws").</summary>
+    /// <summary>Extra class on the list for placement (e.g. "deck__keywords", "card-entry__keywords").</summary>
     [Parameter] public string? Class { get; set; }
 }

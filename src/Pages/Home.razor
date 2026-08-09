@@ -164,7 +164,7 @@
             }
             @if (inPlay.Count > 0)
             {
-                <div class="card card--notes kw-play">
+                <div class="card card--notes keywords-in-play">
                     <div class="card__head">
                         <div class="card__titles">
                             <span class="card__icon">📖</span>
@@ -175,12 +175,12 @@
                         </div>
                     </div>
                     <div class="card__body">
-                        <ul class="kw-play__list">
+                        <ul class="keywords-in-play__list">
                             @foreach (var k in inPlay)
                             {
-                                <li class="kw-play__item">
-                                    <span class="kw-play__name">@k.Name</span>
-                                    <span class="kw-play__def">@k.Summary</span>
+                                <li class="keywords-in-play__item">
+                                    <span class="keywords-in-play__name">@k.Name</span>
+                                    <span class="keywords-in-play__def">@k.Summary</span>
                                 </li>
                             }
                         </ul>
