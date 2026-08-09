@@ -5161,7 +5161,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{instinct}: +1 {attack}."
   },
   {
    "name": "Multitalented",
@@ -5169,7 +5170,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 1,
-   "cost": 4
+   "cost": 4,
+   "effect": "Choose a Hero Class; Investigate for a card of that class."
   },
   {
    "name": "Identical Twin Brother",
@@ -5178,7 +5180,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "Gain a HQ Hero's printed {recruit} and {attack}, then bottom that Hero."
   },
   {
    "name": "Missing Person Case",
@@ -5187,6 +5190,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 8,
+   "effect": "Investigate the Hero Deck for any card and take it to your hand.",
    "keywords": [
     "Investigate"
    ]
@@ -5199,7 +5203,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 1,
-   "cost": 3
+   "cost": 3,
+   "effect": "The next Hero you recruit this turn goes on top of your deck."
   },
   {
    "name": "Listen for Heartbeats",
@@ -5207,7 +5212,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Name a cost of 1 or more; Investigate for a card of that cost."
   },
   {
    "name": "Discover the Bodies",
@@ -5215,7 +5221,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "{covert}: Investigate for a cost-0 card and KO it."
   },
   {
    "name": "Hitting Rock Bottom",
@@ -5224,7 +5231,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Discard from the top or bottom of your deck; if it costs 0, +1 {attack} and repeat until a non-zero card or your deck empties."
   }
  ],
  "noir:iron-man-noir": [
@@ -5234,7 +5242,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 3,
-   "cost": 3
+   "cost": 3,
+   "effect": "Put another card from hand on top of your deck to play this."
   },
   {
    "name": "Mechanized Plate-Mail",
@@ -5243,6 +5252,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "Investigate for a {tech} card.",
    "keywords": [
     "Investigate"
    ]
@@ -5253,7 +5263,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "{tech}: you may use the Fight ability of a 1-VP Villain in your Victory pile."
   },
   {
    "name": "Adventurers Assemble!",
@@ -5261,7 +5272,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "This turn, Investigate looks at three cards instead of two. Choose Recruit or Attack; Investigate for a card with that icon."
   }
  ],
  "noir:luke-cage-noir": [
@@ -5272,6 +5284,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "Investigate for a card that costs 4 or more.",
    "keywords": [
     "Investigate"
    ]
@@ -5283,7 +5296,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "+1 {recruit} per other cost-4-or-more card played this turn."
   },
   {
    "name": "Unbreakable Cage",
@@ -5291,7 +5305,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "Once per turn, if a player would gain a Wound, you may reveal this and Investigate for any card instead."
   },
   {
    "name": "Weight of the World",
@@ -5300,7 +5315,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "+2 {attack} per other cost-4-or-more card played this turn."
   }
  ],
  "noir:spider-man-noir": [
@@ -5311,6 +5327,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
+   "effect": "Investigate for a card that costs 2 or less.",
    "keywords": [
     "Investigate"
    ]
@@ -5322,7 +5339,8 @@
    "kind": "attack",
    "value": 1,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "{ranged}: +2 {attack}."
   },
   {
    "name": "Solve the Crime",
@@ -5330,7 +5348,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 2
+   "cost": 2,
+   "effect": "{instinct}: Investigate the Bystander Stack for a Bystander and rescue it."
   },
   {
    "name": "Spider-Totem's Chosen",
@@ -5338,7 +5357,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 1,
-   "cost": 2
+   "cost": 2,
+   "effect": "{spider-friends}: Investigate each player's deck for a cost-2-or-less card, play a copy, then put it in their discard pile."
   }
  ],
  "xm:aurora-northstar": [
