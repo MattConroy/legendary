@@ -2540,7 +2540,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{covert}: optionally KO a card from hand or discard for +1 {attack}."
   },
   {
    "name": "Infiltrate HQ",
@@ -2548,7 +2549,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "You may bottom a Hero from the HQ; its replacement costs 1 less this turn."
   },
   {
    "name": "Disrupt Circuits",
@@ -2556,7 +2558,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{covert} {tech}: +1 {attack} per {tech} Hero in the HQ."
   },
   {
    "name": "Untouchable",
@@ -2564,7 +2567,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "When any player defeats a Villain or Mastermind with a Fight effect, you may discard this to cancel it and draw three cards."
   }
  ],
  "sw1:black-bolt": [
@@ -2575,7 +2579,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "+1 {attack} if you reveal four cards with no rules text."
   },
   {
    "name": "Speak No Words",
@@ -2591,7 +2596,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "Choose a no-rules-text card you played this turn; gain its {recruit} and {attack} again."
   },
   {
    "name": "Hypersonic Scream",
@@ -2599,7 +2605,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 3,
-   "cost": 8
+   "cost": 8,
+   "effect": "Draw a card per no-rules-text card you played this turn."
   }
  ],
  "sw1:black-panther": [
@@ -2608,7 +2615,8 @@
    "copies": 5,
    "kind": "recruit",
    "value": 1,
-   "cost": 3
+   "cost": 3,
+   "effect": "{instinct} {covert}: draw a card."
   },
   {
    "name": "Multifaceted Genius",
@@ -2616,19 +2624,22 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{strength} {tech}: +1 {attack} per other multicoloured card played this turn."
   },
   {
    "name": "Stalk the Urban Jungle",
    "copies": 3,
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "{strength} {covert}: each time you defeat a Villain on the Rooftops or Streets this turn, you may KO one of your cards from hand or discard."
   },
   {
    "name": "King of Wakanda",
    "copies": 1,
-   "cost": 7
+   "cost": 7,
+   "effect": "{instinct} {tech}: gain three Sidekicks. {illuminati}: put them on top of your deck."
   }
  ],
  "sw1:captain-marvel": [
@@ -2639,14 +2650,16 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{ranged}: +1 {recruit} per other {ranged} Hero played this turn."
   },
   {
    "name": "Supersonic Flight",
    "copies": 5,
    "kind": "attack",
    "value": 1,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength} {ranged}: draw a card."
   },
   {
    "name": "Marvelous Strength",
@@ -2655,7 +2668,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{strength}: +1 {attack} per other {strength} Hero played this turn."
   },
   {
    "name": "Cosmic Energies",
@@ -2664,7 +2678,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "{ranged} {ranged} {strength} {strength}: +6 {attack}."
   }
  ],
  "sw1:dr-strange": [
@@ -2674,7 +2689,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "{ranged}: reveal your top card; draw it or Teleport it."
   },
   {
    "name": "Trust Me, I'm a Doctor",
@@ -2682,7 +2698,8 @@
    "kind": "recruit",
    "value": 1,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "{instinct} {ranged}: {illuminati}: optionally KO a card from hand or discard for +1 {recruit}."
   },
   {
    "name": "Fight the Future",
@@ -2691,13 +2708,15 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{instinct}: reveal the top Villain Deck card; if a Villain, +2 {attack} and you may fight it this turn."
   },
   {
    "name": "Sorcerer Supreme",
    "copies": 1,
    "class": "Covert",
-   "cost": 7
+   "cost": 7,
+   "effect": "Reveal your top three cards; draw any and Teleport the rest."
   }
  ],
  "sw1:lady-thor": [
@@ -2707,7 +2726,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Once per turn, if you made at least 6 {recruit} this turn, draw a card."
   },
   {
    "name": "Chosen by Asgard",
@@ -2715,7 +2735,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Once per turn, if you made at least 6 {recruit} this turn, +2 {attack}."
   },
   {
    "name": "Heir to the Hammer",
@@ -2723,7 +2744,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "{ranged} {strength}: +2 {attack}."
   },
   {
    "name": "Living Thunderstorm",
@@ -2731,7 +2753,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 4,
-   "cost": 8
+   "cost": 8,
+   "effect": "Once per turn, if you made at least 6 {recruit} this turn, +6 {attack}."
   }
  ],
  "sw1:magik": [
@@ -2739,7 +2762,8 @@
    "name": "Rally the New Mutants",
    "copies": 5,
    "class": "Covert",
-   "cost": 2
+   "cost": 2,
+   "effect": "Gain a Sidekick. {covert}: gain another."
   },
   {
    "name": "Travel through Limbo",
@@ -2749,6 +2773,7 @@
    "value": 1,
    "variable": true,
    "cost": 3,
+   "effect": "{ranged}: +2 {attack}.",
    "keywords": [
     "Teleport"
    ]
@@ -2760,6 +2785,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
+   "effect": "{covert} {ranged}: +1 {attack} per Sidekick you played this turn.",
    "keywords": [
     "Teleport"
    ]
@@ -2772,6 +2798,7 @@
    "value": 2,
    "variable": true,
    "cost": 7,
+   "effect": "Choose a Villain or Mastermind in your Victory pile; +{attack} equal to its printed VP.",
    "keywords": [
     "Teleport"
    ]
@@ -2784,7 +2811,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{covert}: defeat a Henchman Villain for free."
   },
   {
    "name": "Enslave the Will",
@@ -2792,14 +2820,16 @@
    "class": "Tech",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "{tech}: gain a Sidekick each time you defeat a Villain this turn."
   },
   {
    "name": "Pieces on a Chessboard",
    "copies": 3,
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "{covert} {tech}: you may send a Henchman Villain from your Victory pile into the city; if you do, draw a card."
   },
   {
    "name": "Inhuman Mastery",
@@ -2808,7 +2838,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Each opponent reveals a {tech} Hero or gives up a Henchman Villain from their Victory pile; defeat all those for free. {cabal}: +1 {attack} per Henchman defeated this turn."
   }
  ],
  "sw1:namor-the-sub-mariner": [
@@ -2818,7 +2849,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{instinct}: gain a Sidekick."
   },
   {
    "name": "Ruler of the Seas",
@@ -2827,20 +2859,23 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{strength}: +2 {attack}, only against Villains on the Bridge or the Mastermind."
   },
   {
    "name": "Feed the Sharks",
    "copies": 3,
    "kind": "attack",
    "value": 2,
-   "cost": 6
+   "cost": 6,
+   "effect": "{strength} {instinct}: optionally KO a card from hand or discard to draw a card."
   },
   {
    "name": "Imperius Rex",
    "copies": 1,
    "class": "Strength",
-   "cost": 7
+   "cost": 7,
+   "effect": "Defeat a Villain for free. {instinct} {instinct} {strength} {strength}: instead defeat the Mastermind once for free."
   }
  ],
  "sw1:old-man-logan": [
@@ -2850,7 +2885,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{instinct}: optionally KO a card from hand or discard; if it's a Wound, draw a card."
   },
   {
    "name": "Loner",
@@ -2858,7 +2894,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{instinct} {covert}: if you recruit no Heroes this turn, +2 {attack}."
   },
   {
    "name": "Rage Out",
@@ -2867,7 +2904,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "{instinct}: Cross-Dimensional Wolverine Rampage; +1 {attack} per other player who gained a Wound."
   },
   {
    "name": "No More Heroes",
@@ -2876,7 +2914,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Reveal your hand; +5 {attack} if you played no {shield} or {hydra} cards this turn and have none in hand."
   }
  ],
  "sw1:proxima-midnight": [
@@ -2894,7 +2933,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "If the last Hero you played this turn has a {recruit} icon, +2 {recruit}; if an {attack} icon, +2 {attack}."
   },
   {
    "name": "General of the Black Order",
@@ -2903,7 +2943,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{instinct}: +3 {recruit}."
   },
   {
    "name": "Supernova Spear",
@@ -2912,7 +2953,8 @@
    "kind": "recruit",
    "value": 4,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "{covert}: +4 {recruit} and +4 {attack}."
   }
  ],
  "sw1:superior-iron-man": [
@@ -2923,14 +2965,16 @@
    "kind": "attack",
    "value": 1,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "{tech}: +2 {attack}."
   },
   {
    "name": "Optimized Technology",
    "copies": 5,
    "kind": "attack",
    "value": 2,
-   "cost": 5
+   "cost": 5,
+   "effect": "{tech} {ranged}: draw a card."
   },
   {
    "name": "Superior to Others",
@@ -2938,7 +2982,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{ranged}: look at your top two cards; if one costs more than the other, draw it; replace the rest."
   },
   {
    "name": "#Humblebrag",
@@ -2946,7 +2991,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 5,
-   "cost": 8
+   "cost": 8,
+   "effect": "Draw a card per other player with fewer cards in their Victory pile than you."
   }
  ],
  "sw1:thanos": [
@@ -2956,7 +3002,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength} {ranged}: {cabal}: KO a Bystander from the Bystander Stack; +1 {recruit} per three Bystanders in the KO pile."
   },
   {
    "name": "Transdimensional Overlord",
@@ -2966,6 +3013,7 @@
    "value": 2,
    "variable": true,
    "cost": 5,
+   "effect": "Optionally KO a Bystander from your Victory pile for +2 {attack}.",
    "keywords": [
     "Teleport"
    ]
@@ -2976,20 +3024,23 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "{ranged}: each opponent reveals a {ranged} Hero or gives up a Bystander from their Victory pile; rescue those."
   },
   {
    "name": "Utter Annihilation",
    "copies": 1,
    "class": "Ranged",
-   "cost": 8
+   "cost": 8,
+   "effect": "KO six Bystanders from the Bystander Stack; then defeat any Villain or Mastermind with Attack below the number of Bystanders in the KO pile."
   }
  ],
  "sw1:ultimate-spider-man": [
   {
    "name": "Marvel Team-Up",
    "copies": 5,
-   "cost": 2
+   "cost": 2,
+   "effect": "{strength} {instinct}: gain a Sidekick. Reveal your top card; draw it if it costs 2 or less."
   },
   {
    "name": "Leaping Spider",
@@ -2998,7 +3049,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "Reveal your top card; draw it if it costs 2 or less. {strength}: +2 {attack}."
   },
   {
    "name": "Web-Slinger",
@@ -3007,7 +3059,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "+2 {attack}, only against the Mastermind or Villains on the Rooftops or Bridge. Reveal your top card; draw it if it costs 2 or less."
   },
   {
    "name": "Hero from Another Dimension",
@@ -3016,7 +3069,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "+2 {attack} per other cost-1-or-2 card played this turn."
   }
  ],
  "sw2:agent-venom": [
