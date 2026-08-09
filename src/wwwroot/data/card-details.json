@@ -7241,13 +7241,15 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{covert}: you may KO a card from hand or discard to rescue a Bystander."
   },
   {
    "name": "Mission Accomplished",
    "copies": 5,
    "class": "Tech",
-   "cost": 2
+   "cost": 2,
+   "effect": "Draw a card. {tech}: rescue a Bystander."
   },
   {
    "name": "Covert Operation",
@@ -7256,7 +7258,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "+1 {attack} per Bystander in your Victory pile."
   },
   {
    "name": "Silent Sniper",
@@ -7264,7 +7267,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "Defeat a Villain or Mastermind that is holding a Bystander."
   }
  ],
  "msp1:captain-america": [
@@ -7275,7 +7279,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "+1 {recruit} per Hero colour you have."
   },
   {
    "name": "Perfect Teamwork",
@@ -7284,7 +7289,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "+1 {attack} per Hero colour you have."
   },
   {
    "name": "Diving Block",
@@ -7292,7 +7298,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "Instead of gaining a Wound, you may reveal this and draw a card."
   },
   {
    "name": "A Day Unlike Any Other",
@@ -7301,7 +7308,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "{avengers}: +3 {attack} per other {avengers} Hero played this turn."
   }
  ],
  "msp1:hawkeye": [
@@ -7311,7 +7319,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 1,
-   "cost": 3
+   "cost": 3,
+   "effect": "Draw a card."
   },
   {
    "name": "Team Player",
@@ -7320,7 +7329,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{avengers}: +1 {attack}."
   },
   {
    "name": "Covering Fire",
@@ -7328,7 +7338,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "{tech}: all other players either each draw or each discard (your choice)."
   },
   {
    "name": "Impossible Trick Shot",
@@ -7336,7 +7347,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "Rescue three Bystanders each time you defeat a Villain or Mastermind this turn."
   }
  ],
  "msp1:hulk": [
@@ -7347,7 +7359,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength}: +1 {attack}."
   },
   {
    "name": "Unstoppable Hulk",
@@ -7356,7 +7369,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "You may KO a Wound from hand or discard for +2 {attack}."
   },
   {
    "name": "Crazed Rampage",
@@ -7364,7 +7378,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 4,
-   "cost": 5
+   "cost": 5,
+   "effect": "Every player gains a Wound."
   },
   {
    "name": "Hulk Smash!",
@@ -7373,7 +7388,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "{strength}: +5 {attack}."
   }
  ],
  "msp1:iron-man": [
@@ -7381,7 +7397,8 @@
    "name": "Endless Invention",
    "copies": 5,
    "class": "Tech",
-   "cost": 3
+   "cost": 3,
+   "effect": "Draw a card. {tech}: draw another."
   },
   {
    "name": "Repulsor Rays",
@@ -7390,7 +7407,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{ranged}: +1 {attack}."
   },
   {
    "name": "Arc Reactor",
@@ -7399,13 +7417,15 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{tech}: +1 {attack} per other {tech} Hero played this turn."
   },
   {
    "name": "Quantum Breakthrough",
    "copies": 1,
    "class": "Tech",
-   "cost": 7
+   "cost": 7,
+   "effect": "Draw two. {tech}: draw two more."
   }
  ],
  "msp1:nick-fury": [
@@ -7413,7 +7433,8 @@
    "name": "Battlefield Promotion",
    "copies": 5,
    "class": "Covert",
-   "cost": 4
+   "cost": 4,
+   "effect": "You may KO a {shield} Hero from hand or discard to gain a {shield} Officer to hand."
   },
   {
    "name": "High-Tech Weaponry",
@@ -7422,7 +7443,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{tech}: +1 {attack}."
   },
   {
    "name": "Legendary Commander",
@@ -7431,13 +7453,15 @@
    "kind": "attack",
    "value": 1,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "+1 {attack} per other {shield} Hero played this turn."
   },
   {
    "name": "Pure Fury",
    "copies": 1,
    "class": "Tech",
-   "cost": 8
+   "cost": 8,
+   "effect": "Defeat any Villain or Mastermind with {attack} below the number of {shield} Heroes in the KO pile."
   }
  ],
  "msp1:thor": [
@@ -7448,7 +7472,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength}: +2 {recruit}."
   },
   {
    "name": "Surge of Power",
@@ -7456,7 +7481,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "If you generated 8+ {recruit} this turn, +3 {attack}."
   },
   {
    "name": "Call Lightning",
@@ -7465,7 +7491,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "{ranged}: +3 {attack}."
   },
   {
    "name": "God of Thunder",
@@ -7473,7 +7500,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 5,
-   "cost": 8
+   "cost": 8,
+   "effect": "You may spend {recruit} as {attack} this turn."
   }
  ],
  "am:ant-man": [
