@@ -10220,7 +10220,8 @@
       "cost": 4,
       "keywords": [
         "Tactical Formation 444"
-      ]
+      ],
+      "effect": "Tactical Formation 444: draw a card. {instinct}: Clone."
     },
     {
       "name": "Finding Myself",
@@ -10231,7 +10232,8 @@
       "cost": 4,
       "keywords": [
         "Investigate"
-      ]
+      ],
+      "effect": "Investigate for a card sharing a name with one of your cards (you needn't name it first). {tech}: Clone."
     },
     {
       "name": "Perfect Match",
@@ -10240,7 +10242,8 @@
       "kind": "attack",
       "value": 1,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "+1 {attack} per card name you played at least twice this turn. {tech}: Clone."
     },
     {
       "name": "Reabsorb Duplicates",
@@ -10251,7 +10254,8 @@
       "cost": 4,
       "keywords": [
         "Tactical Formation 44"
-      ]
+      ],
+      "effect": "Tactical Formation 44: you may KO a card from hand or discard. {x-factor}: Clone."
     }
   ],
   "mcx:shatterstar": [
@@ -10265,7 +10269,8 @@
       "cost": 3,
       "keywords": [
         "When Recruited"
-      ]
+      ],
+      "effect": "When Recruited: {instinct}: Clone. {instinct}: +2 {recruit} usable only for Heroes costing 5 or more."
     },
     {
       "name": "Gladiator's Blades",
@@ -10276,7 +10281,8 @@
       "cost": 5,
       "keywords": [
         "When Recruited"
-      ]
+      ],
+      "effect": "When Recruited: {instinct}: Clone. {instinct}: draw a card."
     },
     {
       "name": "Bioelectric Surge",
@@ -10289,7 +10295,8 @@
       "keywords": [
         "When Recruited",
         "Tactical Formation 55"
-      ]
+      ],
+      "effect": "When Recruited: {ranged}: Clone. Tactical Formation 55: +1 {attack}."
     },
     {
       "name": "Gene-Spliced Creation",
@@ -10300,7 +10307,8 @@
       "cost": 5,
       "keywords": [
         "When Recruited"
-      ]
+      ],
+      "effect": "When Recruited: {x-force}: Clone. {ranged}{instinct}: Shatter the Mastermind."
     }
   ],
   "mcx:stepford-cuckoos": [
@@ -10313,7 +10321,8 @@
       "cost": 2,
       "keywords": [
         "When Recruited"
-      ]
+      ],
+      "effect": "When Recruited: Clone. {tech}: Investigate the Sidekick Stack for a card and put it in your discard pile."
     },
     {
       "name": "Shared Thoughts",
@@ -10327,7 +10336,8 @@
         "When Recruited",
         "Tactical Formation 22",
         "Tactical Formation 33"
-      ]
+      ],
+      "effect": "When Recruited: Clone. Tactical Formation 22: +1 {attack}. Tactical Formation 33: Investigate for a card with an Attack icon."
     },
     {
       "name": "Telepathic Warning",
@@ -10341,7 +10351,8 @@
         "When Recruited",
         "Tactical Formation 22",
         "Tactical Formation 33"
-      ]
+      ],
+      "effect": "When Recruited: Clone. Tactical Formation 22: +1 {attack}. Tactical Formation 33: reveal the top Villain Deck card; if it's a Master Strike, +1 {attack} and you may shuffle the Villain Deck."
     },
     {
       "name": "Mind Wipe",
@@ -10354,7 +10365,8 @@
       "keywords": [
         "When Recruited",
         "Tactical Formation 223"
-      ]
+      ],
+      "effect": "When Recruited: Clone. Tactical Formation 223: reveal the top Villain Deck card; if it's a Villain, +2 {attack} and you may fight it this turn; if you fight it, put a Bystander on top of the Villain Deck."
     }
   ],
   "mcx:m": [
@@ -10368,7 +10380,8 @@
       "keywords": [
         "When Recruited",
         "Investigate"
-      ]
+      ],
+      "effect": "When Recruited: {covert}: Clone. Investigate for a card that costs 3."
     },
     {
       "name": "Penance Form",
@@ -10380,7 +10393,8 @@
       "cost": 3,
       "keywords": [
         "When Recruited"
-      ]
+      ],
+      "effect": "When Recruited: {strength}: Clone. KO a Wound from hand or discard for +1 {attack}; otherwise gain a Wound."
     },
     {
       "name": "Three Sisters Combined",
@@ -10393,7 +10407,8 @@
       "keywords": [
         "When Recruited",
         "Tactical Formation 333"
-      ]
+      ],
+      "effect": "When Recruited: {strength}: Clone. Draw a card. Tactical Formation 333: +2 {attack}."
     },
     {
       "name": "Interweaving Powers",
@@ -10406,7 +10421,8 @@
       "keywords": [
         "When Recruited",
         "Tactical Formation 3333"
-      ]
+      ],
+      "effect": "When Recruited: {x-factor}: Clone. Tactical Formation 3333: +3 {attack}."
     }
   ],
   "mcx:strong-guy": [
@@ -10419,7 +10435,8 @@
       "cost": 4,
       "keywords": [
         "Investigate"
-      ]
+      ],
+      "effect": "Investigate for a card that's {strength} and/or X-Factor."
     },
     {
       "name": "Absorb Kinetic Energy",
@@ -10427,7 +10444,8 @@
       "class": "Strength",
       "kind": "attack",
       "value": 3,
-      "cost": 5
+      "cost": 5,
+      "effect": "If any player would gain a Wound, you may discard this instead to draw two cards."
     },
     {
       "name": "Go Big",
@@ -10439,7 +10457,8 @@
       "cost": 4,
       "keywords": [
         "Tactical Formation 445"
-      ]
+      ],
+      "effect": "Tactical Formation 445: +3 {attack}."
     },
     {
       "name": "Treasure Hunt",
@@ -10450,7 +10469,8 @@
       "cost": 8,
       "keywords": [
         "Investigate"
-      ]
+      ],
+      "effect": "Investigate for three different options among: a {strength} card; an X-Factor card; a card costing 4; a card costing 5."
     }
   ],
   "mcx:warpath": [
@@ -10460,13 +10480,15 @@
       "class": "Instinct",
       "kind": "attack",
       "value": 1,
-      "cost": 2
+      "cost": 2,
+      "effect": "Choose a cost of 1 or more; Investigate for a card of that cost."
     },
     {
       "name": "Endless Endurance",
       "copies": 5,
       "class": "Strength",
-      "cost": 5
+      "cost": 5,
+      "effect": "When you draw your next hand at end of turn, draw two extra cards."
     },
     {
       "name": "Dangerous Maneuver",
@@ -10478,7 +10500,8 @@
       "cost": 2,
       "keywords": [
         "Tactical Formation 225"
-      ]
+      ],
+      "effect": "Reveal the top card of your deck; if it costs 0, you may KO it. Tactical Formation 225: +3 {attack}."
     },
     {
       "name": "Superhuman Senses",
@@ -10487,7 +10510,8 @@
       "kind": "attack",
       "value": 3,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "+1 {attack} each time you reveal or look at cards from your deck this turn (drawing or discarding doesn't count). Choose a cost of 1 or more; Investigate for a card of that cost."
     }
   ],
   "mcx:siryn": [
@@ -10497,7 +10521,8 @@
       "class": "Covert",
       "kind": "attack",
       "value": 1,
-      "cost": 2
+      "cost": 2,
+      "effect": "Choose a Hero Class; Investigate for a card of that class."
     },
     {
       "name": "Hypnotic Call",
@@ -10505,7 +10530,8 @@
       "class": "Covert",
       "kind": "attack",
       "value": 2,
-      "cost": 4
+      "cost": 4,
+      "effect": "{covert}: Shatter each Hero in the HQ whose printed cost is 2, 4, 6, and/or 8."
     },
     {
       "name": "Three-Octave Arpeggio",
@@ -10516,7 +10542,8 @@
       "cost": 6,
       "keywords": [
         "Tactical Formation 246"
-      ]
+      ],
+      "effect": "Tactical Formation 246: Shatter all Villains."
     },
     {
       "name": "Splintering Shriek",
@@ -10525,7 +10552,8 @@
       "cost": 8,
       "keywords": [
         "Shatter"
-      ]
+      ],
+      "effect": "Shatter the Mastermind. KO up to two cards from hand and/or discard."
     }
   ],
   "mcx:rictor": [
@@ -10535,7 +10563,8 @@
       "class": "Ranged",
       "kind": "attack",
       "value": 2,
-      "cost": 3
+      "cost": 3,
+      "effect": "{ranged}: Shatter a Villain in the Sewers."
     },
     {
       "name": "Unearth Tectonic Power",
@@ -10546,7 +10575,8 @@
       "cost": 5,
       "keywords": [
         "Investigate"
-      ]
+      ],
+      "effect": "Investigate for a card that's {ranged} and/or {instinct}."
     },
     {
       "name": "Trace the Fault Lines",
@@ -10554,7 +10584,8 @@
       "class": "Ranged",
       "kind": "recruit",
       "value": 2,
-      "cost": 4
+      "cost": 4,
+      "effect": "{ranged}: Investigate for a card that costs 0; KO or discard it."
     },
     {
       "name": "Massive Earthquake",
@@ -10563,7 +10594,8 @@
       "cost": 7,
       "keywords": [
         "Shatter"
-      ]
+      ],
+      "effect": "Shatter the Mastermind, or Shatter all Heroes in the HQ."
     }
   ],
   "dss:doctor-strange": [
