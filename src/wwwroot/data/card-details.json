@@ -7512,6 +7512,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 4,
+   "effect": "Draw a card.",
    "keywords": [
     "Size-Changing"
    ]
@@ -7523,6 +7524,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 5,
+   "effect": "{tech}: you may discard a card to draw a card.",
    "keywords": [
     "Microscopic Size-Changing"
    ]
@@ -7535,6 +7537,7 @@
    "value": 2,
    "variable": true,
    "cost": 6,
+   "effect": "+1 {attack} per extra card drawn this turn.",
    "keywords": [
     "Size-Changing"
    ]
@@ -7546,6 +7549,7 @@
    "kind": "attack",
    "value": 5,
    "cost": 9,
+   "effect": "A Hero in the HQ with no Size-Changing abilities gains Size-Changing {tech} this turn.",
    "keywords": [
     "Microscopic Size-Changing"
    ]
@@ -7560,6 +7564,7 @@
    "value": 1,
    "variable": true,
    "cost": 3,
+   "effect": "{covert}: +2 {attack}.",
    "keywords": [
     "Microscopic Size-Changing"
    ]
@@ -7571,6 +7576,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "{covert}: draw a card.",
    "keywords": [
     "Size-Changing"
    ]
@@ -7583,6 +7589,7 @@
    "value": 2,
    "variable": true,
    "cost": 6,
+   "effect": "+1 {attack} per card you recruited this turn.",
    "keywords": [
     "Size-Changing"
    ]
@@ -7595,6 +7602,7 @@
    "value": 4,
    "variable": true,
    "cost": 9,
+   "effect": "{avengers}: +1 {attack} per other {avengers} card played this turn.",
    "keywords": [
     "Microscopic Size-Changing"
    ]
@@ -7608,7 +7616,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{tech}: you get Empowered by Tech."
   },
   {
    "name": "Reprocess",
@@ -7617,13 +7626,15 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "If your discard is empty, +2 {recruit}; otherwise shuffle your discard into your deck."
   },
   {
    "name": "Holographic Image Inducer",
    "copies": 3,
    "class": "Tech",
    "cost": 6,
+   "effect": "Draw two cards.",
    "keywords": [
     "Size-Changing"
    ]
@@ -7635,7 +7646,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "If your discard is empty, +2 {attack}; otherwise shuffle your discard into your deck."
   }
  ],
  "am:wonder-man": [
@@ -7646,7 +7658,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "Choose: draw a card, or get Empowered by Strength."
   },
   {
    "name": "Ionic Energy",
@@ -7655,7 +7668,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "You may bottom a HQ card. {ranged}: get Empowered by Ranged."
   },
   {
    "name": "Absorb Ambient Power",
@@ -7664,7 +7678,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "Bottom a HQ card; +3 {recruit} if it had a {recruit} icon, +3 {attack} if it had an {attack} icon (both if both)."
   },
   {
    "name": "8th Wonder of the World",
@@ -7674,6 +7689,7 @@
    "value": 4,
    "variable": true,
    "cost": 8,
+   "effect": "Bottom any number of HQ cards, then get Empowered by Ranged and Strength.",
    "keywords": [
     "Size-Changing"
    ]
@@ -7687,7 +7703,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Get Empowered by a colour of your choice."
   },
   {
    "name": "Defend the Weak",
@@ -7695,7 +7712,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength}: return a 0-cost card from your discard to your hand."
   },
   {
    "name": "Flying Steed",
@@ -7703,7 +7721,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "When a Master Strike is played, you may discard this to draw three extra cards at end of turn."
   },
   {
    "name": "The Ebony Blade",
@@ -7712,7 +7731,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "+{attack} equal to the printed Attack of a Villain in your Victory pile."
   }
  ],
  "venom:carnage": [
@@ -7723,6 +7743,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Excessive Violence: draw a card.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -7735,6 +7756,7 @@
    "value": 0,
    "variable": true,
    "cost": 4,
+   "effect": "Digest 4: draw two cards. Indigestion: +2 {recruit}.",
    "keywords": [
     "Digest 4",
     "Indigestion"
@@ -7747,6 +7769,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 6,
+   "effect": "Excessive Violence: reveal your top card; you may KO it.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -7758,6 +7781,7 @@
    "kind": "attack",
    "value": 6,
    "cost": 8,
+   "effect": "Excessive Violence: reveal your top card; if it costs 0, KO it and you may repeat.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -7772,6 +7796,7 @@
    "value": 0,
    "variable": true,
    "cost": 3,
+   "effect": "Digest 3: +2 {attack}. Indigestion: +2 {recruit}. {instinct}: instead, both.",
    "keywords": [
     "Digest 3",
     "Indigestion"
@@ -7785,6 +7810,7 @@
    "value": 0,
    "variable": true,
    "cost": 4,
+   "effect": "Excessive Violence: +2 {recruit}.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -7796,7 +7822,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "Choose: +1 {recruit} per other {recruit}-icon card, or +1 {attack} per other {attack}-icon card played this turn."
   },
   {
    "name": "Insatiable Hunger",
@@ -7806,6 +7833,7 @@
    "value": 0,
    "variable": true,
    "cost": 8,
+   "effect": "Digest 8: KO a card from your Victory pile for +6 {attack}. Indigestion: KO a card from hand or discard for +6 {recruit}. {venomverse} {venomverse}: instead, both.",
    "keywords": [
     "Digest 8",
     "Indigestion"
@@ -7820,6 +7848,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "Digest 3: you may discard a card to draw a card.",
    "keywords": [
     "Digest 3"
    ]
@@ -7831,7 +7860,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "If a Master Strike or an Ambush Villain was played this turn, +1 {attack}."
   },
   {
    "name": "Serious Overkill",
@@ -7840,6 +7870,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 5,
+   "effect": "Excessive Violence: you may KO a card from hand or discard.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -7850,7 +7881,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 5,
-   "cost": 7
+   "cost": 7,
+   "effect": "When a Master Strike is played, you may put this from hand on top of your deck; if you do, take any HQ card to your hand."
   }
  ],
  "venom:venomized-dr-strange": [
@@ -7861,6 +7893,7 @@
    "kind": "recruit",
    "value": 1,
    "cost": 2,
+   "effect": "Digest 2: draw a card.",
    "keywords": [
     "Digest 2"
    ]
@@ -7872,7 +7905,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{ranged}: reveal your top card; if it costs 0, discard it for +2 {attack}."
   },
   {
    "name": "Complete the Grand Ritual",
@@ -7881,7 +7915,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "If you played a 4-cost and a 2-cost card this turn, +2 {attack}."
   },
   {
    "name": "Crystal of Kadavus",
@@ -7889,7 +7924,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 4,
-   "cost": 8
+   "cost": 8,
+   "effect": "Reveal your top three cards; draw one, discard one, KO one. {venomverse} {venomverse}: do it again."
   }
  ],
  "venom:venompool": [
@@ -7901,6 +7937,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "Digest 2: +2 {attack}. Indigestion: rescue a Bystander. {strength}: instead, both.",
    "keywords": [
     "Digest 2",
     "Indigestion"
@@ -7910,7 +7947,8 @@
    "name": "Shenanigans",
    "copies": 5,
    "class": "Tech",
-   "cost": 3
+   "cost": 3,
+   "effect": "Draw two cards, but you can't draw more this turn."
   },
   {
    "name": "Can I Get a Little Gratitude",
@@ -7919,6 +7957,7 @@
    "kind": "attack",
    "value": 3,
    "cost": 5,
+   "effect": "Each time you rescue a Bystander this turn, do any rescue ability on it an extra time. Excessive Violence: rescue a Bystander.",
    "keywords": [
     "Excessive Violence"
    ]
@@ -7931,6 +7970,7 @@
    "value": 4,
    "variable": true,
    "cost": 7,
+   "effect": "Digest 7: +1 {attack} per two Bystanders in your Victory pile. Indigestion: rescue two Bystanders. {venomverse} {venomverse}: instead, both.",
    "keywords": [
     "Digest 7",
     "Indigestion"
@@ -7944,7 +7984,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Reveal the top Bystander Deck card; if a Special Bystander, rescue it, otherwise bottom it."
   },
   {
    "name": "Rebel Without a Cause",
@@ -7952,7 +7993,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Reveal your top card; draw it if it costs 0 or has no team icon."
   },
   {
    "name": "Right Place, Wrong Time",
@@ -7961,7 +8003,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "+1 {attack} per other no-team-icon Hero played this turn."
   },
   {
    "name": "Interplanetary Visitor",
@@ -7969,7 +8012,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "Reveal your top three cards; draw one, discard one, KO one."
   }
  ],
  "dim:jessica-jones": [
@@ -7991,6 +8035,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 4,
+   "effect": "Investigate for an {attack}-icon card.",
    "keywords": [
     "Switcheroo 5",
     "Investigate"
@@ -8003,6 +8048,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 5,
+   "effect": "Investigate for a {recruit}-icon card; you may draw it or KO it.",
    "keywords": [
     "Switcheroo 6",
     "Investigate"
@@ -8014,7 +8060,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "{covert}: Investigate the Villain Deck for a Villain; you may put it in your Victory pile and do its Fight effect, otherwise put it back on top or bottom."
   }
  ],
  "dim:man-thing": [
@@ -8026,6 +8073,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "+2 {attack}, only against Villains in the Sewers or the Mastermind.",
    "keywords": [
     "Teleport"
    ]
@@ -8036,7 +8084,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Choose a Villain or Mastermind; if no other Villains are adjacent, it gets -1 Attack this turn."
   },
   {
    "name": "Travel the Nexus of Realities",
@@ -8045,6 +8094,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 5,
+   "effect": "Move a Villain to another city space (swap if occupied).",
    "keywords": [
     "Teleport"
    ]
@@ -8056,7 +8106,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "{strength}: +1 {attack} per empty city space."
   }
  ],
  "dim:ms-america": [
@@ -8068,6 +8119,7 @@
    "value": 1,
    "variable": true,
    "cost": 3,
+   "effect": "{strength}: +2 {attack}.",
    "keywords": [
     "Teleport"
    ]
@@ -8079,6 +8131,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 4,
+   "effect": "Investigate for an {avengers} card and Teleport it.",
    "keywords": [
     "Investigate"
    ]
@@ -8089,7 +8142,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "{strength}: reveal your top card; KO it or Teleport it."
   },
   {
    "name": "Hyper-Cosmic Awareness",
@@ -8098,7 +8152,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "+1 {attack} per other card in your hand."
   }
  ],
  "dim:squirrel-girl": [
@@ -8107,6 +8162,7 @@
    "copies": 5,
    "class": "Instinct",
    "cost": 2,
+   "effect": "Investigate for a card that costs 3 or less.",
    "keywords": [
     "Switcheroo 3",
     "Investigate"
@@ -8120,6 +8176,7 @@
    "value": 1,
    "variable": true,
    "cost": 3,
+   "effect": "{instinct}: +2 {attack}.",
    "keywords": [
     "Switcheroo 4"
    ]
@@ -8132,6 +8189,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "+2 {attack} if at least 2 cards entered the HQ this turn.",
    "keywords": [
     "Switcheroo 5"
    ]
@@ -8142,7 +8200,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 5,
-   "cost": 8
+   "cost": 8,
+   "effect": "A Hero in your hand gains Switcheroo for a number 1-5. {instinct} {instinct}: a number 1-8 instead."
   }
  ],
  "rev:captain-marvel-agent-of-s-h-i-e-l-d": [
@@ -8152,7 +8211,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{shield} x4: draw a card."
   },
   {
    "name": "Radiant Blast",
@@ -8161,7 +8221,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "If you drew any extra cards this turn, +1 {attack}."
   },
   {
    "name": "Dominate the Battlefield",
@@ -8170,7 +8231,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "{ranged}: Last Stand."
   },
   {
    "name": "Higher, Further, Faster",
@@ -8179,7 +8241,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Choose: draw three cards or Last Stand. {strength} {strength}: instead, both."
   }
  ],
  "rev:darkhawk": [
@@ -8189,7 +8252,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 1,
-   "cost": 3
+   "cost": 3,
+   "effect": "{tech}: draw a card."
   },
   {
    "name": "Hawk Dive",
@@ -8198,7 +8262,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Choose Recruit or Attack, then Hyperspeed 4 for that icon."
   },
   {
    "name": "Travel to Nullspace",
@@ -8207,7 +8272,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "If the last Hero you played this turn has a {recruit} icon, +3 {recruit}; if an {attack} icon, +3 {attack} (both if both)."
   },
   {
    "name": "Warflight",
@@ -8217,6 +8283,7 @@
    "value": 0,
    "variable": true,
    "cost": 7,
+   "effect": "This turn, your Hyperspeed gives both Recruit and Attack from icons. Hyperspeed 7. {tech} {tech}: Hyperspeed 9 instead.",
    "keywords": [
     "Hyperspeed 7"
    ]
@@ -8230,7 +8297,8 @@
    "kind": "attack",
    "value": 1,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "{instinct}: choose - draw a card or +1 {attack}."
   },
   {
    "name": "Part-Time PI",
@@ -8239,7 +8307,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Reveal the top card of any deck; if not a Scheme Twist, you may bottom it. {instinct}: choose - draw a card or +1 {recruit}."
   },
   {
    "name": "Demon Sight",
@@ -8248,7 +8317,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "Guess Villain, Bystander, Strike or Twist, then reveal the top Villain Deck card; if right, +2 {attack}. {avengers}: if it was a Villain, you may fight it this turn."
   },
   {
    "name": "Second Chance at Life",
@@ -8256,7 +8326,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 6,
-   "cost": 8
+   "cost": 8,
+   "effect": "If a Master Strike or Scheme Twist would occur, you may discard this instead; draw three cards, then shuffle that Strike or Twist back into the Villain Deck."
   }
  ],
  "rev:photon": [
@@ -8264,7 +8335,8 @@
    "name": "Infrared Conversation",
    "copies": 5,
    "class": "Ranged",
-   "cost": 3
+   "cost": 3,
+   "effect": "Discard a card to play this. Draw two cards."
   },
   {
    "name": "Ultraviolet Radiation",
@@ -8273,7 +8345,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Discard a card to play this. {ranged}: Hyperspeed 3."
   },
   {
    "name": "Light the Way",
@@ -8282,7 +8355,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "+1 {attack} per card discarded from hand this turn."
   },
   {
    "name": "Coruscating Vengeance",
@@ -8291,7 +8365,8 @@
    "kind": "attack",
    "value": 6,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "{avengers} {avengers}: Last Stand."
   }
  ],
  "rev:quicksilver": [
@@ -8303,6 +8378,7 @@
    "value": 0,
    "variable": true,
    "cost": 3,
+   "effect": "Hyperspeed 3 for Recruit. {instinct}: Hyperspeed 3 for Recruit and Attack instead.",
    "keywords": [
     "Hyperspeed 3"
    ]
@@ -8314,7 +8390,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{strength}: Hyperspeed 4."
   },
   {
    "name": "Jittery Impatience",
@@ -8322,7 +8399,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 6
+   "cost": 6,
+   "effect": "Look at your top card; keep or discard it. {instinct}: you may KO the discarded card."
   },
   {
    "name": "Around the World Punch",
@@ -8332,6 +8410,7 @@
    "value": 0,
    "variable": true,
    "cost": 8,
+   "effect": "Hyperspeed your entire remaining deck (no reshuffle). {avengers} x4: first put your discard on top of your deck.",
    "keywords": [
     "Hyperspeed"
    ]
@@ -8344,7 +8423,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "As you play this, you may choose a colour and/or team icon; it counts as that this turn (instead of {covert} and {avengers})."
   },
   {
    "name": "Storm of Arrows",
@@ -8354,6 +8434,7 @@
    "value": 0,
    "variable": true,
    "cost": 4,
+   "effect": "Hyperspeed 4. {ranged}: draw a card.",
    "keywords": [
     "Hyperspeed 4"
    ]
@@ -8365,7 +8446,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "{instinct}: Dark Memories."
   },
   {
    "name": "Brooding Fury",
@@ -8375,6 +8457,7 @@
    "value": 3,
    "variable": true,
    "cost": 7,
+   "effect": "Dark Memories. {strength}: Dark Memories again.",
    "keywords": [
     "Dark Memories"
    ]
@@ -8387,7 +8470,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 1,
-   "cost": 2
+   "cost": 2,
+   "effect": "{ranged}: discard the top card of any player's deck; you may play a copy this turn."
   },
   {
    "name": "Alter Reality",
@@ -8395,13 +8479,15 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Reveal your top card; keep or discard it. {covert}: Dark Memories."
   },
   {
    "name": "Chaos Magic",
    "copies": 3,
    "class": "Covert",
-   "cost": 4
+   "cost": 4,
+   "effect": "Reveal the top Hero Deck card; you may play a copy this turn, then bottom it."
   },
   {
    "name": "Warp Time and Space",
@@ -8410,7 +8496,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Reveal the top three Hero Deck cards; take one to hand, replace the rest on top or bottom in any order. {avengers} x3: Dark Memories."
   }
  ],
  "rev:speed": [
@@ -8422,6 +8509,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "Hyperspeed 2. {instinct}: Hyperspeed 6 instead.",
    "keywords": [
     "Hyperspeed 2"
    ]
@@ -8432,7 +8520,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "The next Hero you recruit this turn goes on top of your deck."
   },
   {
    "name": "Race to the Rescue",
@@ -8440,7 +8529,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "Name a Hero Class; reveal your top card; if it matches, draw it, otherwise put it on top or bottom."
   },
   {
    "name": "Break the Sound Barrier",
@@ -8449,7 +8539,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Look at your top six cards; draw two, replace the rest on top or bottom in any order. {covert}: Hyperspeed 6."
   }
  ],
  "rev:war-machine": [
@@ -8459,7 +8550,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{tech}: you may fight a Henchman from your Victory pile this turn; if you do, KO it and rescue a Bystander (do its Fight effect too)."
   },
   {
    "name": "Military-Industrial Complex",
@@ -8468,7 +8560,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "+1 {recruit} each time you defeat a Villain this turn."
   },
   {
    "name": "Hypersonic Cannon",
@@ -8478,6 +8571,7 @@
    "value": 0,
    "variable": true,
    "cost": 5,
+   "effect": "Hyperspeed 5. {ranged}: you may KO a card from your discard.",
    "keywords": [
     "Hyperspeed 5"
    ]
@@ -8488,7 +8582,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 5,
-   "cost": 8
+   "cost": 8,
+   "effect": "Each time you defeat a Villain or Mastermind this turn, draw a card and rescue a Bystander."
   }
  ],
  "shl:agent-phil-coulson": [
@@ -8499,6 +8594,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 3,
+   "effect": "S.H.I.E.L.D. Level 3: draw an extra card when you draw your next hand.",
    "keywords": [
     "S.H.I.E.L.D. Level 3"
    ]
@@ -8509,7 +8605,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Reveal the top S.H.I.E.L.D. Officer; gain it or bottom it. {covert}: you may send it Undercover."
   },
   {
    "name": "Approve Orbital Strike",
@@ -8518,7 +8615,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "Choose: send a {shield} Hero from hand Undercover, or +1 {attack} per 2 S.H.I.E.L.D. Levels."
   },
   {
    "name": "Fake But Inspiring Death",
@@ -8528,6 +8626,7 @@
    "value": 4,
    "variable": true,
    "cost": 8,
+   "effect": "When another {shield} Hero is KO'd (any turn), you may discard this to send it Undercover into your Victory pile and draw three cards. S.H.I.E.L.D. Level 8: +4 {attack}.",
    "keywords": [
     "S.H.I.E.L.D. Level 8"
    ]
@@ -8540,7 +8639,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 3,
-   "cost": 3
+   "cost": 3,
+   "effect": "Discard a {shield} Hero to play this. {ranged}: you may send the discarded Hero Undercover."
   },
   {
    "name": "Aftershock",
@@ -8550,6 +8650,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "S.H.I.E.L.D. Level 2: +2 {attack}.",
    "keywords": [
     "S.H.I.E.L.D. Level 2"
    ]
@@ -8562,6 +8663,7 @@
    "value": 2,
    "variable": true,
    "cost": 6,
+   "effect": "When you fight a Villain whose Attack exceeds your S.H.I.E.L.D. Level this turn, you may send a S.H.I.E.L.D. Officer Undercover. S.H.I.E.L.D. Level 4: +4 {attack}.",
    "keywords": [
     "S.H.I.E.L.D. Level 4"
    ]
@@ -8573,7 +8675,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Send a S.H.I.E.L.D. Officer Undercover; then per S.H.I.E.L.D. Level (up to 5), bottom a chosen HQ Hero and gain their total printed Attack."
   }
  ],
  "shl:deathlok": [
@@ -8585,6 +8688,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "Draw a card. S.H.I.E.L.D. Level 1: +1 {attack}.",
    "keywords": [
     "S.H.I.E.L.D. Level 1"
    ]
@@ -8595,7 +8699,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "{tech}: you may send a {shield} Hero Undercover from your discard or the KO pile."
   },
   {
    "name": "Headlok",
@@ -8604,6 +8709,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 5,
+   "effect": "S.H.I.E.L.D. Level 3: +3 {attack}. Below Level 3: you may send a {shield} card from your discard Undercover.",
    "keywords": [
     "S.H.I.E.L.D. Level 3"
    ]
@@ -8616,6 +8722,7 @@
    "value": 0,
    "variable": true,
    "cost": 8,
+   "effect": "Send a {shield} Hero from your discard Undercover. S.H.I.E.L.D. Level 3: gain the total printed Recruit of the {shield} Heroes in your Victory pile.",
    "keywords": [
     "S.H.I.E.L.D. Level 3"
    ]
@@ -8628,7 +8735,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Look at your top card; keep or discard it. {instinct}: if it was a {shield} Hero, you may send it Undercover."
   },
   {
    "name": "Battle Staves",
@@ -8637,6 +8745,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "S.H.I.E.L.D. Level 2: draw a card.",
    "keywords": [
     "S.H.I.E.L.D. Level 2"
    ]
@@ -8648,7 +8757,8 @@
    "kind": "attack",
    "value": 1,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "Choose: send a S.H.I.E.L.D. Officer Undercover, or +1 {attack} per 2 S.H.I.E.L.D. Levels."
   },
   {
    "name": "Infinity Formula",
@@ -8657,7 +8767,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Draw a card. Send two S.H.I.E.L.D. Officers Undercover; then +1 {recruit} and +1 {attack} per 2 S.H.I.E.L.D. Levels."
   }
  ],
  "hoa:thor": [
