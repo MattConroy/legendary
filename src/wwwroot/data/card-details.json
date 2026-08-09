@@ -12105,7 +12105,8 @@
       "keywords": [
         "Size-Changing",
         "Antics"
-      ]
+      ],
+      "effect": "Antics: +2 {attack}."
     },
     {
       "name": "Anticipate",
@@ -12117,7 +12118,8 @@
       "keywords": [
         "Size-Changing",
         "Antics"
-      ]
+      ],
+      "effect": "Antics: draw a card."
     },
     {
       "name": "Up the Ante",
@@ -12128,7 +12130,8 @@
       "cost": 1,
       "keywords": [
         "Heist"
-      ]
+      ],
+      "effect": "Heist: draw a card."
     },
     {
       "name": "Anti-Tank Weapons",
@@ -12140,7 +12143,8 @@
       "cost": 6,
       "keywords": [
         "Microscopic Size-Changing"
-      ]
+      ],
+      "effect": "{tech}: +3 {attack}."
     },
     {
       "name": "Antiproton Experiments",
@@ -12153,7 +12157,8 @@
       "keywords": [
         "Microscopic Size-Changing",
         "Antics"
-      ]
+      ],
+      "effect": "Antics: +2 {recruit} and +2 {attack}."
     },
     {
       "name": "Revolutionary Anthem",
@@ -12167,7 +12172,8 @@
         "Microscopic Size-Changing",
         "Antics",
         "Heist"
-      ]
+      ],
+      "effect": "Antics: +2 {attack}. Heist: +2 {attack}; if the revealed Villain Deck card is a Scheme Twist, +2 {attack} more and you may shuffle that deck."
     }
   ],
   "amw:ant-man": [
@@ -12182,7 +12188,8 @@
       "keywords": [
         "Size-Changing",
         "Antics"
-      ]
+      ],
+      "effect": "Antics: +2 {recruit}."
     },
     {
       "name": "Look Out for the Little Guy!",
@@ -12193,7 +12200,8 @@
       "cost": 3,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "Reveal the top card of your deck; if it's {strength} or has Size-Changing, draw it."
     },
     {
       "name": "Shrink Away",
@@ -12204,7 +12212,8 @@
       "cost": 4,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "{covert}: all Villains and the Mastermind get -1 Attack this turn."
     },
     {
       "name": "Bug Swarm",
@@ -12216,7 +12225,8 @@
       "keywords": [
         "Microscopic Size-Changing",
         "Antics"
-      ]
+      ],
+      "effect": "Antics: you may KO a card from hand or discard."
     },
     {
       "name": "Tiny Little Risk",
@@ -12228,7 +12238,8 @@
       "keywords": [
         "Microscopic Size-Changing",
         "Heist"
-      ]
+      ],
+      "effect": "Heist: draw two cards."
     },
     {
       "name": "Giant-Man",
@@ -12240,7 +12251,8 @@
       "cost": 9,
       "keywords": [
         "Microscopic Size-Changing"
-      ]
+      ],
+      "effect": "+1 {attack} per card you played this turn that's {strength} and/or has Size-Changing."
     }
   ],
   "amw:cassie-lang": [
@@ -12253,7 +12265,8 @@
       "cost": 5,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "{strength}: you may defeat a Villain worth 2 VP or less."
     },
     {
       "name": "Giant Hug",
@@ -12264,7 +12277,8 @@
       "cost": 4,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "Choose a player; if that player reveals a card costing 5 or more, they draw a card."
     },
     {
       "name": "Start Small",
@@ -12275,7 +12289,8 @@
       "cost": 2,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "To play this, discard a card; then, if you have a Villain worth 2 VP or less in your Victory Pile, draw a card."
     },
     {
       "name": "Learn from the Past",
@@ -12286,7 +12301,8 @@
       "cost": 6,
       "keywords": [
         "Microscopic Size-Changing"
-      ]
+      ],
+      "effect": "{strength}: you may do the Fight effect of a Villain worth 2 VP or less in your Victory Pile."
     },
     {
       "name": "Quantum Beacon",
@@ -12297,7 +12313,8 @@
       "cost": 5,
       "keywords": [
         "Microscopic Size-Changing"
-      ]
+      ],
+      "effect": "{tech}: reveal the top Villain Deck card; if it's a Bystander, rescue it; if it's a Villain worth 2 VP or less, you may fight it this turn. If you rescue or defeat it, skip the Villain Deck card next turn."
     },
     {
       "name": "Inspire Revolution",
@@ -12309,7 +12326,8 @@
       "cost": 9,
       "keywords": [
         "Microscopic Size-Changing"
-      ]
+      ],
+      "effect": "+1 {attack} per Villain worth 2 VP or less in your Victory Pile."
     }
   ],
   "amw:freedom-fighters": [
@@ -12319,7 +12337,8 @@
       "class": "Ranged",
       "kind": "recruit",
       "value": 1,
-      "cost": 3
+      "cost": 3,
+      "effect": "When you draw a new hand this turn, draw an extra card."
     },
     {
       "name": "Steel Warrior",
@@ -12328,7 +12347,8 @@
       "kind": "attack",
       "value": 1,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "Streets Conqueror 1. Draw a card."
     },
     {
       "name": "Xolum",
@@ -12337,7 +12357,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "Bridge Conqueror 1. {ranged}: +2 {attack}."
     },
     {
       "name": "Quaz",
@@ -12346,7 +12367,8 @@
       "kind": "recruit",
       "value": 2,
       "variable": true,
-      "cost": 6
+      "cost": 6,
+      "effect": "{ranged}: choose Recruit or Attack, then Explore; gain the chosen printed value from the Found Hero."
     },
     {
       "name": "Veb",
@@ -12354,7 +12376,8 @@
       "class": "Instinct",
       "kind": "attack",
       "value": 1,
-      "cost": 2
+      "cost": 2,
+      "effect": "Reveal the top card of your deck; if any of its icons contain a \"hole\" (0, 4, 6, 8, or 9), draw it. {instinct}: you may KO the card you drew this way."
     },
     {
       "name": "Freedom Forever",
@@ -12365,7 +12388,8 @@
       "cost": 7,
       "keywords": [
         "Explore"
-      ]
+      ],
+      "effect": "Explore. {instinct}: you may choose a player to gain the Found Hero."
     }
   ],
   "amw:janet-van-dyne": [
@@ -12376,7 +12400,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "{ranged}: Explore; +{attack} equal to the Found Hero's printed Attack."
     },
     {
       "name": "Search for Peace",
@@ -12385,7 +12410,8 @@
       "kind": "recruit",
       "value": 2,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "{covert}: Explore; +{recruit} equal to the Found Hero's printed Recruit."
     },
     {
       "name": "Wasp of Another Generation",
@@ -12397,7 +12423,8 @@
       "cost": 5,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "{covert}: Explore; then +1 {attack} per time you explored this turn."
     },
     {
       "name": "Quantum Contradiction",
@@ -12405,7 +12432,8 @@
       "class": "Ranged",
       "kind": "recruit",
       "value": 4,
-      "cost": 6
+      "cost": 6,
+      "effect": "When you play this, put it on top of the Hero Deck or KO it."
     },
     {
       "name": "Subatomic Size",
@@ -12417,7 +12445,8 @@
       "cost": 2,
       "keywords": [
         "Microscopic Size-Changing"
-      ]
+      ],
+      "effect": "Draw a card. {covert}{covert}: +2 {attack}."
     },
     {
       "name": "Finally Found You",
@@ -12429,7 +12458,8 @@
       "cost": 8,
       "keywords": [
         "Explore"
-      ]
+      ],
+      "effect": "Explore. {covert}: +{recruit} equal to the Found Hero's printed Recruit and +{attack} equal to its printed Attack."
     }
   ],
   "amw:jentorra": [
@@ -12439,7 +12469,8 @@
       "class": "Instinct",
       "kind": "recruit",
       "value": 2,
-      "cost": 3
+      "cost": 3,
+      "effect": "You may move a Villain to an adjacent space (swap if occupied). {instinct}: +2 {attack}."
     },
     {
       "name": "Take the High Ground",
@@ -12447,7 +12478,8 @@
       "class": "Strength",
       "kind": "attack",
       "value": 1,
-      "cost": 2
+      "cost": 2,
+      "effect": "Bridge Conqueror 1. If there are no Villains on the Rooftops, draw a card."
     },
     {
       "name": "Unite the Oppressed",
@@ -12456,7 +12488,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "{strength}: Sewers Conqueror 2."
     },
     {
       "name": "Find Your Courage",
@@ -12465,7 +12498,8 @@
       "kind": "recruit",
       "value": 3,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "{instinct}: Explore; if the Found Hero is {instinct} or has no team, +2 {recruit}."
     },
     {
       "name": "Lead Powerful Allies",
@@ -12474,7 +12508,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 6
+      "cost": 6,
+      "effect": "{strength}: Explore; +{attack} equal to the Found Hero's cost."
     },
     {
       "name": "Conquer the Conqueror",
@@ -12483,7 +12518,8 @@
       "kind": "attack",
       "value": 5,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "Bridge Conqueror 1. +1 {attack} per Villain worth 4 VP or more and per Mastermind Tactic in your Victory Pile."
     }
   ],
   "amw:scott-lang-cat-burglar": [
@@ -12497,7 +12533,8 @@
       "cost": 1,
       "keywords": [
         "Heist"
-      ]
+      ],
+      "effect": "Heist: +2 {recruit}."
     },
     {
       "name": "Shocking Support",
@@ -12509,7 +12546,8 @@
       "cost": 4,
       "keywords": [
         "Heist"
-      ]
+      ],
+      "effect": "Heist: +2 {attack}."
     },
     {
       "name": "X-Con Security Van",
@@ -12520,7 +12558,8 @@
       "cost": 5,
       "keywords": [
         "Heist"
-      ]
+      ],
+      "effect": "Heist: you may move a Villain to an empty city space; if you do, KO one of your Heroes."
     },
     {
       "name": "Anything for Cassie",
@@ -12531,7 +12570,8 @@
       "cost": 2,
       "keywords": [
         "Heist"
-      ]
+      ],
+      "effect": "Whenever you gain a Wound this turn, return that Wound to the Wound Deck. Heist: rescue a Bystander."
     },
     {
       "name": "Putting a Crew Together",
@@ -12543,7 +12583,8 @@
       "cost": 6,
       "keywords": [
         "Heist"
-      ]
+      ],
+      "effect": "Heist: +1 {attack} per different card cost you have."
     },
     {
       "name": "The Big Score",
@@ -12555,7 +12596,8 @@
       "cost": 8,
       "keywords": [
         "Heist"
-      ]
+      ],
+      "effect": "Heist: +4 {attack}; if the revealed Villain Deck card is a Master Strike, KO it and put a Bystander on top of the Villain Deck."
     }
   ],
   "amw:wasp": [
@@ -12569,7 +12611,8 @@
       "cost": 3,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "{ranged}: +1 {recruit} and +1 {attack}."
     },
     {
       "name": "Master Physicist",
@@ -12581,7 +12624,8 @@
       "cost": 4,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "+1 {recruit} per other card you have with a \"+\" in its Recruit icon."
     },
     {
       "name": "Positive Ions",
@@ -12593,7 +12637,8 @@
       "cost": 5,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "+1 {attack} per other card you have with a \"+\" in its Attack icon."
     },
     {
       "name": "Follow My Lead",
@@ -12605,7 +12650,8 @@
       "cost": 2,
       "keywords": [
         "Size-Changing"
-      ]
+      ],
+      "effect": "If this is the first card you played this turn, +1 {attack}."
     },
     {
       "name": "Infiltrate",
@@ -12618,7 +12664,8 @@
       "keywords": [
         "Microscopic Size-Changing",
         "Heist"
-      ]
+      ],
+      "effect": "When you draw a new hand this turn, draw an extra card. Heist: +3 {attack}."
     },
     {
       "name": "Hope Returns",
@@ -12630,7 +12677,8 @@
       "cost": 9,
       "keywords": [
         "Microscopic Size-Changing"
-      ]
+      ],
+      "effect": "+1 {recruit} per other card you have with a \"+\" in its Recruit icon, and +1 {attack} per other card with a \"+\" in its Attack icon."
     }
   ],
   "mds:blade-daywalker": [
