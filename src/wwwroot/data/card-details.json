@@ -9344,7 +9344,7 @@
       "value": 1,
       "variable": true,
       "cost": 2,
-      "effect": "{instinct} {covert}. Heroes of Wakanda Ambush: rescue a Bystander. Play: gain the Throne's Favor, or spend it for +2 {recruit}."
+      "effect": "{instinct}{covert}\n{heroes-of-wakanda} Ambush: rescue a Bystander.\n———\nGain the Throne's Favor, or spend it for +2 {recruit}."
     },
     {
       "name": "Vibranium Claws",
@@ -9353,7 +9353,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "{instinct} {tech}. Instinct Ambush: +2 {attack}. Play: gain the Throne's Favor, or spend it for +2 {attack}."
+      "effect": "{instinct}{tech}\n{instinct} Ambush: +2 {attack}.\n———\nGain the Throne's Favor, or spend it for +2 {attack}."
     },
     {
       "name": "Heart-Shaped Herb",
@@ -9361,7 +9361,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 5,
-      "effect": "{strength} {covert}. Covert Ambush: look at your top card; draw or KO it. Play - {covert}: gain the Throne's Favor, or look at your top card and draw or KO it."
+      "effect": "{strength}{covert}\n{covert} Ambush: look at your top card; draw or KO it.\n———\n{covert}: gain the Throne's Favor, or look at your top card and draw or KO it."
     },
     {
       "name": "Unite the Tribes of Wakanda",
@@ -9370,7 +9370,7 @@
       "value": 0,
       "variable": true,
       "cost": 8,
-      "effect": "{strength} {ranged}. Heroes of Wakanda Ambush: +1 {attack} per Hero Class you have. Play - {heroes-of-wakanda}: gain the Throne's Favor, or spend it for +1 {recruit} and +1 {attack} per Hero Class you have."
+      "effect": "{strength}{ranged}\n{heroes-of-wakanda} Ambush: +1 {attack} per Hero Class you have.\n———\n{heroes-of-wakanda}: gain the Throne's Favor, or spend it for +1 {recruit} and +1 {attack} per Hero Class you have."
     }
   ],
   "bp:queen-storm-of-wakanda": [
@@ -9381,7 +9381,7 @@
       "kind": "recruit",
       "value": 2,
       "cost": 3,
-      "effect": "Move a Villain to an adjacent space (swap if occupied). {covert}: get Empowered by Covert."
+      "effect": "You may move a Villain to an adjacent space (swap if occupied).\n{covert}: Empowered by {covert}."
     },
     {
       "name": "Torrential Downpour",
@@ -9391,7 +9391,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "Ranged Ambush: get Empowered by Ranged. Play - {ranged}: get Empowered by Ranged."
+      "effect": "{ranged} Ambush: Empowered by {ranged}.\n———\n{ranged}: Empowered by {ranged}."
     },
     {
       "name": "Forked Lightning",
@@ -9399,7 +9399,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 6,
-      "effect": "{covert} {ranged}. Wound Villains on the Rooftops and Bridge. {covert} {ranged}: gain the Throne's Favor, or spend it to Wound the Mastermind twice."
+      "effect": "{covert}{ranged}\nWound Villains on the Rooftops and Bridge.\n{covert}{ranged}: gain the Throne's Favor, or spend it to Wound the Mastermind twice."
     },
     {
       "name": "Thunderous Tempest",
@@ -9409,7 +9409,7 @@
       "value": 5,
       "variable": true,
       "cost": 8,
-      "effect": "Bottom up to three HQ Heroes. {heroes-of-wakanda}: gain the Throne's Favor, or spend it to get Empowered by Covert, then by Ranged."
+      "effect": "Choose up to three HQ Heroes and put them on the bottom of the Hero Deck.\n{heroes-of-wakanda}: gain the Throne's Favor, or spend it to get Empowered by {covert}, then by {ranged}."
     }
   ],
   "bp:general-okoye": [
@@ -9421,7 +9421,7 @@
       "value": 2,
       "variable": true,
       "cost": 3,
-      "effect": "Instinct Ambush: draw a card. Play - {instinct}: you may draw a card and +1 {attack}; if you do, gain a Wound."
+      "effect": "{instinct} Ambush: draw a card.\n———\n{instinct}: you may draw a card and +1 {attack}; if you do, gain a Wound."
     },
     {
       "name": "Lead the Dora Milaje",
@@ -9430,7 +9430,7 @@
       "value": 2,
       "variable": true,
       "cost": 4,
-      "effect": "{strength} {instinct}. You may gain a S.H.I.E.L.D. Officer. {strength}: instead, you may KO a S.H.I.E.L.D. Officer or Wound from hand or discard for +2 {attack}."
+      "effect": "{strength}{instinct}\nYou may gain a S.H.I.E.L.D. Officer.\n{strength}: instead, you may KO a S.H.I.E.L.D. Officer or Wound from hand or discard for +2 {attack}."
     },
     {
       "name": "Sovereign Bodyguard",
@@ -9449,7 +9449,7 @@
       "value": 4,
       "variable": true,
       "cost": 7,
-      "effect": "{heroes-of-wakanda}: you may KO a {shield} Hero or Wound from hand or discard for +2 {attack}."
+      "effect": "{heroes-of-wakanda}: you may KO a S.H.I.E.L.D. Hero or Wound from hand or discard for +2 {attack}."
     }
   ],
   "bp:princess-shuri": [
@@ -9461,7 +9461,7 @@
       "value": 0,
       "variable": true,
       "cost": 2,
-      "effect": "Tech Ambush: draw a card. Play: draw a card. {tech}: get Empowered by Tech."
+      "effect": "{tech} Ambush: draw a card.\n———\nDraw a card.\n{tech}: Empowered by {tech}."
     },
     {
       "name": "Kimoyo Beads",
@@ -9470,7 +9470,7 @@
       "value": 0,
       "variable": true,
       "cost": 4,
-      "effect": "{tech} {ranged}. Get Empowered by a colour of your choice, taking Recruit instead of Attack."
+      "effect": "{tech}{ranged}\nEmpowered by a colour of your choice, taking Recruit instead of Attack."
     },
     {
       "name": "Shock Net",
@@ -9480,7 +9480,7 @@
       "value": 3,
       "variable": true,
       "cost": 6,
-      "effect": "You may bottom a HQ card. {tech}: get Empowered by a colour of your choice."
+      "effect": "You may put an HQ card on the bottom of the Hero Deck.\n{tech}: Empowered by a colour of your choice."
     },
     {
       "name": "Become the Next Black Panther",
@@ -9489,7 +9489,7 @@
       "kind": "recruit",
       "value": 3,
       "cost": 7,
-      "effect": "{heroes-of-wakanda}: this turn, each card entering the HQ also gains 'Ambush: if you have any cards sharing its colour, +2 {attack}'."
+      "effect": "{heroes-of-wakanda}: this turn, each card entering the HQ also gains \"Ambush: if you have any cards sharing its colour, +2 {attack}\"."
     }
   ],
   "bp:white-wolf": [
@@ -9500,7 +9500,7 @@
       "kind": "attack",
       "value": 2,
       "cost": 4,
-      "effect": "Tech Ambush: Wound a Villain. Play - {tech}: Wound a Villain."
+      "effect": "{tech} Ambush: Wound a Villain.\n———\n{tech}: Wound a Villain."
     },
     {
       "name": "Secret Assignment",
@@ -9510,7 +9510,7 @@
       "value": 2,
       "variable": true,
       "cost": 3,
-      "effect": "Covert Ambush: Wound the Mastermind. Play - {covert}: if any Villain or Mastermind has any Wounds, +2 {recruit}."
+      "effect": "{covert} Ambush: Wound the Mastermind.\n———\n{covert}: if any Villain or Mastermind has any Wounds, +2 {recruit}."
     },
     {
       "name": "Command the Hatut Zeraze",
@@ -9518,7 +9518,7 @@
       "kind": "attack",
       "value": 3,
       "cost": 5,
-      "effect": "{covert} {tech}. Heroes of Wakanda Ambush: you may KO one of your cards. Play - {heroes-of-wakanda}: if any Villain or Mastermind has Wounds, you may KO a card from hand or discard."
+      "effect": "{covert}{tech}\n{heroes-of-wakanda} Ambush: you may KO one of your cards.\n———\n{heroes-of-wakanda}: if any Villain or Mastermind has any Wounds, you may KO a card from hand or discard."
     },
     {
       "name": "Reflective Vibranium Armor",
@@ -9527,7 +9527,7 @@
       "kind": "attack",
       "value": 4,
       "cost": 7,
-      "effect": "Tech Ambush: Wound each Villain and the Mastermind. Play: if a Master Strike would occur, you may reveal this to KO it and Wound the Mastermind instead."
+      "effect": "{tech} Ambush: Wound each Villain and the Mastermind.\n———\nIf a Master Strike would occur, you may reveal this to KO that Strike and Wound the Mastermind instead."
     }
   ],
   "nm:sunspot": [

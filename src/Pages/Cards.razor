@@ -238,9 +238,12 @@
         return new MarkupString(html.ToString());
     }
 
-    // Encode text, then bold signed numbers (+4, -2) so bonuses stand out.
+    // Encode text, bold signed numbers (+4, -2) so bonuses stand out, and turn
+    // the card's own line breaks (\n) into <br> so multi-effect cards read line
+    // by line just like the printed card.
     private static string Boldify(string t) =>
-        NumRe.Replace(System.Net.WebUtility.HtmlEncode(t), "<strong>$1</strong>");
+        NumRe.Replace(System.Net.WebUtility.HtmlEncode(t), "<strong>$1</strong>")
+             .Replace("\n", "<br>");
 
     private static string ValText(CardDetail d) => $"{d.Value}{(d.Variable ? "+" : "")}";
 
