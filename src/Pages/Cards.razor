@@ -25,8 +25,8 @@
                 </button>
             }
         </div>
-        <FilterBar Search="_search" SearchChanged="SetSearch"
-                   SetFilter="_setFilter" SetFilterChanged="SetSetFilter"
+        <FilterBar Search="@_search" SearchChanged="SetSearch"
+                   SetFilter="@_setFilter" SetFilterChanged="SetSetFilter"
                    Sets="State.SortedSets.Select(s => (s.Id, s.Name))"
                    AllLabel="All sets" SearchPlaceholder="Search cards…"
                    SearchLabel="Search cards" FilterLabel="Filter by set" />
@@ -44,45 +44,12 @@
                 <Virtualize Items="results" Context="entry" OverscanCount="6">
                     @{
                         var card = entry.Card;
-                        var team = (card as Hero)?.Team;
-                        var band = (card as Mastermind)?.ThreatBand ?? (card as Scheme)?.ThreatBand;
-                        var kws = Keywords.IsLoaded ? Keywords.InPlay(new[] { card.Id }) : [];
                         var deck = CardDetails.IsLoaded ? CardDetails.For(card.Id) : [];
-                        var open = _expanded.Contains(card.Id);
-                        var clickable = deck.Count > 0;
-                        var headClass = clickable ? "cat__head is-clickable" : "cat__head";
-                        string? roleAttr = clickable ? "button" : null;
-                        string? tabAttr = clickable ? "0" : null;
-                        bool? expandedAttr = clickable ? open : null;
+                        var kws = Keywords.IsLoaded ? Keywords.InPlay(new[] { card.Id }) : [];
                     }
-                    <li class="cat @(open && deck.Count > 0 ? "cat--open" : "")">
-                        <div class="@headClass" role="@roleAttr" tabindex="@tabAttr" aria-expanded="@expandedAttr"
-                             @onclick="() => TryToggle(card.Id, deck.Count)"
-                             @onkeydown="e => OnHeadKey(e, card.Id, deck.Count)">
-                            @if (deck.Count > 0)
-                            {
-                                <span class="cat__caret @(open ? "cat__caret--open" : "")" aria-hidden="true">▸</span>
-                            }
-                            <div class="cat__main">
-                                @if (card is Hero)
-                                {
-                                    <TeamIcon Team="@team" />
-                                }
-                                <span class="cat__name">@card.Name</span>
-                                <span class="cat__set">@entry.SetName</span>
-                                @if (band is { } b)
-                                {
-                                    <ThreatPill Band="b" />
-                                }
-                            </div>
-                        </div>
-                        @if (open && deck.Count > 0)
-                        {
-                            <CardDeck Deck="deck" />
-                        }
-                        <KeywordChips Class="cat__kws"
-                                      Items="kws.Select(k => (k.Name, k.Name, (string?)k.Summary))" />
-                    </li>
+                    <CardEntry Card="card" SetName="@entry.SetName" Deck="deck" Kws="kws"
+                               Open="_expanded.Contains(card.Id)"
+                               OnToggle="() => Toggle(card.Id)" />
                 </Virtualize>
             </ul>
         }
@@ -174,16 +141,6 @@
     private void Toggle(string id)
     {
         if (!_expanded.Remove(id)) _expanded.Add(id);
-    }
-
-    private void TryToggle(string id, int deckCount)
-    {
-        if (deckCount > 0) Toggle(id);
-    }
-
-    private void OnHeadKey(KeyboardEventArgs e, string id, int deckCount)
-    {
-        if (deckCount > 0 && e.Key is "Enter" or " ") Toggle(id);
     }
 
     private readonly record struct Entry(GameCard Card, string SetName, string SetId);

@@ -19,8 +19,8 @@
     }
     else
     {
-        <FilterBar Search="_search" SearchChanged="SetSearch"
-                   SetFilter="_setFilter" SetFilterChanged="SetSetFilter"
+        <FilterBar Search="@_search" SearchChanged="SetSearch"
+                   SetFilter="@_setFilter" SetFilterChanged="SetSetFilter"
                    Sets="SetsWithKeywords.Select(s => (s.Id, s.Name))"
                    AllLabel="All expansions" SearchPlaceholder="Search keywords…"
                    SearchLabel="Search keywords" FilterLabel="Filter by expansion" />
