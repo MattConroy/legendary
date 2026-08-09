@@ -1911,7 +1911,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{tech}: draw an extra card when you draw your next hand."
   },
   {
    "name": "Crazed Experiments",
@@ -1919,7 +1920,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 2,
-   "cost": 5
+   "cost": 5,
+   "effect": "Draw a card."
   },
   {
    "name": "Eighth Time's a Charm",
@@ -1928,7 +1930,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "If this is the eighth card played this turn, +2 {attack}."
   },
   {
    "name": "Octo-Pulverize",
@@ -1937,7 +1940,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Discard from the top of your deck until it empties or you've discarded 8 cards; +1 {attack} per card discarded this turn."
   }
  ],
  "villains:electro": [
@@ -1946,6 +1950,7 @@
    "copies": 5,
    "class": "Ranged",
    "cost": 2,
+   "effect": "Reveal your top card; you may KO it.",
    "keywords": [
     "Dodge"
    ]
@@ -1958,6 +1963,7 @@
    "value": 0,
    "variable": true,
    "cost": 3,
+   "effect": "+3 {attack}, only against Adversaries in the Bank. {ranged}: instead +3 {attack} only against the Commander.",
    "keywords": [
     "Dodge"
    ]
@@ -1969,7 +1975,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "+1 {attack} per card you discarded this turn."
   },
   {
    "name": "Anti-Matter",
@@ -1977,7 +1984,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "All Adversaries and the Commander get -1 Attack this turn. {sinister-six} {sinister-six}: repeat."
   }
  ],
  "villains:green-goblin": [
@@ -1988,6 +1996,7 @@
    "kind": "attack",
    "value": 2,
    "cost": 4,
+   "effect": "When played or Dodged, another {hydra} Ally in your hand gains Dodge this turn.",
    "keywords": [
     "Dodge"
    ]
@@ -2000,6 +2009,7 @@
    "value": 1,
    "variable": true,
    "cost": 3,
+   "effect": "If you discarded any cards this turn, +2 {attack}.",
    "keywords": [
     "Dodge"
    ]
@@ -2011,6 +2021,7 @@
    "kind": "recruit",
    "value": 3,
    "cost": 5,
+   "effect": "If you discarded any cards this turn, kidnap a Bystander.",
    "keywords": [
     "Dodge"
    ]
@@ -2021,7 +2032,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 4,
-   "cost": 7
+   "cost": 7,
+   "effect": "Return to your hand all cards you discarded this turn."
   }
  ],
  "villains:kraven": [
@@ -2033,6 +2045,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "{sinister-six}: +2 {recruit}.",
    "keywords": [
     "Dodge"
    ]
@@ -2043,7 +2056,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Choose an Adversary; if no empty spaces are adjacent to it, it gets -1 Attack this turn."
   },
   {
    "name": "Hunt Down",
@@ -2052,7 +2066,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "Choose an Adversary and a direction; move it through as many adjacent empty spaces as possible; +1 {attack} per space moved."
   },
   {
    "name": "He's the Best Around",
@@ -2061,7 +2076,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "+{attack} equal to the cost of the highest-cost Ally in the Lair."
   }
  ],
  "villains:mysterio": [
@@ -2073,6 +2089,7 @@
    "value": 1,
    "variable": true,
    "cost": 2,
+   "effect": "{covert}: +2 {attack}.",
    "keywords": [
     "Dodge"
    ]
@@ -2084,7 +2101,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Put a Lair card on the bottom of the Ally Deck; +2 {recruit} if it had a Recruit icon, +2 {attack} if it had an Attack icon."
   },
   {
    "name": "Holographic Illusion",
@@ -2093,7 +2111,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "+1 {attack} per colour of Ally in the Lair."
   },
   {
    "name": "False Reflection",
@@ -2102,7 +2121,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Put a Lair card on the bottom of the Ally Deck; +{recruit} equal to its printed {recruit} and +{attack} equal to its printed {attack}. {sinister-six}: repeat for each other {sinister-six} Ally played this turn (a different Lair card each time)."
   }
  ],
  "villains:venom": [
@@ -2113,7 +2133,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Optionally KO a Bystander from your Victory pile for +2 {attack}."
   },
   {
    "name": "Symbiote Takeover",
@@ -2121,7 +2142,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength}: kidnap a Bystander."
   },
   {
    "name": "Horrify the Populace",
@@ -2129,7 +2151,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "Each Adversary of 4+ Attack guards a Bystander."
   },
   {
    "name": "Ravenous Greed",
@@ -2138,7 +2161,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Each opponent reveals an {instinct} Ally or KOs a Bystander from their Victory pile. {instinct}: kidnap all Bystanders KO'd this turn; +1 {recruit} per Bystander kidnapped this turn."
   }
  ],
  "villains:juggernaut": [
@@ -2149,7 +2173,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{strength}: each opponent reveals their top card and discards it if it costs 1-3; +1 {recruit} per card discarded."
   },
   {
    "name": "Size Matters",
@@ -2158,7 +2183,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "+1 {attack} per other cost-4-or-more card played this turn."
   },
   {
    "name": "Runaway Train",
@@ -2166,7 +2192,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 4,
-   "cost": 5
+   "cost": 5,
+   "effect": "Discard a card from hand to play this."
   },
   {
    "name": "Unstoppable Force",
@@ -2175,7 +2202,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Each player KOs two cards from hand, or from discard (your choice); +1 {attack} per non-grey Ally KO'd this turn."
   }
  ],
  "villains:magneto": [
@@ -2187,6 +2215,7 @@
    "value": 1,
    "variable": true,
    "cost": 3,
+   "effect": "You may give another player a Bindings from your hand or discard; if you do, +2 {attack}.",
    "keywords": [
     "Dodge"
    ]
@@ -2199,6 +2228,7 @@
    "value": 2,
    "variable": true,
    "cost": 4,
+   "effect": "{strength}: a chosen player reveals a {brotherhood} Ally or gains a Bindings; if one is gained, +1 {recruit}.",
    "keywords": [
     "Dodge"
    ]
@@ -2209,7 +2239,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "If you discarded any cards this turn, draw a card."
   },
   {
    "name": "Master of Magnetism",
@@ -2218,7 +2249,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "{brotherhood}: for each other {brotherhood} Ally played this turn, a chosen player gains a Bindings; +2 {attack} per Bindings gained this turn."
   }
  ],
  "villains:mystique": [
@@ -2229,7 +2261,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{instinct} {tech}: +3 {attack}."
   },
   {
    "name": "Show Your True Colors",
@@ -2238,6 +2271,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
+   "effect": "As you play this, you may choose a class; it counts as that class instead of {covert} this turn.",
    "keywords": [
     "Dodge"
    ]
@@ -2246,7 +2280,8 @@
    "name": "Turn the Tide",
    "copies": 3,
    "class": "Instinct",
-   "cost": 4
+   "cost": 4,
+   "effect": "Reveal the top Ally Deck card; you may play a copy of it this turn, then bottom it."
   },
   {
    "name": "Spy Games",
@@ -2255,7 +2290,8 @@
    "kind": "attack",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Reveal the top five Ally Deck cards; +{attack} equal to their total printed {attack}; then replace in any order."
   }
  ],
  "villains:sabretooth": [
@@ -2266,7 +2302,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Reveal your top card, then keep it on top or discard it; if it was an {instinct} Ally, +2 {attack}."
   },
   {
    "name": "Take One for the Team",
@@ -2274,13 +2311,15 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 1,
-   "cost": 4
+   "cost": 4,
+   "effect": "Reveal your top card; if it's a {brotherhood} Ally you may draw it, otherwise you may KO it."
   },
   {
    "name": "Stealthy Predator",
    "copies": 3,
    "class": "Covert",
-   "cost": 2
+   "cost": 2,
+   "effect": "Reveal your top three cards; draw one, discard one, put one back on top."
   },
   {
    "name": "Upper Hand",
@@ -2289,7 +2328,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Each player reveals an {instinct} Ally or reveals their top card; KO any of those top cards you choose. {instinct}: +1 {attack} per card KO'd this turn."
   }
  ],
  "villains:enchantress": [
@@ -2299,7 +2339,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{ranged}: gain a New Recruit each time you defeat an Adversary this turn."
   },
   {
    "name": "Soul Sacrifice",
@@ -2308,7 +2349,8 @@
    "kind": "recruit",
    "value": 1,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "KO a card from hand or discard; +{recruit} equal to its cost."
   },
   {
    "name": "Irresistible Bribe",
@@ -2316,13 +2358,15 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "Choose an Adversary; you may spend any mix of Recruit and Attack to fight it this turn. {covert} {covert}: also the Commander."
   },
   {
    "name": "Unending Anguish",
    "copies": 1,
    "class": "Covert",
-   "cost": 7
+   "cost": 7,
+   "effect": "Draw three cards. {foes-of-asgard}: then put this on the bottom of your deck."
   }
  ],
  "villains:loki": [
@@ -2332,7 +2376,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{covert}: optionally KO a card from hand or discard to gain a New Recruit."
   },
   {
    "name": "Illusionary Bindings",
@@ -2341,7 +2386,8 @@
    "kind": "recruit",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "{ranged}: each opponent reveals a {ranged} Ally or gains a Bindings; if any did, +1 {recruit}."
   },
   {
    "name": "Father of Lies",
@@ -2349,7 +2395,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "Look at another player's top two cards; secretly label one Good and one Bad - they discard one to their pile and one to yours."
   },
   {
    "name": "God of Mischief",
@@ -2357,7 +2404,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 6,
-   "cost": 8
+   "cost": 8,
+   "effect": "Each player reveals a {foes-of-asgard} Ally or reveals their hand; for each revealed hand, you may swap a card in it with a Lair card of equal cost."
   }
  ],
  "villains:bullseye": [
@@ -2367,7 +2415,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{instinct}: draw a card."
   },
   {
    "name": "Fulfill the Contract",
@@ -2377,6 +2426,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "Choose an Adversary Group; +1 {recruit} per Adversary from that group in your Victory pile.",
    "keywords": [
     "Dodge"
    ]
@@ -2387,7 +2437,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "Choose an Adversary; it gets -1 Attack per Adversary from its group in your Victory pile."
   },
   {
    "name": "Perfect Aim",
@@ -2396,7 +2447,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "+5 {attack} per Commander Tactic in your Victory pile."
   }
  ],
  "villains:kingpin": [
@@ -2404,7 +2456,8 @@
    "name": "Pull the Strings",
    "copies": 5,
    "class": "Covert",
-   "cost": 3
+   "cost": 3,
+   "effect": "This turn, New Recruits you gain go to your hand. Gain a New Recruit."
   },
   {
    "name": "Recruitment Day",
@@ -2412,7 +2465,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{strength}: gain a New Recruit."
   },
   {
    "name": "Import Illegal Weapons",
@@ -2421,13 +2475,15 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "+1 {attack} per New Recruit you played this turn."
   },
   {
    "name": "Endless Underlings",
    "copies": 1,
    "class": "Strength",
-   "cost": 8
+   "cost": 8,
+   "effect": "Gain three New Recruits. {crime-syndicate} {crime-syndicate}: New Recruits you'd return this turn go to the bottom of your deck instead."
   }
  ],
  "villains:ultron": [
@@ -2438,6 +2494,7 @@
    "kind": "recruit",
    "value": 2,
    "cost": 3,
+   "effect": "Reveal a {hydra} card from hand; it counts as {tech} instead of its colour this turn.",
    "keywords": [
     "Dodge"
    ]
@@ -2450,6 +2507,7 @@
    "value": 0,
    "variable": true,
    "cost": 2,
+   "effect": "{tech}: +1 {attack} per other {tech} Ally played this turn.",
    "keywords": [
     "Dodge"
    ]
@@ -2460,7 +2518,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "{tech}: kidnap a Bystander per other {tech} Ally played this turn."
   },
   {
    "name": "Molecular Rearrangement",
@@ -2469,7 +2528,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Each opponent reveals a {tech} Ally or discards their hand; those who discard draw 5. {tech}: +3 {attack} per discarded Ally costing 7 or more."
   }
  ],
  "sw1:apocalyptic-kitty-pryde": [
