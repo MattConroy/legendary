@@ -8778,7 +8778,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "If you are Worthy, +2 {attack}."
   },
   {
    "name": "Divine Lightning",
@@ -8787,13 +8788,15 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "+1 {attack} per other card played this turn that makes you Worthy."
   },
   {
    "name": "Mjolnir",
    "copies": 3,
    "class": "Strength",
    "cost": 4,
+   "effect": "Thrown Artifact (only while Worthy) - when thrown: +3 {attack}, then +1 {attack} per {ranged} Hero played this turn.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -8804,7 +8807,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 5,
-   "cost": 8
+   "cost": 8,
+   "effect": "{heroes-of-asgard}: each Worthy player draws a card; each Villain worth under 5 VP gets -1 Attack this turn."
   }
  ],
  "hoa:beta-ray-bill": [
@@ -8814,7 +8818,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 1
+   "cost": 1,
+   "effect": "Discard a card to play this; then if you are Worthy, draw a card."
   },
   {
    "name": "Bio-Engineered Cyborg",
@@ -8822,13 +8827,15 @@
    "class": "Tech",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "You may discard a card to draw a card."
   },
   {
    "name": "Stormbreaker",
    "copies": 3,
    "class": "Ranged",
    "cost": 4,
+   "effect": "Thrown Artifact (only while Worthy) - to throw, discard a card; then +2 {attack} per card discarded from hand this turn.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -8839,7 +8846,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 4,
-   "cost": 8
+   "cost": 8,
+   "effect": "You may discard a card, then draw a card for each card discarded from hand this turn."
   }
  ],
  "hoa:valkyrie": [
@@ -8848,6 +8856,7 @@
    "copies": 5,
    "class": "Strength",
    "cost": 3,
+   "effect": "Thrown Artifact - when thrown: Sewers Conqueror 2.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -8859,7 +8868,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Rooftops Conqueror 1. When an Ambush is played, you may discard this to draw two extra cards at end of turn."
   },
   {
    "name": "Usher to Valhalla",
@@ -8868,7 +8878,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "Bridge Conqueror 1. {heroes-of-asgard}: the first time you defeat a Villain this turn, you may KO one of your cards from hand or discard."
   },
   {
    "name": "Ride of the Valkyries",
@@ -8877,7 +8888,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Streets Conqueror 1. {instinct}: +1 {attack} per 4 Heroes in the KO pile."
   }
  ],
  "hoa:lady-sif": [
@@ -8886,6 +8898,7 @@
    "copies": 5,
    "class": "Instinct",
    "cost": 2,
+   "effect": "Thrown Artifact - when thrown: +1 {recruit} and +1 {attack}.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -8897,13 +8910,15 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 5
+   "cost": 5,
+   "effect": "If you control any Artifacts, +2 {attack}."
   },
   {
    "name": "Winged Helm",
    "copies": 3,
    "class": "Strength",
    "cost": 3,
+   "effect": "Thrown Artifact - throw for +1 {attack}. Any turn, if a player would gain a Wound, you may throw this to prevent it and draw two cards.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -8913,6 +8928,7 @@
    "copies": 1,
    "class": "Covert",
    "cost": 7,
+   "effect": "Thrown Artifact - when thrown: +4 {attack} and you may KO a card from hand or discard.",
    "keywords": [
     "Thrown Artifact"
    ]
@@ -8925,7 +8941,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Move a Villain to an adjacent space (swap if occupied). {covert}: draw a card."
   },
   {
    "name": "Hogun the Grim",
@@ -8933,7 +8950,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "{strength}: you may KO a card from hand or discard."
   },
   {
    "name": "Volstagg the Valiant",
@@ -8942,7 +8960,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "Bridge Conqueror 1. {instinct}: Bridge Conqueror 3 instead."
   },
   {
    "name": "Three Stand as One",
@@ -8951,7 +8970,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "If you played at least three other differently-named non-grey Heroes this turn, +3 {attack}. {heroes-of-asgard}: Streets Conqueror 3."
   }
  ],
  "itc:captain-mar-vell": [
@@ -8962,6 +8982,7 @@
    "kind": "attack",
    "value": 1,
    "cost": 2,
+   "effect": "If Danger Sense would give you Attack this turn, gain that many Shards instead. Danger Sense 1. {ranged}: Danger Sense 2 instead.",
    "keywords": [
     "Danger Sense 1"
    ]
@@ -8972,7 +8993,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "If you gained any Shards this turn, draw a card."
   },
   {
    "name": "Channel the Nega-Bands",
@@ -8980,7 +9002,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 2,
-   "cost": 6
+   "cost": 6,
+   "effect": "{avengers}: reveal your top card; if it costs 1 or more, gain a Shard; if 0, KO it."
   },
   {
    "name": "Protector of the Universe",
@@ -8990,6 +9013,7 @@
    "value": 3,
    "variable": true,
    "cost": 7,
+   "effect": "Danger Sense 4; if you gained any Shards earlier this turn, Danger Sense 7 instead.",
    "keywords": [
     "Danger Sense 4"
    ]
@@ -9002,7 +9026,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "{covert}: gain a Shard each time you recruit a Hero from the HQ this turn."
   },
   {
    "name": "Cosmic Champion",
@@ -9011,7 +9036,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Burn a Shard: +3 {attack}."
   },
   {
    "name": "The Quantum Bands",
@@ -9019,7 +9045,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 1,
-   "cost": 5
+   "cost": 5,
+   "effect": "Gain a Shard. Burn 2 Shards: you may KO a card from hand or discard."
   },
   {
    "name": "The Star Brand",
@@ -9028,7 +9055,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Gain a Shard each time you defeat a Villain or Mastermind this turn. Burn 4 Shards: +7 {attack}."
   }
  ],
  "itc:adam-warlock": [
@@ -9036,25 +9064,29 @@
    "name": "Transmute Matter",
    "copies": 5,
    "class": "Covert",
-   "cost": 3
+   "cost": 3,
+   "effect": "Gain a Shard. Burn 2 Shards: halve a HQ Hero's cost this turn (round up)."
   },
   {
    "name": "Regenerative Cocoon",
    "copies": 5,
    "class": "Strength",
-   "cost": 4
+   "cost": 4,
+   "effect": "Discard a card to play this. Draw two extra cards when you draw your next hand."
   },
   {
    "name": "Soulblast",
    "copies": 3,
    "class": "Covert",
-   "cost": 5
+   "cost": 5,
+   "effect": "Gain 2 Shards. {covert}: Burn 4 Shards: defeat a Villain."
   },
   {
    "name": "Manifest the Soul Gem",
    "copies": 1,
    "class": "Ranged",
-   "cost": 8
+   "cost": 8,
+   "effect": "Gain 4 Shards. {avengers} {avengers}: Burn 8 Shards: defeat the Mastermind once, then reveal the top Villain Deck card; if a Master Strike, the Magus Mastermind joins next turn with one random Tactic."
   }
  ],
  "itc:moondragon": [
@@ -9064,7 +9096,8 @@
    "class": "Covert",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "If you didn't fight anything this turn, draw an extra card when you draw your next hand."
   },
   {
    "name": "Psionic Warning",
@@ -9074,6 +9107,7 @@
    "value": 1,
    "variable": true,
    "cost": 4,
+   "effect": "Danger Sense 2. {instinct}: if it revealed any Scheme Twists, gain a Shard.",
    "keywords": [
     "Danger Sense 2"
    ]
@@ -9086,6 +9120,7 @@
    "value": 1,
    "variable": true,
    "cost": 6,
+   "effect": "Danger Sense 4. {avengers}: if it revealed at least two Master Strikes, you may shuffle the Villain Deck.",
    "keywords": [
     "Danger Sense 4"
    ]
@@ -9098,6 +9133,7 @@
    "value": 5,
    "variable": true,
    "cost": 8,
+   "effect": "Danger Sense 1; if it revealed a Scheme Twist, +3 {attack} and you may shuffle the Villain Deck.",
    "keywords": [
     "Danger Sense 1"
    ]
@@ -9111,7 +9147,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 2
+   "cost": 2,
+   "effect": "Draw a card. {tech}: +1 {recruit} or +1 {attack}."
   },
   {
    "name": "Electromagnetic Wave",
@@ -9120,19 +9157,22 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Choose: +2 {recruit} or gain a Shard. {ranged}: instead, both."
   },
   {
    "name": "Declare Galactic Threat",
    "copies": 3,
    "class": "Tech",
-   "cost": 6
+   "cost": 6,
+   "effect": "A Villain gains Cosmic Threat (Tech) this turn, replacing any prior Cosmic Threat. If no Villains were in the city, draw two cards instead."
   },
   {
    "name": "Mobilize the Nova Corps",
    "copies": 1,
    "class": "Ranged",
-   "cost": 8
+   "cost": 8,
+   "effect": "Choose: draw three cards, or a Mastermind gains Cosmic Threat (Ranged) this turn, replacing any prior Cosmic Threat."
   }
  ],
  "itc:yondu": [
@@ -9140,7 +9180,8 @@
    "name": "Whistling Arrow",
    "copies": 5,
    "class": "Ranged",
-   "cost": 2
+   "cost": 2,
+   "effect": "Gain a Shard. {ranged}: Burn any number of Shards: defeat a Villain whose printed VP equals the Shards burned."
   },
   {
    "name": "Interstellar Hunter",
@@ -9150,6 +9191,7 @@
    "value": 1,
    "variable": true,
    "cost": 3,
+   "effect": "Danger Sense 2. {covert}: if it revealed any Master Strikes, draw a card.",
    "keywords": [
     "Danger Sense 2"
    ]
@@ -9162,6 +9204,7 @@
    "value": 1,
    "variable": true,
    "cost": 5,
+   "effect": "Danger Sense 3. {guardians-of-the-galaxy}: you may do the Fight effect of a Henchman Villain revealed this way (without defeating it).",
    "keywords": [
     "Danger Sense 3"
    ]
@@ -9170,7 +9213,8 @@
    "name": "Space Pirate",
    "copies": 1,
    "class": "Tech",
-   "cost": 7
+   "cost": 7,
+   "effect": "Choose: gain a HQ Hero for free, or gain a Shard per empty city space. {guardians-of-the-galaxy} x3: do both."
   }
  ],
  "itc:phyla-vell": [
@@ -9178,7 +9222,8 @@
    "name": "Channel Cosmic Power",
    "copies": 5,
    "class": "Instinct",
-   "cost": 2
+   "cost": 2,
+   "effect": "Gain a Shard. {instinct}: draw a card."
   },
   {
    "name": "Quantum Sword",
@@ -9187,7 +9232,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "If you have at least 4 Shards, +2 {attack}."
   },
   {
    "name": "Martyr",
@@ -9195,7 +9241,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "If a player would gain a Wound, you may discard this and gain 2 Shards instead."
   },
   {
    "name": "Avatar of Oblivion",
@@ -9204,7 +9251,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "You may KO a card from hand or discard to gain 2 Shards; then if you have at least 8 Shards, +3 {attack}."
   }
  ],
  "itc:ronan-the-accuser": [
@@ -9212,7 +9260,8 @@
    "name": "Universal Weapon",
    "copies": 5,
    "class": "Tech",
-   "cost": 3
+   "cost": 3,
+   "effect": "Gain a Shard. Burn 2 Shards: draw two cards."
   },
   {
    "name": "Rally Kree Warriors",
@@ -9220,7 +9269,8 @@
    "class": "Strength",
    "kind": "recruit",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "Gain a Shard each time you rescue a Bystander this turn. {strength}: rescue a Bystander."
   },
   {
    "name": "Accuse Enemies of the Empire",
@@ -9229,6 +9279,7 @@
    "kind": "attack",
    "value": 4,
    "cost": 6,
+   "effect": "Contest of Champions (Tech): each winner rescues a Bystander; if the Mastermind wins, it captures a Bystander.",
    "keywords": [
     "Contest of Champions"
    ]
@@ -9240,6 +9291,7 @@
    "kind": "attack",
    "value": 4,
    "cost": 8,
+   "effect": "Contest of Champions (Strength): each losing opponent loses a Shard; each winner gains 2 Shards; if the Mastermind wins, a Villain gains 2 Shards.",
    "keywords": [
     "Contest of Champions"
    ]
@@ -9252,7 +9304,8 @@
    "class": "Tech",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Each time you take Shards from a Villain, Mastermind or player this turn, you may KO one of your cards from hand or discard."
   },
   {
    "name": "Galactic Rogue",
@@ -9260,7 +9313,8 @@
    "class": "Instinct",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "A Villain gains a Shard. {instinct} {tech}: take a Shard from a Villain."
   },
   {
    "name": "Illusion Device",
@@ -9268,7 +9322,8 @@
    "class": "Tech",
    "kind": "attack",
    "value": 2,
-   "cost": 4
+   "cost": 4,
+   "effect": "{tech}: choose another player; unless they reveal a {covert} Hero, take one of their Shards or a Bystander from their Victory pile."
   },
   {
    "name": "Daring Raid",
@@ -9277,7 +9332,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Each time you take Shards from a Villain, Mastermind or player this turn, +3 {recruit}."
   }
  ],
  "bp:king-black-panther": [
@@ -9461,7 +9517,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 1,
-   "cost": 2
+   "cost": 2,
+   "effect": "Moonlight: you may bottom a HQ Hero. Sunlight: draw a card."
   },
   {
    "name": "Solar-Powered",
@@ -9470,7 +9527,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Sunlight: you may bottom a card from hand for +2 {attack}."
   },
   {
    "name": "Thermokinetic Fury",
@@ -9479,7 +9537,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "Bottom a card from hand to play this. Sunlight: +1 {attack} per other {x-men} card played this turn."
   },
   {
    "name": "Empyreal Force",
@@ -9488,7 +9547,8 @@
    "kind": "attack",
    "value": 3,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "Bottom any number of HQ Heroes. Sunlight: +1 {attack} per even-cost Hero in the HQ."
   }
  ],
  "nm:wolfsbane": [
@@ -9498,7 +9558,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Sunlight: you may bottom a HQ Hero. Moonlight: draw a card."
   },
   {
    "name": "Night Vision",
@@ -9506,7 +9567,8 @@
    "class": "Strength",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Moonlight: look at your top two cards; discard any, replace the rest in any order."
   },
   {
    "name": "Howl at the Moon",
@@ -9514,7 +9576,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 3,
-   "cost": 5
+   "cost": 5,
+   "effect": "Moonlight: look at your top card; KO it or put it back."
   },
   {
    "name": "Nocturnal Savagery",
@@ -9523,7 +9586,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Look at your top three cards; discard any, replace the rest. Moonlight: +{attack} equal to the total printed Attack of cards discarded from your deck this turn."
   }
  ],
  "nm:mirage": [
@@ -9533,7 +9597,8 @@
    "class": "Instinct",
    "kind": "recruit",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "If an effect discards this, set it aside and add it to your hand at end of turn."
   },
   {
    "name": "Dreams Made Real",
@@ -9541,7 +9606,8 @@
    "class": "Ranged",
    "kind": "attack",
    "value": 2,
-   "cost": 3
+   "cost": 3,
+   "effect": "Moonlight: you may discard a card to draw a card."
   },
   {
    "name": "Nightmare Wolves",
@@ -9550,7 +9616,8 @@
    "kind": "attack",
    "value": 1,
    "variable": true,
-   "cost": 6
+   "cost": 6,
+   "effect": "You may have a Waking Nightmare; +{attack} equal to the cost of the card you discarded this way."
   },
   {
    "name": "Haunted By the Demon Bear",
@@ -9559,7 +9626,8 @@
    "kind": "attack",
    "value": 4,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "+2 {attack} each time an effect discards a card from your hand this turn. Moonlight: you may have a Waking Nightmare."
   }
  ],
  "nm:warlock": [
@@ -9567,7 +9635,8 @@
    "name": "Earthling Choices",
    "copies": 5,
    "class": "Tech",
-   "cost": 2
+   "cost": 2,
+   "effect": "Look at your top two cards; draw one, discard the other."
   },
   {
    "name": "Analyze Planetary Rotation",
@@ -9576,7 +9645,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "Sunlight: +2 {recruit}. Moonlight: +2 {attack}. {tech}: instead, both."
   },
   {
    "name": "Techno-Organic Adaptation",
@@ -9584,7 +9654,8 @@
    "class": "Covert",
    "kind": "attack",
    "value": 3,
-   "cost": 6
+   "cost": 6,
+   "effect": "{tech}: the first time you defeat a Villain this turn, you may KO one of your cards from hand or discard."
   },
   {
    "name": "Nanite Shapeshifter",
@@ -9593,7 +9664,8 @@
    "kind": "recruit",
    "value": 0,
    "variable": true,
-   "cost": 7
+   "cost": 7,
+   "effect": "Sunlight: draw three cards. Moonlight: +3 {recruit} and +3 {attack}. {x-men} x4: instead, both."
   }
  ],
  "nm:karma": [
@@ -9604,7 +9676,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 3
+   "cost": 3,
+   "effect": "{covert}: choose a Villain; +1 {attack} per Villain adjacent to it."
   },
   {
    "name": "Temporary Possession",
@@ -9613,7 +9686,8 @@
    "kind": "attack",
    "value": 2,
    "variable": true,
-   "cost": 4
+   "cost": 4,
+   "effect": "Guess a colour, then reveal the top Hero Deck card and put it back on top or bottom; if right, +2 {attack}."
   },
   {
    "name": "Karmic Balance",
@@ -9621,7 +9695,8 @@
    "class": "Ranged",
    "kind": "recruit",
    "value": 4,
-   "cost": 6
+   "cost": 6,
+   "effect": "Reveal the top Hero Deck card; you may recruit it this turn; if you do, you may KO one of your cards from hand or discard."
   },
   {
    "name": "Control Like a Puppet",
@@ -9630,7 +9705,8 @@
    "kind": "attack",
    "value": 5,
    "variable": true,
-   "cost": 8
+   "cost": 8,
+   "effect": "{x-men}: choose a Villain in the city; +{attack} equal to its VP, usable only against other Villains or the Mastermind."
   }
  ],
  "rok:black-bolt": [
