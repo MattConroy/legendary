@@ -11378,7 +11378,8 @@
       "kind": "recruit",
       "value": 2,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "If you have at least 4 Bystanders in your Victory Pile, +2 {recruit}."
     },
     {
       "name": "Plant Hidden Asset",
@@ -11386,7 +11387,8 @@
       "class": "Covert",
       "kind": "recruit",
       "value": 1,
-      "cost": 4
+      "cost": 4,
+      "effect": "Draw a card. You may have a Villain capture a Bystander."
     },
     {
       "name": "Precision Strike",
@@ -11395,7 +11397,8 @@
       "kind": "attack",
       "value": 3,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "{tech}: +2 {attack}."
     },
     {
       "name": "Relentless",
@@ -11404,7 +11407,8 @@
       "kind": "attack",
       "value": 0,
       "variable": true,
-      "cost": 2
+      "cost": 2,
+      "effect": "Draw a card. {covert}: Liberate 3."
     },
     {
       "name": "The Last Avenger",
@@ -11413,7 +11417,8 @@
       "kind": "attack",
       "value": 3,
       "variable": true,
-      "cost": 6
+      "cost": 6,
+      "effect": "What If...?: Liberate 4."
     },
     {
       "name": "Time to Save the Multiverse",
@@ -11425,7 +11430,8 @@
       "cost": 8,
       "keywords": [
         "Liberate"
-      ]
+      ],
+      "effect": "Liberate equal to the number of Bystanders in your Victory Pile."
     }
   ],
   "wif:captain-carter": [
@@ -11436,7 +11442,8 @@
       "kind": "recruit",
       "value": 0,
       "variable": true,
-      "cost": 2
+      "cost": 2,
+      "effect": "What If...?: +2 {recruit} and +2 {attack}."
     },
     {
       "name": "Wartime Logistics",
@@ -11445,7 +11452,8 @@
       "kind": "recruit",
       "value": 1,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "+1 {recruit} per different printed Recruit number among all your Heroes."
     },
     {
       "name": "Coordinated Assault",
@@ -11454,7 +11462,8 @@
       "kind": "attack",
       "value": 1,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "+1 {attack} per different printed Attack number among all your Heroes."
     },
     {
       "name": "The Shield of Britain",
@@ -11462,7 +11471,8 @@
       "class": "Tech",
       "kind": "attack",
       "value": 3,
-      "cost": 5
+      "cost": 5,
+      "effect": "Once per turn, when a player gains a Wound, you may reveal this to return that Wound to the Wound Stack; if you do, the active player gets Liberate 3."
     },
     {
       "name": "Give Them All We've Got",
@@ -11470,7 +11480,8 @@
       "class": "Strength",
       "kind": "attack",
       "value": 5,
-      "cost": 6
+      "cost": 6,
+      "effect": "To play this, put another card from hand on top of your deck."
     },
     {
       "name": "Icon of Hope",
@@ -11479,7 +11490,8 @@
       "kind": "recruit",
       "value": 2,
       "variable": true,
-      "cost": 8
+      "cost": 8,
+      "effect": "+1 {recruit} per different printed Recruit number, and +1 {attack} per different printed Attack number, among all your Heroes."
     }
   ],
   "wif:doctor-strange-supreme": [
@@ -11493,7 +11505,8 @@
       "cost": 3,
       "keywords": [
         "Soulbind"
-      ]
+      ],
+      "effect": "{instinct} Soulbind: +{recruit} equal to that Villain's printed VP."
     },
     {
       "name": "Summon Demon Minions",
@@ -11505,7 +11518,8 @@
       "cost": 4,
       "keywords": [
         "Soulbind"
-      ]
+      ],
+      "effect": "{ranged} Soulbind: +{attack} equal to that Villain's printed VP."
     },
     {
       "name": "Wards of the Vishanti",
@@ -11514,7 +11528,8 @@
       "kind": "attack",
       "value": 3,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "What If...?: +2 {attack} and you may KO a Wound from hand or any player's discard."
     },
     {
       "name": "To Save Christine",
@@ -11526,13 +11541,15 @@
       "cost": 2,
       "keywords": [
         "Soulbind"
-      ]
+      ],
+      "effect": "Draw a card. {instinct} Soulbind a Bystander or Villain: +2 {attack}; if it's a Special Bystander, you may do its Rescue effect."
     },
     {
       "name": "Break the Absolute Point in Time",
       "copies": 2,
       "class": "Instinct",
-      "cost": 6
+      "cost": 6,
+      "effect": "Reveal the top three cards of your deck: draw one, KO one, and put one back."
     },
     {
       "name": "Stygian Communion",
@@ -11543,7 +11560,8 @@
       "cost": 8,
       "keywords": [
         "Soulbind"
-      ]
+      ],
+      "effect": "{instinct} Soulbind: draw cards equal to that Villain's printed VP."
     }
   ],
   "wif:gamora-destroyer-of-thanos": [
@@ -11554,7 +11572,8 @@
       "kind": "recruit",
       "value": 0,
       "variable": true,
-      "cost": 2
+      "cost": 2,
+      "effect": "Draw a card. {covert}: +2 {recruit}."
     },
     {
       "name": "Tactical Insight",
@@ -11562,7 +11581,8 @@
       "class": "Covert",
       "kind": "attack",
       "value": 1,
-      "cost": 3
+      "cost": 3,
+      "effect": "Draw two cards, then put a card from hand on top of your deck."
     },
     {
       "name": "Wield the Blade of Thanos",
@@ -11571,7 +11591,8 @@
       "kind": "attack",
       "value": 1,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "+1 {attack} per card you drew this turn."
     },
     {
       "name": "Titanicide",
@@ -11579,7 +11600,8 @@
       "class": "Covert",
       "kind": "attack",
       "value": 2,
-      "cost": 5
+      "cost": 5,
+      "effect": "What If...?: draw two cards."
     },
     {
       "name": "Destroy an Infinity Stone",
@@ -11590,7 +11612,8 @@
       "cost": 6,
       "keywords": [
         "Soulbind"
-      ]
+      ],
+      "effect": "{instinct} Soulbind: KO a card from hand or discard."
     },
     {
       "name": "The Infinity Crusher",
@@ -11599,7 +11622,8 @@
       "kind": "attack",
       "value": 5,
       "variable": true,
-      "cost": 8
+      "cost": 8,
+      "effect": "{guardians-of-the-galaxy} Soulbind six Villains: +∞ {attack}, usable only for a single fight."
     }
   ],
   "wif:killmonger-spec-ops": [
@@ -11609,7 +11633,8 @@
       "kind": "recruit",
       "value": 1,
       "variable": true,
-      "cost": 2
+      "cost": 2,
+      "effect": "+1 {recruit} per different Villain Group in your Victory Pile."
     },
     {
       "name": "No Matter the Price",
@@ -11618,7 +11643,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "{tech}{strength}: +3 {attack}."
     },
     {
       "name": "Violence Leaves Scars",
@@ -11627,7 +11653,8 @@
       "kind": "attack",
       "value": 3,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "{strength}: +1 {attack} per different Villain Group in your Victory Pile."
     },
     {
       "name": "Hostage Rescue",
@@ -11636,7 +11663,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "What If...?: Liberate 3."
     },
     {
       "name": "Plot a Betrayal",
@@ -11645,7 +11673,8 @@
       "kind": "attack",
       "value": 4,
       "variable": true,
-      "cost": 6
+      "cost": 6,
+      "effect": "Each Villain worth 3 VP or more captures a Bystander. {tech}: Liberate 2."
     },
     {
       "name": "I'm the King, Baby!",
@@ -11654,7 +11683,8 @@
       "kind": "attack",
       "value": 4,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "+1 {attack} per different Villain Group in your Victory Pile. {strength}: Liberate 2 for each Mastermind Tactic in your Victory Pile."
     }
   ],
   "wif:party-thor": [
@@ -11664,7 +11694,8 @@
       "class": "Ranged",
       "kind": "recruit",
       "value": 3,
-      "cost": 2
+      "cost": 2,
+      "effect": "To play this, put another card from hand on top of your deck."
     },
     {
       "name": "Worthy Challenge",
@@ -11673,7 +11704,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "Whenever you recruit a Hero costing 5 or more this turn, +3 {attack}."
     },
     {
       "name": "Destructive Feast",
@@ -11681,7 +11713,8 @@
       "class": "Strength",
       "kind": "recruit",
       "value": 3,
-      "cost": 5
+      "cost": 5,
+      "effect": "Whenever you recruit a Hero costing 5 or more this turn, reveal the top card of your deck and you may KO it."
     },
     {
       "name": "Asgardian Rager",
@@ -11690,7 +11723,8 @@
       "kind": "attack",
       "value": 3,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "{ranged}: Cross-Dimensional Party Rampage. If any players gained a Wound this way, +3 {attack}."
     },
     {
       "name": "Only Son",
@@ -11699,7 +11733,8 @@
       "kind": "attack",
       "value": 3,
       "variable": true,
-      "cost": 6
+      "cost": 6,
+      "effect": "What If...?: +{attack} equal to the cost of the Hero you revealed this way."
     },
     {
       "name": "Worthy of the Lightning",
@@ -11707,7 +11742,8 @@
       "class": "Ranged",
       "kind": "recruit",
       "value": 5,
-      "cost": 7
+      "cost": 7,
+      "effect": "Whenever you recruit a Hero costing 5 or more this turn, +{attack} equal to that Hero's cost."
     }
   ],
   "wif:star-lord-tchalla": [
@@ -11717,7 +11753,8 @@
       "kind": "attack",
       "value": 0,
       "variable": true,
-      "cost": 2
+      "cost": 2,
+      "effect": "Choose: get Empowered by {strength}, or Empowered by {covert}. {strength}{covert}: draw a card."
     },
     {
       "name": "Interstellar Adventures",
@@ -11725,21 +11762,24 @@
       "kind": "recruit",
       "value": 2,
       "variable": true,
-      "cost": 3
+      "cost": 3,
+      "effect": "What If...?: +3 {recruit}."
     },
     {
       "name": "Plan the Heist",
       "copies": 3,
       "kind": "attack",
       "value": 2,
-      "cost": 4
+      "cost": 4,
+      "effect": "Look at the top two cards of your deck; discard any number and put the rest back in any order."
     },
     {
       "name": "Unexpected Exit",
       "copies": 2,
       "kind": "attack",
       "value": 3,
-      "cost": 5
+      "cost": 5,
+      "effect": "What If...?: you may KO a card from hand or discard."
     },
     {
       "name": "Cross the Multiverse",
@@ -11747,7 +11787,8 @@
       "kind": "attack",
       "value": 4,
       "variable": true,
-      "cost": 6
+      "cost": 6,
+      "effect": "What If...?: get Empowered by the Hero Classes of the card you revealed this way."
     },
     {
       "name": "Colliding Dreams",
@@ -11755,7 +11796,8 @@
       "kind": "attack",
       "value": 4,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "Choose any number of Heroes in the HQ and put them on the bottom of the Hero Deck. You get Empowered by multicolored cards."
     }
   ],
   "wif:uatu-the-watcher": [
@@ -11766,7 +11808,8 @@
       "kind": "recruit",
       "value": 1,
       "variable": true,
-      "cost": 2
+      "cost": 2,
+      "effect": "Draw a card, then put a card from hand on top of your deck. {covert}: +1 {recruit}."
     },
     {
       "name": "Another Dimension Crumbles",
@@ -11774,7 +11817,8 @@
       "class": "Covert",
       "kind": "recruit",
       "value": 2,
-      "cost": 3
+      "cost": 3,
+      "effect": "What If...?: you may KO a card from hand or discard."
     },
     {
       "name": "Break the Oath",
@@ -11783,7 +11827,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 4
+      "cost": 4,
+      "effect": "What If...?: +2 {attack}."
     },
     {
       "name": "Anoint a Champion",
@@ -11792,7 +11837,8 @@
       "kind": "attack",
       "value": 2,
       "variable": true,
-      "cost": 5
+      "cost": 5,
+      "effect": "{covert}: choose a Hero Name; you are Empowered by that Hero Name."
     },
     {
       "name": "History Repeats",
@@ -11804,7 +11850,8 @@
       "cost": 6,
       "keywords": [
         "Soulbind"
-      ]
+      ],
+      "effect": "{ranged} Soulbind: +2 {attack} and you may do that Villain's Fight effect."
     },
     {
       "name": "Convoke the Guardians",
@@ -11813,7 +11860,8 @@
       "kind": "attack",
       "value": 5,
       "variable": true,
-      "cost": 7
+      "cost": 7,
+      "effect": "What If...?: choose a Team; you are Empowered by that Team."
     }
   ],
   "y99:doctor-doom-2099": [
