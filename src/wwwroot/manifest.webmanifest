@@ -1,7 +1,7 @@
 {
   "name": "Legendary Setup Randomiser",
   "short_name": "Legendary",
-  "description": "Unofficial one-tap setup randomiser for Legendary: A Marvel Deck Building Game.",
+  "description": "Unofficial setup randomiser for Legendary: A Marvel Deck Building Game. Choose your sets, then randomise a complete, rules-legal game.",
   "id": "./",
   "start_url": "./",
   "scope": "./",

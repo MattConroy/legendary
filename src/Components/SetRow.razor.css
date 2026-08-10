@@ -15,25 +15,37 @@
     padding: 10px 14px;
 }
 
-/* The header button keeps to one line — caret, name, year (+ optional pill),
-   vertically centred; only the name flexes and wraps. */
-.toggle {
+/* The header keeps to one line — caret, name, year (+ optional pill), vertically
+   centred; only the name flexes and wraps. The caret toggles the inline contents;
+   the name is a link to this set on the Cards page. */
+.header {
     display: flex;
     align-items: center;
     gap: 8px;
     min-width: 0;
-    width: 100%;
+}
+.caret {
+    flex: 0 0 auto;
     background: none;
     border: none;
-    padding: 4px 0;
     margin: 0;
-    text-align: left;
-    font: inherit;
-    color: inherit;
+    padding: 4px 6px;
+    color: var(--muted);
+    font-size: 0.7rem;
+    line-height: 1;
     cursor: pointer;
+    transition: transform 0.15s ease;
 }
-.caret { flex: 0 0 auto; color: var(--muted); font-size: 0.7rem; display: inline-block; transition: transform 0.15s ease; }
-.name { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; font-weight: 800; color: #fff; }
+.name {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover { color: var(--gold); text-decoration: none; }
+}
 .date { flex: 0 0 auto; white-space: nowrap; font-size: 0.75rem; color: var(--muted); }
 
 /* "Standalone" pill next to the set name. */

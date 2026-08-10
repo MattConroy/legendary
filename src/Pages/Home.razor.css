@@ -20,9 +20,17 @@
 }
 .card__meta strong { color: var(--accent, var(--gold)); }
 
-.single { display: flex; flex-direction: column; gap: 4px; }
+.single { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
 .single__name { font-size: 1.5rem; font-weight: 900; color: #fff; }
 .single__flavour { color: var(--muted); font-style: italic; font-size: 0.9rem; }
+
+/* Result names deep-link to the card on the Cards page; keep their look, add a
+   gold hover so the affordance reads without shouting. */
+.single__name, .hero-row__name, .tag__name {
+    text-decoration: none;
+
+    &:hover { color: var(--gold); text-decoration: none; }
+}
 
 .tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .tag--required {

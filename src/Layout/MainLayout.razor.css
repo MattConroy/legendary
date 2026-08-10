@@ -1,17 +1,19 @@
+/* The shell is exactly one viewport tall; the header and nav are fixed-size, and
+   only the main region scrolls. That keeps the scrollbar inside the content —
+   between the header and nav — instead of running the full window height and
+   sliding under both bars. */
 .app-shell {
     display: flex;
     flex-direction: column;
-    min-height: 100dvh;
+    height: 100dvh;
     max-width: 640px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .app-header {
-    position: sticky;
-    top: 0;
-    z-index: 20;
+    flex: 0 0 auto;
     background: linear-gradient(180deg, rgba(10, 10, 15, 0.96), rgba(10, 10, 15, 0.80));
-    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
 }
 .app-header__inner {
@@ -33,21 +35,21 @@
 }
 .app-header__sub { font-size: 0.82rem; color: var(--muted); text-transform: uppercase; letter-spacing: 2px; }
 
-.app-main { flex: 1; padding: 18px 16px calc(96px + var(--safe-bottom)); }
+/* The only scrolling region. Its scrollbar sits between the two bars. */
+.app-main {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 18px 16px 24px;
+}
 
 .app-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 30;
+    flex: 0 0 auto;
     display: flex;
     justify-content: space-around;
-    max-width: 640px;
-    margin: 0 auto;
     background: rgba(18, 18, 25, 0.96);
-    backdrop-filter: blur(10px);
     border-top: 1px solid var(--border);
+    /* The bottom padding carries the nav's grey through the iOS home-indicator area. */
     padding: 8px 0 calc(8px + var(--safe-bottom));
 }
 /* NavLink renders the <a>, so reach the item (and its active state) with ::deep. */

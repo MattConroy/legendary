@@ -41,7 +41,7 @@
             <ResultCard Title="Mastermind" Icon="💀" Accent="mastermind"
                         OnReroll="() => Reroll(CardCategory.Mastermind)">
                 <div class="single">
-                    <span class="single__name">@setup.Mastermind.Card.Name</span>
+                    <a class="single__name" href="@CardLink.To(setup.Mastermind.Card)">@setup.Mastermind.Card.Name</a>
                     @if ((setup.Mastermind.Card as Mastermind)?.ThreatBand is { } mmBand)
                     {
                         <ThreatPill Band="mmBand" Title="Sets the base threat for this game" />
@@ -60,7 +60,7 @@
             <ResultCard Title="Scheme" Icon="🌀" Accent="scheme"
                         OnReroll="() => Reroll(CardCategory.Scheme)">
                 <div class="single">
-                    <span class="single__name">@setup.Scheme.Card.Name</span>
+                    <a class="single__name" href="@CardLink.To(setup.Scheme.Card)">@setup.Scheme.Card.Name</a>
                     @if ((setup.Scheme.Card as Scheme)?.ThreatBand is { } scBand)
                     {
                         <ThreatPill Band="scBand" Title="How much this scheme shifts the overall threat" />
@@ -83,7 +83,7 @@
                     @foreach (var v in setup.VillainGroups)
                     {
                         <li class="tag @(v.IsRequired ? "tag--required" : "")">
-                            <span class="tag__name">@v.Card.Name</span>
+                            <a class="tag__name" href="@CardLink.To(v.Card)">@v.Card.Name</a>
                             @if (v.IsRequired)
                             {
                                 <Badge>Required</Badge>
@@ -108,7 +108,7 @@
                     @foreach (var h in setup.Henchmen)
                     {
                         <li class="tag @(h.IsRequired ? "tag--required" : "")">
-                            <span class="tag__name">@h.Card.Name</span>
+                            <a class="tag__name" href="@CardLink.To(h.Card)">@h.Card.Name</a>
                             @if (h.IsRequired)
                             {
                                 <Badge>Required</Badge>
@@ -126,7 +126,7 @@
                     {
                         var team = (h.Card as Hero)?.Team;
                         <li class="hero-row">
-                            <span class="hero-row__name">@h.Card.Name</span>
+                            <a class="hero-row__name" href="@CardLink.To(h.Card)">@h.Card.Name</a>
                             <TeamIcon Team="@team" />
                             @if (!string.IsNullOrEmpty(team))
                             {

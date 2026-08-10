@@ -1,8 +1,8 @@
 # Legendary — Setup Randomiser
 
 A mobile-first **companion app** for the board game *Legendary: A Marvel Deck Building Game*.
-One tap generates a complete, rules-legal game setup — **Mastermind, Scheme, Villain Groups,
-Henchmen, and Heroes** — for **1–5 players**.
+Choose which sets are in play, then randomise a complete, rules-legal game setup — **Mastermind,
+Scheme, Villain Groups, Henchmen, and Heroes** — for **1–5 players**.
 
 Built as a **Blazor WebAssembly PWA** targeting **.NET 10**, deployable as a static site to
 GitHub Pages. Works offline once loaded.
@@ -13,8 +13,8 @@ GitHub Pages. Works offline once loaded.
 
 ## Features
 
-- **One-tap randomiser** that follows the official per-player setup table (heroes / villain groups /
-  henchmen / master strikes / bystanders / wounds).
+- **One-tap randomiser** (once your sets are chosen) that follows the official per-player setup table
+  (heroes / villain groups / henchmen / master strikes / bystanders / wounds).
 - **Per-category rerolls** — reroll just the Mastermind, Scheme, Villains, Henchmen, or Heroes while
   everything else stays put.
 - **Required groups honoured** — each Mastermind's *"Always Leads"* group is forced into the setup and
