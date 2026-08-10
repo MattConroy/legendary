@@ -48,19 +48,19 @@
     padding: 18px 16px 24px;
     color-scheme: dark;
     scrollbar-width: thin;
-    scrollbar-color: var(--border) transparent;
+    scrollbar-color: var(--muted) transparent;
 }
 .app-main::-webkit-scrollbar { width: 12px; }
 .app-main::-webkit-scrollbar-track { background: transparent; }
 .app-main::-webkit-scrollbar-thumb {
-    /* The transparent border + padding-box clip insets the thumb, so it reads as a
-       slim rounded bar with breathing room rather than a full-width block. */
-    background: var(--border);
+    /* Light grey so it's visible against the dark background. The transparent
+       border + padding-box clip insets the thumb into a slim rounded bar. */
+    background: var(--muted);
     border-radius: 999px;
     border: 3px solid transparent;
     background-clip: padding-box;
 }
-.app-main::-webkit-scrollbar-thumb:hover { background: var(--muted); background-clip: padding-box; }
+.app-main::-webkit-scrollbar-thumb:hover { background: var(--text); background-clip: padding-box; }
 
 .app-nav {
     flex: 0 0 auto;
