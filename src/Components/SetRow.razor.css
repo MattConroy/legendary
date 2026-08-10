@@ -1,0 +1,77 @@
+.set {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    &.unowned { opacity: 0.7; }
+    &.open .caret { transform: rotate(90deg); }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 44px 44px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+}
+
+/* The header button keeps to one line — caret, name, year (+ optional pill),
+   vertically centred; only the name flexes and wraps. */
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 4px 0;
+    margin: 0;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+.caret { flex: 0 0 auto; color: var(--muted); font-size: 0.7rem; display: inline-block; transition: transform 0.15s ease; }
+.name { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; font-weight: 800; color: #fff; }
+.date { flex: 0 0 auto; white-space: nowrap; font-size: 0.75rem; color: var(--muted); }
+
+.contents {
+    padding: 4px 14px 14px 14px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Own / Play toggle switches. */
+.switch {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 40px;
+    height: 24px;
+    justify-self: center;
+
+    & input { opacity: 0; width: 0; height: 0; }
+    & input:checked + .track { background: var(--marvel); }
+    & input:checked + .track .thumb { transform: translateX(16px); }
+}
+.track {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    background: var(--border);
+    border-radius: 999px;
+    transition: background 0.2s ease;
+}
+.thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}

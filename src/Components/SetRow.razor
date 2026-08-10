@@ -1,0 +1,75 @@
+@* One set in the Settings list: a header row (name, year, Standalone pill, and the
+   Own/Play toggles) that expands to show the set's contents. *@
+
+<li class="set @(Owned ? "" : "unowned") @(Open ? "open" : "")">
+    <div class="row">
+        <button type="button" class="toggle" @onclick="OnToggle"
+                aria-expanded="@Open" aria-label="@(Open ? "Hide" : "Show") contents of @Set.Name">
+            <span class="caret" aria-hidden="true">▸</span>
+            <span class="name">@Set.Name</span>
+            <span class="date">@Set.Released.Year</span>
+            @if (Set.Standalone)
+            {
+                <span class="pill pill--standalone" title="Can be played on its own">Standalone</span>
+            }
+        </button>
+
+        <label class="switch" title="@(Owned ? "Owned" : "Not owned")">
+            <input type="checkbox" checked="@Owned" @onchange="e => OnOwnChanged.InvokeAsync(e.Value is true)" />
+            <span class="track"><span class="thumb"></span></span>
+        </label>
+        <label class="switch" title="In play this game">
+            <input type="checkbox" checked="@Enabled" @onchange="e => OnPlayChanged.InvokeAsync(e.Value is true)" />
+            <span class="track"><span class="thumb"></span></span>
+        </label>
+    </div>
+
+    @if (Open)
+    {
+        <div class="contents">
+            @if (Set.Masterminds.Count > 0)
+            {
+                <ContentGroup Title="Masterminds" Count="Set.Masterminds.Count">
+                    @foreach (var c in Set.Masterminds) { <li class="tag">@c.Name</li> }
+                </ContentGroup>
+            }
+            @if (Set.Schemes.Count > 0)
+            {
+                <ContentGroup Title="Schemes" Count="Set.Schemes.Count">
+                    @foreach (var c in Set.Schemes) { <li class="tag">@c.Name</li> }
+                </ContentGroup>
+            }
+            @if (Set.VillainGroups.Count > 0)
+            {
+                <ContentGroup Title="Villain Groups" Count="Set.VillainGroups.Count">
+                    @foreach (var c in Set.VillainGroups) { <li class="tag">@c.Name</li> }
+                </ContentGroup>
+            }
+            @if (Set.Henchmen.Count > 0)
+            {
+                <ContentGroup Title="Henchmen" Count="Set.Henchmen.Count">
+                    @foreach (var c in Set.Henchmen) { <li class="tag">@c.Name</li> }
+                </ContentGroup>
+            }
+            @if (Set.Heroes.Count > 0)
+            {
+                <ContentGroup Title="Heroes" Count="Set.Heroes.Count">
+                    @foreach (var c in Set.Heroes)
+                    {
+                        <li class="tag tag--hero"><TeamIcon Team="@c.Team" />@c.Name</li>
+                    }
+                </ContentGroup>
+            }
+        </div>
+    }
+</li>
+
+@code {
+    [Parameter, EditorRequired] public CardSet Set { get; set; } = default!;
+    [Parameter] public bool Owned { get; set; }
+    [Parameter] public bool Enabled { get; set; }
+    [Parameter] public bool Open { get; set; }
+    [Parameter] public EventCallback OnToggle { get; set; }
+    [Parameter] public EventCallback<bool> OnOwnChanged { get; set; }
+    [Parameter] public EventCallback<bool> OnPlayChanged { get; set; }
+}

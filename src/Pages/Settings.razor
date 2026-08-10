@@ -42,72 +42,11 @@
         <ul class="set-list">
             @foreach (var set in State.SortedSets)
             {
-                var owned = State.IsOwned(set.Id);
-                var enabled = State.IsEnabled(set.Id);
-                var open = _expanded.Contains(set.Id);
-                <li class="set @(owned ? "" : "set--unowned")">
-                    <div class="set__row">
-                        <button type="button" class="set__info set__toggle" @onclick="() => Toggle(set.Id)"
-                                aria-expanded="@open" aria-label="@(open ? "Hide" : "Show") contents of @set.Name">
-                            <span class="set__caret @(open ? "set__caret--open" : "")" aria-hidden="true">▸</span>
-                            <span class="set__name">@set.Name</span>
-                            <span class="set__date">@set.Released.Year</span>
-                            @if (set.Standalone)
-                            {
-                                <span class="pill pill--standalone" title="Can be played on its own">Standalone</span>
-                            }
-                        </button>
-
-                        <label class="switch switch--sm" title="@(owned ? "Owned" : "Not owned")">
-                            <input type="checkbox" checked="@owned" @onchange="e => Own(set.Id, e)" />
-                            <span class="switch__track"><span class="switch__thumb"></span></span>
-                        </label>
-
-                        <label class="switch switch--sm" title="In play this game">
-                            <input type="checkbox" checked="@enabled" @onchange="e => Play(set.Id, e)" />
-                            <span class="switch__track"><span class="switch__thumb"></span></span>
-                        </label>
-                    </div>
-
-                    @if (open)
-                    {
-                        <div class="set__contents">
-                            @if (set.Masterminds.Count > 0)
-                            {
-                                <ContentGroup Title="Masterminds" Count="set.Masterminds.Count">
-                                    @foreach (var c in set.Masterminds) { <li class="tag">@c.Name</li> }
-                                </ContentGroup>
-                            }
-                            @if (set.Schemes.Count > 0)
-                            {
-                                <ContentGroup Title="Schemes" Count="set.Schemes.Count">
-                                    @foreach (var c in set.Schemes) { <li class="tag">@c.Name</li> }
-                                </ContentGroup>
-                            }
-                            @if (set.VillainGroups.Count > 0)
-                            {
-                                <ContentGroup Title="Villain Groups" Count="set.VillainGroups.Count">
-                                    @foreach (var c in set.VillainGroups) { <li class="tag">@c.Name</li> }
-                                </ContentGroup>
-                            }
-                            @if (set.Henchmen.Count > 0)
-                            {
-                                <ContentGroup Title="Henchmen" Count="set.Henchmen.Count">
-                                    @foreach (var c in set.Henchmen) { <li class="tag">@c.Name</li> }
-                                </ContentGroup>
-                            }
-                            @if (set.Heroes.Count > 0)
-                            {
-                                <ContentGroup Title="Heroes" Count="set.Heroes.Count">
-                                    @foreach (var c in set.Heroes)
-                                    {
-                                        <li class="tag tag--hero"><TeamIcon Team="@c.Team" />@c.Name</li>
-                                    }
-                                </ContentGroup>
-                            }
-                        </div>
-                    }
-                </li>
+                <SetRow Set="set" Owned="State.IsOwned(set.Id)" Enabled="State.IsEnabled(set.Id)"
+                        Open="_expanded.Contains(set.Id)"
+                        OnToggle="() => Toggle(set.Id)"
+                        OnOwnChanged="owned => State.SetOwnedAsync(set.Id, owned)"
+                        OnPlayChanged="enabled => State.SetEnabledAsync(set.Id, enabled)" />
             }
         </ul>
     </section>
@@ -131,9 +70,6 @@
 
     private string SortArrow(SetSort key) =>
         State.Sort != key ? "" : State.SortDescending ? "↓" : "↑";
-
-    private void Own(string id, ChangeEventArgs e) => _ = State.SetOwnedAsync(id, e.Value is true);
-    private void Play(string id, ChangeEventArgs e) => _ = State.SetEnabledAsync(id, e.Value is true);
 
     private void StateChanged() => InvokeAsync(StateHasChanged);
 
