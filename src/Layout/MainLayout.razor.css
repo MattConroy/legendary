@@ -35,13 +35,27 @@
 }
 .app-header__sub { font-size: 0.82rem; color: var(--muted); text-transform: uppercase; letter-spacing: 2px; }
 
-/* The only scrolling region. Its scrollbar sits between the two bars. */
+/* The only scrolling region. Its scrollbar sits between the two bars. A styled
+   webkit scrollbar keeps it visible in Safari, which otherwise hides the overlay
+   scrollbar of an inner container; the stable gutter reserves its width so content
+   doesn't shift when it shows. */
 .app-main {
     flex: 1 1 auto;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
     padding: 18px 16px 24px;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
 }
+.app-main::-webkit-scrollbar { width: 10px; }
+.app-main::-webkit-scrollbar-track { background: transparent; }
+.app-main::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+.app-main::-webkit-scrollbar-thumb:hover { background: var(--muted); background-clip: padding-box; }
 
 .app-nav {
     flex: 0 0 auto;

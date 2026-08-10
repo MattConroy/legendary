@@ -105,11 +105,11 @@ public class KeywordContentTests
             }
 
             // Sanity: Nightcrawler carries Teleport.
-            Assert.Contains("teleport", CardKeywords["dc:nightcrawler"]);
+            Assert.Contains("teleport", CardKeywords["dark-city:nightcrawler"]);
 
             // Regression: keywords written with a number ("Versatile 3") must still tag.
-            Assert.Contains("versatile", CardKeywords["dc:domino"]);
-            Assert.Contains("teleport", CardKeywords["dc:cable"]);
+            Assert.Contains("versatile", CardKeywords["dark-city:domino"]);
+            Assert.Contains("teleport", CardKeywords["dark-city:cable"]);
         }
 
         [Fact]

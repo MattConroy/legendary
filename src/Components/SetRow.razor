@@ -31,25 +31,25 @@
             @if (Set.Masterminds.Count > 0)
             {
                 <ContentGroup Title="Masterminds" Count="Set.Masterminds.Count">
-                    @foreach (var c in Set.Masterminds) { <li><a class="tag" href="@CardLink.To(c, Set.Id)">@c.Name</a></li> }
+                    @foreach (var c in Set.Masterminds) { <li><a class="tag" href="@CardLink.To(c)">@c.Name</a></li> }
                 </ContentGroup>
             }
             @if (Set.Schemes.Count > 0)
             {
                 <ContentGroup Title="Schemes" Count="Set.Schemes.Count">
-                    @foreach (var c in Set.Schemes) { <li><a class="tag" href="@CardLink.To(c, Set.Id)">@c.Name</a></li> }
+                    @foreach (var c in Set.Schemes) { <li><a class="tag" href="@CardLink.To(c)">@c.Name</a></li> }
                 </ContentGroup>
             }
             @if (Set.VillainGroups.Count > 0)
             {
                 <ContentGroup Title="Villain Groups" Count="Set.VillainGroups.Count">
-                    @foreach (var c in Set.VillainGroups) { <li><a class="tag" href="@CardLink.To(c, Set.Id)">@c.Name</a></li> }
+                    @foreach (var c in Set.VillainGroups) { <li><a class="tag" href="@CardLink.To(c)">@c.Name</a></li> }
                 </ContentGroup>
             }
             @if (Set.Henchmen.Count > 0)
             {
                 <ContentGroup Title="Henchmen" Count="Set.Henchmen.Count">
-                    @foreach (var c in Set.Henchmen) { <li><a class="tag" href="@CardLink.To(c, Set.Id)">@c.Name</a></li> }
+                    @foreach (var c in Set.Henchmen) { <li><a class="tag" href="@CardLink.To(c)">@c.Name</a></li> }
                 </ContentGroup>
             }
             @if (Set.Heroes.Count > 0)
@@ -57,7 +57,7 @@
                 <ContentGroup Title="Heroes" Count="Set.Heroes.Count">
                     @foreach (var c in Set.Heroes)
                     {
-                        <li><a class="tag tag--hero" href="@CardLink.To(c, Set.Id)"><TeamIcon Team="@c.Team" />@c.Name</a></li>
+                        <li><a class="tag tag--hero" href="@CardLink.To(c)"><TeamIcon Team="@c.Team" />@c.Name</a></li>
                     }
                 </ContentGroup>
             }

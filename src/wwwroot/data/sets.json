@@ -259,32 +259,32 @@
     "enabledByDefault": true,
     "masterminds": [
       {
-        "alwaysLeadsGroupId": "dc:four-horsemen",
-        "id": "dc:apocalypse",
+        "alwaysLeadsGroupId": "dark-city:four-horsemen",
+        "id": "dark-city:apocalypse",
         "name": "Apocalypse",
         "difficulty": 5
       },
       {
-        "alwaysLeadsGroupId": "dc:streets-of-new-york",
-        "id": "dc:kingpin",
+        "alwaysLeadsGroupId": "dark-city:streets-of-new-york",
+        "id": "dark-city:kingpin",
         "name": "Kingpin",
         "difficulty": 3
       },
       {
-        "alwaysLeadsGroupId": "dc:underworld",
-        "id": "dc:mephisto",
+        "alwaysLeadsGroupId": "dark-city:underworld",
+        "id": "dark-city:mephisto",
         "name": "Mephisto",
         "difficulty": 3
       },
       {
-        "alwaysLeadsGroupId": "dc:marauders",
-        "id": "dc:mister-sinister",
+        "alwaysLeadsGroupId": "dark-city:marauders",
+        "id": "dark-city:mister-sinister",
         "name": "Mister Sinister",
         "difficulty": 4
       },
       {
-        "alwaysLeadsGroupId": "dc:mutant-liberation-front",
-        "id": "dc:stryfe",
+        "alwaysLeadsGroupId": "dark-city:mutant-liberation-front",
+        "id": "dark-city:stryfe",
         "name": "Stryfe",
         "difficulty": 2
       }
@@ -297,7 +297,7 @@
             "Place a Baby Hope token by the Mastermind."
           ]
         },
-        "id": "dc:capture-baby-hope",
+        "id": "dark-city:capture-baby-hope",
         "name": "Capture Baby Hope",
         "difficulty": 2
       },
@@ -309,7 +309,7 @@
             "Play with 6 Heroes."
           ]
         },
-        "id": "dc:detonate-helicarrier",
+        "id": "dark-city:detonate-helicarrier",
         "name": "Detonate the Helicarrier",
         "difficulty": 4
       },
@@ -317,7 +317,7 @@
         "setup": {
           "twists": 8
         },
-        "id": "dc:earthquake-generator",
+        "id": "dark-city:earthquake-generator",
         "name": "Massive Earthquake Generator",
         "difficulty": 3
       },
@@ -325,10 +325,10 @@
         "setup": {
           "twists": 8,
           "requiredHenchmenGroupIds": [
-            "dc:maggia-goons"
+            "dark-city:maggia-goons"
           ]
         },
-        "id": "dc:organized-crimewave",
+        "id": "dark-city:organized-crimewave",
         "name": "Organized Crime Wave",
         "difficulty": 3
       },
@@ -339,7 +339,7 @@
             "Put 24 Bystanders in the Hero Deck (12 in solo)."
           ]
         },
-        "id": "dc:save-humanity",
+        "id": "dark-city:save-humanity",
         "name": "Save Humanity",
         "difficulty": 2
       },
@@ -351,7 +351,7 @@
             "Adds an extra Villain Group."
           ]
         },
-        "id": "dc:steal-plutonium",
+        "id": "dark-city:steal-plutonium",
         "name": "Steal the Weaponized Plutonium",
         "difficulty": 3
       },
@@ -360,7 +360,7 @@
           "twists": 8,
           "bystanders": 0
         },
-        "id": "dc:transform-demons",
+        "id": "dark-city:transform-demons",
         "name": "Transform Citizens Into Demons",
         "difficulty": 4
       },
@@ -373,131 +373,131 @@
             "Adds an extra Hero (its cards go in the Villain Deck)."
           ]
         },
-        "id": "dc:xcutioners-song",
+        "id": "dark-city:xcutioners-song",
         "name": "X-Cutioner's Song",
         "difficulty": 3
       }
     ],
     "villainGroups": [
       {
-        "id": "dc:four-horsemen",
+        "id": "dark-city:four-horsemen",
         "name": "Four Horsemen"
       },
       {
-        "id": "dc:marauders",
+        "id": "dark-city:marauders",
         "name": "Marauders"
       },
       {
-        "id": "dc:mutant-liberation-front",
+        "id": "dark-city:mutant-liberation-front",
         "name": "Mutant Liberation Front"
       },
       {
-        "id": "dc:streets-of-new-york",
+        "id": "dark-city:streets-of-new-york",
         "name": "Streets of New York"
       },
       {
-        "id": "dc:underworld",
+        "id": "dark-city:underworld",
         "name": "Underworld"
       },
       {
-        "id": "dc:emissaries-of-evil",
+        "id": "dark-city:emissaries-of-evil",
         "name": "Emissaries of Evil"
       }
     ],
     "henchmen": [
       {
-        "id": "dc:maggia-goons",
+        "id": "dark-city:maggia-goons",
         "name": "Maggia Goons"
       },
       {
-        "id": "dc:phalanx",
+        "id": "dark-city:phalanx",
         "name": "Phalanx"
       }
     ],
     "heroes": [
       {
         "team": "X-Men",
-        "id": "dc:angel",
+        "id": "dark-city:angel",
         "name": "Angel"
       },
       {
         "team": "X-Men",
-        "id": "dc:bishop",
+        "id": "dark-city:bishop",
         "name": "Bishop"
       },
       {
         "team": "X-Men",
-        "id": "dc:iceman",
+        "id": "dark-city:iceman",
         "name": "Iceman"
       },
       {
         "team": "X-Men",
-        "id": "dc:jean-grey",
+        "id": "dark-city:jean-grey",
         "name": "Jean Grey"
       },
       {
         "team": "X-Men",
-        "id": "dc:nightcrawler",
+        "id": "dark-city:nightcrawler",
         "name": "Nightcrawler"
       },
       {
         "team": "X-Men",
-        "id": "dc:professor-x",
+        "id": "dark-city:professor-x",
         "name": "Professor X"
       },
       {
         "team": "X-Force",
-        "id": "dc:cable",
+        "id": "dark-city:cable",
         "name": "Cable"
       },
       {
         "team": "X-Force",
-        "id": "dc:colossus",
+        "id": "dark-city:colossus",
         "name": "Colossus"
       },
       {
         "team": "X-Force",
-        "id": "dc:domino",
+        "id": "dark-city:domino",
         "name": "Domino"
       },
       {
         "team": "X-Force",
-        "id": "dc:forge",
+        "id": "dark-city:forge",
         "name": "Forge"
       },
       {
         "team": "X-Force",
-        "id": "dc:wolverine-xforce",
+        "id": "dark-city:wolverine-xforce",
         "name": "Wolverine (X-Force)"
       },
       {
         "team": "Marvel Knights",
-        "id": "dc:blade",
+        "id": "dark-city:blade",
         "name": "Blade"
       },
       {
         "team": "Marvel Knights",
-        "id": "dc:daredevil",
+        "id": "dark-city:daredevil",
         "name": "Daredevil"
       },
       {
         "team": "Marvel Knights",
-        "id": "dc:elektra",
+        "id": "dark-city:elektra",
         "name": "Elektra"
       },
       {
         "team": "Marvel Knights",
-        "id": "dc:ghost-rider",
+        "id": "dark-city:ghost-rider",
         "name": "Ghost Rider"
       },
       {
         "team": "Marvel Knights",
-        "id": "dc:iron-fist",
+        "id": "dark-city:iron-fist",
         "name": "Iron Fist"
       },
       {
         "team": "Marvel Knights",
-        "id": "dc:punisher",
+        "id": "dark-city:punisher",
         "name": "Punisher"
       }
     ]
@@ -511,14 +511,14 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "alwaysLeadsGroupId": "ff:heralds-of-galactus",
-        "id": "ff:galactus",
+        "alwaysLeadsGroupId": "fantastic-four:heralds-of-galactus",
+        "id": "fantastic-four:galactus",
         "name": "Galactus",
         "difficulty": 5
       },
       {
-        "alwaysLeadsGroupId": "ff:subterranea",
-        "id": "ff:mole-man",
+        "alwaysLeadsGroupId": "fantastic-four:subterranea",
+        "id": "fantastic-four:mole-man",
         "name": "Mole Man",
         "difficulty": 2
       }
@@ -528,7 +528,7 @@
         "setup": {
           "twists": 6
         },
-        "id": "ff:cosmic-rays",
+        "id": "fantastic-four:cosmic-rays",
         "name": "Bathe the Earth in Cosmic Rays",
         "difficulty": 4
       },
@@ -536,7 +536,7 @@
         "setup": {
           "twists": 8
         },
-        "id": "ff:melted-glaciers",
+        "id": "fantastic-four:melted-glaciers",
         "name": "Flood the Planet with Melted Glaciers",
         "difficulty": 3
       },
@@ -544,7 +544,7 @@
         "setup": {
           "twists": 7
         },
-        "id": "ff:force-field",
+        "id": "fantastic-four:force-field",
         "name": "Invincible Force Field",
         "difficulty": 4
       },
@@ -552,45 +552,45 @@
         "setup": {
           "twists": 8
         },
-        "id": "ff:negative-zone",
+        "id": "fantastic-four:negative-zone",
         "name": "Pull Reality Into the Negative Zone",
         "difficulty": 3
       }
     ],
     "villainGroups": [
       {
-        "id": "ff:heralds-of-galactus",
+        "id": "fantastic-four:heralds-of-galactus",
         "name": "Heralds of Galactus"
       },
       {
-        "id": "ff:subterranea",
+        "id": "fantastic-four:subterranea",
         "name": "Subterranea"
       }
     ],
     "heroes": [
       {
         "team": "Fantastic Four",
-        "id": "ff:mister-fantastic",
+        "id": "fantastic-four:mister-fantastic",
         "name": "Mister Fantastic"
       },
       {
         "team": "Fantastic Four",
-        "id": "ff:invisible-woman",
+        "id": "fantastic-four:invisible-woman",
         "name": "Invisible Woman"
       },
       {
         "team": "Fantastic Four",
-        "id": "ff:human-torch",
+        "id": "fantastic-four:human-torch",
         "name": "Human Torch"
       },
       {
         "team": "Fantastic Four",
-        "id": "ff:thing",
+        "id": "fantastic-four:thing",
         "name": "Thing"
       },
       {
         "team": "Unaffiliated",
-        "id": "ff:silver-surfer",
+        "id": "fantastic-four:silver-surfer",
         "name": "Silver Surfer"
       }
     ]
@@ -604,26 +604,26 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "gotg:supreme-intelligence",
+        "id": "guardians-of-the-galaxy:supreme-intelligence",
         "name": "Supreme Intelligence of the Kree",
-        "alwaysLeadsGroupId": "gotg:kree-starforce",
+        "alwaysLeadsGroupId": "guardians-of-the-galaxy:kree-starforce",
         "difficulty": 3
       },
       {
-        "id": "gotg:thanos",
+        "id": "guardians-of-the-galaxy:thanos",
         "name": "Thanos",
-        "alwaysLeadsGroupId": "gotg:infinity-gems",
+        "alwaysLeadsGroupId": "guardians-of-the-galaxy:infinity-gems",
         "difficulty": 5
       }
     ],
     "schemes": [
       {
-        "id": "gotg:infinity-gauntlet",
+        "id": "guardians-of-the-galaxy:infinity-gauntlet",
         "name": "Forge the Infinity Gauntlet",
         "setup": {
           "twists": 8,
           "requiredVillainGroupIds": [
-            "gotg:infinity-gems"
+            "guardians-of-the-galaxy:infinity-gems"
           ],
           "notes": [
             "Always include the Infinity Gems Villain Group."
@@ -632,7 +632,7 @@
         "difficulty": 5
       },
       {
-        "id": "gotg:nega-bomb",
+        "id": "guardians-of-the-galaxy:nega-bomb",
         "name": "Intergalactic Kree Nega-Bomb",
         "setup": {
           "twists": 8,
@@ -643,12 +643,12 @@
         "difficulty": 3
       },
       {
-        "id": "gotg:kree-skrull-war",
+        "id": "guardians-of-the-galaxy:kree-skrull-war",
         "name": "The Kree-Skrull War",
         "setup": {
           "twists": 8,
           "requiredVillainGroupIds": [
-            "gotg:kree-starforce",
+            "guardians-of-the-galaxy:kree-starforce",
             "core:skrulls"
           ],
           "notes": [
@@ -658,7 +658,7 @@
         "difficulty": 4
       },
       {
-        "id": "gotg:unite-the-shards",
+        "id": "guardians-of-the-galaxy:unite-the-shards",
         "name": "Unite the Shards",
         "setup": {
           "twistsByPlayers": {
@@ -677,37 +677,37 @@
     ],
     "villainGroups": [
       {
-        "id": "gotg:kree-starforce",
+        "id": "guardians-of-the-galaxy:kree-starforce",
         "name": "Kree Starforce"
       },
       {
-        "id": "gotg:infinity-gems",
+        "id": "guardians-of-the-galaxy:infinity-gems",
         "name": "Infinity Gems"
       }
     ],
     "heroes": [
       {
-        "id": "gotg:drax",
+        "id": "guardians-of-the-galaxy:drax",
         "name": "Drax the Destroyer",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "gotg:gamora",
+        "id": "guardians-of-the-galaxy:gamora",
         "name": "Gamora",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "gotg:groot",
+        "id": "guardians-of-the-galaxy:groot",
         "name": "Groot",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "gotg:rocket-raccoon",
+        "id": "guardians-of-the-galaxy:rocket-raccoon",
         "name": "Rocket Raccoon",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "gotg:star-lord",
+        "id": "guardians-of-the-galaxy:star-lord",
         "name": "Star-Lord",
         "team": "Guardians of the Galaxy"
       }
@@ -722,21 +722,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "ptr:carnage",
+        "id": "paint-the-town-red:carnage",
         "name": "Carnage",
-        "alwaysLeadsGroupId": "ptr:maximum-carnage",
+        "alwaysLeadsGroupId": "paint-the-town-red:maximum-carnage",
         "difficulty": 4
       },
       {
-        "id": "ptr:mysterio",
+        "id": "paint-the-town-red:mysterio",
         "name": "Mysterio",
-        "alwaysLeadsGroupId": "ptr:sinister-six",
+        "alwaysLeadsGroupId": "paint-the-town-red:sinister-six",
         "difficulty": 5
       }
     ],
     "schemes": [
       {
-        "id": "ptr:clone-saga",
+        "id": "paint-the-town-red:clone-saga",
         "name": "The Clone Saga",
         "setup": {
           "twists": 8
@@ -744,7 +744,7 @@
         "difficulty": 3
       },
       {
-        "id": "ptr:daily-bugle",
+        "id": "paint-the-town-red:daily-bugle",
         "name": "Invade the Daily Bugle News HQ",
         "setup": {
           "twists": 8,
@@ -755,12 +755,12 @@
         "difficulty": 2
       },
       {
-        "id": "ptr:splice-spider-dna",
+        "id": "paint-the-town-red:splice-spider-dna",
         "name": "Splice Humans with Spider DNA",
         "setup": {
           "twists": 8,
           "requiredVillainGroupIds": [
-            "ptr:sinister-six"
+            "paint-the-town-red:sinister-six"
           ],
           "notes": [
             "Include the Sinister Six as one of the Villain Groups."
@@ -769,7 +769,7 @@
         "difficulty": 3
       },
       {
-        "id": "ptr:web-of-lies",
+        "id": "paint-the-town-red:web-of-lies",
         "name": "Weave a Web of Lies",
         "setup": {
           "twists": 7
@@ -779,37 +779,37 @@
     ],
     "villainGroups": [
       {
-        "id": "ptr:maximum-carnage",
+        "id": "paint-the-town-red:maximum-carnage",
         "name": "Maximum Carnage"
       },
       {
-        "id": "ptr:sinister-six",
+        "id": "paint-the-town-red:sinister-six",
         "name": "Sinister Six"
       }
     ],
     "heroes": [
       {
-        "id": "ptr:black-cat",
+        "id": "paint-the-town-red:black-cat",
         "name": "Black Cat",
         "team": "Spider-Friends"
       },
       {
-        "id": "ptr:scarlet-spider",
+        "id": "paint-the-town-red:scarlet-spider",
         "name": "Scarlet Spider",
         "team": "Spider-Friends"
       },
       {
-        "id": "ptr:spider-woman",
+        "id": "paint-the-town-red:spider-woman",
         "name": "Spider-Woman",
         "team": "Spider-Friends"
       },
       {
-        "id": "ptr:symbiote-spider-man",
+        "id": "paint-the-town-red:symbiote-spider-man",
         "name": "Symbiote Spider-Man",
         "team": "Spider-Friends"
       },
       {
-        "id": "ptr:moon-knight",
+        "id": "paint-the-town-red:moon-knight",
         "name": "Moon Knight",
         "team": "Marvel Knights"
       }
@@ -1055,33 +1055,33 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "sw1:madelyne-pryor",
+        "id": "secret-wars-vol-1:madelyne-pryor",
         "name": "Madelyne Pryor, Goblin Queen",
-        "alwaysLeadsGroupId": "sw1:limbo",
+        "alwaysLeadsGroupId": "secret-wars-vol-1:limbo",
         "difficulty": 3
       },
       {
-        "id": "sw1:nimrod",
+        "id": "secret-wars-vol-1:nimrod",
         "name": "Nimrod, Super Sentinel",
-        "alwaysLeadsGroupId": "sw1:sentinel-territories",
+        "alwaysLeadsGroupId": "secret-wars-vol-1:sentinel-territories",
         "difficulty": 4
       },
       {
-        "id": "sw1:wasteland-hulk",
+        "id": "secret-wars-vol-1:wasteland-hulk",
         "name": "Wasteland Hulk",
-        "alwaysLeadsGroupId": "sw1:wasteland",
+        "alwaysLeadsGroupId": "secret-wars-vol-1:wasteland",
         "difficulty": 3
       },
       {
-        "id": "sw1:zombie-green-goblin",
+        "id": "secret-wars-vol-1:zombie-green-goblin",
         "name": "Zombie Green Goblin",
-        "alwaysLeadsGroupId": "sw1:the-deadlands",
+        "alwaysLeadsGroupId": "secret-wars-vol-1:the-deadlands",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "sw1:army-of-annihilation",
+        "id": "secret-wars-vol-1:army-of-annihilation",
         "name": "Build an Army of Annihilation",
         "setup": {
           "twists": 9
@@ -1089,7 +1089,7 @@
         "difficulty": 4
       },
       {
-        "id": "sw1:corrupt-next-generation",
+        "id": "secret-wars-vol-1:corrupt-next-generation",
         "name": "Corrupt the Next Generation of Heroes",
         "setup": {
           "twists": 8
@@ -1097,7 +1097,7 @@
         "difficulty": 2
       },
       {
-        "id": "sw1:bare-hands",
+        "id": "secret-wars-vol-1:bare-hands",
         "name": "Crush Them With My Bare Hands",
         "setup": {
           "twists": 5,
@@ -1108,7 +1108,7 @@
         "difficulty": 3
       },
       {
-        "id": "sw1:dark-alliance",
+        "id": "secret-wars-vol-1:dark-alliance",
         "name": "Dark Alliance",
         "setup": {
           "twists": 8
@@ -1116,7 +1116,7 @@
         "difficulty": 3
       },
       {
-        "id": "sw1:fragmented-realities",
+        "id": "secret-wars-vol-1:fragmented-realities",
         "name": "Fragmented Realities",
         "setup": {
           "twists": 8,
@@ -1128,7 +1128,7 @@
         "difficulty": 5
       },
       {
-        "id": "sw1:master-of-tyrants",
+        "id": "secret-wars-vol-1:master-of-tyrants",
         "name": "Master of Tyrants",
         "setup": {
           "twists": 8
@@ -1136,7 +1136,7 @@
         "difficulty": 4
       },
       {
-        "id": "sw1:pan-dimensional-plague",
+        "id": "secret-wars-vol-1:pan-dimensional-plague",
         "name": "Pan-Dimensional Plague",
         "setup": {
           "twists": 10
@@ -1144,7 +1144,7 @@
         "difficulty": 4
       },
       {
-        "id": "sw1:smash-two-dimensions",
+        "id": "secret-wars-vol-1:smash-two-dimensions",
         "name": "Smash Two Dimensions Together",
         "setup": {
           "twists": 8
@@ -1154,112 +1154,112 @@
     ],
     "villainGroups": [
       {
-        "id": "sw1:the-deadlands",
+        "id": "secret-wars-vol-1:the-deadlands",
         "name": "The Deadlands"
       },
       {
-        "id": "sw1:domain-of-apocalypse",
+        "id": "secret-wars-vol-1:domain-of-apocalypse",
         "name": "Domain of Apocalypse"
       },
       {
-        "id": "sw1:limbo",
+        "id": "secret-wars-vol-1:limbo",
         "name": "Limbo"
       },
       {
-        "id": "sw1:manhattan-earth-1610",
+        "id": "secret-wars-vol-1:manhattan-earth-1610",
         "name": "Manhattan (Earth-1610)"
       },
       {
-        "id": "sw1:sentinel-territories",
+        "id": "secret-wars-vol-1:sentinel-territories",
         "name": "Sentinel Territories"
       },
       {
-        "id": "sw1:wasteland",
+        "id": "secret-wars-vol-1:wasteland",
         "name": "Wasteland"
       }
     ],
     "henchmen": [
       {
-        "id": "sw1:ghost-racers",
+        "id": "secret-wars-vol-1:ghost-racers",
         "name": "Ghost Racers"
       },
       {
-        "id": "sw1:m-o-d-o-k-s",
+        "id": "secret-wars-vol-1:m-o-d-o-k-s",
         "name": "M.O.D.O.K.s"
       },
       {
-        "id": "sw1:thor-corps",
+        "id": "secret-wars-vol-1:thor-corps",
         "name": "Thor Corps"
       }
     ],
     "heroes": [
       {
-        "id": "sw1:apocalyptic-kitty-pryde",
+        "id": "secret-wars-vol-1:apocalyptic-kitty-pryde",
         "name": "Apocalyptic Kitty Pryde",
         "team": "X-Men"
       },
       {
-        "id": "sw1:black-bolt",
+        "id": "secret-wars-vol-1:black-bolt",
         "name": "Black Bolt",
         "team": "Illuminati"
       },
       {
-        "id": "sw1:black-panther",
+        "id": "secret-wars-vol-1:black-panther",
         "name": "Black Panther",
         "team": "Illuminati"
       },
       {
-        "id": "sw1:captain-marvel",
+        "id": "secret-wars-vol-1:captain-marvel",
         "name": "Captain Marvel",
         "team": "Avengers"
       },
       {
-        "id": "sw1:dr-strange",
+        "id": "secret-wars-vol-1:dr-strange",
         "name": "Dr. Strange",
         "team": "Illuminati"
       },
       {
-        "id": "sw1:lady-thor",
+        "id": "secret-wars-vol-1:lady-thor",
         "name": "Lady Thor",
         "team": "Avengers"
       },
       {
-        "id": "sw1:magik",
+        "id": "secret-wars-vol-1:magik",
         "name": "Magik",
         "team": "X-Men"
       },
       {
-        "id": "sw1:maximus",
+        "id": "secret-wars-vol-1:maximus",
         "name": "Maximus",
         "team": "Cabal"
       },
       {
-        "id": "sw1:namor-the-sub-mariner",
+        "id": "secret-wars-vol-1:namor-the-sub-mariner",
         "name": "Namor, the Sub-Mariner",
         "team": "Cabal"
       },
       {
-        "id": "sw1:old-man-logan",
+        "id": "secret-wars-vol-1:old-man-logan",
         "name": "Old Man Logan",
         "team": "X-Men"
       },
       {
-        "id": "sw1:proxima-midnight",
+        "id": "secret-wars-vol-1:proxima-midnight",
         "name": "Proxima Midnight",
         "team": "Cabal"
       },
       {
-        "id": "sw1:superior-iron-man",
+        "id": "secret-wars-vol-1:superior-iron-man",
         "name": "Superior Iron Man",
         "team": "Illuminati"
       },
       {
-        "id": "sw1:thanos",
+        "id": "secret-wars-vol-1:thanos",
         "name": "Thanos",
         "team": "Cabal"
       },
       {
-        "id": "sw1:ultimate-spider-man",
+        "id": "secret-wars-vol-1:ultimate-spider-man",
         "name": "Ultimate Spider-Man",
         "team": "Spider-Friends"
       }
@@ -1274,33 +1274,33 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "sw2:zheng-zhu",
+        "id": "secret-wars-vol-2:zheng-zhu",
         "name": "Immortal Emperor Zheng-Zhu",
-        "alwaysLeadsGroupId": "sw2:k-un-lun",
+        "alwaysLeadsGroupId": "secret-wars-vol-2:k-un-lun",
         "difficulty": 3
       },
       {
-        "id": "sw2:king-hyperion",
+        "id": "secret-wars-vol-2:king-hyperion",
         "name": "King Hyperion",
-        "alwaysLeadsGroupId": "sw2:utopolis",
+        "alwaysLeadsGroupId": "secret-wars-vol-2:utopolis",
         "difficulty": 4
       },
       {
-        "id": "sw2:shiklah",
+        "id": "secret-wars-vol-2:shiklah",
         "name": "Shiklah, the Demon Bride",
-        "alwaysLeadsGroupId": "sw2:monster-metropolis",
+        "alwaysLeadsGroupId": "secret-wars-vol-2:monster-metropolis",
         "difficulty": 3
       },
       {
-        "id": "sw2:spider-queen",
+        "id": "secret-wars-vol-2:spider-queen",
         "name": "Spider-Queen",
-        "alwaysLeadsGroupId": "sw2:spider-infected",
+        "alwaysLeadsGroupId": "secret-wars-vol-2:spider-infected",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "sw2:deadlands-hordes",
+        "id": "secret-wars-vol-2:deadlands-hordes",
         "name": "Deadlands Hordes Charge the Wall",
         "setup": {
           "twists": 8,
@@ -1312,7 +1312,7 @@
         "difficulty": 4
       },
       {
-        "id": "sw2:enthrone-barons",
+        "id": "secret-wars-vol-2:enthrone-barons",
         "name": "Enthrone the Barons of Battleworld",
         "setup": {
           "twists": 8
@@ -1320,7 +1320,7 @@
         "difficulty": 3
       },
       {
-        "id": "sw2:fountain-eternal-life",
+        "id": "secret-wars-vol-2:fountain-eternal-life",
         "name": "The Fountain of Eternal Life",
         "setup": {
           "twists": 8,
@@ -1331,7 +1331,7 @@
         "difficulty": 3
       },
       {
-        "id": "sw2:god-emperor",
+        "id": "secret-wars-vol-2:god-emperor",
         "name": "The God-Emperor of Battleworld",
         "setup": {
           "twists": 8
@@ -1339,12 +1339,12 @@
         "difficulty": 4
       },
       {
-        "id": "sw2:mark-of-khonshu",
+        "id": "secret-wars-vol-2:mark-of-khonshu",
         "name": "The Mark of Khonshu",
         "setup": {
           "twists": 10,
           "requiredHenchmenGroupIds": [
-            "sw2:khonshu-guardians"
+            "secret-wars-vol-2:khonshu-guardians"
           ],
           "notes": [
             "Always include the Khonshu Guardians."
@@ -1353,7 +1353,7 @@
         "difficulty": 3
       },
       {
-        "id": "sw2:mysteries-kung-fu",
+        "id": "secret-wars-vol-2:mysteries-kung-fu",
         "name": "Master the Mysteries of Kung-Fu",
         "setup": {
           "twists": 8
@@ -1361,7 +1361,7 @@
         "difficulty": 3
       },
       {
-        "id": "sw2:secret-wars",
+        "id": "secret-wars-vol-2:secret-wars",
         "name": "Secret Wars",
         "setup": {
           "twists": 8
@@ -1369,7 +1369,7 @@
         "difficulty": 4
       },
       {
-        "id": "sw2:sinister-ambitions",
+        "id": "secret-wars-vol-2:sinister-ambitions",
         "name": "Sinister Ambitions",
         "setup": {
           "twists": 6
@@ -1379,126 +1379,126 @@
     ],
     "villainGroups": [
       {
-        "id": "sw2:deadpool-s-secret-secret-wars",
+        "id": "secret-wars-vol-2:deadpool-s-secret-secret-wars",
         "name": "Deadpool's Secret Secret Wars"
       },
       {
-        "id": "sw2:guardians-of-knowhere",
+        "id": "secret-wars-vol-2:guardians-of-knowhere",
         "name": "Guardians of Knowhere"
       },
       {
-        "id": "sw2:k-un-lun",
+        "id": "secret-wars-vol-2:k-un-lun",
         "name": "K'un-lun"
       },
       {
-        "id": "sw2:monster-metropolis",
+        "id": "secret-wars-vol-2:monster-metropolis",
         "name": "Monster Metropolis"
       },
       {
-        "id": "sw2:utopolis",
+        "id": "secret-wars-vol-2:utopolis",
         "name": "Utopolis"
       },
       {
-        "id": "sw2:x-men-92",
+        "id": "secret-wars-vol-2:x-men-92",
         "name": "X-Men '92"
       }
     ],
     "henchmen": [
       {
-        "id": "sw2:khonshu-guardians",
+        "id": "secret-wars-vol-2:khonshu-guardians",
         "name": "Khonshu Guardians"
       },
       {
-        "id": "sw2:magma-men",
+        "id": "secret-wars-vol-2:magma-men",
         "name": "Magma Men"
       },
       {
-        "id": "sw2:fateful-resurrection",
+        "id": "secret-wars-vol-2:fateful-resurrection",
         "name": "Fateful Resurrection"
       },
       {
-        "id": "sw2:spider-infected",
+        "id": "secret-wars-vol-2:spider-infected",
         "name": "Spider-Infected"
       }
     ],
     "heroes": [
       {
-        "id": "sw2:agent-venom",
+        "id": "secret-wars-vol-2:agent-venom",
         "name": "Agent Venom",
         "team": "Spider-Friends"
       },
       {
-        "id": "sw2:arkon-the-magnificent",
+        "id": "secret-wars-vol-2:arkon-the-magnificent",
         "name": "Arkon the Magnificent",
         "team": "Unaffiliated"
       },
       {
-        "id": "sw2:beast",
+        "id": "secret-wars-vol-2:beast",
         "name": "Beast",
         "team": "Illuminati"
       },
       {
-        "id": "sw2:black-swan",
+        "id": "secret-wars-vol-2:black-swan",
         "name": "Black Swan",
         "team": "Cabal"
       },
       {
-        "id": "sw2:the-captain-and-the-devil",
+        "id": "secret-wars-vol-2:the-captain-and-the-devil",
         "name": "The Captain and the Devil",
         "team": "Avengers"
       },
       {
-        "id": "sw2:captain-britain",
+        "id": "secret-wars-vol-2:captain-britain",
         "name": "Captain Britain",
         "team": "Illuminati"
       },
       {
-        "id": "sw2:corvus-glaive",
+        "id": "secret-wars-vol-2:corvus-glaive",
         "name": "Corvus Glaive",
         "team": "Cabal"
       },
       {
-        "id": "sw2:dr-punisher-soldier-supreme",
+        "id": "secret-wars-vol-2:dr-punisher-soldier-supreme",
         "name": "Dr. Punisher, Soldier Supreme",
         "team": "Marvel Knights"
       },
       {
-        "id": "sw2:elsa-bloodstone",
+        "id": "secret-wars-vol-2:elsa-bloodstone",
         "name": "Elsa Bloodstone",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "sw2:phoenix-force-cyclops",
+        "id": "secret-wars-vol-2:phoenix-force-cyclops",
         "name": "Phoenix Force Cyclops",
         "team": "X-Men"
       },
       {
-        "id": "sw2:ruby-summers",
+        "id": "secret-wars-vol-2:ruby-summers",
         "name": "Ruby Summers",
         "team": "X-Men"
       },
       {
-        "id": "sw2:shang-chi",
+        "id": "secret-wars-vol-2:shang-chi",
         "name": "Shang-Chi",
         "team": "Marvel Knights"
       },
       {
-        "id": "sw2:silk",
+        "id": "secret-wars-vol-2:silk",
         "name": "Silk",
         "team": "Spider-Friends"
       },
       {
-        "id": "sw2:soulsword-colossus",
+        "id": "secret-wars-vol-2:soulsword-colossus",
         "name": "Soulsword Colossus",
         "team": "X-Men"
       },
       {
-        "id": "sw2:spider-gwen",
+        "id": "secret-wars-vol-2:spider-gwen",
         "name": "Spider-Gwen",
         "team": "Spider-Friends"
       },
       {
-        "id": "sw2:time-traveling-jean-grey",
+        "id": "secret-wars-vol-2:time-traveling-jean-grey",
         "name": "Time-Traveling Jean Grey",
         "team": "X-Men"
       }
@@ -1513,15 +1513,15 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "fi:uru-iron-man",
+        "id": "fear-itself:uru-iron-man",
         "name": "Uru-Enchanted Iron Man",
-        "alwaysLeadsGroupId": "fi:the-mighty",
+        "alwaysLeadsGroupId": "fear-itself:the-mighty",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "fi:fear-itself",
+        "id": "fear-itself:fear-itself",
         "name": "Fear Itself",
         "setup": {
           "twists": 10
@@ -1529,7 +1529,7 @@
         "difficulty": 4
       },
       {
-        "id": "fi:last-stand",
+        "id": "fear-itself:last-stand",
         "name": "Last Stand at Avengers Tower",
         "setup": {
           "twists": 6
@@ -1537,7 +1537,7 @@
         "difficulty": 4
       },
       {
-        "id": "fi:the-traitor",
+        "id": "fear-itself:the-traitor",
         "name": "The Traitor",
         "setup": {
           "twists": 8,
@@ -1550,39 +1550,39 @@
     ],
     "villainGroups": [
       {
-        "id": "fi:the-mighty",
+        "id": "fear-itself:the-mighty",
         "name": "The Mighty"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "fi:greithoth",
+        "id": "fear-itself:greithoth",
         "name": "Greithoth, Breaker of Wills",
         "team": "Foes of Asgard"
       },
       {
-        "id": "fi:kuurth",
+        "id": "fear-itself:kuurth",
         "name": "Kuurth, Breaker of Stone",
         "team": "Foes of Asgard"
       },
       {
-        "id": "fi:nerkkod",
+        "id": "fear-itself:nerkkod",
         "name": "Nerkkod, Breaker of Oceans",
         "team": "Foes of Asgard"
       },
       {
-        "id": "fi:nul",
+        "id": "fear-itself:nul",
         "name": "Nul, Breaker of Worlds",
         "team": "Foes of Asgard"
       },
       {
-        "id": "fi:skirn",
+        "id": "fear-itself:skirn",
         "name": "Skirn, Breaker of Men",
         "team": "Foes of Asgard"
       },
       {
-        "id": "fi:skadi",
+        "id": "fear-itself:skadi",
         "name": "Skadi",
         "team": "HYDRA"
       }
@@ -1597,21 +1597,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "cap:arnim-zola",
+        "id": "captain-america-75:arnim-zola",
         "name": "Arnim Zola",
-        "alwaysLeadsGroupId": "cap:zola-s-creations",
+        "alwaysLeadsGroupId": "captain-america-75:zola-s-creations",
         "difficulty": 2
       },
       {
-        "id": "cap:baron-heinrich-zemo",
+        "id": "captain-america-75:baron-heinrich-zemo",
         "name": "Baron Heinrich Zemo",
-        "alwaysLeadsGroupId": "cap:masters-of-evil-wwii",
+        "alwaysLeadsGroupId": "captain-america-75:masters-of-evil-wwii",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "cap:brainwash-military",
+        "id": "captain-america-75:brainwash-military",
         "name": "Brainwash the Military",
         "setup": {
           "twists": 7
@@ -1619,7 +1619,7 @@
         "difficulty": 3
       },
       {
-        "id": "cap:change-wwii",
+        "id": "captain-america-75:change-wwii",
         "name": "Change the Outcome of WWII",
         "setup": {
           "twists": 7,
@@ -1631,7 +1631,7 @@
         "difficulty": 3
       },
       {
-        "id": "cap:slay-ancestors",
+        "id": "captain-america-75:slay-ancestors",
         "name": "Go Back in Time to Slay Heroes' Ancestors",
         "setup": {
           "twists": 9,
@@ -1643,7 +1643,7 @@
         "difficulty": 4
       },
       {
-        "id": "cap:enigma-code",
+        "id": "captain-america-75:enigma-code",
         "name": "The Unbreakable Enigma Code",
         "setup": {
           "twists": 6
@@ -1653,38 +1653,38 @@
     ],
     "villainGroups": [
       {
-        "id": "cap:zola-s-creations",
+        "id": "captain-america-75:zola-s-creations",
         "name": "Zola's Creations"
       },
       {
-        "id": "cap:masters-of-evil-wwii",
+        "id": "captain-america-75:masters-of-evil-wwii",
         "name": "Masters of Evil (WWII)"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "cap:agent-x-13",
+        "id": "captain-america-75:agent-x-13",
         "name": "Agent X-13",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "cap:captain-america-falcon",
+        "id": "captain-america-75:captain-america-falcon",
         "name": "Captain America (Falcon)",
         "team": "Avengers"
       },
       {
-        "id": "cap:captain-america-1941",
+        "id": "captain-america-75:captain-america-1941",
         "name": "Captain America 1941",
         "team": "Avengers"
       },
       {
-        "id": "cap:steve-rogers-director-of-s-h-i-e-l-d",
+        "id": "captain-america-75:steve-rogers-director-of-s-h-i-e-l-d",
         "name": "Steve Rogers, Director of S.H.I.E.L.D.",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "cap:winter-soldier",
+        "id": "captain-america-75:winter-soldier",
         "name": "Winter Soldier",
         "team": "Unaffiliated"
       }
@@ -1699,39 +1699,39 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "cw:authoritarian-iron-man",
+        "id": "civil-war:authoritarian-iron-man",
         "name": "Authoritarian Iron Man",
-        "alwaysLeadsGroupId": "cw:superhuman-registration-act",
+        "alwaysLeadsGroupId": "civil-war:superhuman-registration-act",
         "difficulty": 4
       },
       {
-        "id": "cw:baron-helmut-zemo",
+        "id": "civil-war:baron-helmut-zemo",
         "name": "Baron Helmut Zemo",
-        "alwaysLeadsGroupId": "cw:thunderbolts",
+        "alwaysLeadsGroupId": "civil-war:thunderbolts",
         "difficulty": 3
       },
       {
-        "id": "cw:maria-hill",
+        "id": "civil-war:maria-hill",
         "name": "Maria Hill, Director of S.H.I.E.L.D.",
-        "alwaysLeadsGroupId": "cw:s-h-i-e-l-d-elite",
+        "alwaysLeadsGroupId": "civil-war:s-h-i-e-l-d-elite",
         "difficulty": 5
       },
       {
-        "id": "cw:misty-knight",
+        "id": "civil-war:misty-knight",
         "name": "Misty Knight",
-        "alwaysLeadsGroupId": "cw:heroes-for-hire",
+        "alwaysLeadsGroupId": "civil-war:heroes-for-hire",
         "difficulty": 3
       },
       {
-        "id": "cw:ragnarok",
+        "id": "civil-war:ragnarok",
         "name": "Ragnarok",
-        "alwaysLeadsGroupId": "cw:registration-enforcers",
+        "alwaysLeadsGroupId": "civil-war:registration-enforcers",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "cw:avengers-vs-xmen",
+        "id": "civil-war:avengers-vs-xmen",
         "name": "Avengers vs. X-Men",
         "setup": {
           "twists": 9,
@@ -1742,7 +1742,7 @@
         "difficulty": 3
       },
       {
-        "id": "cw:dark-reign-hammer",
+        "id": "civil-war:dark-reign-hammer",
         "name": "Dark Reign of H.A.M.M.E.R. Officers",
         "setup": {
           "twists": 7
@@ -1750,7 +1750,7 @@
         "difficulty": 3
       },
       {
-        "id": "cw:epic-civil-war",
+        "id": "civil-war:epic-civil-war",
         "name": "Epic Super Hero Civil War",
         "setup": {
           "twists": 9,
@@ -1765,7 +1765,7 @@
         "difficulty": 4
       },
       {
-        "id": "cw:imprison-superhumans",
+        "id": "civil-war:imprison-superhumans",
         "name": "Imprison Unregistered Superhumans",
         "setup": {
           "twists": 11
@@ -1773,7 +1773,7 @@
         "difficulty": 3
       },
       {
-        "id": "cw:nitro-crowds",
+        "id": "civil-war:nitro-crowds",
         "name": "Nitro the Supervillain Threatens Crowds",
         "setup": {
           "twists": 8
@@ -1781,7 +1781,7 @@
         "difficulty": 4
       },
       {
-        "id": "cw:predict-future-crime",
+        "id": "civil-war:predict-future-crime",
         "name": "Predict Future Crime",
         "setup": {
           "twists": 6,
@@ -1793,7 +1793,7 @@
         "difficulty": 2
       },
       {
-        "id": "cw:secret-identities",
+        "id": "civil-war:secret-identities",
         "name": "Reveal Heroes' Secret Identities",
         "setup": {
           "twists": 6,
@@ -1805,7 +1805,7 @@
         "difficulty": 3
       },
       {
-        "id": "cw:us-split",
+        "id": "civil-war:us-split",
         "name": "United States Split by Civil War",
         "setup": {
           "twists": 10
@@ -1815,122 +1815,122 @@
     ],
     "villainGroups": [
       {
-        "id": "cw:csa-special-marshals",
+        "id": "civil-war:csa-special-marshals",
         "name": "CSA Special Marshals"
       },
       {
-        "id": "cw:great-lakes-avengers",
+        "id": "civil-war:great-lakes-avengers",
         "name": "Great Lakes Avengers"
       },
       {
-        "id": "cw:heroes-for-hire",
+        "id": "civil-war:heroes-for-hire",
         "name": "Heroes for Hire"
       },
       {
-        "id": "cw:registration-enforcers",
+        "id": "civil-war:registration-enforcers",
         "name": "Registration Enforcers"
       },
       {
-        "id": "cw:s-h-i-e-l-d-elite",
+        "id": "civil-war:s-h-i-e-l-d-elite",
         "name": "S.H.I.E.L.D. Elite"
       },
       {
-        "id": "cw:superhuman-registration-act",
+        "id": "civil-war:superhuman-registration-act",
         "name": "Superhuman Registration Act"
       },
       {
-        "id": "cw:thunderbolts",
+        "id": "civil-war:thunderbolts",
         "name": "Thunderbolts"
       }
     ],
     "henchmen": [
       {
-        "id": "cw:mandroid",
+        "id": "civil-war:mandroid",
         "name": "Mandroid"
       },
       {
-        "id": "cw:cape-killers",
+        "id": "civil-war:cape-killers",
         "name": "Cape-Killers"
       }
     ],
     "heroes": [
       {
-        "id": "cw:captain-america-secret-avenger",
+        "id": "civil-war:captain-america-secret-avenger",
         "name": "Captain America, Secret Avenger",
         "team": "Avengers"
       },
       {
-        "id": "cw:cloak-dagger",
+        "id": "civil-war:cloak-dagger",
         "name": "Cloak & Dagger",
         "team": "Avengers"
       },
       {
-        "id": "cw:daredevil",
+        "id": "civil-war:daredevil",
         "name": "Daredevil",
         "team": "Avengers"
       },
       {
-        "id": "cw:falcon",
+        "id": "civil-war:falcon",
         "name": "Falcon",
         "team": "Avengers"
       },
       {
-        "id": "cw:goliath",
+        "id": "civil-war:goliath",
         "name": "Goliath",
         "team": "Avengers"
       },
       {
-        "id": "cw:hercules",
+        "id": "civil-war:hercules",
         "name": "Hercules",
         "team": "Avengers"
       },
       {
-        "id": "cw:hulkling",
+        "id": "civil-war:hulkling",
         "name": "Hulkling",
         "team": "Avengers"
       },
       {
-        "id": "cw:luke-cage",
+        "id": "civil-war:luke-cage",
         "name": "Luke Cage",
         "team": "Avengers"
       },
       {
-        "id": "cw:patriot",
+        "id": "civil-war:patriot",
         "name": "Patriot",
         "team": "Avengers"
       },
       {
-        "id": "cw:peter-parker",
+        "id": "civil-war:peter-parker",
         "name": "Peter Parker",
         "team": "Avengers"
       },
       {
-        "id": "cw:speedball",
+        "id": "civil-war:speedball",
         "name": "Speedball",
         "team": "New Warriors"
       },
       {
-        "id": "cw:stature",
+        "id": "civil-war:stature",
         "name": "Stature",
         "team": "Avengers"
       },
       {
-        "id": "cw:storm-black-panther",
+        "id": "civil-war:storm-black-panther",
         "name": "Storm & Black Panther",
         "team": "X-Men"
       },
       {
-        "id": "cw:tigra",
+        "id": "civil-war:tigra",
         "name": "Tigra",
         "team": "Avengers"
       },
       {
-        "id": "cw:vision",
+        "id": "civil-war:vision",
         "name": "Vision",
         "team": "Avengers"
       },
       {
-        "id": "cw:wiccan",
+        "id": "civil-war:wiccan",
         "name": "Wiccan",
         "team": "Avengers"
       }
@@ -1945,21 +1945,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "dp:evil-deadpool",
+        "id": "deadpool:evil-deadpool",
         "name": "Evil Deadpool",
-        "alwaysLeadsGroupId": "dp:evil-deadpool-corpse",
+        "alwaysLeadsGroupId": "deadpool:evil-deadpool-corpse",
         "difficulty": 2
       },
       {
-        "id": "dp:macho-gomez",
+        "id": "deadpool:macho-gomez",
         "name": "Macho Gomez",
-        "alwaysLeadsGroupId": "dp:deadpool-s-friends",
+        "alwaysLeadsGroupId": "deadpool:deadpool-s-friends",
         "difficulty": 2
       }
     ],
     "schemes": [
       {
-        "id": "dp:kills-marvel-universe",
+        "id": "deadpool:kills-marvel-universe",
         "name": "Deadpool Kills the Marvel Universe",
         "setup": {
           "twists": 6,
@@ -1977,7 +1977,7 @@
         "difficulty": 4
       },
       {
-        "id": "dp:chimichanga",
+        "id": "deadpool:chimichanga",
         "name": "Deadpool Wants a Chimichanga",
         "setup": {
           "twists": 6,
@@ -1989,7 +1989,7 @@
         "difficulty": 2
       },
       {
-        "id": "dp:writes-a-scheme",
+        "id": "deadpool:writes-a-scheme",
         "name": "Deadpool Writes a Scheme",
         "setup": {
           "twists": 6,
@@ -2000,7 +2000,7 @@
         "difficulty": 1
       },
       {
-        "id": "dp:everybody-hates",
+        "id": "deadpool:everybody-hates",
         "name": "Everybody Hates Deadpool",
         "setup": {
           "twists": 6,
@@ -2013,38 +2013,38 @@
     ],
     "villainGroups": [
       {
-        "id": "dp:deadpool-s-friends",
+        "id": "deadpool:deadpool-s-friends",
         "name": "Deadpool's \"Friends\""
       },
       {
-        "id": "dp:evil-deadpool-corpse",
+        "id": "deadpool:evil-deadpool-corpse",
         "name": "Evil Deadpool Corpse"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "dp:bob-agent-of-hydra",
+        "id": "deadpool:bob-agent-of-hydra",
         "name": "Bob, Agent of HYDRA",
         "team": "HYDRA"
       },
       {
-        "id": "dp:deadpool",
+        "id": "deadpool:deadpool",
         "name": "Deadpool",
         "team": "Mercs for Money"
       },
       {
-        "id": "dp:slapstick",
+        "id": "deadpool:slapstick",
         "name": "Slapstick",
         "team": "Mercs for Money"
       },
       {
-        "id": "dp:solo",
+        "id": "deadpool:solo",
         "name": "Solo",
         "team": "Mercs for Money"
       },
       {
-        "id": "dp:stingray",
+        "id": "deadpool:stingray",
         "name": "Stingray",
         "team": "Mercs for Money"
       }
@@ -2153,45 +2153,45 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "xm:arcade",
+        "id": "x-men-box:arcade",
         "name": "Arcade",
-        "alwaysLeadsGroupId": "xm:murderworld",
+        "alwaysLeadsGroupId": "x-men-box:murderworld",
         "difficulty": 4
       },
       {
-        "id": "xm:dark-phoenix",
+        "id": "x-men-box:dark-phoenix",
         "name": "Dark Phoenix",
-        "alwaysLeadsGroupId": "xm:hellfire-club",
+        "alwaysLeadsGroupId": "x-men-box:hellfire-club",
         "difficulty": 5
       },
       {
-        "id": "xm:deathbird",
+        "id": "x-men-box:deathbird",
         "name": "Deathbird",
-        "alwaysLeadsGroupId": "xm:shi-ar-imperial-guard",
+        "alwaysLeadsGroupId": "x-men-box:shi-ar-imperial-guard",
         "difficulty": 3
       },
       {
-        "id": "xm:mojo",
+        "id": "x-men-box:mojo",
         "name": "Mojo",
-        "alwaysLeadsGroupId": "xm:mojoverse",
+        "alwaysLeadsGroupId": "x-men-box:mojoverse",
         "difficulty": 2
       },
       {
-        "id": "xm:onslaught",
+        "id": "x-men-box:onslaught",
         "name": "Onslaught",
-        "alwaysLeadsGroupId": "xm:dark-descendants",
+        "alwaysLeadsGroupId": "x-men-box:dark-descendants",
         "difficulty": 5
       },
       {
-        "id": "xm:shadow-king",
+        "id": "x-men-box:shadow-king",
         "name": "Shadow King",
-        "alwaysLeadsGroupId": "xm:shadow-x",
+        "alwaysLeadsGroupId": "x-men-box:shadow-x",
         "difficulty": 4
       }
     ],
     "schemes": [
       {
-        "id": "xm:alien-brood-encounters",
+        "id": "x-men-box:alien-brood-encounters",
         "name": "Alien Brood Encounters",
         "setup": {
           "twists": 8
@@ -2199,7 +2199,7 @@
         "difficulty": 3
       },
       {
-        "id": "xm:anti-mutant-hatred",
+        "id": "x-men-box:anti-mutant-hatred",
         "name": "Anti-Mutant Hatred",
         "setup": {
           "twists": 11
@@ -2207,7 +2207,7 @@
         "difficulty": 3
       },
       {
-        "id": "xm:the-dark-phoenix-saga",
+        "id": "x-men-box:the-dark-phoenix-saga",
         "name": "The Dark Phoenix Saga",
         "setup": {
           "twists": 10
@@ -2215,7 +2215,7 @@
         "difficulty": 4
       },
       {
-        "id": "xm:horror-of-horrors",
+        "id": "x-men-box:horror-of-horrors",
         "name": "Horror of Horrors",
         "setup": {
           "twists": 6
@@ -2223,7 +2223,7 @@
         "difficulty": 5
       },
       {
-        "id": "xm:mutant-hunting-super-sentinels",
+        "id": "x-men-box:mutant-hunting-super-sentinels",
         "name": "Mutant-Hunting Super Sentinels",
         "setup": {
           "twists": 9
@@ -2231,7 +2231,7 @@
         "difficulty": 4
       },
       {
-        "id": "xm:nuclear-armageddon",
+        "id": "x-men-box:nuclear-armageddon",
         "name": "Nuclear Armageddon",
         "setup": {
           "twists": 5
@@ -2239,7 +2239,7 @@
         "difficulty": 4
       },
       {
-        "id": "xm:televised-deathtraps-of-mojoworld",
+        "id": "x-men-box:televised-deathtraps-of-mojoworld",
         "name": "Televised Deathtraps of Mojoworld",
         "setup": {
           "twists": 11
@@ -2247,7 +2247,7 @@
         "difficulty": 3
       },
       {
-        "id": "xm:x-men-danger-room-goes-berserk",
+        "id": "x-men-box:x-men-danger-room-goes-berserk",
         "name": "X-Men Danger Room Goes Berserk",
         "setup": {
           "twists": 8
@@ -2257,133 +2257,133 @@
     ],
     "villainGroups": [
       {
-        "id": "xm:dark-descendants",
+        "id": "x-men-box:dark-descendants",
         "name": "Dark Descendants"
       },
       {
-        "id": "xm:hellfire-club",
+        "id": "x-men-box:hellfire-club",
         "name": "Hellfire Club"
       },
       {
-        "id": "xm:mojoverse",
+        "id": "x-men-box:mojoverse",
         "name": "Mojoverse"
       },
       {
-        "id": "xm:murderworld",
+        "id": "x-men-box:murderworld",
         "name": "Murderworld"
       },
       {
-        "id": "xm:shadow-x",
+        "id": "x-men-box:shadow-x",
         "name": "Shadow-X"
       },
       {
-        "id": "xm:shi-ar-imperial-guard",
+        "id": "x-men-box:shi-ar-imperial-guard",
         "name": "Shi'ar Imperial Guard"
       },
       {
-        "id": "xm:sisterhood-of-mutants",
+        "id": "x-men-box:sisterhood-of-mutants",
         "name": "Sisterhood of Mutants"
       },
       {
-        "id": "xm:token-villains",
+        "id": "x-men-box:token-villains",
         "name": "Token Villains"
       }
     ],
     "henchmen": [
       {
-        "id": "xm:the-brood",
+        "id": "x-men-box:the-brood",
         "name": "The Brood"
       },
       {
-        "id": "xm:hellfire-cult",
+        "id": "x-men-box:hellfire-cult",
         "name": "Hellfire Cult"
       },
       {
-        "id": "xm:sapien-league",
+        "id": "x-men-box:sapien-league",
         "name": "Sapien League"
       },
       {
-        "id": "xm:shi-ar-death-commandos",
+        "id": "x-men-box:shi-ar-death-commandos",
         "name": "Shi'ar Death Commandos"
       },
       {
-        "id": "xm:shi-ar-patrol-craft",
+        "id": "x-men-box:shi-ar-patrol-craft",
         "name": "Shi'ar Patrol Craft"
       }
     ],
     "heroes": [
       {
-        "id": "xm:aurora-northstar",
+        "id": "x-men-box:aurora-northstar",
         "name": "Aurora & Northstar",
         "team": "X-Men"
       },
       {
-        "id": "xm:banshee",
+        "id": "x-men-box:banshee",
         "name": "Banshee",
         "team": "X-Men"
       },
       {
-        "id": "xm:beast",
+        "id": "x-men-box:beast",
         "name": "Beast",
         "team": "X-Men"
       },
       {
-        "id": "xm:cannonball",
+        "id": "x-men-box:cannonball",
         "name": "Cannonball",
         "team": "X-Men"
       },
       {
-        "id": "xm:colossus-wolverine",
+        "id": "x-men-box:colossus-wolverine",
         "name": "Colossus & Wolverine",
         "team": "X-Men"
       },
       {
-        "id": "xm:dazzler",
+        "id": "x-men-box:dazzler",
         "name": "Dazzler",
         "team": "X-Men"
       },
       {
-        "id": "xm:havok",
+        "id": "x-men-box:havok",
         "name": "Havok",
         "team": "X-Men"
       },
       {
-        "id": "xm:jubilee",
+        "id": "x-men-box:jubilee",
         "name": "Jubilee",
         "team": "X-Men"
       },
       {
-        "id": "xm:kitty-pryde",
+        "id": "x-men-box:kitty-pryde",
         "name": "Kitty Pryde",
         "team": "X-Men"
       },
       {
-        "id": "xm:legion",
+        "id": "x-men-box:legion",
         "name": "Legion",
         "team": "X-Men"
       },
       {
-        "id": "xm:longshot",
+        "id": "x-men-box:longshot",
         "name": "Longshot",
         "team": "X-Men"
       },
       {
-        "id": "xm:phoenix",
+        "id": "x-men-box:phoenix",
         "name": "Phoenix",
         "team": "X-Men"
       },
       {
-        "id": "xm:polaris",
+        "id": "x-men-box:polaris",
         "name": "Polaris",
         "team": "X-Men"
       },
       {
-        "id": "xm:psylocke",
+        "id": "x-men-box:psylocke",
         "name": "Psylocke",
         "team": "X-Men"
       },
       {
-        "id": "xm:x-23",
+        "id": "x-men-box:x-23",
         "name": "X-23",
         "team": "X-Men"
       }
@@ -2398,15 +2398,15 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "smh:adrian-toomes",
+        "id": "spider-man-homecoming:adrian-toomes",
         "name": "Adrian Toomes",
-        "alwaysLeadsGroupId": "smh:salvagers",
+        "alwaysLeadsGroupId": "spider-man-homecoming:salvagers",
         "difficulty": 2
       }
     ],
     "schemes": [
       {
-        "id": "smh:distract-the-hero",
+        "id": "spider-man-homecoming:distract-the-hero",
         "name": "Distract the Hero",
         "setup": {
           "twists": 8
@@ -2414,7 +2414,7 @@
         "difficulty": 2
       },
       {
-        "id": "smh:explosion-at-the-washington-monument",
+        "id": "spider-man-homecoming:explosion-at-the-washington-monument",
         "name": "Explosion at the Washington Monument",
         "setup": {
           "twists": 8
@@ -2422,7 +2422,7 @@
         "difficulty": 3
       },
       {
-        "id": "smh:ferry-disaster",
+        "id": "spider-man-homecoming:ferry-disaster",
         "name": "Ferry Disaster",
         "setup": {
           "twists": 9
@@ -2430,7 +2430,7 @@
         "difficulty": 3
       },
       {
-        "id": "smh:scavenge-alien-weaponry",
+        "id": "spider-man-homecoming:scavenge-alien-weaponry",
         "name": "Scavenge Alien Weaponry",
         "setup": {
           "twists": 7
@@ -2440,38 +2440,38 @@
     ],
     "villainGroups": [
       {
-        "id": "smh:salvagers",
+        "id": "spider-man-homecoming:salvagers",
         "name": "Salvagers"
       },
       {
-        "id": "smh:vulture-tech",
+        "id": "spider-man-homecoming:vulture-tech",
         "name": "Vulture Tech"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "smh:happy-hogan",
+        "id": "spider-man-homecoming:happy-hogan",
         "name": "Happy Hogan",
         "team": "Unaffiliated"
       },
       {
-        "id": "smh:high-tech-spider-man",
+        "id": "spider-man-homecoming:high-tech-spider-man",
         "name": "High-Tech Spider-Man",
         "team": "Spider-Friends"
       },
       {
-        "id": "smh:peter-s-allies",
+        "id": "spider-man-homecoming:peter-s-allies",
         "name": "Peter's Allies",
         "team": "Spider-Friends"
       },
       {
-        "id": "smh:peter-parker-homecoming",
+        "id": "spider-man-homecoming:peter-parker-homecoming",
         "name": "Peter Parker, Homecoming",
         "team": "Spider-Friends"
       },
       {
-        "id": "smh:tony-stark",
+        "id": "spider-man-homecoming:tony-stark",
         "name": "Tony Stark",
         "team": "Avengers"
       }
@@ -2486,21 +2486,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "champ:fin-fang-foom",
+        "id": "champions:fin-fang-foom",
         "name": "Fin Fang Foom",
-        "alwaysLeadsGroupId": "champ:monsters-unleashed",
+        "alwaysLeadsGroupId": "champions:monsters-unleashed",
         "difficulty": 5
       },
       {
-        "id": "champ:pagliacci",
+        "id": "champions:pagliacci",
         "name": "Pagliacci",
-        "alwaysLeadsGroupId": "champ:wrecking-crew",
+        "alwaysLeadsGroupId": "champions:wrecking-crew",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "champ:clash-of-the-monsters-unleashed",
+        "id": "champions:clash-of-the-monsters-unleashed",
         "name": "Clash of the Monsters Unleashed",
         "setup": {
           "twists": 10
@@ -2508,7 +2508,7 @@
         "difficulty": 4
       },
       {
-        "id": "champ:divide-and-conquer",
+        "id": "champions:divide-and-conquer",
         "name": "Divide and Conquer",
         "setup": {
           "twists": 8
@@ -2516,7 +2516,7 @@
         "difficulty": 3
       },
       {
-        "id": "champ:hypnotize-every-human",
+        "id": "champions:hypnotize-every-human",
         "name": "Hypnotize Every Human",
         "setup": {
           "twists": 8
@@ -2524,7 +2524,7 @@
         "difficulty": 3
       },
       {
-        "id": "champ:steal-all-oxygen-on-earth",
+        "id": "champions:steal-all-oxygen-on-earth",
         "name": "Steal All Oxygen on Earth",
         "setup": {
           "twists": 8
@@ -2534,38 +2534,38 @@
     ],
     "villainGroups": [
       {
-        "id": "champ:monsters-unleashed",
+        "id": "champions:monsters-unleashed",
         "name": "Monsters Unleashed"
       },
       {
-        "id": "champ:wrecking-crew",
+        "id": "champions:wrecking-crew",
         "name": "Wrecking Crew"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "champ:gwenpool",
+        "id": "champions:gwenpool",
         "name": "Gwenpool",
         "team": "Champions"
       },
       {
-        "id": "champ:ms-marvel",
+        "id": "champions:ms-marvel",
         "name": "Ms. Marvel",
         "team": "Champions"
       },
       {
-        "id": "champ:nova",
+        "id": "champions:nova",
         "name": "Nova",
         "team": "Champions"
       },
       {
-        "id": "champ:totally-awesome-hulk",
+        "id": "champions:totally-awesome-hulk",
         "name": "Totally Awesome Hulk",
         "team": "Champions"
       },
       {
-        "id": "champ:viv-vision",
+        "id": "champions:viv-vision",
         "name": "Viv Vision",
         "team": "Champions"
       }
@@ -2580,45 +2580,45 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "wwh:general-ross",
+        "id": "world-war-hulk:general-ross",
         "name": "General Ross",
-        "alwaysLeadsGroupId": "wwh:code-red",
+        "alwaysLeadsGroupId": "world-war-hulk:code-red",
         "difficulty": 3
       },
       {
-        "id": "wwh:illuminati-secret-society",
+        "id": "world-war-hulk:illuminati-secret-society",
         "name": "Illuminati, Secret Society",
-        "alwaysLeadsGroupId": "wwh:illuminati",
+        "alwaysLeadsGroupId": "world-war-hulk:illuminati",
         "difficulty": 4
       },
       {
-        "id": "wwh:king-hulk-sakaarson",
+        "id": "world-war-hulk:king-hulk-sakaarson",
         "name": "King Hulk, Sakaarson",
-        "alwaysLeadsGroupId": "wwh:warbound",
+        "alwaysLeadsGroupId": "world-war-hulk:warbound",
         "difficulty": 5
       },
       {
-        "id": "wwh:m-o-d-o-k",
+        "id": "world-war-hulk:m-o-d-o-k",
         "name": "M.O.D.O.K.",
-        "alwaysLeadsGroupId": "wwh:intelligencia",
+        "alwaysLeadsGroupId": "world-war-hulk:intelligencia",
         "difficulty": 3
       },
       {
-        "id": "wwh:the-red-king",
+        "id": "world-war-hulk:the-red-king",
         "name": "The Red King",
-        "alwaysLeadsGroupId": "wwh:sakaar-imperial-guard",
+        "alwaysLeadsGroupId": "world-war-hulk:sakaar-imperial-guard",
         "difficulty": 3
       },
       {
-        "id": "wwh:the-sentry",
+        "id": "world-war-hulk:the-sentry",
         "name": "The Sentry",
-        "alwaysLeadsGroupId": "wwh:aspects-of-the-void",
+        "alwaysLeadsGroupId": "world-war-hulk:aspects-of-the-void",
         "difficulty": 5
       }
     ],
     "schemes": [
       {
-        "id": "wwh:break-the-planet-asunder",
+        "id": "world-war-hulk:break-the-planet-asunder",
         "name": "Break the Planet Asunder",
         "setup": {
           "twists": 9
@@ -2626,7 +2626,7 @@
         "difficulty": 4
       },
       {
-        "id": "wwh:cytoplasm-spike-invasion",
+        "id": "world-war-hulk:cytoplasm-spike-invasion",
         "name": "Cytoplasm Spike Invasion",
         "setup": {
           "twists": 10
@@ -2634,7 +2634,7 @@
         "difficulty": 4
       },
       {
-        "id": "wwh:fall-of-the-hulks",
+        "id": "world-war-hulk:fall-of-the-hulks",
         "name": "Fall of the Hulks",
         "setup": {
           "twists": 10
@@ -2642,7 +2642,7 @@
         "difficulty": 4
       },
       {
-        "id": "wwh:gladiator-pits-of-sakaar",
+        "id": "world-war-hulk:gladiator-pits-of-sakaar",
         "name": "Gladiator Pits of Sakaar",
         "setup": {
           "twists": 6
@@ -2650,7 +2650,7 @@
         "difficulty": 3
       },
       {
-        "id": "wwh:mutating-gamma-rays",
+        "id": "world-war-hulk:mutating-gamma-rays",
         "name": "Mutating Gamma Rays",
         "setup": {
           "twists": 7
@@ -2658,7 +2658,7 @@
         "difficulty": 3
       },
       {
-        "id": "wwh:shoot-hulk-into-space",
+        "id": "world-war-hulk:shoot-hulk-into-space",
         "name": "Shoot Hulk into Space",
         "setup": {
           "twists": 8
@@ -2666,7 +2666,7 @@
         "difficulty": 3
       },
       {
-        "id": "wwh:subjugate-with-obedience-disks",
+        "id": "world-war-hulk:subjugate-with-obedience-disks",
         "name": "Subjugate with Obedience Disks",
         "setup": {
           "twists": 11
@@ -2674,7 +2674,7 @@
         "difficulty": 4
       },
       {
-        "id": "wwh:world-war-hulk",
+        "id": "world-war-hulk:world-war-hulk",
         "name": "World War Hulk",
         "setup": {
           "twists": 9
@@ -2684,121 +2684,121 @@
     ],
     "villainGroups": [
       {
-        "id": "wwh:aspects-of-the-void",
+        "id": "world-war-hulk:aspects-of-the-void",
         "name": "Aspects of the Void"
       },
       {
-        "id": "wwh:code-red",
+        "id": "world-war-hulk:code-red",
         "name": "Code Red"
       },
       {
-        "id": "wwh:illuminati",
+        "id": "world-war-hulk:illuminati",
         "name": "Illuminati"
       },
       {
-        "id": "wwh:intelligencia",
+        "id": "world-war-hulk:intelligencia",
         "name": "Intelligencia"
       },
       {
-        "id": "wwh:sakaar-imperial-guard",
+        "id": "world-war-hulk:sakaar-imperial-guard",
         "name": "Sakaar Imperial Guard"
       },
       {
-        "id": "wwh:u-foes",
+        "id": "world-war-hulk:u-foes",
         "name": "U-Foes"
       },
       {
-        "id": "wwh:warbound",
+        "id": "world-war-hulk:warbound",
         "name": "Warbound"
       }
     ],
     "henchmen": [
       {
-        "id": "wwh:cytoplasm-spikes",
+        "id": "world-war-hulk:cytoplasm-spikes",
         "name": "Cytoplasm Spikes"
       },
       {
-        "id": "wwh:death-s-heads",
+        "id": "world-war-hulk:death-s-heads",
         "name": "Death's Heads"
       },
       {
-        "id": "wwh:sakaaran-hivelings",
+        "id": "world-war-hulk:sakaaran-hivelings",
         "name": "Sakaaran Hivelings"
       }
     ],
     "heroes": [
       {
-        "id": "wwh:amadeus-cho",
+        "id": "world-war-hulk:amadeus-cho",
         "name": "Amadeus Cho",
         "team": "Champions"
       },
       {
-        "id": "wwh:bruce-banner",
+        "id": "world-war-hulk:bruce-banner",
         "name": "Bruce Banner",
         "team": "Avengers"
       },
       {
-        "id": "wwh:caiera",
+        "id": "world-war-hulk:caiera",
         "name": "Caiera",
         "team": "Warbound"
       },
       {
-        "id": "wwh:gladiator-hulk",
+        "id": "world-war-hulk:gladiator-hulk",
         "name": "Gladiator Hulk",
         "team": "Warbound"
       },
       {
-        "id": "wwh:hiroim",
+        "id": "world-war-hulk:hiroim",
         "name": "Hiroim",
         "team": "Warbound"
       },
       {
-        "id": "wwh:hulkbuster-iron-man",
+        "id": "world-war-hulk:hulkbuster-iron-man",
         "name": "Hulkbuster Iron Man",
         "team": "Avengers"
       },
       {
-        "id": "wwh:joe-fixit-grey-hulk",
+        "id": "world-war-hulk:joe-fixit-grey-hulk",
         "name": "Joe Fixit, Grey Hulk",
         "team": "Crime Syndicate"
       },
       {
-        "id": "wwh:korg",
+        "id": "world-war-hulk:korg",
         "name": "Korg",
         "team": "Warbound"
       },
       {
-        "id": "wwh:miek-the-unhived",
+        "id": "world-war-hulk:miek-the-unhived",
         "name": "Miek, The Unhived",
         "team": "Warbound"
       },
       {
-        "id": "wwh:namora",
+        "id": "world-war-hulk:namora",
         "name": "Namora",
         "team": "Champions"
       },
       {
-        "id": "wwh:no-name-brood-queen",
+        "id": "world-war-hulk:no-name-brood-queen",
         "name": "No-Name, Brood Queen",
         "team": "Warbound"
       },
       {
-        "id": "wwh:rick-jones",
+        "id": "world-war-hulk:rick-jones",
         "name": "Rick Jones",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "wwh:sentry",
+        "id": "world-war-hulk:sentry",
         "name": "Sentry",
         "team": "Avengers"
       },
       {
-        "id": "wwh:she-hulk",
+        "id": "world-war-hulk:she-hulk",
         "name": "She-Hulk",
         "team": "Avengers"
       },
       {
-        "id": "wwh:skaar-son-of-hulk",
+        "id": "world-war-hulk:skaar-son-of-hulk",
         "name": "Skaar, Son Of Hulk",
         "team": "Avengers"
       }
@@ -2813,27 +2813,27 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "msp1:iron-monger",
+        "id": "marvel-studios-phase-1:iron-monger",
         "name": "Iron Monger",
-        "alwaysLeadsGroupId": "msp1:iron-foes",
+        "alwaysLeadsGroupId": "marvel-studios-phase-1:iron-foes",
         "difficulty": 2
       },
       {
-        "id": "msp1:loki",
+        "id": "marvel-studios-phase-1:loki",
         "name": "Loki",
-        "alwaysLeadsGroupId": "msp1:enemies-of-asgard",
+        "alwaysLeadsGroupId": "marvel-studios-phase-1:enemies-of-asgard",
         "difficulty": 2
       },
       {
-        "id": "msp1:red-skull",
+        "id": "marvel-studios-phase-1:red-skull",
         "name": "Red Skull",
-        "alwaysLeadsGroupId": "msp1:hydra",
+        "alwaysLeadsGroupId": "marvel-studios-phase-1:hydra",
         "difficulty": 1
       }
     ],
     "schemes": [
       {
-        "id": "msp1:asgard-under-siege",
+        "id": "marvel-studios-phase-1:asgard-under-siege",
         "name": "Asgard Under Siege",
         "setup": {
           "twists": 8,
@@ -2842,7 +2842,7 @@
         "difficulty": 3
       },
       {
-        "id": "msp1:destroy-the-cities-of-earth",
+        "id": "marvel-studios-phase-1:destroy-the-cities-of-earth",
         "name": "Destroy the Cities of Earth!",
         "setup": {
           "twists": 8
@@ -2850,7 +2850,7 @@
         "difficulty": 4
       },
       {
-        "id": "msp1:enslave-minds-with-the-chitauri-scepter",
+        "id": "marvel-studios-phase-1:enslave-minds-with-the-chitauri-scepter",
         "name": "Enslave Minds with the Chitauri Scepter",
         "setup": {
           "twists": 8
@@ -2858,7 +2858,7 @@
         "difficulty": 3
       },
       {
-        "id": "msp1:invade-asgard",
+        "id": "marvel-studios-phase-1:invade-asgard",
         "name": "Invade Asgard",
         "setup": {
           "twists": 7
@@ -2866,7 +2866,7 @@
         "difficulty": 3
       },
       {
-        "id": "msp1:radioactive-palladium-poisoning",
+        "id": "marvel-studios-phase-1:radioactive-palladium-poisoning",
         "name": "Radioactive Palladium Poisoning",
         "setup": {
           "twists": 8
@@ -2874,7 +2874,7 @@
         "difficulty": 3
       },
       {
-        "id": "msp1:replace-earth-s-leaders-with-hydra",
+        "id": "marvel-studios-phase-1:replace-earth-s-leaders-with-hydra",
         "name": "Replace Earth's Leaders with HYDRA",
         "setup": {
           "twists": 5,
@@ -2883,7 +2883,7 @@
         "difficulty": 3
       },
       {
-        "id": "msp1:super-hero-civil-war",
+        "id": "marvel-studios-phase-1:super-hero-civil-war",
         "name": "Super Hero Civil War",
         "setup": {
           "twists": 8,
@@ -2895,7 +2895,7 @@
         "difficulty": 4
       },
       {
-        "id": "msp1:unleash-the-power-of-the-cosmic-cube",
+        "id": "marvel-studios-phase-1:unleash-the-power-of-the-cosmic-cube",
         "name": "Unleash the Power of the Cosmic Cube",
         "setup": {
           "twists": 8
@@ -2905,77 +2905,77 @@
     ],
     "villainGroups": [
       {
-        "id": "msp1:chitauri",
+        "id": "marvel-studios-phase-1:chitauri",
         "name": "Chitauri"
       },
       {
-        "id": "msp1:enemies-of-asgard",
+        "id": "marvel-studios-phase-1:enemies-of-asgard",
         "name": "Enemies of Asgard"
       },
       {
-        "id": "msp1:gamma-hunters",
+        "id": "marvel-studios-phase-1:gamma-hunters",
         "name": "Gamma Hunters"
       },
       {
-        "id": "msp1:hydra",
+        "id": "marvel-studios-phase-1:hydra",
         "name": "HYDRA"
       },
       {
-        "id": "msp1:iron-foes",
+        "id": "marvel-studios-phase-1:iron-foes",
         "name": "Iron Foes"
       }
     ],
     "henchmen": [
       {
-        "id": "msp1:hammer-drone-army",
+        "id": "marvel-studios-phase-1:hammer-drone-army",
         "name": "Hammer Drone Army"
       },
       {
-        "id": "msp1:hydra-pilots",
+        "id": "marvel-studios-phase-1:hydra-pilots",
         "name": "HYDRA Pilots"
       },
       {
-        "id": "msp1:hydra-spies",
+        "id": "marvel-studios-phase-1:hydra-spies",
         "name": "HYDRA Spies"
       },
       {
-        "id": "msp1:ten-rings-fanatics",
+        "id": "marvel-studios-phase-1:ten-rings-fanatics",
         "name": "Ten Rings Fanatics"
       }
     ],
     "heroes": [
       {
-        "id": "msp1:black-widow",
+        "id": "marvel-studios-phase-1:black-widow",
         "name": "Black Widow",
         "team": "Avengers"
       },
       {
-        "id": "msp1:captain-america",
+        "id": "marvel-studios-phase-1:captain-america",
         "name": "Captain America",
         "team": "Avengers"
       },
       {
-        "id": "msp1:hawkeye",
+        "id": "marvel-studios-phase-1:hawkeye",
         "name": "Hawkeye",
         "team": "Avengers"
       },
       {
-        "id": "msp1:hulk",
+        "id": "marvel-studios-phase-1:hulk",
         "name": "Hulk",
         "team": "Avengers"
       },
       {
-        "id": "msp1:iron-man",
+        "id": "marvel-studios-phase-1:iron-man",
         "name": "Iron Man",
         "team": "Avengers"
       },
       {
-        "id": "msp1:nick-fury",
+        "id": "marvel-studios-phase-1:nick-fury",
         "name": "Nick Fury",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "msp1:thor",
+        "id": "marvel-studios-phase-1:thor",
         "name": "Thor",
         "team": "Avengers"
       }
@@ -2990,21 +2990,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "am:ultron",
+        "id": "ant-man:ultron",
         "name": "Ultron",
-        "alwaysLeadsGroupId": "am:ultron-s-legacy",
+        "alwaysLeadsGroupId": "ant-man:ultron-s-legacy",
         "difficulty": 4
       },
       {
-        "id": "am:morgana-le-fay",
+        "id": "ant-man:morgana-le-fay",
         "name": "Morgana Le Fay",
-        "alwaysLeadsGroupId": "am:queen-s-vengeance",
+        "alwaysLeadsGroupId": "ant-man:queen-s-vengeance",
         "difficulty": 5
       }
     ],
     "schemes": [
       {
-        "id": "am:age-of-ultron",
+        "id": "ant-man:age-of-ultron",
         "name": "Age of Ultron",
         "setup": {
           "twists": 11
@@ -3012,7 +3012,7 @@
         "difficulty": 4
       },
       {
-        "id": "am:pull-earth-into-medieval-times",
+        "id": "ant-man:pull-earth-into-medieval-times",
         "name": "Pull Earth into Medieval Times",
         "setup": {
           "twists": 9
@@ -3020,7 +3020,7 @@
         "difficulty": 4
       },
       {
-        "id": "am:transform-commuters-into-giant-ants",
+        "id": "ant-man:transform-commuters-into-giant-ants",
         "name": "Transform Commuters into Giant Ants",
         "setup": {
           "twists": 8
@@ -3028,7 +3028,7 @@
         "difficulty": 3
       },
       {
-        "id": "am:trap-heroes-in-the-microverse",
+        "id": "ant-man:trap-heroes-in-the-microverse",
         "name": "Trap Heroes in the Microverse",
         "setup": {
           "twists": 11
@@ -3038,38 +3038,38 @@
     ],
     "villainGroups": [
       {
-        "id": "am:ultron-s-legacy",
+        "id": "ant-man:ultron-s-legacy",
         "name": "Ultron's Legacy"
       },
       {
-        "id": "am:queen-s-vengeance",
+        "id": "ant-man:queen-s-vengeance",
         "name": "Queen's Vengeance"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "am:ant-man",
+        "id": "ant-man:ant-man",
         "name": "Ant-Man",
         "team": "Avengers"
       },
       {
-        "id": "am:wasp",
+        "id": "ant-man:wasp",
         "name": "Wasp",
         "team": "Avengers"
       },
       {
-        "id": "am:jocasta",
+        "id": "ant-man:jocasta",
         "name": "Jocasta",
         "team": "Avengers"
       },
       {
-        "id": "am:wonder-man",
+        "id": "ant-man:wonder-man",
         "name": "Wonder Man",
         "team": "Avengers"
       },
       {
-        "id": "am:black-knight",
+        "id": "ant-man:black-knight",
         "name": "Black Knight",
         "team": "Avengers"
       }
@@ -3179,9 +3179,9 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "dim:jjj",
+        "id": "dimensions:jjj",
         "name": "J. Jonah Jameson",
-        "alwaysLeadsGroupId": "dim:spider-slayer",
+        "alwaysLeadsGroupId": "dimensions:spider-slayer",
         "difficulty": 2
       }
     ],
@@ -3189,37 +3189,37 @@
     "villainGroups": [],
     "henchmen": [
       {
-        "id": "dim:circus-of-crime",
+        "id": "dimensions:circus-of-crime",
         "name": "Circus of Crime"
       },
       {
-        "id": "dim:spider-slayer",
+        "id": "dimensions:spider-slayer",
         "name": "Spider-Slayer"
       }
     ],
     "heroes": [
       {
-        "id": "dim:howard-the-duck",
+        "id": "dimensions:howard-the-duck",
         "name": "Howard the Duck",
         "team": "Unaffiliated"
       },
       {
-        "id": "dim:jessica-jones",
+        "id": "dimensions:jessica-jones",
         "name": "Jessica Jones",
         "team": "Marvel Knights"
       },
       {
-        "id": "dim:man-thing",
+        "id": "dimensions:man-thing",
         "name": "Man-Thing",
         "team": "Unaffiliated"
       },
       {
-        "id": "dim:ms-america",
+        "id": "dimensions:ms-america",
         "name": "Ms. America",
         "team": "Avengers"
       },
       {
-        "id": "dim:squirrel-girl",
+        "id": "dimensions:squirrel-girl",
         "name": "Squirrel Girl",
         "team": "Avengers"
       }
@@ -3234,27 +3234,27 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "rev:grim-reaper",
+        "id": "revelations:grim-reaper",
         "name": "Grim Reaper",
-        "alwaysLeadsGroupId": "rev:lethal-legion",
+        "alwaysLeadsGroupId": "revelations:lethal-legion",
         "difficulty": 3
       },
       {
-        "id": "rev:mandarin",
+        "id": "revelations:mandarin",
         "name": "Mandarin",
-        "alwaysLeadsGroupId": "rev:mandarins-rings",
+        "alwaysLeadsGroupId": "revelations:mandarins-rings",
         "difficulty": 4
       },
       {
-        "id": "rev:the-hood",
+        "id": "revelations:the-hood",
         "name": "The Hood",
-        "alwaysLeadsGroupId": "rev:hoods-gang",
+        "alwaysLeadsGroupId": "revelations:hoods-gang",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "rev:earthquake-drains-the-ocean",
+        "id": "revelations:earthquake-drains-the-ocean",
         "name": "Earthquake Drains the Ocean",
         "setup": {
           "twists": 11,
@@ -3263,7 +3263,7 @@
         "difficulty": 4
       },
       {
-        "id": "rev:house-of-m",
+        "id": "revelations:house-of-m",
         "name": "House of M",
         "setup": {
           "twists": 8
@@ -3271,7 +3271,7 @@
         "difficulty": 4
       },
       {
-        "id": "rev:secret-hydra-corruption",
+        "id": "revelations:secret-hydra-corruption",
         "name": "Secret HYDRA Corruption",
         "setup": {
           "twists": 7,
@@ -3285,7 +3285,7 @@
         "difficulty": 3
       },
       {
-        "id": "rev:the-korvac-saga",
+        "id": "revelations:the-korvac-saga",
         "name": "The Korvac Saga",
         "setup": {
           "twists": 8
@@ -3295,75 +3295,75 @@
     ],
     "villainGroups": [
       {
-        "id": "rev:army-of-evil",
+        "id": "revelations:army-of-evil",
         "name": "Army of Evil"
       },
       {
-        "id": "rev:dark-avengers",
+        "id": "revelations:dark-avengers",
         "name": "Dark Avengers"
       },
       {
-        "id": "rev:hoods-gang",
+        "id": "revelations:hoods-gang",
         "name": "Hood's Gang"
       },
       {
-        "id": "rev:lethal-legion",
+        "id": "revelations:lethal-legion",
         "name": "Lethal Legion"
       }
     ],
     "henchmen": [
       {
-        "id": "rev:hydra-base",
+        "id": "revelations:hydra-base",
         "name": "HYDRA Base"
       },
       {
-        "id": "rev:mandarins-rings",
+        "id": "revelations:mandarins-rings",
         "name": "Mandarin's Rings"
       }
     ],
     "heroes": [
       {
-        "id": "rev:captain-marvel-agent-of-s-h-i-e-l-d",
+        "id": "revelations:captain-marvel-agent-of-s-h-i-e-l-d",
         "name": "Captain Marvel, Agent of S.H.I.E.L.D.",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "rev:darkhawk",
+        "id": "revelations:darkhawk",
         "name": "Darkhawk",
         "team": "Avengers"
       },
       {
-        "id": "rev:hellcat",
+        "id": "revelations:hellcat",
         "name": "Hellcat",
         "team": "Avengers"
       },
       {
-        "id": "rev:photon",
+        "id": "revelations:photon",
         "name": "Photon",
         "team": "Avengers"
       },
       {
-        "id": "rev:quicksilver",
+        "id": "revelations:quicksilver",
         "name": "Quicksilver",
         "team": "Avengers"
       },
       {
-        "id": "rev:ronin",
+        "id": "revelations:ronin",
         "name": "Ronin",
         "team": "Avengers"
       },
       {
-        "id": "rev:scarlet-witch",
+        "id": "revelations:scarlet-witch",
         "name": "Scarlet Witch",
         "team": "Avengers"
       },
       {
-        "id": "rev:speed",
+        "id": "revelations:speed",
         "name": "Speed",
         "team": "Avengers"
       },
       {
-        "id": "rev:war-machine",
+        "id": "revelations:war-machine",
         "name": "War Machine",
         "team": "Avengers"
       }
@@ -3378,21 +3378,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "shl:hydra-high-council",
+        "id": "s-h-i-e-l-d:hydra-high-council",
         "name": "Hydra High Council",
-        "alwaysLeadsGroupId": "shl:hydra-elite",
+        "alwaysLeadsGroupId": "s-h-i-e-l-d:hydra-elite",
         "difficulty": 4
       },
       {
-        "id": "shl:hydra-super-adaptoid",
+        "id": "s-h-i-e-l-d:hydra-super-adaptoid",
         "name": "Hydra Super-Adaptoid",
-        "alwaysLeadsGroupId": "shl:a-i-m-hydra-offshoot",
+        "alwaysLeadsGroupId": "s-h-i-e-l-d:a-i-m-hydra-offshoot",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "shl:s-h-i-e-l-d-vs-hydra-war",
+        "id": "s-h-i-e-l-d:s-h-i-e-l-d-vs-hydra-war",
         "name": "S.H.I.E.L.D. vs. HYDRA War",
         "setup": {
           "twists": 7
@@ -3400,7 +3400,7 @@
         "difficulty": 3
       },
       {
-        "id": "shl:hail-hydra",
+        "id": "s-h-i-e-l-d:hail-hydra",
         "name": "Hail Hydra",
         "setup": {
           "twists": 11
@@ -3408,7 +3408,7 @@
         "difficulty": 3
       },
       {
-        "id": "shl:hydra-helicarriers-hunt-heroes",
+        "id": "s-h-i-e-l-d:hydra-helicarriers-hunt-heroes",
         "name": "Hydra Helicarriers Hunt Heroes",
         "setup": {
           "twists": 8
@@ -3416,7 +3416,7 @@
         "difficulty": 4
       },
       {
-        "id": "shl:secret-empire-of-betrayal",
+        "id": "s-h-i-e-l-d:secret-empire-of-betrayal",
         "name": "Secret Empire of Betrayal",
         "setup": {
           "twists": 11
@@ -3426,33 +3426,33 @@
     ],
     "villainGroups": [
       {
-        "id": "shl:hydra-elite",
+        "id": "s-h-i-e-l-d:hydra-elite",
         "name": "Hydra Elite"
       },
       {
-        "id": "shl:a-i-m-hydra-offshoot",
+        "id": "s-h-i-e-l-d:a-i-m-hydra-offshoot",
         "name": "A.I.M., Hydra Offshoot"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "shl:agent-phil-coulson",
+        "id": "s-h-i-e-l-d:agent-phil-coulson",
         "name": "Agent Phil Coulson",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "shl:quake",
+        "id": "s-h-i-e-l-d:quake",
         "name": "Quake",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "shl:deathlok",
+        "id": "s-h-i-e-l-d:deathlok",
         "name": "Deathlok",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "shl:mockingbird",
+        "id": "s-h-i-e-l-d:mockingbird",
         "name": "Mockingbird",
         "team": "S.H.I.E.L.D."
       }
@@ -3467,21 +3467,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "hoa:malekith-the-accursed",
+        "id": "heroes-of-asgard:malekith-the-accursed",
         "name": "Malekith the Accursed",
-        "alwaysLeadsGroupId": "hoa:dark-council",
+        "alwaysLeadsGroupId": "heroes-of-asgard:dark-council",
         "difficulty": 3
       },
       {
-        "id": "hoa:hela-goddess-of-death",
+        "id": "heroes-of-asgard:hela-goddess-of-death",
         "name": "Hela, Goddess of Death",
-        "alwaysLeadsGroupId": "hoa:omens-of-ragnarok",
+        "alwaysLeadsGroupId": "heroes-of-asgard:omens-of-ragnarok",
         "difficulty": 4
       }
     ],
     "schemes": [
       {
-        "id": "hoa:asgardian-test-of-worth",
+        "id": "heroes-of-asgard:asgardian-test-of-worth",
         "name": "Asgardian Test of Worth",
         "setup": {
           "twists": 11
@@ -3489,7 +3489,7 @@
         "difficulty": 3
       },
       {
-        "id": "hoa:the-dark-world-of-svartalfheim",
+        "id": "heroes-of-asgard:the-dark-world-of-svartalfheim",
         "name": "The Dark World of Svartalfheim",
         "setup": {
           "twists": 10
@@ -3497,7 +3497,7 @@
         "difficulty": 3
       },
       {
-        "id": "hoa:ragnarok-twilight-of-the-gods",
+        "id": "heroes-of-asgard:ragnarok-twilight-of-the-gods",
         "name": "Ragnarok, Twilight of the Gods",
         "setup": {
           "twists": 11
@@ -3505,7 +3505,7 @@
         "difficulty": 5
       },
       {
-        "id": "hoa:war-of-the-frost-giants",
+        "id": "heroes-of-asgard:war-of-the-frost-giants",
         "name": "War of the Frost Giants",
         "setup": {
           "twists": 9
@@ -3515,38 +3515,38 @@
     ],
     "villainGroups": [
       {
-        "id": "hoa:dark-council",
+        "id": "heroes-of-asgard:dark-council",
         "name": "Dark Council"
       },
       {
-        "id": "hoa:omens-of-ragnarok",
+        "id": "heroes-of-asgard:omens-of-ragnarok",
         "name": "Omens of Ragnarok"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "hoa:thor",
+        "id": "heroes-of-asgard:thor",
         "name": "Thor",
         "team": "Heroes of Asgard"
       },
       {
-        "id": "hoa:beta-ray-bill",
+        "id": "heroes-of-asgard:beta-ray-bill",
         "name": "Beta Ray Bill",
         "team": "Heroes of Asgard"
       },
       {
-        "id": "hoa:valkyrie",
+        "id": "heroes-of-asgard:valkyrie",
         "name": "Valkyrie",
         "team": "Heroes of Asgard"
       },
       {
-        "id": "hoa:lady-sif",
+        "id": "heroes-of-asgard:lady-sif",
         "name": "Lady Sif",
         "team": "Heroes of Asgard"
       },
       {
-        "id": "hoa:the-warriors-three",
+        "id": "heroes-of-asgard:the-warriors-three",
         "name": "The Warriors Three",
         "team": "Heroes of Asgard"
       }
@@ -3561,27 +3561,27 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "itc:magus",
+        "id": "into-the-cosmos:magus",
         "name": "Magus",
-        "alwaysLeadsGroupId": "itc:universal-church-of-truth",
+        "alwaysLeadsGroupId": "into-the-cosmos:universal-church-of-truth",
         "difficulty": 3
       },
       {
-        "id": "itc:the-grandmaster",
+        "id": "into-the-cosmos:the-grandmaster",
         "name": "The Grandmaster",
-        "alwaysLeadsGroupId": "itc:elders-of-the-universe",
+        "alwaysLeadsGroupId": "into-the-cosmos:elders-of-the-universe",
         "difficulty": 4
       },
       {
-        "id": "itc:the-beyonder",
+        "id": "into-the-cosmos:the-beyonder",
         "name": "The Beyonder",
-        "alwaysLeadsGroupId": "itc:from-beyond",
+        "alwaysLeadsGroupId": "into-the-cosmos:from-beyond",
         "difficulty": 5
       }
     ],
     "schemes": [
       {
-        "id": "itc:the-contest-of-champions",
+        "id": "into-the-cosmos:the-contest-of-champions",
         "name": "The Contest of Champions",
         "setup": {
           "twists": 11
@@ -3589,7 +3589,7 @@
         "difficulty": 4
       },
       {
-        "id": "itc:turn-the-soul-of-adam-warlock",
+        "id": "into-the-cosmos:turn-the-soul-of-adam-warlock",
         "name": "Turn the Soul of Adam Warlock",
         "setup": {
           "twists": 14
@@ -3597,7 +3597,7 @@
         "difficulty": 3
       },
       {
-        "id": "itc:destroy-the-nova-corps",
+        "id": "into-the-cosmos:destroy-the-nova-corps",
         "name": "Destroy the Nova Corps",
         "setup": {
           "twists": 9
@@ -3605,7 +3605,7 @@
         "difficulty": 4
       },
       {
-        "id": "itc:annihilation-conquest",
+        "id": "into-the-cosmos:annihilation-conquest",
         "name": "Annihilation: Conquest",
         "setup": {
           "twists": 11
@@ -3615,75 +3615,75 @@
     ],
     "villainGroups": [
       {
-        "id": "itc:elders-of-the-universe",
+        "id": "into-the-cosmos:elders-of-the-universe",
         "name": "Elders of the Universe"
       },
       {
-        "id": "itc:celestials",
+        "id": "into-the-cosmos:celestials",
         "name": "Celestials"
       },
       {
-        "id": "itc:from-beyond",
+        "id": "into-the-cosmos:from-beyond",
         "name": "From Beyond"
       },
       {
-        "id": "itc:black-order-of-thanos",
+        "id": "into-the-cosmos:black-order-of-thanos",
         "name": "Black Order of Thanos"
       }
     ],
     "henchmen": [
       {
-        "id": "itc:sidera-maris-bridge-builders",
+        "id": "into-the-cosmos:sidera-maris-bridge-builders",
         "name": "Sidera Maris, Bridge Builders"
       },
       {
-        "id": "itc:universal-church-of-truth",
+        "id": "into-the-cosmos:universal-church-of-truth",
         "name": "Universal Church of Truth"
       }
     ],
     "heroes": [
       {
-        "id": "itc:captain-mar-vell",
+        "id": "into-the-cosmos:captain-mar-vell",
         "name": "Captain Mar-Vell",
         "team": "Avengers"
       },
       {
-        "id": "itc:quasar",
+        "id": "into-the-cosmos:quasar",
         "name": "Quasar",
         "team": "Avengers"
       },
       {
-        "id": "itc:adam-warlock",
+        "id": "into-the-cosmos:adam-warlock",
         "name": "Adam Warlock",
         "team": "Avengers"
       },
       {
-        "id": "itc:moondragon",
+        "id": "into-the-cosmos:moondragon",
         "name": "Moondragon",
         "team": "Avengers"
       },
       {
-        "id": "itc:nova",
+        "id": "into-the-cosmos:nova",
         "name": "Nova",
         "team": "Avengers"
       },
       {
-        "id": "itc:yondu",
+        "id": "into-the-cosmos:yondu",
         "name": "Yondu",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "itc:phyla-vell",
+        "id": "into-the-cosmos:phyla-vell",
         "name": "Phyla-Vell",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "itc:ronan-the-accuser",
+        "id": "into-the-cosmos:ronan-the-accuser",
         "name": "Ronan the Accuser",
         "team": "Unaffiliated"
       },
       {
-        "id": "itc:nebula",
+        "id": "into-the-cosmos:nebula",
         "name": "Nebula",
         "team": "Guardians of the Galaxy"
       }
@@ -3698,21 +3698,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "bp:killmonger",
+        "id": "black-panther:killmonger",
         "name": "Killmonger",
-        "alwaysLeadsGroupId": "bp:killmongers-league",
+        "alwaysLeadsGroupId": "black-panther:killmongers-league",
         "difficulty": 3
       },
       {
-        "id": "bp:klaw",
+        "id": "black-panther:klaw",
         "name": "Klaw",
-        "alwaysLeadsGroupId": "bp:enemies-of-wakanda",
+        "alwaysLeadsGroupId": "black-panther:enemies-of-wakanda",
         "difficulty": 2
       }
     ],
     "schemes": [
       {
-        "id": "bp:seize-the-wakandan-throne",
+        "id": "black-panther:seize-the-wakandan-throne",
         "name": "Seize the Wakandan Throne",
         "setup": {
           "twists": 6
@@ -3720,7 +3720,7 @@
         "difficulty": 3
       },
       {
-        "id": "bp:poison-lakes-with-nanite-microbots",
+        "id": "black-panther:poison-lakes-with-nanite-microbots",
         "name": "Poison Lakes with Nanite Microbots",
         "setup": {
           "twists": 8
@@ -3728,7 +3728,7 @@
         "difficulty": 3
       },
       {
-        "id": "bp:plunder-wakandas-vibranium",
+        "id": "black-panther:plunder-wakandas-vibranium",
         "name": "Plunder Wakanda's Vibranium",
         "setup": {
           "twists": 10
@@ -3736,7 +3736,7 @@
         "difficulty": 3
       },
       {
-        "id": "bp:provoke-clash-of-nations",
+        "id": "black-panther:provoke-clash-of-nations",
         "name": "Provoke Clash of Nations",
         "setup": {
           "twists": 11
@@ -3746,38 +3746,38 @@
     ],
     "villainGroups": [
       {
-        "id": "bp:killmongers-league",
+        "id": "black-panther:killmongers-league",
         "name": "Killmonger's League"
       },
       {
-        "id": "bp:enemies-of-wakanda",
+        "id": "black-panther:enemies-of-wakanda",
         "name": "Enemies of Wakanda"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "bp:king-black-panther",
+        "id": "black-panther:king-black-panther",
         "name": "King Black Panther",
         "team": "Heroes of Wakanda"
       },
       {
-        "id": "bp:queen-storm-of-wakanda",
+        "id": "black-panther:queen-storm-of-wakanda",
         "name": "Queen Storm of Wakanda",
         "team": "Heroes of Wakanda"
       },
       {
-        "id": "bp:general-okoye",
+        "id": "black-panther:general-okoye",
         "name": "General Okoye",
         "team": "Heroes of Wakanda"
       },
       {
-        "id": "bp:princess-shuri",
+        "id": "black-panther:princess-shuri",
         "name": "Princess Shuri",
         "team": "Heroes of Wakanda"
       },
       {
-        "id": "bp:white-wolf",
+        "id": "black-panther:white-wolf",
         "name": "White Wolf",
         "team": "Heroes of Wakanda"
       }
@@ -3792,21 +3792,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "nm:belasco-demon-lord-of-limbo",
+        "id": "new-mutants:belasco-demon-lord-of-limbo",
         "name": "Belasco, Demon Lord of Limbo",
-        "alwaysLeadsGroupId": "nm:demons-of-limbo",
+        "alwaysLeadsGroupId": "new-mutants:demons-of-limbo",
         "difficulty": 3
       },
       {
-        "id": "nm:emma-frost-the-white-queen",
+        "id": "new-mutants:emma-frost-the-white-queen",
         "name": "Emma Frost, The White Queen",
-        "alwaysLeadsGroupId": "nm:hellions",
+        "alwaysLeadsGroupId": "new-mutants:hellions",
         "difficulty": 4
       }
     ],
     "schemes": [
       {
-        "id": "nm:the-demon-bear-saga",
+        "id": "new-mutants:the-demon-bear-saga",
         "name": "The Demon Bear Saga",
         "setup": {
           "twists": 8
@@ -3814,7 +3814,7 @@
         "difficulty": 4
       },
       {
-        "id": "nm:crash-the-moon-into-the-sun",
+        "id": "new-mutants:crash-the-moon-into-the-sun",
         "name": "Crash the Moon into the Sun",
         "setup": {
           "twists": 11
@@ -3822,7 +3822,7 @@
         "difficulty": 4
       },
       {
-        "id": "nm:trapped-in-the-insane-asylum",
+        "id": "new-mutants:trapped-in-the-insane-asylum",
         "name": "Trapped in the Insane Asylum",
         "setup": {
           "twists": 2
@@ -3830,7 +3830,7 @@
         "difficulty": 3
       },
       {
-        "id": "nm:superhuman-baseball-game",
+        "id": "new-mutants:superhuman-baseball-game",
         "name": "Superhuman Baseball Game",
         "setup": {
           "twists": 9,
@@ -3841,38 +3841,38 @@
     ],
     "villainGroups": [
       {
-        "id": "nm:hellions",
+        "id": "new-mutants:hellions",
         "name": "Hellions"
       },
       {
-        "id": "nm:demons-of-limbo",
+        "id": "new-mutants:demons-of-limbo",
         "name": "Demons of Limbo"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "nm:sunspot",
+        "id": "new-mutants:sunspot",
         "name": "Sunspot",
         "team": "X-Men"
       },
       {
-        "id": "nm:wolfsbane",
+        "id": "new-mutants:wolfsbane",
         "name": "Wolfsbane",
         "team": "X-Men"
       },
       {
-        "id": "nm:mirage",
+        "id": "new-mutants:mirage",
         "name": "Mirage",
         "team": "X-Men"
       },
       {
-        "id": "nm:warlock",
+        "id": "new-mutants:warlock",
         "name": "Warlock",
         "team": "X-Men"
       },
       {
-        "id": "nm:karma",
+        "id": "new-mutants:karma",
         "name": "Karma",
         "team": "X-Men"
       }
@@ -3887,21 +3887,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "rok:maximus-the-mad",
+        "id": "realm-of-kings:maximus-the-mad",
         "name": "Maximus the Mad",
-        "alwaysLeadsGroupId": "rok:inhuman-rebellion",
+        "alwaysLeadsGroupId": "realm-of-kings:inhuman-rebellion",
         "difficulty": 3
       },
       {
-        "id": "rok:emperor-vulcan-of-the-shiar",
+        "id": "realm-of-kings:emperor-vulcan-of-the-shiar",
         "name": "Emperor Vulcan of the Shi'ar",
-        "alwaysLeadsGroupId": "rok:shiar-imperial-elite",
+        "alwaysLeadsGroupId": "realm-of-kings:shiar-imperial-elite",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "rok:ruin-the-perfect-wedding",
+        "id": "realm-of-kings:ruin-the-perfect-wedding",
         "name": "Ruin the Perfect Wedding",
         "setup": {
           "twists": 11
@@ -3909,7 +3909,7 @@
         "difficulty": 2
       },
       {
-        "id": "rok:war-of-kings",
+        "id": "realm-of-kings:war-of-kings",
         "name": "War of Kings",
         "setup": {
           "twists": 11
@@ -3917,7 +3917,7 @@
         "difficulty": 4
       },
       {
-        "id": "rok:tornado-of-terrigen-mists",
+        "id": "realm-of-kings:tornado-of-terrigen-mists",
         "name": "Tornado of Terrigen Mists",
         "setup": {
           "twists": 10
@@ -3925,7 +3925,7 @@
         "difficulty": 3
       },
       {
-        "id": "rok:devolve-with-xerogen-crystals",
+        "id": "realm-of-kings:devolve-with-xerogen-crystals",
         "name": "Devolve with Xerogen Crystals",
         "setup": {
           "twists": 8,
@@ -3936,38 +3936,38 @@
     ],
     "villainGroups": [
       {
-        "id": "rok:inhuman-rebellion",
+        "id": "realm-of-kings:inhuman-rebellion",
         "name": "Inhuman Rebellion"
       },
       {
-        "id": "rok:shiar-imperial-elite",
+        "id": "realm-of-kings:shiar-imperial-elite",
         "name": "Shi'ar Imperial Elite"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "rok:black-bolt",
+        "id": "realm-of-kings:black-bolt",
         "name": "Black Bolt",
         "team": "Inhumans"
       },
       {
-        "id": "rok:medusa",
+        "id": "realm-of-kings:medusa",
         "name": "Medusa",
         "team": "Inhumans"
       },
       {
-        "id": "rok:crystal",
+        "id": "realm-of-kings:crystal",
         "name": "Crystal",
         "team": "Inhumans"
       },
       {
-        "id": "rok:karnak",
+        "id": "realm-of-kings:karnak",
         "name": "Karnak",
         "team": "Inhumans"
       },
       {
-        "id": "rok:gorgon",
+        "id": "realm-of-kings:gorgon",
         "name": "Gorgon",
         "team": "Inhumans"
       }
@@ -3982,21 +3982,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "anh:annihilus",
+        "id": "annihilation:annihilus",
         "name": "Annihilus",
-        "alwaysLeadsGroupId": "anh:annihilation-wave",
+        "alwaysLeadsGroupId": "annihilation:annihilation-wave",
         "difficulty": 5
       },
       {
-        "id": "anh:kang-the-conqueror",
+        "id": "annihilation:kang-the-conqueror",
         "name": "Kang the Conqueror",
-        "alwaysLeadsGroupId": "anh:timelines-of-kang",
+        "alwaysLeadsGroupId": "annihilation:timelines-of-kang",
         "difficulty": 5
       }
     ],
     "schemes": [
       {
-        "id": "anh:pulse-waves-from-the-negative-zone",
+        "id": "annihilation:pulse-waves-from-the-negative-zone",
         "name": "Pulse Waves From the Negative Zone",
         "setup": {
           "twists": 9
@@ -4004,7 +4004,7 @@
         "difficulty": 4
       },
       {
-        "id": "anh:sneak-attack-the-heroes-homes",
+        "id": "annihilation:sneak-attack-the-heroes-homes",
         "name": "Sneak Attack the Heroes' Homes",
         "setup": {
           "twists": 6
@@ -4012,7 +4012,7 @@
         "difficulty": 3
       },
       {
-        "id": "anh:put-humanity-on-trial",
+        "id": "annihilation:put-humanity-on-trial",
         "name": "Put Humanity on Trial",
         "setup": {
           "twists": 11
@@ -4020,7 +4020,7 @@
         "difficulty": 3
       },
       {
-        "id": "anh:breach-parallel-dimensions",
+        "id": "annihilation:breach-parallel-dimensions",
         "name": "Breach Parallel Dimensions",
         "setup": {
           "twists": 6
@@ -4030,38 +4030,38 @@
     ],
     "villainGroups": [
       {
-        "id": "anh:annihilation-wave",
+        "id": "annihilation:annihilation-wave",
         "name": "Annihilation Wave"
       },
       {
-        "id": "anh:timelines-of-kang",
+        "id": "annihilation:timelines-of-kang",
         "name": "Timelines of Kang"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "anh:fantastic-four-united",
+        "id": "annihilation:fantastic-four-united",
         "name": "Fantastic Four United",
         "team": "Fantastic Four"
       },
       {
-        "id": "anh:psi-lord",
+        "id": "annihilation:psi-lord",
         "name": "Psi-Lord",
         "team": "Fantastic Four"
       },
       {
-        "id": "anh:brainstorm",
+        "id": "annihilation:brainstorm",
         "name": "Brainstorm",
         "team": "Fantastic Four"
       },
       {
-        "id": "anh:heralds-of-galactus",
+        "id": "annihilation:heralds-of-galactus",
         "name": "Heralds of Galactus",
         "team": "Unaffiliated"
       },
       {
-        "id": "anh:super-skrull",
+        "id": "annihilation:super-skrull",
         "name": "Super-Skrull",
         "team": "Unaffiliated"
       }
@@ -4076,27 +4076,27 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "mcx:lady-deathstrike",
+        "id": "messiah-complex:lady-deathstrike",
         "name": "Lady Deathstrike",
-        "alwaysLeadsGroupId": "mcx:reavers",
+        "alwaysLeadsGroupId": "messiah-complex:reavers",
         "difficulty": 4
       },
       {
-        "id": "mcx:bastion-fused-sentinel",
+        "id": "messiah-complex:bastion-fused-sentinel",
         "name": "Bastion, Fused Sentinel",
-        "alwaysLeadsGroupId": "mcx:purifiers",
+        "alwaysLeadsGroupId": "messiah-complex:purifiers",
         "difficulty": 3
       },
       {
-        "id": "mcx:exodus",
+        "id": "messiah-complex:exodus",
         "name": "Exodus",
-        "alwaysLeadsGroupId": "mcx:acolytes",
+        "alwaysLeadsGroupId": "messiah-complex:acolytes",
         "difficulty": 5
       }
     ],
     "schemes": [
       {
-        "id": "mcx:hack-cerebro-servers-to-control-the-mutant-messiah",
+        "id": "messiah-complex:hack-cerebro-servers-to-control-the-mutant-messiah",
         "name": "Hack Cerebro Servers to Control the Mutant Messiah",
         "setup": {
           "twists": 10
@@ -4104,7 +4104,7 @@
         "difficulty": 4
       },
       {
-        "id": "mcx:drain-mutants-powers-to-open-rifts-to-future-timelines",
+        "id": "messiah-complex:drain-mutants-powers-to-open-rifts-to-future-timelines",
         "name": "Drain Mutants' Powers to Open Rifts to Future Timelines",
         "setup": {
           "twists": 11
@@ -4112,7 +4112,7 @@
         "difficulty": 4
       },
       {
-        "id": "mcx:hire-singularity-investigations-to-reveal-the-heroes-evil-clones",
+        "id": "messiah-complex:hire-singularity-investigations-to-reveal-the-heroes-evil-clones",
         "name": "Hire Singularity Investigations to Reveal the Heroes' Evil Clones",
         "setup": {
           "twists": 9
@@ -4120,7 +4120,7 @@
         "difficulty": 4
       },
       {
-        "id": "mcx:raid-gene-banks-to-unleash-an-anti-mutant-bioweapon",
+        "id": "messiah-complex:raid-gene-banks-to-unleash-an-anti-mutant-bioweapon",
         "name": "Raid Gene Banks to Unleash an Anti-Mutant Bioweapon",
         "setup": {
           "twists": 8
@@ -4130,70 +4130,70 @@
     ],
     "villainGroups": [
       {
-        "id": "mcx:reavers",
+        "id": "messiah-complex:reavers",
         "name": "Reavers"
       },
       {
-        "id": "mcx:purifiers",
+        "id": "messiah-complex:purifiers",
         "name": "Purifiers"
       },
       {
-        "id": "mcx:acolytes",
+        "id": "messiah-complex:acolytes",
         "name": "Acolytes"
       },
       {
-        "id": "mcx:clan-yashida",
+        "id": "messiah-complex:clan-yashida",
         "name": "Clan Yashida"
       }
     ],
     "henchmen": [
       {
-        "id": "mcx:mr-sinister-clones",
+        "id": "messiah-complex:mr-sinister-clones",
         "name": "Mr. Sinister Clones"
       },
       {
-        "id": "mcx:sentinel-squad-o-n-e",
+        "id": "messiah-complex:sentinel-squad-o-n-e",
         "name": "Sentinel Squad O*N*E*"
       }
     ],
     "heroes": [
       {
-        "id": "mcx:multiple-man",
+        "id": "messiah-complex:multiple-man",
         "name": "Multiple Man",
         "team": "X-Factor"
       },
       {
-        "id": "mcx:shatterstar",
+        "id": "messiah-complex:shatterstar",
         "name": "Shatterstar",
         "team": "X-Force"
       },
       {
-        "id": "mcx:stepford-cuckoos",
+        "id": "messiah-complex:stepford-cuckoos",
         "name": "Stepford Cuckoos",
         "team": "X-Men"
       },
       {
-        "id": "mcx:m",
+        "id": "messiah-complex:m",
         "name": "M",
         "team": "X-Factor"
       },
       {
-        "id": "mcx:strong-guy",
+        "id": "messiah-complex:strong-guy",
         "name": "Strong Guy",
         "team": "X-Factor"
       },
       {
-        "id": "mcx:warpath",
+        "id": "messiah-complex:warpath",
         "name": "Warpath",
         "team": "X-Force"
       },
       {
-        "id": "mcx:siryn",
+        "id": "messiah-complex:siryn",
         "name": "Siryn",
         "team": "X-Factor"
       },
       {
-        "id": "mcx:rictor",
+        "id": "messiah-complex:rictor",
         "name": "Rictor",
         "team": "X-Factor"
       }
@@ -4208,21 +4208,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "dss:dormammu",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:dormammu",
         "name": "Dormammu",
-        "alwaysLeadsGroupId": "dss:lords-of-the-netherworld",
+        "alwaysLeadsGroupId": "doctor-strange-and-the-shadows-of-nightmare:lords-of-the-netherworld",
         "difficulty": 4
       },
       {
-        "id": "dss:nightmare",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:nightmare",
         "name": "Nightmare",
-        "alwaysLeadsGroupId": "dss:fear-lords",
+        "alwaysLeadsGroupId": "doctor-strange-and-the-shadows-of-nightmare:fear-lords",
         "difficulty": 4
       }
     ],
     "schemes": [
       {
-        "id": "dss:claim-souls-for-demons",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:claim-souls-for-demons",
         "name": "Claim Souls for Demons",
         "setup": {
           "twists": 8
@@ -4230,7 +4230,7 @@
         "difficulty": 3
       },
       {
-        "id": "dss:war-for-the-dream-dimension",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:war-for-the-dream-dimension",
         "name": "War for the Dream Dimension",
         "setup": {
           "twists": 7,
@@ -4239,7 +4239,7 @@
         "difficulty": 3
       },
       {
-        "id": "dss:cursed-pages-of-the-darkhold-tome",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:cursed-pages-of-the-darkhold-tome",
         "name": "Cursed Pages of the Darkhold Tome",
         "setup": {
           "twists": 11,
@@ -4248,7 +4248,7 @@
         "difficulty": 4
       },
       {
-        "id": "dss:duels-of-science-and-magic",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:duels-of-science-and-magic",
         "name": "Duels of Science and Magic",
         "setup": {
           "twists": 9,
@@ -4262,38 +4262,38 @@
     ],
     "villainGroups": [
       {
-        "id": "dss:lords-of-the-netherworld",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:lords-of-the-netherworld",
         "name": "Lords of the Netherworld"
       },
       {
-        "id": "dss:fear-lords",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:fear-lords",
         "name": "Fear Lords"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "dss:doctor-strange",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:doctor-strange",
         "name": "Doctor Strange",
         "team": "Avengers"
       },
       {
-        "id": "dss:clea",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:clea",
         "name": "Clea",
         "team": "Marvel Knights"
       },
       {
-        "id": "dss:doctor-voodoo",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:doctor-voodoo",
         "name": "Doctor Voodoo",
         "team": "Avengers"
       },
       {
-        "id": "dss:the-ancient-one",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:the-ancient-one",
         "name": "The Ancient One",
         "team": "Unaffiliated"
       },
       {
-        "id": "dss:the-vishanti",
+        "id": "doctor-strange-and-the-shadows-of-nightmare:the-vishanti",
         "name": "The Vishanti",
         "team": "Unaffiliated"
       }
@@ -4308,21 +4308,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "bw:taskmaster",
+        "id": "black-widow:taskmaster",
         "name": "Taskmaster",
-        "alwaysLeadsGroupId": "bw:taskmasters-thunderbolts",
+        "alwaysLeadsGroupId": "black-widow:taskmasters-thunderbolts",
         "difficulty": 2
       },
       {
-        "id": "bw:indestructible-man",
+        "id": "black-widow:indestructible-man",
         "name": "Indestructible Man",
-        "alwaysLeadsGroupId": "bw:elite-assassins",
+        "alwaysLeadsGroupId": "black-widow:elite-assassins",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "bw:corrupt-the-spy-agencies",
+        "id": "black-widow:corrupt-the-spy-agencies",
         "name": "Corrupt The Spy Agencies",
         "setup": {
           "twists": 7
@@ -4330,7 +4330,7 @@
         "difficulty": 3
       },
       {
-        "id": "bw:train-black-widows-in-the-red-room",
+        "id": "black-widow:train-black-widows-in-the-red-room",
         "name": "Train Black Widows in the Red Room",
         "setup": {
           "twists": 8
@@ -4338,7 +4338,7 @@
         "difficulty": 3
       },
       {
-        "id": "bw:sniper-rifle-assassins",
+        "id": "black-widow:sniper-rifle-assassins",
         "name": "Sniper Rifle Assassins",
         "setup": {
           "twists": 11
@@ -4346,7 +4346,7 @@
         "difficulty": 3
       },
       {
-        "id": "bw:frame-heroes-for-murder",
+        "id": "black-widow:frame-heroes-for-murder",
         "name": "Frame Heroes For Murder",
         "setup": {
           "twists": 7
@@ -4356,38 +4356,38 @@
     ],
     "villainGroups": [
       {
-        "id": "bw:taskmasters-thunderbolts",
+        "id": "black-widow:taskmasters-thunderbolts",
         "name": "Taskmaster's Thunderbolts"
       },
       {
-        "id": "bw:elite-assassins",
+        "id": "black-widow:elite-assassins",
         "name": "Elite Assassins"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "bw:black-widow",
+        "id": "black-widow:black-widow",
         "name": "Black Widow",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "bw:yelena-belova",
+        "id": "black-widow:yelena-belova",
         "name": "Yelena Belova",
         "team": "S.H.I.E.L.D."
       },
       {
-        "id": "bw:red-guardian",
+        "id": "black-widow:red-guardian",
         "name": "Red Guardian",
         "team": "Unaffiliated"
       },
       {
-        "id": "bw:white-tiger",
+        "id": "black-widow:white-tiger",
         "name": "White Tiger",
         "team": "Marvel Knights"
       },
       {
-        "id": "bw:falcon-winter-soldier",
+        "id": "black-widow:falcon-winter-soldier",
         "name": "Falcon & Winter Soldier",
         "team": "Avengers"
       }
@@ -4402,20 +4402,20 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "msg:ronan-the-accuser",
+        "id": "marvel-studios-guardians-of-the-galaxy:ronan-the-accuser",
         "name": "Ronan the Accuser",
-        "alwaysLeadsGroupId": "msg:followers-of-ronan",
+        "alwaysLeadsGroupId": "marvel-studios-guardians-of-the-galaxy:followers-of-ronan",
         "difficulty": 3
       },
       {
-        "id": "msg:ego-the-living-planet",
+        "id": "marvel-studios-guardians-of-the-galaxy:ego-the-living-planet",
         "name": "Ego, The Living Planet",
         "difficulty": 4
       }
     ],
     "schemes": [
       {
-        "id": "msg:inescapable-kyln-space-prison",
+        "id": "marvel-studios-guardians-of-the-galaxy:inescapable-kyln-space-prison",
         "name": "Inescapable \"Kyln\" Space Prison",
         "setup": {
           "twists": 8,
@@ -4424,7 +4424,7 @@
         "difficulty": 3
       },
       {
-        "id": "msg:provoke-the-sovereign-war-fleet",
+        "id": "marvel-studios-guardians-of-the-galaxy:provoke-the-sovereign-war-fleet",
         "name": "Provoke the Sovereign War Fleet",
         "setup": {
           "twists": 11,
@@ -4433,7 +4433,7 @@
         "difficulty": 3
       },
       {
-        "id": "msg:star-lords-awesome-mix-tape",
+        "id": "marvel-studios-guardians-of-the-galaxy:star-lords-awesome-mix-tape",
         "name": "Star-Lord's Awesome Mix Tape",
         "setup": {
           "twists": 7
@@ -4441,7 +4441,7 @@
         "difficulty": 2
       },
       {
-        "id": "msg:unleash-the-abilisk-space-monster",
+        "id": "marvel-studios-guardians-of-the-galaxy:unleash-the-abilisk-space-monster",
         "name": "Unleash the Abilisk Space Monster",
         "setup": {
           "twists": 9
@@ -4451,38 +4451,38 @@
     ],
     "villainGroups": [
       {
-        "id": "msg:followers-of-ronan",
+        "id": "marvel-studios-guardians-of-the-galaxy:followers-of-ronan",
         "name": "Followers of Ronan"
       },
       {
-        "id": "msg:ravagers",
+        "id": "marvel-studios-guardians-of-the-galaxy:ravagers",
         "name": "Ravagers"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "msg:star-lord",
+        "id": "marvel-studios-guardians-of-the-galaxy:star-lord",
         "name": "Star-Lord",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "msg:gamora",
+        "id": "marvel-studios-guardians-of-the-galaxy:gamora",
         "name": "Gamora",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "msg:rocket-groot",
+        "id": "marvel-studios-guardians-of-the-galaxy:rocket-groot",
         "name": "Rocket & Groot",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "msg:drax",
+        "id": "marvel-studios-guardians-of-the-galaxy:drax",
         "name": "Drax",
         "team": "Guardians of the Galaxy"
       },
       {
-        "id": "msg:mantis",
+        "id": "marvel-studios-guardians-of-the-galaxy:mantis",
         "name": "Mantis",
         "team": "Guardians of the Galaxy"
       }
@@ -4497,32 +4497,32 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "wif:hank-pym-yellowjacket",
+        "id": "marvel-studios-what-if:hank-pym-yellowjacket",
         "name": "Hank Pym, Yellowjacket",
         "difficulty": 4
       },
       {
-        "id": "wif:killmonger-the-betrayer",
+        "id": "marvel-studios-what-if:killmonger-the-betrayer",
         "name": "Killmonger, the Betrayer",
-        "alwaysLeadsGroupId": "wif:vibranium-liberator-drones",
+        "alwaysLeadsGroupId": "marvel-studios-what-if:vibranium-liberator-drones",
         "difficulty": 3
       },
       {
-        "id": "wif:ultron-infinity",
+        "id": "marvel-studios-what-if:ultron-infinity",
         "name": "Ultron Infinity",
-        "alwaysLeadsGroupId": "wif:ultron-sentries",
+        "alwaysLeadsGroupId": "marvel-studios-what-if:ultron-sentries",
         "difficulty": 5
       },
       {
-        "id": "wif:zombie-scarlet-witch",
+        "id": "marvel-studios-what-if:zombie-scarlet-witch",
         "name": "Zombie Scarlet Witch",
-        "alwaysLeadsGroupId": "wif:zombie-avengers",
+        "alwaysLeadsGroupId": "marvel-studios-what-if:zombie-avengers",
         "difficulty": 4
       }
     ],
     "schemes": [
       {
-        "id": "wif:breach-the-nexus-of-all-realities",
+        "id": "marvel-studios-what-if:breach-the-nexus-of-all-realities",
         "name": "Breach the Nexus of All Realities",
         "setup": {
           "twists": 2
@@ -4530,7 +4530,7 @@
         "difficulty": 4
       },
       {
-        "id": "wif:collect-an-interstellar-zoo",
+        "id": "marvel-studios-what-if:collect-an-interstellar-zoo",
         "name": "Collect an Interstellar Zoo",
         "setup": {
           "twists": 11
@@ -4538,7 +4538,7 @@
         "difficulty": 3
       },
       {
-        "id": "wif:marvel-zombies",
+        "id": "marvel-studios-what-if:marvel-zombies",
         "name": "Marvel Zombies",
         "setup": {
           "twists": 4
@@ -4546,7 +4546,7 @@
         "difficulty": 4
       },
       {
-        "id": "wif:trash-earth-with-hugest-party-ever",
+        "id": "marvel-studios-what-if:trash-earth-with-hugest-party-ever",
         "name": "Trash Earth with Hugest Party Ever",
         "setup": {
           "twists": 6
@@ -4556,78 +4556,78 @@
     ],
     "villainGroups": [
       {
-        "id": "wif:black-order-guards",
+        "id": "marvel-studios-what-if:black-order-guards",
         "name": "Black Order Guards"
       },
       {
-        "id": "wif:intergalactic-party-animals",
+        "id": "marvel-studios-what-if:intergalactic-party-animals",
         "name": "Intergalactic Party Animals"
       },
       {
-        "id": "wif:rival-overlords",
+        "id": "marvel-studios-what-if:rival-overlords",
         "name": "Rival Overlords"
       },
       {
-        "id": "wif:stranges-demons",
+        "id": "marvel-studios-what-if:stranges-demons",
         "name": "Strange’s Demons"
       },
       {
-        "id": "wif:zombie-avengers",
+        "id": "marvel-studios-what-if:zombie-avengers",
         "name": "Zombie Avengers"
       }
     ],
     "henchmen": [
       {
-        "id": "wif:giants-of-jotunheim",
+        "id": "marvel-studios-what-if:giants-of-jotunheim",
         "name": "Giants of Jotunheim"
       },
       {
-        "id": "wif:ultron-sentries",
+        "id": "marvel-studios-what-if:ultron-sentries",
         "name": "Ultron Sentries"
       },
       {
-        "id": "wif:vibranium-liberator-drones",
+        "id": "marvel-studios-what-if:vibranium-liberator-drones",
         "name": "Vibranium Liberator Drones"
       }
     ],
     "heroes": [
       {
-        "id": "wif:apocalyptic-black-widow",
+        "id": "marvel-studios-what-if:apocalyptic-black-widow",
         "name": "Apocalyptic Black Widow",
         "team": "Guardians of the Multiverse"
       },
       {
-        "id": "wif:captain-carter",
+        "id": "marvel-studios-what-if:captain-carter",
         "name": "Captain Carter",
         "team": "Guardians of the Multiverse"
       },
       {
-        "id": "wif:doctor-strange-supreme",
+        "id": "marvel-studios-what-if:doctor-strange-supreme",
         "name": "Doctor Strange Supreme",
         "team": "Guardians of the Multiverse"
       },
       {
-        "id": "wif:gamora-destroyer-of-thanos",
+        "id": "marvel-studios-what-if:gamora-destroyer-of-thanos",
         "name": "Gamora, Destroyer of Thanos",
         "team": "Guardians of the Multiverse"
       },
       {
-        "id": "wif:killmonger-spec-ops",
+        "id": "marvel-studios-what-if:killmonger-spec-ops",
         "name": "Killmonger, Spec Ops",
         "team": "Guardians of the Multiverse"
       },
       {
-        "id": "wif:party-thor",
+        "id": "marvel-studios-what-if:party-thor",
         "name": "Party Thor",
         "team": "Guardians of the Multiverse"
       },
       {
-        "id": "wif:star-lord-tchalla",
+        "id": "marvel-studios-what-if:star-lord-tchalla",
         "name": "Star-Lord T’Challa",
         "team": "Guardians of the Multiverse"
       },
       {
-        "id": "wif:uatu-the-watcher",
+        "id": "marvel-studios-what-if:uatu-the-watcher",
         "name": "Uatu, The Watcher",
         "team": "Guardians of the Multiverse"
       }
@@ -4642,20 +4642,20 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "y99:alchemax-executives",
+        "id": "2099:alchemax-executives",
         "name": "Alchemax Executives",
-        "alwaysLeadsGroupId": "y99:alchemax-enforcers",
+        "alwaysLeadsGroupId": "2099:alchemax-enforcers",
         "difficulty": 3
       },
       {
-        "id": "y99:sinister-six-2099",
+        "id": "2099:sinister-six-2099",
         "name": "Sinister Six 2099",
         "difficulty": 4
       }
     ],
     "schemes": [
       {
-        "id": "y99:become-president-of-the-united-states",
+        "id": "2099:become-president-of-the-united-states",
         "name": "Become President of the United States",
         "setup": {
           "twists": 11
@@ -4663,7 +4663,7 @@
         "difficulty": 2
       },
       {
-        "id": "y99:befoul-earth-into-a-polluted-wasteland",
+        "id": "2099:befoul-earth-into-a-polluted-wasteland",
         "name": "Befoul Earth into a Polluted Wasteland",
         "setup": {
           "twists": 8
@@ -4671,7 +4671,7 @@
         "difficulty": 3
       },
       {
-        "id": "y99:pull-reality-into-cyberspace",
+        "id": "2099:pull-reality-into-cyberspace",
         "name": "Pull Reality into Cyberspace",
         "setup": {
           "twists": 7
@@ -4679,7 +4679,7 @@
         "difficulty": 3
       },
       {
-        "id": "y99:subjugate-earth-with-mega-corporations",
+        "id": "2099:subjugate-earth-with-mega-corporations",
         "name": "Subjugate Earth with Mega-Corporations",
         "setup": {
           "twists": 11
@@ -4689,38 +4689,38 @@
     ],
     "villainGroups": [
       {
-        "id": "y99:alchemax-enforcers",
+        "id": "2099:alchemax-enforcers",
         "name": "Alchemax Enforcers"
       },
       {
-        "id": "y99:false-aesir-of-alchemax",
+        "id": "2099:false-aesir-of-alchemax",
         "name": "False Aesir of Alchemax"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "y99:doctor-doom-2099",
+        "id": "2099:doctor-doom-2099",
         "name": "Doctor Doom 2099",
         "team": "Unaffiliated"
       },
       {
-        "id": "y99:ghost-rider-2099",
+        "id": "2099:ghost-rider-2099",
         "name": "Ghost Rider 2099",
         "team": "Marvel Knights"
       },
       {
-        "id": "y99:hulk-2099",
+        "id": "2099:hulk-2099",
         "name": "Hulk 2099",
         "team": "Marvel Knights"
       },
       {
-        "id": "y99:ravage-2099",
+        "id": "2099:ravage-2099",
         "name": "Ravage 2099",
         "team": "Marvel Knights"
       },
       {
-        "id": "y99:spider-man-2099",
+        "id": "2099:spider-man-2099",
         "name": "Spider-Man 2099",
         "team": "Spider-Friends"
       }
@@ -4735,27 +4735,27 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "amw:darren-cross",
+        "id": "ant-man-and-the-wasp:darren-cross",
         "name": "Darren Cross",
-        "alwaysLeadsGroupId": "amw:cross-technologies",
+        "alwaysLeadsGroupId": "ant-man-and-the-wasp:cross-technologies",
         "difficulty": 2
       },
       {
-        "id": "amw:ghost-master-thief",
+        "id": "ant-man-and-the-wasp:ghost-master-thief",
         "name": "Ghost, Master Thief",
-        "alwaysLeadsGroupId": "amw:ghost-chasers",
+        "alwaysLeadsGroupId": "ant-man-and-the-wasp:ghost-chasers",
         "difficulty": 3
       },
       {
-        "id": "amw:kang-quantum-conqueror",
+        "id": "ant-man-and-the-wasp:kang-quantum-conqueror",
         "name": "Kang, Quantum Conqueror",
-        "alwaysLeadsGroupId": "amw:armada-of-kang",
+        "alwaysLeadsGroupId": "ant-man-and-the-wasp:armada-of-kang",
         "difficulty": 5
       }
     ],
     "schemes": [
       {
-        "id": "amw:auction-shrink-tech-to-highest-bidder",
+        "id": "ant-man-and-the-wasp:auction-shrink-tech-to-highest-bidder",
         "name": "Auction Shrink Tech to Highest Bidder",
         "setup": {
           "twists": 11
@@ -4763,7 +4763,7 @@
         "difficulty": 3
       },
       {
-        "id": "amw:escape-an-imprisoning-dimension",
+        "id": "ant-man-and-the-wasp:escape-an-imprisoning-dimension",
         "name": "Escape an Imprisoning Dimension",
         "setup": {
           "twists": 5
@@ -4771,7 +4771,7 @@
         "difficulty": 3
       },
       {
-        "id": "amw:safeguard-dark-secrets",
+        "id": "ant-man-and-the-wasp:safeguard-dark-secrets",
         "name": "Safeguard Dark Secrets",
         "setup": {
           "twists": 5
@@ -4779,7 +4779,7 @@
         "difficulty": 3
       },
       {
-        "id": "amw:siphon-energy-from-the-quantum-realm",
+        "id": "ant-man-and-the-wasp:siphon-energy-from-the-quantum-realm",
         "name": "Siphon Energy from the Quantum Realm",
         "setup": {
           "twists": 9
@@ -4789,74 +4789,74 @@
     ],
     "villainGroups": [
       {
-        "id": "amw:armada-of-kang",
+        "id": "ant-man-and-the-wasp:armada-of-kang",
         "name": "Armada of Kang"
       },
       {
-        "id": "amw:cross-technologies",
+        "id": "ant-man-and-the-wasp:cross-technologies",
         "name": "Cross Technologies"
       },
       {
-        "id": "amw:ghost-chasers",
+        "id": "ant-man-and-the-wasp:ghost-chasers",
         "name": "Ghost Chasers"
       },
       {
-        "id": "amw:quantum-realm",
+        "id": "ant-man-and-the-wasp:quantum-realm",
         "name": "Quantum Realm"
       }
     ],
     "henchmen": [
       {
-        "id": "amw:quantum-hound",
+        "id": "ant-man-and-the-wasp:quantum-hound",
         "name": "Quantum Hound"
       },
       {
-        "id": "amw:quantumnauts",
+        "id": "ant-man-and-the-wasp:quantumnauts",
         "name": "Quantumnauts"
       },
       {
-        "id": "amw:tardigrade",
+        "id": "ant-man-and-the-wasp:tardigrade",
         "name": "Tardigrade"
       }
     ],
     "heroes": [
       {
-        "id": "amw:ant-army",
+        "id": "ant-man-and-the-wasp:ant-army",
         "name": "Ant Army",
         "team": "Unaffiliated"
       },
       {
-        "id": "amw:ant-man",
+        "id": "ant-man-and-the-wasp:ant-man",
         "name": "Ant-Man",
         "team": "Avengers"
       },
       {
-        "id": "amw:cassie-lang",
+        "id": "ant-man-and-the-wasp:cassie-lang",
         "name": "Cassie Lang",
         "team": "Avengers"
       },
       {
-        "id": "amw:freedom-fighters",
+        "id": "ant-man-and-the-wasp:freedom-fighters",
         "name": "Freedom Fighters",
         "team": "Unaffiliated"
       },
       {
-        "id": "amw:janet-van-dyne",
+        "id": "ant-man-and-the-wasp:janet-van-dyne",
         "name": "Janet Van Dyne",
         "team": "Unaffiliated"
       },
       {
-        "id": "amw:jentorra",
+        "id": "ant-man-and-the-wasp:jentorra",
         "name": "Jentorra",
         "team": "Unaffiliated"
       },
       {
-        "id": "amw:scott-lang-cat-burglar",
+        "id": "ant-man-and-the-wasp:scott-lang-cat-burglar",
         "name": "Scott Lang, Cat Burglar",
         "team": "Crime Syndicate"
       },
       {
-        "id": "amw:wasp",
+        "id": "ant-man-and-the-wasp:wasp",
         "name": "Wasp",
         "team": "Avengers"
       }
@@ -4871,21 +4871,21 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "mds:zarathos",
+        "id": "midnight-sons:zarathos",
         "name": "Zarathos",
-        "alwaysLeadsGroupId": "mds:fallen",
+        "alwaysLeadsGroupId": "midnight-sons:fallen",
         "difficulty": 4
       },
       {
-        "id": "mds:lilith-mother-of-demons",
+        "id": "midnight-sons:lilith-mother-of-demons",
         "name": "Lilith, Mother of Demons",
-        "alwaysLeadsGroupId": "mds:lilin",
+        "alwaysLeadsGroupId": "midnight-sons:lilin",
         "difficulty": 3
       }
     ],
     "schemes": [
       {
-        "id": "mds:midnight-massacre",
+        "id": "midnight-sons:midnight-massacre",
         "name": "Midnight Massacre",
         "setup": {
           "twists": 11
@@ -4893,7 +4893,7 @@
         "difficulty": 4
       },
       {
-        "id": "mds:ritual-sacrifice-to-summon-chthon",
+        "id": "midnight-sons:ritual-sacrifice-to-summon-chthon",
         "name": "Ritual Sacrifice To Summon Chthon",
         "setup": {
           "twists": 6
@@ -4901,7 +4901,7 @@
         "difficulty": 4
       },
       {
-        "id": "mds:sire-vampires-at-the-blood-bank",
+        "id": "midnight-sons:sire-vampires-at-the-blood-bank",
         "name": "Sire Vampires at the Blood Bank",
         "setup": {
           "twists": 10,
@@ -4910,7 +4910,7 @@
         "difficulty": 3
       },
       {
-        "id": "mds:wager-at-blackjack-for-heroes-souls",
+        "id": "midnight-sons:wager-at-blackjack-for-heroes-souls",
         "name": "Wager at Blackjack For Heroes' Souls",
         "setup": {
           "twists": 11
@@ -4920,38 +4920,38 @@
     ],
     "villainGroups": [
       {
-        "id": "mds:fallen",
+        "id": "midnight-sons:fallen",
         "name": "Fallen"
       },
       {
-        "id": "mds:lilin",
+        "id": "midnight-sons:lilin",
         "name": "Lilin"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "mds:blade-daywalker",
+        "id": "midnight-sons:blade-daywalker",
         "name": "Blade, Daywalker",
         "team": "Marvel Knights"
       },
       {
-        "id": "mds:elsa-bloodstone",
+        "id": "midnight-sons:elsa-bloodstone",
         "name": "Elsa Bloodstone",
         "team": "Marvel Knights"
       },
       {
-        "id": "mds:morbius",
+        "id": "midnight-sons:morbius",
         "name": "Morbius",
         "team": "Marvel Knights"
       },
       {
-        "id": "mds:werewolf-by-night",
+        "id": "midnight-sons:werewolf-by-night",
         "name": "Werewolf by Night",
         "team": "Marvel Knights"
       },
       {
-        "id": "mds:wong-master-of-the-mystic-arts",
+        "id": "midnight-sons:wong-master-of-the-mystic-arts",
         "name": "Wong, Master of the Mystic Arts",
         "team": "Marvel Knights"
       }
@@ -4966,26 +4966,26 @@
     "enabledByDefault": false,
     "masterminds": [
       {
-        "id": "wpx:omega-red",
+        "id": "weapon-x:omega-red",
         "name": "Omega Red",
         "difficulty": 4
       },
       {
-        "id": "wpx:romulus",
+        "id": "weapon-x:romulus",
         "name": "Romulus",
-        "alwaysLeadsGroupId": "wpx:weapon-plus",
+        "alwaysLeadsGroupId": "weapon-x:weapon-plus",
         "difficulty": 3
       },
       {
-        "id": "wpx:sabretooth",
+        "id": "weapon-x:sabretooth",
         "name": "Sabretooth",
-        "alwaysLeadsGroupId": "wpx:berserkers",
+        "alwaysLeadsGroupId": "weapon-x:berserkers",
         "difficulty": 4
       }
     ],
     "schemes": [
       {
-        "id": "wpx:condition-logan-into-weapon-x",
+        "id": "weapon-x:condition-logan-into-weapon-x",
         "name": "Condition Logan into Weapon X",
         "setup": {
           "twists": 8
@@ -4993,7 +4993,7 @@
         "difficulty": 3
       },
       {
-        "id": "wpx:go-after-heroes-loved-ones",
+        "id": "weapon-x:go-after-heroes-loved-ones",
         "name": "Go After Heroes' Loved Ones",
         "setup": {
           "twists": 8,
@@ -5007,7 +5007,7 @@
         "difficulty": 3
       },
       {
-        "id": "wpx:wipe-heroes-memories",
+        "id": "weapon-x:wipe-heroes-memories",
         "name": "Wipe Heroes' Memories",
         "setup": {
           "twists": 8
@@ -5017,33 +5017,33 @@
     ],
     "villainGroups": [
       {
-        "id": "wpx:berserkers",
+        "id": "weapon-x:berserkers",
         "name": "Berserkers"
       },
       {
-        "id": "wpx:weapon-plus",
+        "id": "weapon-x:weapon-plus",
         "name": "Weapon Plus"
       }
     ],
     "henchmen": [],
     "heroes": [
       {
-        "id": "wpx:fantomex",
+        "id": "weapon-x:fantomex",
         "name": "Fantomex",
         "team": "X-Force"
       },
       {
-        "id": "wpx:marrow",
+        "id": "weapon-x:marrow",
         "name": "Marrow",
         "team": "X-Force"
       },
       {
-        "id": "wpx:weapon-h",
+        "id": "weapon-x:weapon-h",
         "name": "Weapon H",
         "team": "Avengers"
       },
       {
-        "id": "wpx:weapon-x-wolverine",
+        "id": "weapon-x:weapon-x-wolverine",
         "name": "Weapon X (Wolverine)",
         "team": "Marvel Knights"
       }

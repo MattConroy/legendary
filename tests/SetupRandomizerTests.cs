@@ -102,7 +102,7 @@ public class SetupRandomizerTests
         public void Steal_the_plutonium_adds_an_extra_villain_group()
         {
             var pool = CardPool.From([Set("core"), Set("dark-city")]);
-            var setup = WithScheme(Rng(6), pool, 2, "dc:steal-plutonium");
+            var setup = WithScheme(Rng(6), pool, 2, "dark-city:steal-plutonium");
             Assert.Equal(3, setup.EffectiveVillainGroupCount); // 2 base + 1
             Assert.Equal(3, setup.VillainGroups.Count);
         }
@@ -132,23 +132,23 @@ public class SetupRandomizerTests
         public void Organized_crime_wave_forces_maggia_goons()
         {
             var pool = CardPool.From([Set("core"), Set("dark-city")]);
-            var setup = WithScheme(Rng(9), pool, 3, "dc:organized-crimewave");
-            Assert.Contains(setup.Henchmen, h => h.Card.Id == "dc:maggia-goons" && h.IsRequired);
+            var setup = WithScheme(Rng(9), pool, 3, "dark-city:organized-crimewave");
+            Assert.Contains(setup.Henchmen, h => h.Card.Id == "dark-city:maggia-goons" && h.IsRequired);
         }
 
         [Fact]
         public void Xcutioners_song_adds_an_extra_hero_and_no_bystanders()
         {
             var pool = CardPool.From([Set("core"), Set("dark-city")]);
-            var setup = WithScheme(Rng(10), pool, 2, "dc:xcutioners-song");
+            var setup = WithScheme(Rng(10), pool, 2, "dark-city:xcutioners-song");
             Assert.Equal(6, setup.EffectiveHeroCount);   // 5 base + 1
             Assert.Equal(0, setup.EffectiveBystanders);
         }
 
         [Theory]
-        [InlineData("ff:cosmic-rays", 6)]
-        [InlineData("ff:force-field", 7)]
-        [InlineData("ff:melted-glaciers", 8)]
+        [InlineData("fantastic-four:cosmic-rays", 6)]
+        [InlineData("fantastic-four:force-field", 7)]
+        [InlineData("fantastic-four:melted-glaciers", 8)]
         public void Fantastic_four_scheme_twist_counts_are_exact(string schemeId, int twists)
         {
             var pool = CardPool.From([Set("core"), Set("fantastic-four")]);
@@ -159,8 +159,8 @@ public class SetupRandomizerTests
         public void Kree_skrull_war_forces_kree_starforce_and_the_core_skrulls()
         {
             var pool = CardPool.From([Set("core"), Set("guardians-of-the-galaxy")]);
-            var setup = WithScheme(Rng(2), pool, 4, "gotg:kree-skrull-war");
-            Assert.Contains(setup.VillainGroups, v => v.Card.Id == "gotg:kree-starforce" && v.IsRequired);
+            var setup = WithScheme(Rng(2), pool, 4, "guardians-of-the-galaxy:kree-skrull-war");
+            Assert.Contains(setup.VillainGroups, v => v.Card.Id == "guardians-of-the-galaxy:kree-starforce" && v.IsRequired);
             Assert.Contains(setup.VillainGroups, v => v.Card.Id == "core:skrulls" && v.IsRequired);
         }
 
@@ -168,8 +168,8 @@ public class SetupRandomizerTests
         public void Forge_the_infinity_gauntlet_forces_infinity_gems()
         {
             var pool = CardPool.From([Set("core"), Set("guardians-of-the-galaxy")]);
-            var setup = WithScheme(Rng(5), pool, 3, "gotg:infinity-gauntlet");
-            Assert.Contains(setup.VillainGroups, v => v.Card.Id == "gotg:infinity-gems" && v.IsRequired);
+            var setup = WithScheme(Rng(5), pool, 3, "guardians-of-the-galaxy:infinity-gauntlet");
+            Assert.Contains(setup.VillainGroups, v => v.Card.Id == "guardians-of-the-galaxy:infinity-gems" && v.IsRequired);
         }
 
         [Theory]
@@ -179,17 +179,17 @@ public class SetupRandomizerTests
         public void Unite_the_shards_twists_scale_with_players(int players, int twists)
         {
             var pool = CardPool.From([Set("core"), Set("guardians-of-the-galaxy")]);
-            Assert.Equal(twists, WithScheme(Rng(6), pool, players, "gotg:unite-the-shards").EffectiveTwists);
+            Assert.Equal(twists, WithScheme(Rng(6), pool, players, "guardians-of-the-galaxy:unite-the-shards").EffectiveTwists);
         }
 
         [Fact]
         public void Splice_humans_forces_the_sinister_six_and_web_of_lies_uses_seven_twists()
         {
             var pool = CardPool.From([Set("core"), Set("paint-the-town-red")]);
-            var splice = WithScheme(Rng(4), pool, 3, "ptr:splice-spider-dna");
-            Assert.Contains(splice.VillainGroups, v => v.Card.Id == "ptr:sinister-six" && v.IsRequired);
+            var splice = WithScheme(Rng(4), pool, 3, "paint-the-town-red:splice-spider-dna");
+            Assert.Contains(splice.VillainGroups, v => v.Card.Id == "paint-the-town-red:sinister-six" && v.IsRequired);
 
-            var web = WithScheme(Rng(4), pool, 3, "ptr:web-of-lies");
+            var web = WithScheme(Rng(4), pool, 3, "paint-the-town-red:web-of-lies");
             Assert.Equal(7, web.EffectiveTwists);
         }
 
@@ -218,21 +218,21 @@ public class SetupRandomizerTests
         public void Mark_of_khonshu_forces_its_guardians_and_the_fountain_scales_twists_solo()
         {
             var pool = CardPool.From([Set("secret-wars-vol-2")]);
-            var setup = WithScheme(Rng(9), pool, 4, "sw2:mark-of-khonshu");
-            Assert.Contains(setup.Henchmen, h => h.Card.Id == "sw2:khonshu-guardians" && h.IsRequired);
+            var setup = WithScheme(Rng(9), pool, 4, "secret-wars-vol-2:mark-of-khonshu");
+            Assert.Contains(setup.Henchmen, h => h.Card.Id == "secret-wars-vol-2:khonshu-guardians" && h.IsRequired);
             Assert.Equal(10, setup.EffectiveTwists);
 
             // The Fountain of Eternal Life drops to 4 Twists solo, 8 otherwise.
-            Assert.Equal(4, WithScheme(Rng(1), pool, 1, "sw2:fountain-eternal-life").EffectiveTwists);
-            Assert.Equal(8, WithScheme(Rng(1), pool, 3, "sw2:fountain-eternal-life").EffectiveTwists);
+            Assert.Equal(4, WithScheme(Rng(1), pool, 1, "secret-wars-vol-2:fountain-eternal-life").EffectiveTwists);
+            Assert.Equal(8, WithScheme(Rng(1), pool, 3, "secret-wars-vol-2:fountain-eternal-life").EffectiveTwists);
         }
 
         [Fact]
         public void Epic_civil_war_scales_twists_with_players()
         {
             var pool = CardPool.From([Set("core"), Set("civil-war")]);
-            Assert.Equal(9, WithScheme(Rng(3), pool, 3, "cw:epic-civil-war").EffectiveTwists);
-            Assert.Equal(6, WithScheme(Rng(3), pool, 5, "cw:epic-civil-war").EffectiveTwists);
+            Assert.Equal(9, WithScheme(Rng(3), pool, 3, "civil-war:epic-civil-war").EffectiveTwists);
+            Assert.Equal(6, WithScheme(Rng(3), pool, 5, "civil-war:epic-civil-war").EffectiveTwists);
         }
 
         private static void AssertDistinct(IReadOnlyList<SetupSelection> items)

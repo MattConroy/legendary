@@ -693,7 +693,7 @@
       "effect": "Draw three cards.\n{instinct}: +1 {attack} per extra card drawn this turn."
     }
   ],
-  "dc:angel": [
+  "dark-city:angel": [
     {
       "name": "Diving Catch",
       "copies": 5,
@@ -738,7 +738,7 @@
       "effect": "Discard any number of cards, then draw that many."
     }
   ],
-  "dc:bishop": [
+  "dark-city:bishop": [
     {
       "name": "Absorb Energies",
       "copies": 5,
@@ -785,7 +785,7 @@
       "effect": "Discard your top four cards; +{attack} equal to their printed {attack}.\n{x-men}: KO any of them."
     }
   ],
-  "dc:iceman": [
+  "dark-city:iceman": [
     {
       "name": "Deep Freeze",
       "copies": 5,
@@ -833,7 +833,7 @@
       "effect": "You may reveal this to prevent Wounds or discards from a Villain, Master Strike, or Mastermind Tactic."
     }
   ],
-  "dc:jean-grey": [
+  "dark-city:jean-grey": [
     {
       "name": "Psychic Search",
       "copies": 5,
@@ -881,7 +881,7 @@
       "effect": "+1 {attack} each time you rescue a Bystander this turn.\n{x-men}: rescue a Bystander per other {x-men} Hero played this turn."
     }
   ],
-  "dc:nightcrawler": [
+  "dark-city:nightcrawler": [
     {
       "name": "Bamf!",
       "copies": 5,
@@ -935,7 +935,7 @@
       "effect": "When you play or teleport this, you may also teleport up to three other cards from hand."
     }
   ],
-  "dc:professor-x": [
+  "dark-city:professor-x": [
     {
       "name": "Class Dismissed",
       "copies": 5,
@@ -982,7 +982,7 @@
       "effect": "When you defeat a Villain this turn, you may gain it as a grey Hero giving +{attack} equal to its {attack} (you keep its VP)."
     }
   ],
-  "dc:cable": [
+  "dark-city:cable": [
     {
       "name": "Disaster Survivalist",
       "copies": 5,
@@ -1034,7 +1034,7 @@
       "effect": "KO any number of cards from hand; +1 {attack} for each."
     }
   ],
-  "dc:colossus": [
+  "dark-city:colossus": [
     {
       "name": "Draw Their Fire",
       "copies": 5,
@@ -1081,7 +1081,7 @@
       "effect": "When another player would gain a Wound, you may reveal this to take it and draw a card."
     }
   ],
-  "dc:domino": [
+  "dark-city:domino": [
     {
       "name": "Lucky Break",
       "copies": 5,
@@ -1136,7 +1136,7 @@
       "effect": "{x-force}: this and your other Versatile abilities give both {recruit} and {attack} for the rest of the turn."
     }
   ],
-  "dc:forge": [
+  "dark-city:forge": [
     {
       "name": "Dirty Work",
       "copies": 5,
@@ -1185,7 +1185,7 @@
       "effect": "{tech} x2: defeat the Mastermind once for free."
     }
   ],
-  "dc:wolverine-xforce": [
+  "dark-city:wolverine-xforce": [
     {
       "name": "Animal Instincts",
       "copies": 5,
@@ -1231,7 +1231,7 @@
       "effect": "Draw a card for each extra card you drew this turn."
     }
   ],
-  "dc:blade": [
+  "dark-city:blade": [
     {
       "name": "Night Hunter",
       "copies": 5,
@@ -1279,7 +1279,7 @@
       "effect": "+1 {attack} per Villain in your Victory pile."
     }
   ],
-  "dc:daredevil": [
+  "dark-city:daredevil": [
     {
       "name": "Backflip",
       "copies": 5,
@@ -1326,7 +1326,7 @@
       "effect": "Name a cost, reveal your top card; if it matches, draw it and repeat."
     }
   ],
-  "dc:elektra": [
+  "dark-city:elektra": [
     {
       "name": "First Strike",
       "copies": 5,
@@ -1376,7 +1376,7 @@
       "effect": "The next Hero you recruit this turn goes to your hand.\n{marvel-knights}: +2 {recruit}."
     }
   ],
-  "dc:ghost-rider": [
+  "dark-city:ghost-rider": [
     {
       "name": "Blazing Hellfire",
       "copies": 5,
@@ -1423,7 +1423,7 @@
       "effect": "Each player KOs a Villain from their Victory pile; +1 {attack} for each.\n{marvel-knights}: put one into your Victory pile."
     }
   ],
-  "dc:iron-fist": [
+  "dark-city:iron-fist": [
     {
       "name": "Focus Chi",
       "copies": 5,
@@ -1472,7 +1472,7 @@
       "effect": "Reveal cards from your deck until two share a cost; draw all revealed."
     }
   ],
-  "dc:punisher": [
+  "dark-city:punisher": [
     {
       "name": "Boom Goes the Dynamite",
       "copies": 5,
@@ -1519,7 +1519,7 @@
       "effect": "Reveal from the Hero Deck until two share a cost; +1 {attack} per card revealed, then bottom them in random order."
     }
   ],
-  "ff:mister-fantastic": [
+  "fantastic-four:mister-fantastic": [
     {
       "name": "Twisting Equations",
       "copies": 5,
@@ -1571,7 +1571,7 @@
       "effect": "Cancel the fight effect of an Enemy you fight this turn.\nFocus 1 {recruit} -> +1 {attack} against the Mastermind only."
     }
   ],
-  "ff:invisible-woman": [
+  "fantastic-four:invisible-woman": [
     {
       "name": "Disappearing Act",
       "copies": 5,
@@ -1624,7 +1624,7 @@
       "effect": "You may reveal this to cancel an ambush effect and draw two cards instead."
     }
   ],
-  "ff:human-torch": [
+  "fantastic-four:human-torch": [
     {
       "name": "Call for Backup",
       "copies": 5,
@@ -1676,7 +1676,7 @@
       "effect": "{fantastic-four}: +1 {attack} per city space containing a Villain."
     }
   ],
-  "ff:thing": [
+  "fantastic-four:thing": [
     {
       "name": "It Started on Yancy Street",
       "copies": 5,
@@ -1730,7 +1730,7 @@
       "effect": "{strength}: +3 {attack} per other {strength} card played this turn."
     }
   ],
-  "ff:silver-surfer": [
+  "fantastic-four:silver-surfer": [
     {
       "name": "Epic Destiny",
       "copies": 5,
@@ -1783,7 +1783,7 @@
       "effect": "Double your current {recruit}."
     }
   ],
-  "gotg:drax": [
+  "guardians-of-the-galaxy:drax": [
     {
       "name": "Knives of the Hunter",
       "copies": 5,
@@ -1828,7 +1828,7 @@
       "effect": "Double your current {attack}."
     }
   ],
-  "gotg:gamora": [
+  "guardians-of-the-galaxy:gamora": [
     {
       "name": "Bounty Hunter",
       "copies": 5,
@@ -1873,7 +1873,7 @@
       "effect": "Once per turn gain two Shards; once per turn spend 5 Shards for +10 {attack}."
     }
   ],
-  "gotg:groot": [
+  "guardians-of-the-galaxy:groot": [
     {
       "name": "Prune the Growths",
       "copies": 5,
@@ -1917,7 +1917,7 @@
       "effect": "When you next recruit a Hero this turn, gain Shards equal to its cost."
     }
   ],
-  "gotg:rocket-raccoon": [
+  "guardians-of-the-galaxy:rocket-raccoon": [
     {
       "name": "Gritty Scavenger",
       "copies": 5,
@@ -1965,7 +1965,7 @@
       "effect": "{tech}: +1 {attack} per Master Strike in the KO pile or stacked by the Mastermind."
     }
   ],
-  "gotg:star-lord": [
+  "guardians-of-the-galaxy:star-lord": [
     {
       "name": "Element Guns",
       "copies": 5,
@@ -2014,7 +2014,7 @@
       "effect": "Once per turn: gain a Shard per Artifact you control."
     }
   ],
-  "ptr:black-cat": [
+  "paint-the-town-red:black-cat": [
     {
       "name": "Casual Bank Robbery",
       "copies": 5,
@@ -2069,7 +2069,7 @@
       "effect": "Each opponent reveals a {covert} Hero or gives up a Bystander from their Victory pile; rescue those.\n{spider-friends}: +1 {attack} per Bystander rescued this turn."
     }
   ],
-  "ptr:scarlet-spider": [
+  "paint-the-town-red:scarlet-spider": [
     {
       "name": "Flip Out",
       "copies": 5,
@@ -2125,7 +2125,7 @@
       "effect": "Each time you put a card on top of your deck this turn, you may draw it."
     }
   ],
-  "ptr:spider-woman": [
+  "paint-the-town-red:spider-woman": [
     {
       "name": "Bioelectric Shock",
       "copies": 5,
@@ -2175,7 +2175,7 @@
       "effect": "Recruit a Hero from the HQ for free.\n{spider-friends}: put that Hero on top of your deck."
     }
   ],
-  "ptr:symbiote-spider-man": [
+  "paint-the-town-red:symbiote-spider-man": [
     {
       "name": "Dark Strength",
       "copies": 5,
@@ -2227,7 +2227,7 @@
       "effect": "Put two cards from hand on top of your deck to play this."
     }
   ],
-  "ptr:moon-knight": [
+  "paint-the-town-red:moon-knight": [
     {
       "name": "Climbing Claws",
       "copies": 5,
@@ -3028,7 +3028,7 @@
       "effect": "Each opponent reveals a {tech} Ally or discards their hand; those who discard draw 5.\n{tech}: +3 {attack} per discarded Ally costing 7 or more."
     }
   ],
-  "sw1:apocalyptic-kitty-pryde": [
+  "secret-wars-vol-1:apocalyptic-kitty-pryde": [
     {
       "name": "Phase Out",
       "copies": 5,
@@ -3077,7 +3077,7 @@
       "effect": "When any player defeats a Villain or Mastermind with a Fight effect, you may discard this to cancel it and draw three cards."
     }
   ],
-  "sw1:black-bolt": [
+  "secret-wars-vol-1:black-bolt": [
     {
       "name": "Destructive Whisper",
       "copies": 5,
@@ -3125,7 +3125,7 @@
       "effect": "Draw a card per no-rules-text card you played this turn."
     }
   ],
-  "sw1:black-panther": [
+  "secret-wars-vol-1:black-panther": [
     {
       "name": "Catlike Reflexes",
       "copies": 5,
@@ -3174,7 +3174,7 @@
       "effect": "{instinct} {tech}: gain three Sidekicks.\n{illuminati}: put them on top of your deck."
     }
   ],
-  "sw1:captain-marvel": [
+  "secret-wars-vol-1:captain-marvel": [
     {
       "name": "Absorb Energies",
       "copies": 5,
@@ -3224,7 +3224,7 @@
       "effect": "{ranged} {ranged} {strength} {strength}: +6 {attack}."
     }
   ],
-  "sw1:dr-strange": [
+  "secret-wars-vol-1:dr-strange": [
     {
       "name": "Cloak of Levitation",
       "copies": 5,
@@ -3271,7 +3271,7 @@
       "effect": "Reveal your top three cards; draw any and Teleport the rest."
     }
   ],
-  "sw1:lady-thor": [
+  "secret-wars-vol-1:lady-thor": [
     {
       "name": "Mysterious Origin",
       "copies": 5,
@@ -3319,7 +3319,7 @@
       "effect": "Once per turn, if you made at least 6 {recruit} this turn, +6 {attack}."
     }
   ],
-  "sw1:magik": [
+  "secret-wars-vol-1:magik": [
     {
       "name": "Rally the New Mutants",
       "copies": 5,
@@ -3376,7 +3376,7 @@
       "effect": "Choose a Villain or Mastermind in your Victory pile; +{attack} equal to its printed VP."
     }
   ],
-  "sw1:maximus": [
+  "secret-wars-vol-1:maximus": [
     {
       "name": "Mental Domination",
       "copies": 5,
@@ -3424,7 +3424,7 @@
       "effect": "Each opponent reveals a {tech} Hero or gives up a Henchman Villain from their Victory pile; defeat all those for free.\n{cabal}: +1 {attack} per Henchman defeated this turn."
     }
   ],
-  "sw1:namor-the-sub-mariner": [
+  "secret-wars-vol-1:namor-the-sub-mariner": [
     {
       "name": "Lead the Armies of Atlantis",
       "copies": 5,
@@ -3470,7 +3470,7 @@
       "effect": "Defeat a Villain for free.\n{instinct} {instinct} {strength} {strength}: instead defeat the Mastermind once for free."
     }
   ],
-  "sw1:old-man-logan": [
+  "secret-wars-vol-1:old-man-logan": [
     {
       "name": "Last Survivor",
       "copies": 5,
@@ -3520,7 +3520,7 @@
       "effect": "Reveal your hand; +5 {attack} if you played no {shield} or {hydra} cards this turn and have none in hand."
     }
   ],
-  "sw1:proxima-midnight": [
+  "secret-wars-vol-1:proxima-midnight": [
     {
       "name": "Inspiration Through Power",
       "copies": 5,
@@ -3569,7 +3569,7 @@
       "effect": "{covert}: +4 {recruit} and +4 {attack}."
     }
   ],
-  "sw1:superior-iron-man": [
+  "secret-wars-vol-1:superior-iron-man": [
     {
       "name": "Armor Upgrades",
       "copies": 5,
@@ -3617,7 +3617,7 @@
       "effect": "Draw a card per other player with fewer cards in their Victory pile than you."
     }
   ],
-  "sw1:thanos": [
+  "secret-wars-vol-1:thanos": [
     {
       "name": "Revel in Destruction",
       "copies": 5,
@@ -3667,7 +3667,7 @@
       "effect": "KO six Bystanders from the Bystander Stack; then defeat any Villain or Mastermind with Attack below the number of Bystanders in the KO pile."
     }
   ],
-  "sw1:ultimate-spider-man": [
+  "secret-wars-vol-1:ultimate-spider-man": [
     {
       "name": "Marvel Team-Up",
       "copies": 5,
@@ -3715,7 +3715,7 @@
       "effect": "+2 {attack} per other cost-1-or-2 card played this turn."
     }
   ],
-  "sw2:agent-venom": [
+  "secret-wars-vol-2:agent-venom": [
     {
       "name": "Multi-Gun",
       "copies": 5,
@@ -3779,7 +3779,7 @@
       "effect": "+1 {recruit} per other {recruit}-icon card and +1 {attack} per other {attack}-icon card played this turn."
     }
   ],
-  "sw2:arkon-the-magnificent": [
+  "secret-wars-vol-2:arkon-the-magnificent": [
     {
       "name": "All-Terrain Barbarian",
       "copies": 5,
@@ -3842,7 +3842,7 @@
       "effect": "Patrol the Rooftops: if empty, +4 {recruit} and +4 {attack}; if not, defeat the Villain there for free."
     }
   ],
-  "sw2:beast": [
+  "secret-wars-vol-2:beast": [
     {
       "name": "Balanced Attack",
       "copies": 5,
@@ -3895,7 +3895,7 @@
       "effect": "{strength} {strength} {tech} {tech}: draw three cards."
     }
   ],
-  "sw2:black-swan": [
+  "secret-wars-vol-2:black-swan": [
     {
       "name": "Apocalyptic Vision",
       "copies": 5,
@@ -3944,7 +3944,7 @@
       "effect": "Reveal the top five Villain Deck cards; +{attack} equal to one's printed VP; replace in any order.\n{cabal}: use two of them instead."
     }
   ],
-  "sw2:the-captain-and-the-devil": [
+  "secret-wars-vol-2:the-captain-and-the-devil": [
     {
       "name": "Jurassic America",
       "copies": 5,
@@ -4002,7 +4002,7 @@
       "effect": "Each time you defeat a Villain this turn, each Villain and Mastermind adjacent to it gets -2 Attack this turn."
     }
   ],
-  "sw2:captain-britain": [
+  "secret-wars-vol-2:captain-britain": [
     {
       "name": "Combined Strength",
       "copies": 5,
@@ -4052,7 +4052,7 @@
       "effect": "Draw three extra cards when you draw your next hand."
     }
   ],
-  "sw2:corvus-glaive": [
+  "secret-wars-vol-2:corvus-glaive": [
     {
       "name": "Culling Blade",
       "copies": 5,
@@ -4105,7 +4105,7 @@
       "effect": "{cabal}: you may KO a Bystander from the Escape Pile and from each player's Victory pile; +1 {attack} per Bystander KO'd."
     }
   ],
-  "sw2:dr-punisher-soldier-supreme": [
+  "secret-wars-vol-2:dr-punisher-soldier-supreme": [
     {
       "name": "Sweep the Streets of Trash",
       "copies": 5,
@@ -4161,7 +4161,7 @@
       "effect": "Patrol every city space: +1 {attack} per empty space."
     }
   ],
-  "sw2:elsa-bloodstone": [
+  "secret-wars-vol-2:elsa-bloodstone": [
     {
       "name": "Bloodstone Pendant",
       "copies": 5,
@@ -4223,7 +4223,7 @@
       "effect": "Spectrum: +3 {attack}."
     }
   ],
-  "sw2:phoenix-force-cyclops": [
+  "secret-wars-vol-2:phoenix-force-cyclops": [
     {
       "name": "Burn Out",
       "copies": 5,
@@ -4269,7 +4269,7 @@
       "effect": "KO up to three cards from hand; draw that many."
     }
   ],
-  "sw2:ruby-summers": [
+  "secret-wars-vol-2:ruby-summers": [
     {
       "name": "Guerrilla Warfare",
       "copies": 5,
@@ -4317,7 +4317,7 @@
       "effect": "Discard three cards from hand to play this."
     }
   ],
-  "sw2:shang-chi": [
+  "secret-wars-vol-2:shang-chi": [
     {
       "name": "Shuffling Footwork",
       "copies": 5,
@@ -4376,7 +4376,7 @@
       "effect": "When shuffling your deck with this in it, you may set it aside and put it on top after the shuffle."
     }
   ],
-  "sw2:silk": [
+  "secret-wars-vol-2:silk": [
     {
       "name": "Long-Range Spider-Sense",
       "copies": 5,
@@ -4434,7 +4434,7 @@
       "effect": "Spectrum: reveal your top four cards; take any totalling 2 cost or less, replace the rest in any order."
     }
   ],
-  "sw2:soulsword-colossus": [
+  "secret-wars-vol-2:soulsword-colossus": [
     {
       "name": "Invade the Inferno",
       "copies": 5,
@@ -4482,7 +4482,7 @@
       "effect": "{x-men}: you may gain an {x-men} Hero from the HQ or KO pile to your hand."
     }
   ],
-  "sw2:spider-gwen": [
+  "secret-wars-vol-2:spider-gwen": [
     {
       "name": "Fateful Bridge",
       "copies": 5,
@@ -4545,7 +4545,7 @@
       "effect": "Reveal your top three cards, replace in any order; +1 {attack} per revealed card costing 2 or less."
     }
   ],
-  "sw2:time-traveling-jean-grey": [
+  "secret-wars-vol-2:time-traveling-jean-grey": [
     {
       "name": "Throw Over the Railing",
       "copies": 5,
@@ -4593,7 +4593,7 @@
       "effect": "{x-men}: Patrol any city space: if empty, gain the Hero in the HQ under it and put it on top of your deck."
     }
   ],
-  "fi:greithoth": [
+  "fear-itself:greithoth": [
     {
       "name": "Mace of Chains",
       "copies": 5,
@@ -4643,7 +4643,7 @@
       "effect": "+{attack} equal to the total Artifacts controlled by players and in the Lair."
     }
   ],
-  "fi:kuurth": [
+  "fear-itself:kuurth": [
     {
       "name": "Unstoppable Sledge",
       "copies": 5,
@@ -4693,7 +4693,7 @@
       "effect": "Reveal a card from hand, your top card and your bottom card; +{attack} equal to their total cost."
     }
   ],
-  "fi:nerkkod": [
+  "fear-itself:nerkkod": [
     {
       "name": "Pull of the Tides",
       "copies": 5,
@@ -4740,7 +4740,7 @@
       "effect": "{foes-of-asgard}: each opponent reveals their hand; take a New Recruit or Madame HYDRA from each."
     }
   ],
-  "fi:nul": [
+  "fear-itself:nul": [
     {
       "name": "Demolition Derby",
       "copies": 5,
@@ -4787,7 +4787,7 @@
       "effect": "KO up to two cards from hand or discard; for each Bindings KO'd, Demolish every other player."
     }
   ],
-  "fi:skirn": [
+  "fear-itself:skirn": [
     {
       "name": "Towering Leader",
       "copies": 5,
@@ -4832,7 +4832,7 @@
       "effect": "Each player reveals a {covert} Ally or discards a card; draw a card per card discarded."
     }
   ],
-  "fi:skadi": [
+  "fear-itself:skadi": [
     {
       "name": "Dark Prophecy",
       "copies": 5,
@@ -4880,7 +4880,7 @@
       "effect": "Thrown Artifact - when thrown: +1 {attack} per other {hydra} card played this turn."
     }
   ],
-  "cap:agent-x-13": [
+  "captain-america-75:agent-x-13": [
     {
       "name": "Sniper Squad",
       "copies": 5,
@@ -4932,7 +4932,7 @@
       "effect": "KO up to two {shield} Heroes from hand or discard.\nSavior: +1 {attack} per card KO'd."
     }
   ],
-  "cap:captain-america-falcon": [
+  "captain-america-75:captain-america-falcon": [
     {
       "name": "Aerial Catch",
       "copies": 5,
@@ -4986,7 +4986,7 @@
       "effect": "+2 {attack} per Hero Class you have.\nSavior: +2 {recruit} per Hero Class you have."
     }
   ],
-  "cap:captain-america-1941": [
+  "captain-america-75:captain-america-1941": [
     {
       "name": "Devoted Patriot",
       "copies": 5,
@@ -5037,7 +5037,7 @@
       "effect": "Savior: Man Out of Time."
     }
   ],
-  "cap:steve-rogers-director-of-s-h-i-e-l-d": [
+  "captain-america-75:steve-rogers-director-of-s-h-i-e-l-d": [
     {
       "name": "International Strike Force",
       "copies": 5,
@@ -5094,7 +5094,7 @@
       "effect": "Rescue a Bystander.\nSavior: +3 {attack}."
     }
   ],
-  "cap:winter-soldier": [
+  "captain-america-75:winter-soldier": [
     {
       "name": "Bionic Arm",
       "copies": 5,
@@ -5141,7 +5141,7 @@
       "effect": "A Hero in your hand gains Man Out of Time this turn.\n{tech}: another Hero in your hand gains it too."
     }
   ],
-  "cw:captain-america-secret-avenger": [
+  "civil-war:captain-america-secret-avenger": [
     {
       "name": "Bold Leadership",
       "copies": 5,
@@ -5193,7 +5193,7 @@
       "effect": "Set aside each Sidekick or other {avengers} Hero you play this turn; at end of turn bottom them in random order before drawing."
     }
   ],
-  "cw:cloak-dagger": [
+  "civil-war:cloak-dagger": [
     {
       "name": "Above/Below",
       "copies": 5,
@@ -5253,7 +5253,7 @@
       "effect": "When you play a Divided card this turn, play both of its sides as two separate cards."
     }
   ],
-  "cw:daredevil": [
+  "civil-war:daredevil": [
     {
       "name": "Dual Existence",
       "copies": 5,
@@ -5302,7 +5302,7 @@
       "effect": "{avengers}: discard your top two cards; if they have different costs, +2 {attack}, then repeat."
     }
   ],
-  "cw:falcon": [
+  "civil-war:falcon": [
     {
       "name": "Rapid Reinforcements",
       "copies": 5,
@@ -5355,7 +5355,7 @@
       "effect": "{avengers}: +{attack} equal to a HQ Hero's printed {attack}."
     }
   ],
-  "cw:goliath": [
+  "civil-war:goliath": [
     {
       "name": "Brilliant Biochemist/Massive Warrior",
       "copies": 5,
@@ -5417,7 +5417,7 @@
       "effect": "+{attack} equal to the cost of another card you played this turn."
     }
   ],
-  "cw:hercules": [
+  "civil-war:hercules": [
     {
       "name": "Crowd Favorite",
       "copies": 5,
@@ -5468,7 +5468,7 @@
       "effect": "Rescue a Bystander; +1 {attack} per Bystander in your Victory pile.\n{avengers}: +1 {recruit} per Bystander in your Victory pile."
     }
   ],
-  "cw:hulkling": [
+  "civil-war:hulkling": [
     {
       "name": "Cellular Regeneration",
       "copies": 5,
@@ -5528,7 +5528,7 @@
       "effect": "{covert}: +4 {attack}."
     }
   ],
-  "cw:luke-cage": [
+  "civil-war:luke-cage": [
     {
       "name": "Take a Bullet for the Team",
       "copies": 5,
@@ -5578,7 +5578,7 @@
       "effect": "{avengers}: Fortify the Wound Stack (no one can gain Wounds while fortified); discard this at the start of your next turn."
     }
   ],
-  "cw:patriot": [
+  "civil-war:patriot": [
     {
       "name": "Intuitive Tactician",
       "copies": 5,
@@ -5628,7 +5628,7 @@
       "effect": "Reveal your top three cards; if at least three different Hero Names, draw them, otherwise replace in any order."
     }
   ],
-  "cw:peter-parker": [
+  "civil-war:peter-parker": [
     {
       "name": "Conflicted Loyalties",
       "copies": 5,
@@ -5679,7 +5679,7 @@
       "effect": "{instinct}: +1 {attack} per extra card drawn this turn."
     }
   ],
-  "cw:speedball": [
+  "civil-war:speedball": [
     {
       "name": "Bounce Around",
       "copies": 5,
@@ -5731,7 +5731,7 @@
       "effect": "If a Master Strike would occur, you may reveal this to KO it, cancel its effects, and draw a card."
     }
   ],
-  "cw:stature": [
+  "civil-war:stature": [
     {
       "name": "Shrink to Nothing",
       "copies": 5,
@@ -5793,7 +5793,7 @@
       "effect": "{strength}: defeat each Villain of 4 Attack or less."
     }
   ],
-  "cw:storm-black-panther": [
+  "civil-war:storm-black-panther": [
     {
       "name": "Gathering Rain Clouds/Gathering Clues",
       "copies": 5,
@@ -5851,7 +5851,7 @@
       "effect": "Reveal any number of multi-class cards from hand; gain that many Sidekicks."
     }
   ],
-  "cw:tigra": [
+  "civil-war:tigra": [
     {
       "name": "Friendship/Ferocity",
       "copies": 5,
@@ -5902,7 +5902,7 @@
       "effect": "Recruit a Hero from the HQ for free.\n{avengers}: gain its printed {recruit} and {attack}."
     }
   ],
-  "cw:vision": [
+  "civil-war:vision": [
     {
       "name": "Solar Energy",
       "copies": 5,
@@ -5964,7 +5964,7 @@
       "effect": "You may swap a card from hand with your top two cards."
     }
   ],
-  "cw:wiccan": [
+  "civil-war:wiccan": [
     {
       "name": "Astral Projection",
       "copies": 5,
@@ -6022,7 +6022,7 @@
       "effect": "Name a cost; reveal your top card; if it matches, draw it and draw another."
     }
   ],
-  "dp:bob-agent-of-hydra": [
+  "deadpool:bob-agent-of-hydra": [
     {
       "name": "Bullets Flying, Bob Hiding",
       "copies": 5,
@@ -6070,7 +6070,7 @@
       "effect": "Excessive Violence: KO up to two {hydra} or {shield} Heroes from your discard; draw a card for each."
     }
   ],
-  "dp:deadpool": [
+  "deadpool:deadpool": [
     {
       "name": "It'll Grow Back",
       "copies": 5,
@@ -6116,7 +6116,7 @@
       "effect": "Excessive Violence: take another turn after this one (once per game)."
     }
   ],
-  "dp:slapstick": [
+  "deadpool:slapstick": [
     {
       "name": "Napoleon Complex",
       "copies": 5,
@@ -6168,7 +6168,7 @@
       "effect": "Excessive Violence: recruit a Hero from the HQ for free, then you may shuffle your discard pile into your deck."
     }
   ],
-  "dp:solo": [
+  "deadpool:solo": [
     {
       "name": "Half-Cocked",
       "copies": 5,
@@ -6211,7 +6211,7 @@
       "effect": "Choose a Villain; halve its Attack this turn.\n{mercs-for-money}: halve the Mastermind's Attack for one fight this turn."
     }
   ],
-  "dp:stingray": [
+  "deadpool:stingray": [
     {
       "name": "Deck Chairs on the Titanic",
       "copies": 5,
@@ -6505,7 +6505,7 @@
       "effect": "{spider-friends}: Investigate each player's deck for a cost-2-or-less card, play a copy, then put it in their discard pile."
     }
   ],
-  "xm:aurora-northstar": [
+  "x-men-box:aurora-northstar": [
     {
       "name": "Northern Lights",
       "copies": 5,
@@ -6571,7 +6571,7 @@
       "effect": "All Heroes you recruit this turn gain Soaring Flight.\nLightshow: +2 {attack} per Lightshow card played this turn."
     }
   ],
-  "xm:banshee": [
+  "x-men-box:banshee": [
     {
       "name": "Sonar Detection",
       "copies": 5,
@@ -6624,7 +6624,7 @@
       "effect": "{ranged} {covert}: you may use Attack as Piercing this turn."
     }
   ],
-  "xm:beast": [
+  "x-men-box:beast": [
     {
       "name": "Captivating Conundrum",
       "copies": 5,
@@ -6687,7 +6687,7 @@
       "effect": "X-Gene {x-men}: you may return a 0-cost, 3-cost and 4-cost card from your discard to your hand."
     }
   ],
-  "xm:cannonball": [
+  "x-men-box:cannonball": [
     {
       "name": "Kinetic Blast Field",
       "copies": 5,
@@ -6747,7 +6747,7 @@
       "effect": "If you played at least 6 other cards this turn, +2 {attack}."
     }
   ],
-  "xm:colossus-wolverine": [
+  "x-men-box:colossus-wolverine": [
     {
       "name": "Reliable/Unpredictable",
       "copies": 5,
@@ -6811,7 +6811,7 @@
       "effect": "Berserk three times, then draw a card per X-Men card you Berserked."
     }
   ],
-  "xm:dazzler": [
+  "x-men-box:dazzler": [
     {
       "name": "Convert Sound to Light",
       "copies": 5,
@@ -6871,7 +6871,7 @@
       "effect": "Lightshow: put a Hero from the HQ on top of your deck."
     }
   ],
-  "xm:havok": [
+  "x-men-box:havok": [
     {
       "name": "Blinding Burst",
       "copies": 5,
@@ -6933,7 +6933,7 @@
       "effect": "X-Gene {ranged}: +{attack} equal to the total printed Attack of the {ranged} cards in your discard."
     }
   ],
-  "xm:jubilee": [
+  "x-men-box:jubilee": [
     {
       "name": "Light a Spark",
       "copies": 5,
@@ -6994,7 +6994,7 @@
       "effect": "Lightshow: +1 {recruit} and +1 {attack} per Lightshow card played this turn."
     }
   ],
-  "xm:kitty-pryde": [
+  "x-men-box:kitty-pryde": [
     {
       "name": "Intangible Qualities",
       "copies": 5,
@@ -7049,7 +7049,7 @@
       "effect": "Bottom a HQ card; +{attack} equal to its cost."
     }
   ],
-  "xm:legion": [
+  "x-men-box:legion": [
     {
       "name": "Bend Steel/Bend Light",
       "copies": 5,
@@ -7116,7 +7116,7 @@
       "effect": "Reveal the top three Hero Deck cards; +{attack} equal to their total printed Attack; then bottom them."
     }
   ],
-  "xm:longshot": [
+  "x-men-box:longshot": [
     {
       "name": "Fortune Favors the Bold",
       "copies": 5,
@@ -7167,7 +7167,7 @@
       "effect": "Reveal the top Villain Deck card; if a Villain you may bottom it.\n{x-men}: +{attack} equal to its printed VP."
     }
   ],
-  "xm:phoenix": [
+  "x-men-box:phoenix": [
     {
       "name": "Life & Death Incarnate",
       "copies": 5,
@@ -7217,7 +7217,7 @@
       "effect": "Berserk four times, then KO all cards you Berserked.\nIf this makes at least 13 Attack, the Phoenix devours the Earth: you win, Evil wins, and all other players lose."
     }
   ],
-  "xm:polaris": [
+  "x-men-box:polaris": [
     {
       "name": "Ride the Magnetic Waves",
       "copies": 5,
@@ -7274,7 +7274,7 @@
       "effect": "X-Gene {x-men}: you may use Recruit as Attack and vice versa this turn."
     }
   ],
-  "xm:psylocke": [
+  "x-men-box:psylocke": [
     {
       "name": "Psychic Knife",
       "copies": 5,
@@ -7324,7 +7324,7 @@
       "effect": "Reveal the top Hero Deck card; a player of your choice takes it to their hand."
     }
   ],
-  "xm:x-23": [
+  "x-men-box:x-23": [
     {
       "name": "Adamantium Footclaws",
       "copies": 5,
@@ -7387,7 +7387,7 @@
       "effect": "X-Gene {instinct}: Berserk once per {instinct} card in your discard."
     }
   ],
-  "smh:happy-hogan": [
+  "spider-man-homecoming:happy-hogan": [
     {
       "name": "Head of Security",
       "copies": 5,
@@ -7441,7 +7441,7 @@
       "cost": 5
     }
   ],
-  "smh:high-tech-spider-man": [
+  "spider-man-homecoming:high-tech-spider-man": [
     {
       "name": "Advanced Targeting System",
       "copies": 5,
@@ -7497,7 +7497,7 @@
       "effect": "+3 {attack}, only against the Mastermind or Villains on the Rooftops or Streets."
     }
   ],
-  "smh:peter-s-allies": [
+  "spider-man-homecoming:peter-s-allies": [
     {
       "name": "Michelle",
       "copies": 5,
@@ -7550,7 +7550,7 @@
       "effect": "{spider-friends}: each Villain gets -2 Attack this turn; the next time you fight the Mastermind this turn, it gets -2 Attack."
     }
   ],
-  "smh:peter-parker-homecoming": [
+  "spider-man-homecoming:peter-parker-homecoming": [
     {
       "name": "Avenger in Training",
       "copies": 5,
@@ -7611,7 +7611,7 @@
       "effect": "Danger Sense 4; if it revealed any Scheme Twists, you may shuffle the Villain Deck."
     }
   ],
-  "smh:tony-stark": [
+  "spider-man-homecoming:tony-stark": [
     {
       "name": "Genius, Billionaire ...",
       "copies": 5,
@@ -7667,7 +7667,7 @@
       "effect": "If another player accepts this Coordinate, at end of turn move all cards that entered their Victory pile this turn into yours."
     }
   ],
-  "champ:gwenpool": [
+  "champions:gwenpool": [
     {
       "name": "Come On, Nobody Reads Card Names",
       "copies": 5,
@@ -7724,7 +7724,7 @@
       "effect": "Demolish each other player; draw a card per player who discards."
     }
   ],
-  "champ:ms-marvel": [
+  "champions:ms-marvel": [
     {
       "name": "Long Arm of the Law",
       "copies": 5,
@@ -7784,7 +7784,7 @@
       ]
     }
   ],
-  "champ:nova": [
+  "champions:nova": [
     {
       "name": "Space Cop",
       "copies": 5,
@@ -7843,7 +7843,7 @@
       "effect": "+1 {recruit} per other {recruit}-icon card and +1 {attack} per other {attack}-icon card played this turn."
     }
   ],
-  "champ:totally-awesome-hulk": [
+  "champions:totally-awesome-hulk": [
     {
       "name": "Beloved Behemoth",
       "copies": 5,
@@ -7904,7 +7904,7 @@
       "effect": "+1 {attack} per extra card drawn this turn."
     }
   ],
-  "champ:viv-vision": [
+  "champions:viv-vision": [
     {
       "name": "Walking Wi-Fi",
       "copies": 5,
@@ -7960,7 +7960,7 @@
       "effect": "+2 {attack} each time you recruit a Hero this turn."
     }
   ],
-  "wwh:amadeus-cho": [
+  "world-war-hulk:amadeus-cho": [
     {
       "name": "Extrapolate",
       "copies": 5,
@@ -8014,7 +8014,7 @@
       "effect": "This turn, each Outwit ability you use you may use an extra time.\nOutwit: look at your top card; KO it or put it back."
     }
   ],
-  "wwh:bruce-banner": [
+  "world-war-hulk:bruce-banner": [
     {
       "name": "Solve the Impossible",
       "copies": 5,
@@ -8069,7 +8069,7 @@
       "effect": "Outwit: look at your top three cards; draw one, KO one, put one back."
     }
   ],
-  "wwh:caiera": [
+  "world-war-hulk:caiera": [
     {
       "name": "Shadow Queen",
       "copies": 5,
@@ -8120,7 +8120,7 @@
       "effect": "Double your current {recruit}; if at least 3 Heroes per player are in the KO pile, Transform into Vengeful Destructor."
     }
   ],
-  "wwh:gladiator-hulk": [
+  "world-war-hulk:gladiator-hulk": [
     {
       "name": "Don't Make Me Angry",
       "copies": 5,
@@ -8179,7 +8179,7 @@
       "effect": "Your Smashes give double Attack this turn.\nSmash 3."
     }
   ],
-  "wwh:hiroim": [
+  "world-war-hulk:hiroim": [
     {
       "name": "Seek Redemption",
       "copies": 5,
@@ -8223,7 +8223,7 @@
       "effect": "Choose: rescue three Bystanders, or defeat any Villain or Mastermind with Attack below the number of Bystanders in your Victory pile."
     }
   ],
-  "wwh:hulkbuster-iron-man": [
+  "world-war-hulk:hulkbuster-iron-man": [
     {
       "name": "Pound for Pound",
       "copies": 5,
@@ -8275,7 +8275,7 @@
       "effect": "+2 {attack} per other {tech} or {strength} card played this turn."
     }
   ],
-  "wwh:joe-fixit-grey-hulk": [
+  "world-war-hulk:joe-fixit-grey-hulk": [
     {
       "name": "Carefully Considered Smashing",
       "copies": 5,
@@ -8321,7 +8321,7 @@
       "effect": "You may spend any mix of Recruit and Attack to fight the Mastermind this turn."
     }
   ],
-  "wwh:korg": [
+  "world-war-hulk:korg": [
     {
       "name": "Nothing Beats Rock",
       "copies": 5,
@@ -8372,7 +8372,7 @@
       "effect": "Bottom all HQ cards in random order; +{attack} equal to their total printed Attack."
     }
   ],
-  "wwh:miek-the-unhived": [
+  "world-war-hulk:miek-the-unhived": [
     {
       "name": "This Bug Smashes You",
       "copies": 5,
@@ -8421,7 +8421,7 @@
       "effect": "You may Feast; if a card with an Attack icon was KO'd from your deck this turn, Transform into Hive King Miek."
     }
   ],
-  "wwh:namora": [
+  "world-war-hulk:namora": [
     {
       "name": "Crushing Tsunami",
       "copies": 5,
@@ -8469,7 +8469,7 @@
       "effect": "{covert}: if the Bridge is empty, you may move a Villain there from another space; it gets -3 Attack this turn."
     }
   ],
-  "wwh:no-name-brood-queen": [
+  "world-war-hulk:no-name-brood-queen": [
     {
       "name": "Surprise Attack",
       "copies": 5,
@@ -8516,7 +8516,7 @@
       "effect": "Look at your top card, then Feast up to three times; +2 {attack} per non-grey Hero KO'd from your deck this turn."
     }
   ],
-  "wwh:rick-jones": [
+  "world-war-hulk:rick-jones": [
     {
       "name": "Hacktivist",
       "copies": 5,
@@ -8562,7 +8562,7 @@
       "effect": "If you defeat two Villains this turn, Transform into The Destiny Force and put it on top of your deck."
     }
   ],
-  "wwh:sentry": [
+  "world-war-hulk:sentry": [
     {
       "name": "Agoraphobia",
       "copies": 5,
@@ -8611,7 +8611,7 @@
       "effect": "Reveal the top five Hero Deck cards; +{attack} equal to their total printed Attack; bottom them.\nIf this makes 12 or more Attack, Transform into The Void Mastermind, added at the start of next turn with one random Tactic."
     }
   ],
-  "wwh:she-hulk": [
+  "world-war-hulk:she-hulk": [
     {
       "name": "Hurl Legal Objections",
       "copies": 5,
@@ -8660,7 +8660,7 @@
       "effect": "For every 2 {recruit} made this turn, reveal the top Hero Deck card, bottom it, and gain its printed Attack."
     }
   ],
-  "wwh:skaar-son-of-hulk": [
+  "world-war-hulk:skaar-son-of-hulk": [
     {
       "name": "Anger Management",
       "copies": 5,
@@ -8712,7 +8712,7 @@
       "effect": "Wounded Fury; then you may KO any number of Wounds from hand and/or discard and draw that many."
     }
   ],
-  "msp1:black-widow": [
+  "marvel-studios-phase-1:black-widow": [
     {
       "name": "Dangerous Rescue",
       "copies": 5,
@@ -8757,7 +8757,7 @@
       "effect": "Defeat a Villain or Mastermind that is holding a Bystander."
     }
   ],
-  "msp1:captain-america": [
+  "marvel-studios-phase-1:captain-america": [
     {
       "name": "Avengers Assemble!",
       "copies": 5,
@@ -8806,7 +8806,7 @@
       "effect": "{avengers}: +3 {attack} per other {avengers} Hero played this turn."
     }
   ],
-  "msp1:hawkeye": [
+  "marvel-studios-phase-1:hawkeye": [
     {
       "name": "Quick Draw",
       "copies": 5,
@@ -8853,7 +8853,7 @@
       "effect": "Rescue three Bystanders each time you defeat a Villain or Mastermind this turn."
     }
   ],
-  "msp1:hulk": [
+  "marvel-studios-phase-1:hulk": [
     {
       "name": "Growing Anger",
       "copies": 5,
@@ -8902,7 +8902,7 @@
       "effect": "{strength}: +5 {attack}."
     }
   ],
-  "msp1:iron-man": [
+  "marvel-studios-phase-1:iron-man": [
     {
       "name": "Endless Invention",
       "copies": 5,
@@ -8946,7 +8946,7 @@
       "effect": "Draw two.\n{tech}: draw two more."
     }
   ],
-  "msp1:nick-fury": [
+  "marvel-studios-phase-1:nick-fury": [
     {
       "name": "Battlefield Promotion",
       "copies": 5,
@@ -8990,7 +8990,7 @@
       "effect": "Defeat any Villain or Mastermind with {attack} below the number of {shield} Heroes in the KO pile."
     }
   ],
-  "msp1:thor": [
+  "marvel-studios-phase-1:thor": [
     {
       "name": "Odinson",
       "copies": 5,
@@ -9038,7 +9038,7 @@
       "effect": "You may spend {recruit} as {attack} this turn."
     }
   ],
-  "am:ant-man": [
+  "ant-man:ant-man": [
     {
       "name": "Ride the Ants",
       "copies": 5,
@@ -9097,7 +9097,7 @@
       "effect": "A Hero in the HQ with no Size-Changing abilities gains Size-Changing {tech} this turn."
     }
   ],
-  "am:wasp": [
+  "ant-man:wasp": [
     {
       "name": "Bio-Electric Sting",
       "copies": 5,
@@ -9158,7 +9158,7 @@
       "effect": "{avengers}: +1 {attack} per other {avengers} card played this turn."
     }
   ],
-  "am:jocasta": [
+  "ant-man:jocasta": [
     {
       "name": "Creation of Ultron",
       "copies": 5,
@@ -9208,7 +9208,7 @@
       "effect": "If your discard is empty, +2 {attack}; otherwise shuffle your discard into your deck."
     }
   ],
-  "am:wonder-man": [
+  "ant-man:wonder-man": [
     {
       "name": "One-Hit Wonder",
       "copies": 5,
@@ -9261,7 +9261,7 @@
       "effect": "Bottom any number of HQ cards, then get Empowered by Ranged and Strength."
     }
   ],
-  "am:black-knight": [
+  "ant-man:black-knight": [
     {
       "name": "Amulet of Avalon",
       "copies": 5,
@@ -9591,7 +9591,7 @@
       "effect": "Digest 7: +1 {attack} per two Bystanders in your Victory pile.\nIndigestion: rescue two Bystanders.\n{venomverse} {venomverse}: instead, both."
     }
   ],
-  "dim:howard-the-duck": [
+  "dimensions:howard-the-duck": [
     {
       "name": "Traveling Companion",
       "copies": 5,
@@ -9638,7 +9638,7 @@
       "effect": "Reveal your top three cards; draw one, discard one, KO one."
     }
   ],
-  "dim:jessica-jones": [
+  "dimensions:jessica-jones": [
     {
       "name": "Alter Ego",
       "copies": 5,
@@ -9694,7 +9694,7 @@
       "effect": "{covert}: Investigate the Villain Deck for a Villain; you may put it in your Victory pile and do its Fight effect, otherwise put it back on top or bottom."
     }
   ],
-  "dim:man-thing": [
+  "dimensions:man-thing": [
     {
       "name": "Form from Ooze",
       "copies": 5,
@@ -9748,7 +9748,7 @@
       "effect": "{strength}: +1 {attack} per empty city space."
     }
   ],
-  "dim:ms-america": [
+  "dimensions:ms-america": [
     {
       "name": "Star Power",
       "copies": 5,
@@ -9802,7 +9802,7 @@
       "effect": "+1 {attack} per other card in your hand."
     }
   ],
-  "dim:squirrel-girl": [
+  "dimensions:squirrel-girl": [
     {
       "name": "Find Tiny Friends",
       "copies": 5,
@@ -9858,7 +9858,7 @@
       "effect": "A Hero in your hand gains Switcheroo for a number 1-5.\n{instinct} {instinct}: a number 1-8 instead."
     }
   ],
-  "rev:captain-marvel-agent-of-s-h-i-e-l-d": [
+  "revelations:captain-marvel-agent-of-s-h-i-e-l-d": [
     {
       "name": "The Sword of S.H.I.E.L.D.",
       "copies": 5,
@@ -9907,7 +9907,7 @@
       "effect": "Choose: draw three cards or Last Stand.\n{strength} {strength}: instead, both."
     }
   ],
-  "rev:darkhawk": [
+  "revelations:darkhawk": [
     {
       "name": "Balance the Darkforce",
       "copies": 5,
@@ -9959,7 +9959,7 @@
       "effect": "This turn, your Hyperspeed gives both Recruit and Attack from icons.\nHyperspeed 7.\n{tech} {tech}: Hyperspeed 9 instead."
     }
   ],
-  "rev:hellcat": [
+  "revelations:hellcat": [
     {
       "name": "Catlike Agility",
       "copies": 5,
@@ -10008,7 +10008,7 @@
       "effect": "If a Master Strike or Scheme Twist would occur, you may discard this instead; draw three cards, then shuffle that Strike or Twist back into the Villain Deck."
     }
   ],
-  "rev:photon": [
+  "revelations:photon": [
     {
       "name": "Infrared Conversation",
       "copies": 5,
@@ -10055,7 +10055,7 @@
       "effect": "{avengers} {avengers}: Last Stand."
     }
   ],
-  "rev:quicksilver": [
+  "revelations:quicksilver": [
     {
       "name": "Too Fast to See",
       "copies": 5,
@@ -10110,7 +10110,7 @@
       "effect": "Hyperspeed your entire remaining deck (no reshuffle).\n{avengers} x4: first put your discard on top of your deck."
     }
   ],
-  "rev:ronin": [
+  "revelations:ronin": [
     {
       "name": "Mysterious Identity",
       "copies": 5,
@@ -10165,7 +10165,7 @@
       "effect": "Dark Memories.\n{strength}: Dark Memories again."
     }
   ],
-  "rev:scarlet-witch": [
+  "revelations:scarlet-witch": [
     {
       "name": "Hex Bolt",
       "copies": 5,
@@ -10210,7 +10210,7 @@
       "effect": "Reveal the top three Hero Deck cards; take one to hand, replace the rest on top or bottom in any order.\n{avengers} x3: Dark Memories."
     }
   ],
-  "rev:speed": [
+  "revelations:speed": [
     {
       "name": "Accelerate",
       "copies": 5,
@@ -10261,7 +10261,7 @@
       "effect": "Look at your top six cards; draw two, replace the rest on top or bottom in any order.\n{covert}: Hyperspeed 6."
     }
   ],
-  "rev:war-machine": [
+  "revelations:war-machine": [
     {
       "name": "Simulated Target Practice",
       "copies": 5,
@@ -10312,7 +10312,7 @@
       "effect": "Each time you defeat a Villain or Mastermind this turn, draw a card and rescue a Bystander."
     }
   ],
-  "shl:agent-phil-coulson": [
+  "s-h-i-e-l-d:agent-phil-coulson": [
     {
       "name": "Impeccable Planning",
       "copies": 5,
@@ -10366,7 +10366,7 @@
       "effect": "When another {shield} Hero is KO'd (any turn), you may discard this to send it Undercover into your Victory pile and draw three cards.\nS.H.I.E.L.D. Level 8: +4 {attack}."
     }
   ],
-  "shl:quake": [
+  "s-h-i-e-l-d:quake": [
     {
       "name": "Going Underground",
       "copies": 5,
@@ -10421,7 +10421,7 @@
       "effect": "Send a S.H.I.E.L.D. Officer Undercover; then per S.H.I.E.L.D. Level (up to 5), bottom a chosen HQ Hero and gain their total printed Attack."
     }
   ],
-  "shl:deathlok": [
+  "s-h-i-e-l-d:deathlok": [
     {
       "name": "Authorize Lethal Force",
       "copies": 5,
@@ -10478,7 +10478,7 @@
       "effect": "Send a {shield} Hero from your discard Undercover.\nS.H.I.E.L.D. Level 3: gain the total printed Recruit of the {shield} Heroes in your Victory pile."
     }
   ],
-  "shl:mockingbird": [
+  "s-h-i-e-l-d:mockingbird": [
     {
       "name": "Take Cover",
       "copies": 5,
@@ -10529,7 +10529,7 @@
       "effect": "Draw a card.\nSend two S.H.I.E.L.D. Officers Undercover; then +1 {recruit} and +1 {attack} per 2 S.H.I.E.L.D. Levels."
     }
   ],
-  "hoa:thor": [
+  "heroes-of-asgard:thor": [
     {
       "name": "Test of Virtue",
       "copies": 5,
@@ -10577,7 +10577,7 @@
       "effect": "{heroes-of-asgard}: each Worthy player draws a card; each Villain worth under 5 VP gets -1 Attack this turn."
     }
   ],
-  "hoa:beta-ray-bill": [
+  "heroes-of-asgard:beta-ray-bill": [
     {
       "name": "Hope of the Korbinites",
       "copies": 5,
@@ -10624,7 +10624,7 @@
       "effect": "You may discard a card, then draw a card for each card discarded from hand this turn."
     }
   ],
-  "hoa:valkyrie": [
+  "heroes-of-asgard:valkyrie": [
     {
       "name": "Dragonfang",
       "copies": 5,
@@ -10674,7 +10674,7 @@
       "effect": "Streets Conqueror 1.\n{instinct}: +1 {attack} per 4 Heroes in the KO pile."
     }
   ],
-  "hoa:lady-sif": [
+  "heroes-of-asgard:lady-sif": [
     {
       "name": "Dimensional Blade",
       "copies": 5,
@@ -10724,7 +10724,7 @@
       "effect": "Thrown Artifact - when thrown: +4 {attack} and you may KO a card from hand or discard."
     }
   ],
-  "hoa:the-warriors-three": [
+  "heroes-of-asgard:the-warriors-three": [
     {
       "name": "Fandral the Dashing",
       "copies": 5,
@@ -10772,7 +10772,7 @@
       "effect": "If you played at least three other differently-named non-grey Heroes this turn, +3 {attack}.\n{heroes-of-asgard}: Streets Conqueror 3."
     }
   ],
-  "itc:captain-mar-vell": [
+  "into-the-cosmos:captain-mar-vell": [
     {
       "name": "Cosmic Awareness",
       "copies": 5,
@@ -10825,7 +10825,7 @@
       "effect": "Danger Sense 4; if you gained any Shards earlier this turn, Danger Sense 7 instead."
     }
   ],
-  "itc:quasar": [
+  "into-the-cosmos:quasar": [
     {
       "name": "Manipulate Gravitons",
       "copies": 5,
@@ -10873,7 +10873,7 @@
       "effect": "Gain a Shard each time you defeat a Villain or Mastermind this turn.\nBurn 4 Shards: +7 {attack}."
     }
   ],
-  "itc:adam-warlock": [
+  "into-the-cosmos:adam-warlock": [
     {
       "name": "Transmute Matter",
       "copies": 5,
@@ -10911,7 +10911,7 @@
       "effect": "Gain 4 Shards.\n{avengers} {avengers}: Burn 8 Shards: defeat the Mastermind once, then reveal the top Villain Deck card; if a Master Strike, the Magus Mastermind joins next turn with one random Tactic."
     }
   ],
-  "itc:moondragon": [
+  "into-the-cosmos:moondragon": [
     {
       "name": "Peaceful Meditation",
       "copies": 5,
@@ -10969,7 +10969,7 @@
       "effect": "Danger Sense 1; if it revealed a Scheme Twist, +3 {attack} and you may shuffle the Villain Deck."
     }
   ],
-  "itc:nova": [
+  "into-the-cosmos:nova": [
     {
       "name": "Draw From the Worldmind",
       "copies": 5,
@@ -11013,7 +11013,7 @@
       "effect": "Choose: draw three cards, or a Mastermind gains Cosmic Threat (Ranged) this turn, replacing any prior Cosmic Threat."
     }
   ],
-  "itc:yondu": [
+  "into-the-cosmos:yondu": [
     {
       "name": "Whistling Arrow",
       "copies": 5,
@@ -11063,7 +11063,7 @@
       "effect": "Choose: gain a HQ Hero for free, or gain a Shard per empty city space.\n{guardians-of-the-galaxy} x3: do both."
     }
   ],
-  "itc:phyla-vell": [
+  "into-the-cosmos:phyla-vell": [
     {
       "name": "Channel Cosmic Power",
       "copies": 5,
@@ -11109,7 +11109,7 @@
       "effect": "You may KO a card from hand or discard to gain 2 Shards; then if you have at least 8 Shards, +3 {attack}."
     }
   ],
-  "itc:ronan-the-accuser": [
+  "into-the-cosmos:ronan-the-accuser": [
     {
       "name": "Universal Weapon",
       "copies": 5,
@@ -11159,7 +11159,7 @@
       "effect": "Contest of Champions (Strength): each losing opponent loses a Shard; each winner gains 2 Shards; if the Mastermind wins, a Villain gains 2 Shards."
     }
   ],
-  "itc:nebula": [
+  "into-the-cosmos:nebula": [
     {
       "name": "Ruthless Cyborg",
       "copies": 5,
@@ -11206,7 +11206,7 @@
       "effect": "Each time you take Shards from a Villain, Mastermind or player this turn, +3 {recruit}."
     }
   ],
-  "bp:king-black-panther": [
+  "black-panther:king-black-panther": [
     {
       "name": "Unseen Protector",
       "copies": 5,
@@ -11259,7 +11259,7 @@
       "effect": "{heroes-of-wakanda} Ambush: +1 {attack} per Hero Class you have.\n———\n{heroes-of-wakanda}: gain the Throne's Favor, or spend it for +1 {recruit} and +1 {attack} per Hero Class you have."
     }
   ],
-  "bp:queen-storm-of-wakanda": [
+  "black-panther:queen-storm-of-wakanda": [
     {
       "name": "Hurricane Winds",
       "copies": 5,
@@ -11308,7 +11308,7 @@
       "effect": "Choose up to three HQ Heroes and put them on the bottom of the Hero Deck.\n{heroes-of-wakanda}: gain the Throne's Favor, or spend it to get Empowered by {covert}, then by {ranged}."
     }
   ],
-  "bp:general-okoye": [
+  "black-panther:general-okoye": [
     {
       "name": "To My Last Breath",
       "copies": 5,
@@ -11358,7 +11358,7 @@
       "effect": "{heroes-of-wakanda}: you may KO a S.H.I.E.L.D. Hero or Wound from hand or discard for +2 {attack}."
     }
   ],
-  "bp:princess-shuri": [
+  "black-panther:princess-shuri": [
     {
       "name": "Vibranium Experiments",
       "copies": 5,
@@ -11408,7 +11408,7 @@
       "effect": "{heroes-of-wakanda}: this turn, each card entering the HQ also gains \"Ambush: if you have any cards sharing its colour, +2 {attack}\"."
     }
   ],
-  "bp:white-wolf": [
+  "black-panther:white-wolf": [
     {
       "name": "Cloaking Tech Ambush",
       "copies": 5,
@@ -11456,7 +11456,7 @@
       "effect": "{tech} Ambush: Wound each Villain and the Mastermind.\n———\nIf a Master Strike would occur, you may reveal this to KO that Strike and Wound the Mastermind instead."
     }
   ],
-  "nm:sunspot": [
+  "new-mutants:sunspot": [
     {
       "name": "Absorb Radiation",
       "copies": 5,
@@ -11505,7 +11505,7 @@
       "effect": "Bottom any number of HQ Heroes.\nSunlight: +1 {attack} per even-cost Hero in the HQ."
     }
   ],
-  "nm:wolfsbane": [
+  "new-mutants:wolfsbane": [
     {
       "name": "Wolf Out",
       "copies": 5,
@@ -11552,7 +11552,7 @@
       "effect": "Look at your top three cards; discard any, replace the rest.\nMoonlight: +{attack} equal to the total printed Attack of cards discarded from your deck this turn."
     }
   ],
-  "nm:mirage": [
+  "new-mutants:mirage": [
     {
       "name": "Empathic Link",
       "copies": 5,
@@ -11600,7 +11600,7 @@
       "effect": "+2 {attack} each time an effect discards a card from your hand this turn.\nMoonlight: you may have a Waking Nightmare."
     }
   ],
-  "nm:warlock": [
+  "new-mutants:warlock": [
     {
       "name": "Earthling Choices",
       "copies": 5,
@@ -11646,7 +11646,7 @@
       "effect": "Sunlight: draw three cards.\nMoonlight: +3 {recruit} and +3 {attack}.\n{x-men} x4: instead, both."
     }
   ],
-  "nm:karma": [
+  "new-mutants:karma": [
     {
       "name": "Sow Rivalry",
       "copies": 5,
@@ -11695,7 +11695,7 @@
       "effect": "{x-men}: choose a Villain in the city; +{attack} equal to its VP, usable only against other Villains or the Mastermind."
     }
   ],
-  "rok:black-bolt": [
+  "realm-of-kings:black-bolt": [
     {
       "name": "Break the Silence",
       "copies": 5,
@@ -11744,7 +11744,7 @@
       "effect": "Gain the Throne's Favor, or spend it: choose Speak (take revealed rules-text cards from your top three to hand) or Don't Speak (KO any with no rules text); replace the rest."
     }
   ],
-  "rok:medusa": [
+  "realm-of-kings:medusa": [
     {
       "name": "Queen of the Inhumans",
       "copies": 5,
@@ -11803,7 +11803,7 @@
       "effect": "When Recruited: draw two cards and gain the Throne's Favor.\nOtherwise gain the Throne's Favor, or spend it to draw two cards."
     }
   ],
-  "rok:crystal": [
+  "realm-of-kings:crystal": [
     {
       "name": "Earth, Air, Fire, and Water",
       "copies": 5,
@@ -11856,7 +11856,7 @@
       "effect": "When Recruited: you may gain a Strength/Instinct/Covert/Ranged HQ Hero costing 4 or less.\nOtherwise reveal your top four cards; take one of each of those four classes to hand and replace the rest."
     }
   ],
-  "rok:karnak": [
+  "realm-of-kings:karnak": [
     {
       "name": "Brilliant Strategist",
       "copies": 5,
@@ -11914,7 +11914,7 @@
       "effect": "When Recruited: +4 {attack}.\nEach card you play this turn (including this), you may first use its When Recruited ability."
     }
   ],
-  "rok:gorgon": [
+  "realm-of-kings:gorgon": [
     {
       "name": "Lockjaw, Inhuman's Best Friend",
       "copies": 5,
@@ -11976,7 +11976,7 @@
       "effect": "When Recruited: Bridge Abomination.\nTeleport.\n{inhumans}: Rooftops Abomination."
     }
   ],
-  "anh:fantastic-four-united": [
+  "annihilation:fantastic-four-united": [
     {
       "name": "Thing",
       "copies": 5,
@@ -12037,7 +12037,7 @@
       "effect": "Draw two cards.\nFocus 5 {recruit} -> +7 {attack} against the Mastermind only."
     }
   ],
-  "anh:psi-lord": [
+  "annihilation:psi-lord": [
     {
       "name": "Avert Future Tragedy",
       "copies": 5,
@@ -12096,7 +12096,7 @@
       "effect": "Focus 3 {recruit} -> reveal the top Villain Deck card; if it's a Scheme Twist, +4 {attack} and shuffle the Villain Deck.\n{fantastic-four}{fantastic-four}: Man Out of Time."
     }
   ],
-  "anh:brainstorm": [
+  "annihilation:brainstorm": [
     {
       "name": "Time Loop Experiments",
       "copies": 5,
@@ -12143,7 +12143,7 @@
       "effect": "Use one of Dr. Doom's Mastermind Tactics (each once per game): take another turn; or draw three extra cards at end of turn; or recruit a {tech} or {ranged} Hero free; or each other player draws or discards a card.\nIf all are used, +4 {attack} instead."
     }
   ],
-  "anh:heralds-of-galactus": [
+  "annihilation:heralds-of-galactus": [
     {
       "name": "Silver Surfer",
       "copies": 5,
@@ -12198,7 +12198,7 @@
       "effect": "If you played another Heralds of Galactus Hero this turn, destroy the leftmost city space, defeat any Villain there, and get +2 {attack} per destroyed city space.\nIf this destroys the last city space, you win, Evil wins, and all other players lose."
     }
   ],
-  "anh:super-skrull": [
+  "annihilation:super-skrull": [
     {
       "name": "Stretching Credibility",
       "copies": 5,
@@ -12256,7 +12256,7 @@
       "effect": "Bridge Conqueror 1.\nStreets Conqueror 1.\nYou may gain a Wound; if you do, Rooftops Conqueror 4."
     }
   ],
-  "mcx:multiple-man": [
+  "messiah-complex:multiple-man": [
     {
       "name": "Me, Myself, and I",
       "copies": 4,
@@ -12312,7 +12312,7 @@
       "effect": "Tactical Formation 44: you may KO a card from hand or discard.\n{x-factor}: Clone."
     }
   ],
-  "mcx:shatterstar": [
+  "messiah-complex:shatterstar": [
     {
       "name": "Strive for Greatness",
       "copies": 4,
@@ -12373,7 +12373,7 @@
       "effect": "When Recruited: {x-force}: Clone.\n{ranged}{instinct}: Shatter the Mastermind."
     }
   ],
-  "mcx:stepford-cuckoos": [
+  "messiah-complex:stepford-cuckoos": [
     {
       "name": "Find Mutants with Cerebro",
       "copies": 4,
@@ -12439,7 +12439,7 @@
       "effect": "When Recruited: Clone.\nTactical Formation 223: reveal the top Villain Deck card; if it's a Villain, +2 {attack} and you may fight it this turn; if you fight it, put a Bystander on top of the Villain Deck."
     }
   ],
-  "mcx:m": [
+  "messiah-complex:m": [
     {
       "name": "Uncover Family Secrets",
       "copies": 4,
@@ -12503,7 +12503,7 @@
       "effect": "When Recruited: {x-factor}: Clone.\nTactical Formation 3333: +3 {attack}."
     }
   ],
-  "mcx:strong-guy": [
+  "messiah-complex:strong-guy": [
     {
       "name": "X-Factor Investigation",
       "copies": 5,
@@ -12559,7 +12559,7 @@
       "effect": "Investigate for three different options among: a {strength} card; an X-Factor card; a card costing 4; a card costing 5."
     }
   ],
-  "mcx:warpath": [
+  "messiah-complex:warpath": [
     {
       "name": "Grim Tracker",
       "copies": 5,
@@ -12608,7 +12608,7 @@
       "effect": "+1 {attack} each time you reveal or look at cards from your deck this turn (drawing or discarding doesn't count).\nChoose a cost of 1 or more; Investigate for a card of that cost."
     }
   ],
-  "mcx:siryn": [
+  "messiah-complex:siryn": [
     {
       "name": "Echolocation",
       "copies": 5,
@@ -12658,7 +12658,7 @@
       "effect": "Shatter the Mastermind.\nKO up to two cards from hand and/or discard."
     }
   ],
-  "mcx:rictor": [
+  "messiah-complex:rictor": [
     {
       "name": "Underground Cave-In",
       "copies": 5,
@@ -12708,7 +12708,7 @@
       "effect": "Shatter the Mastermind, or Shatter all Heroes in the HQ."
     }
   ],
-  "dss:doctor-strange": [
+  "doctor-strange-and-the-shadows-of-nightmare:doctor-strange": [
     {
       "name": "Wand of Watoomb",
       "copies": 5,
@@ -12757,7 +12757,7 @@
       "effect": "Ritual Artifact — if you played another Artifact or three other cards of the same Hero Class, you may discard this for +7 {attack}."
     }
   ],
-  "dss:clea": [
+  "doctor-strange-and-the-shadows-of-nightmare:clea": [
     {
       "name": "Prepare Dark Magic",
       "copies": 5,
@@ -12805,7 +12805,7 @@
       "effect": "Ritual Artifact — if any cards were revealed, looked at, or discarded from any deck, you may discard this for +6 {attack} (drawing or playing doesn't count)."
     }
   ],
-  "dss:doctor-voodoo": [
+  "doctor-strange-and-the-shadows-of-nightmare:doctor-voodoo": [
     {
       "name": "Commune with the Spirit World",
       "copies": 5,
@@ -12854,7 +12854,7 @@
       "effect": "The first time one of your Heroes (in play, deck, or discard) is KO'd this turn, +4 {recruit} or +4 {attack}."
     }
   ],
-  "dss:the-ancient-one": [
+  "doctor-strange-and-the-shadows-of-nightmare:the-ancient-one": [
     {
       "name": "Astral Confrontation",
       "copies": 5,
@@ -12900,7 +12900,7 @@
       "effect": "Ritual Artifact — if you fought a Villain or Mastermind, you may set this aside to reveal the top four cards of your deck: KO up to one, take two into your hand, and put the rest back on top in any order; then discard it."
     }
   ],
-  "dss:the-vishanti": [
+  "doctor-strange-and-the-shadows-of-nightmare:the-vishanti": [
     {
       "name": "Oshtur",
       "copies": 5,
@@ -12948,7 +12948,7 @@
       "effect": "Ritual Artifact — if any player gained a Wound, you may set this aside to KO up to one Wound from any player's discard, then draw three cards; then discard it.\nUsable on any player's turn."
     }
   ],
-  "bw:black-widow": [
+  "black-widow:black-widow": [
     {
       "name": "Evasive Acrobatics",
       "copies": 5,
@@ -13005,7 +13005,7 @@
       "effect": "You may send one of your Heroes Undercover.\n+3 {attack} if you have at least 4 Bystanders and/or Undercover Heroes in your Victory Pile."
     }
   ],
-  "bw:yelena-belova": [
+  "black-widow:yelena-belova": [
     {
       "name": "Strike and Fade",
       "copies": 5,
@@ -13054,7 +13054,7 @@
       "effect": "You may Unleash one of your Heroes from Undercover.\nYou may send a Hero from your discard pile Undercover."
     }
   ],
-  "bw:red-guardian": [
+  "black-widow:red-guardian": [
     {
       "name": "Sleeper Agent",
       "copies": 5,
@@ -13114,7 +13114,7 @@
       "effect": "When Recruited: send this Undercover; Unleash it when a Scheme Twist is completed or you play your third {covert} Hero in a turn.\nOn play — {covert}: +2 {attack} per other {covert} Hero you played this turn."
     }
   ],
-  "bw:white-tiger": [
+  "black-widow:white-tiger": [
     {
       "name": "Amulets of the Tiger God",
       "copies": 5,
@@ -13168,7 +13168,7 @@
       "effect": "Dark Memories, drawing that many cards instead of gaining Attack."
     }
   ],
-  "bw:falcon-winter-soldier": [
+  "black-widow:falcon-winter-soldier": [
     {
       "name": "Attune/Atone",
       "copies": 5,
@@ -13231,7 +13231,7 @@
       "effect": "+1 {attack} per Hero Class you have.\n{avengers}: Dark Memories."
     }
   ],
-  "msg:star-lord": [
+  "marvel-studios-guardians-of-the-galaxy:star-lord": [
     {
       "name": "Starship Sensors",
       "copies": 3,
@@ -13309,7 +13309,7 @@
       "effect": "Triggered Artifact — the first time you play an Artifact each turn (including this one), +3 {attack}."
     }
   ],
-  "msg:gamora": [
+  "marvel-studios-guardians-of-the-galaxy:gamora": [
     {
       "name": "Sharpen Blades",
       "copies": 3,
@@ -13381,7 +13381,7 @@
       "effect": "If you drew at least two cards this turn, +2 {attack}."
     }
   ],
-  "msg:rocket-groot": [
+  "marvel-studios-guardians-of-the-galaxy:rocket-groot": [
     {
       "name": "Baby Groot",
       "copies": 3,
@@ -13470,7 +13470,7 @@
       "effect": "Reveal your hand; +1 {attack} per different card name in it (each Divided card counts as two names)."
     }
   ],
-  "msg:drax": [
+  "marvel-studios-guardians-of-the-galaxy:drax": [
     {
       "name": "Nothing Goes Over My Head",
       "copies": 3,
@@ -13557,7 +13557,7 @@
       "effect": "Double your Attack.\nExcessive Violence: you may KO a Villain from your Victory Pile to use its Fight effect."
     }
   ],
-  "msg:mantis": [
+  "marvel-studios-guardians-of-the-galaxy:mantis": [
     {
       "name": "Empathic Bond",
       "copies": 3,
@@ -13642,7 +13642,7 @@
       "effect": "Excessive Kindness: +{attack} equal to the cost of the Hero you recruited this way."
     }
   ],
-  "wif:apocalyptic-black-widow": [
+  "marvel-studios-what-if:apocalyptic-black-widow": [
     {
       "name": "Humanity's Final Hope",
       "copies": 3,
@@ -13718,7 +13718,7 @@
       "effect": "Liberate equal to the number of Bystanders in your Victory Pile."
     }
   ],
-  "wif:captain-carter": [
+  "marvel-studios-what-if:captain-carter": [
     {
       "name": "Super Soldier Serum",
       "copies": 3,
@@ -13790,7 +13790,7 @@
       "effect": "+1 {recruit} per different printed Recruit number, and +1 {attack} per different printed Attack number, among all your Heroes."
     }
   ],
-  "wif:doctor-strange-supreme": [
+  "marvel-studios-what-if:doctor-strange-supreme": [
     {
       "name": "Seize Infernal Power",
       "copies": 3,
@@ -13872,7 +13872,7 @@
       "effect": "{instinct} Soulbind: draw cards equal to that Villain's printed VP."
     }
   ],
-  "wif:gamora-destroyer-of-thanos": [
+  "marvel-studios-what-if:gamora-destroyer-of-thanos": [
     {
       "name": "Assassin's Stealth",
       "copies": 3,
@@ -13946,7 +13946,7 @@
       "effect": "{guardians-of-the-galaxy} Soulbind six Villains: +∞ {attack}, usable only for a single fight."
     }
   ],
-  "wif:killmonger-spec-ops": [
+  "marvel-studios-what-if:killmonger-spec-ops": [
     {
       "name": "Hunt New Prey",
       "copies": 3,
@@ -14021,7 +14021,7 @@
       "effect": "+1 {attack} per different Villain Group in your Victory Pile.\n{strength}: Liberate 2 for each Mastermind Tactic in your Victory Pile."
     }
   ],
-  "wif:party-thor": [
+  "marvel-studios-what-if:party-thor": [
     {
       "name": "Forecast Says Thunder",
       "copies": 3,
@@ -14092,7 +14092,7 @@
       "effect": "Whenever you recruit a Hero costing 5 or more this turn, +{attack} equal to that Hero's cost."
     }
   ],
-  "wif:star-lord-tchalla": [
+  "marvel-studios-what-if:star-lord-tchalla": [
     {
       "name": "Fight or Flight",
       "copies": 3,
@@ -14170,7 +14170,7 @@
       "effect": "Choose any number of Heroes in the HQ and put them on the bottom of the Hero Deck.\nYou get Empowered by multicolored cards."
     }
   ],
-  "wif:uatu-the-watcher": [
+  "marvel-studios-what-if:uatu-the-watcher": [
     {
       "name": "Diverging Timestreams",
       "copies": 3,
@@ -14246,7 +14246,7 @@
       "effect": "What If...?: choose a Team; you are Empowered by that Team."
     }
   ],
-  "y99:doctor-doom-2099": [
+  "2099:doctor-doom-2099": [
     {
       "name": "Doomblast",
       "copies": 5,
@@ -14301,7 +14301,7 @@
       "effect": "You may send a card from hand or discard Undercover.\nFated Future.\nCyber-Mod {ranged}{ranged}: if you haven't taken any extra turns this game, you may take another turn after this one (skip the Villain Deck card at its start)."
     }
   ],
-  "y99:ghost-rider-2099": [
+  "2099:ghost-rider-2099": [
     {
       "name": "Cyber-Specter",
       "copies": 5,
@@ -14360,7 +14360,7 @@
       "effect": "You may send a card from the HQ Undercover.\nCyber-Mod {tech}: Fated Future and +1 {attack} per {tech} card in your Victory Pile."
     }
   ],
-  "y99:hulk-2099": [
+  "2099:hulk-2099": [
     {
       "name": "Rage Incarnate",
       "copies": 5,
@@ -14415,7 +14415,7 @@
       "effect": "For each player, either send a Wound from that player's discard Undercover into your Victory Pile, or that player gains a Wound.\nCyber-Mod Wound: +1 {attack} per Wound in your Victory Pile."
     }
   ],
-  "y99:ravage-2099": [
+  "2099:ravage-2099": [
     {
       "name": "Down in the Dregs",
       "copies": 5,
@@ -14463,7 +14463,7 @@
       "effect": "Reveal the top card of your deck; +{attack} equal to its cost; discard it or put it back.\n{marvel-knights}: do the same with the bottom card of your deck."
     }
   ],
-  "y99:spider-man-2099": [
+  "2099:spider-man-2099": [
     {
       "name": "Retractable Talons",
       "copies": 5,
@@ -14515,7 +14515,7 @@
       "effect": "Reveal the top three cards of the Hero Deck; you may send one Undercover; put the rest back in any order.\n{spider-friends}: you may play a copy of the card you sent Undercover this way."
     }
   ],
-  "amw:ant-army": [
+  "ant-man-and-the-wasp:ant-army": [
     {
       "name": "Antagonize",
       "copies": 3,
@@ -14610,7 +14610,7 @@
       "effect": "Antics: +2 {attack}.\nHeist: +2 {attack}; if the revealed Villain Deck card is a Scheme Twist, +2 {attack} more and you may shuffle that deck."
     }
   ],
-  "amw:ant-man": [
+  "ant-man-and-the-wasp:ant-man": [
     {
       "name": "Hitch a Ride",
       "copies": 3,
@@ -14701,7 +14701,7 @@
       "effect": "+1 {attack} per card you played this turn that's {strength} and/or has Size-Changing."
     }
   ],
-  "amw:cassie-lang": [
+  "ant-man-and-the-wasp:cassie-lang": [
     {
       "name": "Colossal Stomp",
       "copies": 3,
@@ -14788,7 +14788,7 @@
       "effect": "+1 {attack} per Villain worth 2 VP or less in your Victory Pile."
     }
   ],
-  "amw:freedom-fighters": [
+  "ant-man-and-the-wasp:freedom-fighters": [
     {
       "name": "Mystics",
       "copies": 3,
@@ -14862,7 +14862,7 @@
       "effect": "Explore.\n{instinct}: you may choose a player to gain the Found Hero."
     }
   ],
-  "amw:janet-van-dyne": [
+  "ant-man-and-the-wasp:janet-van-dyne": [
     {
       "name": "Prepare for War",
       "copies": 3,
@@ -14944,7 +14944,7 @@
       "effect": "Explore.\n{covert}: +{recruit} equal to the Found Hero's printed Recruit and +{attack} equal to its printed Attack."
     }
   ],
-  "amw:jentorra": [
+  "ant-man-and-the-wasp:jentorra": [
     {
       "name": "Hit and Run",
       "copies": 3,
@@ -15016,7 +15016,7 @@
       "effect": "Bridge Conqueror 1.\n+1 {attack} per Villain worth 4 VP or more and per Mastermind Tactic in your Victory Pile."
     }
   ],
-  "amw:scott-lang-cat-burglar": [
+  "ant-man-and-the-wasp:scott-lang-cat-burglar": [
     {
       "name": "Petty Larceny",
       "copies": 3,
@@ -15106,7 +15106,7 @@
       "effect": "Heist: +4 {attack}; if the revealed Villain Deck card is a Master Strike, KO it and put a Bystander on top of the Villain Deck."
     }
   ],
-  "amw:wasp": [
+  "ant-man-and-the-wasp:wasp": [
     {
       "name": "Flitting Sting",
       "copies": 3,
@@ -15199,7 +15199,7 @@
       "effect": "+1 {recruit} per other card you have with a \"+\" in its Recruit icon, and +1 {attack} per other card with a \"+\" in its Attack icon."
     }
   ],
-  "mds:blade-daywalker": [
+  "midnight-sons:blade-daywalker": [
     {
       "name": "Where Monsters Lurk",
       "copies": 5,
@@ -15254,7 +15254,7 @@
       "effect": "Sunlight: +2 {attack} and you may put a Hero from the HQ on the bottom of the Hero Deck.\nMoonlight: Blood Frenzy."
     }
   ],
-  "mds:elsa-bloodstone": [
+  "midnight-sons:elsa-bloodstone": [
     {
       "name": "Axe of the Slayer",
       "copies": 5,
@@ -15312,7 +15312,7 @@
       "effect": "Patrol any city space: if empty, get the printed Recruit and Attack of the Hero in the HQ space beneath it.\n{marvel-knights}{marvel-knights}: Blood Frenzy."
     }
   ],
-  "mds:morbius": [
+  "midnight-sons:morbius": [
     {
       "name": "Mesmerize",
       "copies": 5,
@@ -15361,7 +15361,7 @@
       "effect": "{covert}: Blood Frenzy, drawing that many cards instead of gaining Attack."
     }
   ],
-  "mds:werewolf-by-night": [
+  "midnight-sons:werewolf-by-night": [
     {
       "name": "Starlit Path",
       "copies": 5,
@@ -15410,7 +15410,7 @@
       "effect": "Moonlight: whenever you defeat a Villain or Mastermind this turn, you may rescue a Bystander or gain a Hero from the HQ or Sidekick Deck costing less than that enemy's Attack.\n{instinct}: +2 {attack}."
     }
   ],
-  "mds:wong-master-of-the-mystic-arts": [
+  "midnight-sons:wong-master-of-the-mystic-arts": [
     {
       "name": "Bridge Between Dimensions",
       "copies": 5,
@@ -15465,7 +15465,7 @@
       "effect": "Once this turn, you may fight the top Bystander as a 4-Attack \"Darkhold Demon\" Villain with Fight: KO up to two of your Heroes, then rescue it as a Bystander.\nSunlight: +2 {attack}."
     }
   ],
-  "wpx:fantomex": [
+  "weapon-x:fantomex": [
     {
       "name": "Sentient Bullets",
       "copies": 5,
@@ -15526,7 +15526,7 @@
       "effect": "{tech}: you may KO one of your cards that shares a cost with another of your cards."
     }
   ],
-  "wpx:marrow": [
+  "weapon-x:marrow": [
     {
       "name": "Bone Shards",
       "copies": 5,
@@ -15578,7 +15578,7 @@
       "effect": "Reveal the top six cards of your deck; discard all costing 0 and put the rest back in any order."
     }
   ],
-  "wpx:weapon-h": [
+  "weapon-x:weapon-h": [
     {
       "name": "Evolving Abilities",
       "copies": 5,
@@ -15634,7 +15634,7 @@
       "effect": "{strength}: using the Wound Deck, Berserk six times, putting those discarded Wounds on the bottom of the Wound Deck."
     }
   ],
-  "wpx:weapon-x-wolverine": [
+  "weapon-x:weapon-x-wolverine": [
     {
       "name": "Infuse Skeleton with Adamantium",
       "copies": 5,

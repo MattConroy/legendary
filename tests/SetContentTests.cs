@@ -35,8 +35,8 @@ public class SetContentTests
             Assert.Empty(ff.Henchmen);
             Assert.Equal(5, ff.Heroes.Count);
 
-            Assert.Equal("ff:heralds-of-galactus", ff.Masterminds.Single(m => m.Name == "Galactus").AlwaysLeadsGroupId);
-            Assert.Equal("ff:subterranea", ff.Masterminds.Single(m => m.Name == "Mole Man").AlwaysLeadsGroupId);
+            Assert.Equal("fantastic-four:heralds-of-galactus", ff.Masterminds.Single(m => m.Name == "Galactus").AlwaysLeadsGroupId);
+            Assert.Equal("fantastic-four:subterranea", ff.Masterminds.Single(m => m.Name == "Mole Man").AlwaysLeadsGroupId);
         }
 
         [Fact]
@@ -49,8 +49,8 @@ public class SetContentTests
             Assert.Empty(g.Henchmen);
             Assert.Equal(5, g.Heroes.Count);
 
-            Assert.Equal("gotg:kree-starforce", g.Masterminds.Single(m => m.Name.StartsWith("Supreme")).AlwaysLeadsGroupId);
-            Assert.Equal("gotg:infinity-gems", g.Masterminds.Single(m => m.Name == "Thanos").AlwaysLeadsGroupId);
+            Assert.Equal("guardians-of-the-galaxy:kree-starforce", g.Masterminds.Single(m => m.Name.StartsWith("Supreme")).AlwaysLeadsGroupId);
+            Assert.Equal("guardians-of-the-galaxy:infinity-gems", g.Masterminds.Single(m => m.Name == "Thanos").AlwaysLeadsGroupId);
         }
 
         [Fact]
@@ -63,8 +63,8 @@ public class SetContentTests
             Assert.Empty(p.Henchmen);
             Assert.Equal(5, p.Heroes.Count);
 
-            Assert.Equal("ptr:maximum-carnage", p.Masterminds.Single(m => m.Name == "Carnage").AlwaysLeadsGroupId);
-            Assert.Equal("ptr:sinister-six", p.Masterminds.Single(m => m.Name == "Mysterio").AlwaysLeadsGroupId);
+            Assert.Equal("paint-the-town-red:maximum-carnage", p.Masterminds.Single(m => m.Name == "Carnage").AlwaysLeadsGroupId);
+            Assert.Equal("paint-the-town-red:sinister-six", p.Masterminds.Single(m => m.Name == "Mysterio").AlwaysLeadsGroupId);
         }
 
         [Fact]
@@ -93,7 +93,7 @@ public class SetContentTests
             Assert.Equal(6, s.VillainGroups.Count);
             Assert.Equal(3, s.Henchmen.Count);
             Assert.Equal(14, s.Heroes.Count);
-            Assert.Equal("sw1:the-deadlands", s.Masterminds.Single(m => m.Name == "Zombie Green Goblin").AlwaysLeadsGroupId);
+            Assert.Equal("secret-wars-vol-1:the-deadlands", s.Masterminds.Single(m => m.Name == "Zombie Green Goblin").AlwaysLeadsGroupId);
         }
 
         [Fact]
@@ -107,7 +107,7 @@ public class SetContentTests
             Assert.Equal(16, s.Heroes.Count);
 
             // Spider-Queen leads a Backup-Adversary (Henchman) group, like Odin leads Asgardian Warriors.
-            Assert.Equal("sw2:spider-infected", s.Masterminds.Single(m => m.Name == "Spider-Queen").AlwaysLeadsGroupId);
+            Assert.Equal("secret-wars-vol-2:spider-infected", s.Masterminds.Single(m => m.Name == "Spider-Queen").AlwaysLeadsGroupId);
         }
 
         [Fact]
@@ -165,7 +165,7 @@ public class SetContentTests
             // Hank Pym leads "Any Villain Group" — no forced group.
             Assert.Null(w.Masterminds.Single(m => m.Name == "Hank Pym, Yellowjacket").AlwaysLeadsGroupId);
             // Two masterminds are led by Henchmen groups from this box.
-            Assert.Equal("wif:ultron-sentries", w.Masterminds.Single(m => m.Name == "Ultron Infinity").AlwaysLeadsGroupId);
+            Assert.Equal("marvel-studios-what-if:ultron-sentries", w.Masterminds.Single(m => m.Name == "Ultron Infinity").AlwaysLeadsGroupId);
             Assert.Contains(w.Heroes, h => h.Name == "Captain Carter" && h.Team == "Guardians of the Multiverse");
         }
 
@@ -176,7 +176,7 @@ public class SetContentTests
             Assert.Empty(dim.Schemes);
             Assert.Empty(dim.VillainGroups);
             // Its Mastermind leads a Backup-Adversary (Henchman) group.
-            Assert.Equal("dim:spider-slayer", dim.Masterminds.Single().AlwaysLeadsGroupId);
+            Assert.Equal("dimensions:spider-slayer", dim.Masterminds.Single().AlwaysLeadsGroupId);
         }
     }
 

@@ -3,20 +3,19 @@ using Legendary.Companion.Models;
 namespace Legendary.Companion;
 
 /// <summary>
-/// Builds deep-links into the Cards page. A card links by its category and name,
-/// which is enough to land on it; callers that know the card's set (e.g. the Sets
-/// list) can pass it to also preselect the set filter. Card-id prefixes are *not* a
-/// reliable set id (e.g. "dc:" belongs to "dark-city"), so we never derive it.
+/// Builds deep-links into the Cards page. Card ids are prefixed with their set id
+/// (e.g. "dark-city:bishop"), so a single card links to its set + category + name
+/// and lands on exactly that entry; a whole set links with just the set preselected.
 /// </summary>
 public static class CardLink
 {
-    /// <summary>Cards page filtered to a card by category and name, optionally within a set.</summary>
-    public static string To(GameCard card, string? setId = null)
+    /// <summary>Cards page filtered to a single card (its set, category and name).</summary>
+    public static string To(GameCard card)
     {
         var query = new Dictionary<string, string?>
         {
             ["category"] = card.Category.ToString(),
-            ["set"] = setId,
+            ["set"] = SetIdOf(card.Id),
             ["search"] = card.Name,
         };
         return "cards" + QueryString(query);
@@ -25,6 +24,13 @@ public static class CardLink
     /// <summary>Cards page with a whole set preselected.</summary>
     public static string ToSet(string setId) =>
         "cards" + QueryString(new Dictionary<string, string?> { ["set"] = setId });
+
+    /// <summary>The set a card belongs to, taken from its id prefix.</summary>
+    private static string? SetIdOf(string cardId)
+    {
+        var i = cardId.IndexOf(':');
+        return i < 0 ? null : cardId[..i];
+    }
 
     private static string QueryString(Dictionary<string, string?> parameters)
     {

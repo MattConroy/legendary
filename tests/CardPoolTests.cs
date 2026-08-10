@@ -17,8 +17,8 @@ public class CardPoolTests
         public void Excludes_cards_from_sets_outside_the_pool()
         {
             // A Dark City card is present in the full pool but not in a Core-only pool.
-            Assert.Contains(AllPool().Heroes, h => h.Id == "dc:bishop");
-            Assert.DoesNotContain(CorePool().Heroes, h => h.Id == "dc:bishop");
+            Assert.Contains(AllPool().Heroes, h => h.Id == "dark-city:bishop");
+            Assert.DoesNotContain(CorePool().Heroes, h => h.Id == "dark-city:bishop");
         }
 
         [Fact]
