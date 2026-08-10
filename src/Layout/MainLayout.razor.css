@@ -37,14 +37,30 @@
 
 /* The only scrolling region; its scrollbar sits between the two bars (transient
    overlay, as the browser draws it). */
+/* A thin dark scrollbar. Safari won't theme an inner scroll container's scrollbar
+   from color-scheme (only the document's), so it's styled explicitly here; that
+   makes it always-visible rather than transient, which is the accepted trade-off
+   for keeping the scroll contained between the header and nav. Firefox uses the
+   standard properties; WebKit/Blink use the pseudo-elements. */
 .app-main {
     flex: 1 1 auto;
     overflow-y: auto;
     padding: 18px 16px 24px;
-    /* Keep the scrollbar dark-themed on the scroll element itself (some browsers
-       read color-scheme from the scrolling element, not just the root). */
     color-scheme: dark;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
 }
+.app-main::-webkit-scrollbar { width: 12px; }
+.app-main::-webkit-scrollbar-track { background: transparent; }
+.app-main::-webkit-scrollbar-thumb {
+    /* The transparent border + padding-box clip insets the thumb, so it reads as a
+       slim rounded bar with breathing room rather than a full-width block. */
+    background: var(--border);
+    border-radius: 999px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+.app-main::-webkit-scrollbar-thumb:hover { background: var(--muted); background-clip: padding-box; }
 
 .app-nav {
     flex: 0 0 auto;
