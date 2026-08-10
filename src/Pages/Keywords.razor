@@ -34,17 +34,17 @@
         }
         else
         {
-            <ul class="keyword-list">
+            <ul class="list">
                 @foreach (var k in results)
                 {
-                    <li class="keyword">
-                        <div class="keyword__name">@k.Name</div>
-                        <div class="keyword__def">@k.Summary</div>
+                    <li class="item">
+                        <div class="name">@k.Name</div>
+                        <div class="def">@k.Summary</div>
                         @if (k.HasFullRules)
                         {
-                            <details class="keyword__rules">
+                            <details class="rules">
                                 <summary>Full rules</summary>
-                                <ul class="keyword__rules-list">
+                                <ul class="rules-list">
                                     @foreach (var line in k.Rules)
                                     {
                                         <li>@line</li>
@@ -52,10 +52,10 @@
                                 </ul>
                             </details>
                         }
-                        <ul class="tag-list keyword__sets">
+                        <ul class="tag-list sets">
                             @foreach (var sid in k.Sets.OrderBy(SetOrder))
                             {
-                                <li class="tag keyword__set">@SetName(sid)</li>
+                                <li class="tag set">@SetName(sid)</li>
                             }
                         </ul>
                     </li>

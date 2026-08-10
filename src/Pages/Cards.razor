@@ -19,7 +19,7 @@
         <div class="tabs" role="tablist" aria-label="Card type">
             @foreach (var (value, label) in Categories)
             {
-                <button class="tab @(_category == value ? "tab--active" : "")" role="tab"
+                <button class="@(_category == value ? "active" : "")" role="tab"
                         aria-selected="@(_category == value)" @onclick="() => SetCategory(value)">
                     @label
                 </button>
@@ -40,7 +40,7 @@
         }
         else
         {
-            <ul class="card-entry-list">
+            <ul class="list">
                 <Virtualize Items="results" Context="entry" OverscanCount="6">
                     @{
                         var card = entry.Card;
