@@ -1,12 +1,21 @@
-/* Per-card threat pill (Mastermind anchor level, Scheme ± modifier). */
-.threat-pill {
-    display: inline-flex; align-items: center; gap: 6px; align-self: flex-start;
-    padding: 2px 9px; border-radius: 999px; margin-top: 2px;
-    border: 1px solid var(--accent); background: var(--threat-pill-bg); font-weight: 800;
+/* One element only, and scoped to this component, so target the tag and vary the
+   accent by the data-band attribute. */
+span {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 2px;
+    padding: 2px 9px;
+    border-radius: 999px;
+    border: 1px solid var(--accent);
+    background: var(--accent-tint);
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 
-    &.threat-pill--easy   { --accent: #35c26b; --threat-pill-bg: rgba(53, 194, 107, 0.12); }
-    &.threat-pill--medium { --accent: var(--gold); --threat-pill-bg: rgba(240, 180, 41, 0.12); }
-    &.threat-pill--hard   { --accent: var(--marvel); --threat-pill-bg: rgba(230, 36, 41, 0.13); }
-
-    .threat-pill__value { color: var(--accent); text-transform: uppercase; letter-spacing: 0.3px; font-size: 0.74rem; }
+    &[data-band="easy"]   { --accent: #35c26b;      --accent-tint: rgba(53, 194, 107, 0.12); }
+    &[data-band="medium"] { --accent: var(--gold);  --accent-tint: rgba(240, 180, 41, 0.12); }
+    &[data-band="hard"]   { --accent: var(--marvel); --accent-tint: rgba(230, 36, 41, 0.13); }
 }

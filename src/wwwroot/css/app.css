@@ -615,8 +615,8 @@ a.tag:hover, a.tag:focus-visible { border-color: var(--gold); color: #fff; }
 .card-entry-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 /* Keyword-chip list under a card header (rendered by KeywordChips, so it can't be
    scoped to CardEntry). */
-.card-entry__keywords { margin: 0 12px 10px; }
+.entry-keywords { margin: 0 12px 10px; }
 
 /* Keyword-chip lists inside a card (rendered by KeywordChips; margins live here
    because the component is placement-agnostic). */
-.deck__keywords { margin: 0 0 2px 26px; }
+.deck-keywords { margin: 0 0 2px 26px; }

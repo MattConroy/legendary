@@ -1,10 +1,11 @@
-.filter-bar {
+/* Scoped to this component, so the tags can be targeted directly. */
+div {
     display: flex;
     gap: 10px;
     margin: 4px 0 6px;
     flex-wrap: wrap;
 }
-.filter-bar__search, .filter-bar__select {
+input, select {
     background: var(--surface);
     border: 1px solid var(--border);
     color: var(--text);
@@ -14,5 +15,5 @@
 
     &:focus { outline: none; border-color: var(--gold); }
 }
-.filter-bar__search { flex: 1 1 180px; min-width: 0; }
-.filter-bar__select { flex: 0 1 auto; max-width: 100%; }
+input { flex: 1 1 180px; min-width: 0; }
+select { flex: 0 1 auto; max-width: 100%; }

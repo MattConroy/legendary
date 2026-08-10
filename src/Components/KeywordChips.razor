@@ -16,6 +16,6 @@
     /// optional tooltip.</summary>
     [Parameter, EditorRequired] public IEnumerable<(string Label, string Query, string? Title)> Items { get; set; } = [];
 
-    /// <summary>Extra class on the list for placement (e.g. "deck__keywords", "card-entry__keywords").</summary>
+    /// <summary>Extra class on the list for placement (e.g. "deck-keywords", "entry-keywords").</summary>
     [Parameter] public string? Class { get; set; }
 }

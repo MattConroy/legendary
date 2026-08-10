@@ -1,9 +1,8 @@
-@* A small pill showing a threat band (Easy/Medium/Hard): the Mastermind's anchor
-   level on the Home page and the Cards browser, and a Scheme's ± modifier. *@
+@* Threat band pill (Easy/Medium/Hard): the Mastermind's anchor level on the Home
+   page and Cards browser, and a Scheme's ± modifier. Single element — the scoped
+   styles target the tag and vary by the data-band attribute. *@
 
-<span class="threat-pill threat-pill--@Band.ToString().ToLowerInvariant()" title="@Title">
-    <span class="threat-pill__value">@Band</span>
-</span>
+<span data-band="@Band.ToString().ToLowerInvariant()" title="@Title">@Band</span>
 
 @code {
     [Parameter, EditorRequired] public DifficultyBand Band { get; set; }
