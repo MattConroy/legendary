@@ -82,6 +82,14 @@
     </div>
     <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
     <script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>
+    <script>
+        // The content region (.app-main) is what scrolls, so a page change has to
+        // reset its scroll — the browser only does that for full-window scrolling.
+        window.scrollMainToTop = function () {
+            var main = document.querySelector('.app-main');
+            if (main) main.scrollTop = 0;
+        };
+    </script>
 </body>
 
 </html>

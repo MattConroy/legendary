@@ -1,4 +1,7 @@
 @inherits LayoutComponentBase
+@implements IDisposable
+@inject NavigationManager Nav
+@inject IJSRuntime JS
 
 <div class="app-shell">
     <header class="app-header">
@@ -35,3 +38,28 @@
         </NavLink>
     </nav>
 </div>
+
+@code {
+    private string? _lastPath;
+
+    protected override void OnInitialized()
+    {
+        _lastPath = PathOf(Nav.Uri);
+        Nav.LocationChanged += OnLocationChanged;
+    }
+
+    // Reset the content scroll on a real page change, but not when a page only
+    // rewrites its own query string (e.g. the Cards filters syncing to the URL),
+    // so filtering doesn't yank you back to the top.
+    private async void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        var path = PathOf(e.Location);
+        if (path == _lastPath) return;
+        _lastPath = path;
+        await JS.InvokeVoidAsync("scrollMainToTop");
+    }
+
+    private static string PathOf(string uri) => new Uri(uri, UriKind.Absolute).AbsolutePath;
+
+    public void Dispose() => Nav.LocationChanged -= OnLocationChanged;
+}
