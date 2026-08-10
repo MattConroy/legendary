@@ -28,6 +28,9 @@ html, body {
     padding: 0;
     background: var(--bg);
     color: var(--text);
+    /* Dark UA controls — including the scrollbar on the inner scroll container,
+       which follows the CSS property rather than the color-scheme meta tag. */
+    color-scheme: dark;
     font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
