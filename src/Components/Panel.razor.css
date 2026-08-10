@@ -1,0 +1,13 @@
+.panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+
+    &.disclaimer { border-left: 4px solid var(--marvel); }
+}
+.title { font-size: 1.05rem; color: #fff; margin-bottom: 6px; }
+/* The disclaimer body text is child content, so reach it with ::deep. */
+.panel.disclaimer ::deep p { line-height: 1.55; }

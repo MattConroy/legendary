@@ -7,14 +7,13 @@
 <div class="settings">
     <h1 class="page-title">Sets &amp; Options</h1>
 
-    <section class="panel">
-        <h2 class="panel__title">Default player count</h2>
+    <Panel Title="Default player count">
         <PlayerCountPicker Selected="State.DefaultPlayers" OnSelect="n => State.SetDefaultPlayersAsync(n)" />
-    </section>
+    </Panel>
 
-    <section class="panel">
+    <Panel>
         <div class="sets-head">
-            <h2 class="panel__title">Content sets</h2>
+            <h2>Content sets</h2>
             <div class="sort" role="group" aria-label="Sort sets">
                 <span class="label">Sort</span>
                 <button class="@(State.Sort == SetSort.Name ? "active" : "")"
@@ -49,11 +48,11 @@
                         OnPlayChanged="enabled => State.SetEnabledAsync(set.Id, enabled)" />
             }
         </ul>
-    </section>
+    </Panel>
 
-    <section class="panel">
+    <Panel>
         <p class="muted small">Unofficial fan app. <a href="about">Disclaimer &amp; setup reference →</a></p>
-    </section>
+    </Panel>
 </div>
 
 @code {

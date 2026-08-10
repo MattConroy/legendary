@@ -1,0 +1,16 @@
+@* A titled content panel used on the Settings and About pages. *@
+
+<section class="panel @(Disclaimer ? "disclaimer" : "")">
+    @if (!string.IsNullOrEmpty(Title))
+    {
+        <h2 class="title">@Title</h2>
+    }
+    @ChildContent
+</section>
+
+@code {
+    [Parameter] public string? Title { get; set; }
+    /// <summary>Adds the disclaimer accent (red left border).</summary>
+    [Parameter] public bool Disclaimer { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}
