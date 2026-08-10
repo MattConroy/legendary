@@ -1,0 +1,33 @@
+.button {
+    border: none;
+    border-radius: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    padding: 12px 18px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+
+    &.button--primary { background: var(--marvel); }
+    &.button--primary:hover { background: var(--marvel-dark); }
+
+    &.button--hero {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 18px;
+        font-size: 1.2rem;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        background: linear-gradient(135deg, var(--marvel), var(--marvel-dark));
+        box-shadow: 0 8px 24px rgba(230, 36, 41, 0.45);
+        transition: transform 0.08s ease, box-shadow 0.15s ease;
+
+        &:active { transform: translateY(2px) scale(0.99); }
+        &:disabled { opacity: 0.5; filter: grayscale(0.6); cursor: not-allowed; box-shadow: none; }
+    }
+}

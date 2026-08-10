@@ -51,37 +51,9 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
     overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 
-.button {
-    border: none;
-    border-radius: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    color: #fff;
-    padding: 12px 18px;
-    font-size: 1rem;
-}
-
-.button--primary { background: var(--marvel); }
-.button--primary:hover { background: var(--marvel-dark); }
-
-
-
-
 .tag__name { color: #fff; }
 .team-icon { width: 18px; height: 18px; flex: 0 0 auto; display: block; object-fit: contain; }
 .tag__meta { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
-
-.badge {
-    font-size: 0.62rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #1a1400;
-    background: var(--gold);
-    padding: 3px 7px;
-    border-radius: 999px;
-}
-.badge--muted { color: var(--bg); background: var(--muted); }
 
 .page-title { font-size: 1.6rem; margin-bottom: 14px; color: #fff; }
 
@@ -101,49 +73,6 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 /* Keyword chips that link to the glossary. */
 a.tag { text-decoration: none; cursor: pointer; transition: border-color 0.15s, color 0.15s; }
 a.tag:hover, a.tag:focus-visible { border-color: var(--gold); color: #fff; }
-
-.pill {
-    flex: 0 0 auto;
-    font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
-    padding: 2px 7px; border-radius: 999px;
-}
-.pill--standalone { color: var(--gold); border: 1px solid var(--gold); background: rgba(240, 180, 41, 0.10); }
-
-
-
-/* ---------- Blazor loading + error ---------- */
-.loading-progress {
-    position: fixed; inset: 0; margin: auto; width: 8rem; height: 8rem;
-}
-.loading-progress circle {
-    fill: none; stroke: var(--border); stroke-width: 0.5rem; transform-origin: 50% 50%;
-    transform: rotate(-90deg);
-}
-.loading-progress circle:last-child {
-    stroke: var(--marvel);
-    stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
-    transition: stroke-dasharray 0.1s ease;
-}
-.loading-progress-text {
-    position: fixed; inset: 0; margin: auto; height: 1rem; text-align: center;
-    font-weight: 700; color: var(--muted);
-}
-.loading-progress-text:after { content: var(--blazor-load-percentage-text, "Loading"); }
-
-#blazor-error-ui {
-    background: var(--marvel);
-    color: #fff;
-    bottom: 0;
-    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
-    display: none;
-    left: 0;
-    padding: 0.8rem 1.4rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-#blazor-error-ui .dismiss { cursor: pointer; position: absolute; right: 0.75rem; top: 0.5rem; }
-#blazor-error-ui .reload { color: #fff; text-decoration: underline; }
 
 /* ---------- Keywords page ---------- */
 .result-count { margin: 2px 0 12px; }

@@ -1,0 +1,23 @@
+@* Shared button primitive. Renders an <a> when Href is set (a link styled as a
+   button), otherwise a <button>. Variant is a space-separated list, e.g.
+   "primary" or "primary hero". *@
+
+@if (Href is not null)
+{
+    <a class="button @VariantClasses" href="@Href">@ChildContent</a>
+}
+else
+{
+    <button class="button @VariantClasses" disabled="@Disabled" @onclick="OnClick">@ChildContent</button>
+}
+
+@code {
+    [Parameter] public string? Href { get; set; }
+    [Parameter] public string Variant { get; set; } = "primary";
+    [Parameter] public bool Disabled { get; set; }
+    [Parameter] public EventCallback OnClick { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    private string VariantClasses =>
+        string.Join(" ", Variant.Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(v => "button--" + v));
+}

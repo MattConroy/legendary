@@ -18,10 +18,10 @@
         <DifficultySelector Options="Targets" Selected="State.Target" OnSelect="SetTarget" />
     </div>
 
-    <button class="button button--primary button--hero" @onclick="Randomize" disabled="@(!Playable)">
+    <Button Variant="primary hero" OnClick="Randomize" Disabled="@(!Playable)">
         <span class="button--hero__icon">🎲</span>
         @(State.Setup is null ? "Randomise setup" : "Randomise again")
-    </button>
+    </Button>
 
     @if (!Playable)
     {
@@ -86,7 +86,7 @@
                             <span class="tag__name">@v.Card.Name</span>
                             @if (v.IsRequired)
                             {
-                                <span class="badge">Required</span>
+                                <Badge>Required</Badge>
                             }
                         </li>
                     }
@@ -111,7 +111,7 @@
                             <span class="tag__name">@h.Card.Name</span>
                             @if (h.IsRequired)
                             {
-                                <span class="badge">Required</span>
+                                <Badge>Required</Badge>
                             }
                         </li>
                     }

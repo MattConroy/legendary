@@ -1,0 +1,7 @@
+@* A small uppercase badge (e.g. the "Required" marker on a villain group). *@
+
+<span class="badge">@ChildContent</span>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

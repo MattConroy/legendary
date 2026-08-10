@@ -36,6 +36,14 @@
 .name { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; font-weight: 800; color: #fff; }
 .date { flex: 0 0 auto; white-space: nowrap; font-size: 0.75rem; color: var(--muted); }
 
+/* "Standalone" pill next to the set name. */
+.pill {
+    flex: 0 0 auto;
+    font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
+    padding: 2px 7px; border-radius: 999px;
+    color: var(--gold); border: 1px solid var(--gold); background: rgba(240, 180, 41, 0.10);
+}
+
 .contents {
     padding: 4px 14px 14px 14px;
     border-top: 1px solid var(--border);
