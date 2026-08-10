@@ -1,0 +1,69 @@
+.players {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+.players__label { font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); font-size: 0.8rem; }
+
+.results { display: flex; flex-direction: column; gap: 14px; margin-top: 18px; }
+
+/* Meta lines under a result (rendered here, in the ResultCard child content). */
+.card__meta {
+    margin: 12px 0 0;
+    padding-top: 12px;
+    border-top: 1px dashed var(--border);
+    font-size: 0.85rem;
+    color: var(--text);
+    line-height: 1.45;
+}
+.card__meta strong { color: var(--accent, var(--gold)); }
+
+.single { display: flex; flex-direction: column; gap: 4px; }
+.single__name { font-size: 1.5rem; font-weight: 900; color: #fff; }
+.single__flavour { color: var(--muted); font-style: italic; font-size: 0.9rem; }
+
+.tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tag--required {
+    border-color: var(--gold);
+    background: rgba(240, 180, 41, 0.12);
+    box-shadow: 0 0 0 1px rgba(240, 180, 41, 0.25) inset;
+}
+
+/* Heroes: one per row — name, a fixed icon column, then the team name. The fixed
+   column keeps the icon at a consistent x regardless of name length. */
+.hero-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.hero-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 20px 7.5rem;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 2px;
+    border-bottom: 1px solid var(--border);
+
+    &:last-child { border-bottom: none; }
+}
+.hero-row__name { color: #fff; font-weight: 700; min-width: 0; overflow-wrap: anywhere; line-height: 1.25; }
+/* TeamIcon renders the img, so size it here with ::deep. */
+.hero-row ::deep .team-icon { width: 20px; height: 20px; }
+.hero-row__team {
+    font-size: 0.72rem; color: var(--muted); text-transform: uppercase;
+    letter-spacing: 0.5px; line-height: 1.2; overflow-wrap: anywhere;
+}
+
+@media (max-width: 360px) {
+    /* Narrow phones: tighter team column, icon still aligned. */
+    .hero-row { grid-template-columns: minmax(0, 1fr) 20px 5.5rem; }
+}
+
+.empty { text-align: center; padding: 40px 16px; color: var(--muted); }
+.empty__hint { font-size: 1rem; line-height: 1.5; }
+
+.disclaimer-mini {
+    margin-top: 26px;
+    text-align: center;
+    font-size: 0.72rem;
+    color: var(--muted);
+    line-height: 1.5;
+}

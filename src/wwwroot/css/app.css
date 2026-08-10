@@ -51,114 +51,6 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
     overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 
-/* ---------- App shell ---------- */
-.app-shell {
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
-    max-width: 640px;
-    margin: 0 auto;
-}
-
-.app-header {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background: linear-gradient(180deg, rgba(10, 10, 15, 0.96), rgba(10, 10, 15, 0.80));
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
-}
-
-.app-header__inner {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    padding: 14px 18px;
-    padding-top: max(14px, env(safe-area-inset-top, 0px));
-}
-
-.app-header__logo {
-    font-weight: 900;
-    font-size: 1.35rem;
-    letter-spacing: 1px;
-    color: #fff;
-    background: var(--marvel);
-    padding: 3px 10px;
-    border-radius: 6px;
-    box-shadow: 0 2px 0 var(--marvel-dark);
-}
-
-.app-header__sub {
-    font-size: 0.82rem;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.app-main {
-    flex: 1;
-    padding: 18px 16px calc(96px + var(--safe-bottom));
-}
-
-/* ---------- Bottom nav ---------- */
-.app-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 30;
-    display: flex;
-    justify-content: space-around;
-    max-width: 640px;
-    margin: 0 auto;
-    background: rgba(18, 18, 25, 0.96);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid var(--border);
-    padding: 8px 0 calc(8px + var(--safe-bottom));
-}
-
-.app-nav__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    padding: 6px 18px;
-    color: var(--muted);
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-radius: 12px;
-    text-decoration: none;
-}
-
-.app-nav__item:hover { text-decoration: none; }
-
-.app-nav__item.active {
-    color: #fff;
-    font-weight: 800;
-    background: rgba(230, 36, 41, 0.15);
-}
-
-.app-nav__icon { font-size: 1.25rem; line-height: 1; }
-
-/* ---------- Player picker + hero button ---------- */
-.players {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 14px;
-}
-
-.players__label {
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--muted);
-    font-size: 0.8rem;
-}
-
 .button {
     border: none;
     border-radius: 14px;
@@ -191,14 +83,6 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .button--hero:active { transform: translateY(2px) scale(0.99); }
 .button--hero:disabled { opacity: 0.5; filter: grayscale(0.6); cursor: not-allowed; box-shadow: none; }
 .button--hero__icon { font-size: 1.35rem; }
-
-/* ---------- Results ---------- */
-.results {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-top: 18px;
-}
 
 .card {
     background: var(--surface);
@@ -243,21 +127,6 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .card__body { padding: 14px 16px; }
 
 
-.card__meta {
-    margin: 12px 0 0;
-    padding-top: 12px;
-    border-top: 1px dashed var(--border);
-    font-size: 0.85rem;
-    color: var(--text);
-    line-height: 1.45;
-}
-.card__meta strong { color: var(--accent, var(--gold)); }
-
-.single { display: flex; flex-direction: column; gap: 4px; }
-.single__name { font-size: 1.5rem; font-weight: 900; color: #fff; }
-.single__flavour { color: var(--muted); font-style: italic; font-size: 0.9rem; }
-
-.tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .tag {
     display: inline-flex;
     align-items: center;
@@ -271,36 +140,6 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .tag__name { color: #fff; }
 .team-icon { width: 18px; height: 18px; flex: 0 0 auto; display: block; object-fit: contain; }
 .tag__meta { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
-
-/* Heroes: one per row — name, then a fixed icon column, then the team name.
-   The fixed team column keeps the icon at a consistent x regardless of how long
-   the hero or team name is; both name and team wrap rather than shove the icon. */
-.hero-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
-.hero-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 20px 7.5rem;
-    align-items: center;
-    column-gap: 10px;
-    padding: 10px 2px;
-    border-bottom: 1px solid var(--border);
-}
-.hero-row:last-child { border-bottom: none; }
-.hero-row__name { color: #fff; font-weight: 700; min-width: 0; overflow-wrap: anywhere; line-height: 1.25; }
-.hero-row .team-icon { width: 20px; height: 20px; }
-.hero-row__team {
-    font-size: 0.72rem; color: var(--muted); text-transform: uppercase;
-    letter-spacing: 0.5px; line-height: 1.2; overflow-wrap: anywhere;
-}
-
-@media (max-width: 360px) {
-    /* Narrow phones: drop the team label to a tighter column, icon still aligned. */
-    .hero-row { grid-template-columns: minmax(0, 1fr) 20px 5.5rem; }
-}
-.tag--required {
-    border-color: var(--gold);
-    background: rgba(240, 180, 41, 0.12);
-    box-shadow: 0 0 0 1px rgba(240, 180, 41, 0.25) inset;
-}
 
 .badge {
     font-size: 0.62rem;
@@ -316,20 +155,6 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 
 .notes { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; color: var(--muted); }
 .notes li { line-height: 1.4; }
-
-.empty { text-align: center; padding: 40px 16px; color: var(--muted); }
-.empty__hint { font-size: 1rem; line-height: 1.5; }
-
-.notice { border-radius: 12px; padding: 12px 14px; margin: 14px 0; font-weight: 600; }
-.notice--warn { background: rgba(240, 180, 41, 0.12); border: 1px solid var(--gold); color: var(--gold); }
-
-.disclaimer-mini {
-    margin-top: 26px;
-    text-align: center;
-    font-size: 0.72rem;
-    color: var(--muted);
-    line-height: 1.5;
-}
 
 /* ---------- Panels (Settings / About) ---------- */
 .page-title { font-size: 1.6rem; margin-bottom: 14px; color: #fff; }

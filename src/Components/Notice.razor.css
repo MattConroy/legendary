@@ -1,0 +1,9 @@
+.notice {
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 14px 0;
+    font-weight: 600;
+    background: rgba(240, 180, 41, 0.12);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+}

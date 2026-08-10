@@ -1,0 +1,7 @@
+@* A small callout message (e.g. the "no content enabled" warning). *@
+
+<p class="notice">@ChildContent</p>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

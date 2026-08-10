@@ -25,9 +25,9 @@
 
     @if (!Playable)
     {
-        <p class="notice notice--warn">
+        <Notice>
             No content enabled. Turn on at least one set under <a href="settings">Sets</a>.
-        </p>
+        </Notice>
     }
 
     @if (State.Setup is { } setup)
