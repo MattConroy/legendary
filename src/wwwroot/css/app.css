@@ -19,6 +19,11 @@
     --radius: 16px;
     --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
     --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+    /* Neutral translucent grey matching the browser's default dark scrollbar
+       thumb (~#9f9f9f), used for the styled inner scrollbars. */
+    --scrollbar-thumb: rgba(255, 255, 255, 0.6);
+    --scrollbar-thumb-hover: rgba(255, 255, 255, 0.85);
 }
 
 * { box-sizing: border-box; }

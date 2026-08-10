@@ -4,15 +4,15 @@
     overflow-x: auto;
     margin-bottom: 8px;
 
-    /* Match the main region's thin light-grey scrollbar (Safari won't theme an
+    /* Match the main region's thin default-grey scrollbar (Safari won't theme an
        inner scroller from color-scheme). */
     scrollbar-width: thin;
-    scrollbar-color: var(--muted) transparent;
+    scrollbar-color: var(--scrollbar-thumb) transparent;
 
     &::-webkit-scrollbar { height: 8px; }
     &::-webkit-scrollbar-track { background: transparent; }
     &::-webkit-scrollbar-thumb {
-        background: var(--muted);
+        background: var(--scrollbar-thumb);
         border-radius: 999px;
         border: 2px solid transparent;
         background-clip: padding-box;
