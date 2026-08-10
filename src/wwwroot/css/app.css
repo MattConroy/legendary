@@ -84,47 +84,6 @@ h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 .button--hero:disabled { opacity: 0.5; filter: grayscale(0.6); cursor: not-allowed; box-shadow: none; }
 .button--hero__icon { font-size: 1.35rem; }
 
-.card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-left: 4px solid var(--accent, var(--border));
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    overflow: hidden;
-    animation: rise 0.28s ease both;
-}
-
-.card--mastermind { --accent: var(--mastermind); }
-.card--scheme { --accent: var(--scheme); }
-.card--villain { --accent: var(--villain); }
-.card--henchmen { --accent: var(--henchmen); }
-.card--hero { --accent: var(--hero); }
-.card--notes { --accent: var(--gold); }
-
-@keyframes rise {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: none; }
-}
-
-.card__head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 14px 16px;
-    border-bottom: 1px solid var(--border);
-}
-
-.card__titles { display: flex; align-items: center; gap: 12px; }
-.card__icon { font-size: 1.5rem; line-height: 1; }
-.card__title {
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--muted);
-}
-.card__subtitle { margin: 2px 0 0; font-size: 0.8rem; color: var(--accent, var(--muted)); font-weight: 600; }
-.card__body { padding: 14px 16px; }
 
 
 .tag {

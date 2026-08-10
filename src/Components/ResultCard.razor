@@ -6,7 +6,11 @@
             <span class="card__icon">@Icon</span>
             <div>
                 <h2 class="card__title">@Title</h2>
-                @if (!string.IsNullOrEmpty(Subtitle))
+                @if (SubtitleContent is not null)
+                {
+                    <p class="card__subtitle">@SubtitleContent</p>
+                }
+                else if (!string.IsNullOrEmpty(Subtitle))
                 {
                     <p class="card__subtitle">@Subtitle</p>
                 }
@@ -29,6 +33,8 @@
 @code {
     [Parameter, EditorRequired] public string Title { get; set; } = "";
     [Parameter] public string? Subtitle { get; set; }
+    /// <summary>Rich subtitle (e.g. containing a link); takes precedence over <see cref="Subtitle"/>.</summary>
+    [Parameter] public RenderFragment? SubtitleContent { get; set; }
     [Parameter] public string Icon { get; set; } = "";
     [Parameter] public string Accent { get; set; } = "default";
     [Parameter] public EventCallback OnReroll { get; set; }
