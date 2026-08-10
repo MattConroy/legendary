@@ -9,17 +9,7 @@
 
     <section class="panel">
         <h2 class="panel__title">Default player count</h2>
-        <div class="players__picker" role="group" aria-label="Default player count">
-            @for (var n = 1; n <= 5; n++)
-            {
-                var count = n;
-                <button class="chip @(State.DefaultPlayers == count ? "chip--active" : "")"
-                        @onclick="() => State.SetDefaultPlayersAsync(count)"
-                        aria-pressed="@(State.DefaultPlayers == count)">
-                    @count
-                </button>
-            }
-        </div>
+        <PlayerCountPicker Selected="State.DefaultPlayers" OnSelect="n => State.SetDefaultPlayersAsync(n)" />
     </section>
 
     <section class="panel">

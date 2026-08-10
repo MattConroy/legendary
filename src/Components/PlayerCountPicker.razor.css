@@ -1,0 +1,22 @@
+.picker { display: flex; gap: 8px; }
+
+button {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 800;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: transform 0.08s ease, background 0.15s ease, border-color 0.15s ease;
+
+    &:active { transform: scale(0.94); }
+    &.active {
+        background: var(--marvel);
+        border-color: var(--marvel);
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(230, 36, 41, 0.4);
+    }
+}

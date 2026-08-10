@@ -1,0 +1,19 @@
+.threat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 2px;
+    border: 1px solid var(--accent);
+    background: var(--accent-tint);
+
+    &[data-band="easy"]   { --accent: #35c26b;      --accent-tint: rgba(53, 194, 107, 0.12); }
+    &[data-band="medium"] { --accent: var(--gold);  --accent-tint: rgba(240, 180, 41, 0.12); }
+    &[data-band="hard"]   { --accent: var(--marvel); --accent-tint: rgba(230, 36, 41, 0.13); }
+}
+
+.title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); font-weight: 800; }
+.score { font-size: 1.25rem; font-weight: 900; color: #fff; line-height: 1; }
+.max { font-size: 0.8rem; color: var(--muted); font-weight: 700; }
+.band { margin-left: auto; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.82rem; }

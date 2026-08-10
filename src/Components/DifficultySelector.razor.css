@@ -1,0 +1,18 @@
+.segmented { display: flex; gap: 6px; flex: 1; min-width: 0; }
+
+button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 9px 4px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
+    font: inherit;
+    font-weight: 700;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+    &.active { background: var(--marvel); border-color: var(--marvel); color: #fff; }
+}

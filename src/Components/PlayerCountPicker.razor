@@ -1,0 +1,19 @@
+@* The 1–5 player-count chips on the Home page. *@
+
+<div class="picker" role="group" aria-label="Player count">
+    @for (var n = 1; n <= Max; n++)
+    {
+        var count = n;
+        <button class="@(Selected == count ? "active" : "")"
+                @onclick="() => OnSelect.InvokeAsync(count)"
+                aria-pressed="@(Selected == count)">
+            @count
+        </button>
+    }
+</div>
+
+@code {
+    [Parameter] public int Selected { get; set; }
+    [Parameter] public int Max { get; set; } = 5;
+    [Parameter] public EventCallback<int> OnSelect { get; set; }
+}

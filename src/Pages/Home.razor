@@ -10,30 +10,12 @@
 
     <div class="players">
         <span class="players__label">Players</span>
-        <div class="players__picker" role="group" aria-label="Player count">
-            @for (var n = 1; n <= 5; n++)
-            {
-                var count = n;
-                <button class="chip @(State.Players == count ? "chip--active" : "")"
-                        @onclick="() => SetPlayers(count)"
-                        aria-pressed="@(State.Players == count)">
-                    @count
-                </button>
-            }
-        </div>
+        <PlayerCountPicker Selected="State.Players" OnSelect="SetPlayers" />
     </div>
 
     <div class="players">
         <span class="players__label">Difficulty</span>
-        <div class="segmented" role="group" aria-label="Target difficulty">
-            @foreach (var (label, band) in Targets)
-            {
-                <button class="segmented__button @(State.Target == band ? "segmented__button--active" : "")"
-                        @onclick="() => SetTarget(band)" aria-pressed="@(State.Target == band)">
-                    @label
-                </button>
-            }
-        </div>
+        <DifficultySelector Options="Targets" Selected="State.Target" OnSelect="SetTarget" />
     </div>
 
     <button class="button button--primary button--hero" @onclick="Randomize" disabled="@(!Playable)">
@@ -53,11 +35,7 @@
         <div class="results">
             @if (setup.Threat is { } threat)
             {
-                <div class="threat threat--@threat.Band.ToString().ToLowerInvariant()">
-                    <span class="threat__title">Threat</span>
-                    <span class="threat__score">@threat.Score<span class="threat__max">/10</span></span>
-                    <span class="threat__band">@threat.Band</span>
-                </div>
+                <ThreatSummary Threat="threat" />
             }
 
             <ResultCard Title="Mastermind" Icon="💀" Accent="mastermind"

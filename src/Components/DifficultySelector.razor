@@ -1,0 +1,18 @@
+@* The Any/Easy/Medium/Hard target-difficulty selector on the Home page. *@
+
+<div class="segmented" role="group" aria-label="Target difficulty">
+    @foreach (var (label, band) in Options)
+    {
+        <button class="@(Selected == band ? "active" : "")"
+                @onclick="() => OnSelect.InvokeAsync(band)"
+                aria-pressed="@(Selected == band)">
+            @label
+        </button>
+    }
+</div>
+
+@code {
+    [Parameter] public (string Label, DifficultyBand? Band)[] Options { get; set; } = [];
+    [Parameter] public DifficultyBand? Selected { get; set; }
+    [Parameter] public EventCallback<DifficultyBand?> OnSelect { get; set; }
+}

@@ -1,0 +1,11 @@
+@* The overall-threat banner (score out of 10 + band) shown above a rolled setup. *@
+
+<div class="threat" data-band="@Threat.Band.ToString().ToLowerInvariant()">
+    <span class="title">Threat</span>
+    <span class="score">@Threat.Score<span class="max">/10</span></span>
+    <span class="band">@Threat.Band</span>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public Threat Threat { get; set; }
+}
