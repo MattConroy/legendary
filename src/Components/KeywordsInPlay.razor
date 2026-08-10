@@ -1,0 +1,32 @@
+@* The "Keywords in play" card shown under a rolled setup: the glossary entries
+   for every keyword appearing on the drawn cards. *@
+
+@if (Keywords.Count > 0)
+{
+    <div class="card card--notes">
+        <div class="card__head">
+            <div class="card__titles">
+                <span class="card__icon">📖</span>
+                <div>
+                    <div class="card__title">Keywords in play</div>
+                    <p class="card__subtitle">@Keywords.Count in this setup · <a href="keywords">glossary</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="card__body">
+            <ul class="list">
+                @foreach (var keyword in Keywords)
+                {
+                    <li>
+                        <span class="name">@keyword.Name</span>
+                        <span class="def">@keyword.Summary</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public IReadOnlyList<Keyword> Keywords { get; set; } = [];
+}
