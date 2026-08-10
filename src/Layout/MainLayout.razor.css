@@ -41,6 +41,9 @@
     flex: 1 1 auto;
     overflow-y: auto;
     padding: 18px 16px 24px;
+    /* Keep the scrollbar dark-themed on the scroll element itself (some browsers
+       read color-scheme from the scrolling element, not just the root). */
+    color-scheme: dark;
 }
 
 .app-nav {

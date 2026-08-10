@@ -25,6 +25,11 @@ async function onInstall(event) {
         .filter(asset => !offlineAssetsExclude.some(pattern => pattern.test(asset.url)))
         .map(asset => new Request(asset.url, { integrity: asset.hash, cache: 'no-cache' }));
     await caches.open(cacheName).then(cache => cache.addAll(assetsRequests));
+
+    // Take over as soon as the new assets are cached, so a deploy applies on the
+    // next reload instead of waiting for every tab to close. This app loads all
+    // its assemblies at boot, so there's no risk of mixing old/new lazy assets.
+    await self.skipWaiting();
 }
 
 async function onActivate(event) {
@@ -35,6 +40,9 @@ async function onActivate(event) {
     await Promise.all(cacheKeys
         .filter(key => key.startsWith(cacheNamePrefix) && key !== cacheName)
         .map(key => caches.delete(key)));
+
+    // Control already-open pages immediately.
+    await self.clients.claim();
 }
 
 async function onFetch(event) {
