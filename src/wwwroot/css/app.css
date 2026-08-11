@@ -56,6 +56,12 @@ a:hover { text-decoration: underline; }
 
 h1, h2 { margin: 0; font-weight: 800; letter-spacing: 0.2px; }
 
+/* FocusOnNavigate moves focus to the page's h1 on every navigation (so screen
+   readers announce the new page). The h1 is tabindex="-1" — only ever focused
+   programmatically, never reachable by keyboard — so hiding its focus ring
+   removes the stray outline on load without affecting keyboard users. */
+h1:focus { outline: none; }
+
 .visually-hidden {
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
