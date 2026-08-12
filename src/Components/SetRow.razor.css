@@ -26,10 +26,15 @@
 }
 .caret {
     flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* Bigger touch target via padding; negative margins pull it back so the row
+       height and the glyph position stay put (the header gap keeps the name clear). */
+    padding: 11px;
+    margin: -11px 0 -11px -11px;
     background: none;
     border: none;
-    margin: 0;
-    padding: 4px 6px;
     color: var(--muted);
     font-size: 0.7rem;
     line-height: 1;
